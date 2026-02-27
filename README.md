@@ -16,17 +16,17 @@
   <font size="2"><b>Fig 1.</b> Datascape Simulation Pipeline: (1) Ink Density (Peak & Ridge), (2) Stroke Vectors (Panorama), (3) Combined Guide.</font>
 </p>
 
-## 1. Philosophy: Evolution of "True View" (眞景山수화)
+## 1. Philosophy: Evolution of "True View" (眞景山水畵)
 
 ### **The Comparison of Realism**
 | 18th Century: Physical Realism | 21st Century: Digital Realism |
 | :--- | :--- |
-| <img src="assets/traditional_masterpiece.jpg" width="100%"> | <img src="assets/digital_terrain_analysis.jpg" width="100%"> |
-| *Traditional Jingyeong-sansu-hwa (e.g., Inwang jesaekdo)* | *Algorithmic Terrain Analysis (SRTM/LiDAR Data)* |
+| <img src="assets/geumgang_jeondo.jpg" width="100%"> | <img src="assets/digital_terrain_analysis.jpg" width="100%"> |
+| *Geumgang jeondo (眞景山水畵) by Jeong Seon* | *Algorithmic Terrain Analysis (SRTM Data)* |
 
 **Historical Shift of "Truth"**
-* **The 18th Century:** Masters like Jeong Seon captured nature through direct observation. "True" meant the landscape one could physically experience.
-* **The 21st Century:** High-resolution satellite and LiDAR data provide a millimeter-scale scan of the Earth. This quantified data is the most objective **"True View" (眞景)** of our era.
+* **The 18th Century:** Masters like Jeong Seon captured Mt. Kumgang through direct observation. "True View" (眞景) meant the landscape one could physically experience.
+* **The 21st Century:** High-resolution satellite and LiDAR data provide a millimeter-scale scan of the Earth. This quantified data—objective and precise—is the most authentic **"True View" (眞景)** of our era.
 
 **Algorithmic Archetype**
 Datascape reveals that traditional masters—who "decomposed" nature into rules like *Nongdam* (ink density) and *Junbeop* (stroke types)—performed a process fundamentally identical to modern digital data processing.
@@ -42,23 +42,14 @@ This framework translates human artistic decomposition into machine logic:
 ---
 
 ## 3. Project Pipeline
-1. **Data Extraction (GEE):** Global DEM and multispectral imagery harvesting via **Google Earth Engine (JavaScript)**.
-2. **Topographic Analysis:** **Python-based** feature extraction (TPI/Slope) for peak and ridge identification.
+1. **Data Extraction (GEE):** Global DEM harvesting via **Google Earth Engine (JavaScript)**.
+2. **Topographic Analysis:** **Python-based** feature extraction (TPI/Slope) for peak/ridge identification.
 3. **Stroke Classification:** Procedural mapping of land cover (NDVI/Dynamic World) to ink stroke logic.
 4. **Kinetic Realization:** Translating vectors into **G-code** for robotic output via **Arduino**.
 
 ---
 
-## 4. Core Modules
-* **`gee/data_extraction.js`**: JavaScript module for automated geospatial data harvesting.
-* **`src/`**: Modularized Python engine for analysis and visualization.
-  * `terrain_analyzer.py`: GIS feature extraction and prominence mapping.
-  * `landscape_renderer.py`: Traditional perspective projection with horizon buffer.
-  * `gcode_engine.py` (WIP): Robotic trajectory and pressure control interface.
-
----
-
-## 5. Attribution & Copyright
-* **Platform:** Processed via **Google Earth Engine (GEE)**.
-* **Data Sources:** NASA SRTM 30m, Sentinel-2 L2A, Dynamic World V1.
-* **Copyright:** Map data ©2026 Google / NASA / USGS. Algorithmic logic and robotic system design ©2026 Seong Geon Lee.
+## 4. Attribution & Copyright
+* **Historical Image:** *Geumgang jeondo* (Complete View of Mt. Kumgang) by Jeong Seon (1676–1759). Public Domain.
+* **Satellite Data:** NASA SRTM 30m, Sentinel-2 L2A, Dynamic World V1 via **Google Earth Engine**.
+* **Copyright:** Algorithmic logic and robotic system design ©2026 Seong Geon Lee.
