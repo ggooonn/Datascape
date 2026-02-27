@@ -2,6 +2,7 @@
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript">
   <img src="https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white" alt="Arduino">
   <img src="https://img.shields.io/badge/G--Code-4E4E4E?style=flat&logo=rapid&logoColor=white" alt="G-Code">
   <img src="https://img.shields.io/badge/Google_Earth_Engine-4285F4?style=flat&logo=google-earth&logoColor=white" alt="GEE">
@@ -9,37 +10,42 @@
 
 > **"From 18th-century realism to 21st-century data: Redefining 'True View' (眞景) through procedural ink logic and robotic fabrication."**
 
-<p align="center">
+<p align="left">
   <img src="assets/simulation_preview.png" width="100%" alt="Datascape Simulation Results">
   <br>
-  <i>Fig 1. Datascape Simulation Pipeline: (1) Ink Density (Peak & Ridge), (2) Stroke Vectors (Panorama), (3) Combined Guide.</i>
+  <font size="2"><b>Fig 1.</b> Datascape Simulation Pipeline: (1) Ink Density (Peak & Ridge), (2) Stroke Vectors (Panorama), (3) Combined Guide.</font>
 </p>
 
-## 1. Philosophy: Evolution of "True View" (眞景山水畵)
+## 1. Philosophy: Evolution of "True View" (眞景山수화)
 
-### **The 18th Century: Physical Realism**
-In the 18th century, **Jinkyung-sansu-hwa** (眞景山水畵: True-view landscape painting) emerged as a revolutionary movement. Masters like Jeong Seon broke away from idealized Chinese landscapes to capture the actual Korean scenery through direct physical experience and observation. At that time, "True" meant the landscape one could physically step upon and see with human eyes.
+### **The Comparison of Realism**
+| 18th Century: Physical Realism | 21st Century: Digital Realism |
+| :--- | :--- |
+| <img src="assets/traditional_masterpiece.jpg" width="100%"> | <img src="assets/digital_terrain_analysis.jpg" width="100%"> |
+| *Traditional Jingyeong-sansu-hwa (e.g., Inwang jesaekdo)* | *Algorithmic Terrain Analysis (SRTM/LiDAR Data)* |
 
-### **The 21st Century: Digital Realism**
-Three centuries later, our perception of nature has evolved through technology. In an era where high-resolution satellites and LiDAR scan the Earth’s surface in millimeter units, quantified terrain data is no longer a mere imitation. This digital data—objective, precise, and invisible to the naked eye—is the most authentic **"True View" (眞景)** of nature in the 21st century.
+**Historical Shift of "Truth"**
+* **The 18th Century:** Masters like Jeong Seon captured nature through direct observation. "True" meant the landscape one could physically experience.
+* **The 21st Century:** High-resolution satellite and LiDAR data provide a millimeter-scale scan of the Earth. This quantified data is the most objective **"True View" (眞景)** of our era.
 
-**Datascape** bridges these two eras. It discovers that the process of traditional masters—who "decomposed" nature into algorithmic rules like *Nongdam* (ink density) and *Junbeop* (stroke types)—is fundamentally identical to modern digital data processing.
+**Algorithmic Archetype**
+Datascape reveals that traditional masters—who "decomposed" nature into rules like *Nongdam* (ink density) and *Junbeop* (stroke types)—performed a process fundamentally identical to modern digital data processing.
 
 ---
 
 ## 2. Technical Implementation
-This project translates the "algorithm of decomposition" from the human mind into machine language:
-* **Algorithmic Mapping:** Elevation and vegetation data are transposed into ink density (Nongdam) and voids.
-* **Feature Decomposition:** Land attributes are decomposed into over 10 traditional brushstroke classes (e.g., *Bubyeokjun*) and reassembled through code.
-* **Robotic Fabrication:** The digital landscape escapes the screen through a custom **Arduino-based robotic plotter**. By precisely controlling brush pressure, this system proposes a new paradigm: the **Mass Production of "True Views,"** evolving the one-time nature of 18th-century art into a scalable 21st-century system.
+This framework translates human artistic decomposition into machine logic:
+* **Data-driven Aesthetics:** Elevation/vegetation data are transposed into ink density (Nongdam) and voids.
+* **Feature Decomposition:** Land attributes are mapped to 10+ traditional brushstroke classes (e.g., *Bubyeokjun*) via procedural code.
+* **Robotic Fabrication:** Realizing digital "True Views" through an **Arduino-based robotic plotter** that controls precise brush pressure on traditional paper.
 
 ---
 
 ## 3. Project Pipeline
-1. **Data Extraction (GEE):** Harvesting global DEM and multispectral imagery via Google Earth Engine.
-2. **Topographic Analysis:** Calculating **TPI (Topographic Position Index)** for peak and ridge identification using Python.
-3. **Stroke Classification:** Procedural mapping of land cover to traditional stroke logic.
-4. **Kinetic Realization:** Translating digital vectors into **G-code** to drive robotic motors via Arduino for physical ink wash output.
+1. **Data Extraction (GEE):** Global DEM and multispectral imagery harvesting via **Google Earth Engine (JavaScript)**.
+2. **Topographic Analysis:** **Python-based** feature extraction (TPI/Slope) for peak and ridge identification.
+3. **Stroke Classification:** Procedural mapping of land cover (NDVI/Dynamic World) to ink stroke logic.
+4. **Kinetic Realization:** Translating vectors into **G-code** for robotic output via **Arduino**.
 
 ---
 
