@@ -11,9 +11,15 @@
 > **"From 18th-century realism to 21st-century data: Redefining 'True View' (眞景) through procedural ink logic and robotic fabrication."**
 
 <p align="left">
-  <img src="assets/simulation_preview.png" width="100%" alt="Datascape Simulation Results">
+  <img src="assets/simulation_preview.png?v=2" width="100%" alt="Datascape Simulation Results">
   <br>
-  <font size="2"><b>Fig 1.</b> Datascape Simulation Pipeline: (1) Ink Density (Peak & Ridge), (2) Stroke Vectors (Panorama), (3) Combined Guide.</font>
+  <font size="2"><b>Fig 1. Datascape 6-Axis Simulation Dashboard:</b> 
+  (1) <b>Object Map</b>: Semantic segmentation of terrain features, 
+  (2) <b>Junbeop Map</b>: Mapping traditional stroke classes, 
+  (3) <b>Ink Score</b>: Continuous density mapping (Depth/Altitude/TPI), 
+  (4) <b>Plotter Phase</b>: Multi-stage execution layers, 
+  (5) <b>Vector Flow</b>: Terrain-aspect-driven stroke direction, 
+  (6) <b>Final Output</b>: Stochastic layered simulation.</font>
 </p>
 
 ## 1. Philosophy: Evolution of "True View" (眞景山水畵)
@@ -26,26 +32,27 @@
 
 **Historical Shift of "Truth"**
 * **The 18th Century:** Masters like Jeong Seon captured Mt. Kumgang through direct observation. "True View" (眞景) meant the landscape one could physically experience.
-* **The 21st Century:** High-resolution satellite and LiDAR data provide a millimeter-scale scan of the Earth. This quantified data—objective and precise—is the most authentic **"True View" (眞景)** of our era.
-
-**Algorithmic Archetype**
-Datascape reveals that traditional masters—who "decomposed" nature into rules like *Nongdam* (ink density) and *Junbeop* (stroke types)—performed a process fundamentally identical to modern digital data processing.
+* **The 21st Century:** High-resolution satellite and LiDAR data provide a precise digital twin of the Earth. This quantified data is the most authentic **"True View" (眞景)** of our era.
 
 ---
 
-## 2. Technical Implementation
-This framework translates human artistic decomposition into machine logic:
-* **Data-driven Aesthetics:** Elevation/vegetation data are transposed into ink density (Nongdam) and voids.
-* **Feature Decomposition:** Land attributes are mapped to 10+ traditional brushstroke classes (e.g., *Bubyeokjun*) via procedural code.
-* **Robotic Fabrication:** Realizing digital "True Views" through an **Arduino-based robotic plotter** that controls precise brush pressure on traditional paper.
+## 2. Technical Implementation: 6-Axis Analysis
+Datascape decomposes the landscape into a machine-readable "Ink Logic" through six diagnostic layers:
+
+1. **Object Semantic Map**: Categorizes land into classes (TPine, Rock, UrbanBox, etc.) using NDVI and Slope data.
+2. **Junbeop Texture Map**: Assigns traditional brushstroke algorithms (e.g., *Pima-jun* for ridges, *Bubyeok-jun* for cliffs).
+3. **Ink Score (Nongdam)**: Calculates continuous grayscale values (1-10 levels) based on atmospheric perspective and local prominence (TPI).
+4. **Plotter Execution Phase**: Segregates strokes into robotic phases (Phase 1: Base, Phase 2: Structure, Phase 3: Detail) for systematic fabrication.
+5. **Stroke Vector Flow**: Generates a 360° aspect-driven vector field to guide the "grain" of the brushwork.
+6. **Final Stochastic Output**: Simulates **"Jeok-muk" (積墨)**—the traditional technique of layering dry ink—through a stochastic overlapping algorithm.
 
 ---
 
 ## 3. Project Pipeline
 1. **Data Extraction (GEE):** Global DEM harvesting via **Google Earth Engine (JavaScript)**.
 2. **Topographic Analysis:** **Python-based** feature extraction (TPI/Slope) for peak/ridge identification.
-3. **Stroke Classification:** Procedural mapping of land cover (NDVI/Dynamic World) to ink stroke logic.
-4. **Kinetic Realization:** Translating vectors into **G-code** for robotic output via **Arduino**.
+3. **Stochastic Rendering:** Procedural mapping of features to 10+ brushstroke classes with random jittering for organic depth.
+4. **Kinetic Realization:** Translating simulated vectors into **G-code** for the **Arduino-based robotic plotter**.
 
 ---
 
