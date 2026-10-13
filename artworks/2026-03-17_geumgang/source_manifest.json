@@ -1,0 +1,22 @@
+{
+  "artwork": "금강산",
+  "completion_date_user_reported": "2026-03-17",
+  "production_file_identity": "provisional: uploaded file is named test; final production-file identity not confirmed",
+  "original_notebook": {
+    "path": "original/datascape_0317test.ipynb",
+    "bytes": 4389739,
+    "sha256": "32ee14d19805bb561019126e60c518c599f1a9be9c3aeb49e02d3793c40cafd6"
+  },
+  "derived_source": {
+    "path": "original/source.py",
+    "sha256": "fb6a5ae288097a82842e4e6eea159369a3463d174382c11837d6900f42e75108",
+    "method": "UTF-8; code cell source strings concatenated verbatim, separated by two newlines; no code edits"
+  },
+  "labels_in_source": "V39.10",
+  "python_version_in_notebook_metadata": "3.12.8",
+  "dependency_versions": "unknown; notebook Python metadata is not a complete environment lock",
+  "execution_in_current_environment": false,
+  "stored_outputs": "preserved in original notebook; historical evidence, not fresh reproduction",
+  "hardware": "historical settings embedded in source; not valid calibration for the new FluidNC plotter",
+  "data_status": "raw inputs not included; see README"
+}

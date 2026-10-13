@@ -1,0 +1,106 @@
+{
+  "status": "export_reported_quality_unverified",
+  "script": "gee/seoul_north_v02.js",
+  "script_sha256": "ec87497773162e129a20dc9a189e8ec91d729a6be97de99e2617601fa0003ee2",
+  "roi_wsen": [
+    126.82,
+    37.5,
+    127.12,
+    37.71
+  ],
+  "crs": "EPSG:32652",
+  "period": {
+    "start_inclusive": "2022-01-01",
+    "end_exclusive": "2026-01-01"
+  },
+  "seasons": {
+    "spring": [
+      3,
+      4,
+      5
+    ],
+    "summer": [
+      6,
+      7,
+      8
+    ],
+    "autumn": [
+      9,
+      10,
+      11
+    ],
+    "winter": [
+      12,
+      1,
+      2
+    ]
+  },
+  "sources": [
+    "COPERNICUS/DEM/GLO30_2024_1",
+    "NASA/NASADEM_HGT/001",
+    "COPERNICUS/S2_SR_HARMONIZED",
+    "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED"
+  ],
+  "cloud_score_min": 0.6,
+  "scene_cloud_max": 80,
+  "nodata_expected": -9999,
+  "files": [
+    {
+      "filename": "SeoulNorth_v02_MASTER_30m.tif",
+      "expected_crs_transform": [
+        30,
+        0,
+        0,
+        0,
+        -30,
+        5000000
+      ],
+      "expected_band_order": [
+        "DEM",
+        "SLOPE",
+        "ASPECT",
+        "HILLSHADE",
+        "DEM_NASA",
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "expected_dtype": "float32",
+      "count_band_meaning": "mean valid observation count across underlying 10m pixels",
+      "actual_sha256": null,
+      "actual_metadata": null,
+      "validation": null
+    },
+    {
+      "filename": "SeoulNorth_v02_VEG_10m.tif",
+      "expected_crs_transform": [
+        10,
+        0,
+        0,
+        0,
+        -10,
+        5000000
+      ],
+      "expected_band_order": [
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "expected_dtype": "float32",
+      "count_band_meaning": "valid observation count per pixel",
+      "actual_sha256": null,
+      "actual_metadata": null,
+      "validation": null
+    }
+  ]
+}

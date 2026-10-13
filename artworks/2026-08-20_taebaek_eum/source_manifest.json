@@ -1,0 +1,22 @@
+{
+  "artwork": "태백산맥(음)",
+  "completion_date_user_reported": "2026-08-20",
+  "production_file_identity": "uploaded historical notebook; exact final production-file identity not independently verified",
+  "original_notebook": {
+    "path": "original/datascape_0820_Taebaek.ipynb",
+    "bytes": 1243835,
+    "sha256": "51533b010668e3b56acaa4d08cb3f481cf6fdb725789ba682f341b3d36444d9e"
+  },
+  "derived_source": {
+    "path": "original/source.py",
+    "sha256": "16505bc70f12db977658ac44670ad40546d27dedfe0873bb6bf759e7cf735ea3",
+    "method": "UTF-8; code cell source strings concatenated verbatim, separated by two newlines; no code edits"
+  },
+  "labels_in_source": "V31",
+  "python_version_in_notebook_metadata": "3.12.8",
+  "dependency_versions": "unknown; notebook Python metadata is not a complete environment lock",
+  "execution_in_current_environment": false,
+  "stored_outputs": "preserved in original notebook; historical evidence, not fresh reproduction",
+  "hardware": "historical settings embedded in source; not valid calibration for the new FluidNC plotter",
+  "data_status": "raw inputs not included; see README"
+}

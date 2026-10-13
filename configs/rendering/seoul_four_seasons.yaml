@@ -1,0 +1,14 @@
+status: layout_only_no_rendering_algorithm
+units: mm
+panel_width: 300
+panel_height: 900
+panel_count: 8
+gap: 40
+total_width: 2680
+seasons: [spring, summer, autumn, winter]
+panels_per_season: 2
+season_pair_width: 640
+camera: null
+roi: null
+random_seed: null
+# Record a seed and a coordinate convention before generating paths.

@@ -1,0 +1,76 @@
+board: MKS DLC32 V2.1
+name: DATASCAPE_SYSTEM_V2.DEV_261010
+
+i2so:
+  bck_pin: gpio.16
+  data_pin: gpio.21
+  ws_pin: gpio.17
+
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+
+stepping:
+  engine: I2S_STATIC
+  idle_ms: 255
+  pulse_us: 4
+  dir_delay_us: 1
+  disable_delay_us: 0
+
+axes:
+  shared_stepper_disable_pin: I2SO.0
+  
+  x:
+    steps_per_mm: 80.000
+    max_rate_mm_per_min: 15000.000
+    acceleration_mm_per_sec2: 1200.000
+    max_travel_mm: 900.000
+    homing:
+      cycle: 2
+      mpos_mm: 0.000
+      positive_direction: false
+      seek_mm_per_min: 4000.000
+      feed_mm_per_min: 400.000
+    motor0:
+      limit_neg_pin: gpio.35:low
+      pulloff_mm: 2.000
+      standard_stepper:
+        step_pin: I2SO.1
+        direction_pin: I2SO.2:low
+        
+  y:
+    steps_per_mm: 80.000
+    max_rate_mm_per_min: 15000.000
+    acceleration_mm_per_sec2: 1200.000
+    max_travel_mm: 960.000
+    homing:
+      cycle: 3
+      mpos_mm: 960.000
+      positive_direction: true
+      seek_mm_per_min: 4000.000
+      feed_mm_per_min: 400.000
+    motor0:
+      limit_pos_pin: gpio.36:low
+      pulloff_mm: 2.000
+      standard_stepper:
+        step_pin: I2SO.5
+        direction_pin: I2SO.6
+
+  z:
+    steps_per_mm: 80.000
+    max_rate_mm_per_min: 8000.000
+    acceleration_mm_per_sec2: 1000.000
+    max_travel_mm: 50.000
+    homing:
+      cycle: 1
+      mpos_mm: 50.000
+      positive_direction: true
+      seek_mm_per_min: 1500.000
+      feed_mm_per_min: 200.000
+    motor0:
+      limit_pos_pin: gpio.34:low
+      pulloff_mm: 2.000
+      standard_stepper:
+        step_pin: I2SO.3
+        direction_pin: I2SO.4
