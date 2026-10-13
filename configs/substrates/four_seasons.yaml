@@ -1,0 +1,18 @@
+status: provisional_materials_and_preview_colors
+seasons:
+  spring:
+    material: 백색 화선지
+    preview_hex: '#F8F8F5'
+    measured: false
+  summer:
+    material: 반표백 광목 검토
+    preview_hex: '#E8E4D9'
+    measured: false
+  autumn:
+    material: 밝은 황토계 린넨 검토
+    preview_hex: '#EDE4D2'
+    measured: false
+  winter:
+    material: 차가운 회황토계 마 검토
+    preview_hex: '#DDD9CF'
+    measured: false
