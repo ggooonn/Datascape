@@ -1,0 +1,234 @@
+{
+  "study": "F2 Painterly Layer Rules v0.1",
+  "base_pr_head": "0d4b7a34103beff67eb561f0095800abb6c3a707",
+  "config": {
+    "study": "F2 Painterly Layer Rules v0.1",
+    "source_composition": "configs/scenes/seoul_ground_composition_v01.json",
+    "baseline_image": "docs/experiments/spring_ground_composition_v01/F2_continuous.png",
+    "season": "SPRING",
+    "seed": 20261014,
+    "macro_scale_m": 300,
+    "valley_low_m": 8,
+    "valley_high_m": 60,
+    "mist_depth_center_m": 1600,
+    "mist_depth_sigma_m": 800,
+    "rest_y_fraction": 0.62,
+    "rest_y_sigma": 0.075,
+    "mist_max": 0.94,
+    "mist_score_low": 0.1,
+    "mist_score_high": 0.43,
+    "field_feather_mm": 10,
+    "reserve_mist_low": 0.62,
+    "reserve_mist_high": 0.82,
+    "corridor_center_smoothing_mm": 16,
+    "corridor_width_mm": 26,
+    "corridor_strength": 0.65,
+    "hard_reserve_threshold": 0.9,
+    "terrain_mist_attenuation": 0.8,
+    "whitespace_power": 1.8,
+    "minimum_observations": 6,
+    "full_support_observations": 12,
+    "ndvi_low": 0.1,
+    "ndvi_high": 0.65,
+    "aspect_preference_deg": 135,
+    "near_full_m": 450,
+    "near_end_m": 1100,
+    "vegetation_y_start": 0.7,
+    "center_density_floor": 0.35,
+    "spatial_noise_mm": 50,
+    "vegetation_mist_attenuation": 0.9,
+    "plants": {
+      "maximum_count": 65,
+      "minimum_spacing_mm": 22,
+      "minimum_field": 0.003,
+      "height_mm": [
+        27,
+        65
+      ],
+      "maximum_proposals": 6000,
+      "line_width_mm": 1.0
+    },
+    "corridor_screen_center_fraction": 0.46,
+    "corridor_screen_sigma_fraction": 0.2
+  },
+  "config_sha256": "b7e9aee0fc8a2cdd232a431f1055aed1301128602bb72c8ee11bea9b02553f11",
+  "fixed_F2_config_sha256": "2d0d0b3be3f43607323800219d0eaa70bf52fd145d2a8d28aaa9099503ab299a",
+  "baseline_png_sha256": "fc1e4d302af7ba862d5d309a89b4ae3030874bbea814afb8cbdf226bcc64586e",
+  "inputs": {
+    "master": {
+      "filename": "SeoulNorth_v02_MASTER_30m.tif",
+      "sha256": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        30.0,
+        30.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4151990.0,
+        334290.0,
+        4175900.0
+      ],
+      "shape": [
+        797,
+        900
+      ],
+      "transform": [
+        30.0,
+        0.0,
+        307290.0,
+        0.0,
+        -30.0,
+        4175900.0
+      ],
+      "bands": [
+        "DEM",
+        "SLOPE",
+        "ASPECT",
+        "HILLSHADE",
+        "DEM_NASA",
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0,
+      "unchanged_after": true
+    },
+    "vegetation": {
+      "filename": "SeoulNorth_v02_VEG_10m.tif",
+      "sha256": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4152000.0,
+        334290.0,
+        4175880.0
+      ],
+      "shape": [
+        2388,
+        2700
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        307290.0,
+        0.0,
+        -10.0,
+        4175880.0
+      ],
+      "bands": [
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0,
+      "unchanged_after": true
+    },
+    "site": {
+      "eye_xy_utm_m": [
+        325305,
+        4168385
+      ],
+      "eye_lon_lat_wgs84": [
+        127.01982889659858,
+        37.646014458853045
+      ],
+      "source_dem_at_eye_m": 38.12806701660156,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 2.0,
+      "camera": {
+        "eye_xyz_m": [
+          325305,
+          4168385,
+          40.12806701660156
+        ],
+        "azimuth_deg": 292.1219419718818,
+        "pitch_deg": 0.0,
+        "vertical_fov_deg": 36.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      }
+    }
+  },
+  "metrics": {
+    "baseline_pixels_identical": true,
+    "plants_B": 65,
+    "plants_C": 63,
+    "occupied_pixels": 375799,
+    "hard_reserve_pixels": 15362,
+    "hard_reserve_terrain_fraction": 0.04087823543968983,
+    "reserve_max_ink_C": 0.0,
+    "mist_gt_05_terrain_fraction": 0.13194287371706684,
+    "vegetation_positive_pixels_before": 118913,
+    "vegetation_mass_retained_fraction": 0.9835188223021617,
+    "lower_300mm_spring_ndvi_p10_p50_p90": [
+      0.07612024632806177,
+      0.1439032709146093,
+      0.3787721186490818
+    ],
+    "lower_300mm_spring_effective_observations_p10_p50_p90": [
+      28.0,
+      30.0,
+      31.34602760132648
+    ],
+    "season_valid_occupied_fraction": {
+      "SPRING": 1.0,
+      "SUMMER": 1.0,
+      "AUTUMN": 1.0,
+      "WINTER": 1.0
+    },
+    "mean_terrain_ink_A": 0.48867279291152954,
+    "mean_total_ink_B": 0.49912202091230584,
+    "mean_total_ink_C": 0.4189933950725404
+  },
+  "field_archive_sha256": "cbfcdb7822271aaaf7f6cea346e9358b0cb98b34387aceafc18effda7dcb687b",
+  "sampling": "Visible mapped triangle barycentric XYZ; affine native-center bilinear VEG and slope; circular aspect. Require >=0.999 finite support. Interpolated N is effective support, not a native integer count.",
+  "macro_dem": "Mask-aware Gaussian sigma 300 m on raw master grid; feature only, no geometry smoothing.",
+  "seed_streams": {
+    "screen_density_noise": 101,
+    "root_placement_and_C_thinning": 202,
+    "branching_geometry": 303
+  },
+  "panel_rule": {
+    "continuous_mm": [
+      600,
+      900
+    ],
+    "panels_mm": [
+      [
+        300,
+        900
+      ],
+      [
+        300,
+        900
+      ]
+    ],
+    "physical_gap_mm": 40,
+    "physical_pair_mm": [
+      640,
+      900
+    ]
+  },
+  "limitations": [
+    "NDVI is a vegetation proxy; no species, tree, path, building or meteorology inventory.",
+    "Density attenuation is a digital ink coverage proxy; no pigment or brush calibration.",
+    "Masks are applied only to visible terrain and foreground marks; no hidden terrain is invented."
+  ]
+}
