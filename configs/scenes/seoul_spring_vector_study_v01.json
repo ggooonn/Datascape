@@ -1,0 +1,51 @@
+{
+  "study": "Spring Vector Stroke Study v0.1",
+  "selection": "configs/scenes/seoul_spring_selected_C.json",
+  "seed": 20261015,
+  "terrain_width_mm": 0.32,
+  "vegetation_width_mm": 0.32,
+  "minimum_stroke_mm": 2.4,
+  "taebaek": {
+    "first_depth_m": 40,
+    "depth_pitch_m": 20,
+    "spline_knot_mm": 3
+  },
+  "structure": {
+    "derivative_sigma_m": 60,
+    "minimum_cross_curvature_per_m": 0.00012,
+    "axis_minimum_mm": 5,
+    "elevation_pitch_m": 18
+  },
+  "flow": {
+    "seed_spacing_mm": 7,
+    "integration_step_mm": 1,
+    "maximum_half_length_mm": 85,
+    "separation_mm": 2
+  },
+  "detail_crops_mm": {
+    "near": [
+      80,
+      650,
+      320,
+      810
+    ],
+    "middle": [
+      50,
+      440,
+      290,
+      600
+    ],
+    "far": [
+      150,
+      275,
+      390,
+      435
+    ]
+  },
+  "omission_crop_mm": [
+    60,
+    610,
+    540,
+    890
+  ]
+}

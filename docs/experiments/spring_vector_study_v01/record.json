@@ -1,0 +1,363 @@
+{
+  "study": "Spring Vector Stroke Study v0.1",
+  "provenance": {
+    "baseline_commit": "e4934547f5b901a2fc736baf876cddc9c3af6be7",
+    "selection_sha256": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+    "config_sha256": "804d4e2fcfe3fbde9413fc2fc4b14131a31748f0f23d4cd31b2b4440159fafa4",
+    "seed": 20261015,
+    "input_sha256": {
+      "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+    },
+    "projection": "unchanged F2; no raw DEM edits",
+    "mask_policy": "C 70/30; opaque paths shortened/split/thinned, never alpha-masked"
+  },
+  "config": {
+    "study": "Spring Vector Stroke Study v0.1",
+    "selection": "configs/scenes/seoul_spring_selected_C.json",
+    "seed": 20261015,
+    "terrain_width_mm": 0.32,
+    "vegetation_width_mm": 0.32,
+    "minimum_stroke_mm": 2.4,
+    "taebaek": {
+      "first_depth_m": 40,
+      "depth_pitch_m": 20,
+      "spline_knot_mm": 3
+    },
+    "structure": {
+      "derivative_sigma_m": 60,
+      "minimum_cross_curvature_per_m": 0.00012,
+      "axis_minimum_mm": 5,
+      "elevation_pitch_m": 18
+    },
+    "flow": {
+      "seed_spacing_mm": 7,
+      "integration_step_mm": 1,
+      "maximum_half_length_mm": 85,
+      "separation_mm": 2
+    },
+    "detail_crops_mm": {
+      "near": [
+        80,
+        650,
+        320,
+        810
+      ],
+      "middle": [
+        50,
+        440,
+        290,
+        600
+      ],
+      "far": [
+        150,
+        275,
+        390,
+        435
+      ]
+    },
+    "omission_crop_mm": [
+      60,
+      610,
+      540,
+      890
+    ]
+  },
+  "selection": {
+    "selection": "Spring pair F2 C: 70% existing near + 30% selective",
+    "baseline_commit": "e4934547f5b901a2fc736baf876cddc9c3af6be7",
+    "composition_pr": 6,
+    "existing_near_weight": 0.7,
+    "continuity_config": "configs/scenes/seoul_f2_foreground_continuity_v04.json",
+    "selected_image": "docs/experiments/f2_foreground_continuity_v04/C_continuous.png",
+    "retention_archive": "docs/experiments/f2_foreground_continuity_v04/retention_snapshots.npz",
+    "input_sha256": {
+      "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+    },
+    "locked_files_sha256": {
+      "configs/scenes/seoul_f2_foreground_continuity_v04.json": "0fc8afd24963a08ae5255620daf20ea77014505ba7026aaa51b617c9467ea85e",
+      "configs/scenes/seoul_f2_painterly_composition_v03.json": "0ef4b3f58c794d39621219a081753cb5fc5b5fd99247411f923a892d669bb3ad",
+      "configs/scenes/seoul_f2_multidepth_whitespace_v02.json": "696aefe5a48bc0cc23c39f6fbb2d1300f8bd3590d84c3a6e525d74de3f1f6ced",
+      "configs/scenes/seoul_f2_painterly_layers_v01.json": "b7e9aee0fc8a2cdd232a431f1055aed1301128602bb72c8ee11bea9b02553f11",
+      "configs/scenes/seoul_ground_composition_v01.json": "2d0d0b3be3f43607323800219d0eaa70bf52fd145d2a8d28aaa9099503ab299a",
+      "docs/experiments/f2_foreground_continuity_v04/C_continuous.png": "bb4d708d21a69b85e66071ad2ea2ddd99e2e3ebdbe021069dfbf97fb00cd0585",
+      "docs/experiments/f2_foreground_continuity_v04/retention_snapshots.npz": "39d626e473e2953d206ae920e04f82d25bc5ed7d4defd3c88c474dde170f9b83",
+      "docs/experiments/f2_foreground_continuity_v04/record.json": "5e96ea105c2eca2dcd4d651f430c58d17d6793a4435fadbb254c579f13dd71bd",
+      "docs/experiments/f2_painterly_composition_v03/representative_trees.json": "806b002b9d6f32caf7f1c3807154a744a24a256f9ae9cc32a7ce5641031b817e",
+      "docs/experiments/f2_multidepth_whitespace_v02/marks.json": "49a7d431126423d3137d5657c684d21c70e5aacc28657c9eb36ecc64cec233c4",
+      "docs/experiments/f2_painterly_layers_v01/fields.npz": "cbfcdb7822271aaaf7f6cea346e9358b0cb98b34387aceafc18effda7dcb687b",
+      "artworks/2026-08-15_taebaek_yang/original/source.py": "1a035cb3f18cf183d48650e8075491fac5e647e3e1baceb1e5a8ea69d4bb20f6",
+      "configs/palettes/palette_20.yaml": "28b578c5067bfa9025338ba887606ec66569fe4a18d1aae963f353ec2b5e27e4",
+      "hardware/fluidnc/tool_coordinates.yaml": "eb781167ed386d8b6a5f8aae9cb652b776ee152e389aa39b8025356d63f194ec"
+    },
+    "panel_rule": {
+      "continuous_mm": [
+        600,
+        900
+      ],
+      "panel_mm": [
+        300,
+        900
+      ],
+      "physical_gap_mm": 40
+    },
+    "policy": "Freeze camera, projection, DEM, NDVI, omission and archived vegetation geometry. Recompute fields in float64. No composition tuning."
+  },
+  "invariants": {
+    "selected_C_pixels_identical": true,
+    "selected_retention_float16_identical": true,
+    "raw_inputs_unchanged": true,
+    "locked_files_unchanged": true,
+    "shared_vegetation_vector_count": 2012
+  },
+  "metrics": {
+    "A": {
+      "before_omission": {
+        "terrain_vectors": 1009,
+        "context_vectors": 0,
+        "terrain_length_mm": 100529.34217711393,
+        "length_mm_p10_p50_p90": [
+          4.356171865280713,
+          37.057947914777955,
+          300.1670505178553
+        ],
+        "sampled_other_path_distance_mm_p10_p50_p90": [
+          1.7275466499098557,
+          3.094492139107026,
+          5.664316809327633
+        ],
+        "half_mm_cells_with_multiple_parent_paths_fraction": 1.5096618357487922e-05,
+        "maximum_parent_paths_per_half_mm_cell": 2,
+        "depth_density": {
+          "near": {
+            "length_mm": 46437.8289094996,
+            "area_mm2": 209390,
+            "length_per_area_mm_per_mm2": 0.22177672720521324
+          },
+          "middle": {
+            "length_mm": 44961.6753627475,
+            "area_mm2": 139361,
+            "length_per_area_mm_per_mm2": 0.3226273875958661
+          },
+          "far": {
+            "length_mm": 9121.503654792072,
+            "area_mm2": 27048,
+            "length_per_area_mm_per_mm2": 0.33723394168855636
+          }
+        }
+      },
+      "after_omission": {
+        "terrain_vectors": 1657,
+        "context_vectors": 2012,
+        "terrain_length_mm": 67167.68377965756,
+        "length_mm_p10_p50_p90": [
+          5.733217893375467,
+          34.14474591286694,
+          71.91220467607486
+        ],
+        "sampled_other_path_distance_mm_p10_p50_p90": [
+          1.700169682443739,
+          3.166780512070308,
+          5.74904557104403
+        ],
+        "half_mm_cells_with_multiple_parent_paths_fraction": 2.2523029797968422e-05,
+        "maximum_parent_paths_per_half_mm_cell": 2,
+        "depth_density": {
+          "near": {
+            "length_mm": 23087.470045976697,
+            "area_mm2": 209390,
+            "length_per_area_mm_per_mm2": 0.11026061438452982
+          },
+          "middle": {
+            "length_mm": 35466.88949610315,
+            "area_mm2": 139361,
+            "length_per_area_mm_per_mm2": 0.2544965198018323
+          },
+          "far": {
+            "length_mm": 8606.380981199367,
+            "area_mm2": 27048,
+            "length_per_area_mm_per_mm2": 0.31818918149953296
+          }
+        }
+      },
+      "checks": {
+        "zero_core_sample_violations": 0,
+        "maximum_centerline_y_mm": 891.515,
+        "last_2mm_footprint_empty": true,
+        "opaque_black_only": true
+      },
+      "length_retained_fraction": 0.6681400904953764
+    },
+    "B": {
+      "before_omission": {
+        "terrain_vectors": 356,
+        "context_vectors": 0,
+        "terrain_length_mm": 31151.422977334478,
+        "length_mm_p10_p50_p90": [
+          6.905335202171375,
+          38.68787395090064,
+          313.5021529520896
+        ],
+        "sampled_other_path_distance_mm_p10_p50_p90": [
+          1.6750565169721268,
+          6.243730771484778,
+          9.882212329469853
+        ],
+        "half_mm_cells_with_multiple_parent_paths_fraction": 0.005376432482201871,
+        "maximum_parent_paths_per_half_mm_cell": 2,
+        "depth_density": {
+          "near": {
+            "length_mm": 6497.662979932275,
+            "area_mm2": 209390,
+            "length_per_area_mm_per_mm2": 0.0310313910880762
+          },
+          "middle": {
+            "length_mm": 19950.44410635659,
+            "area_mm2": 139361,
+            "length_per_area_mm_per_mm2": 0.14315657971998327
+          },
+          "far": {
+            "length_mm": 4669.819403646886,
+            "area_mm2": 27048,
+            "length_per_area_mm_per_mm2": 0.17264934204550747
+          }
+        }
+      },
+      "after_omission": {
+        "terrain_vectors": 505,
+        "context_vectors": 2012,
+        "terrain_length_mm": 24112.229814136328,
+        "length_mm_p10_p50_p90": [
+          7.295364115021957,
+          35.66513662612715,
+          97.2979773633849
+        ],
+        "sampled_other_path_distance_mm_p10_p50_p90": [
+          1.8151973430119406,
+          6.365322169815201,
+          10.328064657916606
+        ],
+        "half_mm_cells_with_multiple_parent_paths_fraction": 0.005293236888167191,
+        "maximum_parent_paths_per_half_mm_cell": 2,
+        "depth_density": {
+          "near": {
+            "length_mm": 3439.7551503052555,
+            "area_mm2": 209390,
+            "length_per_area_mm_per_mm2": 0.016427504419051796
+          },
+          "middle": {
+            "length_mm": 16155.60924410739,
+            "area_mm2": 139361,
+            "length_per_area_mm_per_mm2": 0.1159263297773939
+          },
+          "far": {
+            "length_mm": 4490.652123409943,
+            "area_mm2": 27048,
+            "length_per_area_mm_per_mm2": 0.16602529293884732
+          }
+        }
+      },
+      "checks": {
+        "zero_core_sample_violations": 0,
+        "maximum_centerline_y_mm": 873.89,
+        "last_2mm_footprint_empty": true,
+        "opaque_black_only": true
+      },
+      "length_retained_fraction": 0.7740330138908964
+    },
+    "C": {
+      "before_omission": {
+        "terrain_vectors": 1417,
+        "context_vectors": 0,
+        "terrain_length_mm": 69080.04505239059,
+        "length_mm_p10_p50_p90": [
+          6.999230101801225,
+          35.99914836257105,
+          108.93086674084667
+        ],
+        "sampled_other_path_distance_mm_p10_p50_p90": [
+          3.1302167514045927,
+          4.105698023025911,
+          5.679937144669587
+        ],
+        "half_mm_cells_with_multiple_parent_paths_fraction": 0.0,
+        "maximum_parent_paths_per_half_mm_cell": 1,
+        "depth_density": {
+          "near": {
+            "length_mm": 39140.26678130901,
+            "area_mm2": 209390,
+            "length_per_area_mm_per_mm2": 0.18692519595639243
+          },
+          "middle": {
+            "length_mm": 25499.96462273383,
+            "area_mm2": 139361,
+            "length_per_area_mm_per_mm2": 0.18297776725722284
+          },
+          "far": {
+            "length_mm": 4390.403820281717,
+            "area_mm2": 27048,
+            "length_per_area_mm_per_mm2": 0.1623189818205308
+          }
+        }
+      },
+      "after_omission": {
+        "terrain_vectors": 1509,
+        "context_vectors": 2012,
+        "terrain_length_mm": 42543.8782578993,
+        "length_mm_p10_p50_p90": [
+          5.998738802901454,
+          23.68456422473415,
+          55.7663882924764
+        ],
+        "sampled_other_path_distance_mm_p10_p50_p90": [
+          3.277588303105759,
+          4.398789100676888,
+          6.963224109563037
+        ],
+        "half_mm_cells_with_multiple_parent_paths_fraction": 0.0,
+        "maximum_parent_paths_per_half_mm_cell": 1,
+        "depth_density": {
+          "near": {
+            "length_mm": 18138.753434641334,
+            "area_mm2": 209390,
+            "length_per_area_mm_per_mm2": 0.08662664613707118
+          },
+          "middle": {
+            "length_mm": 20223.205440685557,
+            "area_mm2": 139361,
+            "length_per_area_mm_per_mm2": 0.14511380831570925
+          },
+          "far": {
+            "length_mm": 4176.4333273941365,
+            "area_mm2": 27048,
+            "length_per_area_mm_per_mm2": 0.1544082123408066
+          }
+        }
+      },
+      "checks": {
+        "zero_core_sample_violations": 0,
+        "maximum_centerline_y_mm": 891.293,
+        "last_2mm_footprint_empty": true,
+        "opaque_black_only": true
+      },
+      "length_retained_fraction": 0.6158634990123971
+    }
+  },
+  "structure_candidate_counts": {
+    "ridge_axes": 37,
+    "valley_axes": 32,
+    "slope_contours": 181
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "limits": [
+    "Vector study, not calibrated machine-ready output. No G-code or hardware calls.",
+    "Line widths are nominal preview footprints, not measured brush marks.",
+    "Spacing and overlap use sampled centerlines; crossings count as overlap.",
+    "Ridge/valley and Hessian fields are scale-dependent DEM proxies. No invented objects."
+  ]
+}
