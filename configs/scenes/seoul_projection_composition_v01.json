@@ -1,0 +1,60 @@
+{
+  "study": "Projection & Composition Study v0.1",
+  "base_main": "ca358f1254edc3e271fd8036afbd5ac68e1ba7b9",
+  "source_composition": "B-V3 from Terrain Viewpoint Exploration v0.1",
+  "roi_bounds_m": [
+    318120,
+    4167770,
+    325320,
+    4174970
+  ],
+  "target_raw_xyz_m": [
+    321720,
+    4171370,
+    252.822509765625
+  ],
+  "camera": {
+    "azimuth_deg": 240.0,
+    "elevation_deg": 10.0,
+    "distance_m": 6480.0,
+    "vertical_exaggeration": 1.8,
+    "vertical_fov_deg": 38.0
+  },
+  "mapping": {
+    "horizontal_shift_fraction": 0.0,
+    "transition_fraction": 0.12,
+    "p1_height_multipliers": [
+      1.15,
+      1.24,
+      1.08
+    ],
+    "p1_vertical_warp": 1.08,
+    "p2_elevations_deg": [
+      8.0,
+      12.0,
+      16.0
+    ],
+    "p2_vertical_offsets": [
+      0.1,
+      -0.01,
+      -0.12
+    ],
+    "p3_width_scale_m": 5200.0,
+    "p3_bottom_fraction": 1.04,
+    "p3_depth_rise_fraction": 0.95,
+    "p3_relief_fraction_per_km": 0.45,
+    "p3_depth_power": 0.85
+  },
+  "raster_pixels": [
+    600,
+    900
+  ],
+  "mesh_stride": 2,
+  "painted_panel_mm": [
+    300,
+    900
+  ],
+  "panel_count": 2,
+  "physical_gap_mm": 40,
+  "layout_policy": "600 x 900 mm continuous painting; insert 40 mm after splitting, without removing content"
+}
