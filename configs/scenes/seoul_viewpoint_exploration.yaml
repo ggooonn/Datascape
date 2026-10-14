@@ -1,0 +1,33 @@
+schema_version: 1
+input_crs: EPSG:32652
+random_seed: null
+selection:
+  spans_m: [4800, 7200, 6000]
+  scan_step_pixels: 30
+  keep_per_type: 5
+  selected_ranks: {A: 0, B: 1, C: 0}
+  reason: Distinct crop centers and terrain character, not three independent mountain ranges.
+camera:
+  vertical_fov_deg: 22
+  elevation_deg: 12
+  distance_to_roi_width_ratio: 0.9
+  vertical_exaggeration: 1.8
+  near_m: 1
+  bearings_deg: {A: [0, 90, 225], B: [20, 110, 240], C: [350, 100, 210]}
+  controls:
+    high_elevation_deg: 28
+    far_distance_multiplier: 1.3
+    unexaggerated_scale: 1.0
+preview:
+  width_px: 1200
+  height_px: 675
+  mesh_stride: 2
+  shortlist_view_indices: {A: 0, B: 2, C: 0}
+  lighting: Northwest azimuth, 45-degree altitude; Lambert shading without cast shadows.
+  distance_tone_max: 0.15
+screen:
+  panel_width_mm: 300
+  panel_height_mm: 900
+  gap_mm: 40
+  pair_width_mm: 640
+  pair_display: Center crop preserving vertical field of view; blank gap without stretching.
