@@ -1,0 +1,19 @@
+{
+  "nbformat_valid": true,
+  "code_cells_replayed": 7,
+  "byte_identical_artifacts": 51,
+  "method": "Actual notebook code cells executed sequentially in one Python namespace; no kernel socket launched.",
+  "tests": {
+    "passed": 82,
+    "command": "python -m pytest tests -q"
+  },
+  "png_files_decoded": 39,
+  "vector_archives_decoded": 7,
+  "svg_files_parsed": 4,
+  "original_local_blobs_identical": 300,
+  "remote_parent_blobs_to_preserve": 344,
+  "bottom_2mm_white_in_render": true,
+  "terrain_zero_core_violations": 0,
+  "original_input_hashes_match": true,
+  "D_length_fraction": 0.013798265388198339
+}

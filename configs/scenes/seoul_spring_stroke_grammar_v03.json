@@ -1,0 +1,98 @@
+{
+  "study": "Spring Stroke Grammar Refinement v0.3",
+  "parent_commit": "f98e7d8b9946216737894fb89164a59e0f0fd57a",
+  "selection": "configs/scenes/seoul_spring_selected_C.json",
+  "hierarchy_config": "configs/scenes/seoul_spring_stroke_hierarchy_v02.json",
+  "vector_config": "configs/scenes/seoul_spring_vector_study_v01.json",
+  "hierarchy_pool": "docs/experiments/spring_stroke_hierarchy_v02/layer_pool.json.gz",
+  "seed": 20261015,
+  "locked_source_sha256": {
+    "configs/scenes/seoul_spring_selected_C.json": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+    "configs/scenes/seoul_spring_stroke_hierarchy_v02.json": "fbb1944a10d790f7b15b17c497f054a87e073cd74d6c0fc80245401418ad06ca",
+    "configs/scenes/seoul_spring_vector_study_v01.json": "804d4e2fcfe3fbde9413fc2fc4b14131a31748f0f23d4cd31b2b4440159fafa4",
+    "docs/experiments/spring_stroke_hierarchy_v02/layer_pool.json.gz": "b5a07c45c2d29055b807fe7ef7fda36ba78916b85e46a4c7fb6fddb49f80273a"
+  },
+  "D": {
+    "maximum_join_gap_mm": 12,
+    "maximum_join_angle_deg": 30,
+    "maximum_join_depth_change_m": 180,
+    "maximum_join_source_gap_m": 250,
+    "anchor_distance_mm": 6,
+    "maximum_path_mm": 150,
+    "connected_minimum_mm": 20,
+    "filtered_minimum_mm": 30,
+    "minimum_spacing_mm": 6,
+    "maximum_per_chain": 2,
+    "maximum_length_fraction": 0.035,
+    "release_threshold": 0.18
+  },
+  "mist": {
+    "density_exponent": {
+      "near": 0.95,
+      "middle": 1.15,
+      "far": 0.85
+    },
+    "opacity_exponent": {
+      "near": 0.7,
+      "middle": 0.9,
+      "far": 0.65
+    },
+    "minimum_path_mm": 3.5,
+    "length_cycle_mm": 120,
+    "minimum_window_mm": 10,
+    "minimum_width_fraction": 0.25,
+    "width_exponent": 0.4
+  },
+  "vegetation": {
+    "hero_trunk_width_mm": 0.78,
+    "trunk_width_mm": 0.55,
+    "branch_width_mm": 0.3,
+    "twig_width_mm": 0.17,
+    "foliage_width_mm": 0.24,
+    "hero_leaf_marks": 260,
+    "leaf_marks": 70,
+    "cluster_marks": 12,
+    "cluster_width_mm": 0.22,
+    "far_width_mm": 0.2,
+    "minimum_far_ridge_support": 0.12,
+    "minimum_retention": 0.025,
+    "minimum_touch_mm": 0.35,
+    "role_opacity": {
+      "near": 0.9,
+      "middle": 0.7,
+      "far": 0.45
+    }
+  },
+  "mist_crops_mm": {
+    "near": [
+      60,
+      760,
+      360,
+      890
+    ],
+    "middle": [
+      160,
+      460,
+      440,
+      620
+    ],
+    "far": [
+      200,
+      310,
+      440,
+      430
+    ]
+  },
+  "D_detail_mm": [
+    180,
+    215,
+    420,
+    400
+  ],
+  "vegetation_detail_mm": [
+    350,
+    470,
+    600,
+    800
+  ]
+}
