@@ -1,0 +1,345 @@
+{
+  "study": "Projection & Composition Study v0.1",
+  "base_main": "ca358f1254edc3e271fd8036afbd5ac68e1ba7b9",
+  "input": {
+    "filename": "SeoulNorth_v02_MASTER_30m.tif",
+    "sha256": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+    "crs": "EPSG:32652",
+    "dem_band": 1,
+    "native_resolution_m": [
+      30.0,
+      30.0
+    ]
+  },
+  "configuration": {
+    "study": "Projection & Composition Study v0.1",
+    "base_main": "ca358f1254edc3e271fd8036afbd5ac68e1ba7b9",
+    "source_composition": "B-V3 from Terrain Viewpoint Exploration v0.1",
+    "roi_bounds_m": [
+      318120,
+      4167770,
+      325320,
+      4174970
+    ],
+    "target_raw_xyz_m": [
+      321720,
+      4171370,
+      252.822509765625
+    ],
+    "camera": {
+      "azimuth_deg": 240.0,
+      "elevation_deg": 10.0,
+      "distance_m": 6480.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 38.0
+    },
+    "mapping": {
+      "horizontal_shift_fraction": 0.0,
+      "transition_fraction": 0.12,
+      "p1_height_multipliers": [
+        1.15,
+        1.24,
+        1.08
+      ],
+      "p1_vertical_warp": 1.08,
+      "p2_elevations_deg": [
+        8.0,
+        12.0,
+        16.0
+      ],
+      "p2_vertical_offsets": [
+        0.1,
+        -0.01,
+        -0.12
+      ],
+      "p3_width_scale_m": 5200.0,
+      "p3_bottom_fraction": 1.04,
+      "p3_depth_rise_fraction": 0.95,
+      "p3_relief_fraction_per_km": 0.45,
+      "p3_depth_power": 0.85
+    },
+    "raster_pixels": [
+      600,
+      900
+    ],
+    "mesh_stride": 2,
+    "painted_panel_mm": [
+      300,
+      900
+    ],
+    "panel_count": 2,
+    "physical_gap_mm": 40,
+    "layout_policy": "600 x 900 mm continuous painting; insert 40 mm after splitting, without removing content"
+  },
+  "projection": {
+    "camera": {
+      "azimuth_deg": 240.0,
+      "elevation_deg": 10.0,
+      "distance_m": 6480.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 38.0,
+      "near_m": 1.0,
+      "target_raw_xyz_m": [
+        321720.0,
+        4171370.0,
+        252.822509765625
+      ],
+      "eye_display_xyz_m": [
+        327331.8446165232,
+        4174610.0,
+        1597.679352568978
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration"
+    },
+    "target_raw_xyz_m": [
+      321720,
+      4171370,
+      252.822509765625
+    ],
+    "depth_extent_m": [
+      -4897.2010725672135,
+      4897.2010725672135
+    ],
+    "horizontal_shift_fraction": 0.0,
+    "transition_fraction": 0.12,
+    "p1_height_multipliers": [
+      1.15,
+      1.24,
+      1.08
+    ],
+    "p1_vertical_warp": 1.08,
+    "p2_elevations_deg": [
+      8.0,
+      12.0,
+      16.0
+    ],
+    "p2_vertical_offsets": [
+      0.1,
+      -0.01,
+      -0.12
+    ],
+    "p3_width_scale_m": 5200.0,
+    "p3_bottom_fraction": 1.04,
+    "p3_depth_rise_fraction": 0.95,
+    "p3_relief_fraction_per_km": 0.45,
+    "p3_depth_power": 0.85,
+    "visibility_rule": "P0 forward depth for all methods; reciprocal-depth screen-triangle interpolation",
+    "depth_rule": "Three equal horizontal look-axis thirds of the native ROI, with smooth blending",
+    "height_rule": "Display mapping only; source DEM samples remain unchanged"
+  },
+  "roi_raw_dem_range_m": [
+    33.08192443847656,
+    801.7711791992188
+  ],
+  "raw_dem_preserved": true,
+  "input_hash_unchanged": true,
+  "roi_bounds_m": [
+    318120.0,
+    4167770.0,
+    325320.0,
+    4174970.0
+  ],
+  "roi_valid_fraction": 1.0,
+  "random_seed": null,
+  "randomness": "None; deterministic geometry",
+  "shading": "Raw-world normals, fixed NW light at 45 degrees, same depth tone in all methods; no cast shadows",
+  "results": {
+    "P0": {
+      "bands": [
+        {
+          "label": "foreground",
+          "frame_fraction": 0.27306296296296295,
+          "visible_terrain_fraction": 0.672348070329029,
+          "centroid_y_fraction": 0.6526535657824738
+        },
+        {
+          "label": "middle_ground",
+          "frame_fraction": 0.12832407407407406,
+          "visible_terrain_fraction": 0.3159653826512001,
+          "centroid_y_fraction": 0.44513092976084534
+        },
+        {
+          "label": "background",
+          "frame_fraction": 0.004746296296296296,
+          "visible_terrain_fraction": 0.01168654701977092,
+          "centroid_y_fraction": 0.41225300212424676
+        }
+      ],
+      "terrain_frame_fraction": 0.40613333333333335,
+      "white_above_or_beside_roi_fraction": 0.3836555555555556,
+      "missing_ground_frame_fraction": 0.2102111111111111,
+      "vertices_in_frame_fraction": 0.45979166666666665,
+      "near_plane_discarded_triangles": 0,
+      "orientation_changed_vs_P0_fraction": 0.0,
+      "orientation_changed_visible_triangle_fraction": 0.0,
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0
+    },
+    "P1": {
+      "bands": [
+        {
+          "label": "foreground",
+          "frame_fraction": 0.3008314814814815,
+          "visible_terrain_fraction": 0.6719793834049647,
+          "centroid_y_fraction": 0.6436936173472563
+        },
+        {
+          "label": "middle_ground",
+          "frame_fraction": 0.14672037037037036,
+          "visible_terrain_fraction": 0.3277351942319863,
+          "centroid_y_fraction": 0.41141565728598256
+        },
+        {
+          "label": "background",
+          "frame_fraction": 0.0001277777777777778,
+          "visible_terrain_fraction": 0.0002854223630489727,
+          "centroid_y_fraction": 0.3887278582930757
+        }
+      ],
+      "terrain_frame_fraction": 0.44767962962962965,
+      "white_above_or_beside_roi_fraction": 0.34654814814814816,
+      "missing_ground_frame_fraction": 0.20577222222222222,
+      "vertices_in_frame_fraction": 0.4590972222222222,
+      "near_plane_discarded_triangles": 0,
+      "orientation_changed_vs_P0_fraction": 0.02033754678341925,
+      "orientation_changed_visible_triangle_fraction": 0.0005534034311012728,
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0
+    },
+    "P2": {
+      "bands": [
+        {
+          "label": "foreground",
+          "frame_fraction": 0.24774814814814816,
+          "visible_terrain_fraction": 0.4351831370763125,
+          "centroid_y_fraction": 0.6891638096566937
+        },
+        {
+          "label": "middle_ground",
+          "frame_fraction": 0.2065648148148148,
+          "visible_terrain_fraction": 0.3628423654934617,
+          "centroid_y_fraction": 0.4584024484388463
+        },
+        {
+          "label": "background",
+          "frame_fraction": 0.11498333333333334,
+          "visible_terrain_fraction": 0.20197449743022575,
+          "centroid_y_fraction": 0.30887165611763384
+        }
+      ],
+      "terrain_frame_fraction": 0.5692962962962963,
+      "white_above_or_beside_roi_fraction": 0.24368703703703704,
+      "missing_ground_frame_fraction": 0.18701666666666666,
+      "vertices_in_frame_fraction": 0.4609722222222222,
+      "near_plane_discarded_triangles": 0,
+      "orientation_changed_vs_P0_fraction": 0.0837864557587741,
+      "orientation_changed_visible_triangle_fraction": 0.11844262295081967,
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0
+    },
+    "P3": {
+      "bands": [
+        {
+          "label": "foreground",
+          "frame_fraction": 0.18756666666666666,
+          "visible_terrain_fraction": 0.2956176577891281,
+          "centroid_y_fraction": 0.7509764100336341
+        },
+        {
+          "label": "middle_ground",
+          "frame_fraction": 0.32739259259259257,
+          "visible_terrain_fraction": 0.5159927033929222,
+          "centroid_y_fraction": 0.4894557508886777
+        },
+        {
+          "label": "background",
+          "frame_fraction": 0.11953148148148147,
+          "visible_terrain_fraction": 0.18838963881794965,
+          "centroid_y_fraction": 0.29232039358056056
+        }
+      ],
+      "terrain_frame_fraction": 0.6344907407407407,
+      "white_above_or_beside_roi_fraction": 0.21322962962962963,
+      "missing_ground_frame_fraction": 0.15227962962962963,
+      "vertices_in_frame_fraction": 0.760625,
+      "near_plane_discarded_triangles": 0,
+      "orientation_changed_vs_P0_fraction": 0.13169973871901702,
+      "orientation_changed_visible_triangle_fraction": 0.11544800069390233,
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0
+    }
+  },
+  "native_sampling_results": {
+    "P2": {
+      "bands": [
+        {
+          "label": "foreground",
+          "frame_fraction": 0.2626907407407407,
+          "visible_terrain_fraction": 0.44951642752116816,
+          "centroid_y_fraction": 0.6950397320543881
+        },
+        {
+          "label": "middle_ground",
+          "frame_fraction": 0.20622037037037036,
+          "visible_terrain_fraction": 0.35288432287177407,
+          "centroid_y_fraction": 0.45778531097122316
+        },
+        {
+          "label": "background",
+          "frame_fraction": 0.11547407407407408,
+          "visible_terrain_fraction": 0.19759924960705774,
+          "centroid_y_fraction": 0.3083252079457737
+        }
+      ],
+      "terrain_frame_fraction": 0.5843851851851852,
+      "white_above_or_beside_roi_fraction": 0.2428722222222222,
+      "missing_ground_frame_fraction": 0.1727425925925926,
+      "vertices_in_frame_fraction": 0.4603993055555556,
+      "near_plane_discarded_triangles": 0,
+      "orientation_changed_vs_P0_fraction": 0.0833756411827524,
+      "orientation_changed_visible_triangle_fraction": 0.10316536715931572,
+      "mesh_stride": 1,
+      "mesh_spacing_m": 30.0
+    },
+    "P3": {
+      "bands": [
+        {
+          "label": "foreground",
+          "frame_fraction": 0.19270185185185185,
+          "visible_terrain_fraction": 0.3010043215911786,
+          "centroid_y_fraction": 0.7538534976418292
+        },
+        {
+          "label": "middle_ground",
+          "frame_fraction": 0.3280462962962963,
+          "visible_terrain_fraction": 0.512415173586805,
+          "centroid_y_fraction": 0.48884150774161783
+        },
+        {
+          "label": "background",
+          "frame_fraction": 0.11944814814814815,
+          "visible_terrain_fraction": 0.1865805048220164,
+          "centroid_y_fraction": 0.291630612659728
+        }
+      ],
+      "terrain_frame_fraction": 0.6401962962962963,
+      "white_above_or_beside_roi_fraction": 0.21247777777777777,
+      "missing_ground_frame_fraction": 0.14732592592592592,
+      "vertices_in_frame_fraction": 0.7606944444444445,
+      "near_plane_discarded_triangles": 0,
+      "orientation_changed_vs_P0_fraction": 0.13068748796414628,
+      "orientation_changed_visible_triangle_fraction": 0.09461549615737831,
+      "mesh_stride": 1,
+      "mesh_spacing_m": 30.0
+    }
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "rasterio": "1.5.2",
+    "matplotlib": "3.10.8"
+  }
+}
