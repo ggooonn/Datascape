@@ -1,0 +1,295 @@
+{
+  "study": "F2 Foreground Continuity: Final Small Comparison v0.4",
+  "base_pr_head": "58d95177ad7ea3b9b07a805861fccf3522be23cc",
+  "config": {
+    "study": "F2 Foreground Continuity: Final Small Comparison v0.4",
+    "base_pr_head": "58d95177ad7ea3b9b07a805861fccf3522be23cc",
+    "source_config": "configs/scenes/seoul_f2_painterly_composition_v03.json",
+    "previous_results": "docs/experiments/f2_painterly_composition_v03",
+    "existing_near_weight": 0.7,
+    "vegetation_policy": "Freeze the exact v0.3 C vegetation coverage for A/B/C; change terrain retention only.",
+    "diagnostics": {
+      "connected_terrain_ink_threshold": 0.05,
+      "minimum_component_pixels": 200,
+      "root_neighborhood_radius_mm": 7
+    }
+  },
+  "config_sha256": "0fc8afd24963a08ae5255620daf20ea77014505ba7026aaa51b617c9467ea85e",
+  "v03_config_sha256": "0ef4b3f58c794d39621219a081753cb5fc5b5fd99247411f923a892d669bb3ad",
+  "v02_config_sha256": "696aefe5a48bc0cc23c39f6fbb2d1300f8bd3590d84c3a6e525d74de3f1f6ced",
+  "F2_config_sha256": "2d0d0b3be3f43607323800219d0eaa70bf52fd145d2a8d28aaa9099503ab299a",
+  "source_inputs": {
+    "master": {
+      "filename": "SeoulNorth_v02_MASTER_30m.tif",
+      "sha256": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        30.0,
+        30.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4151990.0,
+        334290.0,
+        4175900.0
+      ],
+      "shape": [
+        797,
+        900
+      ],
+      "transform": [
+        30.0,
+        0.0,
+        307290.0,
+        0.0,
+        -30.0,
+        4175900.0
+      ],
+      "bands": [
+        "DEM",
+        "SLOPE",
+        "ASPECT",
+        "HILLSHADE",
+        "DEM_NASA",
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0,
+      "unchanged_after": true
+    },
+    "vegetation": {
+      "filename": "SeoulNorth_v02_VEG_10m.tif",
+      "sha256": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4152000.0,
+        334290.0,
+        4175880.0
+      ],
+      "shape": [
+        2388,
+        2700
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        307290.0,
+        0.0,
+        -10.0,
+        4175880.0
+      ],
+      "bands": [
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0,
+      "unchanged_after": true
+    },
+    "site": {
+      "eye_xy_utm_m": [
+        325305,
+        4168385
+      ],
+      "eye_lon_lat_wgs84": [
+        127.01982889659858,
+        37.646014458853045
+      ],
+      "source_dem_at_eye_m": 38.12806701660156,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 2.0,
+      "camera": {
+        "eye_xyz_m": [
+          325305,
+          4168385,
+          40.12806701660156
+        ],
+        "azimuth_deg": 292.1219419718818,
+        "pitch_deg": 0.0,
+        "vertical_fov_deg": 36.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      }
+    }
+  },
+  "previous_artifact_sha256": {
+    "docs/experiments/f2_painterly_composition_v03/C_panel_1.png": "a61e7ac7bb0a9e8b7cc881a957f934e1d0f681c02a0e7d70a1630ae2858b5897",
+    "docs/experiments/f2_painterly_composition_v03/fields.npz": "c728ec99041f268051d6281b299a81db09cfd5386687d214a8e9723088704ede",
+    "docs/experiments/f2_painterly_composition_v03/B_continuous.png": "1f8f4c6cb897efe4795f6cee670289f74d6331c45da9f7f85d0b2005ff37d4eb",
+    "docs/experiments/f2_painterly_composition_v03/ABC_comparison.png": "24b6d28cdcec4a225f49a81d0eac99cc25908c75935cda4fbf8faea506801d44",
+    "docs/experiments/f2_painterly_composition_v03/A_panel_1.png": "2adfe03e532f14ff7723e662c05abbf6a70e218012baed62be04c0b4e9fa8fb9",
+    "docs/experiments/f2_painterly_composition_v03/representative_trees.json": "806b002b9d6f32caf7f1c3807154a744a24a256f9ae9cc32a7ce5641031b817e",
+    "docs/experiments/f2_painterly_composition_v03/B_physical_pair.png": "71c1a796ca7ee19508ff8a705523d4366c74a0b988fbd3284633c7ed58ee1ab6",
+    "docs/experiments/f2_painterly_composition_v03/subtractive_near_continuous.png": "f9c56d78bc051388912542bbbd57e1c24961af1979c19c81e20828674b6ee102",
+    "docs/experiments/f2_painterly_composition_v03/A_panel_2.png": "6a06dffbbb331bcd8fcd65badfc7971a4653f2ccf772105fbeb89b938f348843",
+    "docs/experiments/f2_painterly_composition_v03/C_continuous.png": "8f6d0e5da4e7251f2548400143b52f295af8c37b09e0d4b8d66b216899051618",
+    "docs/experiments/f2_painterly_composition_v03/C_panel_2.png": "56d603d97a145a555d51c9b2d52cdd76bbdae7f8cabf60f85ee6624cd781a969",
+    "docs/experiments/f2_painterly_composition_v03/B_panel_1.png": "0230d5012a2e770f59e5fc51d03d2a30853921f603247cd4e4f4b87b063b2902",
+    "docs/experiments/f2_painterly_composition_v03/near_comparison.png": "decb25f8f296ac5fcdaf57619a84b6bdbff105de1c30bb33dad2a75067492ae3",
+    "docs/experiments/f2_painterly_composition_v03/fields.png": "1ef87c49e47536ca02fae73f4455a41200be8d895b001ea870b4af7ef16f06b6",
+    "docs/experiments/f2_painterly_composition_v03/A_continuous.png": "48d37e3af08c04f967f428fed349b21b56637f5ed87e2bdea29d8046fcf551d0",
+    "docs/experiments/f2_painterly_composition_v03/far_comparison.png": "b2d58f1e27b3ba0f194ad84a45864d75a7374108aa7e4283d5574edbcaac5476",
+    "docs/experiments/f2_painterly_composition_v03/B_panel_2.png": "9bfac57382456a429fc3c017cf12339395c9464e4ec95769496d6241ac6f4542",
+    "docs/experiments/f2_painterly_composition_v03/A_physical_pair.png": "b4ac9e2d82423d1dfa84b878df650de89c9e2862f86f0740051487cba85049bf",
+    "docs/experiments/f2_painterly_composition_v03/C_physical_pair.png": "0480c1c21ea69832d4b59b066f552177c3af16af645f3cc72fa847915166170f",
+    "docs/experiments/f2_painterly_composition_v03/README.md": "5c78f7980b791982ba0f602fd0cbdc7327c45587275e4f0cdbebf2d6046f50a9",
+    "docs/experiments/f2_painterly_composition_v03/boundary_diagnostics.png": "7136a76f0371cc46a46ea548235e1539bd5363451bd915ddfd8cd71fc83af251",
+    "docs/experiments/f2_painterly_composition_v03/representative_depth.png": "f3088cba150d6e07084a9343ff6a4d297ed2df15068491e9d055b3b161d10102",
+    "docs/experiments/f2_painterly_composition_v03/record.json": "dfa71f324883588cff3dadd0807eb80a220019e3e3b3eaadfab908aa3e1418ff",
+    "docs/experiments/f2_multidepth_whitespace_v02/local_only_continuous.png": "f2618859d7cf41f1b2a5dfb6386920a42ddafe48df9ec86de6e189a13789681e",
+    "docs/experiments/f2_multidepth_whitespace_v02/vegetation_fields.png": "aa1b210177a2a7668cfa63b1bd51aa19c42dd60f145588ab1eedf53fea91a454",
+    "docs/experiments/f2_multidepth_whitespace_v02/fields.npz": "259bec193cd2860ac5ccbc8e8a516cf14979d2c92110460a77a4503890fcea38",
+    "docs/experiments/f2_multidepth_whitespace_v02/vegetation_grammar.png": "66553fece25a1dc0219e93a36d84e3fb07c76d1661af6fa1a6e0bd90e3514dc3",
+    "docs/experiments/f2_multidepth_whitespace_v02/terrain_features.png": "19a4a62437ea5c9362f6b89bb4d9b85c5b6f21e4cedbd29ddd09dcd4706e0734",
+    "docs/experiments/f2_multidepth_whitespace_v02/global_envelope.png": "8223cc89492a9d6c1a0a2f1ab44ddf297872384902dfa86c104134062dafffd0",
+    "docs/experiments/f2_multidepth_whitespace_v02/local_fields.png": "febbe43d96c491db22897ef0eb841cbec3470451222e94609b558cfc784842cd",
+    "docs/experiments/f2_multidepth_whitespace_v02/global_local_continuous.png": "9cc91f41f851b96c776a7067484648e455663effa7cf62002f51b41a34472fe2",
+    "docs/experiments/f2_multidepth_whitespace_v02/envelope_profiles.png": "0af78011ec34e7aa9734461bd8d1e02a1ea9254e160801c8d9d74304670c6a41",
+    "docs/experiments/f2_multidepth_whitespace_v02/depth_vegetation_continuous.png": "48d37e3af08c04f967f428fed349b21b56637f5ed87e2bdea29d8046fcf551d0",
+    "docs/experiments/f2_multidepth_whitespace_v02/panel_1.png": "2adfe03e532f14ff7723e662c05abbf6a70e218012baed62be04c0b4e9fa8fb9",
+    "docs/experiments/f2_multidepth_whitespace_v02/ablation.png": "1a72d83960ca6d22ee24015a5fad085093cad570d9b9d1d70e0fdbffe18e50d3",
+    "docs/experiments/f2_multidepth_whitespace_v02/gradation.png": "6539f61582440f1b59a1086e3da4d810533cf81fdbf61aea1203045969393287",
+    "docs/experiments/f2_multidepth_whitespace_v02/soft_only_continuous.png": "eae2444085bd81f321450a65cd6aa046aa1b9f2dc62e934792660840ad8b50c8",
+    "docs/experiments/f2_multidepth_whitespace_v02/depth_compositing.png": "7cf65c51bfbfaf532e620b7c6e1115da69f467f347a6e0ffc5f77f7cd6716cbb",
+    "docs/experiments/f2_multidepth_whitespace_v02/marks.json": "49a7d431126423d3137d5657c684d21c70e5aacc28657c9eb36ecc64cec233c4",
+    "docs/experiments/f2_multidepth_whitespace_v02/comparison.png": "3d2ec01067a364cf532ac1a2329a4c835022c914787d439064b74269b2d87ccb",
+    "docs/experiments/f2_multidepth_whitespace_v02/physical_pair.png": "b4ac9e2d82423d1dfa84b878df650de89c9e2862f86f0740051487cba85049bf",
+    "docs/experiments/f2_multidepth_whitespace_v02/README.md": "15f86887f6ec0214e4eecb72551951d702a05e5ddcec6f25d8817099c3f4e2fe",
+    "docs/experiments/f2_multidepth_whitespace_v02/record.json": "b6a5a95990bf8fe031706129dae9c0009fdb99cd870fc5f2cef6f65159d5e19b",
+    "docs/experiments/f2_multidepth_whitespace_v02/panel_2.png": "6a06dffbbb331bcd8fcd65badfc7971a4653f2ccf772105fbeb89b938f348843",
+    "docs/experiments/f2_painterly_layers_v01/C_panel_1.png": "06d18a43985ad1fc88ed1e932825f5056e0d89d0e6f33b4c755137b75d7f9019",
+    "docs/experiments/f2_painterly_layers_v01/fields.npz": "cbfcdb7822271aaaf7f6cea346e9358b0cb98b34387aceafc18effda7dcb687b",
+    "docs/experiments/f2_painterly_layers_v01/B_continuous.png": "0b68c2ae0841b13b367edac071e6fac96eabc778316647f8df8c4e1009209a1a",
+    "docs/experiments/f2_painterly_layers_v01/ABC_comparison.png": "164453b87b4f16aba499db7c1f1d7a079ccd30fd1ed00c59a994c558a993d0cf",
+    "docs/experiments/f2_painterly_layers_v01/A_panel_1.png": "fa2c21ed61c7a3237a32598a827dc53bb9a40a079ea2019fecb215a860d36ebc",
+    "docs/experiments/f2_painterly_layers_v01/B_physical_pair.png": "88acadf00c50014217004f74b03c8447a4106c6ecb708bc85f7bc1dcc0e8f672",
+    "docs/experiments/f2_painterly_layers_v01/A_panel_2.png": "8d3b46db46a85ce5e39df145cc25fc28fc88e2d4b89a9bcd7ab223fb82e163c1",
+    "docs/experiments/f2_painterly_layers_v01/C_continuous.png": "b97713bc4a30487aa4a8291e5dad5c9108dc5b834a97ef254a10d2aaa9925823",
+    "docs/experiments/f2_painterly_layers_v01/C_panel_2.png": "e1cde2b36aa3b44a8ec516329831cb8118b27a2aa28b596dbf3853cfb33b8e08",
+    "docs/experiments/f2_painterly_layers_v01/B_panel_1.png": "e0d6efdcae399c1a92afebddddd65592911f8828ea12739b4358360a6db47067",
+    "docs/experiments/f2_painterly_layers_v01/fields.png": "212828a51e29e329618a6aefc6800fea602c41fe16a2c4058b69f48506486806",
+    "docs/experiments/f2_painterly_layers_v01/A_continuous.png": "fc1e4d302af7ba862d5d309a89b4ae3030874bbea814afb8cbdf226bcc64586e",
+    "docs/experiments/f2_painterly_layers_v01/plants.json": "508bd860e01b12e72206acee99e8998dc2141bed40440381b23cd39dab7f62ff",
+    "docs/experiments/f2_painterly_layers_v01/data_and_omission.png": "9c92a1c6d932328aeddf2b4759648be330e221965f3ad4d3f5c38801fd0278e9",
+    "docs/experiments/f2_painterly_layers_v01/B_panel_2.png": "c0026d724a2eb510b776b7d10211bbb0215617d8623091b59555b851953b1274",
+    "docs/experiments/f2_painterly_layers_v01/A_physical_pair.png": "4f8f942dd081ab50895c2bf0e58a1305bbd3769fcd790709586904f2bc85922c",
+    "docs/experiments/f2_painterly_layers_v01/C_physical_pair.png": "7e2c23ad982174ff6dfc27abb4614f47adf6dcb11c17f38a4c313a73d82f4130",
+    "docs/experiments/f2_painterly_layers_v01/README.md": "fdb4e21826a2f509be944c4481063cce6d7a2c5ecd9761c9485cc670d9392f33",
+    "docs/experiments/f2_painterly_layers_v01/record.json": "7cf3a66f3349a76a6a37fb74aefe36d674249d09ca72ddcab2c80c8dabaa0aa0"
+  },
+  "metrics": {
+    "A": {
+      "mean_near_terrain_ink": 0.06972915280805649,
+      "last_two_rows_max_terrain_ink": 0.0,
+      "last_two_rows_max_vegetation_ink": 0.0,
+      "last_two_rows_max_final_ink": 0.0,
+      "root_ground_support": {
+        "sites": 42,
+        "mean_terrain_ink_below_root": 0.14389046151085552,
+        "p10_p50_p90_terrain_ink_below_root": [
+          0.08964960047012302,
+          0.11457089745818491,
+          0.23033128010962087
+        ]
+      },
+      "connectivity": {
+        "components_at_least_minimum_pixels": 9,
+        "largest_component_fraction_of_retained_near_pixels": 0.9012291936352285,
+        "retained_near_pixel_fraction": 0.5801432862801393
+      }
+    },
+    "B": {
+      "mean_near_terrain_ink": 0.2190947663131621,
+      "last_two_rows_max_terrain_ink": 0.0,
+      "last_two_rows_max_vegetation_ink": 0.0,
+      "last_two_rows_max_final_ink": 0.0,
+      "root_ground_support": {
+        "sites": 42,
+        "mean_terrain_ink_below_root": 0.27740319044734346,
+        "p10_p50_p90_terrain_ink_below_root": [
+          0.17205907323669092,
+          0.28998619846981877,
+          0.3730471403565685
+        ]
+      },
+      "connectivity": {
+        "components_at_least_minimum_pixels": 1,
+        "largest_component_fraction_of_retained_near_pixels": 1.0,
+        "retained_near_pixel_fraction": 0.9236116649387245
+      }
+    },
+    "C": {
+      "mean_near_terrain_ink": 0.17428508226163045,
+      "last_two_rows_max_terrain_ink": 0.0,
+      "last_two_rows_max_vegetation_ink": 0.0,
+      "last_two_rows_max_final_ink": 0.0,
+      "root_ground_support": {
+        "sites": 42,
+        "mean_terrain_ink_below_root": 0.23734937176639703,
+        "p10_p50_p90_terrain_ink_below_root": [
+          0.161101183144609,
+          0.23274630761176343,
+          0.31424255618799973
+        ]
+      },
+      "connectivity": {
+        "components_at_least_minimum_pixels": 1,
+        "largest_component_fraction_of_retained_near_pixels": 1.0,
+        "retained_near_pixel_fraction": 0.9062790759497036
+      }
+    }
+  },
+  "invariants": {
+    "F2_baseline_pixels_identical": true,
+    "A_v03_C_pixels_identical": true,
+    "vegetation_coverage_identical_A_B_C": true,
+    "v03_far_retention_unchanged": true,
+    "v03_global_retention_unchanged": true,
+    "outside_near_max_retention_difference": 0.0,
+    "boundary_y900": 0.0,
+    "previous_artifacts_unchanged": true
+  },
+  "combination": "R_local_C = 0.70 R_local_existing + 0.30 R_local_selective; multiply the unchanged global retention once. No image/DEM/projection warp.",
+  "vegetation": "Exact shared v0.3 C coverage, including all 42 near/105 middle/65 far small marks and 3 representatives. No re-placement, re-sizing or new randomness.",
+  "source_small_marks": "docs/experiments/f2_multidepth_whitespace_v02/marks.json",
+  "source_representatives": "docs/experiments/f2_painterly_composition_v03/representative_trees.json",
+  "snapshot_archive_sha256": "39d626e473e2953d206ae920e04f82d25bc5ed7d4defd3c88c474dde170f9b83",
+  "snapshot_note": "Derived combinations of existing retention arrays; float16 diagnostics, boolean boundary mask. Recompute in float64 for final stroke sampling.",
+  "panel_rule": {
+    "continuous_mm": [
+      600,
+      900
+    ],
+    "panels_mm": [
+      [
+        300,
+        900
+      ],
+      [
+        300,
+        900
+      ]
+    ],
+    "physical_gap_mm": 40
+  },
+  "next_stage": "After visual choice, freeze the selected terrain retention plus the common v0.3 vegetation/boundary snapshot for actual vector-stroke comparisons.",
+  "diagnostic_limit": "Thresholded image components and root-patch ink are visual proxies, not geographic landform/accessibility claims."
+}
