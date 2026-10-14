@@ -1,15 +1,26 @@
 # Decisions
 
-## 2026-10-14 — 저장소 재구축
+## 2026-10-14 — Repository Structure
 
-- 기준 main: `4e27f59805a79b3147f287f9d503adbf9bda7d14`.
-- 사용자가 제안한 `data/`, `tool_coordinates.yaml`, `configs/rendering/`과 세 실험 notebook 이름을 채택.
-- 이전 README를 별도 문서로 복사하지 않고 최소 소개로 교체.
-- README는 이번 첨부 `output.png`의 금강산 디지털 렌더를 임시 사용.
-- 초기 Python과 GEE 파일은 바이트 보존 이동. 작품 노트북은 바이트 보존 복사.
-- 원본 노트북의 코드 셀만 추출한 `source.py`는 리뷰용 파생본으로 manifest에 명시.
-- 실물 제작 3작품은 독립 관리. 원본 데이터와 최종 제작 파일의 연결 확인은 남음.
-- 새 엔진은 namespace·패키지 기반만 구성. 알고리즘과 최종 제작 G-code는 후속 PR.
-- FluidNC 원본값은 변경하지 않음. 예제·도구 좌표·바탕재 색은 검증 수준을 명시.
-- 원본 TIFF·대량 G-code·캐시·비밀 설정은 로컬 보관.
-- 변경은 별도 브랜치와 PR에서 검토하고 main 병합은 사용자 결정 뒤 진행.
+- Starting main commit: `4e27f59805a79b3147f287f9d503adbf9bda7d14`.
+- Adopted the `data/` package namespace, `tool_coordinates.yaml`, `configs/rendering/`, and three experiment notebook names selected by the owner.
+- Replaced the root README with a minimal introduction; the previous version remains in Git history.
+- Used the supplied Geumgang rendering (`output.png`) as the temporary cover.
+- Preserved the bytes of the initial Python/GEE files and uploaded historical notebooks. Code-cell extractions are review copies identified in their manifests, not replacements for notebooks.
+- Archived three completed works independently. Links between original datasets and final production files still need confirmation.
+- Added package scaffolding; shared algorithms and production G-code remain future work.
+- Preserved FluidNC values and recorded the validation status of examples, tool coordinates, and substrate colors.
+- Keep raw GeoTIFFs, bulk G-code, caches, and device secrets outside tracked files.
+- Review changes through branches and PRs; the owner decides when to merge.
+
+## 2026-10-14 — PR #1 Merged
+
+- PR #1 merged at 2026-10-13 20:03:38 UTC; main commit: `832d7b5639598d0ca1bdf7d51e50ec4c3f85ffaa`.
+- The Taebaek (Yang) notebook was excluded from the remote commit because of the connector request limit. Its code extraction and checksum manifest are present. This does not establish that a recoverable local notebook is currently available.
+
+## 2026-10-14 — Public Documentation in English
+
+- Use concise English for maintained public text, new code comments/docstrings, commits, and PR descriptions.
+- Keep historical sources and preserved hardware configurations unchanged.
+- Keep the root README minimal and put detailed records in the existing documentation folders.
+- Separate language maintenance from algorithm development. See the [development guide](project.md#public-language-policy).

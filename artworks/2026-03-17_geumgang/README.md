@@ -1,23 +1,24 @@
-# 금강산
+# Geumgang
 
-- 실물 완성 날짜: 2026-03-17 (사용자 진술).
-- 코드 라벨: V39.10.
-- 코드 배치: 5열 × 4행 (20패널).
-- 표현: 연묵과 청록·울트라마린·남색, 수평 곡선.
+- Physical work completed: 2026-03-17 (reported by the owner).
+- Code label: V39.10.
+- Code layout: 5 columns × 4 rows (20 panels).
+- Marks: light ink, teal/ultramarine/navy, and horizontal curves.
 
-## 자료
+## Files
 
-- [원본 노트북](original/datascape_0317test.ipynb): 바이트와 저장 출력을 보존.
-- [코드 셀 추출본](original/source.py): 원문 코드 셀만 추출한 리뷰용 파생본. 원본을 대체하지 않음.
-- [출처·체크섬](source_manifest.json).
+- [Original notebook](original/datascape_0317test.ipynb): original bytes and saved outputs.
+- [Code-cell extraction](original/source.py): an unchanged extraction for review, not a replacement for the notebook.
+- [Source manifest and checksums](source_manifest.json).
 
-입력 파일: `Manmulsang_DEM.tif`. 로딩 실패 시 합성 지형으로 대체하는 코드가 있음.
-원본 데이터와 최종 제작 파일의 대응, 실제 재료·하드웨어 조건과 의존성 버전은 추가 기록이 필요하다. 저장된 렌더·성공 로그는 과거 실행 기록이며 현재 재현을 완료한 것은 아니다.
+Input: `Manmulsang_DEM.tif`. The historical loader falls back to synthetic terrain if loading fails.
 
-[임시 대표 디지털 렌더](../../assets/geumgang_render.png)는 사용자가 이번에 제공한 `output.png` 원본이다. 실물 사진은 공개 일정·사용권 확인 전 추가하지 않았다.
+The mapping between original datasets and final production files, physical materials, hardware conditions, and dependency versions still needs documentation. Saved notebook outputs are historical execution records, not proof of a current successful reproduction.
 
-물리 모듈은 사용자 보고상 330×330mm. 코드는 패널 변수 325mm, 그리기 좌표 5..330mm, 배치 원점 간격 330mm를 사용하므로 이 값을 같은 규격으로 합치지 않는다.
+The [temporary cover rendering](../../assets/geumgang_render.png) is the supplied `output.png`. A physical photograph has not been added pending publication timing and usage rights.
 
-## 원본 사용 주의
+Reported physical modules are 330 × 330 mm. The code uses a 325 mm panel variable, drawing coordinates of 5–330 mm, and 330 mm origin spacing. These are distinct measurements.
 
-원본 스크립트는 최상위에서 파일을 만들고 G-code를 작성한다. 새 엔진에서 import하지 않는다. 음수 X/Z, 속도, 입수·세척 설정은 당시 장비의 역사적 값이며 새 플로터에 실행하지 않는다. 수정 실험은 원본과 분리한다.
+## Historical Sources
+
+The historical script writes files and G-code at the top level. Do not import it into the shared engine. Negative X/Z values, motion rates, dipping, and washing settings belong to the original machine. Keep new experiments separate.

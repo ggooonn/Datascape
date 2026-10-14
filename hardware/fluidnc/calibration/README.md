@@ -1,16 +1,16 @@
-# Calibration — 시험 전
+# Calibration — Pending Physical Tests
 
-현재 실기 검증 기록은 없다. 파일명이나 YAML 파싱 성공을 안전성 확인으로 취급하지 않는다.
+No physical validation records are available in this baseline. A filename or a successful YAML parse is not evidence of a calibrated machine.
 
-| 확인 대상 | 현재 상태 |
+| Check | Status |
 | --- | --- |
-| 보드·FluidNC 버전·pin/배선 대응 | 미확인 |
-| 축 방향·원점·홈 이후 MPos | 미확인 |
-| limits·실제 travel·헤드 오프셋 | 미확인 |
-| 캔버스→패널→work→machine 변환 | 미확인 |
-| 안전·접촉·입수·퍼지 Z | 미확인 |
-| WELL 물/먹 매핑·팔레트 접근 | 미확인 |
-| 저속 공중 이동·단일 슬롯 시험 | 미실시 |
-| 정지·복귀·짧은 시험 출력 | 미실시 |
+| Board, FluidNC version, pins, and wiring | Unverified |
+| Axis directions, origins, and positions after homing | Unverified |
+| Limits, travel, and head offsets | Unverified |
+| Canvas/panel/work/machine coordinate transforms | Unverified |
+| Safe, contact, dipping, and purge Z | Unverified |
+| Water/ink well mapping and palette access | Unverified |
+| Low-speed air moves and single-slot tests | Not performed |
+| Stop/recovery behavior and short test plots | Not performed |
 
-각 시험에 날짜, 기계/펌웨어, 설정 checksum, 측정값, 시험 경로와 결과를 기록한다. 실제 설정의 안정 버전 승격은 확인된 실기 기록에 근거한다.
+Record the date, machine/firmware, configuration checksum, measurements, test path, and result for each test. Promote a configuration to a stable version only with supporting physical test records.

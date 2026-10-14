@@ -1,37 +1,45 @@
-# Datascape 개발 기준
+# Datascape Development Guide
 
-Datascape는 실제 지형·환경 데이터를 한국화의 필선·준법·농담·채색으로 해석하고 브러시 플로터로 회화를 제작하는 지속적인 프로젝트다. 서울 사계산수 8첩은 다음 작품이며 공통 시스템의 유일한 목적이 아니다.
+Datascape interprets terrain and environmental data through the strokes, texture marks, ink tones, and colors of Korean landscape painting, then makes physical paintings with a brush plotter. Seoul Four Seasons is the next work, not the shared system's only purpose.
 
-## 개발 환경
+## Development Environment
 
 ```bash
 python -m pip install -e ".[research,dev]"
 ```
 
-VSCode에서 같은 Python 환경을 notebook kernel로 선택한다. 핵심 함수는 `src/datascape/`, 실험과 비교는 `notebooks/`, 과거 제작본은 `artworks/`에 둔다. 패키지의 세부 namespace는 현재 골격이며 동작하는 지형·렌더·G-code 엔진을 구현했다고 뜻하지 않는다. 의존성은 초기 개발 목록이며 과거 작품의 환경 lock이 아니다.
+Select that Python environment as the notebook kernel in VSCode. Reusable functions belong in `src/datascape/`, experiments in `notebooks/`, and historical production sources in `artworks/`. The package namespaces are scaffolding, not a working terrain, rendering, or G-code engine. The dependency list is for current research, not a locked environment for past works.
 
-## 공통 경로 설계 방향 — 미구현
+## Shared Path Design — Not Yet Implemented
 
-1. 지리 좌표·mask를 유지하며 GeoTIFF를 검증한다.
-2. 지형과 카메라·조형 왜곡을 분리한다.
-3. mm 벡터 스트로크에 ID·색/재료·표현 강도·순서·seed·방향 뒤집기 허용 여부를 기록한다.
-4. 패널 경계의 교차점을 계산한 동일 경로 파일로 PNG와 제작 경로를 만든다.
-5. 기계 Z·좌표 변환·세척·입수는 별도 calibration과 동작 계획에 둔다.
+1. Validate GeoTIFFs while retaining geographic coordinates and masks.
+2. Separate terrain from camera settings and artistic distortion.
+3. Store vector strokes in millimeters with IDs, colors/materials, expressive intensity, order, seed, and whether reversing direction is allowed.
+4. Compute panel boundary intersections and use the same finalized paths for previews and production.
+5. Keep machine Z, coordinate transforms, washing, and dipping in a separate calibrated motion plan.
 
-preview와 production의 밀도가 다르면 같은 seed만으로 같은 그림을 보장할 수 없다. 최종 렌더와 G-code는 확정된 같은 벡터 경로를 읽는 방향으로 설계한다.
+A shared seed does not guarantee the same drawing when preview and production densities differ. The final renderer and G-code backend should read the same finalized vector paths.
 
-## 우선 개선 사항
+## First Improvements
 
-- 태백 loader의 실패→영 배열, 금강산의 실패→합성 지형 대체를 새 엔진에서는 명시적 오류 또는 별도 demo로 분리.
-- NoData와 유효 음수값을 구별하고 array-index 경사와 실제 경사 단위를 구별.
-- 태백 점 필터 방식의 panel clipping을 정확한 선분 교차로 교체.
-- 과거 NDVI·Aspect 로딩과 실제 사용 여부를 구별.
-- 표현 압력과 기계 Z 분리, 보간 후 범위 점검, seed와 입력 checksum 기록.
+- Replace silent zero-array loading failures and synthetic terrain fallbacks with explicit errors or separate demos.
+- Distinguish NoData from valid negative values, and array-index gradients from slopes in physical units.
+- Replace point-filter panel clipping with exact segment intersections.
+- Distinguish loading NDVI/aspect from actually using them.
+- Separate expressive pressure from machine Z; check interpolation bounds and record seeds and input checksums.
 
-과거 코드 자체는 위 개선 대상으로 덮어쓰지 않는다.
+Apply these changes to new modules, not historical sources.
 
-## 개발 순서
+## Development Sequence
 
-작품 기록·구조 → TIFF 품질 검증 → 태백식/새 시점 흑백 산세 비교 → 식생·준법 → 채색·바탕재 → calibration·작은 출력.
+Data quality → monochrome terrain/viewpoint comparison → vegetation and texture strokes → color and substrates → calibration and small physical tests. Repository organization and artwork archiving were introduced in PR #1.
 
-각 실험은 조형 질문, 코드 버전, 입력·설정·seed, 렌더 비교, 채택/보류 이유를 기록한다. 작은 ROI에서 한 계절 2폭, 전체 8폭으로 확대한다. TIFF와 실기 기록이 없으므로 현재 지형 재현·하드웨어 안전성을 검증 완료로 선언하지 않는다.
+For each experiment, record the visual question, code version, inputs, settings, seed, comparison images, and reasons for keeping or rejecting a result. Scale from a small region to one seasonal pair, then all eight panels. Record measured validation results separately from planned capabilities.
+
+## Public Language Policy
+
+Write maintained public documentation, new notebook Markdown, comments, docstrings, commits, PR descriptions, issues, and development notes in concise, natural English. Keep the root README minimal: one image, a short introduction, and a small technology list.
+
+Historical artwork sources, archived prototypes, and preserved machine configurations retain their original language and bytes. Add English summaries alongside them when needed. Preserve original titles where useful and keep existing paths stable. Do not rewrite licenses or copyright notices. Internal project context and conversations may remain in Korean.
+
+Use separate branches and PRs for documentation and algorithm development. Merge into `main` only after the owner's review and decision.

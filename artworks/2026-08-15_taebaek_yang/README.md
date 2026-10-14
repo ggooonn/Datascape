@@ -1,21 +1,22 @@
-# 태백산맥(양)
+# Taebaek (Yang)
 
-- 실물 완성 날짜: 2026-08-15 (사용자 진술).
-- 코드 라벨: output directory V203; preview/G-code labels V202.
-- 코드 배치: 8열 × 6행 (48패널).
-- 표현: 먹과 10색 채색, 수평 곡선, Macro DEM 기반 색 선택.
+- Physical work completed: 2026-08-15 (reported by the owner).
+- Code labels: output directory V203; preview/G-code V202.
+- Code layout: 8 columns × 6 rows (48 panels).
+- Marks: ink and ten pigment layers, horizontal curves, and macro-DEM color selection.
 
-## 자료
+## Files
 
-- [원본 노트북](original/datascape_0815_Taebaek.ipynb): 바이트와 저장 출력을 보존.
-- [코드 셀 추출본](original/source.py): 원문 코드 셀만 추출한 리뷰용 파생본. 원본을 대체하지 않음.
-- [출처·체크섬](source_manifest.json).
+- Original notebook: `original/datascape_0815_Taebaek.ipynb` is **not present in this repository**. The 35,391,440-byte upload was deferred because of the connector request limit. Current local recoverability has not been verified.
+- [Code-cell extraction](original/source.py): an unchanged extraction for review, not a replacement for the notebook.
+- [Source manifest and checksums](source_manifest.json).
 
-입력 파일: `Taebaek_DEM.tif`, `Taebaek_Aspect.tif`, `Taebaek_NDVI.tif`. Aspect·NDVI는 읽지만 이후 경로 생성에서 사용하지 않음.
-원본 데이터와 최종 제작 파일의 대응, 실제 재료·하드웨어 조건과 의존성 버전은 추가 기록이 필요하다. 저장된 렌더·성공 로그는 과거 실행 기록이며 현재 재현을 완료한 것은 아니다.
+Inputs: `Taebaek_DEM.tif`, `Taebaek_Aspect.tif`, and `Taebaek_NDVI.tif`. Aspect and NDVI are loaded but not used in subsequent path generation.
 
-코드의 패널 크기 330×330mm, 가로 간격 20mm, 세로 간격 10mm. 전체 코드 배치 2780×2030mm.
+The mapping between original datasets and final production files, physical materials, hardware conditions, and dependency versions still needs documentation. Saved notebook outputs are historical execution records, not proof of a current successful reproduction.
 
-## 원본 사용 주의
+Code layout: 330 × 330 mm panels, 20 mm horizontal gaps, and 10 mm vertical gaps; total 2780 × 2030 mm.
 
-원본 스크립트는 최상위에서 파일을 만들고 G-code를 작성한다. 새 엔진에서 import하지 않는다. 음수 X/Z, 속도, 입수·세척 설정은 당시 장비의 역사적 값이며 새 플로터에 실행하지 않는다. 수정 실험은 원본과 분리한다.
+## Historical Sources
+
+The historical script writes files and G-code at the top level. Do not import it into the shared engine. Negative X/Z values, motion rates, dipping, and washing settings belong to the original machine. Keep new experiments separate.

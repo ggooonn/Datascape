@@ -1,3 +1,3 @@
 # Experiments
 
-현재 세 notebook은 설치 확인·설정·실험 질문을 담은 골격이다. 전체 셀 실행은 입력 데이터나 G-code를 생성하지 않는다. 다음 단계에서 공통 모듈을 구현하고 실제 데이터 검증·렌더 비교를 추가한다.
+The three notebooks are scaffolds for installation checks, settings, and experiment questions. Running their current cells does not load terrain data or generate G-code. Add reusable modules and measured data/render comparisons in subsequent development PRs.

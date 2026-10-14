@@ -1,67 +1,67 @@
 status: user_provided_display_colors_not_measured_dry_pigments
 slots:
   A1:
-    name: 백색·호분
+    name: White / shell white
     preview_hex: '#FFFFFF'
   A2:
-    name: 연회색
+    name: Light gray
     preview_hex: '#C2C4C6'
   A3:
-    name: 연회청색
+    name: Light blue-gray
     preview_hex: '#8E9FA9'
   A4:
-    name: 등회색·살구회색
+    name: Warm gray / apricot gray
     preview_hex: '#C8A896'
   A5:
-    name: 녹회색
+    name: Green-gray
     preview_hex: '#8E998B'
   B1:
-    name: 코발트 블루
+    name: Cobalt blue
     preview_hex: '#1E56A0'
   B2:
-    name: 프러시안 블루
+    name: Prussian blue
     preview_hex: '#14293D'
   B3:
-    name: 울트라마린
+    name: Ultramarine
     preview_hex: '#22387B'
   B4:
-    name: 청련·바이올렛
+    name: Violet
     preview_hex: '#5E2E64'
   B5:
-    name: 보라색·자청
+    name: Deep purple
     preview_hex: '#441B4A'
   C1:
-    name: 향수백합·연두미색
+    name: Pale yellow-green
     preview_hex: '#E1ECB8'
   C2:
-    name: 황록색
+    name: Yellow-green
     preview_hex: '#98C245'
   C3:
-    name: 취록색
+    name: Jade green
     preview_hex: '#008C5A'
   C4:
-    name: 감람록
+    name: Olive green
     preview_hex: '#566432'
   C5:
-    name: 먹록색
+    name: Dark ink green
     preview_hex: '#173425'
   D1:
-    name: 담황색
+    name: Pale yellow
     preview_hex: '#F5D647'
   D2:
-    name: 중황색
+    name: Medium yellow
     preview_hex: '#F3B308'
   D3:
-    name: 귤황색
+    name: Orange
     preview_hex: '#EA7E18'
   D4:
-    name: 토홍색·대자
+    name: Red earth / ochre
     preview_hex: '#A2432B'
   D5:
-    name: 숙갈색
+    name: Burnt umber
     preview_hex: '#4E3325'
 unassigned_swaps:
-- name: 대홍
+- name: Crimson
   preview_hex: '#C81D25'
-- name: 심록
+- name: Deep green
   preview_hex: '#195635'

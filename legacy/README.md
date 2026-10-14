@@ -1,5 +1,5 @@
-# 초기 프로토타입
+# Initial Prototypes
 
-`prototype/src/`는 재구축 전 저장소의 미완성 Python 코드다. 기존 파일 바이트를 변경하지 않고 이동했다. 실제 작품 노트북은 `artworks/`에서 별도 관리한다.
+`prototype/src/` contains unfinished Python prototypes from before the repository rebuild. Their bytes were preserved. Historical production notebooks are archived separately in `artworks/`.
 
-이전 루트 README는 사용자 요청에 따라 별도 복사하지 않았다. Git 이력에는 이전 상태가 남는다. 초기 GEE는 `gee/archive/`에 보존한다.
+The previous root README was not copied into a separate document at the owner's request; it remains in Git history. The initial GEE script is preserved in `gee/archive/`.

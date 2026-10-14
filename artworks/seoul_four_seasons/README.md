@@ -1,14 +1,14 @@
-# 서울 사계산수 — 진행 중
+# Seoul Four Seasons — In Progress
 
-인왕산·북악산을 중심으로 서로 다른 시점과 계절을 표현하는 사계산수 8첩 병풍.
+An eight-panel folding screen exploring seasonal landscapes and viewpoints around Inwangsan and Bugaksan.
 
-- 1폭 300×900mm, 8폭, 폭 사이 40mm: 전체 미리보기 2680×900mm.
-- 봄·여름·가을·겨울 각 2폭: 계절별 배치 640×900mm.
-- 실제 40mm 간격의 구조, 시점·ROI, 여름·가을·겨울 재료는 미정.
-- 20색 슬롯+먹·물. 예비 교체 색은 자동 배정하지 않는다.
-- 연한 안료부터 짙은 층·먹으로 적층하는 방향을 실험한다.
-- MASTER 30m와 VEG 10m는 export 완료 사용자 보고가 있으나 실제 TIFF 품질은 아직 검증하지 않았다.
+- Eight 300 × 900 mm panels with 40 mm gaps; full preview: 2680 × 900 mm.
+- Two panels per season; each pair spans 640 × 900 mm.
+- Viewpoints, regions of interest, the physical gap structure, and summer/autumn/winter substrates are still open.
+- Twenty pigment slots plus ink and water. Spare colors have no assigned slots.
+- Painting from light washes to darker layers and ink accents is an experimental direction.
+- MASTER 30 m and VEG 10 m exports have been reported; their GeoTIFF quality has not yet been verified in this baseline.
 
-[추출 코드](../../gee/seoul_north_v02.js) · [데이터 명세](../../docs/datasets/seoul_north_v02.json) · [배치 설정](../../configs/rendering/seoul_four_seasons.yaml)
+[Extraction script](../../gee/seoul_north_v02.js) · [Dataset specification](../../docs/datasets/seoul_north_v02.json) · [Layout settings](../../configs/rendering/seoul_four_seasons.yaml)
 
-첫 조형 개발 목표는 흑백 산세와 시점 비교다. 데이터 검증 → 작은 ROI → 한 계절 2폭 → 전체 8폭 순서로 확대한다. 식생·채색·기계 출력은 각각의 검증 뒤에 진행한다.
+The first visual milestone is a comparison of monochrome terrain and viewpoints. Start with data validation and a small region, then one seasonal pair, then the full screen. Vegetation, color, and machine output follow separate validation steps.
