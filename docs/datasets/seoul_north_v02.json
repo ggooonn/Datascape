@@ -1,5 +1,5 @@
 {
-  "status": "export_reported_quality_unverified",
+  "status": "quality_checked_with_explicit_finite_mask",
   "script": "gee/seoul_north_v02.js",
   "script_sha256": "ec87497773162e129a20dc9a189e8ec91d729a6be97de99e2617601fa0003ee2",
   "roi_wsen": [
@@ -72,9 +72,71 @@
       ],
       "expected_dtype": "float32",
       "count_band_meaning": "mean valid observation count across underlying 10m pixels",
-      "actual_sha256": null,
-      "actual_metadata": null,
-      "validation": null
+      "actual_sha256": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "actual_metadata": {
+        "size_bytes": 42404301,
+        "crs": "EPSG:32652",
+        "resolution_m": [
+          30.0,
+          30.0
+        ],
+        "bounds": [
+          307290.0,
+          4151990.0,
+          334290.0,
+          4175900.0
+        ],
+        "width": 900,
+        "height": 797,
+        "band_count": 13,
+        "transform": [
+          30.0,
+          0.0,
+          307290.0,
+          0.0,
+          -30.0,
+          4175900.0
+        ],
+        "dtype": [
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32"
+        ],
+        "nodata_metadata": -9999.0,
+        "band_descriptions": [
+          "DEM",
+          "SLOPE",
+          "ASPECT",
+          "HILLSHADE",
+          "DEM_NASA",
+          "NDVI_SPRING",
+          "NDVI_SUMMER",
+          "NDVI_AUTUMN",
+          "NDVI_WINTER",
+          "N_SPRING",
+          "N_SUMMER",
+          "N_AUTUMN",
+          "N_WINTER"
+        ]
+      },
+      "validation": {
+        "date": "2026-10-14",
+        "status": "usable_for_exploration_with_explicit_finite_mask",
+        "report": "docs/validation/seoul_north_v02/quality_report.json",
+        "unmasked_nan_pixels_per_band": 29708,
+        "interior_invalid_pixels": 0,
+        "input_hash_unchanged": true
+      }
     },
     {
       "filename": "SeoulNorth_v02_VEG_10m.tif",
@@ -98,9 +160,61 @@
       ],
       "expected_dtype": "float32",
       "count_band_meaning": "valid observation count per pixel",
-      "actual_sha256": null,
-      "actual_metadata": null,
-      "validation": null
+      "actual_sha256": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5",
+      "actual_metadata": {
+        "size_bytes": 215061154,
+        "crs": "EPSG:32652",
+        "resolution_m": [
+          10.0,
+          10.0
+        ],
+        "bounds": [
+          307290.0,
+          4152000.0,
+          334290.0,
+          4175880.0
+        ],
+        "width": 2700,
+        "height": 2388,
+        "band_count": 8,
+        "transform": [
+          10.0,
+          0.0,
+          307290.0,
+          0.0,
+          -10.0,
+          4175880.0
+        ],
+        "dtype": [
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32",
+          "float32"
+        ],
+        "nodata_metadata": -9999.0,
+        "band_descriptions": [
+          "NDVI_SPRING",
+          "NDVI_SUMMER",
+          "NDVI_AUTUMN",
+          "NDVI_WINTER",
+          "N_SPRING",
+          "N_SUMMER",
+          "N_AUTUMN",
+          "N_WINTER"
+        ]
+      },
+      "validation": {
+        "date": "2026-10-14",
+        "status": "usable_for_exploration_with_explicit_finite_mask",
+        "report": "docs/validation/seoul_north_v02/quality_report.json",
+        "unmasked_nan_pixels_per_band": 268643,
+        "interior_invalid_pixels": 0,
+        "input_hash_unchanged": true
+      }
     }
   ]
 }
