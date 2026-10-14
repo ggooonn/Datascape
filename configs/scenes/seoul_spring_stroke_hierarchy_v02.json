@@ -1,0 +1,121 @@
+{
+  "study": "Spring Stroke Hierarchy v0.2",
+  "parent_vector_commit": "70d15f93c0355f6d0a64af0be1c0097f8eea0534",
+  "selection": "configs/scenes/seoul_spring_selected_C.json",
+  "seed": 20261015,
+  "source_vectors": {
+    "A": "docs/experiments/spring_vector_study_v01/A_strokes.json.gz",
+    "B": "docs/experiments/spring_vector_study_v01/B_strokes.json.gz",
+    "C": "docs/experiments/spring_vector_study_v01/C_strokes.json.gz"
+  },
+  "source_vector_sha256": {
+    "docs/experiments/spring_vector_study_v01/A_strokes.json.gz": "a04aaea1748ee011a773822d6088fadb0eb9c616d6476e24b2d37a5573c1f3ae",
+    "docs/experiments/spring_vector_study_v01/B_strokes.json.gz": "c366b36b146f682520f2eb953cd701c782dd70a66abe77f095ad73054fab415b",
+    "docs/experiments/spring_vector_study_v01/C_strokes.json.gz": "7a5e21ebea04ad2e985bc983dfb64418e247d5664b16e10f858cd7db03a5706b"
+  },
+  "derivatives": {
+    "derivative_sigma_m": 60
+  },
+  "styles": {
+    "A": {
+      "width_mm": 0.32,
+      "density_preview_opacity": 0.82,
+      "intensity": 0.6
+    },
+    "B": {
+      "width_mm": 0.46,
+      "density_preview_opacity": 0.94,
+      "intensity": 0.8
+    },
+    "C": {
+      "width_mm": 0.16,
+      "density_preview_opacity": 0.32,
+      "intensity": 0.25
+    },
+    "D": {
+      "width_mm": 0.82,
+      "density_preview_opacity": 1,
+      "intensity": 1
+    },
+    "V": {
+      "width_mm": 0.32,
+      "density_preview_opacity": 0.75,
+      "intensity": 0.5
+    }
+  },
+  "A": {
+    "policy": "Reuse all finalized v0.1 transverse paths; the same geometry in every set.",
+    "depth_density_multipliers": {
+      "near": 1,
+      "middle": 1,
+      "far": 1
+    }
+  },
+  "B": {
+    "curvature_full_per_m": 0.0014,
+    "minimum_score": 0.58,
+    "minimum_mm": 7,
+    "maximum_mm": 32,
+    "gap_mm": 7,
+    "spacing_mm": 5,
+    "maximum_length_fraction_of_A": 0.065
+  },
+  "C": {
+    "low_density": 0.32,
+    "dense_density": 0.88,
+    "policy": "Near-role preference plus selected steep sides; nested whole-path subsets, fixed width and tone."
+  },
+  "D": {
+    "target_all_length_fraction": 0.04,
+    "maximum_terrain_length_fraction": 0.06,
+    "minimum_spacing_mm": 6,
+    "minimum_stroke_mm": 9,
+    "maximum_stroke_mm": 48,
+    "breath_gap_mm": 9,
+    "maximum_per_event": 2,
+    "inset_mm": 3,
+    "depth_jump_m": 180,
+    "crest_curvature_per_m": 0.0001,
+    "crest_ridge_minimum": 0.15,
+    "slope_break_levels_deg": [
+      28,
+      38
+    ],
+    "upper_rim_percentile": 60,
+    "mound_level": 0.55,
+    "type_priority": {
+      "skyline": 0.7,
+      "occlusion": 0.62,
+      "crest": 0.65,
+      "slope_break_proxy": 0.25,
+      "foothold_rim_proxy": 0.45
+    },
+    "type_maximum_fraction": {
+      "skyline": 0.22,
+      "occlusion": 0.48,
+      "crest": 0.5,
+      "slope_break_proxy": 0.2,
+      "foothold_rim_proxy": 0.18
+    }
+  },
+  "detail_crops_mm": {
+    "far crest": [
+      180,
+      215,
+      400,
+      355
+    ],
+    "middle overlap": [
+      60,
+      395,
+      280,
+      535
+    ],
+    "near foothold": [
+      120,
+      690,
+      340,
+      830
+    ]
+  }
+}

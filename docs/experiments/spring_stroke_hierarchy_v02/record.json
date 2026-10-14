@@ -1,0 +1,451 @@
+{
+  "study": "Spring Stroke Hierarchy v0.2",
+  "config": {
+    "study": "Spring Stroke Hierarchy v0.2",
+    "parent_vector_commit": "70d15f93c0355f6d0a64af0be1c0097f8eea0534",
+    "selection": "configs/scenes/seoul_spring_selected_C.json",
+    "seed": 20261015,
+    "source_vectors": {
+      "A": "docs/experiments/spring_vector_study_v01/A_strokes.json.gz",
+      "B": "docs/experiments/spring_vector_study_v01/B_strokes.json.gz",
+      "C": "docs/experiments/spring_vector_study_v01/C_strokes.json.gz"
+    },
+    "source_vector_sha256": {
+      "docs/experiments/spring_vector_study_v01/A_strokes.json.gz": "a04aaea1748ee011a773822d6088fadb0eb9c616d6476e24b2d37a5573c1f3ae",
+      "docs/experiments/spring_vector_study_v01/B_strokes.json.gz": "c366b36b146f682520f2eb953cd701c782dd70a66abe77f095ad73054fab415b",
+      "docs/experiments/spring_vector_study_v01/C_strokes.json.gz": "7a5e21ebea04ad2e985bc983dfb64418e247d5664b16e10f858cd7db03a5706b"
+    },
+    "derivatives": {
+      "derivative_sigma_m": 60
+    },
+    "styles": {
+      "A": {
+        "width_mm": 0.32,
+        "density_preview_opacity": 0.82,
+        "intensity": 0.6
+      },
+      "B": {
+        "width_mm": 0.46,
+        "density_preview_opacity": 0.94,
+        "intensity": 0.8
+      },
+      "C": {
+        "width_mm": 0.16,
+        "density_preview_opacity": 0.32,
+        "intensity": 0.25
+      },
+      "D": {
+        "width_mm": 0.82,
+        "density_preview_opacity": 1,
+        "intensity": 1
+      },
+      "V": {
+        "width_mm": 0.32,
+        "density_preview_opacity": 0.75,
+        "intensity": 0.5
+      }
+    },
+    "A": {
+      "policy": "Reuse all finalized v0.1 transverse paths; the same geometry in every set.",
+      "depth_density_multipliers": {
+        "near": 1,
+        "middle": 1,
+        "far": 1
+      }
+    },
+    "B": {
+      "curvature_full_per_m": 0.0014,
+      "minimum_score": 0.58,
+      "minimum_mm": 7,
+      "maximum_mm": 32,
+      "gap_mm": 7,
+      "spacing_mm": 5,
+      "maximum_length_fraction_of_A": 0.065
+    },
+    "C": {
+      "low_density": 0.32,
+      "dense_density": 0.88,
+      "policy": "Near-role preference plus selected steep sides; nested whole-path subsets, fixed width and tone."
+    },
+    "D": {
+      "target_all_length_fraction": 0.04,
+      "maximum_terrain_length_fraction": 0.06,
+      "minimum_spacing_mm": 6,
+      "minimum_stroke_mm": 9,
+      "maximum_stroke_mm": 48,
+      "breath_gap_mm": 9,
+      "maximum_per_event": 2,
+      "inset_mm": 3,
+      "depth_jump_m": 180,
+      "crest_curvature_per_m": 0.0001,
+      "crest_ridge_minimum": 0.15,
+      "slope_break_levels_deg": [
+        28,
+        38
+      ],
+      "upper_rim_percentile": 60,
+      "mound_level": 0.55,
+      "type_priority": {
+        "skyline": 0.7,
+        "occlusion": 0.62,
+        "crest": 0.65,
+        "slope_break_proxy": 0.25,
+        "foothold_rim_proxy": 0.45
+      },
+      "type_maximum_fraction": {
+        "skyline": 0.22,
+        "occlusion": 0.48,
+        "crest": 0.5,
+        "slope_break_proxy": 0.2,
+        "foothold_rim_proxy": 0.18
+      }
+    },
+    "detail_crops_mm": {
+      "far crest": [
+        180,
+        215,
+        400,
+        355
+      ],
+      "middle overlap": [
+        60,
+        395,
+        280,
+        535
+      ],
+      "near foothold": [
+        120,
+        690,
+        340,
+        830
+      ]
+    }
+  },
+  "provenance": {
+    "study": "Spring Stroke Hierarchy v0.2",
+    "config_sha256": "fbb1944a10d790f7b15b17c497f054a87e073cd74d6c0fc80245401418ad06ca",
+    "selection_sha256": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+    "parent_vector_commit": "70d15f93c0355f6d0a64af0be1c0097f8eea0534",
+    "input_sha256": {
+      "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+    },
+    "seed": 20261015,
+    "preview_profiles": {
+      "A": {
+        "width_mm": 0.32,
+        "density_preview_opacity": 0.82,
+        "intensity": 0.6
+      },
+      "B": {
+        "width_mm": 0.46,
+        "density_preview_opacity": 0.94,
+        "intensity": 0.8
+      },
+      "C": {
+        "width_mm": 0.16,
+        "density_preview_opacity": 0.32,
+        "intensity": 0.25
+      },
+      "D": {
+        "width_mm": 0.82,
+        "density_preview_opacity": 1,
+        "intensity": 1
+      },
+      "V": {
+        "width_mm": 0.32,
+        "density_preview_opacity": 0.75,
+        "intensity": 0.5
+      }
+    }
+  },
+  "metrics": {
+    "01_A": {
+      "layers": {
+        "A": {
+          "vectors": 1657,
+          "length_mm": 67167.68377965756,
+          "length_by_depth_mm": {
+            "near": 23088.38444434923,
+            "middle": 35459.59781297238,
+            "far": 8605.14402979335
+          }
+        },
+        "B": {
+          "vectors": 0,
+          "length_mm": 0,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 0.0,
+            "far": 0.0
+          }
+        },
+        "C": {
+          "vectors": 0,
+          "length_mm": 0,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 0.0,
+            "far": 0.0
+          }
+        },
+        "D": {
+          "vectors": 0,
+          "length_mm": 0,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 0.0,
+            "far": 0.0
+          }
+        },
+        "V": {
+          "vectors": 2012,
+          "length_mm": 17170.105166532252,
+          "length_by_depth_mm": {
+            "near": 10514.31672384658,
+            "middle": 6334.984676264501,
+            "far": 238.80522837315934
+          }
+        }
+      },
+      "all_length_mm": 84337.7889461898,
+      "terrain_length_mm": 67167.68377965756,
+      "D_all_length_fraction": 0.0,
+      "D_terrain_length_fraction": 0.0
+    },
+    "02_AC": {
+      "layers": {
+        "A": {
+          "vectors": 1657,
+          "length_mm": 67167.68377965756,
+          "length_by_depth_mm": {
+            "near": 23088.38444434923,
+            "middle": 35459.59781297238,
+            "far": 8605.14402979335
+          }
+        },
+        "B": {
+          "vectors": 0,
+          "length_mm": 0,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 0.0,
+            "far": 0.0
+          }
+        },
+        "C": {
+          "vectors": 559,
+          "length_mm": 13982.936773256868,
+          "length_by_depth_mm": {
+            "near": 11540.61001045184,
+            "middle": 1926.7072917347411,
+            "far": 513.9684293092424
+          }
+        },
+        "D": {
+          "vectors": 0,
+          "length_mm": 0,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 0.0,
+            "far": 0.0
+          }
+        },
+        "V": {
+          "vectors": 2012,
+          "length_mm": 17170.105166532252,
+          "length_by_depth_mm": {
+            "near": 10514.31672384658,
+            "middle": 6334.984676264501,
+            "far": 238.80522837315934
+          }
+        }
+      },
+      "all_length_mm": 98320.72571944668,
+      "terrain_length_mm": 81150.62055291442,
+      "D_all_length_fraction": 0.0,
+      "D_terrain_length_fraction": 0.0
+    },
+    "03_ABC": {
+      "layers": {
+        "A": {
+          "vectors": 1657,
+          "length_mm": 67167.68377965756,
+          "length_by_depth_mm": {
+            "near": 23088.38444434923,
+            "middle": 35459.59781297238,
+            "far": 8605.14402979335
+          }
+        },
+        "B": {
+          "vectors": 133,
+          "length_mm": 2350.1854395883056,
+          "length_by_depth_mm": {
+            "near": 273.2398295362354,
+            "middle": 1961.2910318054935,
+            "far": 110.77867075989255
+          }
+        },
+        "C": {
+          "vectors": 559,
+          "length_mm": 13982.936773256868,
+          "length_by_depth_mm": {
+            "near": 11540.61001045184,
+            "middle": 1926.7072917347411,
+            "far": 513.9684293092424
+          }
+        },
+        "D": {
+          "vectors": 0,
+          "length_mm": 0,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 0.0,
+            "far": 0.0
+          }
+        },
+        "V": {
+          "vectors": 2012,
+          "length_mm": 17170.105166532252,
+          "length_by_depth_mm": {
+            "near": 10514.31672384658,
+            "middle": 6334.984676264501,
+            "far": 238.80522837315934
+          }
+        }
+      },
+      "all_length_mm": 100670.91115903498,
+      "terrain_length_mm": 83500.80599250272,
+      "D_all_length_fraction": 0.0,
+      "D_terrain_length_fraction": 0.0
+    },
+    "04_ABCD": {
+      "layers": {
+        "A": {
+          "vectors": 1657,
+          "length_mm": 67167.68377965756,
+          "length_by_depth_mm": {
+            "near": 23088.38444434923,
+            "middle": 35459.59781297238,
+            "far": 8605.14402979335
+          }
+        },
+        "B": {
+          "vectors": 133,
+          "length_mm": 2350.1854395883056,
+          "length_by_depth_mm": {
+            "near": 273.2398295362354,
+            "middle": 1961.2910318054935,
+            "far": 110.77867075989255
+          }
+        },
+        "C": {
+          "vectors": 559,
+          "length_mm": 13982.936773256868,
+          "length_by_depth_mm": {
+            "near": 11540.61001045184,
+            "middle": 1926.7072917347411,
+            "far": 513.9684293092424
+          }
+        },
+        "D": {
+          "vectors": 63,
+          "length_mm": 1289.519088193358,
+          "length_by_depth_mm": {
+            "near": 37.583729108046775,
+            "middle": 759.9807364124441,
+            "far": 491.001586350065
+          }
+        },
+        "V": {
+          "vectors": 2012,
+          "length_mm": 17170.105166532252,
+          "length_by_depth_mm": {
+            "near": 10514.31672384658,
+            "middle": 6334.984676264501,
+            "far": 238.80522837315934
+          }
+        }
+      },
+      "all_length_mm": 101960.43024722835,
+      "terrain_length_mm": 84790.32508069609,
+      "D_all_length_fraction": 0.012647250360425109,
+      "D_terrain_length_fraction": 0.015208328154964677
+    }
+  },
+  "D_selection": {
+    "raw_candidates": 192,
+    "ranked_pieces": 114,
+    "selected_events": 63,
+    "length_budget_mm": 4194.621298293126,
+    "selected_length_mm": 1289.519088193358,
+    "type_length_mm": {
+      "skyline": 53.368097493701285,
+      "crest": 661.655864986442,
+      "occlusion": 220.4889970275176,
+      "slope_break_proxy": 316.5932408376465,
+      "foothold_rim_proxy": 37.588698498768814
+    },
+    "minimum_spacing_mm": 6,
+    "target_all_length_fraction": 0.04
+  },
+  "checks": {
+    "terrain_core_sample_violations": 0,
+    "all_footprints_empty_in_bottom_2mm": true,
+    "D_minimum_other_event_spacing_mm": 6.408643696618047,
+    "D_parent_events": 63
+  },
+  "C_density": {
+    "low_vectors": 219,
+    "dense_vectors": 559,
+    "low_length_mm": 5476.6042131449785,
+    "dense_length_mm": 13982.936773256868,
+    "nested_subset": true
+  },
+  "D_endpoint_anchor_diagnostic": {
+    "eligible_upper_A_endpoints": 700,
+    "D_distance_threshold_mm": 4,
+    "endpoints_with_D_within_threshold": 207,
+    "interpretation": "Local anchoring opportunity, not proof that every endpoint belongs to a crest or should be capped."
+  },
+  "invariants": {
+    "selected_C_grayscale_pixels_identical": true,
+    "selected_C_retention_archive_identical": true,
+    "all_source_vectors_unchanged": true,
+    "source_inputs_unchanged": true
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "order": {
+    "01_A": [
+      "A",
+      "V"
+    ],
+    "02_AC": [
+      "C",
+      "A",
+      "V"
+    ],
+    "03_ABC": [
+      "C",
+      "A",
+      "B",
+      "V"
+    ],
+    "04_ABCD": [
+      "C",
+      "A",
+      "B",
+      "V",
+      "D"
+    ]
+  },
+  "limits": [
+    "D cliff/foothold candidates are DEM support proxies, not verified rock or geology edges.",
+    "Opacity is a preview profile; dimensionless intensity is not calibrated machine pressure.",
+    "Nominal width does not predict wet ink spread. No G-code or hardware calls."
+  ]
+}
