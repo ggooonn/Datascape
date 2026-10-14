@@ -1,0 +1,512 @@
+{
+  "study": "F2 Painterly Composition v0.3",
+  "base_pr_head": "49cda7ae925e13d73aacce8f6ed5046f476243e4",
+  "config": {
+    "study": "F2 Painterly Composition v0.3",
+    "base_pr_head": "49cda7ae925e13d73aacce8f6ed5046f476243e4",
+    "source_config": "configs/scenes/seoul_f2_multidepth_whitespace_v02.json",
+    "previous_results": "docs/experiments/f2_multidepth_whitespace_v02",
+    "seed": 20261016,
+    "boundary": {
+      "canvas_height_mm": 900,
+      "hard_bottom_guard_mm": 2,
+      "collar_mm": 18
+    },
+    "bottom_transition": {
+      "extent_fraction": [
+        0.05,
+        0.15
+      ],
+      "strength": 0.95,
+      "positive_protection": 0.82
+    },
+    "positive_forms": {
+      "maximum_count": 5,
+      "minimum_spacing_mm": 85,
+      "depth_range_m": [
+        120,
+        1150
+      ],
+      "screen_y_range_fraction": [
+        0.68,
+        0.93
+      ],
+      "maximum_slope_deg": 16,
+      "minimum_mound_proxy": 0.08,
+      "minimum_score": 0.3,
+      "source_radius_m": [
+        120,
+        150
+      ],
+      "field_feather_mm": 4,
+      "paper_floor_retention": 0.025,
+      "root_support_strength": 0.3,
+      "root_support_radius_m": 28
+    },
+    "far": {
+      "feather_mm_xy": [
+        24,
+        8
+      ],
+      "soft_strength": 0.7,
+      "weights": [
+        0.48,
+        0.32,
+        0.2
+      ],
+      "ridge_protection": 0.65,
+      "core_source_threshold": 0.975,
+      "core_erosion_mm": 6,
+      "core_feather_mm": 4
+    },
+    "representative_trees": {
+      "count": 3,
+      "height_mm": [
+        155,
+        225
+      ],
+      "minimum_spacing_mm": 135,
+      "minimum_ndvi": 0.2,
+      "minimum_root_retention": 0.12,
+      "cluster_radius_mm": 105,
+      "minimum_cluster_count": 3,
+      "backdrop_probe_height_mm": 150,
+      "minimum_trunk_seam_distance_mm": 45,
+      "minimum_trunk_frame_distance_mm": 30
+    }
+  },
+  "config_sha256": "0ef4b3f58c794d39621219a081753cb5fc5b5fd99247411f923a892d669bb3ad",
+  "fixed_F2_config_sha256": "2d0d0b3be3f43607323800219d0eaa70bf52fd145d2a8d28aaa9099503ab299a",
+  "v02_config_sha256": "696aefe5a48bc0cc23c39f6fbb2d1300f8bd3590d84c3a6e525d74de3f1f6ced",
+  "inputs": {
+    "master": {
+      "filename": "SeoulNorth_v02_MASTER_30m.tif",
+      "sha256": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        30.0,
+        30.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4151990.0,
+        334290.0,
+        4175900.0
+      ],
+      "shape": [
+        797,
+        900
+      ],
+      "transform": [
+        30.0,
+        0.0,
+        307290.0,
+        0.0,
+        -30.0,
+        4175900.0
+      ],
+      "bands": [
+        "DEM",
+        "SLOPE",
+        "ASPECT",
+        "HILLSHADE",
+        "DEM_NASA",
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0,
+      "unchanged_after": true
+    },
+    "vegetation": {
+      "filename": "SeoulNorth_v02_VEG_10m.tif",
+      "sha256": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4152000.0,
+        334290.0,
+        4175880.0
+      ],
+      "shape": [
+        2388,
+        2700
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        307290.0,
+        0.0,
+        -10.0,
+        4175880.0
+      ],
+      "bands": [
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0,
+      "unchanged_after": true
+    },
+    "site": {
+      "eye_xy_utm_m": [
+        325305,
+        4168385
+      ],
+      "eye_lon_lat_wgs84": [
+        127.01982889659858,
+        37.646014458853045
+      ],
+      "source_dem_at_eye_m": 38.12806701660156,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 2.0,
+      "camera": {
+        "eye_xyz_m": [
+          325305,
+          4168385,
+          40.12806701660156
+        ],
+        "azimuth_deg": 292.1219419718818,
+        "pitch_deg": 0.0,
+        "vertical_fov_deg": 36.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      }
+    }
+  },
+  "metrics": {
+    "F2_baseline_pixels_identical": true,
+    "v02_E_pixels_identical": true,
+    "old_near_field_identical": true,
+    "old_middle_field_identical": true,
+    "final_row_max_terrain_ink_B_C": [
+      0.0,
+      0.0
+    ],
+    "final_row_max_vegetation_ink_B_C": [
+      0.0,
+      0.0
+    ],
+    "final_row_max_total_ink_B_C": [
+      0.0,
+      0.0
+    ],
+    "continuous_boundary_at_y900": 0.0,
+    "irregular_bottom_extent_min_max_mm": [
+      45.0,
+      132.13582798629875
+    ],
+    "lower_transition_mean_across_width_std": 0.03658369728622404,
+    "positive_form_count": 5,
+    "near_mean_terrain_ink_v02_v03": [
+      0.23329543030590164,
+      0.06972915280805649
+    ],
+    "far_terrain_pixels_ink_below003_v02_v03": [
+      1403,
+      91
+    ],
+    "far_core_pixels_v02_v03": [
+      762,
+      52
+    ],
+    "near_small_marks_preserved": 42,
+    "middle_marks_preserved": 105,
+    "far_marks_preserved": 65,
+    "representative_tree_count": 3,
+    "representative_heights_mm": [
+      184.76604213366994,
+      181.46876212883762,
+      202.28592159724406
+    ],
+    "small_mark_depth_metrics": {
+      "foreground_mark_pixels_surviving_deeper_omission": 393,
+      "mark_pixels_occluded_by_nearer_terrain": 0,
+      "foreground_crossing_examples": [
+        {
+          "id": "cd2794b281cf7338",
+          "kind": "near",
+          "root_forward_depth_m": 958.6898306492952,
+          "surviving_mark_pixels": 123,
+          "bounds_pixel_xy": [
+            20,
+            551,
+            78,
+            652
+          ]
+        },
+        {
+          "id": "6ec32002145b9eaa",
+          "kind": "near",
+          "root_forward_depth_m": 717.6645171743886,
+          "surviving_mark_pixels": 83,
+          "bounds_pixel_xy": [
+            142,
+            600,
+            197,
+            699
+          ]
+        },
+        {
+          "id": "37e1e92bcc5fcdd3",
+          "kind": "near",
+          "root_forward_depth_m": 871.9995501710717,
+          "surviving_mark_pixels": 69,
+          "bounds_pixel_xy": [
+            341,
+            580,
+            396,
+            668
+          ]
+        }
+      ]
+    },
+    "representative_depth_metrics": {
+      "foreground_mark_pixels_surviving_deeper_omission": 1467,
+      "mark_pixels_occluded_by_nearer_terrain": 0,
+      "foreground_crossing_examples": [
+        {
+          "id": "c315949b81956d8d",
+          "kind": "near",
+          "root_forward_depth_m": 183.9736726445997,
+          "surviving_mark_pixels": 529,
+          "bounds_pixel_xy": [
+            128,
+            632,
+            266,
+            846
+          ]
+        },
+        {
+          "id": "a71239750f75c76c",
+          "kind": "near",
+          "root_forward_depth_m": 362.98253052399815,
+          "surviving_mark_pixels": 472,
+          "bounds_pixel_xy": [
+            409,
+            594,
+            498,
+            788
+          ]
+        },
+        {
+          "id": "c66ed22b7644d2c0",
+          "kind": "near",
+          "root_forward_depth_m": 1020.7405821577261,
+          "surviving_mark_pixels": 466,
+          "bounds_pixel_xy": [
+            447,
+            447,
+            546,
+            645
+          ]
+        }
+      ]
+    },
+    "full_width_top_open_fraction_B_C": [
+      0.24333333333333335,
+      0.24333333333333335
+    ],
+    "previous_artifacts_unchanged": true
+  },
+  "previous_artifact_sha256": {
+    "docs/experiments/f2_multidepth_whitespace_v02/local_only_continuous.png": "f2618859d7cf41f1b2a5dfb6386920a42ddafe48df9ec86de6e189a13789681e",
+    "docs/experiments/f2_multidepth_whitespace_v02/vegetation_fields.png": "aa1b210177a2a7668cfa63b1bd51aa19c42dd60f145588ab1eedf53fea91a454",
+    "docs/experiments/f2_multidepth_whitespace_v02/fields.npz": "259bec193cd2860ac5ccbc8e8a516cf14979d2c92110460a77a4503890fcea38",
+    "docs/experiments/f2_multidepth_whitespace_v02/vegetation_grammar.png": "66553fece25a1dc0219e93a36d84e3fb07c76d1661af6fa1a6e0bd90e3514dc3",
+    "docs/experiments/f2_multidepth_whitespace_v02/terrain_features.png": "19a4a62437ea5c9362f6b89bb4d9b85c5b6f21e4cedbd29ddd09dcd4706e0734",
+    "docs/experiments/f2_multidepth_whitespace_v02/global_envelope.png": "8223cc89492a9d6c1a0a2f1ab44ddf297872384902dfa86c104134062dafffd0",
+    "docs/experiments/f2_multidepth_whitespace_v02/local_fields.png": "febbe43d96c491db22897ef0eb841cbec3470451222e94609b558cfc784842cd",
+    "docs/experiments/f2_multidepth_whitespace_v02/global_local_continuous.png": "9cc91f41f851b96c776a7067484648e455663effa7cf62002f51b41a34472fe2",
+    "docs/experiments/f2_multidepth_whitespace_v02/envelope_profiles.png": "0af78011ec34e7aa9734461bd8d1e02a1ea9254e160801c8d9d74304670c6a41",
+    "docs/experiments/f2_multidepth_whitespace_v02/depth_vegetation_continuous.png": "48d37e3af08c04f967f428fed349b21b56637f5ed87e2bdea29d8046fcf551d0",
+    "docs/experiments/f2_multidepth_whitespace_v02/panel_1.png": "2adfe03e532f14ff7723e662c05abbf6a70e218012baed62be04c0b4e9fa8fb9",
+    "docs/experiments/f2_multidepth_whitespace_v02/ablation.png": "1a72d83960ca6d22ee24015a5fad085093cad570d9b9d1d70e0fdbffe18e50d3",
+    "docs/experiments/f2_multidepth_whitespace_v02/gradation.png": "6539f61582440f1b59a1086e3da4d810533cf81fdbf61aea1203045969393287",
+    "docs/experiments/f2_multidepth_whitespace_v02/soft_only_continuous.png": "eae2444085bd81f321450a65cd6aa046aa1b9f2dc62e934792660840ad8b50c8",
+    "docs/experiments/f2_multidepth_whitespace_v02/depth_compositing.png": "7cf65c51bfbfaf532e620b7c6e1115da69f467f347a6e0ffc5f77f7cd6716cbb",
+    "docs/experiments/f2_multidepth_whitespace_v02/marks.json": "49a7d431126423d3137d5657c684d21c70e5aacc28657c9eb36ecc64cec233c4",
+    "docs/experiments/f2_multidepth_whitespace_v02/comparison.png": "3d2ec01067a364cf532ac1a2329a4c835022c914787d439064b74269b2d87ccb",
+    "docs/experiments/f2_multidepth_whitespace_v02/physical_pair.png": "b4ac9e2d82423d1dfa84b878df650de89c9e2862f86f0740051487cba85049bf",
+    "docs/experiments/f2_multidepth_whitespace_v02/README.md": "15f86887f6ec0214e4eecb72551951d702a05e5ddcec6f25d8817099c3f4e2fe",
+    "docs/experiments/f2_multidepth_whitespace_v02/record.json": "b6a5a95990bf8fe031706129dae9c0009fdb99cd870fc5f2cef6f65159d5e19b",
+    "docs/experiments/f2_multidepth_whitespace_v02/panel_2.png": "6a06dffbbb331bcd8fcd65badfc7971a4653f2ccf772105fbeb89b938f348843",
+    "docs/experiments/f2_painterly_layers_v01/C_panel_1.png": "06d18a43985ad1fc88ed1e932825f5056e0d89d0e6f33b4c755137b75d7f9019",
+    "docs/experiments/f2_painterly_layers_v01/fields.npz": "cbfcdb7822271aaaf7f6cea346e9358b0cb98b34387aceafc18effda7dcb687b",
+    "docs/experiments/f2_painterly_layers_v01/B_continuous.png": "0b68c2ae0841b13b367edac071e6fac96eabc778316647f8df8c4e1009209a1a",
+    "docs/experiments/f2_painterly_layers_v01/ABC_comparison.png": "164453b87b4f16aba499db7c1f1d7a079ccd30fd1ed00c59a994c558a993d0cf",
+    "docs/experiments/f2_painterly_layers_v01/A_panel_1.png": "fa2c21ed61c7a3237a32598a827dc53bb9a40a079ea2019fecb215a860d36ebc",
+    "docs/experiments/f2_painterly_layers_v01/B_physical_pair.png": "88acadf00c50014217004f74b03c8447a4106c6ecb708bc85f7bc1dcc0e8f672",
+    "docs/experiments/f2_painterly_layers_v01/A_panel_2.png": "8d3b46db46a85ce5e39df145cc25fc28fc88e2d4b89a9bcd7ab223fb82e163c1",
+    "docs/experiments/f2_painterly_layers_v01/C_continuous.png": "b97713bc4a30487aa4a8291e5dad5c9108dc5b834a97ef254a10d2aaa9925823",
+    "docs/experiments/f2_painterly_layers_v01/C_panel_2.png": "e1cde2b36aa3b44a8ec516329831cb8118b27a2aa28b596dbf3853cfb33b8e08",
+    "docs/experiments/f2_painterly_layers_v01/B_panel_1.png": "e0d6efdcae399c1a92afebddddd65592911f8828ea12739b4358360a6db47067",
+    "docs/experiments/f2_painterly_layers_v01/fields.png": "212828a51e29e329618a6aefc6800fea602c41fe16a2c4058b69f48506486806",
+    "docs/experiments/f2_painterly_layers_v01/A_continuous.png": "fc1e4d302af7ba862d5d309a89b4ae3030874bbea814afb8cbdf226bcc64586e",
+    "docs/experiments/f2_painterly_layers_v01/plants.json": "508bd860e01b12e72206acee99e8998dc2141bed40440381b23cd39dab7f62ff",
+    "docs/experiments/f2_painterly_layers_v01/data_and_omission.png": "9c92a1c6d932328aeddf2b4759648be330e221965f3ad4d3f5c38801fd0278e9",
+    "docs/experiments/f2_painterly_layers_v01/B_panel_2.png": "c0026d724a2eb510b776b7d10211bbb0215617d8623091b59555b851953b1274",
+    "docs/experiments/f2_painterly_layers_v01/A_physical_pair.png": "4f8f942dd081ab50895c2bf0e58a1305bbd3769fcd790709586904f2bc85922c",
+    "docs/experiments/f2_painterly_layers_v01/C_physical_pair.png": "7e2c23ad982174ff6dfc27abb4614f47adf6dcb11c17f38a4c313a73d82f4130",
+    "docs/experiments/f2_painterly_layers_v01/README.md": "fdb4e21826a2f509be944c4481063cce6d7a2c5ecd9761c9485cc670d9392f33",
+    "docs/experiments/f2_painterly_layers_v01/record.json": "7cf3a66f3349a76a6a37fb74aefe36d674249d09ca72ddcab2c80c8dabaa0aa0"
+  },
+  "positive_forms": [
+    {
+      "pixel_xy": [
+        280.5,
+        641.5
+      ],
+      "source_xyz_m": [
+        324373.25597804907,
+        4168714.9852120536,
+        81.06147184733734
+      ],
+      "score": 0.9791909470966155,
+      "slope_deg": 1.9980002334611975,
+      "forward_depth_m": 987.4187257161349,
+      "relative_height_above_120m_blur_m": 15.318422682116179,
+      "interpretation": "DEM-supported terrain legibility selection; not an identified rock or path."
+    },
+    {
+      "pixel_xy": [
+        521.5,
+        679.5
+      ],
+      "source_xyz_m": [
+        324735.403724072,
+        4169111.053657555,
+        53.35621596956865
+      ],
+      "score": 0.8781019933771267,
+      "slope_deg": 0.28512861405778667,
+      "forward_depth_m": 801.0817551635757,
+      "relative_height_above_120m_blur_m": 5.534463933937992,
+      "interpretation": "DEM-supported terrain legibility selection; not an identified rock or path."
+    },
+    {
+      "pixel_xy": [
+        117.5,
+        657.5
+      ],
+      "source_xyz_m": [
+        324312.768213577,
+        4168353.0390419923,
+        67.85789629637239
+      ],
+      "score": 0.7970041416808945,
+      "slope_deg": 2.055639845906902,
+      "forward_depth_m": 907.1523042131961,
+      "relative_height_above_120m_blur_m": 4.1388842894236575,
+      "interpretation": "DEM-supported terrain legibility selection; not an identified rock or path."
+    },
+    {
+      "pixel_xy": [
+        367.5,
+        742.5
+      ],
+      "source_xyz_m": [
+        324869.65975738043,
+        4168684.9024568405,
+        46.28742912614458
+      ],
+      "score": 0.6801786204404818,
+      "slope_deg": 2.9773909105623932,
+      "forward_depth_m": 516.2294309961666,
+      "relative_height_above_120m_blur_m": 3.3920242936073848,
+      "interpretation": "DEM-supported terrain legibility selection; not an identified rock or path."
+    },
+    {
+      "pixel_xy": [
+        133.5,
+        777.5
+      ],
+      "source_xyz_m": [
+        324855.1458498322,
+        4168296.284076829,
+        49.353828007901065
+      ],
+      "score": 0.7076096419307885,
+      "slope_deg": 3.0662785001573107,
+      "forward_depth_m": 383.32934604467647,
+      "relative_height_above_120m_blur_m": 3.557174665240453,
+      "interpretation": "DEM-supported terrain legibility selection; not an identified rock or path."
+    }
+  ],
+  "representative_source_roots": [
+    {
+      "id": "c66ed22b7644d2c0",
+      "source_xyz_m": [
+        324530.5414840416,
+        4169190.3932430763,
+        54.63688953575118
+      ],
+      "parent_small_mark_id": "476b78fba7baa87c"
+    },
+    {
+      "id": "a71239750f75c76c",
+      "source_xyz_m": [
+        325056.1486744382,
+        4168736.720364189,
+        38.989788480844915
+      ],
+      "parent_small_mark_id": "4b5d55a48d08d014"
+    },
+    {
+      "id": "c315949b81956d8d",
+      "source_xyz_m": [
+        325086.0165912042,
+        4168334.8401221926,
+        40.591475733933024
+      ],
+      "parent_small_mark_id": "cfaec643596bec12"
+    }
+  ],
+  "field_archive_sha256": "c728ec99041f268051d6281b299a81db09cfd5386687d214a8e9723088704ede",
+  "seed_streams": {
+    "native_features": "Unchanged v0.2 seed/401",
+    "small_grammar": "Reused v0.2 source marks",
+    "representative_geometry": 603
+  },
+  "boundary_contract": "Y increases downward in painted mm. Every contribution is multiplied by boundary_retention; y >= 898 mm is zero in this config, including y = 900 mm. No form/root/depth exception.",
+  "future_vector_color_contract": "Clip/split vector segments at the configured hard boundary; sample the same continuous retention for density/layer inclusion. Apply the final boundary gate to every color/ink contribution. No G-code or color engine is implemented.",
+  "panel_rule": {
+    "continuous_mm": [
+      600,
+      900
+    ],
+    "panels_mm": [
+      [
+        300,
+        900
+      ],
+      [
+        300,
+        900
+      ]
+    ],
+    "physical_gap_mm": 40
+  },
+  "archive_note": "Scalar diagnostic fields float16; categorical boundary/far cores bool. Original raw source XYZ/depth stay in unchanged v0.1 fields.npz.",
+  "limitations": [
+    "Representative heights are image-space choices, not DEM-measured trees.",
+    "Positive forms are terrain selections; no observed rock/path/tree inventory is inferred.",
+    "Shade/coverage is a composition proxy; final vector strokes and pigment calibration remain separate."
+  ]
+}
