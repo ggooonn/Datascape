@@ -1,0 +1,1196 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-14T02:21:55.140811+00:00",
+  "repository_base_revision": "282dab31bf9928918f79ba562859e32f3e29907b",
+  "master_sha256": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+  "configuration_sha256": "95acdc17bdc0eab3a8a644e7d4c5bc13c39ca1010b7a3121df06e73f3ca4245f",
+  "configuration": {
+    "schema_version": 1,
+    "input_crs": "EPSG:32652",
+    "random_seed": null,
+    "selection": {
+      "spans_m": [
+        4800,
+        7200,
+        6000
+      ],
+      "scan_step_pixels": 30,
+      "keep_per_type": 5,
+      "selected_ranks": {
+        "A": 0,
+        "B": 1,
+        "C": 0
+      },
+      "reason": "Distinct crop centers and terrain character, not three independent mountain ranges."
+    },
+    "camera": {
+      "vertical_fov_deg": 22,
+      "elevation_deg": 12,
+      "distance_to_roi_width_ratio": 0.9,
+      "vertical_exaggeration": 1.8,
+      "near_m": 1,
+      "bearings_deg": {
+        "A": [
+          0,
+          90,
+          225
+        ],
+        "B": [
+          20,
+          110,
+          240
+        ],
+        "C": [
+          350,
+          100,
+          210
+        ]
+      },
+      "controls": {
+        "high_elevation_deg": 28,
+        "far_distance_multiplier": 1.3,
+        "unexaggerated_scale": 1.0
+      }
+    },
+    "preview": {
+      "width_px": 1200,
+      "height_px": 675,
+      "mesh_stride": 2,
+      "shortlist_view_indices": {
+        "A": 0,
+        "B": 2,
+        "C": 0
+      },
+      "lighting": "Northwest azimuth, 45-degree altitude; Lambert shading without cast shadows.",
+      "distance_tone_max": 0.15
+    },
+    "screen": {
+      "panel_width_mm": 300,
+      "panel_height_mm": 900,
+      "gap_mm": 40,
+      "pair_width_mm": 640,
+      "pair_display": "Center crop preserving vertical field of view; blank gap without stretching."
+    }
+  },
+  "source_modules_sha256": {
+    "rendering/exploration.py": "5ff24050e0172309b5973c4288c133c7c527f1ca4417c63e7eb4cbb85346d3e0",
+    "rendering/terrain_preview.py": "573615f56ee97257819e5732760798a7865497ea4d9af325626d52e039fd42d3",
+    "projection/camera.py": "649b054a4450a23be58871500d92fce6c7d4be307044b92d489d44079e701079",
+    "terrain/candidates.py": "846e7333daa06b37a2042122ef673d17134d4bc49aa98ffebe6421424947fa77"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "rasterio": "1.5.2"
+  },
+  "candidates": [
+    {
+      "type": "A",
+      "center_utm_m": [
+        320520.0,
+        4168070.0
+      ],
+      "bounds_utm_m": [
+        318120.0,
+        4165670.0,
+        322920.0,
+        4170470.0
+      ],
+      "score": 251.49030754566192,
+      "metrics": {
+        "valid_fraction": 1.0,
+        "elevation_min_m": 34.103511810302734,
+        "elevation_max_m": 801.7711791992188,
+        "elevation_median_m": 368.6939697265625,
+        "p95_p05_relief_m": 543.9925537109375,
+        "slope_ge_25_fraction": 0.4623046875,
+        "elevation_lt_100_fraction": 0.1109765625,
+        "elevation_gt_300_fraction": 0.642578125,
+        "local_residual_std_m": 46.88116745112257
+      },
+      "candidate_id": "A1",
+      "selection_rank": 1,
+      "center_wgs84_lon_lat": [
+        126.9656991830908,
+        37.64225433981219
+      ],
+      "bounds_wgs84_wsen": [
+        126.93791466769383,
+        37.62016394579396,
+        126.99346796127726,
+        37.66433911376014
+      ],
+      "roi_size_m": [
+        4800.0,
+        4800.0
+      ],
+      "name": null
+    },
+    {
+      "type": "B",
+      "center_utm_m": [
+        321720.0,
+        4171370.0
+      ],
+      "bounds_utm_m": [
+        318120.0,
+        4167770.0,
+        325320.0,
+        4174970.0
+      ],
+      "score": 203.55647215517612,
+      "metrics": {
+        "valid_fraction": 1.0,
+        "elevation_min_m": 33.08192443847656,
+        "elevation_max_m": 801.7711791992188,
+        "elevation_median_m": 252.822509765625,
+        "p95_p05_relief_m": 493.10577392578125,
+        "slope_ge_25_fraction": 0.3215972222222222,
+        "elevation_lt_100_fraction": 0.14873263888888888,
+        "elevation_gt_300_fraction": 0.39697916666666666,
+        "local_residual_std_m": 41.28048847098148
+      },
+      "candidate_id": "B1",
+      "selection_rank": 2,
+      "center_wgs84_lon_lat": [
+        126.97848657792845,
+        37.672213799019346
+      ],
+      "bounds_wgs84_wsen": [
+        126.93679176808237,
+        37.63907995039907,
+        127.02014592544272,
+        37.7053349774868
+      ],
+      "roi_size_m": [
+        7200.0,
+        7200.0
+      ],
+      "name": null
+    },
+    {
+      "type": "C",
+      "center_utm_m": [
+        323820.0,
+        4168370.0
+      ],
+      "bounds_utm_m": [
+        320820.0,
+        4165370.0,
+        326820.0,
+        4171370.0
+      ],
+      "score": 199.2010031006633,
+      "metrics": {
+        "valid_fraction": 1.0,
+        "elevation_min_m": 18.388261795043945,
+        "elevation_max_m": 801.7711791992188,
+        "elevation_median_m": 168.69912719726562,
+        "p95_p05_relief_m": 537.4755249023438,
+        "slope_ge_25_fraction": 0.2239,
+        "elevation_lt_100_fraction": 0.388,
+        "elevation_gt_300_fraction": 0.354025,
+        "local_residual_std_m": 34.01812376778005
+      },
+      "candidate_id": "C1",
+      "selection_rank": 1,
+      "center_wgs84_lon_lat": [
+        127.0030093500255,
+        37.64559565475472
+      ],
+      "bounds_wgs84_wsen": [
+        126.9682873669978,
+        37.617991873149386,
+        127.03770673734242,
+        37.67319063277775
+      ],
+      "roi_size_m": [
+        6000.0,
+        6000.0
+      ],
+      "name": null
+    }
+  ],
+  "ranked_windows": {
+    "A": [
+      {
+        "type": "A",
+        "center_utm_m": [
+          320520.0,
+          4168070.0
+        ],
+        "bounds_utm_m": [
+          318120.0,
+          4165670.0,
+          322920.0,
+          4170470.0
+        ],
+        "score": 251.49030754566192,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 34.103511810302734,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 368.6939697265625,
+          "p95_p05_relief_m": 543.9925537109375,
+          "slope_ge_25_fraction": 0.4623046875,
+          "elevation_lt_100_fraction": 0.1109765625,
+          "elevation_gt_300_fraction": 0.642578125,
+          "local_residual_std_m": 46.88116745112257
+        }
+      },
+      {
+        "type": "A",
+        "center_utm_m": [
+          320520.0,
+          4170770.0
+        ],
+        "bounds_utm_m": [
+          318120.0,
+          4168370.0,
+          322920.0,
+          4173170.0
+        ],
+        "score": 186.23565865516665,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 34.103511810302734,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 273.08056640625,
+          "p95_p05_relief_m": 492.32061767578125,
+          "slope_ge_25_fraction": 0.37828125,
+          "elevation_lt_100_fraction": 0.1419921875,
+          "elevation_gt_300_fraction": 0.4470703125,
+          "local_residual_std_m": 45.80621137146182
+        }
+      },
+      {
+        "type": "A",
+        "center_utm_m": [
+          323220.0,
+          4171670.0
+        ],
+        "bounds_utm_m": [
+          320820.0,
+          4169270.0,
+          325620.0,
+          4174070.0
+        ],
+        "score": 172.67577797174454,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 41.41201400756836,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 305.145263671875,
+          "p95_p05_relief_m": 482.6927185058594,
+          "slope_ge_25_fraction": 0.357734375,
+          "elevation_lt_100_fraction": 0.0771875,
+          "elevation_gt_300_fraction": 0.5139453125,
+          "local_residual_std_m": 42.812066536611646
+        }
+      },
+      {
+        "type": "A",
+        "center_utm_m": [
+          323220.0,
+          4168970.0
+        ],
+        "bounds_utm_m": [
+          320820.0,
+          4166570.0,
+          325620.0,
+          4171370.0
+        ],
+        "score": 165.89088349342347,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 27.875383377075195,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 270.78155517578125,
+          "p95_p05_relief_m": 558.4963989257812,
+          "slope_ge_25_fraction": 0.29703125,
+          "elevation_lt_100_fraction": 0.260390625,
+          "elevation_gt_300_fraction": 0.465,
+          "local_residual_std_m": 38.126304340734016
+        }
+      },
+      {
+        "type": "A",
+        "center_utm_m": [
+          320520.0,
+          4165370.0
+        ],
+        "bounds_utm_m": [
+          318120.0,
+          4162970.0,
+          322920.0,
+          4167770.0
+        ],
+        "score": 148.52949978828428,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 36.75752258300781,
+          "elevation_max_m": 711.2788696289062,
+          "elevation_median_m": 242.70291137695312,
+          "p95_p05_relief_m": 469.021240234375,
+          "slope_ge_25_fraction": 0.3166796875,
+          "elevation_lt_100_fraction": 0.0744140625,
+          "elevation_gt_300_fraction": 0.3646875,
+          "local_residual_std_m": 39.859962598944506
+        }
+      }
+    ],
+    "B": [
+      {
+        "type": "B",
+        "center_utm_m": [
+          319920.0,
+          4169570.0
+        ],
+        "bounds_utm_m": [
+          316320.0,
+          4165970.0,
+          323520.0,
+          4173170.0
+        ],
+        "score": 208.293649229248,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 21.932146072387695,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 241.65081787109375,
+          "p95_p05_relief_m": 506.6558532714844,
+          "slope_ge_25_fraction": 0.32395833333333335,
+          "elevation_lt_100_fraction": 0.23548611111111112,
+          "elevation_gt_300_fraction": 0.40262152777777777,
+          "local_residual_std_m": 41.11146607392233
+        }
+      },
+      {
+        "type": "B",
+        "center_utm_m": [
+          321720.0,
+          4171370.0
+        ],
+        "bounds_utm_m": [
+          318120.0,
+          4167770.0,
+          325320.0,
+          4174970.0
+        ],
+        "score": 203.55647215517612,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 33.08192443847656,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 252.822509765625,
+          "p95_p05_relief_m": 493.10577392578125,
+          "slope_ge_25_fraction": 0.3215972222222222,
+          "elevation_lt_100_fraction": 0.14873263888888888,
+          "elevation_gt_300_fraction": 0.39697916666666666,
+          "local_residual_std_m": 41.28048847098148
+        }
+      },
+      {
+        "type": "B",
+        "center_utm_m": [
+          319920.0,
+          4166870.0
+        ],
+        "bounds_utm_m": [
+          316320.0,
+          4163270.0,
+          323520.0,
+          4170470.0
+        ],
+        "score": 197.84901811297573,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 15.298554420471191,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 192.78854370117188,
+          "p95_p05_relief_m": 518.509765625,
+          "slope_ge_25_fraction": 0.2829861111111111,
+          "elevation_lt_100_fraction": 0.2872395833333333,
+          "elevation_gt_300_fraction": 0.3231076388888889,
+          "local_residual_std_m": 38.15724046672351
+        }
+      },
+      {
+        "type": "B",
+        "center_utm_m": [
+          322620.0,
+          4168670.0
+        ],
+        "bounds_utm_m": [
+          319020.0,
+          4165070.0,
+          326220.0,
+          4172270.0
+        ],
+        "score": 194.60775952210443,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 27.8629207611084,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 227.66395568847656,
+          "p95_p05_relief_m": 509.5369873046875,
+          "slope_ge_25_fraction": 0.2858159722222222,
+          "elevation_lt_100_fraction": 0.24598958333333334,
+          "elevation_gt_300_fraction": 0.37265625,
+          "local_residual_std_m": 38.1930584767804
+        }
+      },
+      {
+        "type": "B",
+        "center_utm_m": [
+          324420.0,
+          4171370.0
+        ],
+        "bounds_utm_m": [
+          320820.0,
+          4167770.0,
+          328020.0,
+          4174970.0
+        ],
+        "score": 182.04661138781285,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 14.0214262008667,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 203.42288208007812,
+          "p95_p05_relief_m": 520.5862426757812,
+          "slope_ge_25_fraction": 0.24553819444444444,
+          "elevation_lt_100_fraction": 0.33536458333333335,
+          "elevation_gt_300_fraction": 0.3550173611111111,
+          "local_residual_std_m": 34.969539427723724
+        }
+      }
+    ],
+    "C": [
+      {
+        "type": "C",
+        "center_utm_m": [
+          323820.0,
+          4168370.0
+        ],
+        "bounds_utm_m": [
+          320820.0,
+          4165370.0,
+          326820.0,
+          4171370.0
+        ],
+        "score": 199.2010031006633,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 18.388261795043945,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 168.69912719726562,
+          "p95_p05_relief_m": 537.4755249023438,
+          "slope_ge_25_fraction": 0.2239,
+          "elevation_lt_100_fraction": 0.388,
+          "elevation_gt_300_fraction": 0.354025,
+          "local_residual_std_m": 34.01812376778005
+        }
+      },
+      {
+        "type": "C",
+        "center_utm_m": [
+          319320.0,
+          4167470.0
+        ],
+        "bounds_utm_m": [
+          316320.0,
+          4164470.0,
+          322320.0,
+          4170470.0
+        ],
+        "score": 187.1741002074227,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 21.932146072387695,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 199.06594848632812,
+          "p95_p05_relief_m": 542.3568725585938,
+          "slope_ge_25_fraction": 0.3191,
+          "elevation_lt_100_fraction": 0.323275,
+          "elevation_gt_300_fraction": 0.368425,
+          "local_residual_std_m": 40.75291242436318
+        }
+      },
+      {
+        "type": "C",
+        "center_utm_m": [
+          325620.0,
+          4171970.0
+        ],
+        "bounds_utm_m": [
+          322620.0,
+          4168970.0,
+          328620.0,
+          4174970.0
+        ],
+        "score": 173.55353234095975,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 14.0214262008667,
+          "elevation_max_m": 709.9035034179688,
+          "elevation_median_m": 127.04945373535156,
+          "p95_p05_relief_m": 492.5688171386719,
+          "slope_ge_25_fraction": 0.189075,
+          "elevation_lt_100_fraction": 0.44685,
+          "elevation_gt_300_fraction": 0.277825,
+          "local_residual_std_m": 30.57923162216307
+        }
+      },
+      {
+        "type": "C",
+        "center_utm_m": [
+          319320.0,
+          4170170.0
+        ],
+        "bounds_utm_m": [
+          316320.0,
+          4167170.0,
+          322320.0,
+          4173170.0
+        ],
+        "score": 149.86962310651137,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 21.932146072387695,
+          "elevation_max_m": 801.7711791992188,
+          "elevation_median_m": 174.5155029296875,
+          "p95_p05_relief_m": 514.9791870117188,
+          "slope_ge_25_fraction": 0.279325,
+          "elevation_lt_100_fraction": 0.28945,
+          "elevation_gt_300_fraction": 0.2926,
+          "local_residual_std_m": 40.684889887100056
+        }
+      },
+      {
+        "type": "C",
+        "center_utm_m": [
+          323820.0,
+          4165670.0
+        ],
+        "bounds_utm_m": [
+          320820.0,
+          4162670.0,
+          326820.0,
+          4168670.0
+        ],
+        "score": 146.80195538977193,
+        "metrics": {
+          "valid_fraction": 1.0,
+          "elevation_min_m": 18.388261795043945,
+          "elevation_max_m": 711.2788696289062,
+          "elevation_median_m": 118.34339904785156,
+          "p95_p05_relief_m": 491.2582092285156,
+          "slope_ge_25_fraction": 0.13365,
+          "elevation_lt_100_fraction": 0.446325,
+          "elevation_gt_300_fraction": 0.200075,
+          "local_residual_std_m": 28.69529429877717
+        }
+      }
+    ]
+  },
+  "views": [
+    {
+      "view_id": "A-V1",
+      "candidate_id": "A1",
+      "azimuth_deg": 0,
+      "elevation_deg": 12,
+      "distance_m": 4320.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        320520.0,
+        4168070.0,
+        368.6939697265625
+      ],
+      "eye_display_xyz_m": [
+        320520.0,
+        4163750.0,
+        1581.893491922308
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 6400,
+      "triangles": 12482,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.7146617283950617,
+      "outside_roi_ground_pixel_fraction": 0.0029728395061728394,
+      "pair_visible_fraction_excluding_gap": 0.7376987654320989
+    },
+    {
+      "view_id": "A-V2",
+      "candidate_id": "A1",
+      "azimuth_deg": 90,
+      "elevation_deg": 12,
+      "distance_m": 4320.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        320520.0,
+        4168070.0,
+        368.6939697265625
+      ],
+      "eye_display_xyz_m": [
+        316200.0,
+        4168070.0,
+        1581.893491922308
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 6400,
+      "triangles": 12482,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.8491864197530864,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.8102452674897119
+    },
+    {
+      "view_id": "A-V3",
+      "candidate_id": "A1",
+      "azimuth_deg": 225,
+      "elevation_deg": 12,
+      "distance_m": 4320.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        320520.0,
+        4168070.0,
+        368.6939697265625
+      ],
+      "eye_display_xyz_m": [
+        323574.7012947259,
+        4171124.7012947258,
+        1581.893491922308
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 6400,
+      "triangles": 12482,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.7891641975308642,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.7761711934156379
+    },
+    {
+      "view_id": "A-V4",
+      "candidate_id": "A1",
+      "azimuth_deg": 0,
+      "elevation_deg": 28,
+      "distance_m": 4320.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        320520.0,
+        4168070.0,
+        368.6939697265625
+      ],
+      "eye_display_xyz_m": [
+        320520.0,
+        4163750.0,
+        2960.633890285401
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 6400,
+      "triangles": 12482,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.8797407407407407,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.8949728395061728
+    },
+    {
+      "view_id": "A-V5",
+      "candidate_id": "A1",
+      "azimuth_deg": 0,
+      "elevation_deg": 12,
+      "distance_m": 5616.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        320520.0,
+        4168070.0,
+        368.6939697265625
+      ],
+      "eye_display_xyz_m": [
+        320520.0,
+        4162454.0,
+        1857.3667958466567
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 6400,
+      "triangles": 12482,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.5596197530864198,
+      "outside_roi_ground_pixel_fraction": 0.0961111111111111,
+      "pair_visible_fraction_excluding_gap": 0.6002502057613168
+    },
+    {
+      "view_id": "A-V6",
+      "candidate_id": "A1",
+      "azimuth_deg": 0,
+      "elevation_deg": 12,
+      "distance_m": 4320.0,
+      "vertical_exaggeration": 1.0,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        320520.0,
+        4168070.0,
+        368.6939697265625
+      ],
+      "eye_display_xyz_m": [
+        320520.0,
+        4163750.0,
+        1286.938316141058
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 6400,
+      "triangles": 12482,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.6876617283950617,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.6930106995884774
+    },
+    {
+      "view_id": "B-V1",
+      "candidate_id": "B1",
+      "azimuth_deg": 20,
+      "elevation_deg": 12,
+      "distance_m": 6480.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        321720.0,
+        4171370.0,
+        252.822509765625
+      ],
+      "eye_display_xyz_m": [
+        319503.70947124966,
+        4165280.7918173075,
+        1832.4470371998684
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 14400,
+      "triangles": 28322,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.6331234567901235,
+      "outside_roi_ground_pixel_fraction": 0.10667037037037037,
+      "pair_visible_fraction_excluding_gap": 0.6818534979423868
+    },
+    {
+      "view_id": "B-V2",
+      "candidate_id": "B1",
+      "azimuth_deg": 110,
+      "elevation_deg": 12,
+      "distance_m": 6480.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        321720.0,
+        4171370.0,
+        252.822509765625
+      ],
+      "eye_display_xyz_m": [
+        315630.7918173073,
+        4173586.2905287505,
+        1832.4470371998684
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 14400,
+      "triangles": 28322,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.7615407407407407,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.7201909465020576
+    },
+    {
+      "view_id": "B-V3",
+      "candidate_id": "B1",
+      "azimuth_deg": 240,
+      "elevation_deg": 12,
+      "distance_m": 6480.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        321720.0,
+        4171370.0,
+        252.822509765625
+      ],
+      "eye_display_xyz_m": [
+        327331.8446165232,
+        4174610.0,
+        1832.4470371998684
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 14400,
+      "triangles": 28322,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.7345246913580247,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.6806584362139917
+    },
+    {
+      "view_id": "B-V4",
+      "candidate_id": "B1",
+      "azimuth_deg": 20,
+      "elevation_deg": 28,
+      "distance_m": 6480.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        321720.0,
+        4171370.0,
+        252.822509765625
+      ],
+      "eye_display_xyz_m": [
+        319503.70947124966,
+        4165280.7918173075,
+        3900.5576347445076
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 14400,
+      "triangles": 28322,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.9072604938271605,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.9461465020576132
+    },
+    {
+      "view_id": "B-V5",
+      "candidate_id": "B1",
+      "azimuth_deg": 20,
+      "elevation_deg": 12,
+      "distance_m": 8424.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        321720.0,
+        4171370.0,
+        252.822509765625
+      ],
+      "eye_display_xyz_m": [
+        318838.82231262454,
+        4163454.0293624997,
+        2245.6569930863916
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 14400,
+      "triangles": 28322,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.4877222222222222,
+      "outside_roi_ground_pixel_fraction": 0.19013456790123456,
+      "pair_visible_fraction_excluding_gap": 0.5114106995884774
+    },
+    {
+      "view_id": "B-V6",
+      "candidate_id": "B1",
+      "azimuth_deg": 20,
+      "elevation_deg": 12,
+      "distance_m": 6480.0,
+      "vertical_exaggeration": 1.0,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        321720.0,
+        4171370.0,
+        252.822509765625
+      ],
+      "eye_display_xyz_m": [
+        319503.70947124966,
+        4165280.7918173075,
+        1630.1890293873685
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 14400,
+      "triangles": 28322,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.6662506172839506,
+      "outside_roi_ground_pixel_fraction": 0.04096172839506173,
+      "pair_visible_fraction_excluding_gap": 0.705046913580247
+    },
+    {
+      "view_id": "C-V1",
+      "candidate_id": "C1",
+      "azimuth_deg": 350,
+      "elevation_deg": 12,
+      "distance_m": 5400.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        323820.0,
+        4168370.0,
+        168.69912719726562
+      ],
+      "eye_display_xyz_m": [
+        324757.7001594014,
+        4163052.038133734,
+        1451.4638619731975
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 10000,
+      "triangles": 19602,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.7998506172839506,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.7826600823045268
+    },
+    {
+      "view_id": "C-V2",
+      "candidate_id": "C1",
+      "azimuth_deg": 100,
+      "elevation_deg": 12,
+      "distance_m": 5400.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        323820.0,
+        4168370.0,
+        168.69912719726562
+      ],
+      "eye_display_xyz_m": [
+        318502.0381337341,
+        4169307.7001594016,
+        1451.4638619731975
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 10000,
+      "triangles": 19602,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.587116049382716,
+      "outside_roi_ground_pixel_fraction": 0.2262395061728395,
+      "pair_visible_fraction_excluding_gap": 0.5924510288065844
+    },
+    {
+      "view_id": "C-V3",
+      "candidate_id": "C1",
+      "azimuth_deg": 210,
+      "elevation_deg": 12,
+      "distance_m": 5400.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        323820.0,
+        4168370.0,
+        168.69912719726562
+      ],
+      "eye_display_xyz_m": [
+        326520.0,
+        4173046.537180436,
+        1451.4638619731975
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 10000,
+      "triangles": 19602,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.7938111111111111,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.8061728395061729
+    },
+    {
+      "view_id": "C-V4",
+      "candidate_id": "C1",
+      "azimuth_deg": 350,
+      "elevation_deg": 28,
+      "distance_m": 5400.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        323820.0,
+        4168370.0,
+        168.69912719726562
+      ],
+      "eye_display_xyz_m": [
+        324757.7001594014,
+        4163052.038133734,
+        3174.8893599270637
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 10000,
+      "triangles": 19602,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.9502,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.959924279835391
+    },
+    {
+      "view_id": "C-V5",
+      "candidate_id": "C1",
+      "azimuth_deg": 350,
+      "elevation_deg": 12,
+      "distance_m": 7020.0,
+      "vertical_exaggeration": 1.8,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        323820.0,
+        4168370.0,
+        168.69912719726562
+      ],
+      "eye_display_xyz_m": [
+        325039.01020722184,
+        4161456.649573854,
+        1795.8054918786333
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 10000,
+      "triangles": 19602,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.667495061728395,
+      "outside_roi_ground_pixel_fraction": 0.06767407407407408,
+      "pair_visible_fraction_excluding_gap": 0.6671967078189301
+    },
+    {
+      "view_id": "C-V6",
+      "candidate_id": "C1",
+      "azimuth_deg": 350,
+      "elevation_deg": 12,
+      "distance_m": 5400.0,
+      "vertical_exaggeration": 1.0,
+      "vertical_fov_deg": 22,
+      "near_m": 1,
+      "target_raw_xyz_m": [
+        323820.0,
+        4168370.0,
+        168.69912719726562
+      ],
+      "eye_display_xyz_m": [
+        324757.7001594014,
+        4163052.038133734,
+        1316.504560215385
+      ],
+      "projection": "perspective",
+      "azimuth_convention": "Look bearing clockwise from north",
+      "distance_convention": "Horizontal eye-to-target distance",
+      "display_z_transform": "raw elevation meters * vertical_exaggeration",
+      "mesh_stride": 2,
+      "mesh_spacing_m": 60.0,
+      "vertices": 10000,
+      "triangles": 19602,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.7390432098765433,
+      "outside_roi_ground_pixel_fraction": 0.0,
+      "pair_visible_fraction_excluding_gap": 0.734245267489712
+    }
+  ],
+  "native_sampling_check": {
+    "view_id": "A-V1",
+    "metadata": {
+      "mesh_stride": 1,
+      "mesh_spacing_m": 30.0,
+      "vertices": 25600,
+      "triangles": 50562,
+      "near_plane_discarded_triangles": 0,
+      "visible_pixel_fraction": 0.7197358024691358,
+      "outside_roi_ground_pixel_fraction": 0.0012395061728395062
+    }
+  },
+  "source_dem_modified": false,
+  "input_hash_unchanged": true,
+  "limitations": [
+    "No verified place names, rock exposure, or urban land-use labels",
+    "Finite ROI edges are cropped mesh boundaries, not a full regional horizon",
+    "60 m mesh sampling for preview; original DEM remains 30 m",
+    "Diagnostic mesh edges are not brush strokes",
+    "No production paths or G-code generated"
+  ]
+}

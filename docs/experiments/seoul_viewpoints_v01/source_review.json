@@ -1,0 +1,22 @@
+{
+  "base_commit": "282dab31bf9928918f79ba562859e32f3e29907b",
+  "notebook": {
+    "attachment_filename": "datascape_0815_Taebaek(1).ipynb",
+    "bytes": 35391440,
+    "sha256": "0ebd5e95ae309edf88b6cd1857e12510d5c6e657c1e22d3a604400e7f0b49a77",
+    "code_cells": 1,
+    "source_lines": 499
+  },
+  "archived_source_sha256": "1a035cb3f18cf183d48650e8075491fac5e647e3e1baceb1e5a8ea69d4bb20f6",
+  "source_ast_matches": true,
+  "original_executed": false,
+  "readonly_settings_sha256": {
+    "configs/palettes/palette_20.yaml": "28b578c5067bfa9025338ba887606ec66569fe4a18d1aae963f353ec2b5e27e4",
+    "hardware/fluidnc/tool_coordinates.yaml": "eb781167ed386d8b6a5f8aae9cb652b776ee152e389aa39b8025356d63f194ec",
+    "hardware/fluidnc/config_DEV_2026-10-10_UNVERIFIED.yaml": "e35cdc3dfb6e74a2a8d450ef314377e0d6230f8c12434e6deb674009f1349f07"
+  },
+  "input_tiff_sha256": {
+    "SeoulNorth_v02_VEG_10m.tif": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5",
+    "SeoulNorth_v02_MASTER_30m.tif": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb"
+  }
+}
