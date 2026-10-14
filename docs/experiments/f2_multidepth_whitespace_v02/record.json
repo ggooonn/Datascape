@@ -1,0 +1,493 @@
+{
+  "study": "F2 Multi-Depth Whitespace Refinement v0.2",
+  "base_pr_head": "93a7b37c7fb5255b1bfd03f5fc1ba2b8653bcd72",
+  "config": {
+    "study": "F2 Multi-Depth Whitespace Refinement v0.2",
+    "base_pr_head": "93a7b37c7fb5255b1bfd03f5fc1ba2b8653bcd72",
+    "source_composition": "configs/scenes/seoul_ground_composition_v01.json",
+    "source_layer_config": "configs/scenes/seoul_f2_painterly_layers_v01.json",
+    "previous_results": "docs/experiments/f2_painterly_layers_v01",
+    "seed": 20261015,
+    "terrain": {
+      "macro_sigma_m": [
+        120,
+        360,
+        900
+      ],
+      "noise_sigma_m": 160,
+      "valley_relief_m": [
+        2,
+        35
+      ],
+      "ridge_relief_m": [
+        8,
+        65
+      ],
+      "silhouette_protection_mm": 18,
+      "occlusion_jump_m": [
+        150,
+        700
+      ],
+      "occlusion_feather_mm": 5,
+      "relief_window_radius_m": 600
+    },
+    "depth": {
+      "near_middle_m": [
+        600,
+        1600
+      ],
+      "middle_far_m": [
+        2200,
+        3400
+      ]
+    },
+    "global": {
+      "top_target_fraction": [
+        0.1,
+        0.2
+      ],
+      "bottom_extent_fraction": [
+        0.05,
+        0.15
+      ],
+      "bottom_feather_fraction": 0.9,
+      "anchor_count": 4,
+      "anchor_search_x_fraction": [
+        0.1,
+        0.33,
+        0.66,
+        0.91
+      ],
+      "anchor_search_half_width_mm": 34,
+      "anchor_sigma_mm": [
+        18,
+        65
+      ],
+      "anchor_strength": 0.94,
+      "inscription": {
+        "enabled": false,
+        "bounds_mm": [
+          40,
+          35,
+          180,
+          140
+        ],
+        "feather_mm": 12
+      },
+      "anchor_width_variation": 0.3
+    },
+    "local": {
+      "near_weights": [
+        0.32,
+        0.28,
+        0.25,
+        0.15
+      ],
+      "middle_weights": [
+        0.5,
+        0.28,
+        0.22
+      ],
+      "far_weights": [
+        0.4,
+        0.32,
+        0.2,
+        0.08
+      ],
+      "noise_weight_range": [
+        0.65,
+        1.0
+      ],
+      "ridge_protection_strength": 0.65,
+      "feather_mm": [
+        12,
+        14,
+        9
+      ],
+      "score_transition": {
+        "near": [
+          0.1,
+          0.55
+        ],
+        "middle": [
+          0.08,
+          0.62
+        ],
+        "far": [
+          0.04,
+          0.42
+        ]
+      },
+      "soft_strength": 0.92,
+      "core_threshold": 0.9
+    },
+    "vegetation": {
+      "season": "SPRING",
+      "ndvi_range": [
+        0.1,
+        0.65
+      ],
+      "observations_min_full": [
+        6,
+        12
+      ],
+      "aspect_preference_deg": 135,
+      "center_density_floor": 0.4,
+      "roles": {
+        "near": {
+          "count": 42,
+          "spacing_mm": 27,
+          "height_mm": [
+            42,
+            92
+          ]
+        },
+        "middle": {
+          "count": 105,
+          "spacing_mm": 18,
+          "height_mm": [
+            5,
+            12
+          ]
+        },
+        "far": {
+          "count": 65,
+          "spacing_mm": 19,
+          "height_mm": [
+            1,
+            3
+          ]
+        }
+      },
+      "minimum_field": 0.004,
+      "maximum_proposals": 5000,
+      "foreground_depth_tolerance_m": 80,
+      "omission_match_sigma_m": 220,
+      "line_width_mm": 1.0
+    }
+  },
+  "config_sha256": "696aefe5a48bc0cc23c39f6fbb2d1300f8bd3590d84c3a6e525d74de3f1f6ced",
+  "fixed_F2_config_sha256": "2d0d0b3be3f43607323800219d0eaa70bf52fd145d2a8d28aaa9099503ab299a",
+  "previous_layer_config_sha256": "b7e9aee0fc8a2cdd232a431f1055aed1301128602bb72c8ee11bea9b02553f11",
+  "previous_artifact_sha256": {
+    "C_panel_1.png": "06d18a43985ad1fc88ed1e932825f5056e0d89d0e6f33b4c755137b75d7f9019",
+    "fields.npz": "cbfcdb7822271aaaf7f6cea346e9358b0cb98b34387aceafc18effda7dcb687b",
+    "B_continuous.png": "0b68c2ae0841b13b367edac071e6fac96eabc778316647f8df8c4e1009209a1a",
+    "ABC_comparison.png": "164453b87b4f16aba499db7c1f1d7a079ccd30fd1ed00c59a994c558a993d0cf",
+    "A_panel_1.png": "fa2c21ed61c7a3237a32598a827dc53bb9a40a079ea2019fecb215a860d36ebc",
+    "B_physical_pair.png": "88acadf00c50014217004f74b03c8447a4106c6ecb708bc85f7bc1dcc0e8f672",
+    "A_panel_2.png": "8d3b46db46a85ce5e39df145cc25fc28fc88e2d4b89a9bcd7ab223fb82e163c1",
+    "C_continuous.png": "b97713bc4a30487aa4a8291e5dad5c9108dc5b834a97ef254a10d2aaa9925823",
+    "C_panel_2.png": "e1cde2b36aa3b44a8ec516329831cb8118b27a2aa28b596dbf3853cfb33b8e08",
+    "B_panel_1.png": "e0d6efdcae399c1a92afebddddd65592911f8828ea12739b4358360a6db47067",
+    "fields.png": "212828a51e29e329618a6aefc6800fea602c41fe16a2c4058b69f48506486806",
+    "A_continuous.png": "fc1e4d302af7ba862d5d309a89b4ae3030874bbea814afb8cbdf226bcc64586e",
+    "plants.json": "508bd860e01b12e72206acee99e8998dc2141bed40440381b23cd39dab7f62ff",
+    "data_and_omission.png": "9c92a1c6d932328aeddf2b4759648be330e221965f3ad4d3f5c38801fd0278e9",
+    "B_panel_2.png": "c0026d724a2eb510b776b7d10211bbb0215617d8623091b59555b851953b1274",
+    "A_physical_pair.png": "4f8f942dd081ab50895c2bf0e58a1305bbd3769fcd790709586904f2bc85922c",
+    "C_physical_pair.png": "7e2c23ad982174ff6dfc27abb4614f47adf6dcb11c17f38a4c313a73d82f4130",
+    "README.md": "fdb4e21826a2f509be944c4481063cce6d7a2c5ecd9761c9485cc670d9392f33",
+    "record.json": "7cf3a66f3349a76a6a37fb74aefe36d674249d09ca72ddcab2c80c8dabaa0aa0"
+  },
+  "source_inputs": {
+    "master": {
+      "filename": "SeoulNorth_v02_MASTER_30m.tif",
+      "sha256": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        30.0,
+        30.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4151990.0,
+        334290.0,
+        4175900.0
+      ],
+      "shape": [
+        797,
+        900
+      ],
+      "transform": [
+        30.0,
+        0.0,
+        307290.0,
+        0.0,
+        -30.0,
+        4175900.0
+      ],
+      "bands": [
+        "DEM",
+        "SLOPE",
+        "ASPECT",
+        "HILLSHADE",
+        "DEM_NASA",
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0,
+      "unchanged_after": true
+    },
+    "vegetation": {
+      "filename": "SeoulNorth_v02_VEG_10m.tif",
+      "sha256": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4152000.0,
+        334290.0,
+        4175880.0
+      ],
+      "shape": [
+        2388,
+        2700
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        307290.0,
+        0.0,
+        -10.0,
+        4175880.0
+      ],
+      "bands": [
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0,
+      "unchanged_after": true
+    },
+    "site": {
+      "eye_xy_utm_m": [
+        325305,
+        4168385
+      ],
+      "eye_lon_lat_wgs84": [
+        127.01982889659858,
+        37.646014458853045
+      ],
+      "source_dem_at_eye_m": 38.12806701660156,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 2.0,
+      "camera": {
+        "eye_xyz_m": [
+          325305,
+          4168385,
+          40.12806701660156
+        ],
+        "azimuth_deg": 292.1219419718818,
+        "pitch_deg": 0.0,
+        "vertical_fov_deg": 36.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      }
+    }
+  },
+  "metrics": {
+    "baseline_pixels_identical": true,
+    "previous_artifacts_unchanged": true,
+    "top_full_width_blank_fraction": 0.24333333333333335,
+    "top_first_terrain_p10_p50_p90_fraction": [
+      0.2643333333333333,
+      0.30333333333333334,
+      0.3433333333333333
+    ],
+    "top_target_intersects_terrain": false,
+    "bottom_edge_terrain_contact_fraction_gt002": 0.6016666666666667,
+    "bottom_edge_left_right_contact_fraction_gt002": [
+      0.6,
+      0.6033333333333334
+    ],
+    "bottom_15pct_terrain_ink_retained_fraction": 0.5161115500002764,
+    "local_field_max": {
+      "near": 0.7741984538829825,
+      "middle": 0.962829235265343,
+      "far": 0.998868907083462
+    },
+    "local_field_gt05_terrain_fraction": {
+      "near": 0.16305791127703906,
+      "middle": 0.08464897458481795,
+      "far": 0.02466744190378367
+    },
+    "local_exact_zero_terrain_pixels": 762,
+    "global_exact_zero_terrain_pixels": 2117,
+    "terrain_max_ink_in_local_core": 0.0,
+    "final_max_ink_in_global_core": 0.0,
+    "mark_count": {
+      "near": 42,
+      "middle": 105,
+      "far": 65
+    },
+    "foreground_mark_pixels_surviving_deeper_omission": 309,
+    "mark_pixels_occluded_by_nearer_terrain": 0,
+    "foreground_crossing_examples": [
+      {
+        "id": "cd2794b281cf7338",
+        "kind": "near",
+        "root_forward_depth_m": 958.6898306492952,
+        "surviving_mark_pixels": 123,
+        "bounds_pixel_xy": [
+          20,
+          551,
+          78,
+          652
+        ]
+      },
+      {
+        "id": "37e1e92bcc5fcdd3",
+        "kind": "near",
+        "root_forward_depth_m": 871.9995501710717,
+        "surviving_mark_pixels": 69,
+        "bounds_pixel_xy": [
+          341,
+          580,
+          396,
+          668
+        ]
+      },
+      {
+        "id": "6ec32002145b9eaa",
+        "kind": "near",
+        "root_forward_depth_m": 717.6645171743886,
+        "surviving_mark_pixels": 43,
+        "bounds_pixel_xy": [
+          142,
+          600,
+          197,
+          699
+        ]
+      }
+    ],
+    "mean_terrain_ink_before": 0.48867279291152954,
+    "mean_terrain_ink_after": 0.34247475975946606,
+    "final_full_width_top_open_fraction": 0.24333333333333335,
+    "panel_sky_open_fraction": [
+      0.3086037037037037,
+      0.2995481481481482
+    ]
+  },
+  "anchor_patches": [
+    {
+      "pixel_xy": [
+        36.5,
+        877.5
+      ],
+      "source_xyz_m": [
+        325108.2994480972,
+        4168145.588685328,
+        43.38899449881207
+      ],
+      "forward_depth_m": 92.06305181677118,
+      "slope_deg": 2.91940110606901,
+      "sigma_mm": [
+        19.98439525283061,
+        65.0
+      ],
+      "kind": "Selected terrain legibility patch, not an observed rock, path or tree."
+    },
+    {
+      "pixel_xy": [
+        190.5,
+        877.5
+      ],
+      "source_xyz_m": [
+        325172.24871250364,
+        4168305.9627045216,
+        38.87919154593828
+      ],
+      "forward_depth_m": 93.2149426692903,
+      "slope_deg": 3.9000307149607742,
+      "sigma_mm": [
+        22.09659957750054,
+        65.0
+      ],
+      "kind": "Selected terrain legibility patch, not an observed rock, path or tree."
+    },
+    {
+      "pixel_xy": [
+        395.5,
+        877.5
+      ],
+      "source_xyz_m": [
+        325259.1403645058,
+        4168519.3074523713,
+        39.32937135308471
+      ],
+      "forward_depth_m": 93.06102875429251,
+      "slope_deg": 2.057309032945568,
+      "sigma_mm": [
+        19.75708447627409,
+        65.0
+      ],
+      "kind": "Selected terrain legibility patch, not an observed rock, path or tree."
+    },
+    {
+      "pixel_xy": [
+        541.5,
+        877.5
+      ],
+      "source_xyz_m": [
+        325321.1441863158,
+        4168671.1528650625,
+        40.29553763732481
+      ],
+      "forward_depth_m": 92.80345283506078,
+      "slope_deg": 2.615286506246804,
+      "sigma_mm": [
+        19.626153923945267,
+        65.0
+      ],
+      "kind": "Selected terrain legibility patch, not an observed rock, path or tree."
+    }
+  ],
+  "field_archive_sha256": "259bec193cd2860ac5ccbc8e8a516cf14979d2c92110460a77a4503890fcea38",
+  "original_source_coordinate_archive": "docs/experiments/f2_painterly_layers_v01/fields.npz",
+  "seed_streams": {
+    "native_irregularity": 401,
+    "placement_per_depth_role": 501,
+    "geometry_per_depth_role": 502
+  },
+  "panel_rule": {
+    "continuous_mm": [
+      600,
+      900
+    ],
+    "panels_mm": [
+      [
+        300,
+        900
+      ],
+      [
+        300,
+        900
+      ]
+    ],
+    "physical_gap_mm": 40
+  },
+  "field_archive_note": "Scalar masks stored float16 (typically <0.0005 absolute quantization); exact-zero masks stored bool. Original source XYZ/depth remain in the unchanged v0.1 archive.",
+  "depth_compositing": "Each symbolic glyph holds its source root forward depth. Local omission fades only matching depths; substantially nearer terrain occludes the glyph. Global layout reserves apply at all depths.",
+  "limitations": [
+    "Top breathing space is already larger than the 10-20% target; fixed F2 cannot reduce it without adding content or changing placement.",
+    "Terrain/valley/ridge proxies and screen anchors do not establish actual rocks, paths, trees or weather.",
+    "Digital coverage fading is an omission proxy, not a calibrated brush/pigment model."
+  ]
+}

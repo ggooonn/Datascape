@@ -1,0 +1,74 @@
+{
+  "study": "F2 Painterly Composition v0.3",
+  "base_pr_head": "49cda7ae925e13d73aacce8f6ed5046f476243e4",
+  "source_config": "configs/scenes/seoul_f2_multidepth_whitespace_v02.json",
+  "previous_results": "docs/experiments/f2_multidepth_whitespace_v02",
+  "seed": 20261016,
+  "boundary": {
+    "canvas_height_mm": 900,
+    "hard_bottom_guard_mm": 2,
+    "collar_mm": 18
+  },
+  "bottom_transition": {
+    "extent_fraction": [
+      0.05,
+      0.15
+    ],
+    "strength": 0.95,
+    "positive_protection": 0.82
+  },
+  "positive_forms": {
+    "maximum_count": 5,
+    "minimum_spacing_mm": 85,
+    "depth_range_m": [
+      120,
+      1150
+    ],
+    "screen_y_range_fraction": [
+      0.68,
+      0.93
+    ],
+    "maximum_slope_deg": 16,
+    "minimum_mound_proxy": 0.08,
+    "minimum_score": 0.3,
+    "source_radius_m": [
+      120,
+      150
+    ],
+    "field_feather_mm": 4,
+    "paper_floor_retention": 0.025,
+    "root_support_strength": 0.3,
+    "root_support_radius_m": 28
+  },
+  "far": {
+    "feather_mm_xy": [
+      24,
+      8
+    ],
+    "soft_strength": 0.7,
+    "weights": [
+      0.48,
+      0.32,
+      0.2
+    ],
+    "ridge_protection": 0.65,
+    "core_source_threshold": 0.975,
+    "core_erosion_mm": 6,
+    "core_feather_mm": 4
+  },
+  "representative_trees": {
+    "count": 3,
+    "height_mm": [
+      155,
+      225
+    ],
+    "minimum_spacing_mm": 135,
+    "minimum_ndvi": 0.2,
+    "minimum_root_retention": 0.12,
+    "cluster_radius_mm": 105,
+    "minimum_cluster_count": 3,
+    "backdrop_probe_height_mm": 150,
+    "minimum_trunk_seam_distance_mm": 45,
+    "minimum_trunk_frame_distance_mm": 30
+  }
+}

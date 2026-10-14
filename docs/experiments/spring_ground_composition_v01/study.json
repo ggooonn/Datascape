@@ -1,0 +1,790 @@
+{
+  "study": "Spring Pair Composition Refinement v0.1",
+  "base_pr_head": "a2ca981c94fa0ddd81ff8e48597ffbc3ca067443",
+  "config": {
+    "study": "Spring Pair Composition Refinement v0.1",
+    "base_pr_head": "a2ca981c94fa0ddd81ff8e48597ffbc3ca067443",
+    "primary_eye_xy_m": [
+      325305,
+      4168385
+    ],
+    "eye_clearance_m": 2.0,
+    "look_target_xy_m": [
+      321615,
+      4169885
+    ],
+    "pitch_deg": 0.0,
+    "vertical_fov_deg": 36.0,
+    "near_m": 1.0,
+    "primary_bounds_m": [
+      318120,
+      4164500,
+      328020,
+      4173500
+    ],
+    "raster_pixels": [
+      600,
+      900
+    ],
+    "mesh_stride": 1,
+    "depth_edges_m": [
+      600,
+      2200
+    ],
+    "composite": {
+      "near_width_m": 600.0,
+      "width_growth": 0.8,
+      "bottom_fraction": 1.02,
+      "depth_rise": 0.72,
+      "depth_scale_m": 1400.0,
+      "near_middle_transition_m": [
+        400,
+        1000
+      ],
+      "middle_far_transition_m": [
+        1800,
+        3200
+      ],
+      "height_coefficients_per_km": [
+        0.12,
+        0.22,
+        0.32
+      ]
+    },
+    "search": {
+      "bounds_m": [
+        315000,
+        4162500,
+        330000,
+        4175700
+      ],
+      "raster_pixels": [
+        300,
+        450
+      ],
+      "mesh_stride": 2,
+      "pitch_deg": 1.0,
+      "vertical_fov_deg": 48.0,
+      "eye_sites_m": [
+        [
+          325605,
+          4166585
+        ],
+        [
+          327105,
+          4170785
+        ],
+        [
+          325305,
+          4168385
+        ],
+        [
+          317205,
+          4168985
+        ],
+        [
+          319605,
+          4171385
+        ],
+        [
+          321105,
+          4175285
+        ]
+      ]
+    },
+    "physical_gap_mm": 40,
+    "painted_panel_mm": [
+      300,
+      900
+    ],
+    "random_seed": null,
+    "randomness": "None; deterministic view/composition study",
+    "reference_note": "User-supplied painting image reviewed for low foreground / middle passage / distant mountain arrangement only; no depicted object is asserted in the DEM"
+  },
+  "input": {
+    "filename": "SeoulNorth_v02_MASTER_30m.tif",
+    "sha256": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+    "crs": "EPSG:32652",
+    "native_resolution_m": [
+      30,
+      30
+    ]
+  },
+  "source_window_bounds_m": [
+    318120.0,
+    4164500.0,
+    328020.0,
+    4173500.0
+  ],
+  "selected_site": {
+    "eye_xy_utm_m": [
+      325305,
+      4168385
+    ],
+    "eye_lon_lat_wgs84": [
+      127.01982889659858,
+      37.646014458853045
+    ],
+    "source_dem_at_eye_m": 38.12806701660156,
+    "eye_clearance_above_dem_m": 2.0,
+    "exported_slope_at_eye_deg": 2.0,
+    "camera": {
+      "eye_xyz_m": [
+        325305,
+        4168385,
+        40.12806701660156
+      ],
+      "azimuth_deg": 292.1219419718818,
+      "pitch_deg": 0.0,
+      "vertical_fov_deg": 36.0,
+      "near_m": 1.0,
+      "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+      "vertical_exaggeration": 1.0,
+      "projection": "Physical pinhole in raw DEM meters"
+    }
+  },
+  "F2_mapping": {
+    "camera": {
+      "eye_xyz_m": [
+        325305,
+        4168385,
+        40.12806701660156
+      ],
+      "azimuth_deg": 292.1219419718818,
+      "pitch_deg": 0.0,
+      "vertical_fov_deg": 36.0,
+      "near_m": 1.0,
+      "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+      "vertical_exaggeration": 1.0,
+      "projection": "Physical pinhole in raw DEM meters"
+    },
+    "ground_reference_m": 38.12806701660156,
+    "near_width_m": 600.0,
+    "width_growth": 0.8,
+    "bottom_fraction": 1.02,
+    "depth_rise": 0.72,
+    "depth_scale_m": 1400.0,
+    "near_middle_transition_m": [
+      400,
+      1000
+    ],
+    "middle_far_transition_m": [
+      1800,
+      3200
+    ],
+    "height_coefficients_per_km": [
+      0.12,
+      0.22,
+      0.32
+    ],
+    "projection": "Depth-banded contiguous composite; virtual depth = horizontal q; affine triangle interpolation",
+    "relation_to_P2_P3": "Reuse P2 smooth depth-weighting and P3 upward depth/relief principles; these are new recorded rules, not unchanged old cameras",
+    "source_relocation": "None; one contiguous source surface and shared source eye/azimuth with F1"
+  },
+  "source_relocation": "None; contiguous native source surface, no terrain tiles, no synthetic ground or objects",
+  "source_preserved": true,
+  "input_hash_unchanged": true,
+  "preserved_result_sha256": {
+    "P2": "ef7257a8a426a3f6eb11305e17d86aff17653e72434cbd93f8881900f2e5d7cc",
+    "P3": "1c066e69ea6dfb16a62356fb6de4d6db77acfdd0230b31d85c2d152fb7e5f75b"
+  },
+  "search_results": [
+    {
+      "site_id": "S1",
+      "eye_xy_utm_m": [
+        325605,
+        4166585
+      ],
+      "eye_lon_lat_wgs84": [
+        127.02365725702774,
+        37.62985693648848
+      ],
+      "source_dem_at_eye_m": 39.68294143676758,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 1.0,
+      "camera": {
+        "eye_xyz_m": [
+          325605,
+          4166585,
+          41.68294143676758
+        ],
+        "azimuth_deg": 309.5930506295284,
+        "pitch_deg": 1.0,
+        "vertical_fov_deg": 48.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      },
+      "metrics": {
+        "mesh_stride": 2,
+        "native_spacing_m": 60.0,
+        "source_triangles": 107712,
+        "raster_candidate_triangles": 25267,
+        "terrain_frame_fraction": 0.6224,
+        "uncovered_ground_fraction": 0.0,
+        "bottom_edge_coverage_fraction": 1.0,
+        "bottom_300mm_coverage_fraction": 1.0,
+        "bottom_300mm_low_gentle_visible_fraction": 1.0,
+        "bottom_300mm_source_elevation_p10_p50_p90_m": [
+          40.598854064941406,
+          40.598854064941406,
+          40.598854064941406
+        ],
+        "bottom_300mm_source_slope_p50_p90_deg": [
+          1.6666666269302368,
+          1.6666666269302368
+        ],
+        "bottom_300mm_original_triangle_count": 1,
+        "source_statistic_rule": "Visible original triangle means; low/gentle = elevation<120 m and exported SLOPE<=10 deg. This does not establish accessibility.",
+        "depth_edges_m": [
+          600,
+          2200
+        ],
+        "depth_bands": [
+          {
+            "label": "foreground",
+            "visible_terrain_fraction": 0.805388936494335,
+            "centroid_y_fraction": 0.7482454913241648
+          },
+          {
+            "label": "middle_ground",
+            "visible_terrain_fraction": 0.03306198229077406,
+            "centroid_y_fraction": 0.4765898728101752
+          },
+          {
+            "label": "background",
+            "visible_terrain_fraction": 0.16154908121489098,
+            "centroid_y_fraction": 0.42676505738094067
+          }
+        ],
+        "near_clipping": {
+          "near_plane_m": 1.0001,
+          "crossing_source_triangles": 309,
+          "edge_intersection_vertices": 618,
+          "behind_plane_source_triangles": 19633
+        }
+      }
+    },
+    {
+      "site_id": "S2",
+      "eye_xy_utm_m": [
+        327105,
+        4170785
+      ],
+      "eye_lon_lat_wgs84": [
+        127.03965236328693,
+        37.66797463769285
+      ],
+      "source_dem_at_eye_m": 30.968303680419922,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 1.0,
+      "camera": {
+        "eye_xyz_m": [
+          327105,
+          4170785,
+          32.96830368041992
+        ],
+        "azimuth_deg": 260.690059825014,
+        "pitch_deg": 1.0,
+        "vertical_fov_deg": 48.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      },
+      "metrics": {
+        "mesh_stride": 2,
+        "native_spacing_m": 60.0,
+        "source_triangles": 107712,
+        "raster_candidate_triangles": 25249,
+        "terrain_frame_fraction": 0.6078592592592592,
+        "uncovered_ground_fraction": 0.0,
+        "bottom_edge_coverage_fraction": 1.0,
+        "bottom_300mm_coverage_fraction": 1.0,
+        "bottom_300mm_low_gentle_visible_fraction": 1.0,
+        "bottom_300mm_source_elevation_p10_p50_p90_m": [
+          30.33925946553548,
+          30.33925946553548,
+          30.797065099080402
+        ],
+        "bottom_300mm_source_slope_p50_p90_deg": [
+          1.6666666269302368,
+          1.6666666269302368
+        ],
+        "bottom_300mm_original_triangle_count": 2,
+        "source_statistic_rule": "Visible original triangle means; low/gentle = elevation<120 m and exported SLOPE<=10 deg. This does not establish accessibility.",
+        "depth_edges_m": [
+          600,
+          2200
+        ],
+        "depth_bands": [
+          {
+            "label": "foreground",
+            "visible_terrain_fraction": 0.8265436687342342,
+            "centroid_y_fraction": 0.7476445794283824
+          },
+          {
+            "label": "middle_ground",
+            "visible_terrain_fraction": 0.06372089055702465,
+            "centroid_y_fraction": 0.47185992647840036
+          },
+          {
+            "label": "background",
+            "visible_terrain_fraction": 0.10973544070874106,
+            "centroid_y_fraction": 0.4262812018014683
+          }
+        ],
+        "near_clipping": {
+          "near_plane_m": 1.0001,
+          "crossing_source_triangles": 500,
+          "edge_intersection_vertices": 1000,
+          "behind_plane_source_triangles": 18012
+        }
+      }
+    },
+    {
+      "site_id": "S3",
+      "eye_xy_utm_m": [
+        325305,
+        4168385
+      ],
+      "eye_lon_lat_wgs84": [
+        127.01982889659858,
+        37.646014458853045
+      ],
+      "source_dem_at_eye_m": 38.12806701660156,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 2.0,
+      "camera": {
+        "eye_xyz_m": [
+          325305,
+          4168385,
+          40.12806701660156
+        ],
+        "azimuth_deg": 292.1219419718818,
+        "pitch_deg": 1.0,
+        "vertical_fov_deg": 48.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      },
+      "metrics": {
+        "mesh_stride": 2,
+        "native_spacing_m": 60.0,
+        "source_triangles": 107712,
+        "raster_candidate_triangles": 20818,
+        "terrain_frame_fraction": 0.6701259259259259,
+        "uncovered_ground_fraction": 0.0,
+        "bottom_edge_coverage_fraction": 1.0,
+        "bottom_300mm_coverage_fraction": 1.0,
+        "bottom_300mm_low_gentle_visible_fraction": 1.0,
+        "bottom_300mm_source_elevation_p10_p50_p90_m": [
+          39.02119827270508,
+          39.02119827270508,
+          39.02119827270508
+        ],
+        "bottom_300mm_source_slope_p50_p90_deg": [
+          3.3333332538604736,
+          3.3333332538604736
+        ],
+        "bottom_300mm_original_triangle_count": 1,
+        "source_statistic_rule": "Visible original triangle means; low/gentle = elevation<120 m and exported SLOPE<=10 deg. This does not establish accessibility.",
+        "depth_edges_m": [
+          600,
+          2200
+        ],
+        "depth_bands": [
+          {
+            "label": "foreground",
+            "visible_terrain_fraction": 0.7389324283993058,
+            "centroid_y_fraction": 0.7512904871842179
+          },
+          {
+            "label": "middle_ground",
+            "visible_terrain_fraction": 0.16989620524611185,
+            "centroid_y_fraction": 0.44454333839369625
+          },
+          {
+            "label": "background",
+            "visible_terrain_fraction": 0.09117136635458234,
+            "centroid_y_fraction": 0.36028505226856344
+          }
+        ],
+        "near_clipping": {
+          "near_plane_m": 1.0001,
+          "crossing_source_triangles": 428,
+          "edge_intersection_vertices": 856,
+          "behind_plane_source_triangles": 31215
+        }
+      }
+    },
+    {
+      "site_id": "S4",
+      "eye_xy_utm_m": [
+        317205,
+        4168985
+      ],
+      "eye_lon_lat_wgs84": [
+        126.92791888073786,
+        37.649842486380365
+      ],
+      "source_dem_at_eye_m": 27.52162742614746,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 0.0,
+      "camera": {
+        "eye_xyz_m": [
+          317205,
+          4168985,
+          29.52162742614746
+        ],
+        "azimuth_deg": 78.46537934635528,
+        "pitch_deg": 1.0,
+        "vertical_fov_deg": 48.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      },
+      "metrics": {
+        "mesh_stride": 2,
+        "native_spacing_m": 60.0,
+        "source_triangles": 107712,
+        "raster_candidate_triangles": 28395,
+        "terrain_frame_fraction": 0.6275111111111111,
+        "uncovered_ground_fraction": 0.0,
+        "bottom_edge_coverage_fraction": 1.0,
+        "bottom_300mm_coverage_fraction": 1.0,
+        "bottom_300mm_low_gentle_visible_fraction": 1.0,
+        "bottom_300mm_source_elevation_p10_p50_p90_m": [
+          27.876349131266277,
+          28.464635848999023,
+          28.464635848999023
+        ],
+        "bottom_300mm_source_slope_p50_p90_deg": [
+          2.6666667461395264,
+          2.6666667461395264
+        ],
+        "bottom_300mm_original_triangle_count": 2,
+        "source_statistic_rule": "Visible original triangle means; low/gentle = elevation<120 m and exported SLOPE<=10 deg. This does not establish accessibility.",
+        "depth_edges_m": [
+          600,
+          2200
+        ],
+        "depth_bands": [
+          {
+            "label": "foreground",
+            "visible_terrain_fraction": 0.8121561961423142,
+            "centroid_y_fraction": 0.743243396010071
+          },
+          {
+            "label": "middle_ground",
+            "visible_terrain_fraction": 0.033772457917227376,
+            "centroid_y_fraction": 0.48655714785040194
+          },
+          {
+            "label": "background",
+            "visible_terrain_fraction": 0.1540713459404585,
+            "centroid_y_fraction": 0.4171796574386216
+          }
+        ],
+        "near_clipping": {
+          "near_plane_m": 1.0001,
+          "crossing_source_triangles": 528,
+          "edge_intersection_vertices": 1056,
+          "behind_plane_source_triangles": 15498
+        }
+      }
+    },
+    {
+      "site_id": "S5",
+      "eye_xy_utm_m": [
+        319605,
+        4171385
+      ],
+      "eye_lon_lat_wgs84": [
+        126.95451486262799,
+        37.67193551345717
+      ],
+      "source_dem_at_eye_m": 64.09410095214844,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 2.0,
+      "camera": {
+        "eye_xyz_m": [
+          319605,
+          4171385,
+          66.09410095214844
+        ],
+        "azimuth_deg": 126.73282666448935,
+        "pitch_deg": 1.0,
+        "vertical_fov_deg": 48.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      },
+      "metrics": {
+        "mesh_stride": 2,
+        "native_spacing_m": 60.0,
+        "source_triangles": 107712,
+        "raster_candidate_triangles": 24141,
+        "terrain_frame_fraction": 0.7651259259259259,
+        "uncovered_ground_fraction": 0.0,
+        "bottom_edge_coverage_fraction": 1.0,
+        "bottom_300mm_coverage_fraction": 1.0,
+        "bottom_300mm_low_gentle_visible_fraction": 1.0,
+        "bottom_300mm_source_elevation_p10_p50_p90_m": [
+          63.30185190836588,
+          63.30185190836588,
+          63.30185190836588
+        ],
+        "bottom_300mm_source_slope_p50_p90_deg": [
+          2.0,
+          2.0
+        ],
+        "bottom_300mm_original_triangle_count": 1,
+        "source_statistic_rule": "Visible original triangle means; low/gentle = elevation<120 m and exported SLOPE<=10 deg. This does not establish accessibility.",
+        "depth_edges_m": [
+          600,
+          2200
+        ],
+        "depth_bands": [
+          {
+            "label": "foreground",
+            "visible_terrain_fraction": 0.8192793246330791,
+            "centroid_y_fraction": 0.6852687083538487
+          },
+          {
+            "label": "middle_ground",
+            "visible_terrain_fraction": 0.17006157301630329,
+            "centroid_y_fraction": 0.3060060470353081
+          },
+          {
+            "label": "background",
+            "visible_terrain_fraction": 0.010659102350617667,
+            "centroid_y_fraction": 0.23809062468463013
+          }
+        ],
+        "near_clipping": {
+          "near_plane_m": 1.0001,
+          "crossing_source_triangles": 343,
+          "edge_intersection_vertices": 686,
+          "behind_plane_source_triangles": 22193
+        }
+      }
+    },
+    {
+      "site_id": "S6",
+      "eye_xy_utm_m": [
+        321105,
+        4175285
+      ],
+      "eye_lon_lat_wgs84": [
+        126.9705559217556,
+        37.70735927866456
+      ],
+      "source_dem_at_eye_m": 115.60661315917969,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 1.0,
+      "camera": {
+        "eye_xyz_m": [
+          321105,
+          4175285,
+          117.60661315917969
+        ],
+        "azimuth_deg": 174.6047354317869,
+        "pitch_deg": 1.0,
+        "vertical_fov_deg": 48.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      },
+      "metrics": {
+        "mesh_stride": 2,
+        "native_spacing_m": 60.0,
+        "source_triangles": 107712,
+        "raster_candidate_triangles": 27449,
+        "terrain_frame_fraction": 0.6125333333333334,
+        "uncovered_ground_fraction": 0.0,
+        "bottom_edge_coverage_fraction": 1.0,
+        "bottom_300mm_coverage_fraction": 1.0,
+        "bottom_300mm_low_gentle_visible_fraction": 1.0,
+        "bottom_300mm_source_elevation_p10_p50_p90_m": [
+          115.42627716064453,
+          115.42627716064453,
+          115.42627716064453
+        ],
+        "bottom_300mm_source_slope_p50_p90_deg": [
+          2.0,
+          2.0
+        ],
+        "bottom_300mm_original_triangle_count": 1,
+        "source_statistic_rule": "Visible original triangle means; low/gentle = elevation<120 m and exported SLOPE<=10 deg. This does not establish accessibility.",
+        "depth_edges_m": [
+          600,
+          2200
+        ],
+        "depth_bands": [
+          {
+            "label": "foreground",
+            "visible_terrain_fraction": 0.830745416727132,
+            "centroid_y_fraction": 0.7438234152400915
+          },
+          {
+            "label": "middle_ground",
+            "visible_terrain_fraction": 0.13483771102404102,
+            "centroid_y_fraction": 0.44581823617339317
+          },
+          {
+            "label": "background",
+            "visible_terrain_fraction": 0.034416872248826974,
+            "centroid_y_fraction": 0.3775771062700086
+          }
+        ],
+        "near_clipping": {
+          "near_plane_m": 1.0001,
+          "crossing_source_triangles": 287,
+          "edge_intersection_vertices": 574,
+          "behind_plane_source_triangles": 2223
+        }
+      }
+    }
+  ],
+  "results": {
+    "F1": {
+      "mesh_stride": 1,
+      "native_spacing_m": 30.0,
+      "source_triangles": 196742,
+      "raster_candidate_triangles": 29743,
+      "terrain_frame_fraction": 0.7621888888888889,
+      "uncovered_ground_fraction": 0.0,
+      "bottom_edge_coverage_fraction": 1.0,
+      "bottom_300mm_coverage_fraction": 1.0,
+      "bottom_300mm_low_gentle_visible_fraction": 1.0,
+      "bottom_300mm_source_elevation_p10_p50_p90_m": [
+        38.75120162963867,
+        38.75120162963867,
+        38.75120162963867
+      ],
+      "bottom_300mm_source_slope_p50_p90_deg": [
+        2.0,
+        2.0
+      ],
+      "bottom_300mm_original_triangle_count": 1,
+      "source_statistic_rule": "Visible original triangle means; low/gentle = elevation<120 m and exported SLOPE<=10 deg. This does not establish accessibility.",
+      "depth_edges_m": [
+        600,
+        2200
+      ],
+      "depth_bands": [
+        {
+          "label": "foreground",
+          "visible_terrain_fraction": 0.6810963550398219,
+          "centroid_y_fraction": 0.7398752409388559
+        },
+        {
+          "label": "middle_ground",
+          "visible_terrain_fraction": 0.21346414566234675,
+          "centroid_y_fraction": 0.39732741722122317
+        },
+        {
+          "label": "background",
+          "visible_terrain_fraction": 0.1054394992978313,
+          "centroid_y_fraction": 0.2748747865315831
+        }
+      ],
+      "near_clipping": {
+        "near_plane_m": 1.0001,
+        "crossing_source_triangles": 598,
+        "edge_intersection_vertices": 1196,
+        "behind_plane_source_triangles": 48560
+      }
+    },
+    "F2": {
+      "mesh_stride": 1,
+      "native_spacing_m": 30.0,
+      "source_triangles": 196742,
+      "raster_candidate_triangles": 60313,
+      "terrain_frame_fraction": 0.6959240740740741,
+      "uncovered_ground_fraction": 0.0,
+      "bottom_edge_coverage_fraction": 1.0,
+      "bottom_300mm_coverage_fraction": 1.0,
+      "bottom_300mm_low_gentle_visible_fraction": 0.92795,
+      "bottom_300mm_source_elevation_p10_p50_p90_m": [
+        38.782554626464844,
+        44.7116584777832,
+        68.76743825276692
+      ],
+      "bottom_300mm_source_slope_p50_p90_deg": [
+        3.3333332538604736,
+        8.333333015441895
+      ],
+      "bottom_300mm_original_triangle_count": 3245,
+      "source_statistic_rule": "Visible original triangle means; low/gentle = elevation<120 m and exported SLOPE<=10 deg. This does not establish accessibility.",
+      "depth_edges_m": [
+        600,
+        2200
+      ],
+      "depth_bands": [
+        {
+          "label": "foreground",
+          "visible_terrain_fraction": 0.28503801234170395,
+          "centroid_y_fraction": 0.9002601516721591
+        },
+        {
+          "label": "middle_ground",
+          "visible_terrain_fraction": 0.3936412816425802,
+          "centroid_y_fraction": 0.6636760705138316
+        },
+        {
+          "label": "background",
+          "visible_terrain_fraction": 0.32132070601571583,
+          "centroid_y_fraction": 0.4139795982215156
+        }
+      ],
+      "near_clipping": {
+        "near_plane_m": 1.0001,
+        "crossing_source_triangles": 598,
+        "edge_intersection_vertices": 1196,
+        "behind_plane_source_triangles": 48560
+      }
+    }
+  },
+  "mapping_checks": {
+    "F1": {
+      "mapped_vertex_samples": 15276,
+      "analytic_volume_formula": "Physical pinhole: determinant = focal_px^2 / forward_depth_m^2; positive for depth>near.",
+      "nonfinite_analytic_samples": 0,
+      "nonpositive_analytic_samples": 0,
+      "minimum_analytic_volume_determinant": 0.026579801545463987,
+      "inverse_roundtrip_max_error_m": 2.2737367544323206e-13,
+      "numeric_samples": 3819,
+      "numeric_step_m": 0.1,
+      "nonfinite_numeric_samples": 0,
+      "nonpositive_numeric_samples": 0,
+      "interpretation": "3D mapping with known depth is locally orientation preserving and has an explicit inverse in the stated front domain. Terrain overlap in 2D remains legitimate occlusion."
+    },
+    "F2": {
+      "mapped_vertex_samples": 30576,
+      "analytic_volume_formula": "Composite: determinant = W*H*k(q)/(1000*(near_width+width_growth*q)); positive for q>near. Known q uniquely recovers source r and z.",
+      "nonfinite_analytic_samples": 0,
+      "nonpositive_analytic_samples": 0,
+      "minimum_analytic_volume_determinant": 0.023194058148352608,
+      "inverse_roundtrip_max_error_m": 4.656612873077393e-10,
+      "numeric_samples": 7644,
+      "numeric_step_m": 0.1,
+      "nonfinite_numeric_samples": 0,
+      "nonpositive_numeric_samples": 0,
+      "interpretation": "3D mapping with known depth is locally orientation preserving and has an explicit inverse in the stated front domain. Terrain overlap in 2D remains legitimate occlusion."
+    }
+  },
+  "lighting": "Fixed NW at 45 degrees on raw-world normals; same for F1/F2; no cast shadows",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "rasterio": "1.5.2",
+    "matplotlib": "3.10.8"
+  }
+}

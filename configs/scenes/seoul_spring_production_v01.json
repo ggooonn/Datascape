@@ -1,0 +1,29 @@
+{
+  "study": "Spring Pair Production Study v0.1 - foreground and mapped space",
+  "base_main": "95f1c17e28486bdedad00e7020d3f9d3fb05344c",
+  "source_scene": "configs/scenes/seoul_projection_composition_v01.json",
+  "source_depth_extent_m": [
+    -4897.2010725672135,
+    4897.2010725672135
+  ],
+  "expand_to": "Original MASTER east and north bounds; retain original west and south",
+  "minimum_horizontal_eye_distance_m": 1200.0,
+  "p3_depth_softening": 0.05,
+  "camera_overrides": {},
+  "mapping_overrides": {
+    "p3_bottom_fraction": 1.18,
+    "p3_depth_rise_fraction": 1.08
+  },
+  "raster_pixels": [
+    600,
+    900
+  ],
+  "mesh_stride": 1,
+  "random_seed": null,
+  "randomness": "None in this terrain study",
+  "painted_panel_mm": [
+    300,
+    900
+  ],
+  "physical_gap_mm": 40
+}

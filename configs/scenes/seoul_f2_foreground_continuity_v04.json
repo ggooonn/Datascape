@@ -1,0 +1,10 @@
+{
+  "study": "F2 Foreground Continuity: Final Small Comparison v0.4",
+  "base_pr_head": "58d95177ad7ea3b9b07a805861fccf3522be23cc",
+  "source_config": "configs/scenes/seoul_f2_painterly_composition_v03.json",
+  "previous_results": "docs/experiments/f2_painterly_composition_v03",
+  "existing_near_weight": 0.70,
+  "vegetation_policy": "Freeze the exact v0.3 C vegetation coverage for A/B/C; change terrain retention only.",
+  "diagnostics": {"connected_terrain_ink_threshold": 0.05, "minimum_component_pixels": 200,
+    "root_neighborhood_radius_mm": 7}
+}
