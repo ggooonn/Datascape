@@ -1,0 +1,46 @@
+{
+  "tests_passed": 104,
+  "notebook_code_cells": 10,
+  "notebook_method": "Actual code cells replayed in one Python namespace; no kernel socket launched",
+  "notebook_CLI_byte_identical_artifacts": 79,
+  "PNG_decoded": 66,
+  "canonical_archives": {
+    "ink_upper_reference.json.gz": 8527,
+    "blended_color_ready.json.gz": 7717,
+    "baseline.json.gz": 7017,
+    "A_density_only.json.gz": 7214,
+    "A_dominant.json.gz": 7494,
+    "C_dominant.json.gz": 7800,
+    "A_before_mist.json.gz": 1162
+  },
+  "SVG_intervals_verified": {
+    "recommended_black.svg": 62902,
+    "recommended_composite.svg": 62902,
+    "recommended_panel_1.svg": 27979,
+    "recommended_panel_2.svg": 34923
+  },
+  "all_previous_496_Git_blobs_preserved_in_overlay": true,
+  "materialized_parent_blob_changes": [],
+  "same_layer_exact_duplicate_paths": {
+    "ink_upper_reference.json.gz": 0,
+    "blended_color_ready.json.gz": 0,
+    "baseline.json.gz": 0,
+    "A_density_only.json.gz": 0,
+    "A_dominant.json.gz": 0,
+    "C_dominant.json.gz": 0
+  },
+  "frozen_B_D_V": true,
+  "baseline_strokes_exactly_equal_to_PR10": true,
+  "source_implementation_hashes_verified": true,
+  "environment_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "rasterio": "1.5.2",
+    "contourpy": "1.3.3",
+    "pillow": "12.3.0",
+    "nbformat": "5.11.1",
+    "pytest": "9.1.1"
+  },
+  "footprint_and_core_validation": "All production sets passed 0.18 mm sampled nominal-width core checks and the unconditional bottom 2 mm footprint guard."
+}
