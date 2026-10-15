@@ -1,0 +1,998 @@
+{
+  "study": "Stroke Grammar Refinement v0.2: color-ready spring pair",
+  "provenance": {
+    "study": "Stroke Grammar Refinement v0.2: color-ready spring pair",
+    "config_sha256": "e1bdb64120897ec2b4aedcc4e2003797765574318c8d3ae302371e3425813477",
+    "parent_commit": "139ff60add5f0e05ac7dced8c033bf7a247398a0",
+    "input_sha256": {
+      "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+    },
+    "seed": 20261015,
+    "frozen_selection_sha256": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+    "opacity_interpretation": "Display simulation only; not dried ink or calibrated pressure",
+    "composition": "F2-C camera/projection/70-30/fields unchanged",
+    "implementation_sha256": {
+      "src/datascape/strokes/color_ready.py": "cf3f578c6f5834551c2494db15aded8ca4e14a71671995e07b4dd57b28d42175",
+      "src/datascape/rendering/color_ready_study.py": "d7b03d463757331a85ead0a2e7cb1b7bb1a587762700a1edb7d5fdf06a20fc9a",
+      "src/datascape/vegetation/object_prototypes.py": "a4d92eade4c56b0178cc2d312d05c3072b9b20e260d92e1079aff773fe687e4f"
+    }
+  },
+  "config": {
+    "study": "Stroke Grammar Refinement v0.2: color-ready spring pair",
+    "parent_commit": "139ff60add5f0e05ac7dced8c033bf7a247398a0",
+    "selection": "configs/scenes/seoul_spring_selected_C.json",
+    "parent_config": "configs/scenes/seoul_spring_stroke_grammar_v03.json",
+    "current_vectors": "docs/experiments/spring_stroke_grammar_v03/proposed_strokes.json.gz",
+    "seed": 20261015,
+    "locked_source_sha256": {
+      "configs/scenes/seoul_spring_selected_C.json": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+      "configs/scenes/seoul_spring_stroke_grammar_v03.json": "0f0c1f2ee5fb35b6dc0d85a8bfb6ab68796f350415ad0c4974a3fc46f454e793",
+      "docs/experiments/spring_stroke_grammar_v03/proposed_strokes.json.gz": "94a9d403818fb8a736b6c5faf90ff26aff41c85ad94ffe6a2c4f9b8cba97b4b6",
+      "configs/scenes/seoul_spring_stroke_hierarchy_v02.json": "fbb1944a10d790f7b15b17c497f054a87e073cd74d6c0fc80245401418ad06ca",
+      "configs/scenes/seoul_spring_vector_study_v01.json": "804d4e2fcfe3fbde9413fc2fc4b14131a31748f0f23d4cd31b2b4440159fafa4",
+      "docs/experiments/spring_stroke_hierarchy_v02/layer_pool.json.gz": "b5a07c45c2d29055b807fe7ef7fda36ba78916b85e46a4c7fb6fddb49f80273a",
+      "docs/experiments/spring_vector_study_v01/A_strokes.json.gz": "a04aaea1748ee011a773822d6088fadb0eb9c616d6476e24b2d37a5573c1f3ae",
+      "docs/experiments/spring_vector_study_v01/B_strokes.json.gz": "c366b36b146f682520f2eb953cd701c782dd70a66abe77f095ad73054fab415b",
+      "docs/experiments/spring_vector_study_v01/C_strokes.json.gz": "7a5e21ebea04ad2e985bc983dfb64418e247d5664b16e10f858cd7db03a5706b"
+    },
+    "density": {
+      "presets": {
+        "color_ready": {
+          "A_interleaved_keep": {
+            "near": 0.16,
+            "middle": 0.14,
+            "far": 0.08
+          },
+          "C_density": 1.04
+        },
+        "ink_dominant": {
+          "A_interleaved_keep": {
+            "near": 0.4,
+            "middle": 0.28,
+            "far": 0.15
+          },
+          "C_density": 1.26
+        }
+      }
+    },
+    "preview_opacity": {
+      "D": 0.98,
+      "B": 0.82,
+      "A": 0.63,
+      "C": 0.22,
+      "V": 0.68
+    },
+    "D": {
+      "depth_jump_m": 60.0,
+      "minimum_source_jump_m": 60.0,
+      "maximum_local_source_step_m": 100.0,
+      "inset_mm": 3.0,
+      "crest_curvature_per_m": 0.0001,
+      "minimum_tangency": 0.55,
+      "maximum_secondary_edge_distance_mm": 22.0,
+      "cliff_levels_deg": [
+        28.0,
+        38.0
+      ],
+      "width_mm": 0.82,
+      "maximum_join_gap_mm": 14.0,
+      "maximum_join_angle_deg": 35.0,
+      "maximum_join_depth_change_m": 180.0,
+      "maximum_join_source_gap_m": 250.0,
+      "maximum_path_mm": 190.0,
+      "breath_gap_mm": 12.0,
+      "minimum_path_mm": 20.0,
+      "filtered_minimum_mm": 30.0,
+      "release_retention": 0.24,
+      "maximum_total_length_mm": 2400.0,
+      "maximum_length_fraction": 0.035,
+      "maximum_paths": 16,
+      "maximum_per_event": 3,
+      "minimum_spacing_mm": 7.0,
+      "type_priority": {
+        "skyline": 3.0,
+        "occlusion": 2.8,
+        "visible_crest": 1.7,
+        "rock_edge_proxy": 1.4
+      },
+      "maximum_type_paths": {
+        "skyline": 4,
+        "occlusion": 7,
+        "visible_crest": 2,
+        "rock_edge_proxy": 1
+      },
+      "skyline_prominence_mm": 7.0,
+      "skyline_peak_spacing_mm": 30.0,
+      "skyline_left_breath_mm": 40.0,
+      "skyline_right_breath_mm": 80.0
+    },
+    "B": {
+      "transition_gradient_per_mm": 0.012,
+      "A_support_sigma_mm": 2.0,
+      "inward_retreat_mm": 9.0,
+      "orientation_penalty": 1.0,
+      "maximum_parallel_penalty": 0.68,
+      "curvature_full_per_m": 0.0014,
+      "minimum_score": 0.4,
+      "minimum_retention": 0.34,
+      "minimum_A_support": 0.12,
+      "minimum_path_mm": 8.0,
+      "maximum_path_mm": 34.0,
+      "breath_gap_mm": 8.0,
+      "minimum_spacing_mm": 5.0,
+      "maximum_A_length_fraction": 0.025,
+      "width_mm": 0.46
+    },
+    "objects": {
+      "trunk_width_mm": 0.78,
+      "branch_width_mm": 0.34,
+      "twig_width_mm": 0.18,
+      "leaf_width_mm": 0.24,
+      "foliage_marks": 240,
+      "spring_foliage_fraction": 0.85,
+      "rock_edge_width_mm": 0.5,
+      "rock_structure_width_mm": 0.3,
+      "rock_grain_width_mm": 0.14,
+      "rock_texture_marks": 5,
+      "rock_spacing_mm": 110.0,
+      "rock_width_range_mm": [
+        18.0,
+        28.0
+      ],
+      "rock_height_range_mm": [
+        8.0,
+        14.0
+      ],
+      "maximum_rocks": 3
+    },
+    "detail_crops_mm": {
+      "foreground": [
+        70,
+        650,
+        330,
+        825
+      ],
+      "ridge": [
+        150,
+        215,
+        550,
+        420
+      ],
+      "middle": [
+        20,
+        390,
+        400,
+        540
+      ]
+    },
+    "object_crop_mm": [
+      370,
+      450,
+      570,
+      800
+    ],
+    "upstream_review": {
+      "repository": "https://github.com/LingDong-/shan-shui-inf",
+      "commit": "9f754d2b2e73495db7883d4d4055a7b0903b0454",
+      "source": "index.html",
+      "license": "MIT",
+      "implementation": "Independent centerline prototypes; no source translation or landscape-system import"
+    }
+  },
+  "density_changes": {
+    "color_ready": {
+      "additional_A_paths": 108,
+      "additional_A_length_mm": 8052.784407919844,
+      "C_paths": 664
+    },
+    "ink_dominant": {
+      "additional_A_paths": 259,
+      "additional_A_length_mm": 16469.917916252067,
+      "C_paths": 701
+    }
+  },
+  "metrics": {
+    "density_current": {
+      "layers": {
+        "A": {
+          "vectors": 949,
+          "length_mm": 59401.80549137869,
+          "length_by_depth_mm": {
+            "near": 14547.396145556888,
+            "middle": 33810.82670593014,
+            "far": 11028.903128897698
+          }
+        },
+        "B": {
+          "vectors": 133,
+          "length_mm": 2350.1854395883056,
+          "length_by_depth_mm": {
+            "near": 273.2398295362354,
+            "middle": 1961.2910318054935,
+            "far": 110.77867075989255
+          }
+        },
+        "C": {
+          "vectors": 559,
+          "length_mm": 13982.936773256868,
+          "length_by_depth_mm": {
+            "near": 11540.61001045184,
+            "middle": 1926.7072917347411,
+            "far": 513.9684293092424
+          }
+        },
+        "D": {
+          "vectors": 25,
+          "length_mm": 1369.0889988163485,
+          "length_by_depth_mm": {
+            "near": 40.087688043836124,
+            "middle": 863.7970456794346,
+            "far": 459.7848929481652
+          }
+        },
+        "V": {
+          "vectors": 5200,
+          "length_mm": 22117.80287345023,
+          "length_by_depth_mm": {
+            "near": 17949.396090336493,
+            "middle": 4023.77570366608,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 99221.81957649044,
+      "terrain_length_mm": 77104.01670304021,
+      "D_all_length_fraction": 0.01379826538819834,
+      "D_terrain_length_fraction": 0.017756390099484473
+    },
+    "density_color_ready": {
+      "layers": {
+        "A": {
+          "vectors": 1057,
+          "length_mm": 67454.58989929853,
+          "length_by_depth_mm": {
+            "near": 15579.10081709154,
+            "middle": 39648.145830267335,
+            "far": 12210.774895464932
+          }
+        },
+        "B": {
+          "vectors": 133,
+          "length_mm": 2350.1854395883056,
+          "length_by_depth_mm": {
+            "near": 273.2398295362354,
+            "middle": 1961.2910318054935,
+            "far": 110.77867075989255
+          }
+        },
+        "C": {
+          "vectors": 664,
+          "length_mm": 16568.65807725302,
+          "length_by_depth_mm": {
+            "near": 13611.962647058323,
+            "middle": 2400.8664026947886,
+            "far": 553.9653262102087
+          }
+        },
+        "D": {
+          "vectors": 25,
+          "length_mm": 1369.0889988163485,
+          "length_by_depth_mm": {
+            "near": 40.087688043836124,
+            "middle": 863.7970456794346,
+            "far": 459.7848929481652
+          }
+        },
+        "V": {
+          "vectors": 5200,
+          "length_mm": 22117.80287345023,
+          "length_by_depth_mm": {
+            "near": 17949.396090336493,
+            "middle": 4023.77570366608,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 109860.32528840644,
+      "terrain_length_mm": 87742.52241495621,
+      "D_all_length_fraction": 0.012462087611903589,
+      "D_terrain_length_fraction": 0.015603483477960504
+    },
+    "density_ink_dominant": {
+      "layers": {
+        "A": {
+          "vectors": 1208,
+          "length_mm": 75871.72340763076,
+          "length_by_depth_mm": {
+            "near": 19017.387494669954,
+            "middle": 43515.67302095545,
+            "far": 13320.55054044804
+          }
+        },
+        "B": {
+          "vectors": 133,
+          "length_mm": 2350.1854395883056,
+          "length_by_depth_mm": {
+            "near": 273.2398295362354,
+            "middle": 1961.2910318054935,
+            "far": 110.77867075989255
+          }
+        },
+        "C": {
+          "vectors": 701,
+          "length_mm": 17456.0003649379,
+          "length_by_depth_mm": {
+            "near": 14147.506637291845,
+            "middle": 2660.227661582071,
+            "far": 646.0883848934425
+          }
+        },
+        "D": {
+          "vectors": 25,
+          "length_mm": 1369.0889988163485,
+          "length_by_depth_mm": {
+            "near": 40.087688043836124,
+            "middle": 863.7970456794346,
+            "far": 459.7848929481652
+          }
+        },
+        "V": {
+          "vectors": 5200,
+          "length_mm": 22117.80287345023,
+          "length_by_depth_mm": {
+            "near": 17949.396090336493,
+            "middle": 4023.77570366608,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 119164.80108442355,
+      "terrain_length_mm": 97046.99821097332,
+      "D_all_length_fraction": 0.011489038594932098,
+      "D_terrain_length_fraction": 0.014107484250466415
+    },
+    "D_current": {
+      "layers": {
+        "A": {
+          "vectors": 1057,
+          "length_mm": 67454.58989929853,
+          "length_by_depth_mm": {
+            "near": 15579.10081709154,
+            "middle": 39648.145830267335,
+            "far": 12210.774895464932
+          }
+        },
+        "B": {
+          "vectors": 133,
+          "length_mm": 2350.1854395883056,
+          "length_by_depth_mm": {
+            "near": 273.2398295362354,
+            "middle": 1961.2910318054935,
+            "far": 110.77867075989255
+          }
+        },
+        "C": {
+          "vectors": 664,
+          "length_mm": 16568.65807725302,
+          "length_by_depth_mm": {
+            "near": 13611.962647058323,
+            "middle": 2400.8664026947886,
+            "far": 553.9653262102087
+          }
+        },
+        "D": {
+          "vectors": 25,
+          "length_mm": 1369.0889988163485,
+          "length_by_depth_mm": {
+            "near": 40.087688043836124,
+            "middle": 863.7970456794346,
+            "far": 459.7848929481652
+          }
+        },
+        "V": {
+          "vectors": 5200,
+          "length_mm": 22117.80287345023,
+          "length_by_depth_mm": {
+            "near": 17949.396090336493,
+            "middle": 4023.77570366608,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 109860.32528840644,
+      "terrain_length_mm": 87742.52241495621,
+      "D_all_length_fraction": 0.012462087611903589,
+      "D_terrain_length_fraction": 0.015603483477960504
+    },
+    "D_screen": {
+      "layers": {
+        "A": {
+          "vectors": 1057,
+          "length_mm": 67454.58989929853,
+          "length_by_depth_mm": {
+            "near": 15579.10081709154,
+            "middle": 39648.145830267335,
+            "far": 12210.774895464932
+          }
+        },
+        "B": {
+          "vectors": 133,
+          "length_mm": 2350.1854395883056,
+          "length_by_depth_mm": {
+            "near": 273.2398295362354,
+            "middle": 1961.2910318054935,
+            "far": 110.77867075989255
+          }
+        },
+        "C": {
+          "vectors": 664,
+          "length_mm": 16568.65807725302,
+          "length_by_depth_mm": {
+            "near": 13611.962647058323,
+            "middle": 2400.8664026947886,
+            "far": 553.9653262102087
+          }
+        },
+        "D": {
+          "vectors": 13,
+          "length_mm": 1028.75528953119,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 515.4977796509817,
+            "far": 507.83111780372315
+          }
+        },
+        "V": {
+          "vectors": 5200,
+          "length_mm": 22117.80287345023,
+          "length_by_depth_mm": {
+            "near": 17949.396090336493,
+            "middle": 4023.77570366608,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 109519.99157912128,
+      "terrain_length_mm": 87402.18870567105,
+      "D_all_length_fraction": 0.009393310524389324,
+      "D_terrain_length_fraction": 0.011770360728557359
+    },
+    "D_connected": {
+      "layers": {
+        "A": {
+          "vectors": 1057,
+          "length_mm": 67454.58989929853,
+          "length_by_depth_mm": {
+            "near": 15579.10081709154,
+            "middle": 39648.145830267335,
+            "far": 12210.774895464932
+          }
+        },
+        "B": {
+          "vectors": 133,
+          "length_mm": 2350.1854395883056,
+          "length_by_depth_mm": {
+            "near": 273.2398295362354,
+            "middle": 1961.2910318054935,
+            "far": 110.77867075989255
+          }
+        },
+        "C": {
+          "vectors": 664,
+          "length_mm": 16568.65807725302,
+          "length_by_depth_mm": {
+            "near": 13611.962647058323,
+            "middle": 2400.8664026947886,
+            "far": 553.9653262102087
+          }
+        },
+        "D": {
+          "vectors": 14,
+          "length_mm": 1268.2297726053537,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 669.4265287646931,
+            "far": 590.6380182291139
+          }
+        },
+        "V": {
+          "vectors": 5200,
+          "length_mm": 22117.80287345023,
+          "length_by_depth_mm": {
+            "near": 17949.396090336493,
+            "middle": 4023.77570366608,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 109759.46606219544,
+      "terrain_length_mm": 87641.66318874521,
+      "D_all_length_fraction": 0.011554627751985496,
+      "D_terrain_length_fraction": 0.014470626485876839
+    },
+    "B_old": {
+      "layers": {
+        "A": {
+          "vectors": 1057,
+          "length_mm": 67454.58989929853,
+          "length_by_depth_mm": {
+            "near": 15579.10081709154,
+            "middle": 39648.145830267335,
+            "far": 12210.774895464932
+          }
+        },
+        "B": {
+          "vectors": 133,
+          "length_mm": 2350.1854395883056,
+          "length_by_depth_mm": {
+            "near": 273.2398295362354,
+            "middle": 1961.2910318054935,
+            "far": 110.77867075989255
+          }
+        },
+        "C": {
+          "vectors": 664,
+          "length_mm": 16568.65807725302,
+          "length_by_depth_mm": {
+            "near": 13611.962647058323,
+            "middle": 2400.8664026947886,
+            "far": 553.9653262102087
+          }
+        },
+        "D": {
+          "vectors": 14,
+          "length_mm": 1268.2297726053537,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 669.4265287646931,
+            "far": 590.6380182291139
+          }
+        },
+        "V": {
+          "vectors": 5200,
+          "length_mm": 22117.80287345023,
+          "length_by_depth_mm": {
+            "near": 17949.396090336493,
+            "middle": 4023.77570366608,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 109759.46606219544,
+      "terrain_length_mm": 87641.66318874521,
+      "D_all_length_fraction": 0.011554627751985496,
+      "D_terrain_length_fraction": 0.014470626485876839
+    },
+    "B_internal": {
+      "layers": {
+        "A": {
+          "vectors": 1057,
+          "length_mm": 67454.58989929853,
+          "length_by_depth_mm": {
+            "near": 15579.10081709154,
+            "middle": 39648.145830267335,
+            "far": 12210.774895464932
+          }
+        },
+        "B": {
+          "vectors": 82,
+          "length_mm": 1685.6765601972477,
+          "length_by_depth_mm": {
+            "near": 124.49460543127404,
+            "middle": 1443.0386190808101,
+            "far": 113.43096001810335
+          }
+        },
+        "C": {
+          "vectors": 664,
+          "length_mm": 16568.65807725302,
+          "length_by_depth_mm": {
+            "near": 13611.962647058323,
+            "middle": 2400.8664026947886,
+            "far": 553.9653262102087
+          }
+        },
+        "D": {
+          "vectors": 14,
+          "length_mm": 1268.2297726053537,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 669.4265287646931,
+            "far": 590.6380182291139
+          }
+        },
+        "V": {
+          "vectors": 5200,
+          "length_mm": 22117.80287345023,
+          "length_by_depth_mm": {
+            "near": 17949.396090336493,
+            "middle": 4023.77570366608,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 109094.95718280438,
+      "terrain_length_mm": 86977.15430935415,
+      "D_all_length_fraction": 0.011625008207118604,
+      "D_terrain_length_fraction": 0.014581182641301465
+    },
+    "recommended": {
+      "layers": {
+        "A": {
+          "vectors": 1057,
+          "length_mm": 67454.58989929853,
+          "length_by_depth_mm": {
+            "near": 15579.10081709154,
+            "middle": 39648.145830267335,
+            "far": 12210.774895464932
+          }
+        },
+        "B": {
+          "vectors": 82,
+          "length_mm": 1685.6765601972477,
+          "length_by_depth_mm": {
+            "near": 124.49460543127404,
+            "middle": 1443.0386190808101,
+            "far": 113.43096001810335
+          }
+        },
+        "C": {
+          "vectors": 664,
+          "length_mm": 16568.65807725302,
+          "length_by_depth_mm": {
+            "near": 13611.962647058323,
+            "middle": 2400.8664026947886,
+            "far": 553.9653262102087
+          }
+        },
+        "D": {
+          "vectors": 14,
+          "length_mm": 1268.2297726053537,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 669.4265287646931,
+            "far": 590.6380182291139
+          }
+        },
+        "V": {
+          "vectors": 5200,
+          "length_mm": 22117.80287345023,
+          "length_by_depth_mm": {
+            "near": 17949.396090336493,
+            "middle": 4023.77570366608,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 109094.95718280438,
+      "terrain_length_mm": 86977.15430935415,
+      "D_all_length_fraction": 0.011625008207118604,
+      "D_terrain_length_fraction": 0.014581182641301465
+    },
+    "object_prototype": {
+      "layers": {
+        "A": {
+          "vectors": 1057,
+          "length_mm": 67454.58989929853,
+          "length_by_depth_mm": {
+            "near": 15579.10081709154,
+            "middle": 39648.145830267335,
+            "far": 12210.774895464932
+          }
+        },
+        "B": {
+          "vectors": 82,
+          "length_mm": 1685.6765601972477,
+          "length_by_depth_mm": {
+            "near": 124.49460543127404,
+            "middle": 1443.0386190808101,
+            "far": 113.43096001810335
+          }
+        },
+        "C": {
+          "vectors": 664,
+          "length_mm": 16568.65807725302,
+          "length_by_depth_mm": {
+            "near": 13611.962647058323,
+            "middle": 2400.8664026947886,
+            "far": 553.9653262102087
+          }
+        },
+        "D": {
+          "vectors": 14,
+          "length_mm": 1268.2297726053537,
+          "length_by_depth_mm": {
+            "near": 0.0,
+            "middle": 669.4265287646931,
+            "far": 590.6380182291139
+          }
+        },
+        "V": {
+          "vectors": 5029,
+          "length_mm": 21331.41499816643,
+          "length_by_depth_mm": {
+            "near": 17013.40943827517,
+            "middle": 4117.325681259016,
+            "far": 39.90985965841521
+          }
+        }
+      },
+      "all_length_mm": 108308.56930752058,
+      "terrain_length_mm": 86977.15430935414,
+      "D_all_length_fraction": 0.011709413029032525,
+      "D_terrain_length_fraction": 0.014581182641301467
+    }
+  },
+  "D": {
+    "candidate_extraction": {
+      "adjacent_depth_source_edges": 2316,
+      "raw_paths": 99,
+      "raw_by_kind": {
+        "skyline": 6,
+        "occlusion": 89,
+        "visible_crest": 0,
+        "rock_edge_proxy": 4
+      },
+      "positive_volume_mapping": true,
+      "minimum_volume_jacobian": 0.025333875976001074
+    },
+    "screen": {
+      "selected_parents": 11,
+      "endpoint_joins": 0,
+      "length_budget_mm": 2400.0,
+      "selected_length_mm": 1028.75528953119,
+      "types": {
+        "skyline": 4,
+        "occlusion": 7,
+        "visible_crest": 0,
+        "rock_edge_proxy": 0
+      }
+    },
+    "connected": {
+      "selected_parents": 11,
+      "endpoint_joins": 25,
+      "length_budget_mm": 2400.0,
+      "selected_length_mm": 1268.2297726053537,
+      "types": {
+        "skyline": 4,
+        "occlusion": 7,
+        "visible_crest": 0,
+        "rock_edge_proxy": 0
+      }
+    },
+    "path_metrics": {
+      "current": {
+        "vectors": 25,
+        "length_mm": 1369.0889988163485,
+        "path_length_p10_p50_p90_mm": [
+          31.15376436289314,
+          44.78325193992191,
+          73.34941318515015
+        ]
+      },
+      "screen": {
+        "vectors": 13,
+        "length_mm": 1028.75528953119,
+        "path_length_p10_p50_p90_mm": [
+          34.080931781813135,
+          75.34691492505269,
+          127.14665471067447
+        ]
+      },
+      "connected": {
+        "vectors": 14,
+        "length_mm": 1268.2297726053537,
+        "path_length_p10_p50_p90_mm": [
+          19.98964612793231,
+          98.68898124838984,
+          161.919034821895
+        ]
+      }
+    },
+    "annotation_not_used_as_generation_input": true,
+    "source_surface_edges_first": true
+  },
+  "B": {
+    "source_counts": {
+      "ridge_axes": 37,
+      "valley_axes": 32,
+      "slope_contours": 181
+    },
+    "selection": {
+      "intrinsic_candidates": 250,
+      "ranked_surviving_pieces": 640,
+      "length_budget_mm": 1686.3647474824634,
+      "selected_parents": 80,
+      "mask_derived_candidates": 0
+    },
+    "boundary_relation": {
+      "old": {
+        "length_mm": 2347.2094376916225,
+        "near_transition_length_fraction": 0.6341596328539904,
+        "parallel_near_transition_fraction": 0.2694998418304196,
+        "inside_A_support_fraction": 0.572799404584406
+      },
+      "internal": {
+        "length_mm": 1683.153325218569,
+        "near_transition_length_fraction": 0.47434602050828945,
+        "parallel_near_transition_fraction": 0.07586638603197422,
+        "inside_A_support_fraction": 0.9916101892049631
+      }
+    }
+  },
+  "objects": {
+    "hero_tree_prototypes": [
+      {
+        "id": "c66ed22b7644d2c0",
+        "source_root_xy_mm": [
+          492.5,
+          641.5
+        ],
+        "source_root_xyz_m": [
+          324530.5414840416,
+          4169190.3932430763,
+          54.63688953575118
+        ],
+        "source_height_mm": 184.76604213366994,
+        "hero": true,
+        "procedural_object": "tree",
+        "vectors": 252
+      },
+      {
+        "id": "a71239750f75c76c",
+        "source_root_xy_mm": [
+          456.5,
+          784.5
+        ],
+        "source_root_xyz_m": [
+          325056.1486744382,
+          4168736.720364189,
+          38.989788480844915
+        ],
+        "source_height_mm": 181.46876212883762,
+        "hero": true,
+        "procedural_object": "tree",
+        "vectors": 207
+      },
+      {
+        "id": "c315949b81956d8d",
+        "source_root_xy_mm": [
+          196.5,
+          842.5
+        ],
+        "source_root_xyz_m": [
+          325086.0165912042,
+          4168334.8401221926,
+          40.591475733933024
+        ],
+        "source_height_mm": 202.28592159724406,
+        "hero": true,
+        "procedural_object": "tree",
+        "vectors": 200
+      }
+    ],
+    "rock_anchors": [
+      {
+        "xy_mm": [
+          118.5,
+          658.5
+        ],
+        "source_xyz_m": [
+          324319.1236187836,
+          4168354.273959949,
+          67.60257556116053
+        ],
+        "slope_deg": 2.2924561152879335,
+        "orientation_xy": [
+          -0.9522253518401718,
+          -0.305396266042761
+        ],
+        "width_mm": 23.373319269915292,
+        "height_mm": 8.282530591603816,
+        "geographic_claim": "Procedural object at a DEM-supported anchor; not a mapped boulder."
+      },
+      {
+        "xy_mm": [
+          306.5,
+          640.5
+        ],
+        "source_xyz_m": [
+          324383.37616797537,
+          4168775.9819879285,
+          75.26113782784356
+        ],
+        "slope_deg": 4.477439692255925,
+        "orientation_xy": [
+          0.8614976895703023,
+          -0.5077614901359017
+        ],
+        "width_mm": 19.018072939315296,
+        "height_mm": 10.521258094401407,
+        "geographic_claim": "Procedural object at a DEM-supported anchor; not a mapped boulder."
+      },
+      {
+        "xy_mm": [
+          522.5,
+          681.5
+        ],
+        "source_xyz_m": [
+          324744.035792076,
+          4169106.570647808,
+          52.53851701982482
+        ],
+        "slope_deg": 2.0976306468181214,
+        "orientation_xy": [
+          0.4407308885431195,
+          -0.8976392838351006
+        ],
+        "width_mm": 25.4252841269154,
+        "height_mm": 9.318908125895355,
+        "geographic_claim": "Procedural object at a DEM-supported anchor; not a mapped boulder."
+      }
+    ],
+    "placement": "Original roots/heights for trees; DEM-supported procedural rock anchors, not mapped rocks",
+    "upstream_code_ported": false
+  },
+  "overlap": {
+    "density_current": {
+      "occupied_one_mm_cells": 75933,
+      "multiple_path_cell_fraction": 0.06105382376568817,
+      "maximum_paths_per_cell": 7,
+      "sampled_other_path_spacing_mm_p10_p50_p90": [
+        0.683988097239481,
+        2.5228940738056957,
+        4.888255852234984
+      ],
+      "interpretation": "Sampled screen centerlines; crossings and panel-seam neighbors count, not an exact collision proof."
+    },
+    "density_color_ready": {
+      "occupied_one_mm_cells": 85267,
+      "multiple_path_cell_fraction": 0.07172763202645807,
+      "maximum_paths_per_cell": 8,
+      "sampled_other_path_spacing_mm_p10_p50_p90": [
+        0.6025713892068439,
+        1.9659709519929915,
+        4.424513918482387
+      ],
+      "interpretation": "Sampled screen centerlines; crossings and panel-seam neighbors count, not an exact collision proof."
+    },
+    "density_ink_dominant": {
+      "occupied_one_mm_cells": 93256,
+      "multiple_path_cell_fraction": 0.0785579480140688,
+      "maximum_paths_per_cell": 9,
+      "sampled_other_path_spacing_mm_p10_p50_p90": [
+        0.5666795823312636,
+        1.7432638351622962,
+        4.1342473042842975
+      ],
+      "interpretation": "Sampled screen centerlines; crossings and panel-seam neighbors count, not an exact collision proof."
+    },
+    "recommended": {
+      "occupied_one_mm_cells": 84150,
+      "multiple_path_cell_fraction": 0.07548425430778372,
+      "maximum_paths_per_cell": 8,
+      "sampled_other_path_spacing_mm_p10_p50_p90": [
+        0.5833222597950026,
+        1.9515366995162255,
+        4.370056803992609
+      ],
+      "interpretation": "Sampled screen centerlines; crossings and panel-seam neighbors count, not an exact collision proof."
+    }
+  },
+  "invariants": {
+    "selected_C_image_exact": true,
+    "retention_archive_exact": true,
+    "input_hashes_match": true,
+    "terrain_zero_core_violations": 0,
+    "nominal_bottom_2mm_empty": true,
+    "density_only_B_D_V_identical": true,
+    "same_dataset_for_black_and_transparency": true,
+    "no_final_color_or_Gcode": true
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "study": "Stroke Grammar Refinement v0.2: color-ready spring pair",
+  "parent_commit": "139ff60add5f0e05ac7dced8c033bf7a247398a0",
+  "selection": "configs/scenes/seoul_spring_selected_C.json",
+  "parent_config": "configs/scenes/seoul_spring_stroke_grammar_v03.json",
+  "current_vectors": "docs/experiments/spring_stroke_grammar_v03/proposed_strokes.json.gz",
+  "seed": 20261015,
+  "locked_source_sha256": {
+    "configs/scenes/seoul_spring_selected_C.json": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+    "configs/scenes/seoul_spring_stroke_grammar_v03.json": "0f0c1f2ee5fb35b6dc0d85a8bfb6ab68796f350415ad0c4974a3fc46f454e793",
+    "docs/experiments/spring_stroke_grammar_v03/proposed_strokes.json.gz": "94a9d403818fb8a736b6c5faf90ff26aff41c85ad94ffe6a2c4f9b8cba97b4b6",
+    "configs/scenes/seoul_spring_stroke_hierarchy_v02.json": "fbb1944a10d790f7b15b17c497f054a87e073cd74d6c0fc80245401418ad06ca",
+    "configs/scenes/seoul_spring_vector_study_v01.json": "804d4e2fcfe3fbde9413fc2fc4b14131a31748f0f23d4cd31b2b4440159fafa4",
+    "docs/experiments/spring_stroke_hierarchy_v02/layer_pool.json.gz": "b5a07c45c2d29055b807fe7ef7fda36ba78916b85e46a4c7fb6fddb49f80273a",
+    "docs/experiments/spring_vector_study_v01/A_strokes.json.gz": "a04aaea1748ee011a773822d6088fadb0eb9c616d6476e24b2d37a5573c1f3ae",
+    "docs/experiments/spring_vector_study_v01/B_strokes.json.gz": "c366b36b146f682520f2eb953cd701c782dd70a66abe77f095ad73054fab415b",
+    "docs/experiments/spring_vector_study_v01/C_strokes.json.gz": "7a5e21ebea04ad2e985bc983dfb64418e247d5664b16e10f858cd7db03a5706b"
+  },
+  "density": {
+    "presets": {
+      "color_ready": {
+        "A_interleaved_keep": {
+          "near": 0.16,
+          "middle": 0.14,
+          "far": 0.08
+        },
+        "C_density": 1.04
+      },
+      "ink_dominant": {
+        "A_interleaved_keep": {
+          "near": 0.4,
+          "middle": 0.28,
+          "far": 0.15
+        },
+        "C_density": 1.26
+      }
+    }
+  },
+  "preview_opacity": {
+    "D": 0.98,
+    "B": 0.82,
+    "A": 0.63,
+    "C": 0.22,
+    "V": 0.68
+  },
+  "D": {
+    "depth_jump_m": 60.0,
+    "minimum_source_jump_m": 60.0,
+    "maximum_local_source_step_m": 100.0,
+    "inset_mm": 3.0,
+    "crest_curvature_per_m": 0.0001,
+    "minimum_tangency": 0.55,
+    "maximum_secondary_edge_distance_mm": 22.0,
+    "cliff_levels_deg": [
+      28.0,
+      38.0
+    ],
+    "width_mm": 0.82,
+    "maximum_join_gap_mm": 14.0,
+    "maximum_join_angle_deg": 35.0,
+    "maximum_join_depth_change_m": 180.0,
+    "maximum_join_source_gap_m": 250.0,
+    "maximum_path_mm": 190.0,
+    "breath_gap_mm": 12.0,
+    "minimum_path_mm": 20.0,
+    "filtered_minimum_mm": 30.0,
+    "release_retention": 0.24,
+    "maximum_total_length_mm": 2400.0,
+    "maximum_length_fraction": 0.035,
+    "maximum_paths": 16,
+    "maximum_per_event": 3,
+    "minimum_spacing_mm": 7.0,
+    "type_priority": {
+      "skyline": 3.0,
+      "occlusion": 2.8,
+      "visible_crest": 1.7,
+      "rock_edge_proxy": 1.4
+    },
+    "maximum_type_paths": {
+      "skyline": 4,
+      "occlusion": 7,
+      "visible_crest": 2,
+      "rock_edge_proxy": 1
+    },
+    "skyline_prominence_mm": 7.0,
+    "skyline_peak_spacing_mm": 30.0,
+    "skyline_left_breath_mm": 40.0,
+    "skyline_right_breath_mm": 80.0
+  },
+  "B": {
+    "transition_gradient_per_mm": 0.012,
+    "A_support_sigma_mm": 2.0,
+    "inward_retreat_mm": 9.0,
+    "orientation_penalty": 1.0,
+    "maximum_parallel_penalty": 0.68,
+    "curvature_full_per_m": 0.0014,
+    "minimum_score": 0.4,
+    "minimum_retention": 0.34,
+    "minimum_A_support": 0.12,
+    "minimum_path_mm": 8.0,
+    "maximum_path_mm": 34.0,
+    "breath_gap_mm": 8.0,
+    "minimum_spacing_mm": 5.0,
+    "maximum_A_length_fraction": 0.025,
+    "width_mm": 0.46
+  },
+  "objects": {
+    "trunk_width_mm": 0.78,
+    "branch_width_mm": 0.34,
+    "twig_width_mm": 0.18,
+    "leaf_width_mm": 0.24,
+    "foliage_marks": 240,
+    "spring_foliage_fraction": 0.85,
+    "rock_edge_width_mm": 0.5,
+    "rock_structure_width_mm": 0.3,
+    "rock_grain_width_mm": 0.14,
+    "rock_texture_marks": 5,
+    "rock_spacing_mm": 110.0,
+    "rock_width_range_mm": [
+      18.0,
+      28.0
+    ],
+    "rock_height_range_mm": [
+      8.0,
+      14.0
+    ],
+    "maximum_rocks": 3
+  },
+  "detail_crops_mm": {
+    "foreground": [
+      70,
+      650,
+      330,
+      825
+    ],
+    "ridge": [
+      150,
+      215,
+      550,
+      420
+    ],
+    "middle": [
+      20,
+      390,
+      400,
+      540
+    ]
+  },
+  "object_crop_mm": [
+    370,
+    450,
+    570,
+    800
+  ],
+  "upstream_review": {
+    "repository": "https://github.com/LingDong-/shan-shui-inf",
+    "commit": "9f754d2b2e73495db7883d4d4055a7b0903b0454",
+    "source": "index.html",
+    "license": "MIT",
+    "implementation": "Independent centerline prototypes; no source translation or landscape-system import"
+  }
+}
