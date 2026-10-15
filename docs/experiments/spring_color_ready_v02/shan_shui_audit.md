@@ -1,0 +1,24 @@
+# Shan Shui: limited object-source audit
+
+Inspected the actual `index.html` at commit [`9f754d2b2e73495db7883d4d4055a7b0903b0454`](https://github.com/LingDong-/shan-shui-inf/tree/9f754d2b2e73495db7883d4d4055a7b0903b0454). The source is a single HTML document with inline JavaScript; the functions below are confirmed rather than inferred from their names. The original [MIT license](../../../third_party/shan_shui/LICENSE) and [notice](../../../third_party/shan_shui/NOTICE.md) accompany this study.
+
+| Actual function | Actual behavior | Relevance to centerline plotting |
+| --- | --- | --- |
+| [`stroke()`](https://github.com/LingDong-/shan-shui-inf/blob/9f754d2b2e73495db7883d4d4055a7b0903b0454/index.html#L516) | Builds two noisy offset boundaries around an input point list, joins them into a filled polygon; default strength follows a sine of normalized vertex index | Preserve a centerline and a width profile instead of plotting both polygon borders. Datascape uses normalized arclength, not vertex index, for sampling invariance. |
+| [`blob()`](https://github.com/LingDong-/shan-shui-inf/blob/9f754d2b2e73495db7883d4d4055a7b0903b0454/index.html#L578) | Generates a rotated, noise-perturbed closed leaf/blob polygon; can return points rather than SVG | Useful as a clustered foliage concept, but a filled blob is not one physical centerline. The prototype uses attached sprays of short curves. |
+| [`Tree.tree02()`](https://github.com/LingDong-/shan-shui-inf/blob/9f754d2b2e73495db7883d4d4055a7b0903b0454/index.html#L803) | Places a small Gaussian-distributed group of upright blob shapes | This is a foliage/clump generator, not a general branching tree. It is more relevant to middle-depth clusters than to a hero trunk. |
+| [`Tree.tree03()`](https://github.com/LingDong-/shan-shui-inf/blob/9f754d2b2e73495db7883d4d4055a7b0903b0454/index.html#L842) | Builds a bend-controlled, narrowing noisy trunk polygon and many lateral foliage blobs; uses a white filled trunk backing | Suggests irregular bend and clustered crown presence. White backing and filled polygons are not carried into the vector artwork. |
+| Internal [`branch()`](https://github.com/LingDong-/shan-shui-inf/blob/9f754d2b2e73495db7883d4d4055a7b0903b0454/index.html#L919) | Constructs a short random-turn backbone, subdivides it and returns paired noisy boundaries | Private helper inside `Tree`, not a standalone public API. The independent prototype instead keeps one irregular trunk/branch centerline. |
+| Internal [`twig()`](https://github.com/LingDong-/shan-shui-inf/blob/9f754d2b2e73495db7883d4d4055a7b0903b0454/index.html#L991) | Recursively adds sub-twigs at two levels, adds terminal leaf blobs, and renders a tapering stroke | Recursive hierarchy and terminal clustering are useful; physical pen-lift count and overly regular branching need control. |
+| [`Tree.tree04()`](https://github.com/LingDong-/shan-shui-inf/blob/9f754d2b2e73495db7883d4d4055a7b0903b0454/index.html#L1191) | Uses the branch/bark/twig helper family for a more developed tree | Confirms that `tree02`/`tree03` alone are not the whole branching vocabulary. The broader generator is outside this small prototype's scope. |
+| [`Mount.rock()`](https://github.com/LingDong-/shan-shui-inf/blob/9f754d2b2e73495db7883d4d4055a7b0903b0454/index.html#L2433) | Builds nested noise-modulated elliptical rock sections, a white cover polygon, an outer stroke and procedural texture | A genuine rock generator exists. Its full outline/white cover is unsuitable for the current omission rules; Datascape's independent experiment uses selected upper facets and short interior grain only. |
+
+The page also overrides `Math.random` with its own seeded PRNG near the beginning. Datascape does not depend on that global state: each object uses an explicit local NumPy seed derived from a recorded object ID.
+
+## Prototype boundary
+
+The independent tree function accepts an archived root, physical height, NDVI-derived vigor, spring foliage fraction and seed. Only the three existing hero glyphs are replaced; other near trees and middle/far vegetation are retained. Irregular centerline bends, nonuniform branches, connected twig sprays and open foliage strokes are produced. All paths pass through the existing object-depth and global boundary rules.
+
+The independent rock function accepts a DEM-supported foothold anchor, local terrain orientation, dimensions and seed. Three small open upper-facet experiments are allowed. Their coordinates, raw source XYZ and slope are recorded. They are procedural forms at data-supported locations, **not claims that boulders have been observed there**.
+
+The object variant is separate from the recommended A/B/C/D comparison. It does not import Shan Shui's landscape composition, mountain geometry, white polygons or color palette, and it does not delay selecting the primary stroke grammar.

@@ -1,0 +1,46 @@
+{
+  "tests_passed": 94,
+  "png_decoded": 67,
+  "svg_parsed": 4,
+  "vector_archives_decoded": 10,
+  "vectors_per_archive": {
+    "D_current.json.gz": 7079,
+    "B_internal.json.gz": 7017,
+    "recommended.json.gz": 7017,
+    "D_connected.json.gz": 7068,
+    "density_current.json.gz": 6866,
+    "object_prototype.json.gz": 6846,
+    "density_color_ready.json.gz": 7079,
+    "B_old.json.gz": 7068,
+    "density_ink_dominant.json.gz": 7267,
+    "D_screen.json.gz": 7067
+  },
+  "exact_same_layer_duplicate_paths": {
+    "D_current.json.gz": 0,
+    "B_internal.json.gz": 0,
+    "recommended.json.gz": 0,
+    "D_connected.json.gz": 0,
+    "density_current.json.gz": 0,
+    "object_prototype.json.gz": 0,
+    "density_color_ready.json.gz": 0,
+    "B_old.json.gz": 0,
+    "density_ink_dominant.json.gz": 0,
+    "D_screen.json.gz": 0
+  },
+  "black_composite_geometry_widths_identical": true,
+  "SVG_profiles_match_canonical_JSON": true,
+  "bottom_2mm_empty_including_nominal_footprints": true,
+  "terrain_hard_core_violations": 0,
+  "original_local_Git_blobs_identical": 306,
+  "remote_parent_blobs_to_preserve": 403,
+  "parent_PR9_vector_blob_reproduced": "a067d09d58bcf97d74f1c1f9151b95f471c46913",
+  "notebook": {
+    "nbformat_valid": true,
+    "code_cells_replayed": 8,
+    "byte_identical_artifacts": 81,
+    "method": "Actual notebook code cells executed in order in one Python namespace; no Jupyter kernel socket was launched."
+  },
+  "source_CRS": "EPSG:32652",
+  "upstream_review_commit": "9f754d2b2e73495db7883d4d4055a7b0903b0454",
+  "upstream_MIT_license_blob_identical": "746b76358d3cc9985bd229b0da650474c3578ed7"
+}
