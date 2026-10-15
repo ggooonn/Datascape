@@ -1,0 +1,120 @@
+{
+  "study": "Spring A-density and foreground grammar v0.1",
+  "parent_commit": "c89a211aaea3a4d0884d47b0223cb8b1493a0eed",
+  "selection": "configs/scenes/seoul_spring_selected_C.json",
+  "parent_vectors": "docs/experiments/spring_color_ready_v02/recommended.json.gz",
+  "parent_config": "configs/scenes/seoul_spring_stroke_grammar_v03.json",
+  "render_config": "configs/scenes/seoul_spring_color_ready_v02.json",
+  "seed": 20261015,
+  "A": {
+    "profile_bin_m": 25,
+    "profile_window_m": 120,
+    "smoothing_m": 70,
+    "macro_window_m": 300,
+    "widest_pitch_m": 38,
+    "tightest_pitch_m": 16,
+    "reference_pitch_m": 20,
+    "density_gain": 1.24,
+    "minimum_pitch_m": 10,
+    "maximum_pitch_m": 34,
+    "spline_knot_mm": 3,
+    "contrast_exponent": 2.0
+  },
+  "C": {
+    "integration": {
+      "seed_spacing_mm": 4,
+      "integration_step_mm": 1,
+      "maximum_half_length_mm": 85,
+      "separation_mm": 1
+    },
+    "length_mm": {
+      "near": 48,
+      "middle": 16,
+      "far": 6
+    },
+    "gap_mm": {
+      "near": 7,
+      "middle": 10,
+      "far": 12
+    },
+    "minimum_path_mm": 2.4
+  },
+  "presets": {
+    "A_dominant": {
+      "A_gain": 1,
+      "foreground_A_keep": 1,
+      "C_keep": {
+        "near": 0.48,
+        "middle": 0.3,
+        "far": 0.12
+      }
+    },
+    "C_dominant": {
+      "A_gain": 1,
+      "foreground_A_keep": 0.3,
+      "C_keep": {
+        "near": 1.0,
+        "middle": 0.3,
+        "far": 0.12
+      }
+    },
+    "blended_color_ready": {
+      "A_gain": 1,
+      "foreground_A_keep": 0.72,
+      "C_keep": {
+        "near": 0.82,
+        "middle": 0.3,
+        "far": 0.12
+      }
+    },
+    "ink_upper_reference": {
+      "A_gain": 1.3,
+      "foreground_A_keep": 0.9,
+      "C_keep": {
+        "near": 1.0,
+        "middle": 0.45,
+        "far": 0.18
+      }
+    }
+  },
+  "crops_mm": {
+    "foreground": [
+      70,
+      650,
+      330,
+      825
+    ],
+    "lower_transition": [
+      60,
+      770,
+      540,
+      900
+    ],
+    "middle": [
+      20,
+      390,
+      400,
+      540
+    ],
+    "far": [
+      150,
+      215,
+      550,
+      420
+    ]
+  },
+  "preview_opacity": {
+    "D": 0.98,
+    "B": 0.82,
+    "A": 0.63,
+    "C": 0.22,
+    "V": 0.68
+  },
+  "locked_source_sha256": {
+    "docs/experiments/spring_color_ready_v02/recommended.json.gz": "875af84b5d2287bcb60b9daf668a8834d80b86edc813017f76cc959178e6470e",
+    "configs/scenes/seoul_spring_selected_C.json": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+    "configs/scenes/seoul_spring_stroke_grammar_v03.json": "0f0c1f2ee5fb35b6dc0d85a8bfb6ab68796f350415ad0c4974a3fc46f454e793",
+    "configs/scenes/seoul_spring_color_ready_v02.json": "e1bdb64120897ec2b4aedcc4e2003797765574318c8d3ae302371e3425813477",
+    "artworks/2026-03-17_geumgang/original/source.py": "fb6a5ae288097a82842e4e6eea159369a3463d174382c11837d6900f42e75108"
+  }
+}
