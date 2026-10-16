@@ -1,0 +1,96 @@
+{
+  "study": "A-density v3: diagnose local spacing rhythm",
+  "parent_commit": "bff7a5c66783f57d071130c8047303c23f5e4aec",
+  "selection": "configs/scenes/seoul_spring_selected_C.json",
+  "baseline_vectors": "docs/experiments/spring_density_rhythm_v01/blended_color_ready.json.gz",
+  "baseline_config": "configs/scenes/seoul_spring_density_rhythm_v01.json",
+  "v2_config": "configs/scenes/seoul_spring_a_density_v02.json",
+  "mist_config": "configs/scenes/seoul_spring_stroke_grammar_v03.json",
+  "seed": 20261015,
+  "locked_source_sha256": {
+    "docs/experiments/spring_density_rhythm_v01/blended_color_ready.json.gz": "8b79e32ef27268155c624f0fa9827788911b921d08e4a09185f7ca58ed95b14a",
+    "configs/scenes/seoul_spring_density_rhythm_v01.json": "66cab9c9093f79d308286b0f2a991bf3515c10b006ba83e7deb193ede510c756",
+    "configs/scenes/seoul_spring_stroke_grammar_v03.json": "0f0c1f2ee5fb35b6dc0d85a8bfb6ab68796f350415ad0c4974a3fc46f454e793",
+    "configs/scenes/seoul_spring_a_density_v02.json": "e20411b221f2fc5ae71ca5699fa45eff98a93df07da12ad872e8bec18b1e83d9",
+    "configs/scenes/seoul_spring_selected_C.json": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+    "src/datascape/strokes/mass_density.py": "84b2d57829aa5341466835c8e8f0b896d3184d5464ab85ad758e9f629665c3ee",
+    "src/datascape/strokes/density_rhythm.py": "0b648f7264e512a5759d70f8d0a0303ef5b677c3b227ba42a154d702b7643af5",
+    "src/datascape/strokes/grammar.py": "1a2e11de3ae7896d838dd2bf7e306bff44b211cbc004f27a7cd5fd70c1e1ce9b"
+  },
+  "foreground_retention": 0.72,
+  "approach_a_ablations": {
+    "baseline": {
+      "endpoint": "local",
+      "boundary_feather_mm": 18,
+      "smoothing_mm": 3,
+      "maximum_displacement_mm": 8,
+      "minimum_phase_derivative_ratio": 0.25
+    },
+    "one_factor_changes": [
+      {
+        "name": "endpoint_global",
+        "endpoint": "global"
+      },
+      {
+        "name": "no_boundary_feather",
+        "boundary_feather_mm": 0
+      },
+      {
+        "name": "no_phase_smoothing",
+        "smoothing_mm": 0
+      },
+      {
+        "name": "maximum_displacement_16mm",
+        "maximum_displacement_mm": 16
+      },
+      {
+        "name": "topology_floor_10pct",
+        "minimum_phase_derivative_ratio": 0.1
+      },
+      {
+        "name": "topology_floor_05pct",
+        "minimum_phase_derivative_ratio": 0.05
+      }
+    ]
+  },
+  "approach_b_schedule": {
+    "positions": [
+      0,
+      0.1,
+      0.28,
+      0.43,
+      0.6,
+      0.72,
+      0.88,
+      1
+    ],
+    "spacing_multipliers": [
+      1.45,
+      1.45,
+      0.62,
+      0.62,
+      1.45,
+      1.45,
+      0.72,
+      0.48
+    ],
+    "interpretation": "Relative spacing multipliers along existing local relief coordinate; no DEM, camera or projection transform."
+  },
+  "selected_analysis_forms": {
+    "5": {
+      "probe_x_mm": 442.5,
+      "probe_y_mm": [
+        317,
+        455
+      ]
+    },
+    "9": {
+      "probe_x_mm": 586.5,
+      "probe_y_mm": [
+        350,
+        533
+      ]
+    }
+  },
+  "production_style": "Reuse the PR #11 saved vectors and mist transfer; A-only candidate proof uses equal opaque 0.32 mm paths."
+}
