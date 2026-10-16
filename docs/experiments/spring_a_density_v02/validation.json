@@ -1,0 +1,26 @@
+{
+  "tests_passed": 112,
+  "notebook_code_cells": 7,
+  "notebook_method": "Actual code cells replayed in one Python namespace; no kernel socket launched",
+  "byte_identical_generated_artifacts": 43,
+  "PNG_decoded": 38,
+  "vector_archives": 3,
+  "SVG_profile_intervals_verified": 68538,
+  "frozen_B_C_D_V": true,
+  "exact_foreground_A_records_inherited": 213,
+  "same_layer_exact_duplicate_paths": 0,
+  "bottom_2mm_and_sampled_zero_core_checks_passed": true,
+  "nonpositive_phase_derivative_pixels": 0,
+  "materialized_parent_changes": [],
+  "previous_parent_blobs_preserved_in_Git_overlay": 583,
+  "environment_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "rasterio": "1.5.2",
+    "contourpy": "1.3.3",
+    "pillow": "12.3.0",
+    "nbformat": "5.11.1",
+    "pytest": "9.1.1"
+  }
+}
