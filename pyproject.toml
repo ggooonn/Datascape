@@ -11,7 +11,7 @@ license = {file = "LICENSE"}
 dependencies = []
 
 [project.optional-dependencies]
-research = ["numpy", "scipy", "matplotlib", "rasterio", "opencv-python", "shapely", "PyYAML", "jupyterlab", "ipykernel"]
+research = ["numpy", "scipy", "matplotlib", "rasterio", "opencv-python", "shapely", "PyYAML", "jupyterlab", "ipykernel", "osqp>=1.1,<2"]
 dev = ["pytest"]
 
 [tool.setuptools.packages.find]
