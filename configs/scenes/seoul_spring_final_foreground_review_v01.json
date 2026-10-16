@@ -1,0 +1,134 @@
+{
+  "study": "Final bounded foreground A-density review",
+  "baseline_commit": "fdae976d3c3414f50c23054ad0f9cfa6e2945bca",
+  "baseline_vectors": "docs/baselines/spring_f2c_a025_v01/baseline_strokes.json.gz",
+  "interpolation_config": "configs/scenes/seoul_spring_foreground_interpolation_v01.json",
+  "gains": {
+    "local_2": 2.0,
+    "local_4": 4.0
+  },
+  "names": {
+    "baseline": "PR #16 \u00b7 0.25",
+    "local_2": "Local compression \u00d73 target",
+    "local_4": "Local compression \u00d75 target"
+  },
+  "regions": [
+    {
+      "name": "Retained mound",
+      "short": "M1",
+      "center_mm": [
+        169,
+        679
+      ],
+      "role": "compress",
+      "support": "mound",
+      "scope_radii_mm": [
+        55,
+        38
+      ],
+      "measurement_radii_mm": [
+        35,
+        23
+      ]
+    },
+    {
+      "name": "Lower mound",
+      "short": "M2",
+      "center_mm": [
+        371,
+        743
+      ],
+      "role": "compress",
+      "support": "mound",
+      "scope_radii_mm": [
+        55,
+        38
+      ],
+      "measurement_radii_mm": [
+        35,
+        23
+      ]
+    },
+    {
+      "name": "Hero root ground",
+      "short": "R1",
+      "center_mm": [
+        196.5,
+        842.5
+      ],
+      "role": "compress",
+      "support": "retained_root_ground",
+      "scope_radii_mm": [
+        55,
+        38
+      ],
+      "measurement_radii_mm": [
+        35,
+        23
+      ]
+    },
+    {
+      "name": "Existing upper mass control",
+      "short": "MC",
+      "center_mm": [
+        327,
+        641
+      ],
+      "role": "control",
+      "measurement_radii_mm": [
+        35,
+        23
+      ]
+    },
+    {
+      "name": "Open passage 1",
+      "short": "O1",
+      "center_mm": [
+        270,
+        710
+      ],
+      "role": "control",
+      "measurement_radii_mm": [
+        35,
+        23
+      ]
+    },
+    {
+      "name": "Open passage 2",
+      "short": "O2",
+      "center_mm": [
+        280,
+        800
+      ],
+      "role": "control",
+      "measurement_radii_mm": [
+        35,
+        23
+      ]
+    },
+    {
+      "name": "Other hero root control",
+      "short": "RC",
+      "center_mm": [
+        456.5,
+        784.5
+      ],
+      "role": "control",
+      "measurement_radii_mm": [
+        35,
+        23
+      ]
+    }
+  ],
+  "locked_sha256": {
+    "docs/baselines/spring_f2c_a025_v01/baseline_strokes.json.gz": "22bace23f0ae34f69873a282fec15c25a431d0e998216d995b1ab14c3f85fab3",
+    "configs/scenes/seoul_spring_provisional_baseline_v01.json": "e35f6156165b9588bd93ff11c98e87cc4a21e5b90225163bec3181b72f1e6e3c",
+    "configs/scenes/seoul_spring_foreground_interpolation_v01.json": "80f71494e8093ba62a89a9f7fd7895ee5b0809e1dac241279647a8ba0e6d68e0",
+    "src/datascape/strokes/accordion.py": "d8e1c09d17b935a2f620ecfc35319491f5825809e5aac748f9bf385b3a58bf13",
+    "src/datascape/strokes/grammar.py": "1a2e11de3ae7896d838dd2bf7e306bff44b211cbc004f27a7cd5fd70c1e1ce9b",
+    "configs/palettes/palette_20.yaml": "28b578c5067bfa9025338ba887606ec66569fe4a18d1aae963f353ec2b5e27e4",
+    "hardware/fluidnc/tool_coordinates.yaml": "eb781167ed386d8b6a5f8aae9cb652b776ee152e389aa39b8025356d63f194ec"
+  },
+  "selection_note": "M1/M2 selected from visible terrain mound/gentle-ground maxima with low valley support; R1 is a fixed hero root on a measured 2.67-degree retained source slope. These are placement proxies, not invented geographic features.",
+  "scope": "Two prescribed local compression gains only; preserve PR #16 and stop after comparison."
+}
