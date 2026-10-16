@@ -74,3 +74,26 @@ def test_diagnostic_styling_cannot_mutate_C_geometry(tmp_path):
     s=[{'layer':'C','xy_mm':[[20,20],[100,100]],'width_mm':.16,'opacity_profile':[.1,.2]}];before=deepcopy(s)
     readable(s,tmp_path/'C.png','C',pixels=(120,180))
     assert s==before
+
+
+def test_v3_topology_floor_relaxes_only_the_phase_guard_and_stays_positive():
+    from datascape.strokes.spacing_schedule import phase_ablation
+    fixed, mass, profile = synthetic()
+    original = deepcopy(fixed)
+    base = phase_ablation(fixed, mass, profile, config(), minimum_derivative_ratio=.25)
+    relaxed = phase_ablation(fixed, mass, profile, config(), minimum_derivative_ratio=.05)
+    assert base['phase_derivative_nonpositive_pixels'] == 0
+    assert relaxed['phase_derivative_nonpositive_pixels'] == 0
+    assert np.min(relaxed['directional_phase_ratio'][relaxed['safe']]) >= .05
+    assert np.array_equal(fixed['retention'], original['retention'])
+    assert np.array_equal(fixed['base']['depth_m'], original['base']['depth_m'])
+
+
+def test_explicit_source_schedule_keeps_positive_phase_and_reports_raw_folds():
+    from datascape.strokes.spacing_schedule import explicit_source_spacing_phase
+    fixed, mass, profile = synthetic()
+    result = explicit_source_spacing_phase(fixed, mass, profile, config(),
+                                           minimum_derivative_ratio=.05)
+    assert result['phase_derivative_nonpositive_pixels'] == 0
+    assert result['unlimited_phase_derivative_nonpositive_pixels'] >= 0
+    assert np.all(np.isfinite(result['phase']))
