@@ -1,0 +1,85 @@
+{
+  "study": "A-density v2: mountain-relative breathing",
+  "parent_commit": "a80f146bae6ee2120d8c1c20a2935bcf14796f8c",
+  "selection": "configs/scenes/seoul_spring_selected_C.json",
+  "baseline_vectors": "docs/experiments/spring_density_rhythm_v01/blended_color_ready.json.gz",
+  "baseline_config": "configs/scenes/seoul_spring_density_rhythm_v01.json",
+  "mist_config": "configs/scenes/seoul_spring_stroke_grammar_v03.json",
+  "seed": 20261015,
+  "masses": {
+    "minimum_depth_m": 1600,
+    "minimum_component_pixels": 600,
+    "minimum_mass_pixels": 1300,
+    "summit_smoothing_mm": 3,
+    "summit_window_mm": 49,
+    "prominence_scale_mm": 22,
+    "minimum_prominence_m": 8,
+    "summit_spacing_mm": 65,
+    "foot_percentile": 10,
+    "crest_percentile": 98,
+    "minimum_relief_m": 65,
+    "D_seed_spacing_mm": 40
+  },
+  "rhythm": {
+    "positions": [
+      0,
+      0.1,
+      0.28,
+      0.43,
+      0.6,
+      0.72,
+      0.88,
+      1.0
+    ],
+    "relative_density": [
+      1.9,
+      1.9,
+      0.35,
+      0.35,
+      1.8,
+      1.8,
+      0.95,
+      0.8
+    ],
+    "D_support_sigma_mm": 9,
+    "D_support_gain": 0.4,
+    "minimum_column_run_mm": 18,
+    "minimum_depth_span_m": 100,
+    "boundary_feather_mm": 18,
+    "phase_smoothing_mm": 3,
+    "maximum_phase_displacement": 8,
+    "scope_transition_m": 250,
+    "minimum_phase_derivative_ratio": 0.25
+  },
+  "spline_knot_mm": 3,
+  "maximum_spline_phase_error": 0.35,
+  "preview_opacity": {
+    "D": 0.98,
+    "B": 0.82,
+    "A": 0.63,
+    "C": 0.22,
+    "V": 0.68
+  },
+  "detail_crops_mm": {
+    "foreground": [
+      70,
+      650,
+      330,
+      825
+    ],
+    "mountain": [
+      120,
+      230,
+      560,
+      470
+    ]
+  },
+  "locked_source_sha256": {
+    "docs/experiments/spring_density_rhythm_v01/blended_color_ready.json.gz": "8b79e32ef27268155c624f0fa9827788911b921d08e4a09185f7ca58ed95b14a",
+    "configs/scenes/seoul_spring_density_rhythm_v01.json": "66cab9c9093f79d308286b0f2a991bf3515c10b006ba83e7deb193ede510c756",
+    "configs/scenes/seoul_spring_stroke_grammar_v03.json": "0f0c1f2ee5fb35b6dc0d85a8bfb6ab68796f350415ad0c4974a3fc46f454e793",
+    "configs/scenes/seoul_spring_selected_C.json": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+    "src/datascape/strokes/grammar.py": "1a2e11de3ae7896d838dd2bf7e306bff44b211cbc004f27a7cd5fd70c1e1ce9b",
+    "src/datascape/strokes/density_rhythm.py": "0b648f7264e512a5759d70f8d0a0303ef5b677c3b227ba42a154d702b7643af5"
+  }
+}
