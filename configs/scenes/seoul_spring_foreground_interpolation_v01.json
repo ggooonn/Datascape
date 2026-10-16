@@ -1,0 +1,39 @@
+{
+  "study": "Foreground target-strength interpolation on fixed Candidate 1 mountains",
+  "parent_commit": "812270655ad37606f49ff3eeeba53e7502e5d6a8",
+  "parent_config": "configs/scenes/seoul_spring_a_density_v04.json",
+  "candidate1_vectors": "docs/experiments/spring_a_density_v04/candidate1_strokes.json.gz",
+  "candidate2_vectors": "docs/experiments/spring_a_density_v04/candidate2_strokes.json.gz",
+  "strengths": [
+    0,
+    0.2,
+    0.35,
+    0.5,
+    0.65
+  ],
+  "foreground_crop_mm": [
+    30,
+    600,
+    570,
+    870
+  ],
+  "probe_x_mm": [
+    150.37,
+    300.37,
+    450.37
+  ],
+  "probe_y_mm": [
+    600,
+    870
+  ],
+  "locked_sha256": {
+    "configs/scenes/seoul_spring_a_density_v04.json": "8c83cc34d5cbf17c8cff276cb4b62453813209d22f8ba2b52b33ec7907e84d4e",
+    "docs/experiments/spring_a_density_v04/candidate1_strokes.json.gz": "54e0b3918f47adea5e54d6dc72a2261c6db9fc960fab6325172da46cb2ef43d2",
+    "docs/experiments/spring_a_density_v04/candidate2_strokes.json.gz": "aa4f61d7cab0aab86e48ce4773c15bd5a4bb8e0563fdb40db64bf24b1ab0d569",
+    "src/datascape/strokes/accordion.py": "d8e1c09d17b935a2f620ecfc35319491f5825809e5aac748f9bf385b3a58bf13",
+    "src/datascape/strokes/mass_density.py": "84b2d57829aa5341466835c8e8f0b896d3184d5464ab85ad758e9f629665c3ee",
+    "src/datascape/strokes/density_rhythm.py": "0b648f7264e512a5759d70f8d0a0303ef5b677c3b227ba42a154d702b7643af5",
+    "src/datascape/strokes/grammar.py": "1a2e11de3ae7896d838dd2bf7e306bff44b211cbc004f27a7cd5fd70c1e1ce9b"
+  },
+  "policy": "Regenerate near A from phase targets; preserve Candidate 1 mountain A and all B/C/D/V, F2, retention and transfer. Zero uses the exact regenerated legacy endpoint; show same-phase re-extraction as a separate control."
+}
