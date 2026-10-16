@@ -1,0 +1,40 @@
+{
+  "baseline_id": "spring-f2c-a025-provisional-v01",
+  "status": "provisional; selected by the artist; not hardware-ready",
+  "implementation_parent_commit": "ba379acf68b82759055fc2f201fb78d84298b4be",
+  "mountain_reference_commit": "812270655ad37606f49ff3eeeba53e7502e5d6a8",
+  "interpolation_config": "configs/scenes/seoul_spring_foreground_interpolation_v01.json",
+  "interpolation_record": "docs/experiments/spring_foreground_interpolation_v01/record.json",
+  "foreground_target_strength": 0.25,
+  "seed": 20261015,
+  "locked_sha256": {
+    "configs/scenes/seoul_spring_foreground_interpolation_v01.json": "80f71494e8093ba62a89a9f7fd7895ee5b0809e1dac241279647a8ba0e6d68e0",
+    "src/datascape/rendering/foreground_interpolation_study.py": "10212e610fcb8c3a5519a581a3ae7691ed952afcf77cbcd4ec4b6e62897a7d60",
+    "docs/experiments/spring_foreground_interpolation_v01/record.json": "5b30fba745078924096b726a5df2685decc750ac6718fe018c4fe6380bfd62f9",
+    "configs/palettes/palette_20.yaml": "28b578c5067bfa9025338ba887606ec66569fe4a18d1aae963f353ec2b5e27e4",
+    "hardware/fluidnc/tool_coordinates.yaml": "eb781167ed386d8b6a5f8aae9cb652b776ee152e389aa39b8025356d63f194ec"
+  },
+  "path_identity_policy": "Keep PR #15 A-mass candidate IDs, v4n final near IDs and fixed seed. ID spelling affects mist omission. Do not normalize IDs silently.",
+  "archived_alternatives": {
+    "0.20": "docs/experiments/spring_foreground_interpolation_v01/strength_0_20_strokes.json.gz",
+    "0.35": "docs/experiments/spring_foreground_interpolation_v01/strength_0_35_strokes.json.gz"
+  },
+  "continuous_mm": [
+    600,
+    900
+  ],
+  "panel_mm": [
+    300,
+    900
+  ],
+  "physical_gap_mm": 40,
+  "preserve": [
+    "F2-C geometry and projection",
+    "70/30 foreground retention and existing whitespace",
+    "Candidate 1 mountain A",
+    "B/C/D/V geometry and production styling",
+    "existing mist transfer",
+    "palette and hardware settings"
+  ],
+  "scope": "Freeze the selected setting only. No A-density optimization, catalog, color or G-code development."
+}
