@@ -1,0 +1,85 @@
+{
+  "study": "A-density v4: local mountain breathing and near-ground channels",
+  "parent_commit": "d22348c7b2b88068f551e1ba67e3a3f6652824da",
+  "seed": 20261015,
+  "selection": "configs/scenes/seoul_spring_selected_C.json",
+  "v2_config": "configs/scenes/seoul_spring_a_density_v02.json",
+  "mist_config": "configs/scenes/seoul_spring_stroke_grammar_v03.json",
+  "baseline_vectors": "docs/experiments/spring_a_density_v03/v3_full_strokes_after_mist.json.gz",
+  "baseline_candidates": "docs/experiments/spring_a_density_v03/v3_A_candidates_before_mist.json.gz",
+  "locked_source_sha256": {
+    "configs/scenes/seoul_spring_selected_C.json": "87c1b33d39ddb534932ec3483c5695ddc47f97741a999e4c794b5684aa37749b",
+    "configs/scenes/seoul_spring_a_density_v02.json": "e20411b221f2fc5ae71ca5699fa45eff98a93df07da12ad872e8bec18b1e83d9",
+    "configs/scenes/seoul_spring_a_density_v03.json": "b4b793569de137ad9999d5e65fa8116e753c9a799390f28bee9ff34369d49764",
+    "configs/scenes/seoul_spring_stroke_grammar_v03.json": "0f0c1f2ee5fb35b6dc0d85a8bfb6ab68796f350415ad0c4974a3fc46f454e793",
+    "docs/experiments/spring_a_density_v03/v3_full_strokes_after_mist.json.gz": "833f1edb97a1c88560bd5f4a8572cab43f09b9130649bebfa2f5236726c2239a",
+    "docs/experiments/spring_a_density_v03/v3_A_candidates_before_mist.json.gz": "18ac3f74162a313e198098258af66e73a5431e800ced9dd7fea599de40056aa9",
+    "src/datascape/strokes/mass_density.py": "84b2d57829aa5341466835c8e8f0b896d3184d5464ab85ad758e9f629665c3ee",
+    "src/datascape/strokes/density_rhythm.py": "0b648f7264e512a5759d70f8d0a0303ef5b677c3b227ba42a154d702b7643af5",
+    "src/datascape/strokes/spacing_schedule.py": "8613529b825595149cc9a613d2c183fab3679c144f49b8e889baff8569c9626d",
+    "src/datascape/strokes/grammar.py": "1a2e11de3ae7896d838dd2bf7e306bff44b211cbc004f27a7cd5fd70c1e1ce9b"
+  },
+  "mountain": {
+    "release_strength": 0.65,
+    "target_strength": 0.7,
+    "solver": {
+      "floor": 0.05,
+      "smoothness": 4.0,
+      "maximum_change": 10.0,
+      "boundary_mm": 2,
+      "time_limit": 180
+    }
+  },
+  "foreground": {
+    "cutoff_m": 1600,
+    "target_strength": 0.65,
+    "field": {
+      "base_density": 0.8,
+      "island_gain": 1.4,
+      "channel_gain": 0.65,
+      "feature_smoothing_mm": 5,
+      "release_floor": 0.3,
+      "release_full_retention": 0.8,
+      "maximum_target_displacement": 10,
+      "target_feather_mm": 15,
+      "target_smoothing_mm": 4
+    },
+    "solver": {
+      "floor": 0.05,
+      "smoothness": 6.0,
+      "maximum_change": 6.0,
+      "boundary_mm": 2,
+      "time_limit": 180
+    }
+  },
+  "crops_mm": {
+    "mountain": [
+      310,
+      300,
+      600,
+      540
+    ],
+    "foreground": [
+      30,
+      600,
+      570,
+      870
+    ]
+  },
+  "policy": {
+    "source_terrain": "Read-only DEM and F2 projection",
+    "composition_retention": "Existing 70/30 field unchanged",
+    "A_near_candidate_keep": 0.72,
+    "C_diagnostic_only": {
+      "width_mm": 0.34,
+      "opacity": 1,
+      "color": "#087bb3"
+    },
+    "solver_tolerances": {
+      "eps_abs": 0.0001,
+      "eps_rel": 0.0001,
+      "required_status": "solved"
+    },
+    "production_styling": "Reuse each saved stroke profile; no new opacity scale"
+  }
+}
