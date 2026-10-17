@@ -1,0 +1,249 @@
+{
+  "tree_dependency": "f858e7816822c539944c8244677c29a7dd39fc0a",
+  "canonical_artifact_commit": "fdae976d3c3414f50c23054ad0f9cfa6e2945bca",
+  "repository_assets": [
+    {
+      "path": "artworks/2026-08-15_taebaek_yang/original/source.py",
+      "git_blob_sha1": "e560f339fc82cfc2e67f8876c0a9b67914279571",
+      "expected_sha256": "1a035cb3f18cf183d48650e8075491fac5e647e3e1baceb1e5a8ea69d4bb20f6",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "configs/experiments/tree_catalog_v10.json",
+      "git_blob_sha1": "67b0178e9c402487ffc275375c43a39ee0967b07",
+      "expected_sha256": null,
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "configs/palettes/palette_20.yaml",
+      "git_blob_sha1": "8e54daf1ab11ea3d0aa153d8e0b041ce73b2a7f8",
+      "expected_sha256": "28b578c5067bfa9025338ba887606ec66569fe4a18d1aae963f353ec2b5e27e4",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "configs/scenes/seoul_f2_foreground_continuity_v04.json",
+      "git_blob_sha1": "9a6579ce4c9c999ad7b49414f5da6c0fd6148e44",
+      "expected_sha256": "0fc8afd24963a08ae5255620daf20ea77014505ba7026aaa51b617c9467ea85e",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "configs/scenes/seoul_f2_multidepth_whitespace_v02.json",
+      "git_blob_sha1": "31fba9533705a67b882cdb690ba0f9712ebb2bab",
+      "expected_sha256": "696aefe5a48bc0cc23c39f6fbb2d1300f8bd3590d84c3a6e525d74de3f1f6ced",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "configs/scenes/seoul_f2_painterly_composition_v03.json",
+      "git_blob_sha1": "1db97d10bbdd54a4118a198474d947e0aea25f27",
+      "expected_sha256": "0ef4b3f58c794d39621219a081753cb5fc5b5fd99247411f923a892d669bb3ad",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "configs/scenes/seoul_f2_painterly_layers_v01.json",
+      "git_blob_sha1": "7f5db34eaa012616ba11b95a7f544b1a4655444f",
+      "expected_sha256": "b7e9aee0fc8a2cdd232a431f1055aed1301128602bb72c8ee11bea9b02553f11",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "configs/scenes/seoul_ground_composition_v01.json",
+      "git_blob_sha1": "6cbdbb84abd30776d29c2cd8f0632173e350cef2",
+      "expected_sha256": "2d0d0b3be3f43607323800219d0eaa70bf52fd145d2a8d28aaa9099503ab299a",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "configs/scenes/seoul_spring_a_density_v04.json",
+      "git_blob_sha1": "3fbf11129e56fa70aa5e309842268b8109593369",
+      "expected_sha256": "8c83cc34d5cbf17c8cff276cb4b62453813209d22f8ba2b52b33ec7907e84d4e",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "configs/scenes/seoul_spring_foreground_interpolation_v01.json",
+      "git_blob_sha1": "c095c162f6bccc3b259884ebd7c85cda7ebc616a",
+      "expected_sha256": "80f71494e8093ba62a89a9f7fd7895ee5b0809e1dac241279647a8ba0e6d68e0",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "configs/scenes/seoul_spring_provisional_baseline_v01.json",
+      "git_blob_sha1": "28e5fb8718fe4b053eda330f4ad6a4b336cab953",
+      "expected_sha256": null,
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "configs/scenes/seoul_spring_selected_C.json",
+      "git_blob_sha1": "31f818c6a8104cb5f324f73d91839e92b645f783",
+      "expected_sha256": null,
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/baselines/spring_f2c_a025_v01/README.md",
+      "git_blob_sha1": "e17646fbdb23323912138fc4ea089b950bbfcbeb",
+      "expected_sha256": null,
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/baselines/spring_f2c_a025_v01/baseline_strokes.json.gz",
+      "git_blob_sha1": "d43c0adb026fe1738318280600f48f693c3fb55c",
+      "expected_sha256": "22bace23f0ae34f69873a282fec15c25a431d0e998216d995b1ab14c3f85fab3",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/baselines/spring_f2c_a025_v01/physical_pair.png",
+      "git_blob_sha1": "644c9f27da1231e1f0179b86cc0bac626f8b6dd5",
+      "expected_sha256": "de13922b7082921e05dc52abde579e005c0d4157929e3e651fffa54723aefd2d",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/baselines/spring_f2c_a025_v01/production.png",
+      "git_blob_sha1": "34fbbe8b612ad093bcaab3f4114fc86071d863ad",
+      "expected_sha256": "e7a850407c67ba0c65c34fe29c4ac760d03e4579ef3d8a4b7034bd5796cc47b1",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/baselines/spring_f2c_a025_v01/record.json",
+      "git_blob_sha1": "997ead33bfe23ec2ff2bb9fdb33bf5992efdac4a",
+      "expected_sha256": null,
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/experiments/f2_foreground_continuity_v04/C_continuous.png",
+      "git_blob_sha1": "42b44781df39403935df58da31842b021411e441",
+      "expected_sha256": "bb4d708d21a69b85e66071ad2ea2ddd99e2e3ebdbe021069dfbf97fb00cd0585",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/experiments/f2_foreground_continuity_v04/record.json",
+      "git_blob_sha1": "faf065762acb4198c3beeeb22eaccfd28c476b89",
+      "expected_sha256": "5e96ea105c2eca2dcd4d651f430c58d17d6793a4435fadbb254c579f13dd71bd",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/experiments/f2_foreground_continuity_v04/retention_snapshots.npz",
+      "git_blob_sha1": "8341c9574cd7f95162074bf9781d7b539f98d1cc",
+      "expected_sha256": "39d626e473e2953d206ae920e04f82d25bc5ed7d4defd3c88c474dde170f9b83",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/experiments/f2_multidepth_whitespace_v02/marks.json",
+      "git_blob_sha1": "b5e8be2aa430c9b8348256dc1e58a7a44cb2bde7",
+      "expected_sha256": "49a7d431126423d3137d5657c684d21c70e5aacc28657c9eb36ecc64cec233c4",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/experiments/f2_painterly_composition_v03/representative_trees.json",
+      "git_blob_sha1": "3564343840c72c52360538bf8f0295092733d979",
+      "expected_sha256": "806b002b9d6f32caf7f1c3807154a744a24a256f9ae9cc32a7ce5641031b817e",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/experiments/f2_painterly_layers_v01/fields.npz",
+      "git_blob_sha1": "f94d8d52862517fa5477e1cd65510c5fc917a443",
+      "expected_sha256": "cbfcdb7822271aaaf7f6cea346e9358b0cb98b34387aceafc18effda7dcb687b",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/experiments/spring_a_density_v04/candidate1_strokes.json.gz",
+      "git_blob_sha1": "ca5eb7418edf1e441f4c5ca634ee73aaf3453ce7",
+      "expected_sha256": "54e0b3918f47adea5e54d6dc72a2261c6db9fc960fab6325172da46cb2ef43d2",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/experiments/spring_a_density_v04/candidate2_strokes.json.gz",
+      "git_blob_sha1": "721b34a710d4b4145a47d33092df86a95627dcef",
+      "expected_sha256": "aa4f61d7cab0aab86e48ce4773c15bd5a4bb8e0563fdb40db64bf24b1ab0d569",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "docs/experiments/spring_foreground_interpolation_v01/record.json",
+      "git_blob_sha1": "394dedb627f7a742240419db08e58e59fd041ec8",
+      "expected_sha256": "5b30fba745078924096b726a5df2685decc750ac6718fe018c4fe6380bfd62f9",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "hardware/fluidnc/tool_coordinates.yaml",
+      "git_blob_sha1": "8c62cc74712c38743b27ed7b7ca809e60c26ffc0",
+      "expected_sha256": "eb781167ed386d8b6a5f8aae9cb652b776ee152e389aa39b8025356d63f194ec",
+      "materialized_in_this_checkout": false,
+      "availability": "in inherited repository tree"
+    },
+    {
+      "path": "src/datascape/rendering/foreground_interpolation_study.py",
+      "git_blob_sha1": "7d6da63214d80aec5cf3276992e0ebf027a8cbea",
+      "expected_sha256": "10212e610fcb8c3a5519a581a3ae7691ed952afcf77cbcd4ec4b6e62897a7d60",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "src/datascape/strokes/accordion.py",
+      "git_blob_sha1": "8cf32296d3c9d63e7d6b4d7ca451edd5910564ca",
+      "expected_sha256": "d8e1c09d17b935a2f620ecfc35319491f5825809e5aac748f9bf385b3a58bf13",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "src/datascape/strokes/density_rhythm.py",
+      "git_blob_sha1": "5400a16bd4ec467bd3463f56f5ec9e5a8f421776",
+      "expected_sha256": "0b648f7264e512a5759d70f8d0a0303ef5b677c3b227ba42a154d702b7643af5",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "src/datascape/strokes/grammar.py",
+      "git_blob_sha1": "863e8c67bea1c70668a73ebe4640be5a5aa1730b",
+      "expected_sha256": "1a2e11de3ae7896d838dd2bf7e306bff44b211cbc004f27a7cd5fd70c1e1ce9b",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    },
+    {
+      "path": "src/datascape/strokes/mass_density.py",
+      "git_blob_sha1": "a96dcf48d112a71b2a72cce55142a9976704c591",
+      "expected_sha256": "84b2d57829aa5341466835c8e8f0b896d3184d5464ab85ad758e9f629665c3ee",
+      "materialized_in_this_checkout": true,
+      "availability": "in inherited repository tree",
+      "local_sha256_verified": true
+    }
+  ],
+  "external_inputs": {
+    "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+    "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+  },
+  "authoritative_float64_F2_cache_available_here": false,
+  "scope": "Presence in Git tree is not local hydration or byte verification. Nested loader checks still apply."
+}

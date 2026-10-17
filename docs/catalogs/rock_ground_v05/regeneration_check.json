@@ -1,0 +1,37 @@
+{
+  "accepted_checkpoint": "69950b2a591fa4d37e79e5fa31ee8543903152e0",
+  "source_groups_exact": 19,
+  "final_states_exact": 18,
+  "nine_runtime_modules_exact": true,
+  "native_SVGs_exact": 6,
+  "PNG_bytes_exact": 6,
+  "native_specimen_crops_exact": 11,
+  "audit_and_support_exact": true,
+  "record_exact_except_extracted_code_hashes": true,
+  "output_sha256": {
+    "vectors.json.gz": "9faa59aa069b58dcf146409d311ab6ac275d718380b9e9d42e888f51c808067d",
+    "audit.json": "fb55b16c2ca7a64ea5df4539fa539a53ae13c71fd742c614898b6ac250b8318d",
+    "supports.geojson": "bb95b0b137925ad414f6fc48e558890b2dedb7137597cefb1c77730891690845",
+    "01_structure.svg": "feefde54134139d562c040a725a3032102c6f1d10a24ea518e0dd9c30cee7b89",
+    "02_scale_catalog.svg": "5ebc31e7f33cdda60976085de86d3261f06fec2a0c06061781914f5615a698d4",
+    "01_feature_layers.svg": "e04a2ab022a6b93c1ab73fb973fb1091a650cdbe6da696b32bf3f0989fc9b7b1",
+    "03_material_layers.svg": "b78b62f6f64d7face49ab92bd268aae42aeac6b8bdd05280ce74efae810d5256",
+    "04_overview.svg": "3cba4a1354d7456ec77a384b9c8732a6dc741194c998d2f92762d199d2108b43",
+    "03_C_contact_test.svg": "b69334953f33636c860f0abab842874bce824f6a1ff638cca17e42349bf68fca",
+    "03_material_layers.png": "5344cce487519ae71597964af17e3d814bac7d28f7d0beae210aeee3bd53ff51",
+    "04_overview.png": "e1502a6929a06fea9c46186c92dfdc3e0711e3f5712b43daf4346a79486ddfbf",
+    "01_feature_layers.png": "36302b31c20ddccb885954e02050014c698ebf9404d0faae024ee66640c9f4c6",
+    "01_structure.png": "38a2ba548fad818ba2b4075adca3a98a3520a601a0031a7538716882b3b2a68b",
+    "02_scale_catalog.png": "1ec3771cc7523b81b9eb4152bb2d58a96281bf93e35be69e9a6c8444d3462d9c",
+    "03_C_contact_test.png": "fa94a09109445cfb5089b41cd7236590a92d5a699bedd807193d0fa9744ef25f"
+  },
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "shapely": "2.2.0",
+    "cairosvg": "2.9.1",
+    "pytest": "9.1.1"
+  },
+  "python": "3.12.14",
+  "scope": "Actual v05 catalog regeneration; no canonical F2 scene regenerated."
+}

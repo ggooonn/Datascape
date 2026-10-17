@@ -1,0 +1,123 @@
+{
+  "catalog": "rock-ground-v05",
+  "status": "provisionally accepted pictorial grammar; integration unresolved",
+  "seed": 20261017,
+  "catalog_specimens": [
+    [
+      "XS-compact",
+      "XS",
+      "compact",
+      "rounded",
+      18,
+      12,
+      null
+    ],
+    [
+      "XS-angular",
+      "XS",
+      "angular",
+      "layered",
+      26,
+      18,
+      null
+    ],
+    [
+      "S-compact",
+      "S",
+      "compact",
+      "rounded",
+      40,
+      28,
+      null
+    ],
+    [
+      "S-angular",
+      "S",
+      "angular",
+      "jointed",
+      50,
+      36,
+      null
+    ],
+    [
+      "M-angular",
+      "M",
+      "angular",
+      "layered",
+      85,
+      50,
+      null
+    ],
+    [
+      "M-bedrock",
+      "M",
+      "bedrock",
+      "jointed",
+      116,
+      54,
+      null
+    ],
+    [
+      "M-B2",
+      "M",
+      "B group",
+      "mixed",
+      116,
+      47,
+      2
+    ],
+    [
+      "L-bedrock",
+      "L",
+      "bedrock",
+      "jointed",
+      180,
+      72,
+      null
+    ],
+    [
+      "L-B3",
+      "L",
+      "B group",
+      "mixed",
+      206,
+      70,
+      3
+    ],
+    [
+      "XL-B4",
+      "XL",
+      "B group",
+      "mixed",
+      307,
+      89,
+      4
+    ],
+    [
+      "XL-A",
+      "XL",
+      "bedrock A",
+      "jointed",
+      314,
+      88,
+      null
+    ]
+  ],
+  "formation_controls": {
+    "dominance": 0.72,
+    "overlap": 0.26,
+    "burial": 0.17,
+    "orientation_deg": 77.0,
+    "local_deviation_deg": 5.0
+  },
+  "physical_detail_policy": {
+    "minimal_width_mm": 26.0,
+    "secondary_min_width_mm": 50.0,
+    "secondary_min_height_mm": 24.0,
+    "two_features_width_mm": 150.0,
+    "micro_min_width_mm": 140.0,
+    "micro_min_height_mm": 45.0,
+    "small_structure_max_mm": 6.5
+  },
+  "scope": "Catalog specimens use this config. Matched historical controls and contact fixtures remain authored and fixed. Synthetic local mm; no F2 source or geographic placement."
+}
