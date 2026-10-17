@@ -1,0 +1,449 @@
+{
+  "accepted_checkpoint": "69950b2a591fa4d37e79e5fa31ee8543903152e0",
+  "tree_dependency": "f858e7816822c539944c8244677c29a7dd39fc0a",
+  "source_state_sha256": {
+    "L-B3": "11ea16162e2b0d3c91965f4e4fc295a2a7af9e2db95f998f6030a0ca6c7666af",
+    "L-bedrock": "889854ea2536a3f14cff7d84251daf6271e7307f8101c437ec4100d79e3b371f",
+    "M-B2": "6989d6ad7e2a386cf58f3a52f44ce3c03c00b1233df4bd64c9fcad434586f859",
+    "M-angular": "a1d4ae7771fa16eb9553cd879b5c277e7613729730adfc5795d3b7e7d87a206d",
+    "M-bedrock": "33b8e7a468500a20f211b78c26b0c2cf31238f845a013a3ee205d67330671129",
+    "S-angular": "4f3f9cf0c4928f7fd9930d4c47e6bd4f17d1c556bb2f0032a3d938e7151675df",
+    "S-compact": "56eeb40796baf64f5d3c7eda40b8a10566440fef18fc5fa8793c702deacf5027",
+    "XL-A": "fb7dc0f5c2cf0dd96ead0eaeb7ac33bcf3f6c195bc2e32717d8598002fca15f2",
+    "XL-B4": "6303d5a5eaf434acc34434d392e65b9e50ae8beee38ca8ffade3161d2386f8db",
+    "XS-angular": "e30f022602480d1a8816099ec361a569a14f4788f2732e17556bd08e918f1f2b",
+    "XS-compact": "cffc7a6c57840995d8dd1a59ec4fc848a83d42e5752b22d2469230aebdd0d4db",
+    "ground-C-contact-proposal": "2be39a3f0c6dccafab242fe5e67a8dbce388c9ef95e2e593200d146bc9db0475",
+    "ground-v04": "704c0671368a7aeb47254a19bc3d8435d76a223eebfb5383f205d030d2dcf937",
+    "ground-v05": "2be39a3f0c6dccafab242fe5e67a8dbce388c9ef95e2e593200d146bc9db0475",
+    "overview-A": "9a856b0c1203381f9d8df55f8e03183d49639f110b7411af2dbfa1243c864ee4",
+    "overview-B": "b9c3dfc4dc8c29435303e95c30ae06f98e807f95ca84ab0fce26d992d99ac5fe",
+    "raw-C-intersections": "05788cc3116231f737ac28c99330f72435880b15121c2ad7bda49252dc1855b6",
+    "structure-v04": "435b2f2b867717f1abd5ba4808d67d2c578dad29d6be52a780a7a43180270710",
+    "structure-v05": "8c15b9ba22bea0bc2f3ca674ed578207665dc76dbf473d4f91aef6f312170cd5"
+  },
+  "final_state_sha256": {
+    "L-B3": "b241c346671006a417895a00a31e9609a9ddd38368b9c1e2a1d16e245fc15d9e",
+    "L-bedrock": "ef160b81d6185a67ed3eee099542e523dbc4f08bddb4e413c52d46557f17ead8",
+    "M-B2": "70b754e24fc23643bc33819616819447a5711442a03e70b4026dcb378424a1d8",
+    "M-angular": "eeda286fd7e3ccd71fa0e5e78705b7feef1b6382c1596163ff5ed9d5510932aa",
+    "M-bedrock": "209373e3690203b64f984a3cd225e40293fe4494c4d81a240db126b3c57ed968",
+    "S-angular": "34da04f1ff1723b86e8f33966617848d8151c502e52ec08a800101a4117a1183",
+    "S-compact": "bb56dce2794b0e008d154bb4af6b0d1ae6290720365d2b72a494c34f6b9db911",
+    "XL-A": "108327756f9d153398b2498c5831f86106f93e156914cb492b8cd2f924260333",
+    "XL-B4": "9b045e25d9fdd1ee91f686c4086b9f961df6b49139e8d956913546e5e344c853",
+    "XS-angular": "875fbea6ee88dde6fea655d3eccf8ff0786ce337d4742a746a6d7076f54e9f33",
+    "XS-compact": "92b1e3f518c05b00368c84f0f5bc3b30f8ccb5184dfaa7f8ee32914832e1e2c7",
+    "ground-C-contact-proposal": "c8e5b3753d0ba2895bcc824908d3b3cfcddd921983168b089891a5310a1e4eb0",
+    "ground-v04": "f824e0e7a4963921c1f4322e147ce6660dd8bb1aa5112d8cc70447eddff80a68",
+    "ground-v05": "fa3bb0e7d9c0a10ecfde82e08c1e42cbf2a723d0b387779e204bcd2fcf2f0e9a",
+    "overview-A": "c644907a823b740db5ad617befb65ccccbab26eae0ac5d125b6d1a1bc824d37c",
+    "overview-B": "06a7a2c6c34e3eedcb0e8d047ae44938d3d8d1861eb3014d47e22f9e2decb81e",
+    "structure-v04": "025da650e2e02eb33eb1cf3804857dfb73d65361f6933d119fd93c9e096c9268",
+    "structure-v05": "296612631b8e5066475c195abbce9261a792c6bc6165151ae39e37714b539bc3"
+  },
+  "runtime_sha256": {
+    "src/datascape/ground/surface_ground_v02.py": "40b247b53b9f0324a3e669fd38be0998ae732327545512b150c1056baab00fc3",
+    "src/datascape/ground/refinement_v03.py": "48dddb48862147fea3ab358ccf4408307f530117e55d6d4ad9b423b1c36526e2",
+    "src/datascape/ground/material_review_v05.py": "7c99b0fe134405cccd155947726743aad4a984d925bb1d33c9856db1fe8b5c08",
+    "src/datascape/ground/patch_system_v04.py": "1c6fe72ddcfec94abf1dfc348588ffd28c7b2ee686f7c780943ba777158e9650",
+    "src/datascape/ground/interaction.py": "39365245db63fcdc6d6a36f2f1ebef8b2a686e89e3e7abe19efe5f5e95a59353",
+    "src/datascape/ground/structure_v02.py": "5da83e30aa20e8da094701df6978c0b4c39a27dab542f3b96b3c2300617c10cc",
+    "src/datascape/ground/structural_detail_v05.py": "a15656aab4f3dd38bb0f18d4c3b35b65ac78c0865d565d4640cb630e60cd3c86",
+    "src/datascape/ground/grammar.py": "1e398bb6f3ba9fef2ea924f0ab1f85d985bfea228afbc149e4cc03c7745bbb50",
+    "src/datascape/ground/__init__.py": "7e41baf37119a93c01587282a21cf599c3dac1acb19ae1a5d2187ab428ffca45"
+  },
+  "archive_files": {
+    "outputs/rock-ground-v01/01_structure.png": {
+      "bytes": 243561,
+      "sha256": "8f89d0e7187ef314aff17a373091a8e0116aa149ae535db797987d49b0d20a57"
+    },
+    "outputs/rock-ground-v01/01_structure.svg": {
+      "bytes": 106674,
+      "sha256": "8aaf25c9bfacec3c0b787642ddc2ef58d8d20489ba3dfee60241f8064e93cb1d"
+    },
+    "outputs/rock-ground-v01/02_surface.png": {
+      "bytes": 239691,
+      "sha256": "2ad72a109e0e1c998e0761f8d3895e83aaa05bcb63b123e2e801544434fb6b26"
+    },
+    "outputs/rock-ground-v01/02_surface.svg": {
+      "bytes": 113942,
+      "sha256": "cf1a6a05f0cfb8682068967399e9ab8f93de209c7abdc1fa12b7e5947933df90"
+    },
+    "outputs/rock-ground-v01/03_relationships.png": {
+      "bytes": 495376,
+      "sha256": "81d7af6333ddbab7e27089ec448a8344c15a46dc8c7b420e83ffbf577035e566"
+    },
+    "outputs/rock-ground-v01/03_relationships.svg": {
+      "bytes": 296040,
+      "sha256": "5cc0206c7ec87bf9449b82eae6721dbe3d8afbebacdacd3e26efcc3dfb231867"
+    },
+    "outputs/rock-ground-v01/04_spatial.png": {
+      "bytes": 630555,
+      "sha256": "e4bb867185910c2a2673a7ae9356dfbf3d3afb7d4ec1f3ec0d6d56a94d70793a"
+    },
+    "outputs/rock-ground-v01/04_spatial.svg": {
+      "bytes": 610035,
+      "sha256": "b62a336b1f0614611102990ada414d187e789f3f73103c054699deaee2f159f8"
+    },
+    "outputs/rock-ground-v01/05_contract_probes.png": {
+      "bytes": 407229,
+      "sha256": "fe4f7568331202ba0619effa5ed609570e08f9da8ba91d59d285d98a55e88104"
+    },
+    "outputs/rock-ground-v01/05_contract_probes.svg": {
+      "bytes": 291216,
+      "sha256": "9d5402126272a13cd2c0119917ce5a326c2b1785a1a7edc276baf2429b724357"
+    },
+    "outputs/rock-ground-v01/audit.json": {
+      "bytes": 673923,
+      "sha256": "2c2a0af2f7cfad3ac1c227f58459888e82a986d61e862cd57812a5e765e27ff6"
+    },
+    "outputs/rock-ground-v01/record.json": {
+      "bytes": 7844,
+      "sha256": "b5a993bef6852007dde20ef8cfcdcc5b91053b05fe0b449befb691f33973ba79"
+    },
+    "outputs/rock-ground-v01/supports.geojson": {
+      "bytes": 363112,
+      "sha256": "db7b950f5523f1ef56a2bcbbde44b12913797c99e80f44270e4cbda92a3e963d"
+    },
+    "outputs/rock-ground-v01/vectors.json.gz": {
+      "bytes": 602160,
+      "sha256": "760ff50a96c447245edb27a2ea5718a72508ce7dad6813813339108492d4fe51"
+    },
+    "outputs/rock-ground-v02/01_structural.png": {
+      "bytes": 206040,
+      "sha256": "ad5f898cc2d547dc0b0c951b345e6228f65461d711ec6b7afd0d2b0d44745c1a"
+    },
+    "outputs/rock-ground-v02/01_structural.svg": {
+      "bytes": 82243,
+      "sha256": "3bba476f9c2c3710c3b7d034577dc96d0b11daaaafc5e969008c8a8b073ce701"
+    },
+    "outputs/rock-ground-v02/02_hierarchy.png": {
+      "bytes": 297199,
+      "sha256": "21e4ba0d05a382a94ae7ab8421f8aab3a60110c0ae3e3f13374564201fb8583f"
+    },
+    "outputs/rock-ground-v02/02_hierarchy.svg": {
+      "bytes": 159949,
+      "sha256": "355d2c03319c1f3973422a76c04fef11942fe5f1d50cc0533253ed2cf0da8d5a"
+    },
+    "outputs/rock-ground-v02/03_ground.png": {
+      "bytes": 243064,
+      "sha256": "d54761a11b4760e177e1855f7a7bf4e45dd9bfd128cc5844e3357dc9e81c724f"
+    },
+    "outputs/rock-ground-v02/03_ground.svg": {
+      "bytes": 200375,
+      "sha256": "7c8fc448ac92a6f7f5f506123b2a98647d3bb01db2eb465526dfbf252a4afad2"
+    },
+    "outputs/rock-ground-v02/04_cliff.png": {
+      "bytes": 312958,
+      "sha256": "75734159a86cb01fca9baef0350d1839fa543886804109513c9e6952ead76610"
+    },
+    "outputs/rock-ground-v02/04_cliff.svg": {
+      "bytes": 125512,
+      "sha256": "878e0c4281c7a93632322754ce9637a9b72d0a47c2922f82281438836009f12f"
+    },
+    "outputs/rock-ground-v02/05_mixed.png": {
+      "bytes": 413787,
+      "sha256": "021bbf5e665665a445e14b08eeb485a3fde84ab94a31cfc7c1e8793d5e524134"
+    },
+    "outputs/rock-ground-v02/05_mixed.svg": {
+      "bytes": 331640,
+      "sha256": "20f64953c61d0c859a4dbbf709d1478775f40950ac60de089ec2523be4a76eb0"
+    },
+    "outputs/rock-ground-v02/audit.json": {
+      "bytes": 306880,
+      "sha256": "b42106df4187a58436ceabc44db68d54eee2408376ac126a3bdf3f64b8d3c735"
+    },
+    "outputs/rock-ground-v02/record.json": {
+      "bytes": 44562,
+      "sha256": "69fe8621a933a0e9bf71fdbcc365f218c7b5afd6408c3b78d72f53207226dbaa"
+    },
+    "outputs/rock-ground-v02/supports.geojson": {
+      "bytes": 975823,
+      "sha256": "ee58730ee3aec76bf7480081ede4908858dd1e8ee9200437d1da4bcf0feed5fb"
+    },
+    "outputs/rock-ground-v02/validation_metrics.json": {
+      "bytes": 162,
+      "sha256": "c7fe9aae9f91e11e8b8dab1a0a28b68f142bb40875bf075de0d9460e2ef01de8"
+    },
+    "outputs/rock-ground-v02/vectors.json.gz": {
+      "bytes": 491861,
+      "sha256": "bc14c88842355319e269e430ede52e0b2d0f0895eb1e673e91315d4d66e00fca"
+    },
+    "outputs/rock-ground-v03/01_rhythm.png": {
+      "bytes": 222333,
+      "sha256": "b770ac4dd3275d69f9e78a0ceca8afab5025ec1c9ee442bccae7da6969712047"
+    },
+    "outputs/rock-ground-v03/01_rhythm.svg": {
+      "bytes": 145679,
+      "sha256": "6fc87873cd2735a02e49c7352a7ac7d8bc5ac485f0a62c146fd8225fa918ed4f"
+    },
+    "outputs/rock-ground-v03/02_hierarchy.png": {
+      "bytes": 337460,
+      "sha256": "7ebc57794362f2f2c56b7d1582979881142582df05e7d2c5643465cda4dfefc5"
+    },
+    "outputs/rock-ground-v03/02_hierarchy.svg": {
+      "bytes": 251887,
+      "sha256": "fb049d01de93e390a36f5c9a327e340048d966acc34eed243530b0409e49f5cc"
+    },
+    "outputs/rock-ground-v03/03_ground.png": {
+      "bytes": 208012,
+      "sha256": "2eead1ab200db2108140b4d7fed4ce265aacc3a1ff453b508275323900ee56b5"
+    },
+    "outputs/rock-ground-v03/03_ground.svg": {
+      "bytes": 180118,
+      "sha256": "a6ba7fcc2afc0dd2b9a950492719470bf38b82c92f20757c15da4c3328515824"
+    },
+    "outputs/rock-ground-v03/03_ground_layers.png": {
+      "bytes": 225543,
+      "sha256": "432666e2f85ced2028ead69e777068f24b4746bcbffe924ef54952f730098629"
+    },
+    "outputs/rock-ground-v03/03_ground_layers.svg": {
+      "bytes": 183936,
+      "sha256": "031b6ace48585e05551c3a854be16c1ab5d7da8b8cc6bc087d642286515174d7"
+    },
+    "outputs/rock-ground-v03/04_cliff.png": {
+      "bytes": 394414,
+      "sha256": "4eb654b07ae221820f7f11f82098c31f27ca6342016601c0c9532a6f09a05748"
+    },
+    "outputs/rock-ground-v03/04_cliff.svg": {
+      "bytes": 231442,
+      "sha256": "8aa7d738077d604d2fecd39b5ac664d0ec7c32ebbbd70b835ad672c79ebd0f21"
+    },
+    "outputs/rock-ground-v03/05_mixed.png": {
+      "bytes": 364570,
+      "sha256": "b1a2f48736fef45a0d98a558cf1b47721af8a22ee99372d869dfbe8c3e4060bb"
+    },
+    "outputs/rock-ground-v03/05_mixed.svg": {
+      "bytes": 288979,
+      "sha256": "723c827d2a0a9026d097b067c4cf5c11d83d7c6231e53192420c9b427935893c"
+    },
+    "outputs/rock-ground-v03/audit.json": {
+      "bytes": 932875,
+      "sha256": "cec15eec17ad67cca23a67e4b944760de99dc61371a79069fcefa70a3a667f9f"
+    },
+    "outputs/rock-ground-v03/record.json": {
+      "bytes": 53452,
+      "sha256": "9656d2ffe48edfb0f44885317a31d683f03675fc5a1daf1d8e0c9525cc545560"
+    },
+    "outputs/rock-ground-v03/supports.geojson": {
+      "bytes": 1126378,
+      "sha256": "90fb919b5a3415c3bbb851399ab7ea9106880459e36dc79def6a37c163d0599b"
+    },
+    "outputs/rock-ground-v03/vectors.json.gz": {
+      "bytes": 1184602,
+      "sha256": "65974f1c7ad93b8fe47e5b4bd85d0b7dfd9e3e472843755aaba44bbb97dee319"
+    },
+    "outputs/rock-ground-v04/01_mass.png": {
+      "bytes": 352023,
+      "sha256": "115d5f016dae8b231eafcef22cf50d81ca84a8ec1db33de0cc649d1b8859a312"
+    },
+    "outputs/rock-ground-v04/01_mass.svg": {
+      "bytes": 173711,
+      "sha256": "7c73737ed2559e0e45cd45828ece4e8154d0a08992ea9d914c4148d8ef43eea3"
+    },
+    "outputs/rock-ground-v04/01_mass_layers.png": {
+      "bytes": 589225,
+      "sha256": "aae42aa887c04fd43100e03b9e387995e818b84ab296f9923a0183d7d96f044d"
+    },
+    "outputs/rock-ground-v04/01_mass_layers.svg": {
+      "bytes": 260920,
+      "sha256": "f4a5b2f458f4835df197f352b52a5062f79af1dcf28707971ffa714ea4f21356"
+    },
+    "outputs/rock-ground-v04/02_density.png": {
+      "bytes": 382084,
+      "sha256": "9f15d1dd99b49b3279e6caa5a1eb184725a4111eba415625044fd76227273b7f"
+    },
+    "outputs/rock-ground-v04/02_density.svg": {
+      "bytes": 213625,
+      "sha256": "c6af3c36327f8fe63be6e9077310b85ee0752118b22339c1eeab88bc3ce63d48"
+    },
+    "outputs/rock-ground-v04/02_density_layers.png": {
+      "bytes": 627576,
+      "sha256": "4c992f105866de1aeb0ce08cdc29495b1265a79da3d4a5df73b31d81f519165b"
+    },
+    "outputs/rock-ground-v04/02_density_layers.svg": {
+      "bytes": 311774,
+      "sha256": "25216ce0057bde4b9f92c5de9cc9f7e2bfe6305c4e01c9a1eeff4483535bbe42"
+    },
+    "outputs/rock-ground-v04/03_patch_layers.png": {
+      "bytes": 793120,
+      "sha256": "e112006a500c04b7542c5a9fc12588525423686c8a3b2af4d9e5e66c4911944d"
+    },
+    "outputs/rock-ground-v04/03_patch_layers.svg": {
+      "bytes": 641284,
+      "sha256": "540a9eb9b16526be8d712cb864764f985acc6dee6b2d600543cf7874dd1a9ddd"
+    },
+    "outputs/rock-ground-v04/03_patches.png": {
+      "bytes": 553488,
+      "sha256": "ddbbc19cd1092c34570c6773f727fde1b7e81aee4566e4403400aae7d1923bee"
+    },
+    "outputs/rock-ground-v04/03_patches.svg": {
+      "bytes": 445812,
+      "sha256": "663981a537686c1c4578053228dec31ea2b0e40b96ca72fc1a699bf1b3e03363"
+    },
+    "outputs/rock-ground-v04/04_synthesis.png": {
+      "bytes": 321595,
+      "sha256": "310c6105085da715b92b056ef70bdb33398ff0e7c5eeb14b59f465bc0c2c4729"
+    },
+    "outputs/rock-ground-v04/04_synthesis.svg": {
+      "bytes": 211996,
+      "sha256": "d9b434a5f9ca5421ee66b7117b6f7be50231ae98c037a1e07dee4b65ad43c24f"
+    },
+    "outputs/rock-ground-v04/audit.json": {
+      "bytes": 998212,
+      "sha256": "466cd73f20a10d7dd90a49fca9488c12be7754707724612417900ee8c5ad2c75"
+    },
+    "outputs/rock-ground-v04/record.json": {
+      "bytes": 49691,
+      "sha256": "668f6a631f59275fb058d1864e6a15792afa122053af2e851693476ef031e4ae"
+    },
+    "outputs/rock-ground-v04/supports.geojson": {
+      "bytes": 1516453,
+      "sha256": "80ff40ca9570a2b9133da46c3965d9a24aa519ccb435e2285d81fab8988a03e9"
+    },
+    "outputs/rock-ground-v04/vectors.json.gz": {
+      "bytes": 1654098,
+      "sha256": "03ad79614f1a83910b3361f524d4b1cfdf18d381994a5f61ce8bf10c516c16e4"
+    },
+    "outputs/rock-ground-v05/01_feature_layers.png": {
+      "bytes": 355332,
+      "sha256": "36302b31c20ddccb885954e02050014c698ebf9404d0faae024ee66640c9f4c6"
+    },
+    "outputs/rock-ground-v05/01_feature_layers.svg": {
+      "bytes": 216001,
+      "sha256": "e04a2ab022a6b93c1ab73fb973fb1091a650cdbe6da696b32bf3f0989fc9b7b1"
+    },
+    "outputs/rock-ground-v05/01_structure.png": {
+      "bytes": 253928,
+      "sha256": "38a2ba548fad818ba2b4075adca3a98a3520a601a0031a7538716882b3b2a68b"
+    },
+    "outputs/rock-ground-v05/01_structure.svg": {
+      "bytes": 137180,
+      "sha256": "feefde54134139d562c040a725a3032102c6f1d10a24ea518e0dd9c30cee7b89"
+    },
+    "outputs/rock-ground-v05/02_scale_catalog.png": {
+      "bytes": 481097,
+      "sha256": "1ec3771cc7523b81b9eb4152bb2d58a96281bf93e35be69e9a6c8444d3462d9c"
+    },
+    "outputs/rock-ground-v05/02_scale_catalog.svg": {
+      "bytes": 237950,
+      "sha256": "5ebc31e7f33cdda60976085de86d3261f06fec2a0c06061781914f5615a698d4"
+    },
+    "outputs/rock-ground-v05/03_C_contact_test.png": {
+      "bytes": 120948,
+      "sha256": "fa94a09109445cfb5089b41cd7236590a92d5a699bedd807193d0fa9744ef25f"
+    },
+    "outputs/rock-ground-v05/03_C_contact_test.svg": {
+      "bytes": 98381,
+      "sha256": "b69334953f33636c860f0abab842874bce824f6a1ff638cca17e42349bf68fca"
+    },
+    "outputs/rock-ground-v05/03_material_layers.png": {
+      "bytes": 376752,
+      "sha256": "5344cce487519ae71597964af17e3d814bac7d28f7d0beae210aeee3bd53ff51"
+    },
+    "outputs/rock-ground-v05/03_material_layers.svg": {
+      "bytes": 260055,
+      "sha256": "b78b62f6f64d7face49ab92bd268aae42aeac6b8bdd05280ce74efae810d5256"
+    },
+    "outputs/rock-ground-v05/04_overview.png": {
+      "bytes": 525992,
+      "sha256": "e1502a6929a06fea9c46186c92dfdc3e0711e3f5712b43daf4346a79486ddfbf"
+    },
+    "outputs/rock-ground-v05/04_overview.svg": {
+      "bytes": 380070,
+      "sha256": "3cba4a1354d7456ec77a384b9c8732a6dc741194c998d2f92762d199d2108b43"
+    },
+    "outputs/rock-ground-v05/audit.json": {
+      "bytes": 607151,
+      "sha256": "fb55b16c2ca7a64ea5df4539fa539a53ae13c71fd742c614898b6ac250b8318d"
+    },
+    "outputs/rock-ground-v05/record.json": {
+      "bytes": 56252,
+      "sha256": "93c28fb1896846433f0cf87005e22965fb8dfcc0d32ada14f5fc104410d95f6e"
+    },
+    "outputs/rock-ground-v05/supports.geojson": {
+      "bytes": 890854,
+      "sha256": "bb95b0b137925ad414f6fc48e558890b2dedb7137597cefb1c77730891690845"
+    },
+    "outputs/rock-ground-v05/vectors.json.gz": {
+      "bytes": 1053070,
+      "sha256": "9faa59aa069b58dcf146409d311ab6ac275d718380b9e9d42e888f51c808067d"
+    }
+  },
+  "local_checkpoint_history": {
+    "v01": "c9c6791850a2533283331494a75bac5be038818c",
+    "v02": "bd755f30bc3e36cbd6a16b609effbe2c218ee600",
+    "v03": "31f1d7bc367bc006905246390755ddfe48db3cd1",
+    "v04": "797bae966e7975c8394415169b18b80189949347",
+    "v05": "69950b2a591fa4d37e79e5fa31ee8543903152e0"
+  },
+  "local_package_archives": {
+    "Datascape_Rock_Ground_v01.patch": {
+      "bytes": 73852,
+      "sha256": "a92c8fc594916c021edf34de5ee094449c26760adf8ce2215c1a96451db5eef3"
+    },
+    "Datascape_Rock_Ground_v01_Review.html": {
+      "bytes": 3324909,
+      "sha256": "dfc4f70ba7cd3a91daacc08e9136a6e53bafe26edf4170b1002a2199eab0748a"
+    },
+    "Datascape_Rock_Ground_v01_Source.zip": {
+      "bytes": 1311497,
+      "sha256": "921951fb91746995351a5c6056ab34db4a25ca44383ec90941679d494a6bea43"
+    },
+    "Datascape_Rock_Ground_v02.patch": {
+      "bytes": 78944,
+      "sha256": "8b427674552cec591740a6dbc14fd89ff4fbf7be58bf6d17d1a85ccb910c457d"
+    },
+    "Datascape_Rock_Ground_v02_Review.html": {
+      "bytes": 2115480,
+      "sha256": "71c5d157f0cef4b20d5c44dfa8c62c8bdab56e51ceff5d3c29154a51dfa24afe"
+    },
+    "Datascape_Rock_Ground_v02_Source.zip": {
+      "bytes": 1134483,
+      "sha256": "9a7f1a2402322e6b92f44f20593c90b177b5f641c244fb1a741ec647a46cc896"
+    },
+    "Datascape_Rock_Ground_v03.patch": {
+      "bytes": 48216,
+      "sha256": "c0b348cc3e6fcef98bb595b1ba540beae9d88ca47e92bf5a5aaac53456a639d8"
+    },
+    "Datascape_Rock_Ground_v03_Review.html": {
+      "bytes": 2763317,
+      "sha256": "390f9f469f015e8f1b9438e5ce1f4366d548e6f10989423f77a5b8699fa97483"
+    },
+    "Datascape_Rock_Ground_v03_Source.zip": {
+      "bytes": 2022481,
+      "sha256": "b511efcdc96644ff38f64d7787e9272082c4de500d399c522812dda78ad5dd25"
+    },
+    "Datascape_Rock_Ground_v04.patch": {
+      "bytes": 66422,
+      "sha256": "2bc724cf4eeba9464050938b17db3f92d13f0570b391c27f530d76fca4e5bea4"
+    },
+    "Datascape_Rock_Ground_v04_Review.html": {
+      "bytes": 3453488,
+      "sha256": "a0a17b7844576878c5ff2cc5352131ac5c2eddcb5f9930067c13d09faa38c97b"
+    },
+    "Datascape_Rock_Ground_v04_Source.zip": {
+      "bytes": 3109647,
+      "sha256": "fdbb5bee17a003f65bf3bc31909df36af391535865e870e59089ccaa5f733a31"
+    },
+    "Datascape_Rock_Ground_v05.patch": {
+      "bytes": 67689,
+      "sha256": "94468b02c301608b715869180f2cbb02fe9e7544bd9595d2cec327ee041e0b63"
+    },
+    "Datascape_Rock_Ground_v05_Review.html": {
+      "bytes": 4760781,
+      "sha256": "bd15f1d54478b3a5df0a9d6f933095b66f089c46a41289031f7dee974203aabc"
+    },
+    "Datascape_Rock_Ground_v05_Source.zip": {
+      "bytes": 3277820,
+      "sha256": "789ded45f5c2893828edd594d0e28c80c5b322c4c6c4793e6b43b5725a53768c"
+    }
+  },
+  "selected_review_sha256": {
+    "01_structure.svg": "feefde54134139d562c040a725a3032102c6f1d10a24ea518e0dd9c30cee7b89",
+    "02_scale_catalog.svg": "5ebc31e7f33cdda60976085de86d3261f06fec2a0c06061781914f5615a698d4",
+    "03_material_layers.svg": "b78b62f6f64d7face49ab92bd268aae42aeac6b8bdd05280ce74efae810d5256",
+    "04_overview.svg": "3cba4a1354d7456ec77a384b9c8732a6dc741194c998d2f92762d199d2108b43"
+  }
+}
