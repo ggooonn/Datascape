@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "B": {
+      "unique_ids": true,
+      "profiles_aligned": true,
+      "original_arc_geometry_exact": true,
+      "length_conserved": true,
+      "canvas_bottom_guard": true,
+      "new_minimum_2_8mm": true,
+      "reversed_traversal_vectors_equal": true,
+      "actual_final_new_length_mm": 4816.90384955586,
+      "matched_visible_mask_control_mm": 4816.578251214618,
+      "wider_footprint_new_length_mm": 4802.779684986263,
+      "footprint_test": "Same original sources/resolved masks, 0.30 mm widening; not measured wet ink"
+    },
+    "C": {
+      "unique_ids": true,
+      "profiles_aligned": true,
+      "original_arc_geometry_exact": true,
+      "length_conserved": true,
+      "canvas_bottom_guard": true,
+      "new_minimum_2_8mm": true,
+      "reversed_traversal_vectors_equal": true,
+      "actual_final_new_length_mm": 7538.755135111577,
+      "matched_visible_mask_control_mm": 7538.43326787785,
+      "wider_footprint_new_length_mm": 7506.112827294208,
+      "footprint_test": "Same original sources/resolved masks, 0.30 mm widening; not measured wet ink"
+    }
+  },
+  "policy": "Derived diagnostic validation; no production certification"
+}

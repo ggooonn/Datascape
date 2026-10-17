@@ -1,0 +1,4066 @@
+[
+  {
+    "object_id": "spring-integration-v01/tree/left-parent",
+    "kind": "tree",
+    "group": "left-near",
+    "site": {
+      "xy_mm": [
+        196.5,
+        842.5
+      ],
+      "mapped_face_id": 58621,
+      "original_mesh_face_id": 154861,
+      "barycentric": [
+        0.3280040730888405,
+        0.37254896705137036,
+        0.2994469598597891
+      ],
+      "source_xyz_utm_m": [
+        325086.01659120416,
+        4168334.840122192,
+        40.591475733933024
+      ],
+      "source_forward_m": 183.97367264447828,
+      "lateral_q_per_mm": -0.012219374863522101,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.6719959269122455,
+      "ndvi": 0.34768324872220974,
+      "effective_observations": 29.0,
+      "retained_ground": 0.5536465890493002,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "306e863eaaae7bb2acea6bd80ad720f8cd8446dc2220f3ba975f3202dbc4b82f"
+  },
+  {
+    "object_id": "spring-integration-v01/tree/right-parent",
+    "kind": "tree",
+    "group": "right-near",
+    "site": {
+      "xy_mm": [
+        456.5,
+        784.5
+      ],
+      "mapped_face_id": 25339,
+      "original_mesh_face_id": 52212,
+      "barycentric": [
+        0.01905632502321608,
+        0.7049558146064353,
+        0.27598786037034856
+      ],
+      "source_xyz_utm_m": [
+        325056.1486744382,
+        4168736.720364189,
+        38.989788480844915
+      ],
+      "source_forward_m": 362.9825305239982,
+      "lateral_q_per_mm": -0.07863229495629415,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.672548735899653,
+      "ndvi": 0.3727440334419278,
+      "effective_observations": 29.267142479015828,
+      "retained_ground": 0.5285449104580078,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "3a8ff6f27991b0cc4e3ed802454323ffa8f3f16def92fa8028f5c9070a5e7279"
+  },
+  {
+    "object_id": "spring-integration-v01/tree/right-middle",
+    "kind": "tree",
+    "group": "right-middle",
+    "site": {
+      "xy_mm": [
+        492.5,
+        641.5
+      ],
+      "mapped_face_id": 21827,
+      "original_mesh_face_id": 47260,
+      "barycentric": [
+        0.6617253011443542,
+        0.18471613472091675,
+        0.15355856413472904
+      ],
+      "source_xyz_utm_m": [
+        324530.5414840416,
+        4169190.3932430763,
+        54.63688953575119
+      ],
+      "source_forward_m": 1020.7405821577262,
+      "lateral_q_per_mm": -0.193421206786539,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.659919495303365,
+      "ndvi": 0.6529884877208184,
+      "effective_observations": 29.0,
+      "retained_ground": 0.4836368245463069,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "27588e8f12e1a87261f745dc03daf9f6fcc3eda123fa20dd90964b00a6d5e47d"
+  },
+  {
+    "object_id": "spring-integration-v01/tree/left-middle",
+    "kind": "tree",
+    "group": "left-middle",
+    "site": {
+      "xy_mm": [
+        52.5,
+        648.5
+      ],
+      "mapped_face_id": 29384,
+      "original_mesh_face_id": 57777,
+      "barycentric": [
+        0.3036659658125904,
+        0.31789086008991796,
+        0.3784431740974917
+      ],
+      "source_xyz_utm_m": [
+        324204.5367258027,
+        4168223.646704777,
+        69.28069464882687
+      ],
+      "source_forward_m": 958.6898306494705,
+      "lateral_q_per_mm": 0.03074284690197073,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.667083243691179,
+      "ndvi": 0.41983468040906213,
+      "effective_observations": 30.00626946758299,
+      "retained_ground": 0.7255150064652565,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "ddaf48fc01598ab9de295981625c6e47fdc266095c656b5acb757f08cf91a5b9"
+  },
+  {
+    "object_id": "spring-integration-v01/tree/left-shoulder",
+    "kind": "tree",
+    "group": "left-near",
+    "site": {
+      "xy_mm": [
+        172.5,
+        695.5
+      ],
+      "mapped_face_id": 57889,
+      "original_mesh_face_id": 153856,
+      "barycentric": [
+        0.30336784408579187,
+        0.40332258971944523,
+        0.29330956619476295
+      ],
+      "source_xyz_utm_m": [
+        324546.2007130142,
+        4168424.1010353225,
+        56.65008144311367
+      ],
+      "source_forward_m": 717.6645171742132,
+      "lateral_q_per_mm": 0.02549364909226139,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.5023615583616667,
+      "ndvi": 0.21516527301180255,
+      "effective_observations": 27.089896467700616,
+      "retained_ground": 0.5177258935653681,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "22954e8b8d4b75757d12857c05ad38679520e3d599eebf2fde34c580dbd5abc3"
+  },
+  {
+    "object_id": "spring-integration-v01/tree/middle-small",
+    "kind": "tree",
+    "group": "middle-contact",
+    "site": {
+      "xy_mm": [
+        370.5,
+        626.5
+      ],
+      "mapped_face_id": 53585,
+      "original_mesh_face_id": 147928,
+      "barycentric": [
+        0.11938432050439318,
+        0.20450842595127466,
+        0.6761072535443322
+      ],
+      "source_xyz_utm_m": [
+        324354.7167823937,
+        4168958.5815296154,
+        73.08633292243013
+      ],
+      "source_forward_m": 1096.3264208734304,
+      "lateral_q_per_mm": -0.6611601755148402,
+      "crs": "EPSG:32652",
+      "slope_deg": 12.387820314540356,
+      "ndvi": 0.47389463271175225,
+      "effective_observations": 29.64184703850185,
+      "retained_ground": 0.7393778366709411,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "2dc919df49b4b679ee57a12916968fc5f682d7fb890e65653ce68e2697b70023"
+  },
+  {
+    "object_id": "spring-integration-v01/tree/left-companion",
+    "kind": "tree",
+    "group": "left-near",
+    "site": {
+      "xy_mm": [
+        89.5,
+        839.5
+      ],
+      "mapped_face_id": 59565,
+      "original_mesh_face_id": 156175,
+      "barycentric": [
+        0.24809686729329306,
+        0.48294825437953687,
+        0.26895487832717
+      ],
+      "source_xyz_utm_m": [
+        325026.9313536502,
+        4168212.4429060183,
+        39.59437671945874
+      ],
+      "source_forward_m": 192.6170915157626,
+      "lateral_q_per_mm": 0.009878138721411144,
+      "crs": "EPSG:32652",
+      "slope_deg": 5.041716022067703,
+      "ndvi": 0.20235978203518462,
+      "effective_observations": 29.0,
+      "retained_ground": 0.37734196082067106,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "a4ad9820d7a0534f3f3280967f088fd88271e6735e7ea24744d5a6e221e7d4ad"
+  },
+  {
+    "object_id": "spring-integration-v01/tree/right-companion",
+    "kind": "tree",
+    "group": "right-near",
+    "site": {
+      "xy_mm": [
+        409.5,
+        842.5
+      ],
+      "mapped_face_id": 26553,
+      "original_mesh_face_id": 53862,
+      "barycentric": [
+        0.4882374651669259,
+        0.032727166453638816,
+        0.4790353683794353
+      ],
+      "source_xyz_utm_m": [
+        325185.9818149936,
+        4168580.6289389487,
+        40.577544461659095
+      ],
+      "source_forward_m": 183.92636159934477,
+      "lateral_q_per_mm": 0.007082802203519752,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.505287161385659,
+      "ndvi": 0.21248846559029025,
+      "effective_observations": 30.437106105126418,
+      "retained_ground": 0.6460477190615547,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "e4ccbbf3bfd4f9d9fb6a8c46c206f973c70fdcb9f6776be572ba7f36b3222e2f"
+  },
+  {
+    "object_id": "spring-integration-v01/tree/middle-companion",
+    "kind": "tree",
+    "group": "middle-contact",
+    "site": {
+      "xy_mm": [
+        344.5,
+        646.5
+      ],
+      "mapped_face_id": 54526,
+      "original_mesh_face_id": 149247,
+      "barycentric": [
+        0.1850950469678596,
+        0.4373618861084232,
+        0.37754306692371725
+      ],
+      "source_xyz_utm_m": [
+        324453.6737079923,
+        4168840.5528514097,
+        78.1971788486031
+      ],
+      "source_forward_m": 960.2071318630967,
+      "lateral_q_per_mm": 0.3292224315147324,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.512662356906807,
+      "ndvi": 0.45114340437444095,
+      "effective_observations": 29.0,
+      "retained_ground": 0.7408345789413101,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "0d92794f17ca7dbb2e9e91864d1239833c3f59a47dc3a3468b05507694105775"
+  },
+  {
+    "object_id": "spring-integration-v01/tree/right-satellite",
+    "kind": "tree",
+    "group": "right-near",
+    "site": {
+      "xy_mm": [
+        515.5,
+        745.5
+      ],
+      "mapped_face_id": 54072,
+      "original_mesh_face_id": 148606,
+      "barycentric": [
+        0.5266764048020869,
+        0.338021460092509,
+        0.13530213510540412
+      ],
+      "source_xyz_utm_m": [
+        324970.9409359468,
+        4168910.800292144,
+        39.10417602136939
+      ],
+      "source_forward_m": 507.4725127930111,
+      "lateral_q_per_mm": 0.05637431469523441,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.2316889587140047,
+      "ndvi": 0.23074189118702892,
+      "effective_observations": 31.0,
+      "retained_ground": 0.5956723563137344,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": null,
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": null,
+    "nonplotting_host": null,
+    "canonical_tree_sha256": "10bb7506780a40b99a6aa0ef37a9d134f38738020ee664a09cdb90fcbf78f556"
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-ground/parent",
+    "kind": "rock",
+    "group": "left-near",
+    "site": {
+      "xy_mm": [
+        186.42249921173982,
+        844.7025015631343
+      ],
+      "mapped_face_id": 28703,
+      "original_mesh_face_id": 56819,
+      "barycentric": [
+        0.1497236805722053,
+        0.7420544823557051,
+        0.10822183707208949
+      ],
+      "source_xyz_utm_m": [
+        325087.26163447066,
+        4168321.753344888,
+        40.599188937874736
+      ],
+      "source_forward_m": 177.89207760250045,
+      "lateral_q_per_mm": -0.009914152173070833,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.972265078662247,
+      "ndvi": 0.36033827232616217,
+      "effective_observations": 29.0,
+      "retained_ground": 0.5307166893616571,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-ground",
+    "parent_mass_id": "spring-integration-v01/rock/left-ground/parent",
+    "catalog_local_rank": 4.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-ground/rear",
+    "kind": "rock",
+    "group": "left-near",
+    "site": {
+      "xy_mm": [
+        222.42249921173982,
+        838.4325015631343
+      ],
+      "mapped_face_id": 58383,
+      "original_mesh_face_id": 154532,
+      "barycentric": [
+        0.43192206295118973,
+        0.30529277438775615,
+        0.2627851626610541
+      ],
+      "source_xyz_utm_m": [
+        325087.11644512013,
+        4168367.9576618886,
+        40.14140614803116
+      ],
+      "source_forward_m": 195.4261569646911,
+      "lateral_q_per_mm": 0.018493766606237385,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.0,
+      "ndvi": 0.1491354216435901,
+      "effective_observations": 29.000000000000004,
+      "retained_ground": 0.365304029688129,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-ground",
+    "parent_mass_id": "spring-integration-v01/rock/left-ground/parent",
+    "catalog_local_rank": 4.7,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-ground/front",
+    "kind": "rock",
+    "group": "left-near",
+    "site": {
+      "xy_mm": [
+        214.42249921173982,
+        848.0025015631343
+      ],
+      "mapped_face_id": 28466,
+      "original_mesh_face_id": 56491,
+      "barycentric": [
+        0.4125443224682269,
+        0.46772675785646434,
+        0.11972891967530876
+      ],
+      "source_xyz_utm_m": [
+        325109.0318027357,
+        4168351.4081324097,
+        40.72135549592542
+      ],
+      "source_forward_m": 168.8919034716257,
+      "lateral_q_per_mm": 0.007932442611505653,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.1952081174151816,
+      "ndvi": 0.1072192703487882,
+      "effective_observations": 30.0,
+      "retained_ground": 0.3899597985788986,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-ground",
+    "parent_mass_id": "spring-integration-v01/rock/left-ground/parent",
+    "catalog_local_rank": 2.8,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-ground/stone--1",
+    "kind": "rock",
+    "group": "left-near",
+    "site": {
+      "xy_mm": [
+        149.0,
+        848.1882754861249
+      ],
+      "mapped_face_id": 59095,
+      "original_mesh_face_id": 155519,
+      "barycentric": [
+        0.4023000130444345,
+        0.06250246739948892,
+        0.5351975195560765
+      ],
+      "source_xyz_utm_m": [
+        325078.94407441333,
+        4168277.0690003913,
+        39.23697900634613
+      ],
+      "source_forward_m": 168.77014780033383,
+      "lateral_q_per_mm": 0.02987223491885029,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.209496045694994,
+      "ndvi": 0.28106399253208364,
+      "effective_observations": 29.0,
+      "retained_ground": 0.2505739320373156,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-ground",
+    "parent_mass_id": "spring-integration-v01/rock/left-ground/parent",
+    "catalog_local_rank": 3.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-ground/stone-1",
+    "kind": "rock",
+    "group": "left-near",
+    "site": {
+      "xy_mm": [
+        247.0,
+        848.1258708952994
+      ],
+      "mapped_face_id": 58146,
+      "original_mesh_face_id": 154204,
+      "barycentric": [
+        0.11436937820610704,
+        0.8595941974595543,
+        0.02603642433433866
+      ],
+      "source_xyz_utm_m": [
+        325124.21890727,
+        4168388.4310813462,
+        39.70760108963084
+      ],
+      "source_forward_m": 168.76487272891188,
+      "lateral_q_per_mm": 0.013675580606786747,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.1439473581642265,
+      "ndvi": 0.10036275609758494,
+      "effective_observations": 32.0,
+      "retained_ground": 0.1789344408778669,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-ground",
+    "parent_mass_id": "spring-integration-v01/rock/left-ground/parent",
+    "catalog_local_rank": 3.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-ground/soil",
+    "kind": "soil",
+    "group": "left-near",
+    "site": {
+      "xy_mm": [
+        198.0,
+        848.0025015631343
+      ],
+      "mapped_face_id": 28466,
+      "original_mesh_face_id": 56491,
+      "barycentric": [
+        0.037859628967860215,
+        0.21899138401394236,
+        0.7431489870181974
+      ],
+      "source_xyz_utm_m": [
+        325101.5697415204,
+        4168332.7055303897,
+        40.91362870307166
+      ],
+      "source_forward_m": 168.76163293923895,
+      "lateral_q_per_mm": 0.007932442611505653,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.934904828227837,
+      "ndvi": 0.282842294902658,
+      "effective_observations": 29.0,
+      "retained_ground": 0.48849484903242146,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-ground",
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": {
+      "id": "nonplotting/F2-source-q-section/left-ground",
+      "xy_mm": [
+        [
+          126.0,
+          848.1716460059602
+        ],
+        [
+          126.9,
+          848.1644457695205
+        ],
+        [
+          127.8,
+          848.1572455331011
+        ],
+        [
+          128.7,
+          848.1500452966831
+        ],
+        [
+          129.6,
+          848.1428450602868
+        ],
+        [
+          130.5,
+          848.1356448237898
+        ],
+        [
+          131.4,
+          848.1284445873391
+        ],
+        [
+          132.3,
+          848.1212443509401
+        ],
+        [
+          133.2,
+          848.1140441145008
+        ],
+        [
+          134.1,
+          848.1068438780535
+        ],
+        [
+          135.0,
+          848.0996436416166
+        ],
+        [
+          135.9,
+          848.0924434051942
+        ],
+        [
+          136.8,
+          848.0852431687672
+        ],
+        [
+          137.7,
+          848.0788510512523
+        ],
+        [
+          138.6,
+          848.0767872302616
+        ],
+        [
+          139.5,
+          848.0864903688114
+        ],
+        [
+          140.4,
+          848.0961935073258
+        ],
+        [
+          141.3,
+          848.1058966458698
+        ],
+        [
+          142.2,
+          848.1155997844176
+        ],
+        [
+          143.1,
+          848.1253029229489
+        ],
+        [
+          144.0,
+          848.1350060614791
+        ],
+        [
+          144.9,
+          848.1447092000111
+        ],
+        [
+          145.8,
+          848.1544123385519
+        ],
+        [
+          146.7,
+          848.164115477106
+        ],
+        [
+          147.6,
+          848.173812433165
+        ],
+        [
+          148.5,
+          848.1834617585287
+        ],
+        [
+          149.4,
+          848.1920342083183
+        ],
+        [
+          150.3,
+          848.2006701747566
+        ],
+        [
+          151.2,
+          848.2093703663996
+        ],
+        [
+          152.1,
+          848.2181355023956
+        ],
+        [
+          153.0,
+          848.2263894731182
+        ],
+        [
+          153.9,
+          848.233468391123
+        ],
+        [
+          154.8,
+          848.239611855929
+        ],
+        [
+          155.7,
+          848.2457553206633
+        ],
+        [
+          156.6,
+          848.2518987854071
+        ],
+        [
+          157.5,
+          848.2580422501934
+        ],
+        [
+          158.4,
+          848.2641857149489
+        ],
+        [
+          159.3,
+          848.2703291797712
+        ],
+        [
+          160.2,
+          848.2764726445606
+        ],
+        [
+          161.1,
+          848.2826161092936
+        ],
+        [
+          162.0,
+          848.2887595740555
+        ],
+        [
+          162.9,
+          848.2949030388363
+        ],
+        [
+          163.8,
+          848.3008424095551
+        ],
+        [
+          164.7,
+          848.3036295788718
+        ],
+        [
+          165.6,
+          848.2962032168945
+        ],
+        [
+          166.5,
+          848.2847746288676
+        ],
+        [
+          167.4,
+          848.2733460408735
+        ],
+        [
+          168.3,
+          848.2619174529738
+        ],
+        [
+          169.2,
+          848.250488864956
+        ],
+        [
+          170.1,
+          848.2390602769625
+        ],
+        [
+          171.0,
+          848.2276316889968
+        ],
+        [
+          171.9,
+          848.2162031010354
+        ],
+        [
+          172.8,
+          848.2047745130606
+        ],
+        [
+          173.7,
+          848.1933459250401
+        ],
+        [
+          174.6,
+          848.1819173370407
+        ],
+        [
+          175.5,
+          848.1704887490454
+        ],
+        [
+          176.4,
+          848.1590601610948
+        ],
+        [
+          177.3,
+          848.1476315731327
+        ],
+        [
+          178.2,
+          848.1362029851279
+        ],
+        [
+          179.1,
+          848.1247743971292
+        ],
+        [
+          180.0,
+          848.1133458091625
+        ],
+        [
+          180.9,
+          848.1021932422861
+        ],
+        [
+          181.8,
+          848.0921907481056
+        ],
+        [
+          182.7,
+          848.0837648244802
+        ],
+        [
+          183.6,
+          848.075250349318
+        ],
+        [
+          184.5,
+          848.0666459194827
+        ],
+        [
+          185.4,
+          848.0579501018443
+        ],
+        [
+          186.3,
+          848.0491614324686
+        ],
+        [
+          187.2,
+          848.0418393842788
+        ],
+        [
+          188.1,
+          848.0352458061788
+        ],
+        [
+          189.0,
+          848.0288025081941
+        ],
+        [
+          189.9,
+          848.0223592102136
+        ],
+        [
+          190.8,
+          848.016295443114
+        ],
+        [
+          191.7,
+          848.0114634121479
+        ],
+        [
+          192.60000000000002,
+          848.0082478003399
+        ],
+        [
+          193.5,
+          848.0050321884689
+        ],
+        [
+          194.4,
+          848.0036498600394
+        ],
+        [
+          195.3,
+          848.003265370022
+        ],
+        [
+          196.2,
+          848.0030077852513
+        ],
+        [
+          197.10000000000002,
+          848.0027532003053
+        ],
+        [
+          198.0,
+          848.0025015631343
+        ],
+        [
+          198.9,
+          848.003182509703
+        ],
+        [
+          199.8,
+          848.0052914711415
+        ],
+        [
+          200.7,
+          848.0079372067412
+        ],
+        [
+          201.60000000000002,
+          848.0105829423352
+        ],
+        [
+          202.5,
+          848.0132286778866
+        ],
+        [
+          203.4,
+          848.0158744134783
+        ],
+        [
+          204.3,
+          848.0185201490958
+        ],
+        [
+          205.2,
+          848.0211658847063
+        ],
+        [
+          206.10000000000002,
+          848.0238116202836
+        ],
+        [
+          207.0,
+          848.0264573558553
+        ],
+        [
+          207.9,
+          848.0291030914431
+        ],
+        [
+          208.8,
+          848.0317488270291
+        ],
+        [
+          209.7,
+          848.0343945626068
+        ],
+        [
+          210.60000000000002,
+          848.0370402982352
+        ],
+        [
+          211.5,
+          848.039686033833
+        ],
+        [
+          212.4,
+          848.0423317693954
+        ],
+        [
+          213.3,
+          848.044977504953
+        ],
+        [
+          214.2,
+          848.0476232405234
+        ],
+        [
+          215.10000000000002,
+          848.0502689761857
+        ],
+        [
+          216.0,
+          848.0529147117941
+        ],
+        [
+          216.9,
+          848.0554776844605
+        ],
+        [
+          217.8,
+          848.0575678960196
+        ],
+        [
+          218.7,
+          848.0588352288623
+        ],
+        [
+          219.60000000000002,
+          848.059812142227
+        ],
+        [
+          220.5,
+          848.0607890556375
+        ],
+        [
+          221.4,
+          848.0617659690629
+        ],
+        [
+          222.3,
+          848.0627428824814
+        ],
+        [
+          223.2,
+          848.0637197958736
+        ],
+        [
+          224.10000000000002,
+          848.0646967092312
+        ],
+        [
+          225.0,
+          848.0656736226206
+        ],
+        [
+          225.9,
+          848.0666505360247
+        ],
+        [
+          226.8,
+          848.0676274494043
+        ],
+        [
+          227.7,
+          848.0686043627869
+        ],
+        [
+          228.60000000000002,
+          848.0695812761757
+        ],
+        [
+          229.5,
+          848.0705581896776
+        ],
+        [
+          230.4,
+          848.0715351029878
+        ],
+        [
+          231.3,
+          848.0725120164146
+        ],
+        [
+          232.2,
+          848.0734889298315
+        ],
+        [
+          233.10000000000002,
+          848.074465843208
+        ],
+        [
+          234.0,
+          848.0754427566101
+        ],
+        [
+          234.9,
+          848.0764196700226
+        ],
+        [
+          235.8,
+          848.0773965833899
+        ],
+        [
+          236.7,
+          848.0783734967453
+        ],
+        [
+          237.60000000000002,
+          848.0795336409503
+        ],
+        [
+          238.5,
+          848.082148237507
+        ],
+        [
+          239.4,
+          848.0859911743764
+        ],
+        [
+          240.3,
+          848.0897815548865
+        ],
+        [
+          241.2,
+          848.0935204499607
+        ],
+        [
+          242.10000000000002,
+          848.0972089014197
+        ],
+        [
+          243.0,
+          848.1022314774169
+        ],
+        [
+          243.9,
+          848.1083133397184
+        ],
+        [
+          244.8,
+          848.1138326814024
+        ],
+        [
+          245.7,
+          848.1182428410988
+        ],
+        [
+          246.60000000000002,
+          848.122941447252
+        ],
+        [
+          247.5,
+          848.1299802180317
+        ],
+        [
+          248.4,
+          848.1371363874598
+        ],
+        [
+          249.3,
+          848.1443543094526
+        ],
+        [
+          250.2,
+          848.1516347867941
+        ],
+        [
+          251.10000000000002,
+          848.158978636251
+        ],
+        [
+          252.0,
+          848.1664668738185
+        ],
+        [
+          252.9,
+          848.1746517614034
+        ],
+        [
+          253.8,
+          848.1835678583094
+        ],
+        [
+          254.70000000000002,
+          848.1924839552114
+        ],
+        [
+          255.6,
+          848.2014000521699
+        ],
+        [
+          256.5,
+          848.2103161490651
+        ],
+        [
+          257.4,
+          848.2192322460087
+        ],
+        [
+          258.3,
+          848.2281483429149
+        ],
+        [
+          259.20000000000005,
+          848.2370644398484
+        ],
+        [
+          260.1,
+          848.2459805367367
+        ],
+        [
+          261.0,
+          848.2548966336456
+        ],
+        [
+          261.9,
+          848.2638127305889
+        ],
+        [
+          262.8,
+          848.2727288275197
+        ],
+        [
+          263.70000000000005,
+          848.2816449244266
+        ],
+        [
+          264.6,
+          848.2905610213166
+        ],
+        [
+          265.5,
+          848.2994771182497
+        ],
+        [
+          266.4,
+          848.3083932152244
+        ],
+        [
+          267.3,
+          848.3173093121572
+        ],
+        [
+          268.20000000000005,
+          848.3262254090729
+        ],
+        [
+          269.1,
+          848.3351415059907
+        ],
+        [
+          270.0,
+          848.3434388898271
+        ]
+      ]
+    },
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/right-ground/parent",
+    "kind": "rock",
+    "group": "right-near",
+    "site": {
+      "xy_mm": [
+        448.9983732695065,
+        789.7999999999253
+      ],
+      "mapped_face_id": 25340,
+      "original_mesh_face_id": 52213,
+      "barycentric": [
+        0.0037660968524374505,
+        0.05661373223367303,
+        0.9396201709138895
+      ],
+      "source_xyz_utm_m": [
+        325066.698411967,
+        4168716.8113948726,
+        36.979057220072775
+      ],
+      "source_forward_m": 345.7121164413849,
+      "lateral_q_per_mm": -0.0477136789718333,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.925253574945631,
+      "ndvi": 0.20832977321588106,
+      "effective_observations": 29.172458643838752,
+      "retained_ground": 0.48461289584088363,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/right-ground",
+    "parent_mass_id": "spring-integration-v01/rock/right-ground/parent",
+    "catalog_local_rank": 4.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/right-ground/rear",
+    "kind": "rock",
+    "group": "right-near",
+    "site": {
+      "xy_mm": [
+        483.19837326950653,
+        783.7199999999252
+      ],
+      "mapped_face_id": 25100,
+      "original_mesh_face_id": 51884,
+      "barycentric": [
+        0.8551050244924128,
+        0.1401278855347215,
+        0.00476708997286571
+      ],
+      "source_xyz_utm_m": [
+        325069.20383656607,
+        4168774.856987301,
+        40.13851976774578
+      ],
+      "source_forward_m": 365.2498845204479,
+      "lateral_q_per_mm": 0.0030197054331374193,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.3976296470908096,
+      "ndvi": 0.3852561924826039,
+      "effective_observations": 30.0,
+      "retained_ground": 0.526250803737354,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/right-ground",
+    "parent_mass_id": "spring-integration-v01/rock/right-ground/parent",
+    "catalog_local_rank": 4.7,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/right-ground/front",
+    "kind": "rock",
+    "group": "right-near",
+    "site": {
+      "xy_mm": [
+        475.5983732695065,
+        792.9999999999253
+      ],
+      "mapped_face_id": 55261,
+      "original_mesh_face_id": 150255,
+      "barycentric": [
+        0.029465947526072345,
+        0.8404802316447098,
+        0.13005382082921793
+      ],
+      "source_xyz_utm_m": [
+        325091.0983853751,
+        4168745.8839784255,
+        39.80953354208963
+      ],
+      "source_forward_m": 334.05648580693185,
+      "lateral_q_per_mm": -0.028686718777285663,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.8018138948261955,
+      "ndvi": 0.27845529039446226,
+      "effective_observations": 28.0,
+      "retained_ground": 0.5031087709257541,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/right-ground",
+    "parent_mass_id": "spring-integration-v01/rock/right-ground/parent",
+    "catalog_local_rank": 2.8,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/right-ground/stone--1",
+    "kind": "rock",
+    "group": "right-near",
+    "site": {
+      "xy_mm": [
+        413.45,
+        792.6667374520684
+      ],
+      "mapped_face_id": 55983,
+      "original_mesh_face_id": 151241,
+      "barycentric": [
+        0.26642656855735547,
+        0.45651608627178014,
+        0.27705734517086444
+      ],
+      "source_xyz_utm_m": [
+        325056.6882796449,
+        4168662.992797057,
+        41.11949831924633
+      ],
+      "source_forward_m": 334.7183908076858,
+      "lateral_q_per_mm": 0.07039853342359681,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.494228279131713,
+      "ndvi": 0.0819256434497123,
+      "effective_observations": 29.0,
+      "retained_ground": 0.5680849875600595,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/right-ground",
+    "parent_mass_id": "spring-integration-v01/rock/right-ground/parent",
+    "catalog_local_rank": 3.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/right-ground/stone-1",
+    "kind": "rock",
+    "group": "right-near",
+    "site": {
+      "xy_mm": [
+        506.55,
+        792.7551283733463
+      ],
+      "mapped_face_id": 24862,
+      "original_mesh_face_id": 51556,
+      "barycentric": [
+        0.007606846777401977,
+        0.4129520232633828,
+        0.5794411299592153
+      ],
+      "source_xyz_utm_m": [
+        325107.3885606979,
+        4168787.6167661017,
+        40.30081924113934
+      ],
+      "source_forward_m": 334.68121403959964,
+      "lateral_q_per_mm": 0.040112672780704434,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.881423701470055,
+      "ndvi": 0.09121103722429988,
+      "effective_observations": 30.0,
+      "retained_ground": 0.5408089864398159,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/right-ground",
+    "parent_mass_id": "spring-integration-v01/rock/right-ground/parent",
+    "catalog_local_rank": 3.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/right-ground/soil",
+    "kind": "soil",
+    "group": "right-near",
+    "site": {
+      "xy_mm": [
+        460.0,
+        792.9999999999253
+      ],
+      "mapped_face_id": 55501,
+      "original_mesh_face_id": 150584,
+      "barycentric": [
+        0.3436745441432403,
+        0.22367785685429487,
+        0.4326475990024648
+      ],
+      "source_xyz_utm_m": [
+        325082.0205720299,
+        4168725.310236324,
+        38.02134887791847
+      ],
+      "source_forward_m": 334.7183908075815,
+      "lateral_q_per_mm": -0.04004481263631366,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.493741569588532,
+      "ndvi": 0.29630679920017344,
+      "effective_observations": 29.409095955023076,
+      "retained_ground": 0.4885616212659454,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/right-ground",
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": {
+      "id": "nonplotting/F2-source-q-section/right-ground",
+      "xy_mm": [
+        [
+          391.6,
+          792.7305827308609
+        ],
+        [
+          392.45500000000004,
+          792.7202853978033
+        ],
+        [
+          393.31,
+          792.7101541640733
+        ],
+        [
+          394.165,
+          792.7000518983074
+        ],
+        [
+          395.02000000000004,
+          792.6899703565471
+        ],
+        [
+          395.875,
+          792.679909475113
+        ],
+        [
+          396.73,
+          792.6698691905414
+        ],
+        [
+          397.58500000000004,
+          792.659860068946
+        ],
+        [
+          398.44,
+          792.6499603151519
+        ],
+        [
+          399.295,
+          792.6401136166887
+        ],
+        [
+          400.15000000000003,
+          792.6302706396818
+        ],
+        [
+          401.005,
+          792.6204276626522
+        ],
+        [
+          401.86,
+          792.6105846856057
+        ],
+        [
+          402.71500000000003,
+          792.6007417085772
+        ],
+        [
+          403.57,
+          792.5908987315727
+        ],
+        [
+          404.425,
+          792.5810557545232
+        ],
+        [
+          405.28000000000003,
+          792.571212777529
+        ],
+        [
+          406.135,
+          792.561499856885
+        ],
+        [
+          406.99,
+          792.5529207371169
+        ],
+        [
+          407.845,
+          792.5546513395484
+        ],
+        [
+          408.70000000000005,
+          792.5704183816262
+        ],
+        [
+          409.555,
+          792.5873712494495
+        ],
+        [
+          410.41,
+          792.6047930988057
+        ],
+        [
+          411.26500000000004,
+          792.6222149481524
+        ],
+        [
+          412.12,
+          792.6396367975182
+        ],
+        [
+          412.975,
+          792.657058646877
+        ],
+        [
+          413.83000000000004,
+          792.6744804962202
+        ],
+        [
+          414.685,
+          792.6919023455641
+        ],
+        [
+          415.54,
+          792.709324194932
+        ],
+        [
+          416.39500000000004,
+          792.7267460442425
+        ],
+        [
+          417.25,
+          792.7441678935922
+        ],
+        [
+          418.105,
+          792.7615897429595
+        ],
+        [
+          418.96000000000004,
+          792.7790115923106
+        ],
+        [
+          419.815,
+          792.7964334416429
+        ],
+        [
+          420.67,
+          792.8138552909854
+        ],
+        [
+          421.52500000000003,
+          792.8312771403926
+        ],
+        [
+          422.38,
+          792.8486989896891
+        ],
+        [
+          423.235,
+          792.8661208390619
+        ],
+        [
+          424.09000000000003,
+          792.8835426883916
+        ],
+        [
+          424.945,
+          792.9010705985829
+        ],
+        [
+          425.8,
+          792.9194182689055
+        ],
+        [
+          426.65500000000003,
+          792.9392247035385
+        ],
+        [
+          427.51,
+          792.9592335737053
+        ],
+        [
+          428.365,
+          792.9785567181192
+        ],
+        [
+          429.22,
+          792.996330668142
+        ],
+        [
+          430.075,
+          793.0117040369825
+        ],
+        [
+          430.93,
+          793.0187349999649
+        ],
+        [
+          431.785,
+          793.0181419867707
+        ],
+        [
+          432.64,
+          793.0171716583059
+        ],
+        [
+          433.495,
+          793.016218164677
+        ],
+        [
+          434.35,
+          793.0194612593834
+        ],
+        [
+          435.20500000000004,
+          793.02294539041
+        ],
+        [
+          436.06,
+          793.0264759784004
+        ],
+        [
+          436.915,
+          793.0300065664009
+        ],
+        [
+          437.77,
+          793.0335371544016
+        ],
+        [
+          438.625,
+          793.0370677423897
+        ],
+        [
+          439.48,
+          793.040598330431
+        ],
+        [
+          440.33500000000004,
+          793.0441289184258
+        ],
+        [
+          441.19,
+          793.0476595064274
+        ],
+        [
+          442.045,
+          793.0511900944306
+        ],
+        [
+          442.9,
+          793.0547206824323
+        ],
+        [
+          443.755,
+          793.0582512704297
+        ],
+        [
+          444.61,
+          793.0617818584194
+        ],
+        [
+          445.46500000000003,
+          793.0653124464027
+        ],
+        [
+          446.32,
+          793.0688430344285
+        ],
+        [
+          447.175,
+          793.0723736224298
+        ],
+        [
+          448.03000000000003,
+          793.0759042104501
+        ],
+        [
+          448.885,
+          793.0794347984512
+        ],
+        [
+          449.74,
+          793.0829653864263
+        ],
+        [
+          450.595,
+          793.0864674546722
+        ],
+        [
+          451.45,
+          793.0897436241758
+        ],
+        [
+          452.305,
+          793.0879525074415
+        ],
+        [
+          453.16,
+          793.0818357287508
+        ],
+        [
+          454.015,
+          793.0726656109326
+        ],
+        [
+          454.87,
+          793.0622848093666
+        ],
+        [
+          455.725,
+          793.0519040077866
+        ],
+        [
+          456.58,
+          793.0415232062331
+        ],
+        [
+          457.435,
+          793.0311424046354
+        ],
+        [
+          458.29,
+          793.0207616030765
+        ],
+        [
+          459.145,
+          793.0103808014902
+        ],
+        [
+          460.0,
+          792.9999999999253
+        ],
+        [
+          460.855,
+          792.9896191983667
+        ],
+        [
+          461.71000000000004,
+          792.9792383967977
+        ],
+        [
+          462.565,
+          792.9688575952571
+        ],
+        [
+          463.42,
+          792.9584767936454
+        ],
+        [
+          464.275,
+          792.9480959921106
+        ],
+        [
+          465.13,
+          792.9377151905531
+        ],
+        [
+          465.985,
+          792.9269673281233
+        ],
+        [
+          466.84000000000003,
+          792.9157200043682
+        ],
+        [
+          467.695,
+          792.904130145607
+        ],
+        [
+          468.55,
+          792.8924939233666
+        ],
+        [
+          469.405,
+          792.8808110589791
+        ],
+        [
+          470.26,
+          792.8690812713662
+        ],
+        [
+          471.115,
+          792.857304277274
+        ],
+        [
+          471.97,
+          792.8453882051602
+        ],
+        [
+          472.825,
+          792.8331633158945
+        ],
+        [
+          473.68,
+          792.820813504865
+        ],
+        [
+          474.53499999999997,
+          792.809348657648
+        ],
+        [
+          475.39,
+          792.8003146710967
+        ],
+        [
+          476.245,
+          792.7924317971236
+        ],
+        [
+          477.1,
+          792.7848791885821
+        ],
+        [
+          477.955,
+          792.7773948823763
+        ],
+        [
+          478.81,
+          792.7699105762109
+        ],
+        [
+          479.66499999999996,
+          792.7626210018419
+        ],
+        [
+          480.52,
+          792.7561387699324
+        ],
+        [
+          481.375,
+          792.750541120637
+        ],
+        [
+          482.23,
+          792.7448562591227
+        ],
+        [
+          483.085,
+          792.7390821313026
+        ],
+        [
+          483.94,
+          792.7332166179337
+        ],
+        [
+          484.795,
+          792.7287522846282
+        ],
+        [
+          485.65,
+          792.72740905539
+        ],
+        [
+          486.505,
+          792.7275662057349
+        ],
+        [
+          487.36,
+          792.7277233559985
+        ],
+        [
+          488.215,
+          792.7278805063613
+        ],
+        [
+          489.07,
+          792.7280376567286
+        ],
+        [
+          489.925,
+          792.7281948070573
+        ],
+        [
+          490.78,
+          792.7283519573681
+        ],
+        [
+          491.635,
+          792.7285091077035
+        ],
+        [
+          492.49,
+          792.7286662580264
+        ],
+        [
+          493.345,
+          792.7288234083491
+        ],
+        [
+          494.2,
+          792.7289805586752
+        ],
+        [
+          495.055,
+          792.7291377090115
+        ],
+        [
+          495.90999999999997,
+          792.7292948593351
+        ],
+        [
+          496.765,
+          792.7296006148748
+        ],
+        [
+          497.62,
+          792.7302644784155
+        ],
+        [
+          498.475,
+          792.7310975549846
+        ],
+        [
+          499.33,
+          792.7320566218148
+        ],
+        [
+          500.185,
+          792.7330194981151
+        ],
+        [
+          501.03999999999996,
+          792.733982374445
+        ],
+        [
+          501.895,
+          792.7349452507611
+        ],
+        [
+          502.75,
+          792.735908127057
+        ],
+        [
+          503.605,
+          792.7368710033687
+        ],
+        [
+          504.46,
+          792.7378338795877
+        ],
+        [
+          505.315,
+          792.7436551050654
+        ],
+        [
+          506.16999999999996,
+          792.7514985213033
+        ],
+        [
+          507.025,
+          792.7597029967068
+        ],
+        [
+          507.88,
+          792.7677497224338
+        ],
+        [
+          508.735,
+          792.7756432047906
+        ],
+        [
+          509.59,
+          792.7833877801763
+        ],
+        [
+          510.445,
+          792.7909876226634
+        ],
+        [
+          511.29999999999995,
+          792.8009321592222
+        ],
+        [
+          512.155,
+          792.8111380832214
+        ],
+        [
+          513.01,
+          792.8213745822039
+        ],
+        [
+          513.865,
+          792.8316110811887
+        ],
+        [
+          514.72,
+          792.8418475801521
+        ],
+        [
+          515.575,
+          792.8520840791274
+        ],
+        [
+          516.43,
+          792.8623205781171
+        ],
+        [
+          517.285,
+          792.8725570770982
+        ],
+        [
+          518.14,
+          792.8827935760918
+        ],
+        [
+          518.995,
+          792.8921480125299
+        ],
+        [
+          519.85,
+          792.9005207886211
+        ],
+        [
+          520.7049999999999,
+          792.9080567303644
+        ],
+        [
+          521.56,
+          792.9145091716183
+        ],
+        [
+          522.415,
+          792.9209616129177
+        ],
+        [
+          523.27,
+          792.9274140541587
+        ],
+        [
+          524.125,
+          792.9338664953875
+        ],
+        [
+          524.98,
+          792.9403189366186
+        ],
+        [
+          525.835,
+          792.9467713778855
+        ],
+        [
+          526.69,
+          792.9532238191756
+        ],
+        [
+          527.545,
+          792.959676260381
+        ],
+        [
+          528.4,
+          792.966128701583
+        ]
+      ]
+    },
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/middle-ground/parent",
+    "kind": "rock",
+    "group": "middle-contact",
+    "site": {
+      "xy_mm": [
+        347.6478385343856,
+        647.5000409506463
+      ],
+      "mapped_face_id": 54526,
+      "original_mesh_face_id": 149247,
+      "barycentric": [
+        0.32641690596650874,
+        0.5565422194788228,
+        0.11704087455466855
+      ],
+      "source_xyz_utm_m": [
+        324461.4887737634,
+        4168844.792507179,
+        77.83035604676229
+      ],
+      "source_forward_m": 954.5639417681311,
+      "lateral_q_per_mm": 0.3292224315147324,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.809692343029594,
+      "ndvi": 0.40934960500841394,
+      "effective_observations": 29.0,
+      "retained_ground": 0.7238341690856693,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/middle-ground",
+    "parent_mass_id": "spring-integration-v01/rock/middle-ground/parent",
+    "catalog_local_rank": 4.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/middle-ground/front",
+    "kind": "rock",
+    "group": "middle-contact",
+    "site": {
+      "xy_mm": [
+        367.2478385343856,
+        650.0000409506463
+      ],
+      "mapped_face_id": 54291,
+      "original_mesh_face_id": 148919,
+      "barycentric": [
+        0.5500299037857204,
+        0.183202732456396,
+        0.2667673637578836
+      ],
+      "source_xyz_utm_m": [
+        324486.99697908724,
+        4168881.5008971137,
+        73.42835868850226
+      ],
+      "source_forward_m": 944.757147061089,
+      "lateral_q_per_mm": 0.18646195598046297,
+      "crs": "EPSG:32652",
+      "slope_deg": 7.800080506062975,
+      "ndvi": 0.4157491949104163,
+      "effective_observations": 30.0,
+      "retained_ground": 0.6415399742066057,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/middle-ground",
+    "parent_mass_id": "spring-integration-v01/rock/middle-ground/parent",
+    "catalog_local_rank": 2.8,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/middle-ground/stone--1",
+    "kind": "rock",
+    "group": "middle-contact",
+    "site": {
+      "xy_mm": [
+        320.7,
+        651.285520391848
+      ],
+      "mapped_face_id": 55001,
+      "original_mesh_face_id": 149905,
+      "barycentric": [
+        0.25923955880488214,
+        0.2502451817876556,
+        0.4905152594074623
+      ],
+      "source_xyz_utm_m": [
+        324450.2845422178,
+        4168782.7771867644,
+        69.60345632782719
+      ],
+      "source_forward_m": 941.5896970474469,
+      "lateral_q_per_mm": -0.6256002507086353,
+      "crs": "EPSG:32652",
+      "slope_deg": 15.357566315169839,
+      "ndvi": 0.46448104592912187,
+      "effective_observations": 30.304175765393325,
+      "retained_ground": 0.6956916600557491,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/middle-ground",
+    "parent_mass_id": "spring-integration-v01/rock/middle-ground/parent",
+    "catalog_local_rank": 3.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/middle-ground/stone-1",
+    "kind": "rock",
+    "group": "middle-contact",
+    "site": {
+      "xy_mm": [
+        389.3,
+        652.2713853733844
+      ],
+      "mapped_face_id": 53823,
+      "original_mesh_face_id": 148262,
+      "barycentric": [
+        0.034935027809329444,
+        0.42063498173795927,
+        0.5444299904527113
+      ],
+      "source_xyz_utm_m": [
+        324508.66710028646,
+        4168926.0480508343,
+        64.6965628781931
+      ],
+      "source_forward_m": 941.4578082235489,
+      "lateral_q_per_mm": 1.736110604706778,
+      "crs": "EPSG:32652",
+      "slope_deg": 18.446555135461182,
+      "ndvi": 0.5042251666882734,
+      "effective_observations": 30.059542359691136,
+      "retained_ground": 0.5500287151799885,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/middle-ground",
+    "parent_mass_id": "spring-integration-v01/rock/middle-ground/parent",
+    "catalog_local_rank": 3.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/middle-ground/soil",
+    "kind": "soil",
+    "group": "middle-contact",
+    "site": {
+      "xy_mm": [
+        355.0,
+        650.0000409506463
+      ],
+      "mapped_face_id": 24366,
+      "original_mesh_face_id": 50877,
+      "barycentric": [
+        0.16731589764132604,
+        0.480432326059446,
+        0.35225177629922794
+      ],
+      "source_xyz_utm_m": [
+        324479.4129697818,
+        4168854.4324467108,
+        76.15734179095166
+      ],
+      "source_forward_m": 941.5894440386418,
+      "lateral_q_per_mm": 0.37570604630554477,
+      "crs": "EPSG:32652",
+      "slope_deg": 5.921037620751742,
+      "ndvi": 0.4640547100955091,
+      "effective_observations": 29.0,
+      "retained_ground": 0.6752972763426559,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/middle-ground",
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": {
+      "id": "nonplotting/F2-source-q-section/middle-ground",
+      "xy_mm": [
+        [
+          304.6,
+          652.8572829180007
+        ],
+        [
+          305.23,
+          652.7979674083572
+        ],
+        [
+          305.86,
+          652.737627087352
+        ],
+        [
+          306.49,
+          652.6764119431272
+        ],
+        [
+          307.12,
+          652.6165586851383
+        ],
+        [
+          307.75,
+          652.5571081765546
+        ],
+        [
+          308.38,
+          652.5003881403092
+        ],
+        [
+          309.01000000000005,
+          652.443982171597
+        ],
+        [
+          309.64000000000004,
+          652.3872275424848
+        ],
+        [
+          310.27000000000004,
+          652.3304604039989
+        ],
+        [
+          310.90000000000003,
+          652.2736932654844
+        ],
+        [
+          311.53000000000003,
+          652.216926126956
+        ],
+        [
+          312.16,
+          652.1601589884581
+        ],
+        [
+          312.79,
+          652.1033918499459
+        ],
+        [
+          313.42,
+          652.0466247114188
+        ],
+        [
+          314.05,
+          651.9898575729126
+        ],
+        [
+          314.68,
+          651.9330904344014
+        ],
+        [
+          315.31,
+          651.8763232958764
+        ],
+        [
+          315.94,
+          651.8195561573691
+        ],
+        [
+          316.57,
+          651.7617778566835
+        ],
+        [
+          317.20000000000005,
+          651.6949955234002
+        ],
+        [
+          317.83000000000004,
+          651.6242900037591
+        ],
+        [
+          318.46000000000004,
+          651.5504932793497
+        ],
+        [
+          319.09000000000003,
+          651.475989455482
+        ],
+        [
+          319.72,
+          651.4014580827635
+        ],
+        [
+          320.35,
+          651.3269267100335
+        ],
+        [
+          320.98,
+          651.2523953372987
+        ],
+        [
+          321.61,
+          651.1778639645618
+        ],
+        [
+          322.24,
+          651.1033325918224
+        ],
+        [
+          322.87,
+          651.0288012190902
+        ],
+        [
+          323.5,
+          650.95426984636
+        ],
+        [
+          324.13,
+          650.8797384736171
+        ],
+        [
+          324.76,
+          650.8052071008763
+        ],
+        [
+          325.39,
+          650.7306757281248
+        ],
+        [
+          326.02,
+          650.6562121155266
+        ],
+        [
+          326.65000000000003,
+          650.5818041727698
+        ],
+        [
+          327.28000000000003,
+          650.5074938631366
+        ],
+        [
+          327.91,
+          650.4331917698197
+        ],
+        [
+          328.54,
+          650.3589477913109
+        ],
+        [
+          329.17,
+          650.2847459417706
+        ],
+        [
+          329.8,
+          650.2105440922377
+        ],
+        [
+          330.43,
+          650.1363422427152
+        ],
+        [
+          331.06,
+          650.0752949223106
+        ],
+        [
+          331.69,
+          650.0246246174058
+        ],
+        [
+          332.32,
+          649.9877127538155
+        ],
+        [
+          332.95,
+          649.9567930536924
+        ],
+        [
+          333.58,
+          649.9281471931633
+        ],
+        [
+          334.21000000000004,
+          649.9005371832225
+        ],
+        [
+          334.84000000000003,
+          649.8749374245393
+        ],
+        [
+          335.47,
+          649.8506410805304
+        ],
+        [
+          336.1,
+          649.8256505935764
+        ],
+        [
+          336.73,
+          649.7999357852606
+        ],
+        [
+          337.36,
+          649.7734647020519
+        ],
+        [
+          337.99,
+          649.7462034828186
+        ],
+        [
+          338.62,
+          649.7191000256394
+        ],
+        [
+          339.25,
+          649.6955961029445
+        ],
+        [
+          339.88,
+          649.6759953981594
+        ],
+        [
+          340.51,
+          649.6591489684196
+        ],
+        [
+          341.14,
+          649.6423025387165
+        ],
+        [
+          341.77,
+          649.6254561090037
+        ],
+        [
+          342.4,
+          649.6086096792781
+        ],
+        [
+          343.03,
+          649.5918442568762
+        ],
+        [
+          343.66,
+          649.5750054249488
+        ],
+        [
+          344.29,
+          649.5581075171023
+        ],
+        [
+          344.92,
+          649.5422365240597
+        ],
+        [
+          345.55,
+          649.5302828503113
+        ],
+        [
+          346.18,
+          649.5497098016274
+        ],
+        [
+          346.81,
+          649.5723642204168
+        ],
+        [
+          347.44,
+          649.5987098944042
+        ],
+        [
+          348.07,
+          649.6264410599589
+        ],
+        [
+          348.7,
+          649.654318563214
+        ],
+        [
+          349.33,
+          649.6821960664716
+        ],
+        [
+          349.96,
+          649.7163762362659
+        ],
+        [
+          350.59,
+          649.7525868495254
+        ],
+        [
+          351.22,
+          649.7901495936364
+        ],
+        [
+          351.85,
+          649.8266609340264
+        ],
+        [
+          352.48,
+          649.8621644055431
+        ],
+        [
+          353.11,
+          649.8967011722792
+        ],
+        [
+          353.74,
+          649.9303101867414
+        ],
+        [
+          354.37,
+          649.9630283364355
+        ],
+        [
+          355.0,
+          650.0000409506463
+        ],
+        [
+          355.63,
+          650.0383101414509
+        ],
+        [
+          356.26,
+          650.0766202828464
+        ],
+        [
+          356.89,
+          650.1149304242466
+        ],
+        [
+          357.52,
+          650.1532405656523
+        ],
+        [
+          358.15,
+          650.191550707058
+        ],
+        [
+          358.78,
+          650.2288299471925
+        ],
+        [
+          359.40999999999997,
+          650.2652708040812
+        ],
+        [
+          360.03999999999996,
+          650.2975481386844
+        ],
+        [
+          360.67,
+          650.326471324682
+        ],
+        [
+          361.3,
+          650.3462278570221
+        ],
+        [
+          361.93,
+          650.3659843893812
+        ],
+        [
+          362.56,
+          650.3857409217495
+        ],
+        [
+          363.19,
+          650.4054974541059
+        ],
+        [
+          363.82,
+          650.4252539864499
+        ],
+        [
+          364.45,
+          650.4450105187822
+        ],
+        [
+          365.08,
+          650.4647670511209
+        ],
+        [
+          365.71,
+          650.4845235834678
+        ],
+        [
+          366.34,
+          650.5042801158298
+        ],
+        [
+          366.96999999999997,
+          650.5240355415025
+        ],
+        [
+          367.59999999999997,
+          650.5438067465432
+        ],
+        [
+          368.23,
+          650.5636195918169
+        ],
+        [
+          368.86,
+          650.5834079067266
+        ],
+        [
+          369.49,
+          650.6030267487345
+        ],
+        [
+          370.12,
+          650.6227642631488
+        ],
+        [
+          370.75,
+          650.6424978838836
+        ],
+        [
+          371.38,
+          650.6622276120888
+        ],
+        [
+          372.01,
+          650.6819534489159
+        ],
+        [
+          372.64,
+          650.7016753955203
+        ],
+        [
+          373.27,
+          650.7213934530539
+        ],
+        [
+          373.9,
+          650.7579801487437
+        ],
+        [
+          374.53,
+          650.8026297110492
+        ],
+        [
+          375.15999999999997,
+          650.8609845066526
+        ],
+        [
+          375.78999999999996,
+          650.9171860760976
+        ],
+        [
+          376.41999999999996,
+          650.9737049245044
+        ],
+        [
+          377.04999999999995,
+          651.0268849360457
+        ],
+        [
+          377.67999999999995,
+          651.0776985199584
+        ],
+        [
+          378.31,
+          651.1276014302329
+        ],
+        [
+          378.94,
+          651.1858114767899
+        ],
+        [
+          379.57,
+          651.2482332098831
+        ],
+        [
+          380.2,
+          651.3105648754837
+        ],
+        [
+          380.83,
+          651.372896541076
+        ],
+        [
+          381.46,
+          651.4364395631295
+        ],
+        [
+          382.09,
+          651.4995305865766
+        ],
+        [
+          382.71999999999997,
+          651.5612818266194
+        ],
+        [
+          383.34999999999997,
+          651.6226297798795
+        ],
+        [
+          383.97999999999996,
+          651.6845548690729
+        ],
+        [
+          384.61,
+          651.7468865346711
+        ],
+        [
+          385.24,
+          651.809218200264
+        ],
+        [
+          385.87,
+          651.8715498658512
+        ],
+        [
+          386.5,
+          651.9338815314369
+        ],
+        [
+          387.13,
+          651.9962131970501
+        ],
+        [
+          387.76,
+          652.0688596352114
+        ],
+        [
+          388.39,
+          652.1495746299681
+        ],
+        [
+          389.02,
+          652.2340528532486
+        ],
+        [
+          389.65,
+          652.3216889073475
+        ],
+        [
+          390.28,
+          652.4390942021789
+        ],
+        [
+          390.90999999999997,
+          652.5572668519235
+        ],
+        [
+          391.53999999999996,
+          652.6737615126833
+        ],
+        [
+          392.16999999999996,
+          652.7909025558687
+        ],
+        [
+          392.79999999999995,
+          652.9080435990599
+        ],
+        [
+          393.42999999999995,
+          653.0251846422489
+        ],
+        [
+          394.05999999999995,
+          653.1319745150417
+        ],
+        [
+          394.68999999999994,
+          653.2438909663296
+        ],
+        [
+          395.32,
+          653.3635138178505
+        ],
+        [
+          395.95,
+          653.4862982028715
+        ],
+        [
+          396.58,
+          653.6094347758125
+        ],
+        [
+          397.21,
+          653.7166720656694
+        ],
+        [
+          397.84,
+          653.818329962675
+        ],
+        [
+          398.46999999999997,
+          653.9190332973319
+        ],
+        [
+          399.09999999999997,
+          654.0276806580563
+        ],
+        [
+          399.72999999999996,
+          654.1452506454351
+        ],
+        [
+          400.35999999999996,
+          654.2728894772483
+        ],
+        [
+          400.98999999999995,
+          654.3855898366278
+        ],
+        [
+          401.62,
+          654.4828170442805
+        ],
+        [
+          402.25,
+          654.5795323188208
+        ],
+        [
+          402.88,
+          654.6512040521816
+        ],
+        [
+          403.51,
+          654.714388064488
+        ],
+        [
+          404.14,
+          654.7624944333797
+        ],
+        [
+          404.77,
+          654.8067946707457
+        ],
+        [
+          405.4,
+          654.834540995858
+        ]
+      ]
+    },
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-shoulder/parent",
+    "kind": "rock",
+    "group": "left-middle",
+    "site": {
+      "xy_mm": [
+        85.6918416132004,
+        650.5006122376831
+      ],
+      "mapped_face_id": 28912,
+      "original_mesh_face_id": 57120,
+      "barycentric": [
+        0.2975388559257204,
+        0.6207449202205386,
+        0.081716223853741
+      ],
+      "source_xyz_utm_m": [
+        324243.62234760664,
+        4168292.5485132844,
+        67.77203258831331
+      ],
+      "source_forward_m": 948.4284952395044,
+      "lateral_q_per_mm": -0.09613621132872761,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.1931017771002046,
+      "ndvi": 0.28998154080472216,
+      "effective_observations": 30.0,
+      "retained_ground": 0.7420543524353737,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-shoulder",
+    "parent_mass_id": "spring-integration-v01/rock/left-shoulder/parent",
+    "catalog_local_rank": 4.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-shoulder/front",
+    "kind": "rock",
+    "group": "left-middle",
+    "site": {
+      "xy_mm": [
+        103.8918416132004,
+        653.0006122376831
+      ],
+      "mapped_face_id": 58594,
+      "original_mesh_face_id": 154834,
+      "barycentric": [
+        0.12525831662763454,
+        0.5162569442507439,
+        0.3584847391216216
+      ],
+      "source_xyz_utm_m": [
+        324274.24545782636,
+        4168328.757749499,
+        67.64099659592684
+      ],
+      "source_forward_m": 933.6953611605783,
+      "lateral_q_per_mm": 0.09425071986864605,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.1760159756976747,
+      "ndvi": 0.2304964787063435,
+      "effective_observations": 30.0,
+      "retained_ground": 0.7945672035082347,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-shoulder",
+    "parent_mass_id": "spring-integration-v01/rock/left-shoulder/parent",
+    "catalog_local_rank": 2.8,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-shoulder/stone--1",
+    "kind": "rock",
+    "group": "left-middle",
+    "site": {
+      "xy_mm": [
+        60.150000000000006,
+        653.0579863810667
+      ],
+      "mapped_face_id": 59303,
+      "original_mesh_face_id": 155820,
+      "barycentric": [
+        0.09345009028321805,
+        0.3068943849148797,
+        0.5996555248019022
+      ],
+      "source_xyz_utm_m": [
+        324237.01033425593,
+        4168237.803502708,
+        67.13573775327065
+      ],
+      "source_forward_m": 933.9379372697879,
+      "lateral_q_per_mm": 0.0029897868405391243,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.5495623682967716,
+      "ndvi": 0.07412326240414843,
+      "effective_observations": 30.0,
+      "retained_ground": 0.7082625131652214,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-shoulder",
+    "parent_mass_id": "spring-integration-v01/rock/left-shoulder/parent",
+    "catalog_local_rank": 3.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-shoulder/stone-1",
+    "kind": "rock",
+    "group": "left-middle",
+    "site": {
+      "xy_mm": [
+        123.85,
+        653.2328275106619
+      ],
+      "mapped_face_id": 28201,
+      "original_mesh_face_id": 56135,
+      "barycentric": [
+        0.31449528538820204,
+        0.19580806111277874,
+        0.4896966534990192
+      ],
+      "source_xyz_utm_m": [
+        324290.87424183334,
+        4168370.309100395,
+        66.20712455823858
+      ],
+      "source_forward_m": 933.9380822702093,
+      "lateral_q_per_mm": 0.05723842416524522,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.7054388491169874,
+      "ndvi": 0.09595211488518716,
+      "effective_observations": 30.0,
+      "retained_ground": 0.7978391429638555,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-shoulder",
+    "parent_mass_id": "spring-integration-v01/rock/left-shoulder/parent",
+    "catalog_local_rank": 3.0,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": null,
+    "canonical_tree_sha256": null
+  },
+  {
+    "object_id": "spring-integration-v01/rock/left-shoulder/soil",
+    "kind": "soil",
+    "group": "left-middle",
+    "site": {
+      "xy_mm": [
+        92.0,
+        653.0006122376831
+      ],
+      "mapped_face_id": 28676,
+      "original_mesh_face_id": 56792,
+      "barycentric": [
+        0.0026221658449017138,
+        0.29748158886737325,
+        0.6998962452877251
+      ],
+      "source_xyz_utm_m": [
+        324263.92444766604,
+        4168304.0031126416,
+        67.38668786040498
+      ],
+      "source_forward_m": 933.9345069902633,
+      "lateral_q_per_mm": -0.04044616607646297,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.5580920195125998,
+      "ndvi": 0.2800715847756548,
+      "effective_observations": 30.0,
+      "retained_ground": 0.75847274295918,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "depth_policy": {
+      "tolerance_m": 25,
+      "lateral_bound_m": 35,
+      "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+      "same_group_contact_order": [
+        "tree in front of rock",
+        "rock in front of Soil"
+      ]
+    },
+    "host_source_id": "nonplotting/F2-source-q-section/left-shoulder",
+    "parent_mass_id": null,
+    "catalog_local_rank": null,
+    "host_basis": "visible source-q terrain section; nonplotting",
+    "nonplotting_host": {
+      "id": "nonplotting/F2-source-q-section/left-shoulder",
+      "xy_mm": [
+        [
+          45.2,
+          652.7332913037714
+        ],
+        [
+          45.785000000000004,
+          652.746219565262
+        ],
+        [
+          46.370000000000005,
+          652.7587945980447
+        ],
+        [
+          46.955000000000005,
+          652.7717948933512
+        ],
+        [
+          47.540000000000006,
+          652.7848817978545
+        ],
+        [
+          48.125,
+          652.7996717479377
+        ],
+        [
+          48.71,
+          652.8141980382995
+        ],
+        [
+          49.295,
+          652.828294959915
+        ],
+        [
+          49.88,
+          652.8423918815416
+        ],
+        [
+          50.465,
+          652.8564888031744
+        ],
+        [
+          51.050000000000004,
+          652.8705857248071
+        ],
+        [
+          51.635000000000005,
+          652.8846826464356
+        ],
+        [
+          52.220000000000006,
+          652.8987795680493
+        ],
+        [
+          52.80500000000001,
+          652.9128764896711
+        ],
+        [
+          53.39,
+          652.9269734113012
+        ],
+        [
+          53.975,
+          652.9410703329137
+        ],
+        [
+          54.56,
+          652.955167254525
+        ],
+        [
+          55.145,
+          652.9692641761669
+        ],
+        [
+          55.730000000000004,
+          652.9833610977887
+        ],
+        [
+          56.315000000000005,
+          652.9974580193805
+        ],
+        [
+          56.900000000000006,
+          653.0115549410123
+        ],
+        [
+          57.48500000000001,
+          653.025651862662
+        ],
+        [
+          58.07000000000001,
+          653.0397487842733
+        ],
+        [
+          58.655,
+          653.0512712899498
+        ],
+        [
+          59.24000000000001,
+          653.0556690735813
+        ],
+        [
+          59.825,
+          653.0577971137586
+        ],
+        [
+          60.410000000000004,
+          653.0580935576869
+        ],
+        [
+          60.995000000000005,
+          653.0583900016467
+        ],
+        [
+          61.580000000000005,
+          653.0586864456092
+        ],
+        [
+          62.165000000000006,
+          653.0589828895526
+        ],
+        [
+          62.75,
+          653.0592793335022
+        ],
+        [
+          63.33500000000001,
+          653.05957577746
+        ],
+        [
+          63.92,
+          653.0598722214108
+        ],
+        [
+          64.50500000000001,
+          653.0601732831556
+        ],
+        [
+          65.09,
+          653.0610089739588
+        ],
+        [
+          65.67500000000001,
+          653.0618621379257
+        ],
+        [
+          66.26,
+          653.0627587197718
+        ],
+        [
+          66.845,
+          653.0636528441091
+        ],
+        [
+          67.43,
+          653.0645445210279
+        ],
+        [
+          68.015,
+          653.0654337605785
+        ],
+        [
+          68.60000000000001,
+          653.0663205727283
+        ],
+        [
+          69.185,
+          653.0672049674021
+        ],
+        [
+          69.77000000000001,
+          653.0682671450292
+        ],
+        [
+          70.355,
+          653.0695376455506
+        ],
+        [
+          70.94,
+          653.0710957066351
+        ],
+        [
+          71.525,
+          653.0727488840245
+        ],
+        [
+          72.11000000000001,
+          653.0744020614161
+        ],
+        [
+          72.69500000000001,
+          653.0756591890001
+        ],
+        [
+          73.28,
+          653.0761249399117
+        ],
+        [
+          73.86500000000001,
+          653.0746820902133
+        ],
+        [
+          74.45,
+          653.0720884004971
+        ],
+        [
+          75.03500000000001,
+          653.069494710785
+        ],
+        [
+          75.62,
+          653.0669010210738
+        ],
+        [
+          76.20500000000001,
+          653.0643073313648
+        ],
+        [
+          76.79,
+          653.0617136416533
+        ],
+        [
+          77.375,
+          653.0591199519394
+        ],
+        [
+          77.96000000000001,
+          653.0567986694401
+        ],
+        [
+          78.54500000000002,
+          653.0545973012152
+        ],
+        [
+          79.13000000000001,
+          653.0529722565893
+        ],
+        [
+          79.715,
+          653.0513414803218
+        ],
+        [
+          80.30000000000001,
+          653.0497049420346
+        ],
+        [
+          80.885,
+          653.0480626111419
+        ],
+        [
+          81.47,
+          653.0464144568316
+        ],
+        [
+          82.055,
+          653.0447604480662
+        ],
+        [
+          82.64000000000001,
+          653.0431005535985
+        ],
+        [
+          83.22500000000001,
+          653.0414347419471
+        ],
+        [
+          83.81,
+          653.0397629814477
+        ],
+        [
+          84.39500000000001,
+          653.0380852401748
+        ],
+        [
+          84.98000000000002,
+          653.0365854994396
+        ],
+        [
+          85.565,
+          653.0351896066467
+        ],
+        [
+          86.15,
+          653.0343329363334
+        ],
+        [
+          86.73500000000001,
+          653.0334575397775
+        ],
+        [
+          87.32000000000001,
+          653.0325541265436
+        ],
+        [
+          87.905,
+          653.0296643480664
+        ],
+        [
+          88.49000000000001,
+          653.0258852635062
+        ],
+        [
+          89.07500000000002,
+          653.0216233898111
+        ],
+        [
+          89.66000000000001,
+          653.0173742777623
+        ],
+        [
+          90.245,
+          653.0131805142132
+        ],
+        [
+          90.83000000000001,
+          653.0089889208056
+        ],
+        [
+          91.415,
+          653.0047994958545
+        ],
+        [
+          92.0,
+          653.0006122376831
+        ],
+        [
+          92.58500000000001,
+          652.9964271446042
+        ],
+        [
+          93.17000000000002,
+          652.9922442149378
+        ],
+        [
+          93.75500000000001,
+          652.9880634470057
+        ],
+        [
+          94.34,
+          652.9838848391323
+        ],
+        [
+          94.92500000000001,
+          652.9797741055136
+        ],
+        [
+          95.51000000000002,
+          652.9756894659645
+        ],
+        [
+          96.095,
+          652.9716377102943
+        ],
+        [
+          96.68,
+          652.967585954621
+        ],
+        [
+          97.26500000000001,
+          652.9635341989399
+        ],
+        [
+          97.85000000000001,
+          652.9594824432723
+        ],
+        [
+          98.435,
+          652.9554306876142
+        ],
+        [
+          99.02000000000001,
+          652.9513789319561
+        ],
+        [
+          99.60500000000002,
+          652.9473271762923
+        ],
+        [
+          100.19000000000001,
+          652.9432754206018
+        ],
+        [
+          100.775,
+          652.9392236649207
+        ],
+        [
+          101.36000000000001,
+          652.9351719092501
+        ],
+        [
+          101.94500000000001,
+          652.9355100895367
+        ],
+        [
+          102.53,
+          652.9376074550446
+        ],
+        [
+          103.11500000000001,
+          652.9469690875347
+        ],
+        [
+          103.70000000000002,
+          652.9563307200352
+        ],
+        [
+          104.28500000000001,
+          652.9656923525556
+        ],
+        [
+          104.87,
+          652.9750539850717
+        ],
+        [
+          105.45500000000001,
+          652.9844156175853
+        ],
+        [
+          106.04000000000002,
+          652.9937772500833
+        ],
+        [
+          106.62500000000001,
+          653.003138882584
+        ],
+        [
+          107.21000000000001,
+          653.0125005150984
+        ],
+        [
+          107.79500000000002,
+          653.0218621476096
+        ],
+        [
+          108.38000000000001,
+          653.0312237801178
+        ],
+        [
+          108.965,
+          653.0405854126376
+        ],
+        [
+          109.55000000000001,
+          653.0499470451604
+        ],
+        [
+          110.135,
+          653.0593086776829
+        ],
+        [
+          110.72000000000001,
+          653.0686703101898
+        ],
+        [
+          111.305,
+          653.0780319426709
+        ],
+        [
+          111.89000000000001,
+          653.0873935751799
+        ],
+        [
+          112.47500000000001,
+          653.0967552077021
+        ],
+        [
+          113.06000000000002,
+          653.1047771754697
+        ],
+        [
+          113.64500000000001,
+          653.1124301872898
+        ],
+        [
+          114.23000000000002,
+          653.1190364597982
+        ],
+        [
+          114.81500000000001,
+          653.1247915192366
+        ],
+        [
+          115.4,
+          653.1297933891033
+        ],
+        [
+          115.98500000000001,
+          653.1352207205983
+        ],
+        [
+          116.57000000000001,
+          653.1413938979193
+        ],
+        [
+          117.15500000000002,
+          653.1524254543419
+        ],
+        [
+          117.74000000000001,
+          653.1628106746665
+        ],
+        [
+          118.32500000000002,
+          653.1721874660687
+        ],
+        [
+          118.91000000000001,
+          653.1797340445626
+        ],
+        [
+          119.49500000000002,
+          653.1864613066363
+        ],
+        [
+          120.08000000000001,
+          653.1931501550335
+        ],
+        [
+          120.665,
+          653.1998009178615
+        ],
+        [
+          121.25000000000001,
+          653.2064139194869
+        ],
+        [
+          121.83500000000001,
+          653.2126983264865
+        ],
+        [
+          122.42000000000002,
+          653.2187473754946
+        ],
+        [
+          123.00500000000001,
+          653.224531543244
+        ],
+        [
+          123.59000000000002,
+          653.2302749052989
+        ],
+        [
+          124.17500000000001,
+          653.2360182673671
+        ],
+        [
+          124.76000000000002,
+          653.2417616294318
+        ],
+        [
+          125.34500000000001,
+          653.2475049914916
+        ],
+        [
+          125.93,
+          653.2532483535391
+        ],
+        [
+          126.51500000000001,
+          653.258991715583
+        ],
+        [
+          127.10000000000001,
+          653.2647350776441
+        ],
+        [
+          127.68500000000002,
+          653.2704784397054
+        ],
+        [
+          128.27,
+          653.2762218017666
+        ],
+        [
+          128.85500000000002,
+          653.2819651638116
+        ],
+        [
+          129.44,
+          653.287708525846
+        ],
+        [
+          130.02500000000003,
+          653.2934518879077
+        ],
+        [
+          130.61,
+          653.3011092074489
+        ],
+        [
+          131.195,
+          653.3168774122107
+        ],
+        [
+          131.78000000000003,
+          653.3359667609909
+        ],
+        [
+          132.365,
+          653.3588855307854
+        ],
+        [
+          132.95000000000002,
+          653.3818043005756
+        ],
+        [
+          133.53500000000003,
+          653.4047230703659
+        ],
+        [
+          134.12,
+          653.4276418401635
+        ],
+        [
+          134.705,
+          653.45060568669
+        ],
+        [
+          135.29000000000002,
+          653.4736263225124
+        ],
+        [
+          135.875,
+          653.4966847936906
+        ],
+        [
+          136.46,
+          653.5197028701011
+        ],
+        [
+          137.04500000000002,
+          653.5426280332239
+        ],
+        [
+          137.63,
+          653.5654608444652
+        ],
+        [
+          138.21500000000003,
+          653.5882018607307
+        ],
+        [
+          138.8,
+          653.610991998422
+        ]
+      ]
+    },
+    "canonical_tree_sha256": null
+  }
+]
