@@ -1,0 +1,229 @@
+{
+  "study": "Spring scene integration v01: bounded 2.5D diagnostic",
+  "start_commit": "6fcac2864e7b7fdd5ae626f8a8161c01e5c90994",
+  "baseline": "docs/baselines/spring_f2c_a025_v01/baseline_strokes.json.gz",
+  "baseline_sha256": "22bace23f0ae34f69873a282fec15c25a431d0e998216d995b1ab14c3f85fab3",
+  "seed": 20261018,
+  "trees": [
+    {
+      "key": "left-parent",
+      "group": "left-near",
+      "root_id": "c315949b81956d8d",
+      "form": "P",
+      "height_mm": 130,
+      "variant": "B"
+    },
+    {
+      "key": "right-parent",
+      "group": "right-near",
+      "root_id": "a71239750f75c76c",
+      "form": "B",
+      "height_mm": 115,
+      "variant": "B"
+    },
+    {
+      "key": "right-middle",
+      "group": "right-middle",
+      "root_id": "c66ed22b7644d2c0",
+      "form": "P",
+      "height_mm": 95,
+      "variant": "B"
+    },
+    {
+      "key": "left-middle",
+      "group": "left-middle",
+      "root_id": "cd2794b281cf7338",
+      "form": "B",
+      "height_mm": 65,
+      "variant": "B"
+    },
+    {
+      "key": "left-shoulder",
+      "group": "left-near",
+      "root_id": "6ec32002145b9eaa",
+      "form": "U",
+      "height_mm": 60,
+      "variant": "B"
+    },
+    {
+      "key": "middle-small",
+      "group": "middle-contact",
+      "root_id": "01b00a9b38a93364",
+      "form": "U",
+      "height_mm": 45,
+      "variant": "B"
+    },
+    {
+      "key": "left-companion",
+      "group": "left-near",
+      "root_id": "ff5695f4ef797e12",
+      "form": "B",
+      "height_mm": 95,
+      "variant": "C"
+    },
+    {
+      "key": "right-companion",
+      "group": "right-near",
+      "root_id": "5bced2ff7063c859",
+      "form": "U",
+      "height_mm": 95,
+      "variant": "C"
+    },
+    {
+      "key": "middle-companion",
+      "group": "middle-contact",
+      "root_id": "645eacef4c13bbfc",
+      "form": "B",
+      "height_mm": 65,
+      "variant": "C"
+    },
+    {
+      "key": "right-satellite",
+      "group": "right-near",
+      "root_id": "542591892b769df9",
+      "form": "U",
+      "height_mm": 75,
+      "variant": "C"
+    }
+  ],
+  "rocks": [
+    {
+      "key": "left-ground",
+      "group": "left-near",
+      "target_mm": [
+        198,
+        848
+      ],
+      "width_mm": 100,
+      "height_mm": 33,
+      "major_count": 3,
+      "variant": "B"
+    },
+    {
+      "key": "right-ground",
+      "group": "right-near",
+      "target_mm": [
+        460,
+        793
+      ],
+      "width_mm": 95,
+      "height_mm": 32,
+      "major_count": 3,
+      "variant": "B"
+    },
+    {
+      "key": "middle-ground",
+      "group": "middle-contact",
+      "target_mm": [
+        355,
+        650
+      ],
+      "width_mm": 70,
+      "height_mm": 25,
+      "major_count": 2,
+      "variant": "C"
+    },
+    {
+      "key": "left-shoulder",
+      "group": "left-middle",
+      "target_mm": [
+        92,
+        653
+      ],
+      "width_mm": 65,
+      "height_mm": 25,
+      "major_count": 2,
+      "variant": "C"
+    }
+  ],
+  "depth_policy": {
+    "tolerance_m": 25,
+    "lateral_bound_m": 35,
+    "kind": "upright support-relative 2.5D; not reconstructed branch volume",
+    "same_group_contact_order": [
+      "tree in front of rock",
+      "rock in front of Soil"
+    ]
+  },
+  "visibility": {
+    "minimum_mm": 2.8,
+    "arc_sample_mm": 0.35,
+    "edge_mm": 0.15,
+    "raster_guard_mm": 1.0,
+    "tree_footprint_mm": 0.8,
+    "rock_footprint_mm": 0.65,
+    "soil_footprint_mm": 0.6
+  },
+  "palette_sources": [
+    "configs/palettes/palette_20.yaml",
+    "configs/substrates/four_seasons.yaml",
+    "docs/experiments/spring_production_v01/stroke_and_color_design.md"
+  ],
+  "spring_slot_weights": {
+    "A1": 1,
+    "A2": 2,
+    "A3": 8,
+    "A4": 2,
+    "A5": 3,
+    "B1": 1,
+    "B2": 1,
+    "B3": 1,
+    "B4": 1,
+    "B5": 1,
+    "C1": 32,
+    "C2": 25,
+    "C3": 3,
+    "C4": 3,
+    "C5": 1,
+    "D1": 9,
+    "D2": 2,
+    "D3": 1,
+    "D4": 2,
+    "D5": 1
+  },
+  "color_policy": "All 20 assigned slots remain available. C1/C2 dominant, D1/A3 support. Stable spatial-patch assignments, no pigment simulation.",
+  "corridors": [
+    {
+      "id": "central-opening",
+      "vertices_mm": [
+        [
+          270,
+          535
+        ],
+        [
+          308,
+          535
+        ],
+        [
+          347,
+          590
+        ],
+        [
+          326,
+          637
+        ],
+        [
+          301,
+          669
+        ],
+        [
+          282,
+          655
+        ],
+        [
+          313,
+          596
+        ]
+      ],
+      "evidence": "bounded review reading of the existing central opening; no water or path claim",
+      "policy": "placement exclusion only; baseline source paths unchanged"
+    }
+  ],
+  "wash_roles": {
+    "P": "C1",
+    "B": "C2",
+    "U": "C1",
+    "Soil": "D1",
+    "note": "Broad supports use dominant spring roles; all 20 remain eligible for regional C-path diagnostic accents."
+  }
+}

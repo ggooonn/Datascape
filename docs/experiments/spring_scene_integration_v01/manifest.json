@@ -1,0 +1,124 @@
+{
+  "start_commit": "6fcac2864e7b7fdd5ae626f8a8161c01e5c90994",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "shapely": "2.2.0",
+    "matplotlib": "3.10.8",
+    "rasterio": "1.5.2",
+    "yaml": "6.0.3",
+    "PIL": "12.3.0",
+    "pytest": "9.1.1"
+  },
+  "files": {
+    "configs/scenes/seoul_spring_integration_v01.json": {
+      "bytes": 4872,
+      "sha256": "3439b986e69d8264f1e917544872aa9eb097d5a2075ba2a7e4fe771b0ccedf88"
+    },
+    "src/datascape/integration/__init__.py": {
+      "bytes": 86,
+      "sha256": "4b0c06426ed3dcd950bdaba37da3845b37517e5ce96a619953f5f42988ec9609"
+    },
+    "src/datascape/integration/objects.py": {
+      "bytes": 11344,
+      "sha256": "67733c339a9aa94a059b1bd5ba672933e5827f7e9f085fbf7c8546eace07e26c"
+    },
+    "src/datascape/integration/validation.py": {
+      "bytes": 4369,
+      "sha256": "782e11477ebe1128a08f3d2daab52f2e93c2509d6b989a2eb09f6c458edac866"
+    },
+    "src/datascape/integration/visibility.py": {
+      "bytes": 14292,
+      "sha256": "9a4a77fc515a1c4485779dea873b076b43187824d3c3308938f1fcca46c2eb69"
+    },
+    "src/datascape/rendering/spring_integration.py": {
+      "bytes": 21239,
+      "sha256": "5d34a601d9295dbcfe45bc38384dd54f652c12d824b5e12b36b1e3a80addfd67"
+    },
+    "tests/test_spring_integration.py": {
+      "bytes": 5498,
+      "sha256": "a7d2918af9fcd30f1dbf3f27706c754073ddf0d21e240613b4f874b7ec218470"
+    },
+    "docs/experiments/spring_scene_integration_v01/B_ink.png": {
+      "bytes": 1132617,
+      "sha256": "40e20d702f112f8ea60410a0a7930073a3367aca86b21185f95d3bcb8942cb4f"
+    },
+    "docs/experiments/spring_scene_integration_v01/B_sites.json": {
+      "bytes": 47776,
+      "sha256": "9abfe56903e4b128bb0dcee3dee66051b366f431f2dd294c80e7909bf04a3f89"
+    },
+    "docs/experiments/spring_scene_integration_v01/B_sources_and_ledger.json.gz": {
+      "bytes": 273781,
+      "sha256": "b90e1800745866a65926bf1aba049749f0bd998e1cef703f706bd9b4e6bc31fe"
+    },
+    "docs/experiments/spring_scene_integration_v01/B_supports.geojson": {
+      "bytes": 156127,
+      "sha256": "9c64c10badbd0154db33c4daec1206567a9f4756aabc969bde0e6fd54e1854f5"
+    },
+    "docs/experiments/spring_scene_integration_v01/B_vectors.json.gz": {
+      "bytes": 1303422,
+      "sha256": "bf158f3f8bde3502c40e816c922192d48804b2c28d8022bd68a2f2d6f7eefb0a"
+    },
+    "docs/experiments/spring_scene_integration_v01/C_color.png": {
+      "bytes": 1361107,
+      "sha256": "408d3481f9025684a1425f6fb6da7a9f8a212ff12ed9bf0ed2ddb059b0c4d3d5"
+    },
+    "docs/experiments/spring_scene_integration_v01/C_foreground_color.png": {
+      "bytes": 509384,
+      "sha256": "54cf873ff71cb814cbc4b90ff5228eb9bae55f10d39420aeb56937ad8db6329c"
+    },
+    "docs/experiments/spring_scene_integration_v01/C_foreground_ink.png": {
+      "bytes": 368888,
+      "sha256": "8b4f52f3cfbdbb969496a1c4cdc2ae5afe4efb9cc559d215e4b1b607604e751c"
+    },
+    "docs/experiments/spring_scene_integration_v01/C_ink.png": {
+      "bytes": 1146789,
+      "sha256": "5d8c8216a5632bdd8a0a5950ed1c63b1ff4f3711e16cc72f3d43db86324a062f"
+    },
+    "docs/experiments/spring_scene_integration_v01/C_sites.json": {
+      "bytes": 91048,
+      "sha256": "3b9af4ef57300e925596ba17182120c84541757981b5c9c1a161c63fbe0bcab7"
+    },
+    "docs/experiments/spring_scene_integration_v01/C_sources_and_ledger.json.gz": {
+      "bytes": 355625,
+      "sha256": "f6b60e9d1d9f265c9ab26e744430508901bd57790778e561d65b01a276dae751"
+    },
+    "docs/experiments/spring_scene_integration_v01/C_supports.geojson": {
+      "bytes": 236533,
+      "sha256": "dc33bffc85a2f905bf292d32a3603b8bcb4c475238e9c45b30f7fa9831c5a8db"
+    },
+    "docs/experiments/spring_scene_integration_v01/C_vectors.json.gz": {
+      "bytes": 1324173,
+      "sha256": "110ae7c485a9c4205f185ab3a0934f23a4b9a80bf674106831e8edd1dccc9be2"
+    },
+    "docs/experiments/spring_scene_integration_v01/README.md": {
+      "bytes": 11464,
+      "sha256": "429ca1ce731f527854e935772d4d962790dbbcdc9f917803a340c3739c55c7f8"
+    },
+    "docs/experiments/spring_scene_integration_v01/canopy_controls.png": {
+      "bytes": 155770,
+      "sha256": "4b400fc051d4e28d510b2f7e545535381955d3c9502ef96686a1ab8443b56378"
+    },
+    "docs/experiments/spring_scene_integration_v01/comparison.png": {
+      "bytes": 1048797,
+      "sha256": "3dad8dbd8dad34ee8dba7b9d9dc1e6239b652ea0a511504cfe1513886b3a4465"
+    },
+    "docs/experiments/spring_scene_integration_v01/ink_comparison.png": {
+      "bytes": 499290,
+      "sha256": "6d02befaa27b927dc068bf9cf379d0f5c6e78283d55d1de2e08726b9864b1461"
+    },
+    "docs/experiments/spring_scene_integration_v01/materials.png": {
+      "bytes": 711794,
+      "sha256": "effbe4a9a3d2e03ad6f40599ce70133dbf6d968eefbd262eb6afac61c2d95cd7"
+    },
+    "docs/experiments/spring_scene_integration_v01/record.json": {
+      "bytes": 137955,
+      "sha256": "c65e5fb2ed4375e1aa3a212928064c35fe6648799946b086b3568202d7696ed5"
+    },
+    "docs/experiments/spring_scene_integration_v01/validation.json": {
+      "bytes": 1181,
+      "sha256": "2da1614beab557c504fbf3bb264174a2021ac6ca28679ca5fedc6003bbe95e28"
+    }
+  }
+}
