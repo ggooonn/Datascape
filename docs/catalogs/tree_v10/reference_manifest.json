@@ -1,0 +1,279 @@
+{
+  "status": "Accepted grammar; occlusion pictorially unresolved; not scene or hardware acceptance",
+  "scene_base": {
+    "pr": 16,
+    "branch": "feat/spring-provisional-baseline-025",
+    "sha": "1834cbe8161cf49d3bc5deac5e4af404f8bbdd09"
+  },
+  "local_history_checkpoint": "ee083bb",
+  "accepted_catalog_checkpoint": "04bbc9364ef534037a55b2c64856ea9f0a07f972",
+  "runtime_sha256": {
+    "src/datascape/vegetation/tree_catalog.py": "5aea766d45351331be132705c0cd6cfb5a1fdb148bd8804ac04f43e4daeed7c6",
+    "src/datascape/vegetation/tree_growth.py": "d1852dc1c8a9a1328a8a9a837b031c8d9cc44a453dc007819a47a66eedd9fa74",
+    "src/datascape/vegetation/tree_pattern.py": "093969ccb2ea420a537bb96cc047a21fb952464017d0dbf2719147b803afd0b3",
+    "src/datascape/vegetation/tree_rhythm.py": "19f33e313801e23b7be657fc1868ed57b1a2bbc010cca59e91a6d17e69f2edee",
+    "src/datascape/vegetation/tree_plot_scale.py": "ca3bf4851d5260d9f208541bcc1e32338e70240c22999a910d642f1f4aa25e8c",
+    "src/datascape/vegetation/tree_group_review.py": "de5aaf4f8ab6a79bd196fc6b2570c202915bfccee7a12e5cba5723a2c84e89f4",
+    "src/datascape/vegetation/tree_form_calibration.py": "c95a99be897d31f8557c22dbbba7496b0b40e85a527bec502bb95e2ac026cc04",
+    "src/datascape/vegetation/tree_final_scale.py": "a3b6142640445f5a85dde5a6acbd4de0540caf9e94a62b7a2079d89768f51e1f",
+    "src/datascape/vegetation/tree_spatial_groups.py": "6c19d60016fee29a0664d245939ea55e684fe24e3df3acc0a055319c61d43888",
+    "src/datascape/vegetation/tree_occlusion_proof.py": "0b9993af56ff0761aeffbfa800476b1a8db6b809fed548a02cee240f8fc4a0e6"
+  },
+  "vector_hash_encoding": "UTF-8 json.dumps(strokes, sort_keys=True, separators=(comma,colon), allow_nan=False)",
+  "reference_states": [
+    {
+      "form": "P",
+      "nominal_height_mm": 22,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "P",
+      "paths": 13,
+      "leaf_paths": 8,
+      "vectors_sha256": "6cb1b5f46ed8a75adb9b5b5f6d4002ad6efc9897f6edd58491afd9181e9eb4af",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "P",
+      "nominal_height_mm": 45,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "P",
+      "paths": 35,
+      "leaf_paths": 27,
+      "vectors_sha256": "26e0dcaaa15ad5eb1d531cba07d8fbe75bc4752e5a6f116d2c7b2a4c406ed7bd",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "P",
+      "nominal_height_mm": 95,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "P",
+      "paths": 105,
+      "leaf_paths": 78,
+      "vectors_sha256": "45f59b8564211c896d8e8ff1152f3cdeedaf746efee94f155dea7ef4ed2a3b80",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "P",
+      "nominal_height_mm": 130,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "P",
+      "paths": 145,
+      "leaf_paths": 116,
+      "vectors_sha256": "f4c929e6b66a7e84ad1d9622e37e0c56a6d33e13e752d837d090e158e9faa060",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "B",
+      "nominal_height_mm": 22,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "B",
+      "paths": 13,
+      "leaf_paths": 9,
+      "vectors_sha256": "5fb7a016d7e7bdc4146ba4228904237a91d85cac8393e66bea4e159b2235aaf1",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "B",
+      "nominal_height_mm": 45,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "B",
+      "paths": 42,
+      "leaf_paths": 36,
+      "vectors_sha256": "a7e57bd484d673e67cb092deab4057598c3847e6f4d030e5affdd41bf10b7d0a",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "B",
+      "nominal_height_mm": 95,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "B",
+      "paths": 135,
+      "leaf_paths": 115,
+      "vectors_sha256": "bd205809da0c4e9a83bdc136fa1834d55c642572e15b59dc77da91ab87c77299",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "B",
+      "nominal_height_mm": 130,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "B",
+      "paths": 190,
+      "leaf_paths": 167,
+      "vectors_sha256": "8e2bb5f03f0193cd44e015ef1a93e1d1106d9672a7587f9a88cb6b1ae875b786",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "U",
+      "nominal_height_mm": 22,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "U",
+      "paths": 15,
+      "leaf_paths": 9,
+      "vectors_sha256": "443d12f9ef007c48b57b5ab3420aba959c1db109125d0a0190f0a53433bcafec",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "U",
+      "nominal_height_mm": 45,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "U",
+      "paths": 41,
+      "leaf_paths": 35,
+      "vectors_sha256": "73bafc00fe2992567e239600b6de5fd95d3554c07c20245aaf54d82459393705",
+      "status": "accepted catalog reference"
+    },
+    {
+      "form": "U",
+      "nominal_height_mm": 95,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "U",
+      "paths": 117,
+      "leaf_paths": 94,
+      "vectors_sha256": "20ed6ecd9fda428b15c17d9f79928df0f309b1003259b172380e54931e12b967",
+      "status": "large U and W are diagnostic/experimental, not scene approval"
+    },
+    {
+      "form": "U",
+      "nominal_height_mm": 130,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "U",
+      "paths": 154,
+      "leaf_paths": 125,
+      "vectors_sha256": "429d58ebe58dc36d371d1df9efc46b599f431808e22a35dae70dbf37289f3a34",
+      "status": "large U and W are diagnostic/experimental, not scene approval"
+    },
+    {
+      "form": "W",
+      "nominal_height_mm": 22,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "W",
+      "paths": 9,
+      "leaf_paths": 2,
+      "vectors_sha256": "18fda070e438dd9e7b17ef313002df36c156603a46097ef4b7e925eb03d668f9",
+      "status": "large U and W are diagnostic/experimental, not scene approval"
+    },
+    {
+      "form": "W",
+      "nominal_height_mm": 45,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "W",
+      "paths": 23,
+      "leaf_paths": 11,
+      "vectors_sha256": "689f13629b4a6a7631f5728935614c8ee08d0b9ed86f7ae50235eee0d9ed5795",
+      "status": "large U and W are diagnostic/experimental, not scene approval"
+    },
+    {
+      "form": "W",
+      "nominal_height_mm": 95,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "W",
+      "paths": 72,
+      "leaf_paths": 56,
+      "vectors_sha256": "cb96974b817aeccafcded5fd79817935ae892fd887154d2a9a7297cd3d29cd50",
+      "status": "large U and W are diagnostic/experimental, not scene approval"
+    },
+    {
+      "form": "W",
+      "nominal_height_mm": 130,
+      "profile": "refined",
+      "root_mm": [
+        75,
+        185
+      ],
+      "seed": 20261017,
+      "identity": "W",
+      "paths": 89,
+      "leaf_paths": 67,
+      "vectors_sha256": "cb983429f9e0d4e02b205652268bf2186b025c66ec56c468219d5c05ecd97ab5",
+      "status": "large U and W are diagnostic/experimental, not scene approval"
+    }
+  ],
+  "complete_local_archives": [
+    {
+      "filename": "Datascape_Tree_Catalog_v10_Review.html",
+      "bytes": 12983810,
+      "sha256": "9bdb3fcc0574b47eed93ec9f586d696474093f5c0ec6e28e6cb4d5f89c5c9cff",
+      "location": "Artist-held local review archive; not included or hosted by this PR"
+    },
+    {
+      "filename": "Datascape_Tree_Catalog_v10_Package.zip",
+      "bytes": 19064237,
+      "sha256": "05fec9af208ab4c14a574adf9ee71b364a9a71c3472d25f37e5fc62d235c5c22",
+      "location": "Artist-held local review archive; not included or hosted by this PR"
+    }
+  ]
+}
