@@ -1,0 +1,27 @@
+{
+  "study": "Tree catalog v10: final independent scale controls and reciprocal occlusion audit",
+  "parent_catalog_commit": "1834cbe8161cf49d3bc5deac5e4af404f8bbdd09",
+  "seed": 20261017,
+  "physical_sizes_mm": [
+    22,
+    45,
+    95,
+    130
+  ],
+  "design_width_mm": 0.8,
+  "clear_gap_mm": 0.5,
+  "edge_tolerance_mm": 0.15,
+  "synthetic_terrain_width_mm": 0.6,
+  "scope": "Catalog closure, matched geometry comparisons and an isolated vector mask proof only",
+  "scene_integration": false,
+  "remote_publication": false,
+  "hardware_execution": false,
+  "parent_note": "PR #16 is the dependency base; accepted v10 vectors are pinned separately by the review manifest.",
+  "spring_profiles": {
+    "P": "refined",
+    "B": "refined",
+    "U": "v09",
+    "W": "refined"
+  },
+  "W_status": "experimental structural form; not production species approval"
+}
