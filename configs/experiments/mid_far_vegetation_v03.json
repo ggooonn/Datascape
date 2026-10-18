@@ -1,0 +1,25 @@
+{
+  "study": "Mid/far v03: distinct mark families, spatial depth and discrete color",
+  "parent_commit": "6bc9860070dac4aa99212ae14900589e3d1cc693",
+  "seed": 2026101812,
+  "v02_config": "configs/experiments/mid_far_vegetation_v02.json",
+  "v02_vectors": "outputs/mid-far-vegetation-v02-final/vectors.json.gz",
+  "v02_record": "outputs/mid-far-vegetation-v02-final/study_record.json",
+  "families": ["R", "S", "U"],
+  "family_names": {"R": "v02 radial growth", "S": "Layered canopy surfaces", "U": "Jointed divided shoots"},
+  "minimum_ink_mm": 2.8,
+  "minimum_color_mm": 3.2,
+  "ink_footprint_mm": 0.8,
+  "color_footprint_mm": 1.2,
+  "preview_alpha": {"diagnostic": 1.0, "translucent": 0.28},
+  "depth_offsets_m": [-65, 45, 85, -25, -90, 35],
+  "global_slots": ["C1", "C2", "A5", "C3", "C4", "D1"],
+  "global_near_weights": [18, 40, 18, 13, 8, 3],
+  "global_far_weights": [42, 20, 23, 6, 5, 4],
+  "depth_range_m": [800, 3400],
+  "regions": {
+    "A": {"bounds_mm": [320, 525, 530, 650], "pdf_bounds_mm": [335, 535, 515, 640], "mode": "M2", "x_range_mm": [328, 520], "y_search_mm": [565, 644], "expanded_extra": 8, "expanded_depth_m": [-135, 130]},
+    "C": {"bounds_mm": [250, 285, 395, 380], "pdf_bounds_mm": [250, 285, 395, 380], "mode": "F2", "x_range_mm": [258, 386], "y_search_mm": [300, 374], "expanded_extra": 10, "expanded_depth_m": [-125, 110]},
+    "B": {"bounds_mm": [220, 310, 395, 400], "mode": "F2", "x_range_mm": [228, 386], "y_search_mm": [325, 396], "expanded_extra": 6, "expanded_depth_m": [-70, 70]}
+  }
+}

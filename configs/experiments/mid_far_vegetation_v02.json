@@ -1,0 +1,212 @@
+{
+  "study": "Mid/far vegetation v02: growth scaffolds and independent ink/color",
+  "parent_commit": "7e22e7768c501b517ce77a1d2c1f47c3fb8c5d76",
+  "checkpoint_commit": "90bb2572a35731ccdb38ec332456f2f94ac76456",
+  "seed": 2026101812,
+  "minimum_ink_mm": 2.8,
+  "minimum_color_mm": 3.2,
+  "ink_footprint_mm": 0.8,
+  "color_footprint_mm": 1.2,
+  "field_paths": {
+    "base": "docs/experiments/f2_painterly_layers_v01/fields.npz",
+    "retention": "docs/experiments/f2_foreground_continuity_v04/retention_snapshots.npz",
+    "global": "docs/experiments/f2_painterly_composition_v03/fields.npz"
+  },
+  "v01_vectors": "outputs/mid-far-vegetation-v01-final/derived_vectors.json.gz",
+  "scenes": [
+    {
+      "id": "A",
+      "title": "Middle: native small trees and connected grove",
+      "bounds_mm": [
+        330,
+        565,
+        510,
+        630
+      ],
+      "reference_group": "middle-right-belt",
+      "source_q_m": 1230,
+      "guide_x_mm": [
+        347,
+        489
+      ],
+      "guide_y_window_mm": [
+        590,
+        630
+      ],
+      "groups": [
+        {
+          "u": [
+            0.02,
+            0.25
+          ],
+          "count": 4,
+          "height_mm": 18,
+          "role": "subordinate"
+        },
+        {
+          "u": [
+            0.36,
+            0.62
+          ],
+          "count": 5,
+          "height_mm": 24,
+          "role": "dominant"
+        },
+        {
+          "u": [
+            0.77,
+            0.97
+          ],
+          "count": 4,
+          "height_mm": 20,
+          "role": "subordinate"
+        }
+      ],
+      "modes": [
+        "M1",
+        "M2",
+        "M3"
+      ],
+      "relays": [
+        {
+          "u": 0.68,
+          "height_mm": 11
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Far: shoulder-following collective vegetation belt",
+      "bounds_mm": [
+        255,
+        290,
+        385,
+        365
+      ],
+      "reference_group": "far-central-fragments",
+      "source_q_m": 3300,
+      "guide_x_mm": [
+        267,
+        370
+      ],
+      "guide_y_window_mm": [
+        300,
+        370
+      ],
+      "groups": [
+        {
+          "u": [
+            0.02,
+            0.27
+          ],
+          "count": 5,
+          "height_mm": 8,
+          "role": "subordinate"
+        },
+        {
+          "u": [
+            0.34,
+            0.65
+          ],
+          "count": 7,
+          "height_mm": 10,
+          "role": "dominant"
+        },
+        {
+          "u": [
+            0.79,
+            0.98
+          ],
+          "count": 5,
+          "height_mm": 8,
+          "role": "subordinate"
+        }
+      ],
+      "modes": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "relays": [
+        {
+          "u": 0.29,
+          "height_mm": 5.8
+        },
+        {
+          "u": 0.72,
+          "height_mm": 5.2
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Actual mist: coherent growth entering and returning",
+      "bounds_mm": [
+        220,
+        315,
+        395,
+        395
+      ],
+      "reference_group": "far-central-fragments",
+      "source_q_m": 3200,
+      "guide_x_mm": [
+        237,
+        380
+      ],
+      "guide_y_window_mm": [
+        325,
+        390
+      ],
+      "groups": [
+        {
+          "u": [
+            0.01,
+            0.32
+          ],
+          "count": 9,
+          "height_mm": 9,
+          "role": "subordinate"
+        },
+        {
+          "u": [
+            0.38,
+            0.65
+          ],
+          "count": 8,
+          "height_mm": 10,
+          "role": "dominant"
+        },
+        {
+          "u": [
+            0.75,
+            0.99
+          ],
+          "count": 6,
+          "height_mm": 8,
+          "role": "subordinate"
+        }
+      ],
+      "modes": [
+        "F3"
+      ],
+      "relays": [
+        {
+          "u": 0.35,
+          "height_mm": 5.7
+        },
+        {
+          "u": 0.7,
+          "height_mm": 5.4
+        }
+      ]
+    }
+  ],
+  "mode_notes": {
+    "M1": "Single structural small trees; short base and readable unequal branch origins",
+    "M2": "Same roots and growth graph; partial trunk visibility, overlapping radial crowns",
+    "M3": "Same roots; lower woody scaffolds with wider collective foliage spread",
+    "F1": "Small structural traces; economical branch starts and a few terminal spreads",
+    "F2": "Shared source-depth belt; directional crown fields from explicit branch scaffolds",
+    "F3": "Compressed collective belt; sparse representative ink, broader related foliage masses"
+  }
+}

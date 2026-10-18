@@ -1,0 +1,22 @@
+{
+  "study": "Mid/far v05: forest fields, medium groves and micro surface texture",
+  "parent_commit": "4c098477eef879c6ddc9dc521a1130047940e7e5",
+  "v04_config": "configs/experiments/mid_far_vegetation_v04.json",
+  "v04_supports": "outputs/mid-far-vegetation-v04-final/spatial_supports.json",
+  "seed": 2026101812,
+  "field_alpha": 0.42,
+  "tap_alpha": 0.65,
+  "minimum_ink_mm": 2.8,
+  "minimum_color_mm": 3.2,
+  "ink_footprint_mm": 0.8,
+  "color_footprint_mm": 1.2,
+  "field_rows": 35,
+  "micro_groups": 340,
+  "tap_diameter_mm": 0.9,
+  "regions": {
+    "M": {"bounds_mm": [310,510,540,675], "y_search_mm": [550,669], "height_mm": 20,
+      "knots_x_mm": [328,370,415,467,523], "knots_q_m": [1320,1210,1270,1390,1320], "half_depth_m": 245, "v04_region": "A"},
+    "F": {"bounds_mm": [235,275,405,395], "y_search_mm": [285,390], "height_mm": 8,
+      "knots_x_mm": [247,285,331,395], "knots_q_m": [3280,3200,3400,3300], "half_depth_m": 180, "v04_region": "C"}
+  }
+}

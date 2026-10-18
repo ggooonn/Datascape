@@ -1,0 +1,36 @@
+{
+  "status": "provisional_work_closure",
+  "spring_checkpoint_branch": "checkpoint/spring-integration-v04",
+  "spring_checkpoint_commit": "b86a831eab9bfd78ce870c9ffb7e9a0ea65e44e7",
+  "primary": {
+    "families": ["R", "S", "U"],
+    "distances": ["middle", "far"],
+    "implementation": "datascape.vegetation.territorial_mid_far_v04",
+    "config": "configs/experiments/mid_far_vegetation_v04.json",
+    "support_fixture": "docs/catalogs/mid_far_vegetation_v05/fixtures/v04_supports.json",
+    "status": "primary_reusable_result",
+    "scene_placement_accepted": false
+  },
+  "far_micro_B": {
+    "status": "provisional_candidate",
+    "enabled_by_default": false,
+    "allowed_distances": ["far"],
+    "recommended_for_middle": false,
+    "source": "datascape.vegetation.scale_fields_v05.micro_field",
+    "source_config": "configs/experiments/mid_far_vegetation_v05.json",
+    "requires_linked_ink_and_color": true,
+    "linked_ink_color_implemented": false,
+    "pass_contract": {
+      "shared_identity": "Coherent far passage/support identity with source-q profile",
+      "ink_and_color": "Related structural ink and color contribution in the same passage; no requirement for duplicate centerlines or a mark-for-mark pair",
+      "continuity": "Shared terrain/growth flow, density rhythm, openings and mist transitions; color forms a coherent vegetation layer",
+      "routing": "Physical station order and wetness scheduling remain unimplemented"
+    },
+    "physical_dot_behavior_validated": false,
+    "current_evidence": "v05 micro marks already contain palette slots; the few medium-grove ink paths in B are not a linked ink pass for those marks"
+  },
+  "v05_A_C": {"status": "deferred", "enabled_by_default": false, "general_use_accepted": false},
+  "terrain_mask_default": "overlay",
+  "scene_integration_started": false,
+  "production_gcode_authorized_here": false
+}

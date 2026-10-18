@@ -1,0 +1,48 @@
+{
+  "base_branch": "checkpoint/spring-integration-v04",
+  "base_commit": "b86a831eab9bfd78ce870c9ffb7e9a0ea65e44e7",
+  "inherited_file_entries_unchanged": 850,
+  "original_runtime_modules_byte_identical": 5,
+  "original_test_bodies_unchanged": 5,
+  "extracted_helper_bodies_unchanged": 6,
+  "tests": {
+    "passed": 311,
+    "subtests_passed": 22,
+    "seconds": 178.13,
+    "command": "PYTHONPATH=src python -m pytest -q"
+  },
+  "replay": {
+    "primary_cases_raw_and_visible_exact": 6,
+    "historical_v05_ABC_exact": true,
+    "far_micro_subset_exact": true,
+    "repeat_outputs_byte_identical": 9,
+    "trimmed_fixture_outputs_byte_identical": 9
+  },
+  "evidence": {
+    "pngs_hash_matched_and_decoded": 9,
+    "native_svg_parsed": 6,
+    "clustered_fixture_bodies": {
+      "middle": 60,
+      "far": 66
+    },
+    "original_fixture_sha256": "49e97875ac11a315bf5e5d5549e549f4685dbf66cc2ac4775c6529e151d92322",
+    "retained_fixture_sha256": "53636faa5a9200222fe59cf3dd11c008cc3b8d79c382b35f4aef3dbbddeab3c4"
+  },
+  "policy": {
+    "primary": [
+      "R",
+      "S",
+      "U"
+    ],
+    "B": "Far-only optional provisional candidate; linked ink + color unimplemented; disabled by default",
+    "A_C": "Deferred, not general-use accepted"
+  },
+  "scope": {
+    "full_scene_integration_performed": false,
+    "b_linked_ink_color_implemented": false,
+    "large_forest_refinement_performed": false,
+    "production_gcode_created": false,
+    "merge_performed": false
+  },
+  "relative_markdown_links_checked": 13
+}

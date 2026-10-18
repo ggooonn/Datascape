@@ -1,0 +1,35 @@
+{
+  "study": "Mid/far v04: terrain occupation, distinct roles and vegetation color",
+  "parent_commit": "621364bd5243582235525ea0c74663c92e85566e",
+  "seed": 2026101812,
+  "v02_config": "configs/experiments/mid_far_vegetation_v02.json",
+  "v03_vectors": "outputs/mid-far-vegetation-v03-review/vectors.json.gz",
+  "v03_supports": "outputs/mid-far-vegetation-v03-review/spatial_supports.json",
+  "minimum_ink_mm": 2.8,
+  "minimum_color_mm": 3.2,
+  "ink_footprint_mm": 0.8,
+  "color_footprint_mm": 1.2,
+  "graphic_color_width_mm": 0.95,
+  "alpha": 0.28,
+  "vegetation_slots": ["C1", "C2", "C3", "C4", "C5", "A5", "A3", "D1"],
+  "depth_knots_m": [400, 1250, 3300],
+  "depth_slot_weights": [[8,27,25,21,8,7,2,2], [22,29,13,15,2,14,4,1], [48,10,3,5,0,24,10,0]],
+  "regions": {
+    "A": {"bounds_mm": [320,525,530,655], "pdf_bounds_mm": [335,540,515,645], "y_search_mm": [555,650], "mode": "M2", "base_height_mm": 23,
+      "patches": [
+        {"center": [357,1280], "radii": [24,170], "count": 12, "role": "subordinate"},
+        {"center": [411,1210], "radii": [31,210], "count": 22, "role": "dominant"},
+        {"center": [480,1315], "radii": [25,175], "count": 15, "role": "subordinate"},
+        {"center": [447,1310], "radii": [12,110], "count": 5, "role": "relay"},
+        {"center": [402,1030], "radii": [15,85], "count": 7, "role": "extension"}
+      ]},
+    "C": {"bounds_mm": [245,280,400,385], "pdf_bounds_mm": [245,280,400,385], "y_search_mm": [285,382], "mode": "F2", "base_height_mm": 10,
+      "patches": [
+        {"center": [299,3300], "radii": [27,165], "count": 24, "role": "dominant"},
+        {"center": [352,3370], "radii": [25,120], "count": 17, "role": "subordinate"},
+        {"center": [272,3120], "radii": [17,100], "count": 14, "role": "extension"},
+        {"center": [330,3210], "radii": [18,100], "count": 10, "role": "relay"},
+        {"center": [378,3200], "radii": [9,65], "count": 5, "role": "isolated"}
+      ]}
+  }
+}
