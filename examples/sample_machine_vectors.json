@@ -1,0 +1,56 @@
+{
+  "schema": "datascape.machine_vectors.v0.1",
+  "artwork_size_mm": [
+    600,
+    900
+  ],
+  "strokes": [
+    {
+      "stroke_id": "test_ridge_A_001",
+      "medium": "ink",
+      "layer": "A",
+      "color_slot": "INK",
+      "order_group": 0,
+      "sequence": 0,
+      "reorderable": false,
+      "points": [
+        {
+          "x": 270,
+          "y": 100,
+          "pressure": 0.25
+        },
+        {
+          "x": 330,
+          "y": 200,
+          "pressure": 0.7
+        }
+      ]
+    },
+    {
+      "stroke_id": "test_color_001",
+      "medium": "color",
+      "layer": "V",
+      "color_slot": "A1",
+      "order_group": 1,
+      "sequence": 1,
+      "reorderable": false,
+      "points": [
+        {
+          "x": 50,
+          "y": 500,
+          "pressure": 0.3
+        },
+        {
+          "x": 100,
+          "y": 550,
+          "pressure": 0.65
+        },
+        {
+          "x": 150,
+          "y": 600,
+          "pressure": 0.2
+        }
+      ]
+    }
+  ]
+}
