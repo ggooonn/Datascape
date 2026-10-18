@@ -1,0 +1,11 @@
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+Pillow==12.3.0
+shapely==2.2.0
+rasterio==1.5.2
+affine==3.0.1
+opencv-python-headless==5.0.0.93
+osqp==1.1.3
+pytest==9.1.1
+PyYAML==6.0.3

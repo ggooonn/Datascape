@@ -1,0 +1,120 @@
+{
+  "archive_sha256": "3e3c771b708e41d278a3e80633a0a73cc264793dcde6add98fa11657d128ec10",
+  "original_v04_source_commit": "64e723acff8df006f2b0e8f10108c7ba322addcc",
+  "source_base": "f3a11745217a6ab976ac90819d5538462dae346b",
+  "accepted_dependencies": {
+    "spring_PR16": "1834cbe8161cf49d3bc5deac5e4af404f8bbdd09",
+    "tree_PR18": "f858e7816822c539944c8244677c29a7dd39fc0a",
+    "rock_ground_PR19": "6fcac2864e7b7fdd5ae626f8a8161c01e5c90994"
+  },
+  "locked_source_sha256": {
+    "src/datascape/vegetation/__init__.py": "b454c3bdfc1b1f073cacb7202ff49ceec410d4f58acaa776bdf98a900838c1e5",
+    "src/datascape/vegetation/grammar.py": "855dc8985293a385d5cf2976e931608292e0b548d628f950d0230e1c0b5fdc2d",
+    "src/datascape/vegetation/multidepth.py": "947d7340c94747d26726b6edd9b849feb63e8ac4535077a63c05c1eb0ee8d737",
+    "src/datascape/vegetation/object_prototypes.py": "a4d92eade4c56b0178cc2d312d05c3072b9b20e260d92e1079aff773fe687e4f",
+    "src/datascape/vegetation/painterly.py": "1455c900cc035f820ad83cf3664aec5414cdf84e9a0571989457c9f75fc02edc",
+    "src/datascape/vegetation/tree_catalog.py": "5aea766d45351331be132705c0cd6cfb5a1fdb148bd8804ac04f43e4daeed7c6",
+    "src/datascape/vegetation/tree_final_scale.py": "a3b6142640445f5a85dde5a6acbd4de0540caf9e94a62b7a2079d89768f51e1f",
+    "src/datascape/vegetation/tree_form_calibration.py": "c95a99be897d31f8557c22dbbba7496b0b40e85a527bec502bb95e2ac026cc04",
+    "src/datascape/vegetation/tree_group_review.py": "de5aaf4f8ab6a79bd196fc6b2570c202915bfccee7a12e5cba5723a2c84e89f4",
+    "src/datascape/vegetation/tree_growth.py": "d1852dc1c8a9a1328a8a9a837b031c8d9cc44a453dc007819a47a66eedd9fa74",
+    "src/datascape/vegetation/tree_occlusion_proof.py": "0b9993af56ff0761aeffbfa800476b1a8db6b809fed548a02cee240f8fc4a0e6",
+    "src/datascape/vegetation/tree_pattern.py": "093969ccb2ea420a537bb96cc047a21fb952464017d0dbf2719147b803afd0b3",
+    "src/datascape/vegetation/tree_plot_scale.py": "ca3bf4851d5260d9f208541bcc1e32338e70240c22999a910d642f1f4aa25e8c",
+    "src/datascape/vegetation/tree_rhythm.py": "19f33e313801e23b7be657fc1868ed57b1a2bbc010cca59e91a6d17e69f2edee",
+    "src/datascape/vegetation/tree_spatial_groups.py": "6c19d60016fee29a0664d245939ea55e684fe24e3df3acc0a055319c61d43888",
+    "src/datascape/ground/__init__.py": "7e41baf37119a93c01587282a21cf599c3dac1acb19ae1a5d2187ab428ffca45",
+    "src/datascape/ground/grammar.py": "1e398bb6f3ba9fef2ea924f0ab1f85d985bfea228afbc149e4cc03c7745bbb50",
+    "src/datascape/ground/interaction.py": "39365245db63fcdc6d6a36f2f1ebef8b2a686e89e3e7abe19efe5f5e95a59353",
+    "src/datascape/ground/material_review_v05.py": "7c99b0fe134405cccd155947726743aad4a984d925bb1d33c9856db1fe8b5c08",
+    "src/datascape/ground/patch_system_v04.py": "1c6fe72ddcfec94abf1dfc348588ffd28c7b2ee686f7c780943ba777158e9650",
+    "src/datascape/ground/refinement_v03.py": "48dddb48862147fea3ab358ccf4408307f530117e55d6d4ad9b423b1c36526e2",
+    "src/datascape/ground/structural_detail_v05.py": "a15656aab4f3dd38bb0f18d4c3b35b65ac78c0865d565d4640cb630e60cd3c86",
+    "src/datascape/ground/structure_v02.py": "5da83e30aa20e8da094701df6978c0b4c39a27dab542f3b96b3c2300617c10cc",
+    "src/datascape/ground/surface_ground_v02.py": "40b247b53b9f0324a3e669fd38be0998ae732327545512b150c1056baab00fc3",
+    "src/datascape/integration/cluster_scene.py": "d615ff77c369863a87f7656e9bf9e088630eeca35413ddbd6383c193aba8a9fd",
+    "src/datascape/integration/vector_wash.py": "f71da631bcd1e7741b9bc5ce2b8fd32fa0a0feaa77ebd96c90d876815f34b2e9",
+    "configs/palettes/palette_20.yaml": "28b578c5067bfa9025338ba887606ec66569fe4a18d1aae963f353ec2b5e27e4",
+    "artworks/2026-03-17_geumgang/original/source.py": "fb6a5ae288097a82842e4e6eea159369a3463d174382c11837d6900f42e75108"
+  },
+  "original_implementation_sha256": {
+    "src/datascape/integration/macro_wash.py": "0dd7e48e7041231d6415c8a4c8e8bed7efdc53ae672621eb15827be4f90d1b98",
+    "src/datascape/rendering/spring_macro_study.py": "f079533a017da82dbec8735297cf62b988a33a0772f8d417aa224af142fbdf3f",
+    "src/datascape/rendering/spring_macro_review.py": "86b8a0aae5d0d731c504420a06944af096dd2a3eb928c999d1fa3e9ec95466f8",
+    "configs/scenes/seoul_spring_macro_v04.json": "2cff064255df93fe9414e93a5582acbfb7bc6ca42451e06076f5146ba46f448b"
+  },
+  "input_sha256": {
+    "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+    "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+  },
+  "field_sha256": {
+    "xyz": "13a51d4058f5f1989e729412873bedeab3ca73a40747ea434a5ce7c1e8625650",
+    "depth_m": "ba74c509357ae5984552c3ef7f95fe8f17977ae1fb2ffce8b2d187442ad0f081",
+    "occupied": "6cde64b2a2aeef0ed2555afa85361d231f8c8eec26f0bb7ec630841bb83e31c0",
+    "retention": "f87e7607238f3525a5896b686fe885f61ee9cd388cc2ec2c52d73fd9e7a006f8"
+  },
+  "counts": {
+    "objects": {
+      "tree": 79,
+      "soil": 18,
+      "rock": 22
+    },
+    "ink_paths": 3067,
+    "legacy_V_visible": 0,
+    "temporary_authored_sites": 119
+  },
+  "retained_artifact_sha256": {
+    "artifacts/placement.csv": "23d342c693bf1114f80fa0e104e2c80f93c34bf4235c7a819d266945209bab0f",
+    "artifacts/C_color.json.gz": "483050ec4f3a8ca48ff49bf9f6edfd4a34b87440957b0d9201619ce4b6560b52",
+    "artifacts/thin_color.json.gz": "85b9b0cbd201241cd3aee63f785eb4321f2eb82beca95e046ef551d8eeed4580",
+    "artifacts/gestures_color.json.gz": "a71ede765c9a45905272e385315562b436bbe1f9a820df0710b7ab389c4c98ae",
+    "artifacts/ink_metrics.json": "fad83488a96f724729a81c790b02b3467417b8e4d8951c15cac58efa0a577d90",
+    "artifacts/sheet03_far_D_mist.png": "47c5018ee4d8c18aca21039465ae046f89436ff2bdb63d0da51c5c467e1389eb",
+    "artifacts/hard_only_terrain_color.json.gz": "75ff5f4df2d453d1ef3496495a04c310de2508a127903ff0112670b5b41be749",
+    "artifacts/palette_usage.csv": "96cc9818a7fffeb91ea3a117604d20368c8e0cf5622e1ded5cb46d1b8c6f175a",
+    "artifacts/macro_map.png": "2423ba62383d87d52c80ac8eb606dda21a3b578f3f3e81916aaf6067d0cc8368",
+    "artifacts/color_metrics.json": "8417ae104e116a59aa3a6869402400f995d9d584ba06bcfc0ca3348a2e2d151f",
+    "artifacts/color_source_ledger.json.gz": "bb0d675bc734631f77f4f871e448607a7e5e646bc0d7fea282623a65f90e0c38",
+    "artifacts/sheet04_vegetation_brush.png": "49fc8a68b5300fb06439199c6e1cace4ca8dd91cce9cccd6bc1fbd01a90b4c98",
+    "artifacts/sites.json": "fea6336703009cf9e25158294ee2440a4b89c7d98fe51ccb3f89327c0c078909",
+    "artifacts/A_color.json.gz": "185c2a764f3802c243b3405420119ce5845a486584f3bf7b5af4ad8b43754c47",
+    "artifacts/contact_repairs.json": "241f95f724cf2120e566d1e2d7b2f5cddba7160a370c06f583b0b7e12dc5bea1",
+    "artifacts/rock_soil_color.json.gz": "5da402e983ef16b8ec5ac055c111a61c2812333e8c5964bbe7a49316b65bd3bb",
+    "artifacts/record.json": "96e4c70c8405c7d7c76970ae5b9f9704b02fdcbd40215b1f9427607b6b58bd6f",
+    "artifacts/validation.json": "7d81dce64b615c7dbef24e939c9b891cbaf55659988692a828496972329decee",
+    "artifacts/sheet05_integrated_detail.png": "9c934a894ffbf3b7cc8885a4841d0260d6e7a15223d34ca808d92915b413d73b",
+    "artifacts/trunk_supports.geojson": "fe225f2c12a0ac5ca88dd44c8b10e91edc1dc150cdbb570b5753cf173f872bcc",
+    "artifacts/source_ledger.json.gz": "bd3250aa128ebc81437f8580a3ac0f3dcaac181a7cc6c3fa3182057084e07fc6",
+    "artifacts/sheet01_full_comparison.png": "b8496c7bcccd4c780935c1d7952dcd66bb5748accfb1b5b4263165fd4ad4e224",
+    "artifacts/D_anchors.json": "5aaefe84a8ec797f0853e0e8b1483eea38e0e029616dac3787275abbbdf3089e",
+    "artifacts/caseC_diagnostic.png": "8b5c9f5cbd8ce6ec29d33c917cd221579e18d2a678de9879a0cb794e173f978e",
+    "artifacts/ink.json.gz": "0fea667c73add9edddac52d1c016f9f15a1bbf1910d9a9948e392792f107cdb5",
+    "artifacts/trunk_color.json.gz": "a826593e3efb28e67259e47ef42ec2d303a01c4af3a48b5a9705a7241f813d25",
+    "artifacts/color_only_diagnostic.png": "5a1250f4a6192df2456c2f3d3c48762beded13c1ec0bd81f11f5b7bd29c817cf",
+    "control_v03/material_layered_color.json.gz": "f9fc0bd23e33142141af1d6505ae459f33bf6daadd7815adacf836d5e03748d2",
+    "control_v03/C_color.json.gz": "049845094ae58710ce64d9b28f903cac10efa4c063cb895411b87bf6d8339e15",
+    "control_v03/A_color.json.gz": "f5e4ed10212c788a2f8fbf926b1e61f609e425bb0e385190e7b118fd8e5065e1",
+    "control_v03/record.json": "ebc16dded53e28c2827c9dc8f24c4a19a076ef671e5fffa4449fc2c392b82cef",
+    "control_v03/case3_restrained.png": "46f8f305d292eb8ac99279e87d4268142d6de6526db907792419ec78228eaffb",
+    "control_v03/ink.json.gz": "71a79a046af28686762966c2627a4b32bec115285383c46fa6f312cf85f9899d"
+  },
+  "sheet02_policy": {
+    "original_in_private_archive": true,
+    "public_file": "artifacts/macro_map.png",
+    "original_crop_pixels": [
+      16,
+      88,
+      1000,
+      803
+    ],
+    "reason": "Exact nonplotting map crop only; private reference thumbnails excluded. No scene geometry changed."
+  },
+  "status": "Preservation checkpoint only; no artistic approval or production readiness",
+  "inherited_base_files_unchanged": 782,
+  "vector_replay_pixel_identical": {
+    "caseC_diagnostic.png": true,
+    "color_only_diagnostic.png": true
+  },
+  "checkpoint_test_result": "58 passed, 16 subtests passed in 73.72 seconds",
+  "full_TIFF_regeneration_performed_in_checkpoint_step": false
+}

@@ -1,0 +1,374 @@
+{
+  "terrain": {
+    "paths": 2309,
+    "length_mm": 43348.46059933435,
+    "depth": {
+      "near": {
+        "paths": 962,
+        "length_mm": 15432.399488531077,
+        "common_domain_terrain_length_mm": 15342.158160709294,
+        "palette_length_mm": {
+          "C1": 3876.607772968867,
+          "A3": 2513.8380523565884,
+          "C4": 493.79455073361214,
+          "A4": 1782.6605878449368,
+          "C2": 3096.7987375590124,
+          "A5": 1736.4651761132507,
+          "D1": 1026.2489157222622,
+          "B2": 244.10989816644783,
+          "C3": 548.3892659888116,
+          "D4": 113.48653107726749
+        },
+        "channel_length_mm": {
+          "A-derived": 1813.1616164788911,
+          "C-derived": 13619.23787205218
+        },
+        "eligible_visible_terrain_mm2": 101837,
+        "common_visible_terrain_mm2": 122380,
+        "terrain_color_length_mm": 15432.399488531071,
+        "terrain_length_density_mm_per_mm2": 0.1515402013858526,
+        "all_color_length_density_mm_per_mm2": 0.15154020138585264,
+        "common_domain_terrain_density_mm_per_mm2": 0.12536491388061197
+      },
+      "middle": {
+        "paths": 943,
+        "length_mm": 17982.132328038617,
+        "common_domain_terrain_length_mm": 17975.731578800955,
+        "palette_length_mm": {
+          "A3": 4904.16732121222,
+          "A5": 2754.7348819237304,
+          "D1": 981.7526360297711,
+          "C1": 5440.747136099136,
+          "C2": 2231.7854455239562,
+          "A4": 759.4020759842147,
+          "C3": 163.15542597000803,
+          "C4": 306.2571316980671,
+          "B2": 166.33050795940244,
+          "D4": 273.7997656380866
+        },
+        "channel_length_mm": {
+          "A-derived": 8693.724535425581,
+          "C-derived": 9288.407792613016
+        },
+        "eligible_visible_terrain_mm2": 85988,
+        "common_visible_terrain_mm2": 94693,
+        "terrain_color_length_mm": 17982.1323280386,
+        "terrain_length_density_mm_per_mm2": 0.20912374201096198,
+        "all_color_length_density_mm_per_mm2": 0.20912374201096218,
+        "common_domain_terrain_density_mm_per_mm2": 0.1898316832162985
+      },
+      "far": {
+        "paths": 459,
+        "length_mm": 9933.928782764666,
+        "common_domain_terrain_length_mm": 9932.201940827861,
+        "palette_length_mm": {
+          "C1": 3299.528169823841,
+          "A5": 1727.0263835246562,
+          "A3": 2972.850518520691,
+          "C2": 967.3110500964771,
+          "B2": 103.60791692666774,
+          "A4": 284.9932649096472,
+          "D1": 471.39437907554446,
+          "C3": 49.04015775419964,
+          "D4": 8.299487415637225,
+          "C4": 49.87745471731566
+        },
+        "channel_length_mm": {
+          "A-derived": 8374.375840745612,
+          "C-derived": 1559.5529420190621
+        },
+        "eligible_visible_terrain_mm2": 118562,
+        "common_visible_terrain_mm2": 119688,
+        "terrain_color_length_mm": 9933.928782764673,
+        "terrain_length_density_mm_per_mm2": 0.0837867848278932,
+        "all_color_length_density_mm_per_mm2": 0.08378678482789313,
+        "common_domain_terrain_density_mm_per_mm2": 0.08298410818818813
+      }
+    },
+    "palette_length_mm": {
+      "C1": 12616.88307889185,
+      "A3": 10390.855892089505,
+      "C4": 849.9291371489948,
+      "A4": 2827.055928738799,
+      "C2": 6295.895233179443,
+      "A5": 6218.2264415616455,
+      "D1": 2479.3959308275776,
+      "B2": 514.0483230525182,
+      "C3": 760.5848497130193,
+      "D4": 395.5857841309913
+    },
+    "palette_length_percent": {
+      "C1": 29.105723489257173,
+      "A3": 23.970530322013477,
+      "C4": 1.9606904729669825,
+      "A4": 6.52169855550121,
+      "C2": 14.523918833870011,
+      "A5": 14.344745708587244,
+      "D1": 5.719686227717278,
+      "B2": 1.185851391134318,
+      "C3": 1.7545832982237404,
+      "D4": 0.912571700728551
+    },
+    "channel_length_mm": {
+      "A-derived": 18881.261992650096,
+      "C-derived": 24467.1986066843
+    },
+    "basis": "Final vector centerline length; source-q splitting. A path crossing bands counts in each; no pigment volume or dry opacity claim.",
+    "eligibility": "Generation: one-mm occupied F2 cells, retention > .08, global reserve/corridors and visible object body/core excluded. Common comparison domain: unchanged retention > .23 before local object exclusions."
+  },
+  "caseB": {
+    "paths": 3650,
+    "length_mm": 52840.82995643543,
+    "depth": {
+      "near": {
+        "paths": 2018,
+        "length_mm": 23571.310394748536,
+        "common_domain_terrain_length_mm": 15342.158160709294,
+        "palette_length_mm": {
+          "C1": 6116.8905172635305,
+          "A3": 3652.0206237786174,
+          "C4": 1116.4467446266003,
+          "A4": 2365.684565109268,
+          "C2": 4207.256914322597,
+          "A5": 3274.325901164355,
+          "D1": 1333.3532882891247,
+          "B2": 244.10989816644783,
+          "C3": 555.6935146476845,
+          "D4": 401.00279322026506,
+          "D5": 237.48361646918886,
+          "B4": 67.0420176907683
+        },
+        "channel_length_mm": {
+          "A-derived": 1813.1616164788911,
+          "C-derived": 13619.23787205218,
+          "material-C-like": 8138.910906217404
+        },
+        "eligible_visible_terrain_mm2": 101837,
+        "common_visible_terrain_mm2": 122380,
+        "terrain_color_length_mm": 15432.399488531071,
+        "terrain_length_density_mm_per_mm2": 0.1515402013858526,
+        "all_color_length_density_mm_per_mm2": 0.23146116239430203,
+        "common_domain_terrain_density_mm_per_mm2": 0.12536491388061197
+      },
+      "middle": {
+        "paths": 1155,
+        "length_mm": 19032.621174434717,
+        "common_domain_terrain_length_mm": 17975.731578800955,
+        "palette_length_mm": {
+          "A3": 4929.990259991096,
+          "A5": 3087.5386026505075,
+          "D1": 1000.7136801473899,
+          "C1": 5747.353326435356,
+          "C2": 2433.597489123727,
+          "A4": 852.5226223984093,
+          "C3": 163.15542597000803,
+          "C4": 310.2907846133262,
+          "B2": 166.33050795940244,
+          "D4": 334.4869176894254,
+          "B4": 6.641557456046478
+        },
+        "channel_length_mm": {
+          "A-derived": 8693.724535425581,
+          "C-derived": 9288.407792613016,
+          "material-C-like": 1050.4888463961036
+        },
+        "eligible_visible_terrain_mm2": 85988,
+        "common_visible_terrain_mm2": 94693,
+        "terrain_color_length_mm": 17982.1323280386,
+        "terrain_length_density_mm_per_mm2": 0.20912374201096198,
+        "all_color_length_density_mm_per_mm2": 0.22134043325155506,
+        "common_domain_terrain_density_mm_per_mm2": 0.1898316832162985
+      },
+      "far": {
+        "paths": 532,
+        "length_mm": 10236.898387252226,
+        "common_domain_terrain_length_mm": 9932.201940827861,
+        "palette_length_mm": {
+          "C1": 3440.06303443756,
+          "A5": 1757.7438573088818,
+          "A3": 3013.4580002993057,
+          "C2": 1051.1606149997174,
+          "B2": 103.60791692666774,
+          "A4": 284.9932649096472,
+          "D1": 475.6636025231283,
+          "C3": 49.04015775419964,
+          "D4": 11.290483375812412,
+          "C4": 49.87745471731566
+        },
+        "channel_length_mm": {
+          "A-derived": 8374.375840745612,
+          "C-derived": 1559.5529420190621,
+          "material-C-like": 302.96960448755976
+        },
+        "eligible_visible_terrain_mm2": 118562,
+        "common_visible_terrain_mm2": 119688,
+        "terrain_color_length_mm": 9933.928782764673,
+        "terrain_length_density_mm_per_mm2": 0.0837867848278932,
+        "all_color_length_density_mm_per_mm2": 0.0863421533649249,
+        "common_domain_terrain_density_mm_per_mm2": 0.08298410818818813
+      }
+    },
+    "palette_length_mm": {
+      "C1": 15304.306878136464,
+      "A3": 11595.468884069034,
+      "C4": 1476.6149839572417,
+      "A4": 3503.2004524173244,
+      "C2": 7692.015018446045,
+      "A5": 8119.608361123759,
+      "D1": 2809.7305709596426,
+      "B2": 514.0483230525182,
+      "C3": 767.8890983718921,
+      "D4": 746.780194285503,
+      "D5": 237.4836164691889,
+      "B4": 73.68357514681477
+    },
+    "palette_length_percent": {
+      "C1": 28.963032735772856,
+      "A3": 21.944146020471116,
+      "C4": 2.7944583481649237,
+      "A4": 6.629722612808191,
+      "C2": 14.556953448285576,
+      "A5": 15.366163566730428,
+      "D1": 5.31734753840188,
+      "B2": 0.9728240897736179,
+      "C3": 1.453211652816539,
+      "D4": 1.4132635594504952,
+      "D5": 0.4494320332685577,
+      "B4": 0.13944439405581466
+    },
+    "channel_length_mm": {
+      "A-derived": 18881.261992650096,
+      "C-derived": 24467.1986066843,
+      "material-C-like": 9492.369357101074
+    },
+    "basis": "Final vector centerline length; source-q splitting. A path crossing bands counts in each; no pigment volume or dry opacity claim.",
+    "eligibility": "Generation: one-mm occupied F2 cells, retention > .08, global reserve/corridors and visible object body/core excluded. Common comparison domain: unchanged retention > .23 before local object exclusions."
+  },
+  "caseC": {
+    "paths": 3094,
+    "length_mm": 51174.765504769835,
+    "depth": {
+      "near": {
+        "paths": 1582,
+        "length_mm": 22215.56293086168,
+        "common_domain_terrain_length_mm": 15342.158160709294,
+        "palette_length_mm": {
+          "C1": 5182.136164614519,
+          "A3": 3652.0206237786174,
+          "C4": 774.359316856315,
+          "A4": 2460.9538114296097,
+          "C2": 4311.972036652072,
+          "A5": 2684.3963796993003,
+          "D1": 1307.7398291238508,
+          "B2": 244.10989816644783,
+          "C3": 872.2264443170102,
+          "D4": 449.0819727749254,
+          "D5": 267.9834556380147,
+          "B4": 8.582997810983894
+        },
+        "channel_length_mm": {
+          "A-derived": 1813.1616164788911,
+          "C-derived": 13619.23787205218,
+          "material-C-like": 6783.163442330609
+        },
+        "eligible_visible_terrain_mm2": 101837,
+        "common_visible_terrain_mm2": 122380,
+        "terrain_color_length_mm": 15432.399488531071,
+        "terrain_length_density_mm_per_mm2": 0.1515402013858526,
+        "all_color_length_density_mm_per_mm2": 0.2181482460290629,
+        "common_domain_terrain_density_mm_per_mm2": 0.12536491388061197
+      },
+      "middle": {
+        "paths": 1064,
+        "length_mm": 18806.790927977247,
+        "common_domain_terrain_length_mm": 17975.731578800955,
+        "palette_length_mm": {
+          "A3": 4929.990259991096,
+          "A5": 2888.470490961651,
+          "D1": 986.7906385069793,
+          "C1": 5614.726880838864,
+          "C2": 2491.4198237063742,
+          "A4": 852.5226223984093,
+          "C3": 235.7956542269526,
+          "C4": 306.2571316980671,
+          "B2": 166.33050795940244,
+          "D4": 334.4869176894254
+        },
+        "channel_length_mm": {
+          "A-derived": 8693.724535425581,
+          "C-derived": 9288.407792613016,
+          "material-C-like": 824.6585999386332
+        },
+        "eligible_visible_terrain_mm2": 85988,
+        "common_visible_terrain_mm2": 94693,
+        "terrain_color_length_mm": 17982.1323280386,
+        "terrain_length_density_mm_per_mm2": 0.20912374201096198,
+        "all_color_length_density_mm_per_mm2": 0.21871413369280884,
+        "common_domain_terrain_density_mm_per_mm2": 0.1898316832162985
+      },
+      "far": {
+        "paths": 503,
+        "length_mm": 10152.411645930906,
+        "common_domain_terrain_length_mm": 9932.201940827861,
+        "palette_length_mm": {
+          "C1": 3454.149798886298,
+          "A5": 1727.0263835246562,
+          "A3": 3013.4580002993057,
+          "C2": 974.8172051573576,
+          "B2": 103.60791692666774,
+          "A4": 284.9932649096472,
+          "D1": 480.54465379344816,
+          "C3": 52.64648434040501,
+          "D4": 11.290483375812412,
+          "C4": 49.87745471731566
+        },
+        "channel_length_mm": {
+          "A-derived": 8374.375840745612,
+          "C-derived": 1559.5529420190621,
+          "material-C-like": 218.4828631662369
+        },
+        "eligible_visible_terrain_mm2": 118562,
+        "common_visible_terrain_mm2": 119688,
+        "terrain_color_length_mm": 9933.928782764673,
+        "terrain_length_density_mm_per_mm2": 0.0837867848278932,
+        "all_color_length_density_mm_per_mm2": 0.08562955791848068,
+        "common_domain_terrain_density_mm_per_mm2": 0.08298410818818813
+      }
+    },
+    "palette_length_mm": {
+      "C1": 14251.0128443397,
+      "A3": 11595.468884069034,
+      "C4": 1130.493903271698,
+      "A4": 3598.469698737666,
+      "C2": 7778.2090655158,
+      "A5": 7299.893254185612,
+      "D1": 2775.07512142428,
+      "B2": 514.0483230525182,
+      "C3": 1160.6685828843677,
+      "D4": 794.8593738401634,
+      "D5": 267.98345563801473,
+      "B4": 8.582997810983894
+    },
+    "palette_length_percent": {
+      "C1": 27.8477345304326,
+      "A3": 22.658567693853445,
+      "C4": 2.209084677029596,
+      "A4": 7.031726795899561,
+      "C2": 15.199305729678073,
+      "A5": 14.264634497456003,
+      "D1": 5.422741255483866,
+      "B2": 1.0044957079570895,
+      "C3": 2.268048659209167,
+      "D4": 1.5532252390410601,
+      "D5": 0.5236632801239448,
+      "B4": 0.01677193383560087
+    },
+    "channel_length_mm": {
+      "A-derived": 18881.261992650096,
+      "C-derived": 24467.1986066843,
+      "material-C-like": 7826.304905435478
+    },
+    "basis": "Final vector centerline length; source-q splitting. A path crossing bands counts in each; no pigment volume or dry opacity claim.",
+    "eligibility": "Generation: one-mm occupied F2 cells, retention > .08, global reserve/corridors and visible object body/core excluded. Common comparison domain: unchanged retention > .23 before local object exclusions."
+  }
+}

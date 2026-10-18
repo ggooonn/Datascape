@@ -1,0 +1,1069 @@
+{
+  "legacy_V_paths_removed": 5200,
+  "legacy_V_paths_visible": 0,
+  "catalog_objects": {
+    "tree": 79,
+    "soil": 18,
+    "rock": 22
+  },
+  "ink_paths": {
+    "A": 1301,
+    "B": 82,
+    "D": 14,
+    "Soil": 72,
+    "rock": 145,
+    "tree": 1453
+  },
+  "ink_length_mm": {
+    "A": 72102.63558962566,
+    "B": 1610.6531417728972,
+    "D": 1268.2297726053534,
+    "Soil": 811.5191619403474,
+    "rock": 2475.1919720174474,
+    "tree": 9632.332866063753
+  },
+  "cluster_specs": [
+    {
+      "group_id": "near-left-grove",
+      "role": "tree-dominant",
+      "representation": "full",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 7,
+      "rocks": 0,
+      "soils": true,
+      "object_count": 8,
+      "center_mm": [
+        130,
+        827
+      ],
+      "span_mm": 218
+    },
+    {
+      "group_id": "near-right-exposure",
+      "role": "rock-dominant",
+      "representation": "full",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 3,
+      "rocks": 7,
+      "soils": true,
+      "object_count": 11,
+      "center_mm": [
+        466,
+        790
+      ],
+      "span_mm": 240
+    },
+    {
+      "group_id": "near-edge-stones",
+      "role": "rock-only",
+      "representation": "full",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 0,
+      "rocks": 4,
+      "soils": false,
+      "object_count": 4,
+      "center_mm": [
+        43,
+        741
+      ],
+      "span_mm": 73
+    },
+    {
+      "group_id": "near-right-shrubs",
+      "role": "vegetation-only",
+      "representation": "full",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 2,
+      "rocks": 0,
+      "soils": true,
+      "object_count": 3,
+      "center_mm": [
+        547,
+        860
+      ],
+      "span_mm": 69
+    },
+    {
+      "group_id": "middle-left-attached",
+      "role": "mixed-attached",
+      "representation": "full",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 5,
+      "rocks": 4,
+      "soils": true,
+      "object_count": 10,
+      "center_mm": [
+        160,
+        660
+      ],
+      "span_mm": 116
+    },
+    {
+      "group_id": "middle-right-belt",
+      "role": "middle-vegetation-belt",
+      "representation": "middle",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 9,
+      "rocks": 0,
+      "soils": true,
+      "object_count": 10,
+      "center_mm": [
+        438,
+        609
+      ],
+      "span_mm": 186
+    },
+    {
+      "group_id": "middle-left-belt",
+      "role": "middle-vegetation-belt",
+      "representation": "middle",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 8,
+      "rocks": 0,
+      "soils": true,
+      "object_count": 9,
+      "center_mm": [
+        136,
+        548
+      ],
+      "span_mm": 172
+    },
+    {
+      "group_id": "middle-edge-growth",
+      "role": "vegetation-only",
+      "representation": "middle",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 3,
+      "rocks": 0,
+      "soils": false,
+      "object_count": 3,
+      "center_mm": [
+        33,
+        630
+      ],
+      "span_mm": 50
+    },
+    {
+      "group_id": "middle-right-bedrock",
+      "role": "rock-only",
+      "representation": "full",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 0,
+      "rocks": 3,
+      "soils": true,
+      "object_count": 4,
+      "center_mm": [
+        524,
+        527
+      ],
+      "span_mm": 70
+    },
+    {
+      "group_id": "upper-right-mixed",
+      "role": "mixed-attached",
+      "representation": "middle",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 3,
+      "rocks": 2,
+      "soils": false,
+      "object_count": 5,
+      "center_mm": [
+        446,
+        452
+      ],
+      "span_mm": 73
+    },
+    {
+      "group_id": "far-left-shoulder",
+      "role": "distant-aggregate",
+      "representation": "aggregate",
+      "host_basis": "existing monotone A arc",
+      "host_target_offset_mm": 1.3831414141413916,
+      "trees": 11,
+      "rocks": 0,
+      "soils": false,
+      "object_count": 11,
+      "center_mm": [
+        114,
+        399
+      ],
+      "span_mm": 106
+    },
+    {
+      "group_id": "far-right-shoulder",
+      "role": "distant-aggregate",
+      "representation": "aggregate",
+      "host_basis": "existing monotone A arc",
+      "host_target_offset_mm": 2.1706145552560656,
+      "trees": 12,
+      "rocks": 0,
+      "soils": false,
+      "object_count": 12,
+      "center_mm": [
+        514,
+        372
+      ],
+      "span_mm": 112
+    },
+    {
+      "group_id": "far-central-fragments",
+      "role": "distant-aggregate",
+      "representation": "aggregate",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 7,
+      "rocks": 0,
+      "soils": false,
+      "object_count": 7,
+      "center_mm": [
+        321,
+        324
+      ],
+      "span_mm": 62
+    },
+    {
+      "group_id": "far-left-exposure",
+      "role": "rock-only",
+      "representation": "aggregate",
+      "host_basis": "existing monotone A arc",
+      "host_target_offset_mm": 0.10377667844522875,
+      "trees": 0,
+      "rocks": 2,
+      "soils": false,
+      "object_count": 2,
+      "center_mm": [
+        39,
+        443
+      ],
+      "span_mm": 33
+    },
+    {
+      "group_id": "left-step",
+      "role": "subordinate-grove-relay",
+      "representation": "middle",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 3,
+      "rocks": 0,
+      "soils": true,
+      "object_count": 4,
+      "center_mm": [
+        109,
+        739
+      ],
+      "span_mm": 92
+    },
+    {
+      "group_id": "right-rise",
+      "role": "rear-vegetation-relay",
+      "representation": "middle",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 3,
+      "rocks": 0,
+      "soils": false,
+      "object_count": 3,
+      "center_mm": [
+        494,
+        686
+      ],
+      "span_mm": 74
+    },
+    {
+      "group_id": "right-link",
+      "role": "middle-vegetation-transition",
+      "representation": "middle",
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_target_offset_mm": 0.0,
+      "trees": 2,
+      "rocks": 0,
+      "soils": false,
+      "object_count": 2,
+      "center_mm": [
+        510,
+        654
+      ],
+      "span_mm": 47
+    },
+    {
+      "group_id": "left-upper-link",
+      "role": "shoulder-transition",
+      "representation": "middle",
+      "host_basis": "existing monotone A arc",
+      "host_target_offset_mm": 6.725766074555963,
+      "trees": 1,
+      "rocks": 0,
+      "soils": false,
+      "object_count": 1,
+      "center_mm": [
+        192,
+        592
+      ],
+      "span_mm": 30
+    }
+  ],
+  "height_min_median_max_mm": [
+    20,
+    27.0,
+    130
+  ],
+  "root_contacts": [
+    {
+      "object_id": "v03/tree/near-left-grove/dominant",
+      "height_mm": 130,
+      "root_retention": 0.3081816854634242,
+      "root_ground_length_mm": 38.22674751681609,
+      "root_ground_families": [
+        "A",
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-left-grove/rear-crown",
+      "height_mm": 95,
+      "root_retention": 0.4854411282790918,
+      "root_ground_length_mm": 30.10320816906964,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-left-grove/low-left",
+      "height_mm": 44,
+      "root_retention": 0.6680802825503154,
+      "root_ground_length_mm": 5.4931299191078375,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-left-grove/leaning-companion",
+      "height_mm": 95,
+      "root_retention": 0.4722615165245214,
+      "root_ground_length_mm": 39.98221703962563,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-left-grove/forward-shrub",
+      "height_mm": 37,
+      "root_retention": 0.2997949554023427,
+      "root_ground_length_mm": 2.3373113634268816,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-left-grove/serial-end",
+      "height_mm": 55,
+      "root_retention": 0.4429794575017343,
+      "root_ground_length_mm": 8.33168885197316,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-left-grove/dissolving-end",
+      "height_mm": 26,
+      "root_retention": 0.2821641359219739,
+      "root_ground_length_mm": 0.5267452036749566,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-right-exposure/behind-main",
+      "height_mm": 95,
+      "root_retention": 0.4828061006223716,
+      "root_ground_length_mm": 0,
+      "root_ground_families": []
+    },
+    {
+      "object_id": "v03/tree/near-right-exposure/emerging-crown",
+      "height_mm": 95,
+      "root_retention": 0.54449266513498,
+      "root_ground_length_mm": 34.439795468593566,
+      "root_ground_families": [
+        "rock"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-right-exposure/rear-shrub",
+      "height_mm": 40,
+      "root_retention": 0.5937934084938646,
+      "root_ground_length_mm": 13.439138390873012,
+      "root_ground_families": [
+        "rock"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-right-shrubs/crooked",
+      "height_mm": 61,
+      "root_retention": 0.37967207751235593,
+      "root_ground_length_mm": 8.229083766525282,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/near-right-shrubs/small-front",
+      "height_mm": 25,
+      "root_retention": 0.28725155434232497,
+      "root_ground_length_mm": 11.632259744152645,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-attached/back-left",
+      "height_mm": 61,
+      "root_retention": 0.7723953184435743,
+      "root_ground_length_mm": 62.62844691112697,
+      "root_ground_families": [
+        "rock"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-attached/front-right",
+      "height_mm": 73,
+      "root_retention": 0.5209464176006522,
+      "root_ground_length_mm": 18.092439102302826,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-attached/behind-outcrop",
+      "height_mm": 43,
+      "root_retention": 0.634704596141257,
+      "root_ground_length_mm": 10.46975214578896,
+      "root_ground_families": [
+        "rock"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-attached/left-shrub",
+      "height_mm": 27,
+      "root_retention": 0.7995964503789288,
+      "root_ground_length_mm": 10.028070572933679,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-attached/end",
+      "height_mm": 32,
+      "root_retention": 0.4649348549740625,
+      "root_ground_length_mm": 13.177663399624608,
+      "root_ground_families": [
+        "rock"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-right-belt/b0",
+      "height_mm": 26,
+      "root_retention": 0.550960224640725,
+      "root_ground_length_mm": 16.539995371884412,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-right-belt/b1",
+      "height_mm": 35,
+      "root_retention": 0.47251508457350544,
+      "root_ground_length_mm": 18.333035412016113,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-right-belt/b2",
+      "height_mm": 45,
+      "root_retention": 0.3299404297908375,
+      "root_ground_length_mm": 8.941215924868605,
+      "root_ground_families": [
+        "A",
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-right-belt/b3",
+      "height_mm": 32,
+      "root_retention": 0.4097431077830754,
+      "root_ground_length_mm": 32.32319346961988,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-right-belt/b4",
+      "height_mm": 49,
+      "root_retention": 0.30190162939056386,
+      "root_ground_length_mm": 5.7170996952512985,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-right-belt/b5",
+      "height_mm": 40,
+      "root_retention": 0.42455759271375443,
+      "root_ground_length_mm": 8.42320458222263,
+      "root_ground_families": [
+        "A",
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-right-belt/b6",
+      "height_mm": 51,
+      "root_retention": 0.5289680518238704,
+      "root_ground_length_mm": 20.78879784682019,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-right-belt/b7",
+      "height_mm": 34,
+      "root_retention": 0.5198227416222998,
+      "root_ground_length_mm": 24.319057820336862,
+      "root_ground_families": [
+        "A",
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-right-belt/b8",
+      "height_mm": 40,
+      "root_retention": 0.46679530733059144,
+      "root_ground_length_mm": 25.391672475215657,
+      "root_ground_families": [
+        "A",
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-belt/c0",
+      "height_mm": 22,
+      "root_retention": 0.33679262663444276,
+      "root_ground_length_mm": 11.568773778794132,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-belt/c1",
+      "height_mm": 28,
+      "root_retention": 0.2826353640917573,
+      "root_ground_length_mm": 16.773986291641027,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-belt/c2",
+      "height_mm": 34,
+      "root_retention": 0.3455449667313686,
+      "root_ground_length_mm": 7.791320471479486,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-belt/c3",
+      "height_mm": 40,
+      "root_retention": 0.4000253400714189,
+      "root_ground_length_mm": 23.681233615662283,
+      "root_ground_families": [
+        "A",
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-belt/c4",
+      "height_mm": 31,
+      "root_retention": 0.45315201869057187,
+      "root_ground_length_mm": 35.73192806577052,
+      "root_ground_families": [
+        "A",
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-belt/c5",
+      "height_mm": 36,
+      "root_retention": 0.4880393396925087,
+      "root_ground_length_mm": 14.56680572178848,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-belt/c6",
+      "height_mm": 30,
+      "root_retention": 0.6101234263716891,
+      "root_ground_length_mm": 13.069690448595106,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-left-belt/c7",
+      "height_mm": 27,
+      "root_retention": 0.7764490451683309,
+      "root_ground_length_mm": 14.592348277874287,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-edge-growth/edge-main",
+      "height_mm": 42,
+      "root_retention": 0.6521329984066997,
+      "root_ground_length_mm": 17.487564011168608,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-edge-growth/low",
+      "height_mm": 24,
+      "root_retention": 0.6668885556869537,
+      "root_ground_length_mm": 7.046619529931094,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/middle-edge-growth/behind",
+      "height_mm": 30,
+      "root_retention": 0.6326565880168812,
+      "root_ground_length_mm": 10.767920977283238,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/upper-right-mixed/rear",
+      "height_mm": 25,
+      "root_retention": 0.397537592473088,
+      "root_ground_length_mm": 4.723313023557821,
+      "root_ground_families": [
+        "rock"
+      ]
+    },
+    {
+      "object_id": "v03/tree/upper-right-mixed/emergent",
+      "height_mm": 23,
+      "root_retention": 0.8906295301562261,
+      "root_ground_length_mm": 18.291854435354033,
+      "root_ground_families": [
+        "A",
+        "rock"
+      ]
+    },
+    {
+      "object_id": "v03/tree/upper-right-mixed/front",
+      "height_mm": 21,
+      "root_retention": 0.9573009638053009,
+      "root_ground_length_mm": 45.46876180400749,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f0",
+      "height_mm": 20,
+      "root_retention": 0.9993845337313004,
+      "root_ground_length_mm": 63.618342145328405,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f1",
+      "height_mm": 22,
+      "root_retention": 0.9999194466120346,
+      "root_ground_length_mm": 36.235771365953646,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f2",
+      "height_mm": 24,
+      "root_retention": 0.9963147833570952,
+      "root_ground_length_mm": 36.45229001071843,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f3",
+      "height_mm": 20,
+      "root_retention": 0.9900895834223422,
+      "root_ground_length_mm": 44.59733853997898,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f4",
+      "height_mm": 22,
+      "root_retention": 0.9874004446397372,
+      "root_ground_length_mm": 44.237408572110134,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f5",
+      "height_mm": 24,
+      "root_retention": 0.9677424335050197,
+      "root_ground_length_mm": 52.07868972357046,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f6",
+      "height_mm": 20,
+      "root_retention": 0.9326672182859638,
+      "root_ground_length_mm": 102.15615553750345,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f7",
+      "height_mm": 22,
+      "root_retention": 0.9159752083592945,
+      "root_ground_length_mm": 104.07051875393043,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f8",
+      "height_mm": 24,
+      "root_retention": 0.9147363245569804,
+      "root_ground_length_mm": 91.31657760820859,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f9",
+      "height_mm": 20,
+      "root_retention": 0.9595488190725281,
+      "root_ground_length_mm": 67.26519888526518,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-left-shoulder/f10",
+      "height_mm": 22,
+      "root_retention": 0.9702030553237189,
+      "root_ground_length_mm": 75.4247619608638,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g0",
+      "height_mm": 20,
+      "root_retention": 0.9500622092265235,
+      "root_ground_length_mm": 161.53741451584523,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g1",
+      "height_mm": 22,
+      "root_retention": 0.9610339956243416,
+      "root_ground_length_mm": 171.68881195787955,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g2",
+      "height_mm": 20,
+      "root_retention": 0.9926289030858424,
+      "root_ground_length_mm": 178.09214107263782,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g3",
+      "height_mm": 22,
+      "root_retention": 0.9868862239042796,
+      "root_ground_length_mm": 143.49254662685308,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g4",
+      "height_mm": 20,
+      "root_retention": 0.998538114836809,
+      "root_ground_length_mm": 132.2923445126833,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g5",
+      "height_mm": 22,
+      "root_retention": 0.9996607729965988,
+      "root_ground_length_mm": 86.38113736235476,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g6",
+      "height_mm": 20,
+      "root_retention": 0.9999610271893851,
+      "root_ground_length_mm": 87.00569170915766,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g7",
+      "height_mm": 22,
+      "root_retention": 0.9999652906978569,
+      "root_ground_length_mm": 104.50360101587002,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g8",
+      "height_mm": 20,
+      "root_retention": 0.9997632198875445,
+      "root_ground_length_mm": 107.16855212787982,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g9",
+      "height_mm": 22,
+      "root_retention": 0.9990782686763132,
+      "root_ground_length_mm": 73.769088660487,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g10",
+      "height_mm": 20,
+      "root_retention": 0.9998167630376649,
+      "root_ground_length_mm": 94.85911006387335,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-right-shoulder/g11",
+      "height_mm": 22,
+      "root_retention": 0.9996747923765117,
+      "root_ground_length_mm": 112.44601033818896,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-central-fragments/h0",
+      "height_mm": 20,
+      "root_retention": 0.7450682426644242,
+      "root_ground_length_mm": 25.898139748968553,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-central-fragments/h1",
+      "height_mm": 20,
+      "root_retention": 0.9005552495192157,
+      "root_ground_length_mm": 40.05921052676121,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-central-fragments/h2",
+      "height_mm": 20,
+      "root_retention": 0.9150130021549878,
+      "root_ground_length_mm": 45.172386547665596,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-central-fragments/h3",
+      "height_mm": 20,
+      "root_retention": 0.9130018604768859,
+      "root_ground_length_mm": 50.33677143811341,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-central-fragments/h4",
+      "height_mm": 20,
+      "root_retention": 0.8924716318824246,
+      "root_ground_length_mm": 46.52904217879431,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-central-fragments/h5",
+      "height_mm": 20,
+      "root_retention": 0.8231794737346612,
+      "root_ground_length_mm": 54.389373031363604,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/far-central-fragments/h6",
+      "height_mm": 20,
+      "root_retention": 0.8265255798682629,
+      "root_ground_length_mm": 25.439962802521897,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/left-step/c8",
+      "height_mm": 75,
+      "root_retention": 0.5725607075653073,
+      "root_ground_length_mm": 0,
+      "root_ground_families": []
+    },
+    {
+      "object_id": "v03/tree/left-step/c9",
+      "height_mm": 65,
+      "root_retention": 0.47637425991084964,
+      "root_ground_length_mm": 3.197278596739799,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/left-step/c10",
+      "height_mm": 45,
+      "root_retention": 0.41060664051416634,
+      "root_ground_length_mm": 0,
+      "root_ground_families": []
+    },
+    {
+      "object_id": "v03/tree/right-rise/b9",
+      "height_mm": 61,
+      "root_retention": 0.3605532134779713,
+      "root_ground_length_mm": 28.21547876171803,
+      "root_ground_families": [
+        "A",
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/right-rise/b10",
+      "height_mm": 45,
+      "root_retention": 0.36274515215840597,
+      "root_ground_length_mm": 9.76745724984902,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/right-rise/b11",
+      "height_mm": 26,
+      "root_retention": 0.43724184882662576,
+      "root_ground_length_mm": 16.39768078935866,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/right-link/rear",
+      "height_mm": 40,
+      "root_retention": 0.4178059597917003,
+      "root_ground_length_mm": 3.159999534639921,
+      "root_ground_families": [
+        "A"
+      ]
+    },
+    {
+      "object_id": "v03/tree/right-link/terminal",
+      "height_mm": 30,
+      "root_retention": 0.44961694514293915,
+      "root_ground_length_mm": 27.892378537267504,
+      "root_ground_families": [
+        "Soil"
+      ]
+    },
+    {
+      "object_id": "v03/tree/left-upper-link/last",
+      "height_mm": 45,
+      "root_retention": 0.7284914439664749,
+      "root_ground_length_mm": 9.052645244168112,
+      "root_ground_families": [
+        "A"
+      ]
+    }
+  ],
+  "roots_with_ground_within_7mm": 75,
+  "wash": {
+    "paths": 0,
+    "length_mm": 0,
+    "palette_length_mm": {},
+    "palette_length_percent": {},
+    "kind_length_mm": {},
+    "depth": {
+      "near": {
+        "length_mm": 0.0,
+        "paths": 0,
+        "palette_mm": {},
+        "mean_width_mm": 0.0,
+        "mean_display_alpha": 0.0
+      },
+      "middle": {
+        "length_mm": 0.0,
+        "paths": 0,
+        "palette_mm": {},
+        "mean_width_mm": 0.0,
+        "mean_display_alpha": 0.0
+      },
+      "far": {
+        "length_mm": 0.0,
+        "paths": 0,
+        "palette_mm": {},
+        "mean_width_mm": 0.0,
+        "mean_display_alpha": 0.0
+      }
+    },
+    "ratio_basis": "final centerline length; not pigment volume, wet area, saturation or measured opacity"
+  },
+  "ink_sha256": "743826daa0ab4e1e29c945a27c407c86e75ea20d8407c7ca7b5ad283092d332f"
+}

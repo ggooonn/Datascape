@@ -1,0 +1,38 @@
+{
+  "study":"Spring clustered placement and vector wash diagnostic v02",
+  "parent_commit":"f3a11745217a6ab976ac90819d5538462dae346b",
+  "seed":2026101802,
+  "baseline":"docs/baselines/spring_f2c_a025_v01/baseline_strokes.json.gz",
+  "baseline_sha256":"22bace23f0ae34f69873a282fec15c25a431d0e998216d995b1ab14c3f85fab3",
+  "legacy_policy":"Exclude every original V record from derived scenes; retain immutable original vectors and all deletion lineage. Generate new vegetation only with v10.",
+  "clusters":[
+    {"id":"near-left","center_mm":[160,814],"span_mm":118,"height_mm":130,"flow":1,"members":7,"clean_members":4,"rock_width_mm":138,"rock_height_mm":48,"rock_count":3,"soil_area_mm2":1500},
+    {"id":"near-right","center_mm":[480,774],"span_mm":105,"height_mm":115,"flow":-1,"members":7,"clean_members":4,"rock_width_mm":120,"rock_height_mm":42,"rock_count":3,"soil_area_mm2":1250},
+    {"id":"middle-left","center_mm":[125,653],"span_mm":82,"height_mm":75,"flow":1,"members":5,"clean_members":3,"rock_width_mm":82,"rock_height_mm":29,"rock_count":2,"soil_area_mm2":750},
+    {"id":"middle-right","center_mm":[435,628],"span_mm":76,"height_mm":65,"flow":-1,"members":5,"clean_members":3,"rock_width_mm":76,"rock_height_mm":27,"rock_count":2,"soil_area_mm2":650},
+    {"id":"upper-left","center_mm":[175,543],"span_mm":62,"height_mm":45,"flow":1,"members":4,"clean_members":2,"rock_width_mm":45,"rock_height_mm":21,"rock_count":1,"soil_area_mm2":320},
+    {"id":"upper-right","center_mm":[505,491],"span_mm":44,"height_mm":32,"flow":0,"members":3,"clean_members":2,"rock_width_mm":28,"rock_height_mm":15,"rock_count":1,"soil_area_mm2":180}
+  ],
+  "member_template":[
+    {"key":"anchor","u":0,"v_mm":0,"size":1,"form":"P","posture":"redirected","role":"large anchor"},
+    {"key":"rear-companion","u":-0.28,"v_mm":-8,"size":0.72,"form":"B","posture":"upright","role":"medium rear companion"},
+    {"key":"front-support","u":0.18,"v_mm":8,"size":0.38,"form":"U","posture":"stooped","role":"small front support"},
+    {"key":"serial-edge","u":0.43,"v_mm":1,"size":0.50,"form":"B","posture":"redirected","role":"serial shoulder"},
+    {"key":"outer-small","u":-0.48,"v_mm":3,"size":0.28,"form":"U","posture":"upright","role":"outer dissolution"},
+    {"key":"inner-middle","u":-0.08,"v_mm":-13,"size":0.55,"form":"B","posture":"stooped","role":"dense center"},
+    {"key":"inner-small","u":0.36,"v_mm":12,"size":0.23,"form":"U","posture":"redirected","role":"front serial end"}
+  ],
+  "palette_source":"configs/palettes/palette_20.yaml",
+  "spring_active_target_percent":{"C1":28,"C2":22,"A5":10,"C3":6,"C4":4,"A3":10,"A4":6,"D1":7,"D4":3,"B2":1,"D5":2,"B4":1},
+  "object_palette_weights":{
+    "vegetation":{"C1":38,"C2":34,"A5":10,"C3":8,"C4":4,"D1":4,"B4":2},
+    "rock":{"A3":35,"A4":25,"A5":18,"D4":8,"D5":7,"B2":5,"C4":2},
+    "Soil":{"A4":30,"D1":25,"D4":15,"D5":15,"A5":10,"C2":5},
+    "terrain":{"C1":24,"C2":20,"A5":15,"A3":18,"A4":8,"D1":8,"C4":3,"C3":2,"D4":1,"B2":1}
+  },
+  "depth_modulation":{"source_forward_range_m":[250,2550],"density_near_far":[1,0.36],"width_near_far":[1.7,0.85],"display_alpha_near_far":[0.28,0.12],"note":"Continuous source-forward-distance modulation; display alpha is not calibrated dilution."},
+  "color_modes":{"restrained":{"candidate_rows":1,"cross_layers":1,"density_gain":0.65},"layered":{"candidate_rows":2,"cross_layers":2,"density_gain":1.0}},
+  "corridors":[{"id":"central-middle","vertices_mm":[[270,535],[308,535],[347,590],[326,637],[301,669],[282,655],[313,596]],"evidence":"Preserved v01 bounded pictorial opening; no water/path claim"},{"id":"central-foreground","vertices_mm":[[279,704],[314,704],[340,770],[324,865],[283,865],[291,790]],"evidence":"Bounded continuation of existing open passage for new placement/color only; no baseline terrain deletion"}],
+  "publish":false,
+  "production":false
+}

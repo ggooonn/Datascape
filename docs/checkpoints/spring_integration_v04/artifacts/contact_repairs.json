@@ -1,0 +1,72 @@
+[
+  {
+    "tree_id": "v03/tree/middle-left-belt/c0",
+    "soil_id": "v03/tree/middle-left-belt/c0/root-contact-Soil",
+    "before_ground_length_within_7mm": 0,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  },
+  {
+    "tree_id": "v03/tree/middle-left-belt/c1",
+    "soil_id": "v03/tree/middle-left-belt/c1/root-contact-Soil",
+    "before_ground_length_within_7mm": 0,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  },
+  {
+    "tree_id": "v03/tree/near-left-grove/dissolving-end",
+    "soil_id": "v03/tree/near-left-grove/dissolving-end/root-contact-Soil",
+    "before_ground_length_within_7mm": 0.5267452036749566,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  },
+  {
+    "tree_id": "v03/tree/near-left-grove/leaning-companion",
+    "soil_id": "v03/tree/near-left-grove/leaning-companion/root-contact-Soil",
+    "before_ground_length_within_7mm": 0,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  },
+  {
+    "tree_id": "v03/tree/near-left-grove/rear-crown",
+    "soil_id": "v03/tree/near-left-grove/rear-crown/root-contact-Soil",
+    "before_ground_length_within_7mm": 0,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  },
+  {
+    "tree_id": "v03/tree/near-right-shrubs/small-front",
+    "soil_id": "v03/tree/near-right-shrubs/small-front/root-contact-Soil",
+    "before_ground_length_within_7mm": 0,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  },
+  {
+    "tree_id": "v03/tree/right-link/terminal",
+    "soil_id": "v03/tree/right-link/terminal/root-contact-Soil",
+    "before_ground_length_within_7mm": 0,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  },
+  {
+    "tree_id": "v03/tree/right-rise/b10",
+    "soil_id": "v03/tree/right-rise/b10/root-contact-Soil",
+    "before_ground_length_within_7mm": 0,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  },
+  {
+    "tree_id": "v03/tree/right-rise/b11",
+    "soil_id": "v03/tree/right-rise/b11/root-contact-Soil",
+    "before_ground_length_within_7mm": 0,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  },
+  {
+    "tree_id": "v03/tree/right-rise/b9",
+    "soil_id": "v03/tree/right-rise/b9/root-contact-Soil",
+    "before_ground_length_within_7mm": 0.963826072522281,
+    "exposed_root": true,
+    "method": "native catalog patch on actual F2 support; no terrain/ink source edit"
+  }
+]
