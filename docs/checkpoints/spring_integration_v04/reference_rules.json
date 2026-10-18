@@ -1,0 +1,69 @@
+[
+  {
+    "id": "R1",
+    "files": [
+      "image(20261017-200132).png",
+      "image(20261017-200148).png"
+    ],
+    "observed": "Major and subordinate groves form an unequal larger flow.",
+    "rule": "Separate individual scale, group extent, member count and between-group continuity.",
+    "application": [
+      "left-ascending-grove",
+      "right-rock-counterflow"
+    ]
+  },
+  {
+    "id": "R2",
+    "files": [
+      "image(20261017-200229).png"
+    ],
+    "observed": "A foreground rock body hides trunks while rear crowns continue the composition.",
+    "rule": "Larger native B formation, reciprocal ranks and actual clipping.",
+    "application": [
+      "near-right-exposure",
+      "right-rise"
+    ]
+  },
+  {
+    "id": "R3",
+    "files": [
+      "image(20261017-200222).png",
+      "image(20261017-200234).png"
+    ],
+    "observed": "Selected distant peaks retain color; adjacent ink and mist remain restrained.",
+    "rule": "D-linked source-space A emphasis at two masses; lower other far color.",
+    "application": [
+      "D-terminal-000003",
+      "D-terminal-000004",
+      "D-terminal-000000",
+      "D-terminal-000012"
+    ]
+  },
+  {
+    "id": "R4",
+    "files": [
+      "image(20261017-200148).png",
+      "image(20261017-200234).png"
+    ],
+    "observed": "Masses dissolve and reconnect through open intervals.",
+    "rule": "Open macro edges and actual carrier selection/shortening through mist.",
+    "application": [
+      "left-upper-link",
+      "middle-right-belt",
+      "central-middle",
+      "central-foreground"
+    ]
+  },
+  {
+    "id": "R5",
+    "files": [
+      "image(20261017-200229).png"
+    ],
+    "observed": "Color follows foliage growth and longitudinal trunks without replacing ink.",
+    "rule": "Actual leaf/branch-supported gestures; longitudinal paths within paired contours.",
+    "application": [
+      "near-left-grove",
+      "near-right-exposure"
+    ]
+  }
+]

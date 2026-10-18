@@ -1,0 +1,2 @@
+# Preserve original archived CSV bytes, including their standard CRLF endings.
+artifacts/*.csv -text whitespace=cr-at-eol

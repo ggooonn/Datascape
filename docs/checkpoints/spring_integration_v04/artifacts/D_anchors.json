@@ -1,0 +1,3402 @@
+{
+  "anchors": [
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        414.131,
+        265.323
+      ],
+      "attached_xy_mm": [
+        414.131,
+        265.323
+      ],
+      "source_xyz_m": [
+        318739.9055488463,
+        4172425.9474521987,
+        404.230561126356
+      ],
+      "source_forward_m": 7603.537824496799,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 3348
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        415.89461517762305,
+        264.3826523169319
+      ],
+      "attached_xy_mm": [
+        415.89461517762305,
+        264.3826523169319
+      ],
+      "source_xyz_m": [
+        318765.25696384686,
+        4172433.4015108733,
+        408.3006405603408
+      ],
+      "source_forward_m": 7582.859709385881,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 3349
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        417.5920666752899,
+        263.33264173006637
+      ],
+      "attached_xy_mm": [
+        417.5920666752899,
+        263.33264173006637
+      ],
+      "source_xyz_m": [
+        318779.59469549,
+        4172446.497589505,
+        412.2731764239519
+      ],
+      "source_forward_m": 7574.509166215464,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 33397
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        419.13813127745686,
+        262.07070175343546
+      ],
+      "attached_xy_mm": [
+        419.13813127745686,
+        262.07070175343546
+      ],
+      "source_xyz_m": [
+        318789.3225918318,
+        4172460.4278892735,
+        416.8020756927638
+      ],
+      "source_forward_m": 7570.743253153623,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 3236
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        420.58068932796454,
+        260.68736630496517
+      ],
+      "attached_xy_mm": [
+        420.58068932796454,
+        260.68736630496517
+      ],
+      "source_xyz_m": [
+        318790.5836055121,
+        4172478.1574528213,
+        421.38997324774084
+      ],
+      "source_forward_m": 7576.251651996463,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 33285
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        422.0920632890624,
+        259.3847314164419
+      ],
+      "attached_xy_mm": [
+        422.0920632890624,
+        259.3847314164419
+      ],
+      "source_xyz_m": [
+        318791.6080682229,
+        4172496.9267538697,
+        425.67391615267974
+      ],
+      "source_forward_m": 7582.3707313564455,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 33174
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        423.739006915868,
+        258.2531533893103
+      ],
+      "attached_xy_mm": [
+        423.739006915868,
+        258.2531533893103
+      ],
+      "source_xyz_m": [
+        318793.07082326175,
+        4172517.2066398202,
+        429.35775054505916
+      ],
+      "source_forward_m": 7588.652638144507,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 33174
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        425.25166079792103,
+        256.94987761704255
+      ],
+      "attached_xy_mm": [
+        425.25166079792103,
+        256.94987761704255
+      ],
+      "source_xyz_m": [
+        318798.4095474918,
+        4172533.393768811,
+        433.8382311124804
+      ],
+      "source_forward_m": 7589.8026606494905,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2904
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        426.6868296470878,
+        255.55907754269168
+      ],
+      "attached_xy_mm": [
+        426.6868296470878,
+        255.55907754269168
+      ],
+      "source_xyz_m": [
+        318806.0161819597,
+        4172547.181469915,
+        438.7400950669038
+      ],
+      "source_forward_m": 7587.948152003595,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2904
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        428.1277255381431,
+        254.17463266859818
+      ],
+      "attached_xy_mm": [
+        428.1277255381431,
+        254.17463266859818
+      ],
+      "source_xyz_m": [
+        318811.87395603984,
+        4172562.1274316832,
+        443.5393442495371
+      ],
+      "source_forward_m": 7588.149937196657,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32956
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        429.8637524298163,
+        253.2316005276543
+      ],
+      "attached_xy_mm": [
+        429.8637524298163,
+        253.2316005276543
+      ],
+      "source_xyz_m": [
+        318820.89919941465,
+        4172578.918080215,
+        446.8927840436956
+      ],
+      "source_forward_m": 7586.112098385685,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32956
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        431.7043535484074,
+        252.45999540777512
+      ],
+      "attached_xy_mm": [
+        431.7043535484074,
+        252.45999540777512
+      ],
+      "source_xyz_m": [
+        318826.6920547572,
+        4172599.0814947397,
+        449.4851747680679
+      ],
+      "source_forward_m": 7588.33880673747,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2688
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        433.43974942562113,
+        251.4717103368436
+      ],
+      "attached_xy_mm": [
+        433.43974942562113,
+        251.4717103368436
+      ],
+      "source_xyz_m": [
+        318829.47709167347,
+        4172619.7611807515,
+        452.71371956602934
+      ],
+      "source_forward_m": 7593.546328441252,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2582
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        434.9858946440177,
+        250.20713793350686
+      ],
+      "attached_xy_mm": [
+        434.9858946440177,
+        250.20713793350686
+      ],
+      "source_xyz_m": [
+        318828.26922639576,
+        4172640.568151768,
+        456.7564084695303
+      ],
+      "source_forward_m": 7602.500745651749,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2582
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        436.4298497348195,
+        248.82526030686594
+      ],
+      "attached_xy_mm": [
+        436.4298497348195,
+        248.82526030686594
+      ],
+      "source_xyz_m": [
+        318831.302860372,
+        4172657.3777953037,
+        461.41784316924293
+      ],
+      "source_forward_m": 7606.020593943935,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2477
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        437.9277436182114,
+        247.50448949305695
+      ],
+      "attached_xy_mm": [
+        437.9277436182114,
+        247.50448949305695
+      ],
+      "source_xyz_m": [
+        318835.62770383834,
+        4172674.0840428676,
+        465.9155394618298
+      ],
+      "source_forward_m": 7608.305349040838,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2477
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        439.708042152321,
+        246.61575435142868
+      ],
+      "attached_xy_mm": [
+        439.708042152321,
+        246.61575435142868
+      ],
+      "source_xyz_m": [
+        318847.68807026243,
+        4172689.5246313983,
+        469.20921233627365
+      ],
+      "source_forward_m": 7602.947415005042,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32534
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        441.66013194460845,
+        246.19398133676017
+      ],
+      "attached_xy_mm": [
+        441.66013194460845,
+        246.19398133676017
+      ],
+      "source_xyz_m": [
+        318862.3527477746,
+        4172705.4859231454,
+        470.96848148338717
+      ],
+      "source_forward_m": 7595.372973512259,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32432
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        443.49312718108104,
+        245.41104078195497
+      ],
+      "attached_xy_mm": [
+        443.49312718108104,
+        245.41104078195497
+      ],
+      "source_xyz_m": [
+        318858.2444417238,
+        4172732.0314573995,
+        473.1502840491154
+      ],
+      "source_forward_m": 7609.175336794291,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2271
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        445.2729992965357,
+        244.537088380125
+      ],
+      "attached_xy_mm": [
+        445.2729992965357,
+        244.537088380125
+      ],
+      "source_xyz_m": [
+        318813.09928615123,
+        4172784.669794219,
+        473.8087121988395
+      ],
+      "source_forward_m": 7670.819603781601,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2066
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        447.22200065135723,
+        244.73948130535672
+      ],
+      "attached_xy_mm": [
+        447.22200065135723,
+        244.73948130535672
+      ],
+      "source_xyz_m": [
+        318805.6317000061,
+        4172815.2389252246,
+        472.4020366178688
+      ],
+      "source_forward_m": 7689.2491542981425,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1966
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        448.75588828997104,
+        246.00537979092462
+      ],
+      "attached_xy_mm": [
+        448.75588828997104,
+        246.00537979092462
+      ],
+      "source_xyz_m": [
+        318815.5498432926,
+        4172828.9811593173,
+        468.15972960181944
+      ],
+      "source_forward_m": 7685.236177823252,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32028
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        450.2003915418854,
+        247.38659826206174
+      ],
+      "attached_xy_mm": [
+        450.2003915418854,
+        247.38659826206174
+      ],
+      "source_xyz_m": [
+        318826.53643663554,
+        4172840.8330687964,
+        463.5816316483568
+      ],
+      "source_forward_m": 7679.521549130513,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1868
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        451.7863268080933,
+        248.5987645785677
+      ],
+      "attached_xy_mm": [
+        451.7863268080933,
+        248.5987645785677
+      ],
+      "source_xyz_m": [
+        318835.17068281106,
+        4172856.050626703,
+        459.45986348641384
+      ],
+      "source_forward_m": 7677.253531071638,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31931
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        453.5088042163266,
+        249.60981262443474
+      ],
+      "attached_xy_mm": [
+        453.5088042163266,
+        249.60981262443474
+      ],
+      "source_xyz_m": [
+        318832.85877825075,
+        4172880.3848668174,
+        455.51751597596956
+      ],
+      "source_forward_m": 7688.559008819939,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1770
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        455.22357008253266,
+        250.62829797207186
+      ],
+      "attached_xy_mm": [
+        455.22357008253266,
+        250.62829797207186
+      ],
+      "source_xyz_m": [
+        318839.22896845685,
+        4172898.844309754,
+        451.9407754871074
+      ],
+      "source_forward_m": 7689.609203095383,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31834
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        456.71180563309446,
+        251.9591116788902
+      ],
+      "attached_xy_mm": [
+        456.71180563309446,
+        251.9591116788902
+      ],
+      "source_xyz_m": [
+        318849.1892292375,
+        4172911.9122391297,
+        447.4841743225259
+      ],
+      "source_forward_m": 7685.3032805918065,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1673
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        458.1269023572029,
+        253.3705236944757
+      ],
+      "attached_xy_mm": [
+        458.1269023572029,
+        253.3705236944757
+      ],
+      "source_xyz_m": [
+        318862.4253421476,
+        4172921.7610372026,
+        442.9100559506516
+      ],
+      "source_forward_m": 7676.7504020674005,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31739
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        459.5413562970718,
+        254.78258326038815
+      ],
+      "attached_xy_mm": [
+        459.5413562970718,
+        254.78258326038815
+      ],
+      "source_xyz_m": [
+        318874.7342276055,
+        4172932.1949891835,
+        438.29314497763414
+      ],
+      "source_forward_m": 7669.27684937585,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31739
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        460.95676724518603,
+        256.1936834909901
+      ],
+      "attached_xy_mm": [
+        460.95676724518603,
+        256.1936834909901
+      ],
+      "source_xyz_m": [
+        318887.38546030666,
+        4172942.394104397,
+        433.69541978873156
+      ],
+      "source_forward_m": 7661.397716901159,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1579
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        462.37126297416836,
+        257.60570119245574
+      ],
+      "attached_xy_mm": [
+        462.37126297416836,
+        257.60570119245574
+      ],
+      "source_xyz_m": [
+        318900.1430840188,
+        4172952.440147394,
+        429.1014482093142
+      ],
+      "source_forward_m": 7653.362381653425,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31645
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        463.80113239849106,
+        259.00172467229
+      ],
+      "attached_xy_mm": [
+        463.80113239849106,
+        259.00172467229
+      ],
+      "source_xyz_m": [
+        318912.26682694606,
+        4172963.123157859,
+        424.5310525340603
+      ],
+      "source_forward_m": 7646.154132339126,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31645
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        465.3239655955899,
+        260.29328534414384
+      ],
+      "attached_xy_mm": [
+        465.3239655955899,
+        260.29328534414384
+      ],
+      "source_xyz_m": [
+        318930.6856579775,
+        4172970.635494063,
+        420.5956704186042
+      ],
+      "source_forward_m": 7631.920201550037,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1485
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        467.03807043518646,
+        261.31600234177205
+      ],
+      "attached_xy_mm": [
+        467.03807043518646,
+        261.31600234177205
+      ],
+      "source_xyz_m": [
+        318949.6014691285,
+        4172980.291307892,
+        417.5811230244965
+      ],
+      "source_forward_m": 7618.033064875287,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1392
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        468.8633408898117,
+        262.1224113332254
+      ],
+      "attached_xy_mm": [
+        468.8633408898117,
+        262.1224113332254
+      ],
+      "source_xyz_m": [
+        318965.95826008165,
+        4172993.1111247726,
+        415.18164394748146
+      ],
+      "source_forward_m": 7607.70806209724,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31553
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        470.76529036293107,
+        262.73583406075
+      ],
+      "attached_xy_mm": [
+        470.76529036293107,
+        262.73583406075
+      ],
+      "source_xyz_m": [
+        318982.9618780884,
+        4173006.443695792,
+        413.469049776651
+      ],
+      "source_forward_m": 7596.976941243718,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31461
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        472.65608341559056,
+        263.3835176797069
+      ],
+      "attached_xy_mm": [
+        472.65608341559056,
+        263.3835176797069
+      ],
+      "source_xyz_m": [
+        319002.7977635439,
+        4173017.5878765997,
+        411.77249272062096
+      ],
+      "source_forward_m": 7582.797949844729,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31461
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        474.51286956998354,
+        264.1177138460387
+      ],
+      "attached_xy_mm": [
+        474.51286956998354,
+        264.1177138460387
+      ],
+      "source_xyz_m": [
+        319015.55282444693,
+        4173033.1603772407,
+        409.45616267334964
+      ],
+      "source_forward_m": 7576.846136960718,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1301
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        476.2841521910039,
+        265.04181807062974
+      ],
+      "attached_xy_mm": [
+        476.2841521910039,
+        265.04181807062974
+      ],
+      "source_xyz_m": [
+        319030.39328947983,
+        4173046.1161760553,
+        406.5941725902385
+      ],
+      "source_forward_m": 7567.97704293695,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31370
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        477.9062640651632,
+        266.19648569706675
+      ],
+      "attached_xy_mm": [
+        477.9062640651632,
+        266.19648569706675
+      ],
+      "source_xyz_m": [
+        319048.50681102223,
+        4173054.6884698127,
+        403.1166302463721
+      ],
+      "source_forward_m": 7554.42510393893,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1210
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        479.3440805330584,
+        267.58439827247304
+      ],
+      "attached_xy_mm": [
+        479.3440805330584,
+        267.58439827247304
+      ],
+      "source_xyz_m": [
+        319068.73087516706,
+        4173059.2774714003,
+        398.9667534057554
+      ],
+      "source_forward_m": 7537.417966605172,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1211
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        480.76874182672253,
+        268.98615884827655
+      ],
+      "attached_xy_mm": [
+        480.76874182672253,
+        268.98615884827655
+      ],
+      "source_xyz_m": [
+        319088.7431819237,
+        4173063.741092159,
+        394.76569714429047
+      ],
+      "source_forward_m": 7520.559782235715,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1211
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        482.20036613940675,
+        270.3805050403145
+      ],
+      "attached_xy_mm": [
+        482.20036613940675,
+        270.3805050403145
+      ],
+      "source_xyz_m": [
+        319110.5042787095,
+        4173066.963758468,
+        390.6760782592875
+      ],
+      "source_forward_m": 7501.614228458744,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31282
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        483.77168885791355,
+        271.6128603012668
+      ],
+      "attached_xy_mm": [
+        483.77168885791355,
+        271.6128603012668
+      ],
+      "source_xyz_m": [
+        319135.33615047025,
+        4173069.720831518,
+        387.27219451539565
+      ],
+      "source_forward_m": 7479.648623719106,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31283
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        485.5131158288423,
+        272.5900264199648
+      ],
+      "attached_xy_mm": [
+        485.5131158288423,
+        272.5900264199648
+      ],
+      "source_xyz_m": [
+        319161.3685730067,
+        4173073.7332384475,
+        384.7843441026114
+      ],
+      "source_forward_m": 7457.043579818958,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1123
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        487.2863580467573,
+        273.5120910700804
+      ],
+      "attached_xy_mm": [
+        487.2863580467573,
+        273.5120910700804
+      ],
+      "source_xyz_m": [
+        319182.64559307444,
+        4173081.522339326,
+        382.25769708581635
+      ],
+      "source_forward_m": 7440.2660908340995,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31284
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        489.0391188188701,
+        274.4701054070137
+      ],
+      "attached_xy_mm": [
+        489.0391188188701,
+        274.4701054070137
+      ],
+      "source_xyz_m": [
+        319206.8524916991,
+        4173086.7589507625,
+        379.7575393859546
+      ],
+      "source_forward_m": 7419.8131937422995,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31285
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        490.7012885491542,
+        275.57933050858867
+      ],
+      "attached_xy_mm": [
+        490.7012885491542,
+        275.57933050858867
+      ],
+      "source_xyz_m": [
+        319229.61510977615,
+        4173091.784270579,
+        376.6855692706657
+      ],
+      "source_forward_m": 7400.6186877413,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1125
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        492.4403261508905,
+        276.56223233794753
+      ],
+      "attached_xy_mm": [
+        492.4403261508905,
+        276.56223233794753
+      ],
+      "source_xyz_m": [
+        319250.67308240756,
+        4173098.975401078,
+        373.95679305479626
+      ],
+      "source_forward_m": 7383.818937780148,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31197
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        494.17299691341185,
+        277.55674804120366
+      ],
+      "attached_xy_mm": [
+        494.17299691341185,
+        277.55674804120366
+      ],
+      "source_xyz_m": [
+        319270.10025737376,
+        4173107.2076088395,
+        371.11297566482534
+      ],
+      "source_forward_m": 7368.921981368509,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31197
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        495.8270536253426,
+        278.6778966074486
+      ],
+      "attached_xy_mm": [
+        495.8270536253426,
+        278.6778966074486
+      ],
+      "source_xyz_m": [
+        319290.0251097806,
+        4173113.9320275406,
+        367.87375359562327
+      ],
+      "source_forward_m": 7352.996182512716,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1037
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        497.505244577586,
+        279.76284245616966
+      ],
+      "attached_xy_mm": [
+        497.505244577586,
+        279.76284245616966
+      ],
+      "source_xyz_m": [
+        319308.46994308516,
+        4173122.0317236776,
+        364.68451967797057
+      ],
+      "source_forward_m": 7338.959351071775,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1038
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        499.159497851986,
+        280.88446563408286
+      ],
+      "attached_xy_mm": [
+        499.159497851986,
+        280.88446563408286
+      ],
+      "source_xyz_m": [
+        319322.6302931878,
+        4173132.9401529194,
+        361.1623002565569
+      ],
+      "source_forward_m": 7329.949308460506,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31110
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        500.7075084146131,
+        282.1391557928337
+      ],
+      "attached_xy_mm": [
+        500.7075084146131,
+        282.1391557928337
+      ],
+      "source_xyz_m": [
+        319337.1674327589,
+        4173142.1653879234,
+        357.21886302261316
+      ],
+      "source_forward_m": 7319.956358230298,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 950
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        502.04800669023257,
+        283.62144549170773
+      ],
+      "attached_xy_mm": [
+        502.04800669023257,
+        283.62144549170773
+      ],
+      "source_xyz_m": [
+        319356.57063880254,
+        4173144.8999288464,
+        352.7753909419629
+      ],
+      "source_forward_m": 7303.011300053906,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 31111
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        503.5162665377479,
+        284.9744552642128
+      ],
+      "attached_xy_mm": [
+        503.5162665377479,
+        284.9744552642128
+      ],
+      "source_xyz_m": [
+        319378.1295450362,
+        4173147.6025459166,
+        348.8678095628471
+      ],
+      "source_forward_m": 7284.057212814416,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 951
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        505.0408809319866,
+        286.2667953249067
+      ],
+      "attached_xy_mm": [
+        505.0408809319866,
+        286.2667953249067
+      ],
+      "source_xyz_m": [
+        319400.0675604305,
+        4173150.667673523,
+        345.18279571444197
+      ],
+      "source_forward_m": 7264.888438607156,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 952
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        506.6101185282894,
+        287.5033263588537
+      ],
+      "attached_xy_mm": [
+        506.6101185282894,
+        287.5033263588537
+      ],
+      "source_xyz_m": [
+        319422.19898882904,
+        4173154.0563498912,
+        341.69743360196964
+      ],
+      "source_forward_m": 7245.6623312818265,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 952
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        508.27470391439414,
+        288.6089409731318
+      ],
+      "attached_xy_mm": [
+        508.27470391439414,
+        288.6089409731318
+      ],
+      "source_xyz_m": [
+        319431.8089412822,
+        4173168.2330067814,
+        338.00892114210734
+      ],
+      "source_forward_m": 7242.098452541285,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 865
+    },
+    {
+      "source_id": "D-terminal-000000",
+      "source_event": [
+        5
+      ],
+      "ink_xy_mm": [
+        509.917,
+        289.748
+      ],
+      "attached_xy_mm": [
+        509.917,
+        289.748
+      ],
+      "source_xyz_m": [
+        319439.57017696445,
+        4173183.5312130833,
+        334.1146032163807
+      ],
+      "source_forward_m": 7240.669548354713,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 865
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        277.554,
+        242.842
+      ],
+      "attached_xy_mm": [
+        277.554,
+        242.842
+      ],
+      "source_xyz_m": [
+        321840.2580375774,
+        4169650.0979876453,
+        751.7664281680692
+      ],
+      "source_forward_m": 3686.092605072856,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 48424
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        278.98748325634773,
+        244.23408601597865
+      ],
+      "attached_xy_mm": [
+        278.98748325634773,
+        244.23408601597865
+      ],
+      "source_xyz_m": [
+        321844.8004006292,
+        4169657.4479384287,
+        747.1071849567127
+      ],
+      "source_forward_m": 3684.65246796695,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 48424
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        280.4272798136364,
+        245.61912320773155
+      ],
+      "attached_xy_mm": [
+        280.4272798136364,
+        245.61912320773155
+      ],
+      "source_xyz_m": [
+        321849.32662263466,
+        4169664.843661201,
+        742.4684876495533
+      ],
+      "source_forward_m": 3683.244520448444,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 48424
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        282.01795840636896,
+        246.8192994690502
+      ],
+      "attached_xy_mm": [
+        282.01795840636896,
+        246.8192994690502
+      ],
+      "source_xyz_m": [
+        321853.42210909346,
+        4169673.3499685763,
+        738.3719197356281
+      ],
+      "source_forward_m": 3682.6538225613976,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 48424
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        283.9946093281472,
+        247.04614351890388
+      ],
+      "attached_xy_mm": [
+        283.9946093281472,
+        247.04614351890388
+      ],
+      "source_xyz_m": [
+        321839.3439526212,
+        4169691.201750458,
+        735.1853381221658
+      ],
+      "source_forward_m": 3702.4182154995874,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 18055
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        285.95245887214753,
+        246.8781077137099
+      ],
+      "attached_xy_mm": [
+        285.95245887214753,
+        246.8781077137099
+      ],
+      "source_xyz_m": [
+        321829.22802736424,
+        4169707.565914338,
+        733.8943526377991
+      ],
+      "source_forward_m": 3717.951853130233,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 48009
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        287.4275774994773,
+        245.5391451447434
+      ],
+      "attached_xy_mm": [
+        287.4275774994773,
+        245.5391451447434
+      ],
+      "source_xyz_m": [
+        321707.317889408,
+        4169764.1904565142,
+        722.8102434340003
+      ],
+      "source_forward_m": 3852.211130189952,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17638
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        288.56798931668385,
+        243.91238204634502
+      ],
+      "attached_xy_mm": [
+        288.56798931668385,
+        243.91238204634502
+      ],
+      "source_xyz_m": [
+        321708.31391932175,
+        4169771.305959345,
+        728.2578534605466
+      ],
+      "source_forward_m": 3853.967972889609,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17433
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        289.5072868413505,
+        242.149426317299
+      ],
+      "attached_xy_mm": [
+        289.5072868413505,
+        242.149426317299
+      ],
+      "source_xyz_m": [
+        321708.705343659,
+        4169777.34927936,
+        734.1615647035937
+      ],
+      "source_forward_m": 3855.8811512191082,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17433
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        290.40050618576856,
+        240.36198762846294
+      ],
+      "attached_xy_mm": [
+        290.40050618576856,
+        240.36198762846294
+      ],
+      "source_xyz_m": [
+        321708.6496962101,
+        4169783.265353871,
+        740.1084453881068
+      ],
+      "source_forward_m": 3858.160571922491,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17433
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        291.2938958817506,
+        238.57463407145397
+      ],
+      "attached_xy_mm": [
+        291.2938958817506,
+        238.57463407145397
+      ],
+      "source_xyz_m": [
+        321708.59568083886,
+        4169789.1819070177,
+        746.0551826148638
+      ],
+      "source_forward_m": 3860.438660938611,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17433
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        292.1873449158928,
+        236.7873101682144
+      ],
+      "attached_xy_mm": [
+        292.1873449158928,
+        236.7873101682144
+      ],
+      "source_xyz_m": [
+        321708.31205267453,
+        4169795.189629768,
+        751.9735665563611
+      ],
+      "source_forward_m": 3862.963792247127,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 47390
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        293.0808602741069,
+        235.00001940989753
+      ],
+      "attached_xy_mm": [
+        293.0808602741069,
+        235.00001940989753
+      ],
+      "source_xyz_m": [
+        321685.83078308165,
+        4169809.9797729314,
+        755.1930492526253
+      ],
+      "source_forward_m": 3889.3597497729734,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17228
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        293.97063132716863,
+        233.21093379127095
+      ],
+      "attached_xy_mm": [
+        293.97063132716863,
+        233.21093379127095
+      ],
+      "source_xyz_m": [
+        321685.15652480995,
+        4169816.1791414195,
+        761.0730171708523
+      ],
+      "source_forward_m": 3892.3189245235358,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17228
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        294.80182172949486,
+        231.3938208752649
+      ],
+      "attached_xy_mm": [
+        294.80182172949486,
+        231.3938208752649
+      ],
+      "source_xyz_m": [
+        321683.83911267784,
+        4169822.2451615534,
+        766.9888969213144
+      ],
+      "source_forward_m": 3895.8236908336758,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17228
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        295.599584760826,
+        229.56185646770132
+      ],
+      "attached_xy_mm": [
+        295.599584760826,
+        229.56185646770132
+      ],
+      "source_xyz_m": [
+        321678.5845328583,
+        4169829.6667648414,
+        772.4879515469936
+      ],
+      "source_forward_m": 3903.486272429323,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17025
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        296.3905899727956,
+        227.72689362939235
+      ],
+      "attached_xy_mm": [
+        296.3905899727956,
+        227.72689362939235
+      ],
+      "source_xyz_m": [
+        321675.707489611,
+        4169836.1340079466,
+        778.2887358343138
+      ],
+      "source_forward_m": 3908.586948974488,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17025
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        297.24458099787165,
+        225.92150577880523
+      ],
+      "attached_xy_mm": [
+        297.24458099787165,
+        225.92150577880523
+      ],
+      "source_xyz_m": [
+        321669.3390718731,
+        4169844.3874555747,
+        783.5529743061212
+      ],
+      "source_forward_m": 3917.594627894118,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 47185
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        298.3795208007608,
+        224.28946475520027
+      ],
+      "attached_xy_mm": [
+        298.3795208007608,
+        224.28946475520027
+      ],
+      "source_xyz_m": [
+        321669.39231214346,
+        4169851.979776559,
+        788.9070759690588
+      ],
+      "source_forward_m": 3920.4044160227554,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 17024
+    },
+    {
+      "source_id": "D-terminal-000003",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        300.0,
+        223.123
+      ],
+      "attached_xy_mm": [
+        300.0,
+        223.123
+      ],
+      "source_xyz_m": [
+        321667.5583724345,
+        4169863.625596636,
+        792.2819782369854
+      ],
+      "source_forward_m": 3926.488921275659,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46983
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        300.0,
+        223.123
+      ],
+      "attached_xy_mm": [
+        300.0,
+        223.123
+      ],
+      "source_xyz_m": [
+        321667.5583724345,
+        4169863.625596636,
+        792.2819782369854
+      ],
+      "source_forward_m": 3926.488921275659,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46983
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        301.59877684965255,
+        223.87472675175738
+      ],
+      "attached_xy_mm": [
+        301.59877684965255,
+        223.87472675175738
+      ],
+      "source_xyz_m": [
+        321677.15454491536,
+        4169870.4885130255,
+        790.3713838265475
+      ],
+      "source_forward_m": 3920.183606574883,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 16823
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        302.8652372089791,
+        225.4011234657485
+      ],
+      "attached_xy_mm": [
+        302.8652372089791,
+        225.4011234657485
+      ],
+      "source_xyz_m": [
+        321686.35165089613,
+        4169875.207090347,
+        785.8242800827094
+      ],
+      "source_forward_m": 3913.4404677003986,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 16823
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        303.93595440085574,
+        227.07246407742474
+      ],
+      "attached_xy_mm": [
+        303.93595440085574,
+        227.07246407742474
+      ],
+      "source_xyz_m": [
+        321696.1008762647,
+        4169878.3800685927,
+        780.8956908524669
+      ],
+      "source_forward_m": 3905.6038137465966,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 16823
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        304.9593336653231,
+        228.77500720741727
+      ],
+      "attached_xy_mm": [
+        304.9593336653231,
+        228.77500720741727
+      ],
+      "source_xyz_m": [
+        321705.4463404685,
+        4169881.417124881,
+        775.8247899983502
+      ],
+      "source_forward_m": 3898.0900125083726,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 16824
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        306.04541891446553,
+        230.43807189476843
+      ],
+      "attached_xy_mm": [
+        306.04541891446553,
+        230.43807189476843
+      ],
+      "source_xyz_m": [
+        321713.63021015935,
+        4169885.280968336,
+        770.7413650142038
+      ],
+      "source_forward_m": 3891.963645136827,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46784
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        307.1875187641936,
+        232.06282706637245
+      ],
+      "attached_xy_mm": [
+        307.1875187641936,
+        232.06282706637245
+      ],
+      "source_xyz_m": [
+        321720.94611801323,
+        4169889.88093977,
+        765.6680124921226
+      ],
+      "source_forward_m": 3886.91855452536,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46784
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        308.4411219954432,
+        233.6026614536423
+      ],
+      "attached_xy_mm": [
+        308.4411219954432,
+        233.6026614536423
+      ],
+      "source_xyz_m": [
+        321727.91074159223,
+        4169895.373760298,
+        760.8148127696471
+      ],
+      "source_forward_m": 3882.535116486928,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46784
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        309.8172164785632,
+        235.03462130038187
+      ],
+      "attached_xy_mm": [
+        309.8172164785632,
+        235.03462130038187
+      ],
+      "source_xyz_m": [
+        321734.4256516791,
+        4169901.8739892654,
+        756.2463079321506
+      ],
+      "source_forward_m": 3878.947654971801,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46784
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        311.2146578958502,
+        236.4462163168776
+      ],
+      "attached_xy_mm": [
+        311.2146578958502,
+        236.4462163168776
+      ],
+      "source_xyz_m": [
+        321739.2786218389,
+        4169909.1663213624,
+        751.5440135878994
+      ],
+      "source_forward_m": 3877.1980782696505,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 16624
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        312.6347939604837,
+        237.83516263071272
+      ],
+      "attached_xy_mm": [
+        312.6347939604837,
+        237.83516263071272
+      ],
+      "source_xyz_m": [
+        321744.50270202314,
+        4169916.446439708,
+        746.959870902731
+      ],
+      "source_forward_m": 3875.100111555975,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46585
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        314.1725078595015,
+        239.08479539536648
+      ],
+      "attached_xy_mm": [
+        314.1725078595015,
+        239.08479539536648
+      ],
+      "source_xyz_m": [
+        321751.6785830342,
+        4169923.68086768,
+        743.0649735093548
+      ],
+      "source_forward_m": 3871.1768208020217,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46585
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        315.96268806656866,
+        239.89416670986577
+      ],
+      "attached_xy_mm": [
+        315.96268806656866,
+        239.89416670986577
+      ],
+      "source_xyz_m": [
+        321758.2772265254,
+        4169932.85167639,
+        740.5551159567173
+      ],
+      "source_forward_m": 3868.5174743657662,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46585
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        317.93934221202795,
+        240.0149809555918
+      ],
+      "attached_xy_mm": [
+        317.93934221202795,
+        240.0149809555918
+      ],
+      "source_xyz_m": [
+        321762.67828945105,
+        4169944.2156818165,
+        740.111834619889
+      ],
+      "source_forward_m": 3868.719844423079,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 16424
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        319.8746709690553,
+        239.58383416973777
+      ],
+      "attached_xy_mm": [
+        319.8746709690553,
+        239.58383416973777
+      ],
+      "source_xyz_m": [
+        321770.89484037407,
+        4169953.613623123,
+        742.0717414169544
+      ],
+      "source_forward_m": 3864.647227024496,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 16226
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        321.8555374290152,
+        239.5124031808846
+      ],
+      "attached_xy_mm": [
+        321.8555374290152,
+        239.5124031808846
+      ],
+      "source_xyz_m": [
+        321783.149577634,
+        4169961.5103887925,
+        743.2739730587947
+      ],
+      "source_forward_m": 3856.268385150646,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46387
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        323.8098363173864,
+        239.77468717582056
+      ],
+      "attached_xy_mm": [
+        323.8098363173864,
+        239.77468717582056
+      ],
+      "source_xyz_m": [
+        321796.3501447057,
+        4169968.815854765,
+        743.4451301159437
+      ],
+      "source_forward_m": 3846.7906701312913,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 16227
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        325.7174796868046,
+        240.32489437741785
+      ],
+      "attached_xy_mm": [
+        325.7174796868046,
+        240.32489437741785
+      ],
+      "source_xyz_m": [
+        321806.4875055322,
+        4169977.0557841808,
+        742.2576137568582
+      ],
+      "source_forward_m": 3840.502561213169,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46190
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        327.66154093101346,
+        240.72385980527957
+      ],
+      "attached_xy_mm": [
+        327.66154093101346,
+        240.72385980527957
+      ],
+      "source_xyz_m": [
+        321814.6324009281,
+        4169986.429739124,
+        741.3323039874286
+      ],
+      "source_forward_m": 3836.487291620988,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46190
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        329.56782756781456,
+        241.27775244349382
+      ],
+      "attached_xy_mm": [
+        329.56782756781456,
+        241.27775244349382
+      ],
+      "source_xyz_m": [
+        321823.34146482585,
+        4169995.2986955186,
+        739.9510071821448
+      ],
+      "source_forward_m": 3831.7592132040872,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 46190
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        331.53572682044785,
+        241.54295024510512
+      ],
+      "attached_xy_mm": [
+        331.53572682044785,
+        241.54295024510512
+      ],
+      "source_xyz_m": [
+        321829.0740668362,
+        4170005.8677307456,
+        739.1840927806256
+      ],
+      "source_forward_m": 3830.428696983825,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 45994
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        333.22219344574086,
+        242.5033909267865
+      ],
+      "attached_xy_mm": [
+        333.22219344574086,
+        242.5033909267865
+      ],
+      "source_xyz_m": [
+        321830.95254928473,
+        4170016.324531527,
+        735.5962174496743
+      ],
+      "source_forward_m": 3832.6263121840584,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15833
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        334.5642542456579,
+        243.96595966190557
+      ],
+      "attached_xy_mm": [
+        334.5642542456579,
+        243.96595966190557
+      ],
+      "source_xyz_m": [
+        321835.6341039491,
+        4170023.1781078805,
+        730.720916915393
+      ],
+      "source_forward_m": 3830.870305912454,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15833
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        335.74949001663026,
+        245.55838594154025
+      ],
+      "attached_xy_mm": [
+        335.74949001663026,
+        245.55838594154025
+      ],
+      "source_xyz_m": [
+        321841.22892017156,
+        4170028.5524205295,
+        725.5560242982385
+      ],
+      "source_forward_m": 3827.7112085700523,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15833
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        336.86340230974673,
+        247.20312026392128
+      ],
+      "attached_xy_mm": [
+        336.86340230974673,
+        247.20312026392128
+      ],
+      "source_xyz_m": [
+        321847.2063074132,
+        4170033.269195937,
+        720.2787131429826
+      ],
+      "source_forward_m": 3823.9500886159726,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15833
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        337.96453219658673,
+        248.85644162030374
+      ],
+      "attached_xy_mm": [
+        337.96453219658673,
+        248.85644162030374
+      ],
+      "source_xyz_m": [
+        321851.11567743926,
+        4170038.8607287877,
+        714.712214680915
+      ],
+      "source_forward_m": 3822.434163057901,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 45798
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        339.06590412000304,
+        250.50960178763413
+      ],
+      "attached_xy_mm": [
+        339.06590412000304,
+        250.50960178763413
+      ],
+      "source_xyz_m": [
+        321853.73595845373,
+        4170045.0527669955,
+        708.9822321656413
+      ],
+      "source_forward_m": 3822.3385673010575,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 45798
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        340.1671314244049,
+        252.16285813389229
+      ],
+      "attached_xy_mm": [
+        340.1671314244049,
+        252.16285813389229
+      ],
+      "source_xyz_m": [
+        321857.2628445619,
+        4170050.798612403,
+        703.3695199490461
+      ],
+      "source_forward_m": 3821.235079787497,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15638
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        341.2677130099216,
+        253.81654417187605
+      ],
+      "attached_xy_mm": [
+        341.2677130099216,
+        253.81654417187605
+      ],
+      "source_xyz_m": [
+        321861.64472689596,
+        4170056.120397607,
+        697.8663572649064
+      ],
+      "source_forward_m": 3819.1798448437353,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15638
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        342.3688817676093,
+        255.46983964144755
+      ],
+      "attached_xy_mm": [
+        342.3688817676093,
+        255.46983964144755
+      ],
+      "source_xyz_m": [
+        321866.0150934449,
+        4170061.451605066,
+        692.36290527414
+      ],
+      "source_forward_m": 3817.1388261688107,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15638
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        343.47021482017794,
+        257.12302569558886
+      ],
+      "attached_xy_mm": [
+        343.47021482017794,
+        257.12302569558886
+      ],
+      "source_xyz_m": [
+        321870.14256006357,
+        4170066.8994119586,
+        686.8281738228021
+      ],
+      "source_forward_m": 3815.3667351252784,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 45604
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        344.57163371723345,
+        258.7761545798939
+      ],
+      "attached_xy_mm": [
+        344.57163371723345,
+        258.7761545798939
+      ],
+      "source_xyz_m": [
+        321873.79182570864,
+        4170072.575172952,
+        681.2313718103788
+      ],
+      "source_forward_m": 3814.123484784717,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 45604
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        345.6727166304343,
+        260.42950721930174
+      ],
+      "attached_xy_mm": [
+        345.6727166304343,
+        260.42950721930174
+      ],
+      "source_xyz_m": [
+        321877.44840762514,
+        4170078.245196857,
+        675.6348290158301
+      ],
+      "source_forward_m": 3812.871296296569,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 45604
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        346.773513049847,
+        262.08305029670373
+      ],
+      "attached_xy_mm": [
+        346.773513049847,
+        262.08305029670373
+      ],
+      "source_xyz_m": [
+        321881.11122398643,
+        4170083.910330711,
+        670.0385079691353
+      ],
+      "source_forward_m": 3811.6114908246163,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 45604
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        347.8745255203528,
+        263.73644960354363
+      ],
+      "attached_xy_mm": [
+        347.8745255203528,
+        263.73644960354363
+      ],
+      "source_xyz_m": [
+        321884.7693369994,
+        4170089.5791531214,
+        664.4420200103077
+      ],
+      "source_forward_m": 3810.3574314947537,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 45604
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        348.97598328825603,
+        265.3895526010377
+      ],
+      "attached_xy_mm": [
+        348.97598328825603,
+        265.3895526010377
+      ],
+      "source_xyz_m": [
+        321886.50200436806,
+        4170096.1498485915,
+        658.6011839570795
+      ],
+      "source_forward_m": 3811.226701642755,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 45411
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        350.07702733060916,
+        267.0429311272565
+      ],
+      "attached_xy_mm": [
+        350.07702733060916,
+        267.0429311272565
+      ],
+      "source_xyz_m": [
+        321888.97866774513,
+        4170102.3705790807,
+        652.8553812533577
+      ],
+      "source_forward_m": 3811.274955949153,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15250
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        351.1391386235815,
+        268.72148942247384
+      ],
+      "attached_xy_mm": [
+        351.1391386235815,
+        268.72148942247384
+      ],
+      "source_xyz_m": [
+        321891.6878840351,
+        4170108.2150952974,
+        647.0637097963469
+      ],
+      "source_forward_m": 3810.966102428759,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15250
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        352.1037996856037,
+        270.4579517931174
+      ],
+      "attached_xy_mm": [
+        352.1037996856037,
+        270.4579517931174
+      ],
+      "source_xyz_m": [
+        321895.0603570047,
+        4170113.073574082,
+        641.1852589469493
+      ],
+      "source_forward_m": 3809.6714971633305,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15250
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        353.071619765401,
+        272.19256409842245
+      ],
+      "attached_xy_mm": [
+        353.071619765401,
+        272.19256409842245
+      ],
+      "source_xyz_m": [
+        321898.4114455187,
+        4170117.9639596767,
+        635.3095424535026
+      ],
+      "source_forward_m": 3808.4087175622512,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15250
+    },
+    {
+      "source_id": "D-terminal-000004",
+      "source_event": [
+        4
+      ],
+      "ink_xy_mm": [
+        354.11,
+        273.886
+      ],
+      "attached_xy_mm": [
+        354.11,
+        273.886
+      ],
+      "source_xyz_m": [
+        321901.28552044753,
+        4170123.566707456,
+        629.4944724449567
+      ],
+      "source_forward_m": 3807.856096626177,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 15250
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        449.001,
+        258.343
+      ],
+      "attached_xy_mm": [
+        449.001,
+        258.343
+      ],
+      "source_xyz_m": [
+        318964.8478268314,
+        4172733.9269510955,
+        432.0948708552613
+      ],
+      "source_forward_m": 7511.1334180969125,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2274
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        449.2971572623975,
+        260.2695413355425
+      ],
+      "attached_xy_mm": [
+        449.2971572623975,
+        260.2695413355425
+      ],
+      "source_xyz_m": [
+        318979.7010531019,
+        4172727.982812376,
+        426.04099133931203
+      ],
+      "source_forward_m": 7495.135181576049,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2275
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        450.1534645443922,
+        262.0157285469271
+      ],
+      "attached_xy_mm": [
+        450.1534645443922,
+        262.0157285469271
+      ],
+      "source_xyz_m": [
+        318987.6024640196,
+        4172733.814653786,
+        420.18229754780737
+      ],
+      "source_forward_m": 7490.011586446561,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2275
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        450.995519031022,
+        263.77821630989405
+      ],
+      "attached_xy_mm": [
+        450.995519031022,
+        263.77821630989405
+      ],
+      "source_xyz_m": [
+        318994.9453402932,
+        4172739.8329172805,
+        414.2433102081915
+      ],
+      "source_forward_m": 7485.4756117984925,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32334
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        451.93498575854466,
+        265.49054811150654
+      ],
+      "attached_xy_mm": [
+        451.93498575854466,
+        265.49054811150654
+      ],
+      "source_xyz_m": [
+        319001.3865916586,
+        4172747.7051295666,
+        408.4172159327385
+      ],
+      "source_forward_m": 7482.473046766676,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32334
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        452.7363616472826,
+        267.2681970920824
+      ],
+      "attached_xy_mm": [
+        452.7363616472826,
+        267.2681970920824
+      ],
+      "source_xyz_m": [
+        319015.72543929657,
+        4172748.4999934034,
+        402.7639870277226
+      ],
+      "source_forward_m": 7469.4890898686535,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2174
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        453.6039232656567,
+        269.01717129375453
+      ],
+      "attached_xy_mm": [
+        453.6039232656567,
+        269.01717129375453
+      ],
+      "source_xyz_m": [
+        319032.2353647378,
+        4172748.7076219646,
+        397.3014272349653
+      ],
+      "source_forward_m": 7454.272739672374,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32335
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        454.7992895815273,
+        270.5552017318829
+      ],
+      "attached_xy_mm": [
+        454.7992895815273,
+        270.5552017318829
+      ],
+      "source_xyz_m": [
+        319044.75423760107,
+        4172755.7249912433,
+        392.3214951022912
+      ],
+      "source_forward_m": 7445.318044408927,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2175
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        455.3503532672551,
+        272.4112371744373
+      ],
+      "attached_xy_mm": [
+        455.3503532672551,
+        272.4112371744373
+      ],
+      "source_xyz_m": [
+        319064.7370938229,
+        4172749.4560148017,
+        386.71882042848017
+      ],
+      "source_forward_m": 7424.4454712076795,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32336
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        456.178083668298,
+        274.1804552240842
+      ],
+      "attached_xy_mm": [
+        456.178083668298,
+        274.1804552240842
+      ],
+      "source_xyz_m": [
+        319080.83265450277,
+        4172749.252677314,
+        381.1832117603141
+      ],
+      "source_forward_m": 7409.458220889311,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32337
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        457.1240952061883,
+        275.88782076871445
+      ],
+      "attached_xy_mm": [
+        457.1240952061883,
+        275.88782076871445
+      ],
+      "source_xyz_m": [
+        319094.1088886511,
+        4172752.4874206707,
+        375.7049981320015
+      ],
+      "source_forward_m": 7398.377460173559,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32337
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        458.04104103178855,
+        277.6055572089256
+      ],
+      "attached_xy_mm": [
+        458.04104103178855,
+        277.6055572089256
+      ],
+      "source_xyz_m": [
+        319109.3416242232,
+        4172753.9382962915,
+        370.29379305932076
+      ],
+      "source_forward_m": 7384.812459662814,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2177
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        459.25936164932017,
+        279.1159962278785
+      ],
+      "attached_xy_mm": [
+        459.25936164932017,
+        279.1159962278785
+      ],
+      "source_xyz_m": [
+        319122.0869746738,
+        4172760.9310809183,
+        365.42367431053344
+      ],
+      "source_forward_m": 7375.638701011385,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32338
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        460.0439534675043,
+        280.9033066234279
+      ],
+      "attached_xy_mm": [
+        460.0439534675043,
+        280.9033066234279
+      ],
+      "source_xyz_m": [
+        319130.4849611714,
+        4172765.2750097257,
+        359.46959945891683
+      ],
+      "source_forward_m": 7369.494769242339,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32238
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        460.99976991264566,
+        282.5994485725296
+      ],
+      "attached_xy_mm": [
+        460.99976991264566,
+        282.5994485725296
+      ],
+      "source_xyz_m": [
+        319136.6232221767,
+        4172773.3251851965,
+        353.6889486667773
+      ],
+      "source_forward_m": 7366.839906987507,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32238
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        462.16413284147615,
+        284.1676527357069
+      ],
+      "attached_xy_mm": [
+        462.16413284147615,
+        284.1676527357069
+      ],
+      "source_xyz_m": [
+        319142.09258254396,
+        4172784.5028919796,
+        348.2788983617058
+      ],
+      "source_forward_m": 7365.982466702657,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2077
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        463.1121402002856,
+        285.8764398478515
+      ],
+      "attached_xy_mm": [
+        463.1121402002856,
+        285.8764398478515
+      ],
+      "source_xyz_m": [
+        319148.2992195109,
+        4172792.4109309497,
+        342.4593081113353
+      ],
+      "source_forward_m": 7363.210736388207,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2077
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        463.93823880755355,
+        287.6472902832131
+      ],
+      "attached_xy_mm": [
+        463.93823880755355,
+        287.6472902832131
+      ],
+      "source_xyz_m": [
+        319153.59222161275,
+        4172799.3823949746,
+        336.40372860184704
+      ],
+      "source_forward_m": 7360.932688725857,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32138
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        464.4387800034825,
+        289.52677894421475
+      ],
+      "attached_xy_mm": [
+        464.4387800034825,
+        289.52677894421475
+      ],
+      "source_xyz_m": [
+        319165.58070598706,
+        4172797.5430051177,
+        330.3630963578438
+      ],
+      "source_forward_m": 7349.134067111421,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32139
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        465.5840692855179,
+        291.0946774166826
+      ],
+      "attached_xy_mm": [
+        465.5840692855179,
+        291.0946774166826
+      ],
+      "source_xyz_m": [
+        319168.12378418207,
+        4172810.451687416,
+        324.81564184921893
+      ],
+      "source_forward_m": 7351.639338357431,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 1978
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        465.08844409374507,
+        291.1337929123064
+      ],
+      "attached_xy_mm": [
+        465.08844409374507,
+        291.1337929123064
+      ],
+      "source_xyz_m": [
+        319174.6454273532,
+        4172799.624495081,
+        325.0967948154807
+      ],
+      "source_forward_m": 7341.52049541501,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32139
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        463.2768016698106,
+        290.4012469199136
+      ],
+      "attached_xy_mm": [
+        463.2768016698106,
+        290.4012469199136
+      ],
+      "source_xyz_m": [
+        319226.69111377385,
+        4172740.8314945116,
+        330.5639742038561
+      ],
+      "source_forward_m": 7271.165966236041,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32342
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        461.4655190600059,
+        289.6678125450024
+      ],
+      "attached_xy_mm": [
+        461.4655190600059,
+        289.6678125450024
+      ],
+      "source_xyz_m": [
+        319230.6110596799,
+        4172715.2426738204,
+        333.6672616495992
+      ],
+      "source_forward_m": 7257.8983751624555,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32444
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        459.6538883838909,
+        288.9352374990231
+      ],
+      "attached_xy_mm": [
+        459.6538883838909,
+        288.9352374990231
+      ],
+      "source_xyz_m": [
+        319225.3360254533,
+        4172695.9667518754,
+        336.31072433776956
+      ],
+      "source_forward_m": 7255.526176483505,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2386
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        458.6819871098805,
+        289.16603877578353
+      ],
+      "attached_xy_mm": [
+        458.6819871098805,
+        289.16603877578353
+      ],
+      "source_xyz_m": [
+        319229.59545594867,
+        4172680.8304518904,
+        335.9154245489049
+      ],
+      "source_forward_m": 7245.8802925615355,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32547
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        459.90253893759376,
+        290.6905149883926
+      ],
+      "attached_xy_mm": [
+        459.90253893759376,
+        290.6905149883926
+      ],
+      "source_xyz_m": [
+        319240.9909628549,
+        4172688.4942378267,
+        330.9453024579463
+      ],
+      "source_forward_m": 7238.209693067208,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32547
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        460.8773050064023,
+        292.3826436147129
+      ],
+      "attached_xy_mm": [
+        460.8773050064023,
+        292.3826436147129
+      ],
+      "source_xyz_m": [
+        319250.0052956667,
+        4172694.636859212,
+        325.3249911698973
+      ],
+      "source_forward_m": 7232.172137593556,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2387
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        462.1523577251793,
+        293.85614613053264
+      ],
+      "attached_xy_mm": [
+        462.1523577251793,
+        293.85614613053264
+      ],
+      "source_xyz_m": [
+        319251.90329762833,
+        4172709.390001066,
+        320.04811298108837
+      ],
+      "source_forward_m": 7235.969582296412,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32445
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        463.31527086225327,
+        295.4043669729294
+      ],
+      "attached_xy_mm": [
+        463.31527086225327,
+        295.4043669729294
+      ],
+      "source_xyz_m": [
+        319255.7954122006,
+        4172721.3866712986,
+        314.6339476811148
+      ],
+      "source_forward_m": 7236.881682528688,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2284
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        464.21949808019633,
+        297.1330233063415
+      ],
+      "attached_xy_mm": [
+        464.21949808019633,
+        297.1330233063415
+      ],
+      "source_xyz_m": [
+        319261.194954497,
+        4172729.08872235,
+        308.720623863287
+      ],
+      "source_forward_m": 7234.780061457882,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 2284
+    },
+    {
+      "source_id": "D-terminal-000012",
+      "source_event": [
+        69,
+        71
+      ],
+      "ink_xy_mm": [
+        465.178,
+        298.822
+      ],
+      "attached_xy_mm": [
+        465.178,
+        298.822
+      ],
+      "source_xyz_m": [
+        319266.4838236232,
+        4172737.552679567,
+        302.92850407669164
+      ],
+      "source_forward_m": 7233.067884201318,
+      "attachment_distance_mm": 0.0,
+      "mapped_face_id": 32343
+    }
+  ],
+  "rejected": [],
+  "controls": {
+    "selected_source_ids": [
+      "D-terminal-000003",
+      "D-terminal-000004",
+      "D-terminal-000000",
+      "D-terminal-000012"
+    ],
+    "source_world_sigma_m": [
+      125,
+      185,
+      72
+    ],
+    "maximum_attachment_distance_mm": 4.5,
+    "far_source_q_m": 2200,
+    "background_A_probability": 0.045,
+    "emphasized_A_probability": 0.93,
+    "second_pass_emphasis_min": 0.62,
+    "second_pass_probability": 0.48,
+    "far_C_background_keep": 0.2,
+    "far_C_emphasized_keep": 0.42,
+    "D_peak_warm_green_gain": 1.5
+  }
+}

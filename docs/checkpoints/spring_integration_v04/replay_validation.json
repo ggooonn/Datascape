@@ -1,0 +1,19 @@
+{
+  "replayed_counts": {
+    "A": 721,
+    "C": 1588,
+    "thin": 1097,
+    "rock_soil": 244,
+    "gestures": 519,
+    "trunk": 22,
+    "hard_only_terrain": 2468,
+    "terrain": 2309,
+    "caseB": 3650,
+    "caseC": 3094
+  },
+  "archived_pixels_equal": {
+    "caseC_diagnostic.png": true,
+    "color_only_diagnostic.png": true
+  },
+  "scope": "Saved-vector replay only; no TIFF/source-field/placement regeneration or physical calibration."
+}
