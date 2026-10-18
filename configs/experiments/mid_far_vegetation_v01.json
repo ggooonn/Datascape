@@ -1,0 +1,175 @@
+{
+  "study": "Mid/far vegetation grammar v01; exploratory, not accepted",
+  "checkpoint_commit": "90bb2572a35731ccdb38ec332456f2f94ac76456",
+  "seed": 2026101807,
+  "footprint_mm": 0.8,
+  "free_gap_mm": 0.5,
+  "minimum_length_mm": 2.8,
+  "sampling_guard_mm": 0.14,
+  "field_paths": {
+    "base": "docs/experiments/f2_painterly_layers_v01/fields.npz",
+    "retention": "docs/experiments/f2_foreground_continuity_v04/retention_snapshots.npz",
+    "global": "docs/experiments/f2_painterly_composition_v03/fields.npz"
+  },
+  "crops": [
+    {
+      "id": "A",
+      "title": "Middle slope / overlapping crowns",
+      "group": "middle-right-belt",
+      "bounds_mm": [
+        330,
+        535,
+        510,
+        630
+      ],
+      "source_q_range_m": [
+        1080,
+        1450
+      ],
+      "parent_site_indices": [
+        1,
+        4,
+        7
+      ],
+      "parent_weights": [
+        0.7,
+        1.0,
+        0.62
+      ],
+      "parent_radii_mm": [
+        [
+          18,
+          9
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          17,
+          9
+        ]
+      ],
+      "gap_site_index": 2,
+      "gap_radius_mm": [
+        8,
+        15
+      ],
+      "gap_strength": 0.72,
+      "root_count": 24,
+      "root_spacing_mm": 8.5,
+      "native_height_range_mm": [
+        34,
+        48
+      ],
+      "mode": "middle",
+      "notes": "Same sampled root scaffold for both derived modes; all roots constrained by real F2 source-depth and local A flow."
+    },
+    {
+      "id": "B",
+      "title": "Mist / dissolution and return",
+      "group": "far-central-fragments",
+      "bounds_mm": [
+        185,
+        315,
+        395,
+        415
+      ],
+      "source_q_range_m": [
+        2750,
+        3500
+      ],
+      "parent_site_indices": [
+        0,
+        2,
+        6
+      ],
+      "parent_weights": [
+        0.85,
+        1,
+        0.7
+      ],
+      "parent_radii_mm": [
+        [
+          42,
+          27
+        ],
+        [
+          32,
+          23
+        ],
+        [
+          23,
+          18
+        ]
+      ],
+      "gap_site_index": 4,
+      "gap_radius_mm": [
+        7,
+        18
+      ],
+      "gap_strength": 0.55,
+      "root_count": 32,
+      "root_spacing_mm": 7,
+      "native_height_range_mm": [
+        45,
+        45
+      ],
+      "mode": "far",
+      "notes": "Actual central far mist boundary including locked zero-retention cells. Partial overlap with Crop C intentionally compares the shoulder and its adjacent mist; identical pre-mist field vectors isolate visibility."
+    },
+    {
+      "id": "C",
+      "title": "Distant shoulder / directional field",
+      "group": "far-central-fragments",
+      "bounds_mm": [
+        260,
+        270,
+        375,
+        355
+      ],
+      "source_q_range_m": [
+        3050,
+        3600
+      ],
+      "parent_site_indices": [
+        0,
+        2,
+        6
+      ],
+      "parent_weights": [
+        0.62,
+        1.0,
+        0.68
+      ],
+      "parent_radii_mm": [
+        [
+          10,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          11,
+          5
+        ]
+      ],
+      "gap_site_index": 4,
+      "gap_radius_mm": [
+        5,
+        10
+      ],
+      "gap_strength": 0.75,
+      "root_count": 28,
+      "root_spacing_mm": 5.5,
+      "native_height_range_mm": [
+        45,
+        45
+      ],
+      "mode": "far",
+      "notes": "Native H45 supplies richer directional fan templates only; compressed pad layout emits useful 2.8-3.8-mm rays without a tiny full-tree silhouette."
+    }
+  ]
+}

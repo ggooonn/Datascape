@@ -1,0 +1,51 @@
+{
+  "case_digests": {
+    "A/clustered/R": "aa702184a0605e944cba5ec1ce1bb9ec9dbe94f32ed3ad8d76be83fea067218a",
+    "A/clustered/S": "2b121a2b59330e5a8e08a5115210a56b458ae86b6bd67df38b2e35f128cf47b0",
+    "A/clustered/U": "50cd73d57192da29881d9b6c4e47ccf5a543c1fcc6421c8959fff7ed7cf89896",
+    "C/clustered/R": "a757a0b9434a03731ade4b50bc691e14b5cf72f67c9c08bf44cc6ddb8ccce8d1",
+    "C/clustered/S": "a1a55c216ee3c95c872f0407fbe0ae9e032c67f2ff268886fba0799511a2646e",
+    "C/clustered/U": "a83ebd32f0fce2580fec0de28bf7d8703b8270180ed9e29a1738e924aeaf396f"
+  },
+  "evidence": {
+    "depth_dtype": "float32",
+    "files": {
+      "docs/experiments/f2_foreground_continuity_v04/retention_snapshots.npz": "39d626e473e2953d206ae920e04f82d25bc5ed7d4defd3c88c474dde170f9b83",
+      "docs/experiments/f2_painterly_composition_v03/fields.npz": "c728ec99041f268051d6281b299a81db09cfd5386687d214a8e9723088704ede",
+      "docs/experiments/f2_painterly_layers_v01/fields.npz": "cbfcdb7822271aaaf7f6cea346e9358b0cb98b34387aceafc18effda7dcb687b"
+    },
+    "full_float64_field_hash_equality": false,
+    "grid_mm": 1,
+    "missing": [
+      "Original MASTER/VEG TIFFs",
+      "exact mapped F2 triangles and owners",
+      "full-precision v04 field cache"
+    ],
+    "occupancy_exact_checkpoint_hash": true,
+    "precision_note": "Same inherited F2 archives; quantized depth/retention are not the exact v04 float64 arrays",
+    "retention_dtype": "float16",
+    "xyz_dtype": "float32"
+  },
+  "far_micro_digest": "1eb5b8eb63195b26b976d13be49ee7456f109c75119e742e54b020a296186106",
+  "primary_vector_digest": "748844f87005045913856c85e5f83c997e73b370a0356e6485378abf9c4dda39",
+  "status": "Grammar replay only; no scene integration or motion",
+  "historical_v05_case_digests": {
+    "A": "29784a34cb85de35e7b6c1e42f419ec76bf01a3cf3c79a8223dcbd3e98fd9c80",
+    "B": "285172ec39817b166082160bcb4b9c2191b85a130ade0aa1d41d77cbf6e17080",
+    "C": "2faf8b281141f7fa9faf8a42ef5e2c1d96c3e44ad0889b4ced46e093c9bf5619"
+  },
+  "far_micro_counts": {
+    "taps": 403,
+    "continuous_paths": 47
+  },
+  "source_originals": {
+    "v04": "4c098477eef879c6ddc9dc521a1130047940e7e5",
+    "v05": "2db3568dcc659988c67c93bb0579e420da919ccc"
+  },
+  "exact_replay": {
+    "primary_raw_and_visible_ink_color": true,
+    "historical_v05_ABC": true,
+    "far_micro_subset": true
+  },
+  "note": "Golden digests record retained geometry, not acceptance of A/C or unlinked B"
+}
