@@ -1,0 +1,17 @@
+{
+  "study": "Spring v11 focused refinement of v10_3 only",
+  "parent_commit": "2de1c39e7918fed2438e640d9e15e824997d87c8",
+  "parent_case": "v10_3",
+  "seed": 2026101902,
+  "anchor_height_mm": 165,
+  "anchor_flow": -0.45,
+  "remove_low_right_owners": ["v03/tree/near-right-shrubs/crooked", "v03/tree/near-right-shrubs/small-front", "v03/Soil/near-right-shrubs"],
+  "right_patch_bounds_mm": [330, 760, 590, 885],
+  "transition_gatherings": [[397, 765, 47, 28], [510, 642, 46, 35]],
+  "far_depth_range_m": [1900, 3700],
+  "far_extra_color_length_fraction": 0.10,
+  "minimum_color_mm": 3.2,
+  "minimum_ink_mm": 2.8,
+  "publish": false,
+  "machine_output": false
+}

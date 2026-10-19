@@ -1,0 +1,14 @@
+{
+  "study": "Spring v12 final local refinement candidate",
+  "parent_commit": "813a079067ddd2fb15209bc42ad1fc657a6b1851",
+  "seed": 2026101912,
+  "main_tree": {"owner": "v03/tree/near-right-exposure/behind-main", "form": "P", "height_mm": 175, "posture": "redirected", "accent": "bent", "stem_ratio": 0.74, "vigor": 1.12, "flow": -0.55},
+  "secondary_tree": {"owner": "v03/tree/near-right-exposure/emerging-crown", "form": "P", "height_mm": 118, "posture": "upright", "accent": "none", "stem_ratio": 0.88, "vigor": 0.88, "flow": 0.7},
+  "left_accumulation_bounds_mm": [140, 665, 270, 735],
+  "low_vegetation_field_mm": [115, 694, 270, 750],
+  "low_vegetation_sites": 18,
+  "left_ground_patches": [[55,780,340,4.2,-12],[114,798,550,5.2,6],[205,784,350,4.6,-4],[231,811,290,5.7,-8],[156,824,210,4.8,3],[82,765,300,5.2,-8],[168,769,430,6.0,5]],
+  "source_depth_tolerance_local_m": 5,
+  "published": false,
+  "machine_output": false
+}

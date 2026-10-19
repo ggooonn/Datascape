@@ -1,0 +1,48 @@
+{
+  "policy": "Frozen ink then original A/C/rock_soil/gestures/trunk/RSU color sequence; no reordering or reversal",
+  "physical_wet_sequence_calibrated": false,
+  "phases": [
+    {
+      "name": "ink",
+      "order_group": 0,
+      "start": 0,
+      "count": 3345
+    },
+    {
+      "name": "A",
+      "order_group": 1,
+      "start": 3345,
+      "count": 4543
+    },
+    {
+      "name": "C",
+      "order_group": 2,
+      "start": 7888,
+      "count": 257
+    },
+    {
+      "name": "rock_soil",
+      "order_group": 3,
+      "start": 8145,
+      "count": 236
+    },
+    {
+      "name": "gestures",
+      "order_group": 4,
+      "start": 8381,
+      "count": 664
+    },
+    {
+      "name": "trunk",
+      "order_group": 5,
+      "start": 9045,
+      "count": 11
+    },
+    {
+      "name": "RSU",
+      "order_group": 6,
+      "start": 9056,
+      "count": 5895
+    }
+  ]
+}

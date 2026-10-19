@@ -1,0 +1,25 @@
+{
+  "status": "approved_interim_production_development_baseline",
+  "user_approval_date_local": "2026-10-20",
+  "recovered_candidate_commit": "9a88c9023c07846a055a9589767a18830c08daf8",
+  "source_v12_commit": "4f365064ae014fa8b2248bf6033020bdea5579d2",
+  "historical_v13_commit_unavailable": "86e600666a8bc6d838533ac1dee96318603ea574",
+  "visual_identity": {
+    "verified": true,
+    "method": "User independently compared exact RGBA arrays",
+    "reference_filename": "image(20261019-044435).png",
+    "size_px": [
+      1200,
+      1800
+    ],
+    "verification_repeated_by_this_export": false
+  },
+  "lost_historical_vector_identity_proven": false,
+  "physical_pressure_calibrated": false,
+  "production_G_code_approved": false,
+  "approved_snapshot_hashes": {
+    "visible_ink.json.gz": "4501ccbb589e20d304e74957cb36f32bf605b9a22eff20011ce32c938f4406b5",
+    "visible_color.json.gz": "493b2e3bd5aa27135256926caf7e314fa0357ea9dbcf1dac2ce16f782d60604d",
+    "review/approved.png": "973cb59f00061bcd248b49dcb93cfa58499931b790cc21455dbb7fd1119755a3"
+  }
+}

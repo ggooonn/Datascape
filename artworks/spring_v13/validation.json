@@ -1,0 +1,61 @@
+{
+  "canonical_counts": {
+    "ink": 3345,
+    "color": 11606
+  },
+  "total_strokes": 14951,
+  "total_points": 240974,
+  "original_pressure_strokes": 675,
+  "missing_original_pressure_strokes": 14276,
+  "source_pressure_points": 8975,
+  "explicit_offline_placeholder_points": 231999,
+  "offline_placeholder": 0.5,
+  "placeholder_is_original_or_calibrated": false,
+  "export_JSON_bytes_equal_independent_export": true,
+  "metadata_bytes_equal_independent_export": true,
+  "all_XY_IDs_layers_slots_order_exact": true,
+  "geometry_in_continuous_artwork_bounds": true,
+  "no_point_contact_or_zero_length_primitive": true,
+  "short_positive_polylines_under_1mm": 2,
+  "expressive_width_color_paths_retained_in_rich_data": 4572,
+  "canonical_replay_bytes_exact": true,
+  "replay_seed": 2026101913,
+  "backend_contract_commit": "a2c3967b9d79030810f297cf5e1f5df079519aa3",
+  "backend_validation": {
+    "backend_loader_strokes": 14951,
+    "scheduler_order_preserved": true,
+    "backend_files_sha256": {
+      "io.py": "118f72265929436f40a2665ac5dd8af7d70d4972932da386174f73e9797dfce6",
+      "models.py": "d297ec96e997de060a9d6e28fc0107bb6a500b2689098a409f2ee910bad80472",
+      "scheduling.py": "668faf62b67d6292ea86b5b29dedee5f72a5c95dee7c9b32a8b1531a303f5bda"
+    },
+    "G_code_generated": false
+  },
+  "preview_validation": {
+    "export_derived_PNG_RGBA_exact_approved_snapshot": true,
+    "pixels": [
+      1200,
+      1800
+    ],
+    "pixel_mismatch_count": 0,
+    "width_display": "artistic metadata, not backend placeholder pressure",
+    "user_independent_original_v13_RGBA_identity": "verified by user; lost source vector identity unproven"
+  },
+  "physical_pressure_calibrated": false,
+  "production_G_code_generated": false,
+  "PR23_modified": false,
+  "lost_historical_v13_vector_identity_proven": false,
+  "focused_tests": "10 passed in 14.74s",
+  "export_validation": {
+    "strokes": 14951,
+    "counts": {
+      "color": 11606,
+      "ink": 3345
+    },
+    "original_pressure_strokes": 675,
+    "missing_original_pressure_strokes": 14276,
+    "all_XY_and_IDs_exact": true,
+    "all_ordering_and_slots_exact": true,
+    "explicit_pressure_at_every_backend_point": true
+  }
+}

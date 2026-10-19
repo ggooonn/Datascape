@@ -1,0 +1,95 @@
+{
+  "status": "user_provided_display_colors_not_measured_dry_pigments",
+  "slots": {
+    "A1": {
+      "name": "White / shell white",
+      "preview_hex": "#FFFFFF"
+    },
+    "A2": {
+      "name": "Light gray",
+      "preview_hex": "#C2C4C6"
+    },
+    "A3": {
+      "name": "Light blue-gray",
+      "preview_hex": "#8E9FA9"
+    },
+    "A4": {
+      "name": "Warm gray / apricot gray",
+      "preview_hex": "#C8A896"
+    },
+    "A5": {
+      "name": "Green-gray",
+      "preview_hex": "#8E998B"
+    },
+    "B1": {
+      "name": "Cobalt blue",
+      "preview_hex": "#1E56A0"
+    },
+    "B2": {
+      "name": "Prussian blue",
+      "preview_hex": "#14293D"
+    },
+    "B3": {
+      "name": "Ultramarine",
+      "preview_hex": "#22387B"
+    },
+    "B4": {
+      "name": "Violet",
+      "preview_hex": "#5E2E64"
+    },
+    "B5": {
+      "name": "Deep purple",
+      "preview_hex": "#441B4A"
+    },
+    "C1": {
+      "name": "Pale yellow-green",
+      "preview_hex": "#E1ECB8"
+    },
+    "C2": {
+      "name": "Yellow-green",
+      "preview_hex": "#98C245"
+    },
+    "C3": {
+      "name": "Jade green",
+      "preview_hex": "#008C5A"
+    },
+    "C4": {
+      "name": "Olive green",
+      "preview_hex": "#566432"
+    },
+    "C5": {
+      "name": "Dark ink green",
+      "preview_hex": "#173425"
+    },
+    "D1": {
+      "name": "Pale yellow",
+      "preview_hex": "#F5D647"
+    },
+    "D2": {
+      "name": "Medium yellow",
+      "preview_hex": "#F3B308"
+    },
+    "D3": {
+      "name": "Orange",
+      "preview_hex": "#EA7E18"
+    },
+    "D4": {
+      "name": "Red earth / ochre",
+      "preview_hex": "#A2432B"
+    },
+    "D5": {
+      "name": "Burnt umber",
+      "preview_hex": "#4E3325"
+    }
+  },
+  "unassigned_swaps": [
+    {
+      "name": "Crimson",
+      "preview_hex": "#C81D25"
+    },
+    {
+      "name": "Deep green",
+      "preview_hex": "#195635"
+    }
+  ]
+}
