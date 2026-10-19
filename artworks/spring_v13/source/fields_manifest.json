@@ -1,0 +1,30 @@
+{
+  "file_sha256": "712ea50d328ea4956b387aee43e185dd19628748b55210efafdcf7968f79a233",
+  "parts": [
+    {
+      "path": "fields.npz.part00",
+      "bytes": 3145728,
+      "sha256": "7381355d0114a37434e4221205af756eee0f7f6dc4a27e11849b20277c48f3c8"
+    },
+    {
+      "path": "fields.npz.part01",
+      "bytes": 3145728,
+      "sha256": "9da6476e53f12080ed82093993efc3f8288c3edcb58ea5a45f4b03e9e53500e0"
+    },
+    {
+      "path": "fields.npz.part02",
+      "bytes": 3145728,
+      "sha256": "c095b25224aa5fca11854b56e41889072f5c88c47c9c39c5a78a31592df6b9f8"
+    },
+    {
+      "path": "fields.npz.part03",
+      "bytes": 3145728,
+      "sha256": "b5917c8c07115190aae4553ab41a96773e448b16bac6ea740381b72cf5a72e2f"
+    },
+    {
+      "path": "fields.npz.part04",
+      "bytes": 1897009,
+      "sha256": "eca70674c70cbe02619f99eebc5a89dc7e3336a42e02beac696037586a85cabd"
+    }
+  ]
+}

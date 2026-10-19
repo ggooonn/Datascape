@@ -1,0 +1,5966 @@
+[
+  {
+    "id": "v03/tree/near-left-grove/dominant",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        137.0,
+        826.9651772066175
+      ],
+      "mapped_face_id": 59093,
+      "original_mesh_face_id": 155517,
+      "barycentric": [
+        0.29250175248602095,
+        0.010031122029200937,
+        0.6974671254847781
+      ],
+      "source_xyz_utm_m": [
+        325014.07598623546,
+        4168273.7750525745,
+        42.06487577953873
+      ],
+      "source_forward_m": 227.6225064413278,
+      "lateral_q_per_mm": 0.0025566593806584104,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.5866845049507106,
+      "ndvi": 0.11580759251709002,
+      "effective_observations": 29.0,
+      "retained_ground": 0.31170300100638454,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      70.344,
+      687.859,
+      216.945,
+      839.158
+    ],
+    "height_mm": 130,
+    "sigma_mm": 3.2,
+    "array_key": "o000",
+    "roi": [
+      66,
+      683,
+      221,
+      844
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/rear-crown",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        97.0,
+        814.8145318864262
+      ],
+      "mapped_face_id": 29409,
+      "original_mesh_face_id": 57802,
+      "barycentric": [
+        0.41652094355757274,
+        0.41918605497754347,
+        0.16429300146488382
+      ],
+      "source_xyz_utm_m": [
+        324957.5755816493,
+        4168230.071209956,
+        43.42257821913499
+      ],
+      "source_forward_m": 263.50565269048144,
+      "lateral_q_per_mm": 0.022741191551278506,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.8608583539103454,
+      "ndvi": 0.09036415493244651,
+      "effective_observations": 29.000000000000004,
+      "retained_ground": 0.41235248184819706,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      50.956,
+      707.541,
+      140.825,
+      826.816
+    ],
+    "height_mm": 95,
+    "sigma_mm": 2.375,
+    "array_key": "o001",
+    "roi": [
+      46,
+      703,
+      145,
+      831
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/low-left",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        70.0,
+        828.717178221572
+      ],
+      "mapped_face_id": 29646,
+      "original_mesh_face_id": 58132,
+      "barycentric": [
+        0.17709197345865058,
+        0.4025957103610885,
+        0.42031231618026094
+      ],
+      "source_xyz_utm_m": [
+        324987.0778713109,
+        4168192.390630515,
+        43.876494546719066
+      ],
+      "source_forward_m": 221.9854721646109,
+      "lateral_q_per_mm": 0.002255135255541995,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.482477656821875,
+      "ndvi": 0.12137168096566375,
+      "effective_observations": 29.0,
+      "retained_ground": 0.5365544209767696,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      48.043,
+      783.894,
+      102.591,
+      841.182
+    ],
+    "height_mm": 44,
+    "sigma_mm": 1.3,
+    "array_key": "o002",
+    "roi": [
+      44,
+      779,
+      107,
+      846
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/leaning-companion",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        180.0,
+        821.1998470875486
+      ],
+      "mapped_face_id": 58619,
+      "original_mesh_face_id": 154859,
+      "barycentric": [
+        0.15803256479663474,
+        0.2738558675018734,
+        0.5681115677014918
+      ],
+      "source_xyz_utm_m": [
+        325017.95665296895,
+        4168329.7409769436,
+        40.77299591422997
+      ],
+      "source_forward_m": 245.10311210508132,
+      "lateral_q_per_mm": 0.004924302565463803,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.0,
+      "ndvi": 0.11382411349983755,
+      "effective_observations": 29.0,
+      "retained_ground": 0.5616002658441658,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      146.756,
+      699.027,
+      247.857,
+      833.623
+    ],
+    "height_mm": 110,
+    "sigma_mm": 2.75,
+    "array_key": "o003",
+    "roi": [
+      142,
+      695,
+      252,
+      838
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/forward-shrub",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        159.0,
+        834.0755102997817
+      ],
+      "mapped_face_id": 58857,
+      "original_mesh_face_id": 155189,
+      "barycentric": [
+        0.04558153657323327,
+        0.28174268481877524,
+        0.6726757786079914
+      ],
+      "source_xyz_utm_m": [
+        325044.81972664176,
+        4168296.367446097,
+        40.54333932883937
+      ],
+      "source_forward_m": 207.6498046268963,
+      "lateral_q_per_mm": 0.0003642040037300768,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.647259451214243,
+      "ndvi": 0.09293525387852368,
+      "effective_observations": 29.0,
+      "retained_ground": 0.3832838723579284,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      130.257,
+      792.265,
+      177.973,
+      846.351
+    ],
+    "height_mm": 37,
+    "sigma_mm": 1.3,
+    "array_key": "o004",
+    "roi": [
+      126,
+      788,
+      182,
+      851
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/serial-end",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        229.0,
+        825.102664357653
+      ],
+      "mapped_face_id": 58144,
+      "original_mesh_face_id": 154202,
+      "barycentric": [
+        0.0544917330038428,
+        0.5651885264645923,
+        0.380319740531565
+      ],
+      "source_xyz_utm_m": [
+        325053.5904077841,
+        4168386.6347519904,
+        40.9030129102735
+      ],
+      "source_forward_m": 233.5175587786279,
+      "lateral_q_per_mm": -0.012645866416404158,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.355411464368694,
+      "ndvi": 0.06446919591345716,
+      "effective_observations": 29.0,
+      "retained_ground": 0.3192391900220814,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      187.866,
+      740.585,
+      264.034,
+      837.128
+    ],
+    "height_mm": 73,
+    "sigma_mm": 1.8250000000000002,
+    "array_key": "o005",
+    "roi": [
+      183,
+      736,
+      269,
+      842
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/dissolving-end",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        248.0,
+        830.076334278774
+      ],
+      "mapped_face_id": 27989,
+      "original_mesh_face_id": 55832,
+      "barycentric": [
+        0.28606569503482504,
+        0.3876075933876582,
+        0.3263267115775168
+      ],
+      "source_xyz_utm_m": [
+        325076.62822780164,
+        4168405.210198653,
+        40.33786983382197
+      ],
+      "source_forward_m": 219.17080398183288,
+      "lateral_q_per_mm": 0.008861731522177832,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.385789316343801,
+      "ndvi": 0.10264345791515911,
+      "effective_observations": 30.300113482918846,
+      "retained_ground": 0.2264695537659632,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      230.608,
+      799.921,
+      272.267,
+      842.358
+    ],
+    "height_mm": 26,
+    "sigma_mm": 1.3,
+    "array_key": "o006",
+    "roi": [
+      226,
+      795,
+      277,
+      847
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/v07-grove-0",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        33.0,
+        826.7421837362845
+      ],
+      "mapped_face_id": 60034,
+      "original_mesh_face_id": 156831,
+      "barycentric": [
+        0.10981793770675852,
+        0.4920228197442187,
+        0.39815924254902274
+      ],
+      "source_xyz_utm_m": [
+        324963.0552227235,
+        4168148.294538131,
+        44.303926142278556
+      ],
+      "source_forward_m": 227.63401612681693,
+      "lateral_q_per_mm": -0.0030514636190035077,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.4917074496554474,
+      "ndvi": 0.07867285083158716,
+      "effective_observations": 28.754652862501075,
+      "retained_ground": 0.7392630659287811,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      8.963999999999999,
+      754.089,
+      77.868,
+      838.995
+    ],
+    "height_mm": 64,
+    "sigma_mm": 1.6,
+    "array_key": "o007",
+    "roi": [
+      4,
+      750,
+      82,
+      843
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/v07-grove-1",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        53.0,
+        819.7225423230748
+      ],
+      "mapped_face_id": 29881,
+      "original_mesh_face_id": 58460,
+      "barycentric": [
+        0.7616602106710006,
+        0.2028712413011264,
+        0.03546854802787291
+      ],
+      "source_xyz_utm_m": [
+        324951.086137239,
+        4168173.935943559,
+        44.2592268454258
+      ],
+      "source_forward_m": 248.37800752783798,
+      "lateral_q_per_mm": 0.0027519827144669973,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.9974767780145843,
+      "ndvi": 0.105519874242004,
+      "effective_observations": 29.0,
+      "retained_ground": 0.6942065434962866,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      10.309999999999999,
+      733.028,
+      108.314,
+      831.846
+    ],
+    "height_mm": 78,
+    "sigma_mm": 1.9500000000000002,
+    "array_key": "o008",
+    "roi": [
+      6,
+      729,
+      113,
+      836
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/v07-grove-2",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        80.0,
+        830.7264806290032
+      ],
+      "mapped_face_id": 29646,
+      "original_mesh_face_id": 58132,
+      "barycentric": [
+        0.20041178265021276,
+        0.761251056156357,
+        0.038337161193430266
+      ],
+      "source_xyz_utm_m": [
+        324997.8375316847,
+        4168203.8498851643,
+        43.414317598919524
+      ],
+      "source_forward_m": 216.33320506725025,
+      "lateral_q_per_mm": 0.002255135255541995,
+      "crs": "EPSG:32652",
+      "slope_deg": 5.700529285545823,
+      "ndvi": 0.1324133489870189,
+      "effective_observations": 28.98839619473534,
+      "retained_ground": 0.44359010041570324,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      43.607,
+      752.041,
+      134.253,
+      843.841
+    ],
+    "height_mm": 88,
+    "sigma_mm": 2.2,
+    "array_key": "o009",
+    "roi": [
+      39,
+      748,
+      139,
+      848
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/v07-grove-3",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        117.0,
+        817.9153989882228
+      ],
+      "mapped_face_id": 29174,
+      "original_mesh_face_id": 57474,
+      "barycentric": [
+        0.5549501421275813,
+        0.07177118644594364,
+        0.373278671426475
+      ],
+      "source_xyz_utm_m": [
+        324977.15313559334,
+        4168253.801639857,
+        42.616599255134
+      ],
+      "source_forward_m": 254.3056934305936,
+      "lateral_q_per_mm": 0.01907509119951187,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.7178275386527964,
+      "ndvi": 0.1126677726285421,
+      "effective_observations": 29.0,
+      "retained_ground": 0.34770082272275193,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      87.515,
+      731.042,
+      160.436,
+      830.201
+    ],
+    "height_mm": 76,
+    "sigma_mm": 1.9000000000000001,
+    "array_key": "o010",
+    "roi": [
+      83,
+      727,
+      165,
+      835
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/v07-grove-4",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        152.0,
+        835.0354690117725
+      ],
+      "mapped_face_id": 28939,
+      "original_mesh_face_id": 57147,
+      "barycentric": [
+        0.4446570959743358,
+        0.30754344755301494,
+        0.2477994564726493
+      ],
+      "source_xyz_utm_m": [
+        325044.22630342655,
+        4168287.5660163057,
+        40.6239776989767
+      ],
+      "source_forward_m": 204.88510854063932,
+      "lateral_q_per_mm": 0.018837847540066396,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.4053253319133887,
+      "ndvi": 0.07181394874844829,
+      "effective_observations": 29.0,
+      "retained_ground": 0.33342501650650813,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      114.815,
+      762.216,
+      194.303,
+      847.117
+    ],
+    "height_mm": 62,
+    "sigma_mm": 1.55,
+    "array_key": "o011",
+    "roi": [
+      110,
+      758,
+      199,
+      852
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/v07-grove-5",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        202.0,
+        825.1907395862949
+      ],
+      "mapped_face_id": 28464,
+      "original_mesh_face_id": 56489,
+      "barycentric": [
+        0.7868895187244677,
+        0.1752834209018741,
+        0.037827060373658274
+      ],
+      "source_xyz_utm_m": [
+        325040.2585026271,
+        4168353.865188189,
+        39.936645481550414
+      ],
+      "source_forward_m": 233.52769737319184,
+      "lateral_q_per_mm": -0.0011538008576111032,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.7923982855897584,
+      "ndvi": 0.09570377443045607,
+      "effective_observations": 29.0,
+      "retained_ground": 0.527661343101545,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      172.512,
+      748.017,
+      260.522,
+      838.298
+    ],
+    "height_mm": 85,
+    "sigma_mm": 2.125,
+    "array_key": "o012",
+    "roi": [
+      168,
+      744,
+      265,
+      843
+    ]
+  },
+  {
+    "id": "v03/tree/near-left-grove/v07-grove-6",
+    "kind": "tree",
+    "group": "near-left-grove",
+    "site": {
+      "xy_mm": [
+        260.0,
+        827.1000174054
+      ],
+      "mapped_face_id": 57907,
+      "original_mesh_face_id": 153874,
+      "barycentric": [
+        0.24372775657524282,
+        0.07116157736164941,
+        0.6851106660631078
+      ],
+      "source_xyz_utm_m": [
+        325074.4466800181,
+        4168422.311832697,
+        40.833944446369856
+      ],
+      "source_forward_m": 227.63187324943115,
+      "lateral_q_per_mm": 0.0020353674847488584,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.408877673979439,
+      "ndvi": 0.09204467771129056,
+      "effective_observations": 30.773366978061695,
+      "retained_ground": 0.21871788352611246,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      239.024,
+      772.156,
+      295.528,
+      839.257
+    ],
+    "height_mm": 43,
+    "sigma_mm": 1.3,
+    "array_key": "o013",
+    "roi": [
+      235,
+      768,
+      300,
+      844
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-exposure/behind-main",
+    "kind": "tree",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        422.0,
+        777.8113088468757
+      ],
+      "mapped_face_id": 25579,
+      "original_mesh_face_id": 52540,
+      "barycentric": [
+        0.17736170574804566,
+        0.38137564407525937,
+        0.441262650176695
+      ],
+      "source_xyz_utm_m": [
+        325016.44126932224,
+        4168701.7621204946,
+        37.992507876031205
+      ],
+      "source_forward_m": 386.6023120304911,
+      "lateral_q_per_mm": 0.10242302138556128,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.5132639233509972,
+      "ndvi": 0.09694517532198164,
+      "effective_observations": 29.0,
+      "retained_ground": 0.5040892021138028,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      333.159,
+      650.257,
+      458.715,
+      790.592
+    ],
+    "height_mm": 115,
+    "sigma_mm": 2.875,
+    "array_key": "o014",
+    "roi": [
+      329,
+      646,
+      463,
+      795
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-exposure/emerging-crown",
+    "kind": "tree",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        471.0,
+        773.6730175904007
+      ],
+      "mapped_face_id": 55020,
+      "original_mesh_face_id": 149924,
+      "barycentric": [
+        0.11390677584468345,
+        0.8309850030488749,
+        0.05510822110644169
+      ],
+      "source_xyz_utm_m": [
+        325033.3467533668,
+        4168778.4172032755,
+        41.72237166433611
+      ],
+      "source_forward_m": 399.80803282589164,
+      "lateral_q_per_mm": 0.002803593397485485,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.6563212292889617,
+      "ndvi": 0.07228843983233559,
+      "effective_observations": 30.449489883985393,
+      "retained_ground": 0.5320644372308673,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      442.086,
+      673.601,
+      530.475,
+      786.042
+    ],
+    "height_mm": 90,
+    "sigma_mm": 2.25,
+    "array_key": "o015",
+    "roi": [
+      438,
+      669,
+      535,
+      791
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-exposure/rear-shrub",
+    "kind": "tree",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        509.0,
+        781.6766450905781
+      ],
+      "mapped_face_id": 54784,
+      "original_mesh_face_id": 149597,
+      "barycentric": [
+        0.3283926904775367,
+        0.09680410349535883,
+        0.5748032060271044
+      ],
+      "source_xyz_utm_m": [
+        325077.75590381917,
+        4168814.8517807145,
+        39.897353160659875
+      ],
+      "source_forward_m": 372.38858376283724,
+      "lateral_q_per_mm": 0.050779081071268835,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.737053108820823,
+      "ndvi": 0.1284393851415667,
+      "effective_observations": 30.0,
+      "retained_ground": 0.5583082053238704,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      478.116,
+      738.923,
+      535.633,
+      794.041
+    ],
+    "height_mm": 40,
+    "sigma_mm": 1.3,
+    "array_key": "o016",
+    "roi": [
+      474,
+      734,
+      540,
+      799
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-exposure/v07-grove-0",
+    "kind": "tree",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        365.0,
+        779.7301685508801
+      ],
+      "mapped_face_id": 26305,
+      "original_mesh_face_id": 53526,
+      "barycentric": [
+        0.2642564807105183,
+        0.5157016558284997,
+        0.220041863460982
+      ],
+      "source_xyz_utm_m": [
+        324990.47104967484,
+        4168618.398744096,
+        39.66092239622199
+      ],
+      "source_forward_m": 379.2678187555606,
+      "lateral_q_per_mm": -0.02744346088048403,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.2216176259031832,
+      "ndvi": 0.21216540835300707,
+      "effective_observations": 30.0,
+      "retained_ground": 0.42514093435381234,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      324.544,
+      701.774,
+      387.86,
+      791.955
+    ],
+    "height_mm": 67,
+    "sigma_mm": 1.675,
+    "array_key": "o017",
+    "roi": [
+      320,
+      697,
+      392,
+      796
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-exposure/v07-grove-1",
+    "kind": "tree",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        390.0,
+        777.6202805755032
+      ],
+      "mapped_face_id": 55981,
+      "original_mesh_face_id": 151239,
+      "barycentric": [
+        0.04966950365398237,
+        0.7479227240749039,
+        0.2024077722711137
+      ],
+      "source_xyz_utm_m": [
+        324998.9277668319,
+        4168656.4900851096,
+        41.95402735860783
+      ],
+      "source_forward_m": 385.77804853453307,
+      "lateral_q_per_mm": 0.009438473276480995,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.1152786172946207,
+      "ndvi": 0.10116642757876572,
+      "effective_observations": 29.0,
+      "retained_ground": 0.5644921693823451,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      327.838,
+      687.603,
+      416.332,
+      790.15
+    ],
+    "height_mm": 76,
+    "sigma_mm": 1.9000000000000001,
+    "array_key": "o018",
+    "roi": [
+      323,
+      683,
+      421,
+      795
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-exposure/v07-grove-2",
+    "kind": "tree",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        439.0,
+        778.9543605909768
+      ],
+      "mapped_face_id": 55499,
+      "original_mesh_face_id": 150582,
+      "barycentric": [
+        0.29151588877516244,
+        0.51583050880159,
+        0.19265360242324758
+      ],
+      "source_xyz_utm_m": [
+        325029.2203919273,
+        4168723.745476663,
+        36.80061198806148
+      ],
+      "source_forward_m": 383.04240269860105,
+      "lateral_q_per_mm": -0.07983791713526212,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.857481804832423,
+      "ndvi": 0.28481224897997537,
+      "effective_observations": 30.0,
+      "retained_ground": 0.48037777852297586,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      386.528,
+      697.054,
+      482.098,
+      791.845
+    ],
+    "height_mm": 86,
+    "sigma_mm": 2.15,
+    "array_key": "o019",
+    "roi": [
+      382,
+      693,
+      487,
+      796
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-exposure/v07-grove-3",
+    "kind": "tree",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        490.0,
+        784.5333680653542
+      ],
+      "mapped_face_id": 55022,
+      "original_mesh_face_id": 149926,
+      "barycentric": [
+        0.2493892001951592,
+        0.09275591706491884,
+        0.657854882739922
+      ],
+      "source_xyz_utm_m": [
+        325075.2643535178,
+        4168782.481676006,
+        40.01535470431496
+      ],
+      "source_forward_m": 362.5068137450262,
+      "lateral_q_per_mm": 0.01411935492579987,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.3186167907125252,
+      "ndvi": 0.3275656004183397,
+      "effective_observations": 30.000000000000007,
+      "retained_ground": 0.5242906746154783,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      452.714,
+      717.539,
+      513.0219999999999,
+      796.733
+    ],
+    "height_mm": 59,
+    "sigma_mm": 1.475,
+    "array_key": "o020",
+    "roi": [
+      448,
+      713,
+      518,
+      801
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-exposure/v07-grove-4",
+    "kind": "tree",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        533.0,
+        789.9333552431328
+      ],
+      "mapped_face_id": 24624,
+      "original_mesh_face_id": 51227,
+      "barycentric": [
+        0.22073074742919885,
+        0.6126440876997842,
+        0.16662516487101703
+      ],
+      "source_xyz_utm_m": [
+        325113.379322631,
+        4168830.001245054,
+        37.643952367366445
+      ],
+      "source_forward_m": 345.09257232033195,
+      "lateral_q_per_mm": 0.047509524038958466,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.3038643554712994,
+      "ndvi": 0.08606303968347491,
+      "effective_observations": 27.0,
+      "retained_ground": 0.6086947437917389,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      491.069,
+      731.865,
+      556.349,
+      802.239
+    ],
+    "height_mm": 45,
+    "sigma_mm": 1.3,
+    "array_key": "o021",
+    "roi": [
+      487,
+      727,
+      561,
+      807
+    ]
+  },
+  {
+    "id": "v03/rock/near-right-exposure/connected/parent",
+    "kind": "rock",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        413.56364104772877,
+        784.0946929364987
+      ],
+      "mapped_face_id": 55982,
+      "original_mesh_face_id": 151240,
+      "barycentric": [
+        0.7784596688459161,
+        0.09496932771789508,
+        0.1265710034361888
+      ],
+      "source_xyz_utm_m": [
+        325031.2028698969,
+        4168678.3537900653,
+        39.663037742864866
+      ],
+      "source_forward_m": 364.11230725878085,
+      "lateral_q_per_mm": 0.0455040558015674,
+      "crs": "EPSG:32652",
+      "slope_deg": 5.469615558085211,
+      "ndvi": 0.10587219958494704,
+      "effective_observations": 29.0,
+      "retained_ground": 0.5485991765895468,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      314.5759613204898,
+      702.8590884761134,
+      521.4878431898312,
+      795.3946929364987
+    ],
+    "array_key": "o022",
+    "roi": [
+      310,
+      698,
+      526,
+      800
+    ]
+  },
+  {
+    "id": "v03/rock/near-right-exposure/connected/rear",
+    "kind": "rock",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        516.5236410477288,
+        767.1846929364988
+      ],
+      "mapped_face_id": 24385,
+      "original_mesh_face_id": 50896,
+      "barycentric": [
+        0.6023179782476012,
+        0.17431743362999802,
+        0.22336458812240073
+      ],
+      "source_xyz_utm_m": [
+        325040.22952300886,
+        4168858.2990623564,
+        41.19408462725037
+      ],
+      "source_forward_m": 423.5137771150154,
+      "lateral_q_per_mm": 0.00669972438138403,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.6643557054560203,
+      "ndvi": 0.2459981177082206,
+      "effective_observations": 30.541685728582777,
+      "retained_ground": 0.5750136993293343,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      456.62722882459593,
+      710.1518997181013,
+      584.4842115838503,
+      778.4846929364987
+    ],
+    "array_key": "o023",
+    "roi": [
+      452,
+      706,
+      589,
+      783
+    ]
+  },
+  {
+    "id": "v03/rock/near-right-exposure/connected/back-shoulder",
+    "kind": "rock",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        359.22364104772873,
+        775.1946929364988
+      ],
+      "mapped_face_id": 56463,
+      "original_mesh_face_id": 151896,
+      "barycentric": [
+        0.7491256142210607,
+        0.19134293341311776,
+        0.059531452365821455
+      ],
+      "source_xyz_utm_m": [
+        324973.21405642905,
+        4168617.473768426,
+        40.36678553791368
+      ],
+      "source_forward_m": 394.90610307572535,
+      "lateral_q_per_mm": -0.04388877406834233,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.219246695033792,
+      "ndvi": 0.09163883178678842,
+      "effective_observations": 30.0,
+      "retained_ground": 0.38993864937601846,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      311.72015466886023,
+      731.8818736720774,
+      408.8129039800233,
+      786.4946929364987
+    ],
+    "array_key": "o024",
+    "roi": [
+      307,
+      727,
+      413,
+      791
+    ]
+  },
+  {
+    "id": "v03/rock/near-right-exposure/connected/front",
+    "kind": "rock",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        493.64364104772875,
+        792.9946929364987
+      ],
+      "mapped_face_id": 25101,
+      "original_mesh_face_id": 51885,
+      "barycentric": [
+        0.629046106483634,
+        0.20196008591657555,
+        0.1689938075997904
+      ],
+      "source_xyz_utm_m": [
+        325101.0588025775,
+        4168769.930185772,
+        40.393955396781195
+      ],
+      "source_forward_m": 333.8846079803527,
+      "lateral_q_per_mm": 0.0005765317479723674,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.395821626100219,
+      "ndvi": 0.15336188828865077,
+      "effective_observations": 30.0,
+      "retained_ground": 0.5113043886582974,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      422.8028681971536,
+      742.239405732739,
+      574.720221701589,
+      804.2946929364988
+    ],
+    "array_key": "o025",
+    "roi": [
+      418,
+      738,
+      579,
+      809
+    ]
+  },
+  {
+    "id": "v03/rock/near-right-exposure/subordinate",
+    "kind": "rock",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        340.0,
+        797.4500899031132
+      ],
+      "mapped_face_id": 56947,
+      "original_mesh_face_id": 152556,
+      "barycentric": [
+        0.7519993860950034,
+        0.1384743804397848,
+        0.10952623346521176
+      ],
+      "source_xyz_utm_m": [
+        325031.71421299607,
+        4168557.559981582,
+        43.38810699541686
+      ],
+      "source_forward_m": 318.1501882591729,
+      "lateral_q_per_mm": -0.011127089614788902,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.7064303794559725,
+      "ndvi": 0.09684684252964579,
+      "effective_observations": 30.684743085736386,
+      "retained_ground": 0.33012045315736216,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      310.7177033492823,
+      769.0217948319323,
+      371.06996918296875,
+      808.4500899031132
+    ],
+    "array_key": "o026",
+    "roi": [
+      306,
+      765,
+      376,
+      813
+    ]
+  },
+  {
+    "id": "v03/rock/near-right-exposure/edge-stone",
+    "kind": "rock",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        554.0,
+        795.8913942803789
+      ],
+      "mapped_face_id": 54549,
+      "original_mesh_face_id": 149270,
+      "barycentric": [
+        0.3222369804746391,
+        0.20470146961067812,
+        0.4730615499146828
+      ],
+      "source_xyz_utm_m": [
+        325140.8081535026,
+        4168844.6671094145,
+        37.95202488757054
+      ],
+      "source_forward_m": 325.20578637540837,
+      "lateral_q_per_mm": -0.018502268480719293,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.0,
+      "ndvi": 0.10909406325177692,
+      "effective_observations": 30.0,
+      "retained_ground": 0.623005580270452,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      531.731274645381,
+      774.3818173450991,
+      576.8041489061684,
+      806.8913942803789
+    ],
+    "array_key": "o027",
+    "roi": [
+      527,
+      770,
+      581,
+      811
+    ]
+  },
+  {
+    "id": "v03/rock/near-right-exposure/buried-stone",
+    "kind": "rock",
+    "group": "near-right-exposure",
+    "site": {
+      "xy_mm": [
+        388.0,
+        804.6455195066309
+      ],
+      "mapped_face_id": 26308,
+      "original_mesh_face_id": 53529,
+      "barycentric": [
+        0.104925058106067,
+        0.39725637239881517,
+        0.49781856949511777
+      ],
+      "source_xyz_utm_m": [
+        325076.9176911719,
+        4168610.065442915,
+        40.55951650880387
+      ],
+      "source_forward_m": 296.04684464572495,
+      "lateral_q_per_mm": 0.020798731086798222,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.7598604847161554,
+      "ndvi": 0.06901469361196538,
+      "effective_observations": 29.176926051627333,
+      "retained_ground": 0.6205767254494063,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      367.56601410036757,
+      785.9340315501915,
+      409.2526882377232,
+      815.6455195066309
+    ],
+    "array_key": "o028",
+    "roi": [
+      363,
+      781,
+      414,
+      820
+    ]
+  },
+  {
+    "id": "v03/rock/near-edge-stones/linked/parent",
+    "kind": "rock",
+    "group": "near-edge-stones",
+    "site": {
+      "xy_mm": [
+        34.64456160584045,
+        737.6999999999744
+      ],
+      "mapped_face_id": 60023,
+      "original_mesh_face_id": 156820,
+      "barycentric": [
+        0.6724854737607877,
+        0.18328414368051582,
+        0.14423038255869647
+      ],
+      "source_xyz_utm_m": [
+        324640.6730885232,
+        4168165.174564213,
+        52.52104445634379
+      ],
+      "source_forward_m": 532.6404875713893,
+      "lateral_q_per_mm": 0.0324188857364191,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.624013165719523,
+      "ndvi": 0.11891106028176715,
+      "effective_observations": 28.99850306531313,
+      "retained_ground": 0.6744144557817124,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      -3.994895259489935,
+      700.3190370098866,
+      76.39355694542778,
+      748.9999999999743
+    ],
+    "array_key": "o029",
+    "roi": [
+      0,
+      696,
+      81,
+      753
+    ]
+  },
+  {
+    "id": "v03/rock/near-edge-stones/linked/front",
+    "kind": "rock",
+    "group": "near-edge-stones",
+    "site": {
+      "xy_mm": [
+        59.284561605840445,
+        740.9999999999743
+      ],
+      "mapped_face_id": 29635,
+      "original_mesh_face_id": 58121,
+      "barycentric": [
+        0.10558695440961152,
+        0.8335910814039209,
+        0.06082196418646761
+      ],
+      "source_xyz_utm_m": [
+        324670.0077324421,
+        4168203.1753410744,
+        51.468206395732615
+      ],
+      "source_forward_m": 519.7756253722889,
+      "lateral_q_per_mm": 0.019854942448448997,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.696895744087111,
+      "ndvi": 0.1372879041209324,
+      "effective_observations": 28.0,
+      "retained_ground": 0.6325147318168718,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      29.316447514159634,
+      714.1791584563823,
+      90.15068903340753,
+      752.2999999999744
+    ],
+    "array_key": "o030",
+    "roi": [
+      25,
+      710,
+      95,
+      757
+    ]
+  },
+  {
+    "id": "v03/rock/near-edge-stones/low-stone",
+    "kind": "rock",
+    "group": "near-edge-stones",
+    "site": {
+      "xy_mm": [
+        68.0,
+        749.3017754400315
+      ],
+      "mapped_face_id": 29401,
+      "original_mesh_face_id": 57794,
+      "barycentric": [
+        0.16059767250906565,
+        0.1379724097595988,
+        0.7014299177313356
+      ],
+      "source_xyz_utm_m": [
+        324709.1391722928,
+        4168213.9571024682,
+        49.78976758608619
+      ],
+      "source_forward_m": 487.5850522054699,
+      "lateral_q_per_mm": 0.06153379872251136,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.497781473496485,
+      "ndvi": 0.11459469640000755,
+      "effective_observations": 28.0,
+      "retained_ground": 0.6003891799832937,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      47.203649980762215,
+      730.3551746759342,
+      88.79155837787056,
+      760.3017754400315
+    ],
+    "array_key": "o031",
+    "roi": [
+      43,
+      726,
+      93,
+      765
+    ]
+  },
+  {
+    "id": "v03/rock/near-edge-stones/dissolution",
+    "kind": "rock",
+    "group": "near-edge-stones",
+    "site": {
+      "xy_mm": [
+        13.0,
+        745.9547886492209
+      ],
+      "mapped_face_id": 60250,
+      "original_mesh_face_id": 157150,
+      "barycentric": [
+        0.5028238753959275,
+        0.05769411610998495,
+        0.43948200849408753
+      ],
+      "source_xyz_utm_m": [
+        324661.81553974515,
+        4168130.084716262,
+        51.809884260843525
+      ],
+      "source_forward_m": 499.840346892203,
+      "lateral_q_per_mm": 0.050510135415216914,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.2741445692997724,
+      "ndvi": 0.10972098473865183,
+      "effective_observations": 28.0,
+      "retained_ground": 0.6772255016327945,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      -3.639849624060158,
+      728.3208494226828,
+      30.092721457564345,
+      756.9547886492209
+    ],
+    "array_key": "o032",
+    "roi": [
+      0,
+      724,
+      35,
+      761
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-shrubs/crooked",
+    "kind": "tree",
+    "group": "near-right-shrubs",
+    "site": {
+      "xy_mm": [
+        533.0,
+        859.7397681000875
+      ],
+      "mapped_face_id": 25588,
+      "original_mesh_face_id": 52549,
+      "barycentric": [
+        0.06035160490235725,
+        0.1930238497386554,
+        0.7466245453589874
+      ],
+      "source_xyz_utm_m": [
+        325280.79071549216,
+        4168692.601263639,
+        38.40336319691124
+      ],
+      "source_forward_m": 138.26329983555596,
+      "lateral_q_per_mm": 0.05073319777430767,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.5393034365428244,
+      "ndvi": 0.12420470419585297,
+      "effective_observations": 32.0,
+      "retained_ground": 0.37967207751235593,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      493.388,
+      787.335,
+      554.931,
+      871.96
+    ],
+    "height_mm": 61,
+    "sigma_mm": 1.5250000000000001,
+    "array_key": "o033",
+    "roi": [
+      489,
+      783,
+      559,
+      876
+    ]
+  },
+  {
+    "id": "v03/tree/near-right-shrubs/small-front",
+    "kind": "tree",
+    "group": "near-right-shrubs",
+    "site": {
+      "xy_mm": [
+        518.0,
+        864.6063632906266
+      ],
+      "mapped_face_id": 25831,
+      "original_mesh_face_id": 52878,
+      "barycentric": [
+        0.10653046150615197,
+        0.31993021264746674,
+        0.5735393258463812
+      ],
+      "source_xyz_utm_m": [
+        325284.5979063794,
+        4168667.7938202247,
+        39.48529068115491
+      ],
+      "source_forward_m": 125.3944135812704,
+      "lateral_q_per_mm": 0.010610525697958286,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.2847775112984126,
+      "ndvi": 0.0818507638884152,
+      "effective_observations": 31.0,
+      "retained_ground": 0.28725155434232497,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      494.263,
+      833.675,
+      534.09,
+      876.829
+    ],
+    "height_mm": 25,
+    "sigma_mm": 1.3,
+    "array_key": "o034",
+    "roi": [
+      490,
+      829,
+      539,
+      881
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/back-left",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        155.0,
+        662.3592212863273
+      ],
+      "mapped_face_id": 57883,
+      "original_mesh_face_id": 153850,
+      "barycentric": [
+        0.35537881720079867,
+        0.30623732234686113,
+        0.3383838604523402
+      ],
+      "source_xyz_utm_m": [
+        324364.84848418646,
+        4168425.6613645162,
+        61.64579963172538
+      ],
+      "source_forward_m": 886.2539954379068,
+      "lateral_q_per_mm": 0.09791653590550763,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.68526352578192,
+      "ndvi": 0.1445842359926262,
+      "effective_observations": 29.0,
+      "retained_ground": 0.6509855702139457,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      129.737,
+      591.559,
+      197.288,
+      674.578
+    ],
+    "height_mm": 61,
+    "sigma_mm": 1.5250000000000001,
+    "array_key": "o035",
+    "roi": [
+      125,
+      587,
+      202,
+      679
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/front-right",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        214.0,
+        679.0146908950392
+      ],
+      "mapped_face_id": 57169,
+      "original_mesh_face_id": 152867,
+      "barycentric": [
+        0.577168587224181,
+        0.4101427195077149,
+        0.01268869326810411
+      ],
+      "source_xyz_utm_m": [
+        324494.61933920195,
+        4168522.3150576167,
+        54.66717599062854
+      ],
+      "source_forward_m": 802.4340456080487,
+      "lateral_q_per_mm": 0.006159653486166488,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.2973117817224686,
+      "ndvi": 0.13036092313555997,
+      "effective_observations": 27.943691784876094,
+      "retained_ground": 0.38549616681484916,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      146.819,
+      580.892,
+      247.996,
+      691.573
+    ],
+    "height_mm": 85,
+    "sigma_mm": 2.125,
+    "array_key": "o036",
+    "roi": [
+      142,
+      576,
+      252,
+      696
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/behind-outcrop",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        192.0,
+        658.1725087873383
+      ],
+      "mapped_face_id": 57165,
+      "original_mesh_face_id": 152863,
+      "barycentric": [
+        0.10171727027829436,
+        0.5510365073228254,
+        0.34724622239888026
+      ],
+      "source_xyz_utm_m": [
+        324364.58261332806,
+        4168508.051518108,
+        55.16080628306008
+      ],
+      "source_forward_m": 917.5267005556625,
+      "lateral_q_per_mm": 0.1106324096409786,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.440481262839122,
+      "ndvi": 0.07697662910175579,
+      "effective_observations": 27.999999999999996,
+      "retained_ground": 0.5454427412557501,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      165.689,
+      613.481,
+      221.801,
+      670.26
+    ],
+    "height_mm": 43,
+    "sigma_mm": 1.3,
+    "array_key": "o037",
+    "roi": [
+      161,
+      609,
+      226,
+      675
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/left-shrub",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        134.0,
+        672.8656021292512
+      ],
+      "mapped_face_id": 28205,
+      "original_mesh_face_id": 56139,
+      "barycentric": [
+        0.6096933065567232,
+        0.007273586371607664,
+        0.3830331070716692
+      ],
+      "source_xyz_utm_m": [
+        324405.21820759116,
+        4168373.5090067876,
+        60.850935628141755
+      ],
+      "source_forward_m": 829.216624264922,
+      "lateral_q_per_mm": -0.02640183843440984,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.3749441536945435,
+      "ndvi": 0.1056912169740522,
+      "effective_observations": 30.119579338515223,
+      "retained_ground": 0.6871585347215176,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      115.309,
+      641.489,
+      158.465,
+      685.139
+    ],
+    "height_mm": 27,
+    "sigma_mm": 1.3,
+    "array_key": "o038",
+    "roi": [
+      111,
+      637,
+      163,
+      690
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/end",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        239.0,
+        673.3555031100934
+      ],
+      "mapped_face_id": 26529,
+      "original_mesh_face_id": 53838,
+      "barycentric": [
+        0.0044839523424322625,
+        0.5178594997362483,
+        0.47765654792131934
+      ],
+      "source_xyz_utm_m": [
+        324480.53578499204,
+        4168580.670303562,
+        49.73451607341814
+      ],
+      "source_forward_m": 837.4561952948426,
+      "lateral_q_per_mm": 0.09571219510958899,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.3891851352402433,
+      "ndvi": 0.16001351557486254,
+      "effective_observations": 29.0,
+      "retained_ground": 0.3664542415202908,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      216.597,
+      628.789,
+      260.81100000000004,
+      685.356
+    ],
+    "height_mm": 32,
+    "sigma_mm": 1.3,
+    "array_key": "o039",
+    "roi": [
+      212,
+      624,
+      265,
+      690
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/v07-grove-0",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        105.0,
+        669.0450090568087
+      ],
+      "mapped_face_id": 28679,
+      "original_mesh_face_id": 56795,
+      "barycentric": [
+        0.2306474095118276,
+        0.5847669659210714,
+        0.18458562456710104
+      ],
+      "source_xyz_utm_m": [
+        324362.5430089776,
+        4168319.462431263,
+        62.35800918254167
+      ],
+      "source_forward_m": 848.3974575885984,
+      "lateral_q_per_mm": -0.05998480922077758,
+      "crs": "EPSG:32652",
+      "slope_deg": 6.637311894215628,
+      "ndvi": 0.13905640861106836,
+      "effective_observations": 30.0,
+      "retained_ground": 0.7187616590335107,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      82.757,
+      609.66,
+      136.537,
+      681.212
+    ],
+    "height_mm": 45,
+    "sigma_mm": 1.3,
+    "array_key": "o040",
+    "roi": [
+      78,
+      605,
+      141,
+      686
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/v07-grove-1",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        123.0,
+        660.6484241178972
+      ],
+      "mapped_face_id": 58358,
+      "original_mesh_face_id": 154507,
+      "barycentric": [
+        0.2236824179611847,
+        0.40859369932361633,
+        0.3677238827151989
+      ],
+      "source_xyz_utm_m": [
+        324333.9682835185,
+        4168361.7104725386,
+        66.45532254361589
+      ],
+      "source_forward_m": 890.7783675070605,
+      "lateral_q_per_mm": 0.11496513508673666,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.3735416240587996,
+      "ndvi": 0.10773418450473879,
+      "effective_observations": 30.0,
+      "retained_ground": 0.8229091719764321,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      90.019,
+      595.656,
+      161.532,
+      672.729
+    ],
+    "height_mm": 54,
+    "sigma_mm": 1.35,
+    "array_key": "o041",
+    "roi": [
+      86,
+      591,
+      166,
+      677
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/v07-grove-2",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        171.0,
+        660.1712154266851
+      ],
+      "mapped_face_id": 57644,
+      "original_mesh_face_id": 153521,
+      "barycentric": [
+        0.5512346484424957,
+        0.0014739070547471929,
+        0.44729144450275715
+      ],
+      "source_xyz_utm_m": [
+        324361.58125666494,
+        4168461.537039453,
+        57.90100854214659
+      ],
+      "source_forward_m": 902.7907322155803,
+      "lateral_q_per_mm": 0.25466465036781466,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.798226150292123,
+      "ndvi": 0.12086474667305841,
+      "effective_observations": 28.92097592020247,
+      "retained_ground": 0.5990657175690166,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      144.79,
+      597.802,
+      216.354,
+      672.925
+    ],
+    "height_mm": 69,
+    "sigma_mm": 1.725,
+    "array_key": "o042",
+    "roi": [
+      140,
+      593,
+      221,
+      677
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/v07-grove-3",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        204.0,
+        675.6851967074422
+      ],
+      "mapped_face_id": 57169,
+      "original_mesh_face_id": 152867,
+      "barycentric": [
+        0.092869717743572,
+        0.038966094891500686,
+        0.8681641873649273
+      ],
+      "source_xyz_utm_m": [
+        324468.95507437905,
+        4168507.786091532,
+        53.97775500957507
+      ],
+      "source_forward_m": 820.7377179679623,
+      "lateral_q_per_mm": 0.006159653486166488,
+      "crs": "EPSG:32652",
+      "slope_deg": 6.12108490448226,
+      "ndvi": 0.20516833986624008,
+      "effective_observations": 28.000000000000004,
+      "retained_ground": 0.42682302684653717,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      182.197,
+      614.051,
+      238.921,
+      687.895
+    ],
+    "height_mm": 52,
+    "sigma_mm": 1.3,
+    "array_key": "o043",
+    "roi": [
+      178,
+      610,
+      243,
+      692
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/v07-grove-4",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        233.0,
+        662.2489144411805
+      ],
+      "mapped_face_id": 26527,
+      "original_mesh_face_id": 53836,
+      "barycentric": [
+        0.2838196215749843,
+        0.4363082066576068,
+        0.2798721717674089
+      ],
+      "source_xyz_utm_m": [
+        324418.0892461997,
+        4168586.603834847,
+        51.83200863220984
+      ],
+      "source_forward_m": 897.5401435508905,
+      "lateral_q_per_mm": -0.01998235344949264,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.115708295315544,
+      "ndvi": 0.25187939970580653,
+      "effective_observations": 30.0,
+      "retained_ground": 0.4500536167098822,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      203.44,
+      604.822,
+      269.673,
+      674.323
+    ],
+    "height_mm": 47,
+    "sigma_mm": 1.3,
+    "array_key": "o044",
+    "roi": [
+      199,
+      600,
+      274,
+      679
+    ]
+  },
+  {
+    "id": "v03/tree/middle-left-attached/v07-grove-5",
+    "kind": "tree",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        263.0,
+        671.053673673373
+      ],
+      "mapped_face_id": 56206,
+      "original_mesh_face_id": 151551,
+      "barycentric": [
+        0.21436747470249584,
+        0.597593763929981,
+        0.18803876136752318
+      ],
+      "source_xyz_utm_m": [
+        324489.35883715894,
+        4168631.4310242413,
+        51.42500246688641
+      ],
+      "source_forward_m": 848.398081072467,
+      "lateral_q_per_mm": -0.033083922184020655,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.7335449166248074,
+      "ndvi": 0.21668172704966096,
+      "effective_observations": 29.46513963007077,
+      "retained_ground": 0.40069711496995863,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      243.409,
+      630.861,
+      293.907,
+      683.411
+    ],
+    "height_mm": 35,
+    "sigma_mm": 1.3,
+    "array_key": "o045",
+    "roi": [
+      239,
+      626,
+      298,
+      688
+    ]
+  },
+  {
+    "id": "v03/rock/middle-left-attached/v07-stone-0",
+    "kind": "rock",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        137.0,
+        673.9304428210672
+      ],
+      "mapped_face_id": 28205,
+      "original_mesh_face_id": 56139,
+      "barycentric": [
+        0.4956569919605046,
+        0.2805993752678952,
+        0.2237436327716002
+      ],
+      "source_xyz_utm_m": [
+        324413.417981258,
+        4168378.2876910167,
+        61.02081479402416
+      ],
+      "source_forward_m": 823.4200335743028,
+      "lateral_q_per_mm": -0.02640183843440984,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.594959910050051,
+      "ndvi": 0.10409196689669754,
+      "effective_observations": 29.532802181690954,
+      "retained_ground": 0.6729023810079294,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      98.40188747731398,
+      641.4767215357956,
+      177.2186434728075,
+      685.2304428210672
+    ],
+    "array_key": "o046",
+    "roi": [
+      94,
+      637,
+      182,
+      690
+    ]
+  },
+  {
+    "id": "v03/rock/middle-left-attached/v07-stone-1",
+    "kind": "rock",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        178.0,
+        670.5105080582197
+      ],
+      "mapped_face_id": 57646,
+      "original_mesh_face_id": 153523,
+      "barycentric": [
+        0.5751804865504686,
+        0.15585998361344006,
+        0.2689595298360914
+      ],
+      "source_xyz_utm_m": [
+        324426.93121410493,
+        4168462.2554145968,
+        60.25248927400877
+      ],
+      "source_forward_m": 842.5220706340276,
+      "lateral_q_per_mm": 0.2646616986781715,
+      "crs": "EPSG:32652",
+      "slope_deg": 5.438970356193553,
+      "ndvi": 0.15806575744264847,
+      "effective_observations": 28.82795959543438,
+      "retained_ground": 0.5635137504715612,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      147.1888892382533,
+      641.9592423089589,
+      211.3140020278238,
+      681.5105080582197
+    ],
+    "array_key": "o047",
+    "roi": [
+      143,
+      637,
+      216,
+      686
+    ]
+  },
+  {
+    "id": "v03/rock/middle-left-attached/v07-stone-2",
+    "kind": "rock",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        216.0,
+        679.0454648229676
+      ],
+      "mapped_face_id": 27012,
+      "original_mesh_face_id": 54497,
+      "barycentric": [
+        0.6643679683330721,
+        0.0399697312244363,
+        0.29566230044249164
+      ],
+      "source_xyz_utm_m": [
+        324496.19909193675,
+        4168526.1301309867,
+        54.524355451484325
+      ],
+      "source_forward_m": 802.4072639238866,
+      "lateral_q_per_mm": 0.0819916655214269,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.6442779195482418,
+      "ndvi": 0.13352821800067682,
+      "effective_observations": 28.0,
+      "retained_ground": 0.38012680517170466,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      191.15089321546577,
+      656.7084308949051,
+      243.11803678491395,
+      690.0454648229676
+    ],
+    "array_key": "o048",
+    "roi": [
+      187,
+      652,
+      248,
+      695
+    ]
+  },
+  {
+    "id": "v03/rock/middle-left-attached/v07-stone-3",
+    "kind": "rock",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        246.0,
+        675.4238054001053
+      ],
+      "mapped_face_id": 26530,
+      "original_mesh_face_id": 53839,
+      "barycentric": [
+        0.8261967439202871,
+        0.04623200514081284,
+        0.12757125093890012
+      ],
+      "source_xyz_utm_m": [
+        324496.3869601542,
+        4168591.172862472,
+        49.220894220344626
+      ],
+      "source_forward_m": 826.7269563153623,
+      "lateral_q_per_mm": 0.12668492105941745,
+      "crs": "EPSG:32652",
+      "slope_deg": 0.8001600332086586,
+      "ndvi": 0.15092200415315177,
+      "effective_observations": 29.0,
+      "retained_ground": 0.35230267744528077,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      225.5093117408907,
+      654.2495354796506,
+      267.65512088495484,
+      686.4238054001053
+    ],
+    "array_key": "o049",
+    "roi": [
+      221,
+      650,
+      272,
+      691
+    ]
+  },
+  {
+    "id": "v03/rock/middle-left-attached/v07-stone-4",
+    "kind": "rock",
+    "group": "middle-left-attached",
+    "site": {
+      "xy_mm": [
+        111.0,
+        676.9325896262634
+      ],
+      "mapped_face_id": 58599,
+      "original_mesh_face_id": 154839,
+      "barycentric": [
+        0.024485013981864756,
+        0.052834205567495914,
+        0.9226807804506393
+      ],
+      "source_xyz_utm_m": [
+        324407.3195765865,
+        4168325.7345504193,
+        59.10739816270782
+      ],
+      "source_forward_m": 809.2790888264823,
+      "lateral_q_per_mm": -0.025823801677421692,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.099393684239435,
+      "ndvi": 0.0441033582931767,
+      "effective_observations": 30.0,
+      "retained_ground": 0.665344905874281,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      91.88638613018645,
+      658.6149082566877,
+      130.75577079955013,
+      687.9325896262634
+    ],
+    "array_key": "o050",
+    "roi": [
+      87,
+      654,
+      135,
+      692
+    ]
+  },
+  {
+    "id": "v03/tree/middle-edge-growth/edge-main",
+    "kind": "tree",
+    "group": "middle-edge-growth",
+    "site": {
+      "xy_mm": [
+        31.0,
+        629.9998270503677
+      ],
+      "mapped_face_id": 59769,
+      "original_mesh_face_id": 156472,
+      "barycentric": [
+        0.2688137124851947,
+        0.6400185142292384,
+        0.09116777328556692
+      ],
+      "source_xyz_utm_m": [
+        324072.2649668014,
+        4168183.0644113747,
+        78.0093234115966
+      ],
+      "source_forward_m": 1065.9418940424473,
+      "lateral_q_per_mm": 0.029186499092318605,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.7079362324400336,
+      "ndvi": 0.17898040247233962,
+      "effective_observations": 31.0,
+      "retained_ground": 0.6521329984066997,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      10.629999999999999,
+      576.153,
+      60.889,
+      642.155
+    ],
+    "height_mm": 42,
+    "sigma_mm": 1.3,
+    "array_key": "o051",
+    "roi": [
+      6,
+      572,
+      65,
+      647
+    ]
+  },
+  {
+    "id": "v03/tree/middle-edge-growth/low",
+    "kind": "tree",
+    "group": "middle-edge-growth",
+    "site": {
+      "xy_mm": [
+        16.0,
+        634.5154593227272
+      ],
+      "mapped_face_id": 60005,
+      "original_mesh_face_id": 156802,
+      "barycentric": [
+        0.1205876894456015,
+        0.393533454373533,
+        0.4858788561808655
+      ],
+      "source_xyz_utm_m": [
+        324090.42363431456,
+        4168148.6176306834,
+        77.95814338844085
+      ],
+      "source_forward_m": 1036.1480499586655,
+      "lateral_q_per_mm": 0.19504093401035139,
+      "crs": "EPSG:32652",
+      "slope_deg": 5.214605479285121,
+      "ndvi": 0.23789882689586989,
+      "effective_observations": 31.0,
+      "retained_ground": 0.6668885556869537,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      -4.092,
+      604.746,
+      37.128,
+      646.557
+    ],
+    "height_mm": 24,
+    "sigma_mm": 1.3,
+    "array_key": "o052",
+    "roi": [
+      0,
+      600,
+      42,
+      651
+    ]
+  },
+  {
+    "id": "v03/tree/middle-edge-growth/behind",
+    "kind": "tree",
+    "group": "middle-edge-growth",
+    "site": {
+      "xy_mm": [
+        45.0,
+        624.2185213333349
+      ],
+      "mapped_face_id": 59532,
+      "original_mesh_face_id": 156142,
+      "barycentric": [
+        0.39602118658240737,
+        0.5681443151629928,
+        0.03583449825459986
+      ],
+      "source_xyz_utm_m": [
+        324043.92496505234,
+        4168216.8806355977,
+        78.27983677486444
+      ],
+      "source_forward_m": 1104.9301138297342,
+      "lateral_q_per_mm": 0.2847914674364538,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.919202822113107,
+      "ndvi": 0.23928288292788874,
+      "effective_observations": 31.0,
+      "retained_ground": 0.6326565880168812,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      22.408,
+      582.065,
+      70.77199999999999,
+      636.262
+    ],
+    "height_mm": 30,
+    "sigma_mm": 1.3,
+    "array_key": "o053",
+    "roi": [
+      18,
+      578,
+      75,
+      641
+    ]
+  },
+  {
+    "id": "v03/tree/middle-edge-growth/v07-grove-0",
+    "kind": "tree",
+    "group": "middle-edge-growth",
+    "site": {
+      "xy_mm": [
+        35.0,
+        622.0525091179609
+      ],
+      "mapped_face_id": 29614,
+      "original_mesh_face_id": 58100,
+      "barycentric": [
+        0.41392324020894233,
+        0.2365833865060167,
+        0.349493373285041
+      ],
+      "source_xyz_utm_m": [
+        324022.0975015952,
+        4168194.5151988016,
+        80.66405071407108
+      ],
+      "source_forward_m": 1116.7283821718668,
+      "lateral_q_per_mm": 0.013977263220472836,
+      "crs": "EPSG:32652",
+      "slope_deg": 5.746511224781636,
+      "ndvi": 0.2854538372403003,
+      "effective_observations": 31.0,
+      "retained_ground": 0.6186720736414503,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      13.384,
+      561.906,
+      74.241,
+      634.242
+    ],
+    "height_mm": 49,
+    "sigma_mm": 1.3,
+    "array_key": "o054",
+    "roi": [
+      9,
+      557,
+      79,
+      639
+    ]
+  },
+  {
+    "id": "v03/tree/middle-edge-growth/v07-grove-1",
+    "kind": "tree",
+    "group": "middle-edge-growth",
+    "site": {
+      "xy_mm": [
+        55.0,
+        630.3827464063473
+      ],
+      "mapped_face_id": 59298,
+      "original_mesh_face_id": 155815,
+      "barycentric": [
+        0.062360191345570914,
+        0.5735102254640708,
+        0.36412958319035826
+      ],
+      "source_xyz_utm_m": [
+        324094.0761125043,
+        4168236.8708057404,
+        76.0625827474346
+      ],
+      "source_forward_m": 1065.9987484184821,
+      "lateral_q_per_mm": -0.05879417562700626,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.2877858982782113,
+      "ndvi": 0.2713749703122145,
+      "effective_observations": 31.0,
+      "retained_ground": 0.6711254549800219,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      27.569000000000003,
+      583.365,
+      85.283,
+      642.448
+    ],
+    "height_mm": 36,
+    "sigma_mm": 1.3,
+    "array_key": "o055",
+    "roi": [
+      23,
+      579,
+      90,
+      647
+    ]
+  },
+  {
+    "id": "v03/tree/middle-right-bedrock/v07-grove-0",
+    "kind": "tree",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        447.0,
+        523.0108361668784
+      ],
+      "mapped_face_id": 19171,
+      "original_mesh_face_id": 43288,
+      "barycentric": [
+        0.12287802852163543,
+        0.21531756510927846,
+        0.6618044063690861
+      ],
+      "source_xyz_utm_m": [
+        323811.4595269533,
+        4169535.1458678087,
+        184.6485206034607
+      ],
+      "source_forward_m": 1816.7135689678007,
+      "lateral_q_per_mm": 0.6930097429404445,
+      "crs": "EPSG:32652",
+      "slope_deg": 11.67358419032788,
+      "ndvi": 0.5865724830121376,
+      "effective_observations": 30.98901532493187,
+      "retained_ground": 0.7231730710984725,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      420.91,
+      481.855,
+      464.292,
+      535.124
+    ],
+    "height_mm": 33,
+    "sigma_mm": 1.3,
+    "array_key": "o056",
+    "roi": [
+      416,
+      477,
+      469,
+      540
+    ]
+  },
+  {
+    "id": "v03/tree/middle-right-bedrock/v07-grove-1",
+    "kind": "tree",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        475.0,
+        522.8254970000925
+      ],
+      "mapped_face_id": 18538,
+      "original_mesh_face_id": 42301,
+      "barycentric": [
+        0.49273639940707437,
+        0.4724658182351409,
+        0.0347977823577848
+      ],
+      "source_xyz_utm_m": [
+        323819.17397454707,
+        4169643.9560665293,
+        170.5645511382322
+      ],
+      "source_forward_m": 1850.5426666156982,
+      "lateral_q_per_mm": 0.21587990939603213,
+      "crs": "EPSG:32652",
+      "slope_deg": 17.448304031434283,
+      "ndvi": 0.5799730187312705,
+      "effective_observations": 29.0,
+      "retained_ground": 0.5799278215921475,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      435.483,
+      468.803,
+      495.459,
+      535.118
+    ],
+    "height_mm": 42,
+    "sigma_mm": 1.3,
+    "array_key": "o057",
+    "roi": [
+      431,
+      464,
+      500,
+      540
+    ]
+  },
+  {
+    "id": "v03/tree/middle-right-bedrock/v07-grove-2",
+    "kind": "tree",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        509.0,
+        529.6968485663729
+      ],
+      "mapped_face_id": 48078,
+      "original_mesh_face_id": 139688,
+      "barycentric": [
+        0.41028005829805814,
+        0.08812718403666732,
+        0.5015927576652746
+      ],
+      "source_xyz_utm_m": [
+        323909.95221727004,
+        4169717.308401749,
+        161.01710635784033
+      ],
+      "source_forward_m": 1794.0700643974292,
+      "lateral_q_per_mm": 0.2588954248126457,
+      "crs": "EPSG:32652",
+      "slope_deg": 9.951601004823889,
+      "ndvi": 0.5253082422806863,
+      "effective_observations": 30.000000000000004,
+      "retained_ground": 0.5312859884586396,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      483.622,
+      495.815,
+      527.476,
+      541.934
+    ],
+    "height_mm": 29,
+    "sigma_mm": 1.3,
+    "array_key": "o058",
+    "roi": [
+      479,
+      491,
+      532,
+      546
+    ]
+  },
+  {
+    "id": "v03/tree/middle-right-bedrock/v07-grove-3",
+    "kind": "tree",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        538.0,
+        522.4348496263347
+      ],
+      "mapped_face_id": 16694,
+      "original_mesh_face_id": 39341,
+      "barycentric": [
+        0.3225722402074529,
+        0.12562722368800705,
+        0.55180053610454
+      ],
+      "source_xyz_utm_m": [
+        323838.7688167107,
+        4169898.445983917,
+        138.78154870023394
+      ],
+      "source_forward_m": 1928.225882384298,
+      "lateral_q_per_mm": 1.1024422565952758,
+      "crs": "EPSG:32652",
+      "slope_deg": 14.12440573643957,
+      "ndvi": 0.42540100985535956,
+      "effective_observations": 30.0,
+      "retained_ground": 0.3935293148089286,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      506.332,
+      471.566,
+      556.155,
+      534.561
+    ],
+    "height_mm": 37,
+    "sigma_mm": 1.3,
+    "array_key": "o059",
+    "roi": [
+      502,
+      467,
+      561,
+      539
+    ]
+  },
+  {
+    "id": "v03/tree/middle-right-bedrock/v07-grove-4",
+    "kind": "tree",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        565.0,
+        523.7633959451565
+      ],
+      "mapped_face_id": 16296,
+      "original_mesh_face_id": 38684,
+      "barycentric": [
+        0.01271942663202652,
+        0.906192801823285,
+        0.08108777154468855
+      ],
+      "source_xyz_utm_m": [
+        323892.1857840547,
+        4169972.567366854,
+        141.35817185239426
+      ],
+      "source_forward_m": 1906.6537932531292,
+      "lateral_q_per_mm": -1.360439118751363,
+      "crs": "EPSG:32652",
+      "slope_deg": 14.40352573479852,
+      "ndvi": 0.44073574118965086,
+      "effective_observations": 31.0,
+      "retained_ground": 0.4744227582297582,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      538.984,
+      486.191,
+      582.091,
+      535.763
+    ],
+    "height_mm": 26,
+    "sigma_mm": 1.3,
+    "array_key": "o060",
+    "roi": [
+      534,
+      482,
+      587,
+      540
+    ]
+  },
+  {
+    "id": "v03/tree/middle-right-bedrock/v08-rock-fringe-0",
+    "kind": "tree",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        451.0,
+        521.0549353837823
+      ],
+      "mapped_face_id": 49119,
+      "original_mesh_face_id": 141329,
+      "barycentric": [
+        0.40130671775915505,
+        0.01677421143887384,
+        0.5819190708019711
+      ],
+      "source_xyz_utm_m": [
+        323787.542427876,
+        4169567.039201533,
+        179.3369472935063
+      ],
+      "source_forward_m": 1850.8803600509066,
+      "lateral_q_per_mm": 1.5183371330164825,
+      "crs": "EPSG:32652",
+      "slope_deg": 12.660493865636244,
+      "ndvi": 0.5878290237324781,
+      "effective_observations": 31.945047649048547,
+      "retained_ground": 0.6740246348318693,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      426.547,
+      480.101,
+      467.91,
+      533.055
+    ],
+    "height_mm": 29,
+    "sigma_mm": 1.3,
+    "array_key": "o061",
+    "roi": [
+      422,
+      476,
+      472,
+      538
+    ]
+  },
+  {
+    "id": "v03/tree/middle-right-bedrock/v08-rock-fringe-1",
+    "kind": "tree",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        486.0,
+        529.7031910542762
+      ],
+      "mapped_face_id": 18540,
+      "original_mesh_face_id": 42303,
+      "barycentric": [
+        0.26130537699257805,
+        0.6471955172281624,
+        0.09149910577925957
+      ],
+      "source_xyz_utm_m": [
+        323884.4158655168,
+        4169642.2550268266,
+        163.06371159874752
+      ],
+      "source_forward_m": 1789.4630151702274,
+      "lateral_q_per_mm": 0.75336114680894,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.659182424890401,
+      "ndvi": 0.4663428851971327,
+      "effective_observations": 30.0,
+      "retained_ground": 0.6721902322051452,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      455.022,
+      490.202,
+      505.187,
+      542.024
+    ],
+    "height_mm": 37,
+    "sigma_mm": 1.3,
+    "array_key": "o062",
+    "roi": [
+      451,
+      486,
+      510,
+      547
+    ]
+  },
+  {
+    "id": "v03/tree/middle-right-bedrock/v08-rock-fringe-2",
+    "kind": "tree",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        535.0,
+        525.0835693062247
+      ],
+      "mapped_face_id": 16895,
+      "original_mesh_face_id": 39670,
+      "barycentric": [
+        0.10073274523570497,
+        0.5519434948523779,
+        0.34732375991191716
+      ],
+      "source_xyz_utm_m": [
+        323851.5583048456,
+        4169874.5802872027,
+        134.42788857803217
+      ],
+      "source_forward_m": 1907.3905774128875,
+      "lateral_q_per_mm": -0.9546089448850293,
+      "crs": "EPSG:32652",
+      "slope_deg": 12.115117045937296,
+      "ndvi": 0.43432877516706986,
+      "effective_observations": 30.0,
+      "retained_ground": 0.40611944415179035,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      508.197,
+      488.297,
+      552.328,
+      537.084
+    ],
+    "height_mm": 25,
+    "sigma_mm": 1.3,
+    "array_key": "o063",
+    "roi": [
+      504,
+      484,
+      557,
+      542
+    ]
+  },
+  {
+    "id": "v03/tree/middle-right-bedrock/v08-rock-fringe-3",
+    "kind": "tree",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        563.0,
+        527.8924851270685
+      ],
+      "mapped_face_id": 46458,
+      "original_mesh_face_id": 137056,
+      "barycentric": [
+        0.0798765190973838,
+        0.4383224742010418,
+        0.48180100670157433
+      ],
+      "source_xyz_utm_m": [
+        323910.5459697989,
+        4169947.3962955726,
+        132.0743674169821
+      ],
+      "source_forward_m": 1880.1663037245776,
+      "lateral_q_per_mm": -1.1850702728529836,
+      "crs": "EPSG:32652",
+      "slope_deg": 17.836926375742678,
+      "ndvi": 0.38427522410545306,
+      "effective_observations": 30.0,
+      "retained_ground": 0.4733373537940597,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      538.064,
+      485.97,
+      581.271,
+      539.892
+    ],
+    "height_mm": 31,
+    "sigma_mm": 1.3,
+    "array_key": "o064",
+    "roi": [
+      534,
+      481,
+      586,
+      544
+    ]
+  },
+  {
+    "id": "v03/rock/middle-right-bedrock/v07-stone-0",
+    "kind": "rock",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        463.0,
+        522.891758135363
+      ],
+      "mapped_face_id": 48909,
+      "original_mesh_face_id": 141001,
+      "barycentric": [
+        0.3617727247733371,
+        0.05311309425463965,
+        0.5851141809720233
+      ],
+      "source_xyz_utm_m": [
+        323817.44657457084,
+        4169595.8531817435,
+        177.54232163756194
+      ],
+      "source_forward_m": 1834.0283640819002,
+      "lateral_q_per_mm": 2.4123836728319032,
+      "crs": "EPSG:32652",
+      "slope_deg": 16.419894785086385,
+      "ndvi": 0.5805163340060986,
+      "effective_observations": 30.0,
+      "retained_ground": 0.6390763850521236,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      437.76344959398534,
+      499.6743469287951,
+      489.6630998281922,
+      533.9399913325618
+    ],
+    "array_key": "o065",
+    "roi": [
+      433,
+      495,
+      494,
+      538
+    ]
+  },
+  {
+    "id": "v03/rock/middle-right-bedrock/v07-stone-1",
+    "kind": "rock",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        485.0,
+        531.6049504404892
+      ],
+      "mapped_face_id": 18541,
+      "original_mesh_face_id": 42304,
+      "barycentric": [
+        0.2167128865037693,
+        0.17452872608206027,
+        0.6087583874141704
+      ],
+      "source_xyz_utm_m": [
+        323900.23586178245,
+        4169626.737248378,
+        162.74280983059268
+      ],
+      "source_forward_m": 1768.9639456891143,
+      "lateral_q_per_mm": 0.30764538366913036,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.119243424161974,
+      "ndvi": 0.5411455719735352,
+      "effective_observations": 30.0,
+      "retained_ground": 0.7172498189253218,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      462.86380185758514,
+      510.48249925625487,
+      508.43086438997807,
+      542.6049504404892
+    ],
+    "array_key": "o066",
+    "roi": [
+      458,
+      506,
+      513,
+      547
+    ]
+  },
+  {
+    "id": "v03/rock/middle-right-bedrock/v07-stone-2",
+    "kind": "rock",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        515.0,
+        527.161946947044
+      ],
+      "mapped_face_id": 47460,
+      "original_mesh_face_id": 138698,
+      "barycentric": [
+        0.43541389236687356,
+        0.26511409251933676,
+        0.2994720151137897
+      ],
+      "source_xyz_utm_m": [
+        323826.01583954657,
+        4169808.0624167714,
+        124.60426861888723
+      ],
+      "source_forward_m": 1906.0034839257994,
+      "lateral_q_per_mm": -0.7341638224734996,
+      "crs": "EPSG:32652",
+      "slope_deg": 9.270677406830044,
+      "ndvi": 0.3869635422731239,
+      "effective_observations": 29.0,
+      "retained_ground": 0.46150644612051306,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      492.60312299825654,
+      503.39754246213045,
+      538.48586082646,
+      538.161946947044
+    ],
+    "array_key": "o067",
+    "roi": [
+      488,
+      499,
+      543,
+      543
+    ]
+  },
+  {
+    "id": "v03/rock/middle-right-bedrock/v07-stone-3",
+    "kind": "rock",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        554.0,
+        530.6164897171388
+      ],
+      "mapped_face_id": 16696,
+      "original_mesh_face_id": 39343,
+      "barycentric": [
+        0.7496072355079708,
+        0.2476428892054682,
+        0.002749875286561022
+      ],
+      "source_xyz_utm_m": [
+        323902.42928667617,
+        4169914.9175037416,
+        120.4130596638024
+      ],
+      "source_forward_m": 1875.4546401797797,
+      "lateral_q_per_mm": 2.9779606315603244,
+      "crs": "EPSG:32652",
+      "slope_deg": 10.640787155290639,
+      "ndvi": 0.3634530056371028,
+      "effective_observations": 30.0,
+      "retained_ground": 0.47194260159795964,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      535.1039350227421,
+      512.9746400712838,
+      573.0212483719921,
+      541.6164897171388
+    ],
+    "array_key": "o068",
+    "roi": [
+      531,
+      508,
+      578,
+      546
+    ]
+  },
+  {
+    "id": "v03/rock/middle-right-bedrock/v07-stone-4",
+    "kind": "rock",
+    "group": "middle-right-bedrock",
+    "site": {
+      "xy_mm": [
+        565.0,
+        523.7633959451565
+      ],
+      "mapped_face_id": 16296,
+      "original_mesh_face_id": 38684,
+      "barycentric": [
+        0.01271942663202652,
+        0.906192801823285,
+        0.08108777154468855
+      ],
+      "source_xyz_utm_m": [
+        323892.1857840547,
+        4169972.567366854,
+        141.35817185239426
+      ],
+      "source_forward_m": 1906.6537932531292,
+      "lateral_q_per_mm": -1.360439118751363,
+      "crs": "EPSG:32652",
+      "slope_deg": 14.40352573479852,
+      "ndvi": 0.44073574118965086,
+      "effective_observations": 31.0,
+      "retained_ground": 0.4744227582297582,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      549.1638266968334,
+      507.1463210088805,
+      581.3323227928647,
+      534.7633959451565
+    ],
+    "array_key": "o069",
+    "roi": [
+      545,
+      503,
+      586,
+      539
+    ]
+  },
+  {
+    "id": "v03/tree/upper-right-mixed/v07-grove-0",
+    "kind": "tree",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        449.0,
+        458.3264417003588
+      ],
+      "mapped_face_id": 16877,
+      "original_mesh_face_id": 39652,
+      "barycentric": [
+        0.40228038976392977,
+        0.3241451751990516,
+        0.27357443503701867
+      ],
+      "source_xyz_utm_m": [
+        323304.724355256,
+        4169876.7927669487,
+        248.85103418587423
+      ],
+      "source_forward_m": 2414.8022372975806,
+      "lateral_q_per_mm": -1.7254295334012617,
+      "crs": "EPSG:32652",
+      "slope_deg": 20.115813635053524,
+      "ndvi": 0.514620361267173,
+      "effective_observations": 30.728060136083513,
+      "retained_ground": 0.6254406575644615,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      425.322,
+      421.147,
+      465.547,
+      470.326
+    ],
+    "height_mm": 27,
+    "sigma_mm": 1.3,
+    "array_key": "o070",
+    "roi": [
+      421,
+      417,
+      470,
+      475
+    ]
+  },
+  {
+    "id": "v03/tree/upper-right-mixed/v07-grove-1",
+    "kind": "tree",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        485.0,
+        455.5442940586325
+      ],
+      "mapped_face_id": 15884,
+      "original_mesh_face_id": 38009,
+      "barycentric": [
+        0.43534521727057207,
+        0.08748070874626222,
+        0.47717407398316575
+      ],
+      "source_xyz_utm_m": [
+        323357.6244212624,
+        4170020.684777781,
+        258.8536569202011
+      ],
+      "source_forward_m": 2419.9831549180317,
+      "lateral_q_per_mm": 0.6674671737209913,
+      "crs": "EPSG:32652",
+      "slope_deg": 26.106400144178483,
+      "ndvi": 0.4907755008819376,
+      "effective_observations": 30.0,
+      "retained_ground": 0.9261577581262551,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      451.322,
+      409.341,
+      503.19,
+      467.786
+    ],
+    "height_mm": 35,
+    "sigma_mm": 1.3,
+    "array_key": "o071",
+    "roi": [
+      447,
+      405,
+      508,
+      472
+    ]
+  },
+  {
+    "id": "v03/tree/upper-right-mixed/v07-grove-2",
+    "kind": "tree",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        513.0,
+        455.28378908922934
+      ],
+      "mapped_face_id": 15107,
+      "original_mesh_face_id": 36694,
+      "barycentric": [
+        0.28053418889524007,
+        0.19272654051830596,
+        0.526739270586454
+      ],
+      "source_xyz_utm_m": [
+        323390.78179621557,
+        4170139.1978218826,
+        255.07814678914394
+      ],
+      "source_forward_m": 2433.896207806675,
+      "lateral_q_per_mm": 1.100780673803244,
+      "crs": "EPSG:32652",
+      "slope_deg": 24.352887767808195,
+      "ndvi": 0.42774698607164047,
+      "effective_observations": 31.150979582014635,
+      "retained_ground": 0.9104582024811536,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      489.417,
+      424.157,
+      532.597,
+      467.493
+    ],
+    "height_mm": 25,
+    "sigma_mm": 1.3,
+    "array_key": "o072",
+    "roi": [
+      485,
+      420,
+      537,
+      472
+    ]
+  },
+  {
+    "id": "v03/tree/upper-right-mixed/v08-rock-fringe-0",
+    "kind": "tree",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        436.0,
+        461.7782464600242
+      ],
+      "mapped_face_id": 47239,
+      "original_mesh_face_id": 138351,
+      "barycentric": [
+        0.13232770374673686,
+        0.34541551524764946,
+        0.5222567810056137
+      ],
+      "source_xyz_utm_m": [
+        323279.33229656983,
+        4169828.9698311123,
+        232.26607551738468
+      ],
+      "source_forward_m": 2420.315930328862,
+      "lateral_q_per_mm": -2.271283046006661,
+      "crs": "EPSG:32652",
+      "slope_deg": 22.036882221485392,
+      "ndvi": 0.5250101982897541,
+      "effective_observations": 32.0,
+      "retained_ground": 0.44112824803672535,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      411.618,
+      423.558,
+      455.835,
+      473.778
+    ],
+    "height_mm": 29,
+    "sigma_mm": 1.3,
+    "array_key": "o073",
+    "roi": [
+      407,
+      419,
+      460,
+      478
+    ]
+  },
+  {
+    "id": "v03/tree/upper-right-mixed/v08-rock-fringe-1",
+    "kind": "tree",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        500.0,
+        459.50751561263104
+      ],
+      "mapped_face_id": 45655,
+      "original_mesh_face_id": 135723,
+      "barycentric": [
+        0.1299790951975024,
+        0.2153840967359711,
+        0.6546368080665265
+      ],
+      "source_xyz_utm_m": [
+        323395.36089575797,
+        4170068.8993728557,
+        247.90092557558359
+      ],
+      "source_forward_m": 2403.1812772814683,
+      "lateral_q_per_mm": -0.8831808413440294,
+      "crs": "EPSG:32652",
+      "slope_deg": 19.085190789246383,
+      "ndvi": 0.44134314230965843,
+      "effective_observations": 31.0,
+      "retained_ground": 0.8710870604796278,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      471.046,
+      419.514,
+      520.448,
+      471.811
+    ],
+    "height_mm": 37,
+    "sigma_mm": 1.3,
+    "array_key": "o074",
+    "roi": [
+      467,
+      415,
+      525,
+      476
+    ]
+  },
+  {
+    "id": "v03/tree/upper-right-mixed/v08-rock-fringe-2",
+    "kind": "tree",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        528.0,
+        457.77221217748
+      ],
+      "mapped_face_id": 44886,
+      "original_mesh_face_id": 134408,
+      "barycentric": [
+        0.18460358463059245,
+        0.12084542398673387,
+        0.6945509913826737
+      ],
+      "source_xyz_utm_m": [
+        323424.1634702585,
+        4170190.538107539,
+        248.59509962633663
+      ],
+      "source_forward_m": 2422.3056193581006,
+      "lateral_q_per_mm": -1.961065211169492,
+      "crs": "EPSG:32652",
+      "slope_deg": 22.389992621996832,
+      "ndvi": 0.4178305772614693,
+      "effective_observations": 32.0,
+      "retained_ground": 0.9079388304736307,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      501.74300000000005,
+      421.315,
+      544.302,
+      469.772
+    ],
+    "height_mm": 25,
+    "sigma_mm": 1.3,
+    "array_key": "o075",
+    "roi": [
+      497,
+      417,
+      549,
+      474
+    ]
+  },
+  {
+    "id": "v03/rock/upper-right-mixed/v07-stone-0",
+    "kind": "rock",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        445.0,
+        457.38295128161155
+      ],
+      "mapped_face_id": 47037,
+      "original_mesh_face_id": 138022,
+      "barycentric": [
+        0.45664146634491876,
+        0.2695373688854973,
+        0.2738211647695839
+      ],
+      "source_xyz_utm_m": [
+        323286.7853650569,
+        4169868.6992439902,
+        248.1332329841738
+      ],
+      "source_forward_m": 2428.3727882239646,
+      "lateral_q_per_mm": -2.3674370084011036,
+      "crs": "EPSG:32652",
+      "slope_deg": 21.754735996826486,
+      "ndvi": 0.5476709270885046,
+      "effective_observations": 31.000000000000004,
+      "retained_ground": 0.5860052784480642,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      424.9036413916146,
+      437.23761774977527,
+      465.5739024667312,
+      468.38295128161155
+    ],
+    "array_key": "o076",
+    "roi": [
+      420,
+      433,
+      470,
+      473
+    ]
+  },
+  {
+    "id": "v03/rock/upper-right-mixed/v07-stone-1",
+    "kind": "rock",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        462.0,
+        460.49258682861023
+      ],
+      "mapped_face_id": 46638,
+      "original_mesh_face_id": 137366,
+      "barycentric": [
+        0.20513985600636953,
+        0.12228565326552512,
+        0.6725744907281054
+      ],
+      "source_xyz_utm_m": [
+        323334.82276527816,
+        4169921.1541956803,
+        243.51770855262313
+      ],
+      "source_forward_m": 2403.6251223244067,
+      "lateral_q_per_mm": -0.5746411113356354,
+      "crs": "EPSG:32652",
+      "slope_deg": 21.14167503519057,
+      "ndvi": 0.4644084559617092,
+      "effective_observations": 30.98161615951465,
+      "retained_ground": 0.7165481660714278,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      436.4634327627276,
+      441.63727997510205,
+      489.3644381731398,
+      471.49258682861023
+    ],
+    "array_key": "o077",
+    "roi": [
+      432,
+      437,
+      494,
+      476
+    ]
+  },
+  {
+    "id": "v03/rock/upper-right-mixed/v07-stone-2",
+    "kind": "rock",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        499.0,
+        454.5200768675548
+      ],
+      "mapped_face_id": 45654,
+      "original_mesh_face_id": 135722,
+      "barycentric": [
+        0.5388112607862001,
+        0.03784533011701968,
+        0.42334340909678025
+      ],
+      "source_xyz_utm_m": [
+        323372.29969772714,
+        4170081.164337824,
+        259.9672247892245
+      ],
+      "source_forward_m": 2429.1635422866584,
+      "lateral_q_per_mm": -0.42820652159717115,
+      "crs": "EPSG:32652",
+      "slope_deg": 18.38003859355041,
+      "ndvi": 0.38594613692628077,
+      "effective_observations": 30.80505599630999,
+      "retained_ground": 0.9415024925490254,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      481.5077851690888,
+      434.9284567258101,
+      516.9974809584085,
+      465.5200768675548
+    ],
+    "array_key": "o078",
+    "roi": [
+      477,
+      430,
+      521,
+      470
+    ]
+  },
+  {
+    "id": "v03/rock/upper-right-mixed/v07-stone-3",
+    "kind": "rock",
+    "group": "upper-right-mixed",
+    "site": {
+      "xy_mm": [
+        523.0,
+        461.57218221107854
+      ],
+      "mapped_face_id": 45077,
+      "original_mesh_face_id": 134737,
+      "barycentric": [
+        0.14365357993740413,
+        0.3808182717602901,
+        0.4755281483023058
+      ],
+      "source_xyz_utm_m": [
+        323430.73415555095,
+        4170159.309607398,
+        238.59337406770987
+      ],
+      "source_forward_m": 2404.458639267167,
+      "lateral_q_per_mm": -0.8395972118156236,
+      "crs": "EPSG:32652",
+      "slope_deg": 27.656264835833802,
+      "ndvi": 0.4176136015341042,
+      "effective_observations": 31.0,
+      "retained_ground": 0.8260159304067197,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      506.4527819548872,
+      444.52084735618087,
+      539.5547773972263,
+      472.57218221107854
+    ],
+    "array_key": "o079",
+    "roi": [
+      502,
+      440,
+      544,
+      477
+    ]
+  },
+  {
+    "id": "v03/tree/far-left-exposure/v07-grove-0",
+    "kind": "tree",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        102.0,
+        430.39664641358047
+      ],
+      "mapped_face_id": 57111,
+      "original_mesh_face_id": 152809,
+      "barycentric": [
+        0.5192260289792946,
+        0.3720544421204431,
+        0.10871952890026232
+      ],
+      "source_xyz_utm_m": [
+        322751.738414133,
+        4168520.576780869,
+        367.1650889078623
+      ],
+      "source_forward_m": 2416.357293814322,
+      "lateral_q_per_mm": -2.8457485316625335,
+      "crs": "EPSG:32652",
+      "slope_deg": 20.029094415546098,
+      "ndvi": 0.6158826356580556,
+      "effective_observations": 30.0,
+      "retained_ground": 0.9843163872409156,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      86.41,
+      394.662,
+      126.588,
+      430.103
+    ],
+    "height_mm": 26,
+    "sigma_mm": 1.3,
+    "array_key": "o080",
+    "roi": [
+      82,
+      390,
+      131,
+      435
+    ]
+  },
+  {
+    "id": "v03/tree/far-left-exposure/v07-grove-1",
+    "kind": "tree",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        160.0,
+        439.19826054102697
+      ],
+      "mapped_face_id": 55187,
+      "original_mesh_face_id": 150181,
+      "barycentric": [
+        0.05698631260083209,
+        0.01985958909811901,
+        0.9231540983010489
+      ],
+      "source_xyz_utm_m": [
+        322847.30537705094,
+        4168746.709589378,
+        331.0138249403074
+      ],
+      "source_forward_m": 2412.9824223158416,
+      "lateral_q_per_mm": -1.9223241818314905,
+      "crs": "EPSG:32652",
+      "slope_deg": 23.10329713094785,
+      "ndvi": 0.37997431556394745,
+      "effective_observations": 30.0,
+      "retained_ground": 0.9236898885119491,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      139.32,
+      397.195,
+      185.37,
+      433.935
+    ],
+    "height_mm": 30,
+    "sigma_mm": 1.3,
+    "array_key": "o081",
+    "roi": [
+      135,
+      393,
+      190,
+      438
+    ]
+  },
+  {
+    "id": "v03/tree/far-left-exposure/v07-grove-2",
+    "kind": "tree",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        202.0,
+        439.6074879464307
+      ],
+      "mapped_face_id": 23844,
+      "original_mesh_face_id": 50168,
+      "barycentric": [
+        0.19885123196349752,
+        0.11468665687162485,
+        0.6864621111648777
+      ],
+      "source_xyz_utm_m": [
+        322938.44059970614,
+        4168904.4061366655,
+        338.9945504935412
+      ],
+      "source_forward_m": 2387.941383408228,
+      "lateral_q_per_mm": 1.7827238581855385,
+      "crs": "EPSG:32652",
+      "slope_deg": 31.176133946239023,
+      "ndvi": 0.38714220142844097,
+      "effective_observations": 29.71748360621859,
+      "retained_ground": 0.9923380647033953,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      184.541,
+      410.42,
+      224.026,
+      445.053
+    ],
+    "height_mm": 24,
+    "sigma_mm": 1.3,
+    "array_key": "o082",
+    "roi": [
+      180,
+      406,
+      229,
+      450
+    ]
+  },
+  {
+    "id": "v03/tree/far-left-exposure/v08-rock-fringe-0",
+    "kind": "tree",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        89.0,
+        429.14496655115255
+      ],
+      "mapped_face_id": 27433,
+      "original_mesh_face_id": 55096,
+      "barycentric": [
+        0.7756396195393914,
+        0.06433368939113554,
+        0.160026691069473
+      ],
+      "source_xyz_utm_m": [
+        322726.93001068174,
+        4168470.1991992677,
+        370.89954000990525
+      ],
+      "source_forward_m": 2420.3682715945183,
+      "lateral_q_per_mm": 2.5445423498573043,
+      "crs": "EPSG:32652",
+      "slope_deg": 26.860460785508536,
+      "ndvi": 0.41040708651065266,
+      "effective_observations": 27.0,
+      "retained_ground": 0.9812411082158716,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      73.951,
+      390.888,
+      116.101,
+      426.3
+    ],
+    "height_mm": 29,
+    "sigma_mm": 1.3,
+    "array_key": "o083",
+    "roi": [
+      69,
+      386,
+      121,
+      431
+    ]
+  },
+  {
+    "id": "v03/tree/far-left-exposure/v08-rock-fringe-1",
+    "kind": "tree",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        124.0,
+        434.9813803103337
+      ],
+      "mapped_face_id": 56391,
+      "original_mesh_face_id": 151824,
+      "barycentric": [
+        0.2993177371894109,
+        0.31333266253323994,
+        0.3873496002773492
+      ],
+      "source_xyz_utm_m": [
+        322803.3795119917,
+        4168603.9795321156,
+        354.0940728555559
+      ],
+      "source_forward_m": 2399.9255115611763,
+      "lateral_q_per_mm": 1.3648896926973488,
+      "crs": "EPSG:32652",
+      "slope_deg": 23.59334278724058,
+      "ndvi": 0.45695621375560286,
+      "effective_observations": 29.0,
+      "retained_ground": 0.9478086318877496,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      104.733,
+      396.273,
+      154.987,
+      438.63
+    ],
+    "height_mm": 37,
+    "sigma_mm": 1.3,
+    "array_key": "o084",
+    "roi": [
+      100,
+      392,
+      159,
+      443
+    ]
+  },
+  {
+    "id": "v03/tree/far-left-exposure/v08-rock-fringe-2",
+    "kind": "tree",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        173.0,
+        438.0531027359754
+      ],
+      "mapped_face_id": 24788,
+      "original_mesh_face_id": 51482,
+      "barycentric": [
+        0.49873273689524855,
+        0.16330135053332062,
+        0.3379659125714308
+      ],
+      "source_xyz_utm_m": [
+        322879.899040516,
+        4168794.861022623,
+        340.5701061660042
+      ],
+      "source_forward_m": 2400.9209796007453,
+      "lateral_q_per_mm": -0.5903418855845515,
+      "crs": "EPSG:32652",
+      "slope_deg": 24.57571736520908,
+      "ndvi": 0.47561267580944716,
+      "effective_observations": 30.0,
+      "retained_ground": 0.9863837780919654,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      154.97,
+      401.848,
+      195.265,
+      436.541
+    ],
+    "height_mm": 25,
+    "sigma_mm": 1.3,
+    "array_key": "o085",
+    "roi": [
+      150,
+      397,
+      200,
+      441
+    ]
+  },
+  {
+    "id": "v03/tree/far-left-exposure/v08-rock-fringe-3",
+    "kind": "tree",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        201.0,
+        442.5286568090016
+      ],
+      "mapped_face_id": 54005,
+      "original_mesh_face_id": 148539,
+      "barycentric": [
+        0.1011244740241466,
+        0.2780534071610184,
+        0.6208221188148351
+      ],
+      "source_xyz_utm_m": [
+        322946.37533643557,
+        4168898.033734221,
+        330.1628439476734
+      ],
+      "source_forward_m": 2378.1910531019853,
+      "lateral_q_per_mm": -0.06750866831082519,
+      "crs": "EPSG:32652",
+      "slope_deg": 30.038745313400796,
+      "ndvi": 0.3842822752196287,
+      "effective_observations": 29.0,
+      "retained_ground": 0.9800184287065578,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      187.866,
+      399.802,
+      229.861,
+      438.246
+    ],
+    "height_mm": 31,
+    "sigma_mm": 1.3,
+    "array_key": "o086",
+    "roi": [
+      183,
+      395,
+      234,
+      443
+    ]
+  },
+  {
+    "id": "v03/rock/far-left-exposure/v07-stone-0",
+    "kind": "rock",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        87.0,
+        428.5709322368486
+      ],
+      "mapped_face_id": 27433,
+      "original_mesh_face_id": 55096,
+      "barycentric": [
+        0.5534224029502082,
+        0.01923603258128006,
+        0.42734156446851174
+      ],
+      "source_xyz_utm_m": [
+        322725.57708097744,
+        4168462.179753066,
+        374.05474809311653
+      ],
+      "source_forward_m": 2418.6016491795117,
+      "lateral_q_per_mm": 2.5445423498573043,
+      "crs": "EPSG:32652",
+      "slope_deg": 25.104670043197007,
+      "ndvi": 0.45017408225929056,
+      "effective_observations": 27.03895913584417,
+      "retained_ground": 0.9841428533534256,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      65.21856719943573,
+      408.58304922739745,
+      111.04611205601869,
+      439.5709322368486
+    ],
+    "array_key": "o087",
+    "roi": [
+      61,
+      404,
+      116,
+      444
+    ]
+  },
+  {
+    "id": "v03/rock/far-left-exposure/v07-stone-1",
+    "kind": "rock",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        111.0,
+        423.46068032455236
+      ],
+      "mapped_face_id": 26712,
+      "original_mesh_face_id": 54109,
+      "barycentric": [
+        0.4657387314778163,
+        0.3665613392084415,
+        0.16769992931374222
+      ],
+      "source_xyz_utm_m": [
+        322735.99684017623,
+        4168559.9690021207,
+        384.8059513839286
+      ],
+      "source_forward_m": 2445.7743292811892,
+      "lateral_q_per_mm": -2.5671432838882424,
+      "crs": "EPSG:32652",
+      "slope_deg": 15.081010027449985,
+      "ndvi": 0.5124594730515996,
+      "effective_observations": 30.0,
+      "retained_ground": 0.9876172343591487,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      89.94388854489165,
+      402.675654813637,
+      132.37853265636423,
+      434.46068032455236
+    ],
+    "array_key": "o088",
+    "roi": [
+      85,
+      398,
+      137,
+      439
+    ]
+  },
+  {
+    "id": "v03/rock/far-left-exposure/v07-stone-2",
+    "kind": "rock",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        143.0,
+        443.9475625835595
+      ],
+      "mapped_face_id": 55909,
+      "original_mesh_face_id": 151167,
+      "barycentric": [
+        0.7042992707016511,
+        0.24037389734561673,
+        0.05532683195273217
+      ],
+      "source_xyz_utm_m": [
+        322843.34019504144,
+        4168676.128978121,
+        319.5028286447501
+      ],
+      "source_forward_m": 2390.076525262178,
+      "lateral_q_per_mm": 4.527904964531514,
+      "crs": "EPSG:32652",
+      "slope_deg": 15.519937573509477,
+      "ndvi": 0.3418914317333893,
+      "effective_observations": 29.000000000000004,
+      "retained_ground": 0.8470024344243926,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      126.11670718742673,
+      426.9794158105633,
+      160.39661065726423,
+      454.9475625835595
+    ],
+    "array_key": "o089",
+    "roi": [
+      122,
+      422,
+      165,
+      459
+    ]
+  },
+  {
+    "id": "v03/rock/far-left-exposure/v07-stone-3",
+    "kind": "rock",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        170.0,
+        438.45988014558685
+      ],
+      "mapped_face_id": 24788,
+      "original_mesh_face_id": 51482,
+      "barycentric": [
+        0.24976697654268099,
+        0.020233879745964963,
+        0.7299991437113541
+      ],
+      "source_xyz_utm_m": [
+        322875.6070163924,
+        4168783.1000256888,
+        339.0108918603121
+      ],
+      "source_forward_m": 2400.4680990008255,
+      "lateral_q_per_mm": -0.5903418855845515,
+      "crs": "EPSG:32652",
+      "slope_deg": 24.443219049141334,
+      "ndvi": 0.45985753377632604,
+      "effective_observations": 30.0,
+      "retained_ground": 0.9800607119668858,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      147.23133421093078,
+      420.22754886305626,
+      194.47712546928622,
+      449.45988014558685
+    ],
+    "array_key": "o090",
+    "roi": [
+      143,
+      416,
+      199,
+      454
+    ]
+  },
+  {
+    "id": "v03/rock/far-left-exposure/v07-stone-4",
+    "kind": "rock",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        192.0,
+        442.04225597172996
+      ],
+      "mapped_face_id": 24315,
+      "original_mesh_face_id": 50826,
+      "barycentric": [
+        0.9117251037399746,
+        0.006714127647840809,
+        0.08156076861218459
+      ],
+      "source_xyz_utm_m": [
+        322935.2014238295,
+        4168862.553176942,
+        333.5209718891212
+      ],
+      "source_forward_m": 2375.1811575085662,
+      "lateral_q_per_mm": -0.12288838906783976,
+      "crs": "EPSG:32652",
+      "slope_deg": 27.328185786901756,
+      "ndvi": 0.4660574191588388,
+      "effective_observations": 29.0,
+      "retained_ground": 0.9843226903214087,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      175.285,
+      425.1300660878318,
+      208.60533340208448,
+      453.04225597172996
+    ],
+    "array_key": "o091",
+    "roi": [
+      171,
+      421,
+      213,
+      458
+    ]
+  },
+  {
+    "id": "v03/rock/far-left-exposure/v07-stone-5",
+    "kind": "rock",
+    "group": "far-left-exposure",
+    "site": {
+      "xy_mm": [
+        222.0,
+        443.94511890090007
+      ],
+      "mapped_face_id": 23378,
+      "original_mesh_face_id": 49511,
+      "barycentric": [
+        0.7937459573358887,
+        0.1175587913314699,
+        0.08869525133264138
+      ],
+      "source_xyz_utm_m": [
+        322968.52676373994,
+        4168982.3391424604,
+        319.7498143038622
+      ],
+      "source_forward_m": 2389.417965815754,
+      "lateral_q_per_mm": 0.8241078474781641,
+      "crs": "EPSG:32652",
+      "slope_deg": 14.64099193541569,
+      "ndvi": 0.44507657510216864,
+      "effective_observations": 31.0,
+      "retained_ground": 0.906250766679129,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      206.27909646095628,
+      427.6791448983009,
+      238.00151134370967,
+      454.94511890090007
+    ],
+    "array_key": "o092",
+    "roi": [
+      202,
+      423,
+      243,
+      459
+    ]
+  },
+  {
+    "id": "v03/tree/left-step/c8",
+    "kind": "tree",
+    "group": "left-step",
+    "site": {
+      "xy_mm": [
+        81.0,
+        738.9415845745442
+      ],
+      "mapped_face_id": 59317,
+      "original_mesh_face_id": 155834,
+      "barycentric": [
+        0.11067979565903174,
+        0.8449363936125702,
+        0.04438381072839808
+      ],
+      "source_xyz_utm_m": [
+        324673.66848567815,
+        4168238.32039387,
+        48.29399820344092
+      ],
+      "source_forward_m": 529.6192512710616,
+      "lateral_q_per_mm": 0.030776008395005383,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.4228061694709035,
+      "ndvi": 0.13121483778404558,
+      "effective_observations": 28.0,
+      "retained_ground": 0.5725607075653073,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      38.946,
+      655.272,
+      132.65,
+      751.033
+    ],
+    "height_mm": 75,
+    "sigma_mm": 1.875,
+    "array_key": "o093",
+    "roi": [
+      34,
+      651,
+      137,
+      756
+    ]
+  },
+  {
+    "id": "v03/tree/left-step/c9",
+    "kind": "tree",
+    "group": "left-step",
+    "site": {
+      "xy_mm": [
+        118.0,
+        738.9798415637348
+      ],
+      "mapped_face_id": 58845,
+      "original_mesh_face_id": 155177,
+      "barycentric": [
+        0.05893425906691152,
+        0.6891359267954281,
+        0.25192981413766036
+      ],
+      "source_xyz_utm_m": [
+        324697.4421055759,
+        4168296.7680277717,
+        48.09703917077684
+      ],
+      "source_forward_m": 529.6058936176548,
+      "lateral_q_per_mm": 0.0023960149015692105,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.036765863327248,
+      "ndvi": 0.11328353042520017,
+      "effective_observations": 28.057869318803153,
+      "retained_ground": 0.47637425991084964,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      93.258,
+      664.544,
+      158.557,
+      751.243
+    ],
+    "height_mm": 65,
+    "sigma_mm": 1.625,
+    "array_key": "o094",
+    "roi": [
+      89,
+      660,
+      163,
+      756
+    ]
+  },
+  {
+    "id": "v03/tree/left-step/c10",
+    "kind": "tree",
+    "group": "left-step",
+    "site": {
+      "xy_mm": [
+        150.0,
+        739.1192279563529
+      ],
+      "mapped_face_id": 28453,
+      "original_mesh_face_id": 56478,
+      "barycentric": [
+        0.31081116554953603,
+        0.4329595868399628,
+        0.25622924761050125
+      ],
+      "source_xyz_utm_m": [
+        324717.98878760525,
+        4168347.313122572,
+        46.937736487114364
+      ],
+      "source_forward_m": 529.6059904014501,
+      "lateral_q_per_mm": 0.04616877457775795,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.4912418052370917,
+      "ndvi": 0.06620679663101377,
+      "effective_observations": 28.513414521014738,
+      "retained_ground": 0.41060664051416634,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      128.454,
+      693.859,
+      185.309,
+      751.593
+    ],
+    "height_mm": 45,
+    "sigma_mm": 1.3,
+    "array_key": "o095",
+    "roi": [
+      124,
+      689,
+      190,
+      756
+    ]
+  },
+  {
+    "id": "v03/tree/left-step/v07-grove-0",
+    "kind": "tree",
+    "group": "left-step",
+    "site": {
+      "xy_mm": [
+        67.0,
+        738.7252321768127
+      ],
+      "mapped_face_id": 59553,
+      "original_mesh_face_id": 156163,
+      "barycentric": [
+        0.37142487761410714,
+        0.2841583373660833,
+        0.3444167850198096
+      ],
+      "source_xyz_utm_m": [
+        324664.66749644943,
+        4168216.142746329,
+        50.22595765541345
+      ],
+      "source_forward_m": 529.6059904015452,
+      "lateral_q_per_mm": 0.07792419960090124,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.204642199078781,
+      "ndvi": 0.10313202341518052,
+      "effective_observations": 28.08121062480501,
+      "retained_ground": 0.6131660705631435,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      45.121,
+      676.553,
+      101.042,
+      750.9
+    ],
+    "height_mm": 49,
+    "sigma_mm": 1.3,
+    "array_key": "o096",
+    "roi": [
+      41,
+      672,
+      106,
+      755
+    ]
+  },
+  {
+    "id": "v03/tree/left-step/v07-grove-1",
+    "kind": "tree",
+    "group": "left-step",
+    "site": {
+      "xy_mm": [
+        95.0,
+        733.9938246322107
+      ],
+      "mapped_face_id": 29163,
+      "original_mesh_face_id": 57463,
+      "barycentric": [
+        0.36926288777846294,
+        0.5607315538892138,
+        0.07000555833232329
+      ],
+      "source_xyz_utm_m": [
+        324661.8219466167,
+        4168262.8998332503,
+        48.71321251813625
+      ],
+      "source_forward_m": 549.849803392664,
+      "lateral_q_per_mm": 0.06836303355872742,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.550840449799016,
+      "ndvi": 0.029186188732072994,
+      "effective_observations": 28.0,
+      "retained_ground": 0.5425467547114025,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      55.36,
+      663.274,
+      131.436,
+      746.074
+    ],
+    "height_mm": 59,
+    "sigma_mm": 1.475,
+    "array_key": "o097",
+    "roi": [
+      51,
+      659,
+      136,
+      751
+    ]
+  },
+  {
+    "id": "v03/tree/left-step/v07-grove-2",
+    "kind": "tree",
+    "group": "left-step",
+    "site": {
+      "xy_mm": [
+        137.0,
+        731.0054489780871
+      ],
+      "mapped_face_id": 28452,
+      "original_mesh_face_id": 56477,
+      "barycentric": [
+        0.16834341624200666,
+        0.07915547191746476,
+        0.7525011118405286
+      ],
+      "source_xyz_utm_m": [
+        324677.3746641575,
+        4168332.424966645,
+        50.00169559330107
+      ],
+      "source_forward_m": 561.6237164599964,
+      "lateral_q_per_mm": 0.08911734445027074,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.4102414142177935,
+      "ndvi": 0.13936174668872695,
+      "effective_observations": 28.0,
+      "retained_ground": 0.44527545994863654,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      113.931,
+      680.895,
+      175.843,
+      743.574
+    ],
+    "height_mm": 53,
+    "sigma_mm": 1.3250000000000002,
+    "array_key": "o098",
+    "roi": [
+      109,
+      676,
+      180,
+      748
+    ]
+  },
+  {
+    "id": "v03/tree/left-step/v07-grove-3",
+    "kind": "tree",
+    "group": "left-step",
+    "site": {
+      "xy_mm": [
+        164.0,
+        739.1758706844237
+      ],
+      "mapped_face_id": 58371,
+      "original_mesh_face_id": 154520,
+      "barycentric": [
+        0.48170851794687897,
+        0.25122577033941573,
+        0.26706571171370524
+      ],
+      "source_xyz_utm_m": [
+        324726.98802864854,
+        4168369.451255538,
+        46.41803932985106
+      ],
+      "source_forward_m": 529.605990401311,
+      "lateral_q_per_mm": 0.0011788203097663045,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.5279843139933955,
+      "ndvi": 0.058764850779002724,
+      "effective_observations": 28.0,
+      "retained_ground": 0.39652485363890166,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      144.958,
+      693.074,
+      196.208,
+      751.317
+    ],
+    "height_mm": 35,
+    "sigma_mm": 1.3,
+    "array_key": "o099",
+    "roi": [
+      140,
+      689,
+      201,
+      756
+    ]
+  },
+  {
+    "id": "v03/tree/right-rise/b9",
+    "kind": "tree",
+    "group": "right-rise",
+    "site": {
+      "xy_mm": [
+        437.0,
+        694.1917147072389
+      ],
+      "mapped_face_id": 54064,
+      "original_mesh_face_id": 148598,
+      "barycentric": [
+        0.5720586249961764,
+        0.18087538197058195,
+        0.24706599303324162
+      ],
+      "source_xyz_utm_m": [
+        324727.588020209,
+        4168912.1617587497,
+        44.65606667911138
+      ],
+      "source_forward_m": 733.4235779350471,
+      "lateral_q_per_mm": -0.021765412127708997,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.027645314061321,
+      "ndvi": 0.07133683755576273,
+      "effective_observations": 30.0,
+      "retained_ground": 0.39162221028142064,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      385.64,
+      622.1,
+      468.033,
+      706.87
+    ],
+    "height_mm": 80,
+    "sigma_mm": 2.0,
+    "array_key": "o100",
+    "roi": [
+      381,
+      618,
+      473,
+      711
+    ]
+  },
+  {
+    "id": "v03/tree/right-rise/b10",
+    "kind": "tree",
+    "group": "right-rise",
+    "site": {
+      "xy_mm": [
+        466.0,
+        694.0000668145788
+      ],
+      "mapped_face_id": 53598,
+      "original_mesh_face_id": 147941,
+      "barycentric": [
+        0.34201752886473435,
+        0.13041595821776575,
+        0.5275665129174999
+      ],
+      "source_xyz_utm_m": [
+        324749.1730046125,
+        4168965.260525866,
+        45.86821515893975
+      ],
+      "source_forward_m": 733.4234670263244,
+      "lateral_q_per_mm": -0.04697697854597931,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.278466823168215,
+      "ndvi": 0.21226234461617424,
+      "effective_observations": 30.977254720311635,
+      "retained_ground": 0.40055673729220775,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      433.411,
+      648.083,
+      489.816,
+      706.354
+    ],
+    "height_mm": 45,
+    "sigma_mm": 1.3,
+    "array_key": "o101",
+    "roi": [
+      429,
+      644,
+      494,
+      711
+    ]
+  },
+  {
+    "id": "v03/tree/right-rise/b11",
+    "kind": "tree",
+    "group": "right-rise",
+    "site": {
+      "xy_mm": [
+        497.0,
+        693.9780645663125
+      ],
+      "mapped_face_id": 53136,
+      "original_mesh_face_id": 147284,
+      "barycentric": [
+        0.23594124620132761,
+        0.006026405943281819,
+        0.7580323478553905
+      ],
+      "source_xyz_utm_m": [
+        324772.25902956433,
+        4169022.078237386,
+        45.95572131760935
+      ],
+      "source_forward_m": 733.4332920261228,
+      "lateral_q_per_mm": 0.030715703794305427,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.380269331795489,
+      "ndvi": 0.13056669179429387,
+      "effective_observations": 31.05203120270744,
+      "retained_ground": 0.38645515878731385,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      472.813,
+      657.831,
+      513.163,
+      705.978
+    ],
+    "height_mm": 26,
+    "sigma_mm": 1.3,
+    "array_key": "o102",
+    "roi": [
+      468,
+      653,
+      518,
+      710
+    ]
+  },
+  {
+    "id": "v03/tree/right-rise/v07-grove-0",
+    "kind": "tree",
+    "group": "right-rise",
+    "site": {
+      "xy_mm": [
+        418.0,
+        689.2679602244592
+      ],
+      "mapped_face_id": 24137,
+      "original_mesh_face_id": 50555,
+      "barycentric": [
+        0.2715621137019866,
+        0.56858065910606,
+        0.15985722719195336
+      ],
+      "source_xyz_utm_m": [
+        324692.0574197732,
+        4168890.2042831844,
+        44.89112934269308
+      ],
+      "source_forward_m": 758.069849415589,
+      "lateral_q_per_mm": 0.04451298918518372,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.73114913178172,
+      "ndvi": 0.10416470114902768,
+      "effective_observations": 30.0,
+      "retained_ground": 0.3678989832876571,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      382.253,
+      629.637,
+      437.311,
+      701.428
+    ],
+    "height_mm": 47,
+    "sigma_mm": 1.3,
+    "array_key": "o103",
+    "roi": [
+      378,
+      625,
+      442,
+      706
+    ]
+  },
+  {
+    "id": "v03/tree/right-rise/v07-grove-1",
+    "kind": "tree",
+    "group": "right-rise",
+    "site": {
+      "xy_mm": [
+        451.0,
+        685.1179655278559
+      ],
+      "mapped_face_id": 53596,
+      "original_mesh_face_id": 147939,
+      "barycentric": [
+        0.2784404879277067,
+        0.5381678540917054,
+        0.18339165798058785
+      ],
+      "source_xyz_utm_m": [
+        324699.49825026054,
+        4168963.353214638,
+        45.65298929570844
+      ],
+      "source_forward_m": 778.7231352486514,
+      "lateral_q_per_mm": 0.01516921304195622,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.947272266804975,
+      "ndvi": 0.2179740473318779,
+      "effective_observations": 31.0,
+      "retained_ground": 0.37638153681535624,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      403.092,
+      613.383,
+      472.694,
+      697.516
+    ],
+    "height_mm": 58,
+    "sigma_mm": 1.4500000000000002,
+    "array_key": "o104",
+    "roi": [
+      399,
+      609,
+      477,
+      702
+    ]
+  },
+  {
+    "id": "v03/tree/right-rise/v07-grove-2",
+    "kind": "tree",
+    "group": "right-rise",
+    "site": {
+      "xy_mm": [
+        484.0,
+        686.9513014955595
+      ],
+      "mapped_face_id": 53134,
+      "original_mesh_face_id": 147282,
+      "barycentric": [
+        0.15182129735068495,
+        0.7920286195759779,
+        0.05615008307333712
+      ],
+      "source_xyz_utm_m": [
+        324733.3154975078,
+        4169019.5546389204,
+        46.424234825444884
+      ],
+      "source_forward_m": 768.5596415494983,
+      "lateral_q_per_mm": 0.13968873414466593,
+      "crs": "EPSG:32652",
+      "slope_deg": 1.8523446216528612,
+      "ndvi": 0.04458284447628701,
+      "effective_observations": 30.0,
+      "retained_ground": 0.36553429639014934,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      443.146,
+      628.085,
+      515.754,
+      699.481
+    ],
+    "height_mm": 62,
+    "sigma_mm": 1.55,
+    "array_key": "o105",
+    "roi": [
+      439,
+      624,
+      520,
+      704
+    ]
+  },
+  {
+    "id": "v03/tree/right-rise/v07-grove-3",
+    "kind": "tree",
+    "group": "right-rise",
+    "site": {
+      "xy_mm": [
+        511.0,
+        694.0379191812174
+      ],
+      "mapped_face_id": 52906,
+      "original_mesh_face_id": 146955,
+      "barycentric": [
+        0.09098859434840056,
+        0.4989043569510024,
+        0.41010704870059705
+      ],
+      "source_xyz_utm_m": [
+        324782.696788539,
+        4169047.72965783,
+        45.66109916758171
+      ],
+      "source_forward_m": 733.4237018252737,
+      "lateral_q_per_mm": -0.015539434940154816,
+      "crs": "EPSG:32652",
+      "slope_deg": 2.402589184338327,
+      "ndvi": 0.12094882126652447,
+      "effective_observations": 31.990171141287988,
+      "retained_ground": 0.3815930128056577,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      478.992,
+      644.123,
+      529.273,
+      706.18
+    ],
+    "height_mm": 39,
+    "sigma_mm": 1.3,
+    "array_key": "o106",
+    "roi": [
+      474,
+      640,
+      534,
+      711
+    ]
+  },
+  {
+    "id": "v03/tree/right-link/rear",
+    "kind": "tree",
+    "group": "right-link",
+    "site": {
+      "xy_mm": [
+        508.0,
+        635.0357901042962
+      ],
+      "mapped_face_id": 51315,
+      "original_mesh_face_id": 144643,
+      "barycentric": [
+        0.02134975267018313,
+        0.26550431110995204,
+        0.7131459362198649
+      ],
+      "source_xyz_utm_m": [
+        324503.6056219134,
+        4169255.6404925804,
+        49.34777501393753
+      ],
+      "source_forward_m": 1070.2642946985989,
+      "lateral_q_per_mm": 0.01971055865102495,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.639574129357584,
+      "ndvi": 0.3078739009222084,
+      "effective_observations": 30.0,
+      "retained_ground": 0.46505473947080156,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      477.791,
+      592.892,
+      530.438,
+      647.342
+    ],
+    "height_mm": 40,
+    "sigma_mm": 1.3,
+    "array_key": "o107",
+    "roi": [
+      473,
+      588,
+      535,
+      652
+    ]
+  },
+  {
+    "id": "v03/tree/right-link/terminal",
+    "kind": "tree",
+    "group": "right-link",
+    "site": {
+      "xy_mm": [
+        533.0,
+        634.7324849163371
+      ],
+      "mapped_face_id": 20933,
+      "original_mesh_face_id": 45944,
+      "barycentric": [
+        0.8440346984445071,
+        0.051156997840894405,
+        0.10480830371459846
+      ],
+      "source_xyz_utm_m": [
+        324526.5347099352,
+        4169311.855750888,
+        50.9013924125984
+      ],
+      "source_forward_m": 1070.1926323718385,
+      "lateral_q_per_mm": -0.18075423425876858,
+      "crs": "EPSG:32652",
+      "slope_deg": 3.876440070785466,
+      "ndvi": 0.08043180051675453,
+      "effective_observations": 31.0,
+      "retained_ground": 0.5367610918577332,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      507.528,
+      595.706,
+      549.782,
+      646.732
+    ],
+    "height_mm": 30,
+    "sigma_mm": 1.3,
+    "array_key": "o108",
+    "roi": [
+      503,
+      591,
+      554,
+      651
+    ]
+  },
+  {
+    "id": "v03/tree/right-link/v07-grove-0",
+    "kind": "tree",
+    "group": "right-link",
+    "site": {
+      "xy_mm": [
+        490.0,
+        634.1387993225826
+      ],
+      "mapped_face_id": 51761,
+      "original_mesh_face_id": 145300,
+      "barycentric": [
+        0.6706902948565272,
+        0.0697413369118808,
+        0.2595683682315921
+      ],
+      "source_xyz_utm_m": [
+        324487.2129489531,
+        4169215.120708846,
+        53.90709955376799
+      ],
+      "source_forward_m": 1070.1913105695019,
+      "lateral_q_per_mm": 0.5494138795933349,
+      "crs": "EPSG:32652",
+      "slope_deg": 6.350503552867854,
+      "ndvi": 0.3288081359787273,
+      "effective_observations": 28.54031175612633,
+      "retained_ground": 0.4648047312673551,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      461.923,
+      584.656,
+      508.941,
+      646.272
+    ],
+    "height_mm": 36,
+    "sigma_mm": 1.3,
+    "array_key": "o109",
+    "roi": [
+      457,
+      580,
+      513,
+      651
+    ]
+  },
+  {
+    "id": "v03/tree/right-link/v07-grove-1",
+    "kind": "tree",
+    "group": "right-link",
+    "site": {
+      "xy_mm": [
+        518.0,
+        629.0000000000304
+      ],
+      "mapped_face_id": 51092,
+      "original_mesh_face_id": 144313,
+      "barycentric": [
+        0.5370998142595209,
+        0.0840375919428316,
+        0.3788625937976475
+      ],
+      "source_xyz_utm_m": [
+        324483.63412218605,
+        4169301.1129944273,
+        53.44153088057878
+      ],
+      "source_forward_m": 1105.8895741115236,
+      "lateral_q_per_mm": 0.15436914501631668,
+      "crs": "EPSG:32652",
+      "slope_deg": 5.419388435391502,
+      "ndvi": 0.4564684409370622,
+      "effective_observations": 31.0,
+      "retained_ground": 0.5092118379317715,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      477.799,
+      568.668,
+      541.707,
+      641.325
+    ],
+    "height_mm": 49,
+    "sigma_mm": 1.3,
+    "array_key": "o110",
+    "roi": [
+      473,
+      564,
+      546,
+      646
+    ]
+  },
+  {
+    "id": "v03/tree/right-link/v07-grove-2",
+    "kind": "tree",
+    "group": "right-link",
+    "site": {
+      "xy_mm": [
+        547.0,
+        634.7379205012784
+      ],
+      "mapped_face_id": 20712,
+      "original_mesh_face_id": 45615,
+      "barycentric": [
+        0.4660236155502816,
+        0.4763657025627365,
+        0.057610681886981846
+      ],
+      "source_xyz_utm_m": [
+        324539.2909710769,
+        4169343.2716795434,
+        50.905210416094825
+      ],
+      "source_forward_m": 1070.2060108124044,
+      "lateral_q_per_mm": -0.0013700319177664595,
+      "crs": "EPSG:32652",
+      "slope_deg": 6.669880979773361,
+      "ndvi": 0.4138568932879949,
+      "effective_observations": 31.36836310374781,
+      "retained_ground": 0.5938701621800004,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      518.957,
+      598.462,
+      564.861,
+      646.986
+    ],
+    "height_mm": 32,
+    "sigma_mm": 1.3,
+    "array_key": "o111",
+    "roi": [
+      514,
+      594,
+      569,
+      651
+    ]
+  },
+  {
+    "id": "v03/tree/left-lower-middle-rise/v08-rise-0",
+    "kind": "tree",
+    "group": "left-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        100.0,
+        597.8582888718736
+      ],
+      "mapped_face_id": 28188,
+      "original_mesh_face_id": 56122,
+      "barycentric": [
+        0.13484837298208596,
+        0.2673036005379659,
+        0.5978480264799481
+      ],
+      "source_xyz_utm_m": [
+        323903.0191080161,
+        4168367.0645592054,
+        84.29785041718294
+      ],
+      "source_forward_m": 1292.019234096848,
+      "lateral_q_per_mm": 0.11444166373002752,
+      "crs": "EPSG:32652",
+      "slope_deg": 8.61195264891158,
+      "ndvi": 0.28986347571853976,
+      "effective_observations": 30.15790673415536,
+      "retained_ground": 0.36792959055590235,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      80.114,
+      546.006,
+      130.849,
+      610.032
+    ],
+    "height_mm": 42,
+    "sigma_mm": 1.3,
+    "array_key": "o112",
+    "roi": [
+      76,
+      542,
+      135,
+      615
+    ]
+  },
+  {
+    "id": "v03/tree/left-lower-middle-rise/v08-rise-1",
+    "kind": "tree",
+    "group": "left-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        117.0,
+        607.0797937787673
+      ],
+      "mapped_face_id": 58108,
+      "original_mesh_face_id": 154166,
+      "barycentric": [
+        0.5322292514737457,
+        0.3499031068862608,
+        0.11786764163999353
+      ],
+      "source_xyz_utm_m": [
+        323981.46397075074,
+        4168400.9668775448,
+        76.45872334152706
+      ],
+      "source_forward_m": 1232.1160335181478,
+      "lateral_q_per_mm": 0.2649767053600572,
+      "crs": "EPSG:32652",
+      "slope_deg": 8.156012413091819,
+      "ndvi": 0.18201327095051262,
+      "effective_observations": 30.019374960579142,
+      "retained_ground": 0.4649340258725717,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      82.889,
+      542.102,
+      155.192,
+      619.179
+    ],
+    "height_mm": 56,
+    "sigma_mm": 1.4000000000000001,
+    "array_key": "o113",
+    "roi": [
+      78,
+      538,
+      160,
+      624
+    ]
+  },
+  {
+    "id": "v03/tree/left-lower-middle-rise/v08-rise-2",
+    "kind": "tree",
+    "group": "left-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        137.0,
+        595.4227771563358
+      ],
+      "mapped_face_id": 27473,
+      "original_mesh_face_id": 55136,
+      "barycentric": [
+        0.3712189139426332,
+        0.2003242359472691,
+        0.4284568501100977
+      ],
+      "source_xyz_utm_m": [
+        323931.00972707843,
+        4168462.1462944965,
+        90.38176715218181
+      ],
+      "source_forward_m": 1301.8949492622298,
+      "lateral_q_per_mm": 0.0723028904817986,
+      "crs": "EPSG:32652",
+      "slope_deg": 23.7101980227429,
+      "ndvi": 0.37211166250609506,
+      "effective_observations": 31.0,
+      "retained_ground": 0.4831824382971751,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      111.493,
+      516.042,
+      181.097,
+      607.691
+    ],
+    "height_mm": 69,
+    "sigma_mm": 1.725,
+    "array_key": "o114",
+    "roi": [
+      107,
+      512,
+      186,
+      612
+    ]
+  },
+  {
+    "id": "v03/tree/left-lower-middle-rise/v08-rise-3",
+    "kind": "tree",
+    "group": "left-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        155.0,
+        602.7270106501136
+      ],
+      "mapped_face_id": 27235,
+      "original_mesh_face_id": 54809,
+      "barycentric": [
+        0.5511924014723688,
+        0.2566304218473709,
+        0.1921771766802603
+      ],
+      "source_xyz_utm_m": [
+        323992.6989126554,
+        4168499.234684699,
+        81.04328209800012
+      ],
+      "source_forward_m": 1258.7137559680286,
+      "lateral_q_per_mm": -0.5044736693227495,
+      "crs": "EPSG:32652",
+      "slope_deg": 16.0697137059811,
+      "ndvi": 0.3844699503704222,
+      "effective_observations": 31.0,
+      "retained_ground": 0.5605777550921374,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      129.134,
+      549.04,
+      195.376,
+      615.381
+    ],
+    "height_mm": 61,
+    "sigma_mm": 1.5250000000000001,
+    "array_key": "o115",
+    "roi": [
+      125,
+      545,
+      200,
+      620
+    ]
+  },
+  {
+    "id": "v03/tree/left-lower-middle-rise/v08-rise-4",
+    "kind": "tree",
+    "group": "left-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        171.0,
+        605.7941538488147
+      ],
+      "mapped_face_id": 26997,
+      "original_mesh_face_id": 54482,
+      "barycentric": [
+        0.8303659160417409,
+        0.030625360956388126,
+        0.139008723001871
+      ],
+      "source_xyz_utm_m": [
+        324045.91876082873,
+        4168530.82973831,
+        90.11886953724277
+      ],
+      "source_forward_m": 1221.3097499137202,
+      "lateral_q_per_mm": -0.45831873812414187,
+      "crs": "EPSG:32652",
+      "slope_deg": 23.941945244578694,
+      "ndvi": 0.3501299956544054,
+      "effective_observations": 30.0,
+      "retained_ground": 0.6829838036725376,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      149.853,
+      546.528,
+      208.123,
+      617.97
+    ],
+    "height_mm": 46,
+    "sigma_mm": 1.3,
+    "array_key": "o116",
+    "roi": [
+      145,
+      542,
+      213,
+      622
+    ]
+  },
+  {
+    "id": "v03/tree/left-lower-middle-rise/v08-rise-5",
+    "kind": "tree",
+    "group": "left-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        190.0,
+        596.3100086564082
+      ],
+      "mapped_face_id": 26513,
+      "original_mesh_face_id": 53822,
+      "barycentric": [
+        0.07349534609372332,
+        0.7865991288366718,
+        0.13990552506960482
+      ],
+      "source_xyz_utm_m": [
+        324008.59797386505,
+        4168590.8028342477,
+        100.72737908622022
+      ],
+      "source_forward_m": 1278.4677599068596,
+      "lateral_q_per_mm": -0.2743158729364537,
+      "crs": "EPSG:32652",
+      "slope_deg": 9.711994495274858,
+      "ndvi": 0.4527134924968914,
+      "effective_observations": 29.0,
+      "retained_ground": 0.7756479089972316,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      155.94,
+      528.739,
+      225.915,
+      608.379
+    ],
+    "height_mm": 54,
+    "sigma_mm": 1.35,
+    "array_key": "o117",
+    "roi": [
+      151,
+      524,
+      230,
+      613
+    ]
+  },
+  {
+    "id": "v03/tree/left-lower-middle-rise/v08-rise-6",
+    "kind": "tree",
+    "group": "left-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        208.0,
+        600.7906640669751
+      ],
+      "mapped_face_id": 56192,
+      "original_mesh_face_id": 151537,
+      "barycentric": [
+        0.13404744506631505,
+        0.11188156288878055,
+        0.7540709920449044
+      ],
+      "source_xyz_utm_m": [
+        324052.3778702386,
+        4168629.021423352,
+        94.97816569881955
+      ],
+      "source_forward_m": 1252.3030634925065,
+      "lateral_q_per_mm": 0.3835873198682494,
+      "crs": "EPSG:32652",
+      "slope_deg": 11.655379805090623,
+      "ndvi": 0.5487658524375121,
+      "effective_observations": 31.0,
+      "retained_ground": 0.8061469499120495,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      188.588,
+      565.311,
+      235.025,
+      613.121
+    ],
+    "height_mm": 33,
+    "sigma_mm": 1.3,
+    "array_key": "o118",
+    "roi": [
+      184,
+      561,
+      240,
+      618
+    ]
+  },
+  {
+    "id": "v03/tree/right-lower-middle-rise/v08-rise-0",
+    "kind": "tree",
+    "group": "right-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        438.0,
+        584.3656933200054
+      ],
+      "mapped_face_id": 51303,
+      "original_mesh_face_id": 144631,
+      "barycentric": [
+        0.6801498371991241,
+        0.22564716937277998,
+        0.09420299342809585
+      ],
+      "source_xyz_utm_m": [
+        324162.17391019716,
+        4169275.404495116,
+        90.30903768117176
+      ],
+      "source_forward_m": 1394.004044322814,
+      "lateral_q_per_mm": -0.8216027477467285,
+      "crs": "EPSG:32652",
+      "slope_deg": 9.597851112157723,
+      "ndvi": 0.44418158914173367,
+      "effective_observations": 27.00060960827734,
+      "retained_ground": 0.37995204265884935,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      410.33,
+      534.923,
+      461.437,
+      596.491
+    ],
+    "height_mm": 37,
+    "sigma_mm": 1.3,
+    "array_key": "o119",
+    "roi": [
+      406,
+      530,
+      466,
+      601
+    ]
+  },
+  {
+    "id": "v03/tree/right-lower-middle-rise/v08-rise-1",
+    "kind": "tree",
+    "group": "right-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        455.0,
+        592.0922875151515
+      ],
+      "mapped_face_id": 21145,
+      "original_mesh_face_id": 46263,
+      "barycentric": [
+        0.5766687218772498,
+        0.3646792616629299,
+        0.058652016459820246
+      ],
+      "source_xyz_utm_m": [
+        324235.9403778499,
+        4169283.2404395062,
+        90.6095871908673
+      ],
+      "source_forward_m": 1328.6187857955438,
+      "lateral_q_per_mm": -0.2875753111263323,
+      "crs": "EPSG:32652",
+      "slope_deg": 9.308856517351808,
+      "ndvi": 0.5494308695804712,
+      "effective_observations": 29.795964758703462,
+      "retained_ground": 0.5238381531758373,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      410.882,
+      528.557,
+      480.318,
+      604.435
+    ],
+    "height_mm": 52,
+    "sigma_mm": 1.3,
+    "array_key": "o120",
+    "roi": [
+      406,
+      524,
+      485,
+      609
+    ]
+  },
+  {
+    "id": "v03/tree/right-lower-middle-rise/v08-rise-2",
+    "kind": "tree",
+    "group": "right-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        478.0,
+        581.2946241185334
+      ],
+      "mapped_face_id": 50422,
+      "original_mesh_face_id": 143316,
+      "barycentric": [
+        0.5884558743945603,
+        0.22179418779242066,
+        0.18974993781301908
+      ],
+      "source_xyz_utm_m": [
+        324189.3075018656,
+        4169392.653676232,
+        94.7382404016969
+      ],
+      "source_forward_m": 1413.021492249345,
+      "lateral_q_per_mm": -0.3268431536445337,
+      "crs": "EPSG:32652",
+      "slope_deg": 13.320043760762726,
+      "ndvi": 0.6086539173474603,
+      "effective_observations": 29.509197921379936,
+      "retained_ground": 0.6293915967964578,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      436.718,
+      505.30600000000004,
+      499.159,
+      593.537
+    ],
+    "height_mm": 65,
+    "sigma_mm": 1.625,
+    "array_key": "o121",
+    "roi": [
+      432,
+      501,
+      504,
+      598
+    ]
+  },
+  {
+    "id": "v03/tree/right-lower-middle-rise/v08-rise-3",
+    "kind": "tree",
+    "group": "right-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        495.0,
+        588.8948040222643
+      ],
+      "mapped_face_id": 50206,
+      "original_mesh_face_id": 142989,
+      "barycentric": [
+        0.09788939347444414,
+        0.6753084265029253,
+        0.22680218002263053
+      ],
+      "source_xyz_utm_m": [
+        324248.1959345993,
+        4169407.9366818042,
+        85.11956070642326
+      ],
+      "source_forward_m": 1364.2234217162065,
+      "lateral_q_per_mm": 0.17391850217456573,
+      "crs": "EPSG:32652",
+      "slope_deg": 13.030234247710055,
+      "ndvi": 0.4070123314404166,
+      "effective_observations": 29.0,
+      "retained_ground": 0.6236268977756956,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      460.669,
+      540.965,
+      523.947,
+      601.288
+    ],
+    "height_mm": 49,
+    "sigma_mm": 1.3,
+    "array_key": "o122",
+    "roi": [
+      456,
+      536,
+      528,
+      606
+    ]
+  },
+  {
+    "id": "v03/tree/right-lower-middle-rise/v08-rise-4",
+    "kind": "tree",
+    "group": "right-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        519.0,
+        593.3355477959179
+      ],
+      "mapped_face_id": 49991,
+      "original_mesh_face_id": 142662,
+      "barycentric": [
+        0.362493428529708,
+        0.29933504152928253,
+        0.33817152994100946
+      ],
+      "source_xyz_utm_m": [
+        324304.8548541018,
+        4169445.8748028562,
+        85.91927950334866
+      ],
+      "source_forward_m": 1326.0221797082445,
+      "lateral_q_per_mm": -0.6711450097860877,
+      "crs": "EPSG:32652",
+      "slope_deg": 14.942634932652073,
+      "ndvi": 0.6407628808219669,
+      "effective_observations": 31.0,
+      "retained_ground": 0.7230745785995847,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      483.104,
+      526.261,
+      542.396,
+      605.528
+    ],
+    "height_mm": 58,
+    "sigma_mm": 1.4500000000000002,
+    "array_key": "o123",
+    "roi": [
+      479,
+      522,
+      547,
+      610
+    ]
+  },
+  {
+    "id": "v03/tree/right-lower-middle-rise/v08-rise-5",
+    "kind": "tree",
+    "group": "right-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        534.0,
+        583.7883375227318
+      ],
+      "mapped_face_id": 49347,
+      "original_mesh_face_id": 141674,
+      "barycentric": [
+        0.018695669594521735,
+        0.4939579031974633,
+        0.487346427208015
+      ],
+      "source_xyz_utm_m": [
+        324270.3796071838,
+        4169525.5608700877,
+        96.8044619795464
+      ],
+      "source_forward_m": 1387.9676177263739,
+      "lateral_q_per_mm": 0.18061928713136235,
+      "crs": "EPSG:32652",
+      "slope_deg": 7.516592303446425,
+      "ndvi": 0.49404135065001337,
+      "effective_observations": 29.0,
+      "retained_ground": 0.8265852873232631,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      494.011,
+      528.417,
+      555.403,
+      596.067
+    ],
+    "height_mm": 42,
+    "sigma_mm": 1.3,
+    "array_key": "o124",
+    "roi": [
+      490,
+      524,
+      560,
+      601
+    ]
+  },
+  {
+    "id": "v03/tree/right-lower-middle-rise/v08-rise-6",
+    "kind": "tree",
+    "group": "right-lower-middle-rise",
+    "site": {
+      "xy_mm": [
+        552.0,
+        588.6367102578293
+      ],
+      "mapped_face_id": 49348,
+      "original_mesh_face_id": 141675,
+      "barycentric": [
+        0.9036445635870255,
+        0.06960891151440184,
+        0.02674652489857268
+      ],
+      "source_xyz_utm_m": [
+        324314.197604253,
+        4169552.109336908,
+        90.51595414856358
+      ],
+      "source_forward_m": 1357.3729017549852,
+      "lateral_q_per_mm": 0.3023241644224831,
+      "crs": "EPSG:32652",
+      "slope_deg": 11.009959207151798,
+      "ndvi": 0.5595430666038242,
+      "effective_observations": 30.0,
+      "retained_ground": 0.8218310566599283,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      524.899,
+      553.824,
+      569.303,
+      600.906
+    ],
+    "height_mm": 31,
+    "sigma_mm": 1.3,
+    "array_key": "o125",
+    "roi": [
+      520,
+      549,
+      574,
+      605
+    ]
+  },
+  {
+    "id": "v03/tree/left-bench-transition/v08-rise-0",
+    "kind": "tree",
+    "group": "left-bench-transition",
+    "site": {
+      "xy_mm": [
+        201.0,
+        642.9335652838173
+      ],
+      "mapped_face_id": 26764,
+      "original_mesh_face_id": 54161,
+      "barycentric": [
+        0.43326127186292607,
+        0.03565121972439101,
+        0.5310875084126829
+      ],
+      "source_xyz_utm_m": [
+        324286.0695365917,
+        4168549.0673747477,
+        59.204172052669264
+      ],
+      "source_forward_m": 1005.7057093346701,
+      "lateral_q_per_mm": -0.111410253575442,
+      "crs": "EPSG:32652",
+      "slope_deg": 8.272459705453787,
+      "ndvi": 0.03500043153027183,
+      "effective_observations": 31.942540342098823,
+      "retained_ground": 0.6725565416631465,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      181.552,
+      594.385,
+      230.109,
+      655.088
+    ],
+    "height_mm": 39,
+    "sigma_mm": 1.3,
+    "array_key": "o126",
+    "roi": [
+      177,
+      590,
+      235,
+      660
+    ]
+  },
+  {
+    "id": "v03/tree/left-bench-transition/v08-rise-1",
+    "kind": "tree",
+    "group": "left-bench-transition",
+    "site": {
+      "xy_mm": [
+        220.0,
+        650.9432945199818
+      ],
+      "mapped_face_id": 26525,
+      "original_mesh_face_id": 53834,
+      "barycentric": [
+        0.3594860610925057,
+        0.06093430171005737,
+        0.579579637197437
+      ],
+      "source_xyz_utm_m": [
+        324346.8280290513,
+        4168577.6126108845,
+        55.602395546201215
+      ],
+      "source_forward_m": 960.1695227881198,
+      "lateral_q_per_mm": -0.13947775014686745,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.570609411971698,
+      "ndvi": 0.2306413295982077,
+      "effective_observations": 30.010138830815762,
+      "retained_ground": 0.5626123191116308,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      186.415,
+      585.163,
+      258.206,
+      663.039
+    ],
+    "height_mm": 55,
+    "sigma_mm": 1.375,
+    "array_key": "o127",
+    "roi": [
+      182,
+      581,
+      263,
+      668
+    ]
+  },
+  {
+    "id": "v03/tree/left-bench-transition/v08-rise-2",
+    "kind": "tree",
+    "group": "left-bench-transition",
+    "site": {
+      "xy_mm": [
+        239.0,
+        639.0095342992981
+      ],
+      "mapped_face_id": 26040,
+      "original_mesh_face_id": 53174,
+      "barycentric": [
+        0.01954232916440679,
+        0.4220630869502872,
+        0.558394583885306
+      ],
+      "source_xyz_utm_m": [
+        324297.6618926085,
+        4168638.248162484,
+        61.11395137348846
+      ],
+      "source_forward_m": 1028.5503476783413,
+      "lateral_q_per_mm": -0.09120275515546368,
+      "crs": "EPSG:32652",
+      "slope_deg": 4.083036843895569,
+      "ndvi": 0.2948207397809562,
+      "effective_observations": 30.0,
+      "retained_ground": 0.6257108391611828,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      214.712,
+      565.065,
+      277.436,
+      651.242
+    ],
+    "height_mm": 62,
+    "sigma_mm": 1.55,
+    "array_key": "o128",
+    "roi": [
+      210,
+      561,
+      282,
+      656
+    ]
+  },
+  {
+    "id": "v03/tree/left-bench-transition/v08-rise-3",
+    "kind": "tree",
+    "group": "left-bench-transition",
+    "site": {
+      "xy_mm": [
+        259.0,
+        645.294109637368
+      ],
+      "mapped_face_id": 55960,
+      "original_mesh_face_id": 151218,
+      "barycentric": [
+        0.4036924137658895,
+        0.07405667294275038,
+        0.5222509132913601
+      ],
+      "source_xyz_utm_m": [
+        324359.33247260127,
+        4168667.1107724127,
+        66.06423380387427
+      ],
+      "source_forward_m": 982.2887337167132,
+      "lateral_q_per_mm": -1.005904089656728,
+      "crs": "EPSG:32652",
+      "slope_deg": 17.875755451474863,
+      "ndvi": 0.2574360901750573,
+      "effective_observations": 31.0,
+      "retained_ground": 0.6527446587282066,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      238.054,
+      602.076,
+      291.907,
+      657.798
+    ],
+    "height_mm": 44,
+    "sigma_mm": 1.3,
+    "array_key": "o129",
+    "roi": [
+      234,
+      598,
+      296,
+      662
+    ]
+  },
+  {
+    "id": "v03/tree/left-bench-transition/v08-rise-4",
+    "kind": "tree",
+    "group": "left-bench-transition",
+    "site": {
+      "xy_mm": [
+        276.0,
+        648.8154789811098
+      ],
+      "mapped_face_id": 55719,
+      "original_mesh_face_id": 150890,
+      "barycentric": [
+        0.29300446938534386,
+        0.5592838726766618,
+        0.14771165793799437
+      ],
+      "source_xyz_utm_m": [
+        324400.56865026185,
+        4168693.7901340816,
+        71.49099128233638
+      ],
+      "source_forward_m": 954.1350674454087,
+      "lateral_q_per_mm": -0.4047231238428834,
+      "crs": "EPSG:32652",
+      "slope_deg": 20.16324440748643,
+      "ndvi": 0.3688582967982014,
+      "effective_observations": 31.0,
+      "retained_ground": 0.7055636656653937,
+      "evidence": "mapped source triangle; objects are authored, not observed"
+    },
+    "bounds": [
+      257.761,
+      608.703,
+      300.186,
+      660.815
+    ],
+    "height_mm": 30,
+    "sigma_mm": 1.3,
+    "array_key": "o130",
+    "roi": [
+      253,
+      604,
+      305,
+      665
+    ]
+  }
+]

@@ -1,0 +1,1661 @@
+{
+  "study": "Spring v05 recovered integration review",
+  "parent_commit": "1c798a7fd8becdf530b338260447e20e36f6b31d",
+  "seed": 2026101803,
+  "baseline": "docs/baselines/spring_f2c_a025_v01/baseline_strokes.json.gz",
+  "baseline_sha256": "22bace23f0ae34f69873a282fec15c25a431d0e998216d995b1ab14c3f85fab3",
+  "legacy_policy": "No canonical V; selectively replace provisional mid/far authored sites with R/S/U. Historical v03 IDs remain stable.",
+  "palette_source": "configs/palettes/palette_20.yaml",
+  "spring_active_target_percent": {
+    "C1": 28,
+    "C2": 22,
+    "A5": 10,
+    "C3": 6,
+    "C4": 4,
+    "A3": 10,
+    "A4": 6,
+    "D1": 7,
+    "D4": 3,
+    "B2": 1,
+    "D5": 2,
+    "B4": 1
+  },
+  "object_palette_weights": {
+    "vegetation": {
+      "C1": 38,
+      "C2": 34,
+      "A5": 10,
+      "C3": 8,
+      "C4": 4,
+      "D1": 4,
+      "B4": 2
+    },
+    "rock": {
+      "A3": 35,
+      "A4": 25,
+      "A5": 18,
+      "D4": 8,
+      "D5": 7,
+      "B2": 5,
+      "C4": 2
+    },
+    "Soil": {
+      "A4": 30,
+      "D1": 25,
+      "D4": 15,
+      "D5": 15,
+      "A5": 10,
+      "C2": 5
+    },
+    "terrain": {
+      "C1": 24,
+      "C2": 20,
+      "A5": 15,
+      "A3": 18,
+      "A4": 8,
+      "D1": 8,
+      "C4": 3,
+      "C3": 2,
+      "D4": 1,
+      "B2": 1
+    },
+    "trunk": {
+      "A4": 45,
+      "D5": 25,
+      "D4": 20,
+      "A5": 10
+    }
+  },
+  "depth_modulation": {
+    "source_forward_range_m": [
+      250,
+      2550
+    ],
+    "density_near_far": [
+      1,
+      0.36
+    ],
+    "width_near_far": [
+      1.7,
+      0.85
+    ],
+    "display_alpha_near_far": [
+      0.28,
+      0.12
+    ],
+    "note": "Continuous source-forward-distance modulation; display alpha is not calibrated dilution."
+  },
+  "corridors": [
+    {
+      "id": "central-middle",
+      "vertices_mm": [
+        [
+          270,
+          535
+        ],
+        [
+          308,
+          535
+        ],
+        [
+          347,
+          590
+        ],
+        [
+          326,
+          637
+        ],
+        [
+          301,
+          669
+        ],
+        [
+          282,
+          655
+        ],
+        [
+          313,
+          596
+        ]
+      ],
+      "evidence": "Preserved v01 bounded pictorial opening; no water/path claim"
+    },
+    {
+      "id": "central-foreground",
+      "vertices_mm": [
+        [
+          279,
+          704
+        ],
+        [
+          314,
+          704
+        ],
+        [
+          340,
+          770
+        ],
+        [
+          324,
+          865
+        ],
+        [
+          283,
+          865
+        ],
+        [
+          291,
+          790
+        ]
+      ],
+      "evidence": "Bounded continuation of existing open passage for new placement/color only; no baseline terrain deletion"
+    }
+  ],
+  "publish": false,
+  "production": false,
+  "groups": [
+    {
+      "id": "near-left-grove",
+      "role": "tree-dominant",
+      "center_mm": [
+        145,
+        827
+      ],
+      "span_mm": 244,
+      "trees": [
+        {
+          "key": "dominant",
+          "x_offset_mm": -8,
+          "host_offset_mm": 0,
+          "height_mm": 130,
+          "form": "P",
+          "flow": 1,
+          "overlap_rank": 1,
+          "posture": "redirected",
+          "vigor": 1.12,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "rear-crown",
+          "x_offset_mm": -48,
+          "host_offset_mm": -12,
+          "height_mm": 95,
+          "form": "B",
+          "flow": 0,
+          "overlap_rank": 4,
+          "posture": "upright",
+          "vigor": 0.9,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "low-left",
+          "x_offset_mm": -75,
+          "host_offset_mm": 2,
+          "height_mm": 44,
+          "form": "U",
+          "flow": 1,
+          "overlap_rank": 0,
+          "posture": "stooped",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "leaning-companion",
+          "x_offset_mm": 35,
+          "host_offset_mm": -6,
+          "height_mm": 110,
+          "form": "B",
+          "flow": 1,
+          "overlap_rank": 3,
+          "posture": "redirected",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "forward-shrub",
+          "x_offset_mm": 14,
+          "host_offset_mm": 7,
+          "height_mm": 37,
+          "form": "U",
+          "flow": -1,
+          "overlap_rank": 0,
+          "posture": "stooped",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "serial-end",
+          "x_offset_mm": 84,
+          "host_offset_mm": -2,
+          "height_mm": 73,
+          "form": "B",
+          "flow": 0,
+          "overlap_rank": 2,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "dissolving-end",
+          "x_offset_mm": 103,
+          "host_offset_mm": 3,
+          "height_mm": 26,
+          "form": "U",
+          "flow": 1,
+          "overlap_rank": 0,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        }
+      ],
+      "rocks": [],
+      "soils": [
+        {
+          "key": "root-mass",
+          "x_offset_mm": -4,
+          "host_offset_mm": 3,
+          "area_mm2": 1200,
+          "density_tier": 1
+        },
+        {
+          "key": "left-root",
+          "x_offset_mm": -55,
+          "host_offset_mm": 2,
+          "area_mm2": 220,
+          "density_tier": 0
+        },
+        {
+          "key": "side-shoulder",
+          "x_offset_mm": 52,
+          "host_offset_mm": 5,
+          "area_mm2": 340,
+          "density_tier": 0
+        }
+      ],
+      "representation": "full",
+      "color_support_expansion": 2.15
+    },
+    {
+      "id": "near-right-exposure",
+      "role": "rock-dominant",
+      "center_mm": [
+        448,
+        790
+      ],
+      "span_mm": 252,
+      "trees": [
+        {
+          "key": "behind-main",
+          "x_offset_mm": -26,
+          "host_offset_mm": -12,
+          "height_mm": 115,
+          "form": "P",
+          "flow": -1,
+          "overlap_rank": 7,
+          "posture": "redirected",
+          "vigor": 0.85,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "emerging-crown",
+          "x_offset_mm": 23,
+          "host_offset_mm": -16,
+          "height_mm": 90,
+          "form": "B",
+          "flow": 1,
+          "overlap_rank": 8,
+          "posture": "upright",
+          "vigor": 1.05,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "rear-shrub",
+          "x_offset_mm": 61,
+          "host_offset_mm": -8,
+          "height_mm": 40,
+          "form": "U",
+          "flow": -1,
+          "overlap_rank": 6,
+          "posture": "stooped",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        }
+      ],
+      "rocks": [
+        {
+          "key": "connected",
+          "x_offset_mm": 0,
+          "host_offset_mm": 3,
+          "width_mm": 252,
+          "height_mm": 84,
+          "count": 4,
+          "overlap_rank": 1,
+          "regime": "jointed",
+          "form": "angular",
+          "burial": 0.22
+        },
+        {
+          "key": "subordinate",
+          "x_offset_mm": -108,
+          "host_offset_mm": 8,
+          "width_mm": 40,
+          "height_mm": 22,
+          "count": 1,
+          "overlap_rank": 0,
+          "regime": "layered",
+          "form": "angular",
+          "burial": 0.22
+        },
+        {
+          "key": "edge-stone",
+          "x_offset_mm": 106,
+          "host_offset_mm": 6,
+          "width_mm": 22,
+          "height_mm": 12,
+          "count": 1,
+          "overlap_rank": 0,
+          "regime": "rounded",
+          "form": "compact",
+          "burial": 0.22
+        },
+        {
+          "key": "buried-stone",
+          "x_offset_mm": -60,
+          "host_offset_mm": 15,
+          "width_mm": 19,
+          "height_mm": 10,
+          "count": 1,
+          "overlap_rank": 0,
+          "regime": "layered",
+          "form": "compact",
+          "burial": 0.32
+        }
+      ],
+      "soils": [
+        {
+          "key": "contact-left",
+          "x_offset_mm": -55,
+          "host_offset_mm": 10,
+          "area_mm2": 400,
+          "density_tier": 1
+        },
+        {
+          "key": "open-side",
+          "x_offset_mm": 73,
+          "host_offset_mm": 8,
+          "area_mm2": 300,
+          "density_tier": 0
+        }
+      ],
+      "representation": "full",
+      "color_support_expansion": 1.8
+    },
+    {
+      "id": "near-edge-stones",
+      "role": "rock-only",
+      "center_mm": [
+        43,
+        741
+      ],
+      "span_mm": 73,
+      "trees": [],
+      "rocks": [
+        {
+          "key": "linked",
+          "x_offset_mm": 0,
+          "host_offset_mm": 0,
+          "width_mm": 88,
+          "height_mm": 33,
+          "count": 2,
+          "overlap_rank": 1,
+          "regime": "layered",
+          "form": "angular",
+          "burial": 0.22
+        },
+        {
+          "key": "low-stone",
+          "x_offset_mm": 25,
+          "host_offset_mm": 8,
+          "width_mm": 19,
+          "height_mm": 9,
+          "count": 1,
+          "overlap_rank": 0,
+          "regime": "rounded",
+          "form": "compact",
+          "burial": 0.22
+        },
+        {
+          "key": "dissolution",
+          "x_offset_mm": -30,
+          "host_offset_mm": 5,
+          "width_mm": 11,
+          "height_mm": 7,
+          "count": 1,
+          "overlap_rank": 0,
+          "regime": "layered",
+          "form": "angular",
+          "burial": 0.22
+        }
+      ],
+      "soils": [],
+      "representation": "full",
+      "color_support_expansion": 1.8
+    },
+    {
+      "id": "near-right-shrubs",
+      "role": "vegetation-only",
+      "center_mm": [
+        547,
+        860
+      ],
+      "span_mm": 69,
+      "trees": [
+        {
+          "key": "crooked",
+          "x_offset_mm": -14,
+          "host_offset_mm": 0,
+          "height_mm": 61,
+          "form": "B",
+          "flow": -1,
+          "overlap_rank": 1,
+          "posture": "stooped",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "small-front",
+          "x_offset_mm": -29,
+          "host_offset_mm": 5,
+          "height_mm": 25,
+          "form": "U",
+          "flow": -1,
+          "overlap_rank": 0,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        }
+      ],
+      "rocks": [],
+      "soils": [
+        {
+          "key": "small-contact",
+          "x_offset_mm": -12,
+          "host_offset_mm": 3,
+          "area_mm2": 180,
+          "density_tier": 0
+        }
+      ],
+      "representation": "full",
+      "color_support_expansion": 1.8
+    },
+    {
+      "id": "middle-left-attached",
+      "role": "mixed-attached",
+      "center_mm": [
+        188,
+        670
+      ],
+      "span_mm": 148,
+      "trees": [
+        {
+          "key": "back-left",
+          "x_offset_mm": -33,
+          "host_offset_mm": -7,
+          "height_mm": 61,
+          "form": "B",
+          "flow": 1,
+          "overlap_rank": 4,
+          "posture": "redirected",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "front-right",
+          "x_offset_mm": 26,
+          "host_offset_mm": 8,
+          "height_mm": 85,
+          "form": "P",
+          "flow": -1,
+          "overlap_rank": 0,
+          "posture": "stooped",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "behind-outcrop",
+          "x_offset_mm": 4,
+          "host_offset_mm": -12,
+          "height_mm": 43,
+          "form": "U",
+          "flow": 0,
+          "overlap_rank": 7,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "left-shrub",
+          "x_offset_mm": -54,
+          "host_offset_mm": 4,
+          "height_mm": 27,
+          "form": "U",
+          "flow": 1,
+          "overlap_rank": 0,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "end",
+          "x_offset_mm": 51,
+          "host_offset_mm": 2,
+          "height_mm": 32,
+          "form": "B",
+          "flow": 0,
+          "overlap_rank": 2,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        }
+      ],
+      "rocks": [
+        {
+          "key": "connected",
+          "x_offset_mm": -9,
+          "host_offset_mm": 3,
+          "width_mm": 142,
+          "height_mm": 48,
+          "count": 3,
+          "overlap_rank": 2,
+          "regime": "layered",
+          "form": "angular",
+          "burial": 0.22
+        },
+        {
+          "key": "small-stone",
+          "x_offset_mm": 49,
+          "host_offset_mm": 11,
+          "width_mm": 18,
+          "height_mm": 10,
+          "count": 1,
+          "overlap_rank": 0,
+          "regime": "rounded",
+          "form": "compact",
+          "burial": 0.22
+        }
+      ],
+      "soils": [
+        {
+          "key": "left-attachment",
+          "x_offset_mm": -25,
+          "host_offset_mm": 4,
+          "area_mm2": 500,
+          "density_tier": 1
+        },
+        {
+          "key": "right-root",
+          "x_offset_mm": 29,
+          "host_offset_mm": 9,
+          "area_mm2": 320,
+          "density_tier": 0
+        }
+      ],
+      "representation": "full",
+      "color_support_expansion": 2.15
+    },
+    {
+      "id": "middle-edge-growth",
+      "role": "vegetation-only",
+      "center_mm": [
+        33,
+        630
+      ],
+      "span_mm": 50,
+      "trees": [
+        {
+          "key": "edge-main",
+          "x_offset_mm": -2,
+          "host_offset_mm": 0,
+          "height_mm": 42,
+          "form": "B",
+          "flow": 1,
+          "overlap_rank": 1,
+          "posture": "redirected",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "low",
+          "x_offset_mm": -17,
+          "host_offset_mm": 5,
+          "height_mm": 24,
+          "form": "U",
+          "flow": 0,
+          "overlap_rank": 0,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        },
+        {
+          "key": "behind",
+          "x_offset_mm": 12,
+          "host_offset_mm": -6,
+          "height_mm": 30,
+          "form": "P",
+          "flow": 1,
+          "overlap_rank": 3,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9
+        }
+      ],
+      "rocks": [],
+      "soils": [],
+      "representation": "middle",
+      "color_support_expansion": 1.8
+    },
+    {
+      "id": "middle-right-bedrock",
+      "role": "rock-only",
+      "center_mm": [
+        524,
+        527
+      ],
+      "span_mm": 70,
+      "trees": [],
+      "rocks": [
+        {
+          "key": "bedrock",
+          "x_offset_mm": 0,
+          "host_offset_mm": 0,
+          "width_mm": 66,
+          "height_mm": 27,
+          "count": 2,
+          "overlap_rank": 1,
+          "regime": "jointed",
+          "form": "angular",
+          "burial": 0.22
+        },
+        {
+          "key": "satellite",
+          "x_offset_mm": 30,
+          "host_offset_mm": 5,
+          "width_mm": 18,
+          "height_mm": 9,
+          "count": 1,
+          "overlap_rank": 0,
+          "regime": "rounded",
+          "form": "compact",
+          "burial": 0.22
+        }
+      ],
+      "soils": [
+        {
+          "key": "burial",
+          "x_offset_mm": -15,
+          "host_offset_mm": 5,
+          "area_mm2": 160,
+          "density_tier": 0
+        }
+      ],
+      "representation": "full",
+      "color_support_expansion": 1.8
+    },
+    {
+      "id": "upper-right-mixed",
+      "role": "mixed-attached",
+      "center_mm": [
+        446,
+        452
+      ],
+      "span_mm": 73,
+      "trees": [],
+      "rocks": [
+        {
+          "key": "outcrop",
+          "x_offset_mm": -2,
+          "host_offset_mm": 2,
+          "width_mm": 36,
+          "height_mm": 17,
+          "count": 1,
+          "overlap_rank": 1,
+          "regime": "jointed",
+          "form": "bedrock",
+          "burial": 0.22
+        },
+        {
+          "key": "stone",
+          "x_offset_mm": -28,
+          "host_offset_mm": 5,
+          "width_mm": 13,
+          "height_mm": 8,
+          "count": 1,
+          "overlap_rank": 0,
+          "regime": "layered",
+          "form": "angular",
+          "burial": 0.22
+        }
+      ],
+      "soils": [],
+      "representation": "middle",
+      "color_support_expansion": 1.8
+    },
+    {
+      "id": "far-left-exposure",
+      "role": "rock-only",
+      "center_mm": [
+        39,
+        443
+      ],
+      "span_mm": 33,
+      "trees": [],
+      "rocks": [
+        {
+          "key": "exposure",
+          "x_offset_mm": 0,
+          "host_offset_mm": 0,
+          "width_mm": 27,
+          "height_mm": 13,
+          "count": 1,
+          "overlap_rank": 1,
+          "regime": "jointed",
+          "form": "bedrock",
+          "burial": 0.22
+        },
+        {
+          "key": "end",
+          "x_offset_mm": 17,
+          "host_offset_mm": 3,
+          "width_mm": 10,
+          "height_mm": 6,
+          "count": 1,
+          "overlap_rank": 0,
+          "regime": "layered",
+          "form": "angular",
+          "burial": 0.22
+        }
+      ],
+      "soils": [],
+      "representation": "aggregate",
+      "color_support_expansion": 1.8
+    },
+    {
+      "id": "left-step",
+      "role": "subordinate-grove-relay",
+      "center_mm": [
+        109,
+        739
+      ],
+      "span_mm": 92,
+      "trees": [
+        {
+          "key": "c8",
+          "x_offset_mm": -28,
+          "host_offset_mm": 0,
+          "height_mm": 75,
+          "form": "P",
+          "flow": 1,
+          "overlap_rank": 1,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9,
+          "reallocated_from": "middle-left-belt/c8"
+        },
+        {
+          "key": "c9",
+          "x_offset_mm": 9,
+          "host_offset_mm": 0,
+          "height_mm": 65,
+          "form": "B",
+          "flow": 1,
+          "overlap_rank": 3,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9,
+          "reallocated_from": "middle-left-belt/c9"
+        },
+        {
+          "key": "c10",
+          "x_offset_mm": 41,
+          "host_offset_mm": 0,
+          "height_mm": 45,
+          "form": "U",
+          "flow": 1,
+          "overlap_rank": 3,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9,
+          "reallocated_from": "middle-left-belt/c10"
+        }
+      ],
+      "rocks": [],
+      "soils": [
+        {
+          "key": "retained-shoulder",
+          "x_offset_mm": 5,
+          "host_offset_mm": 4,
+          "area_mm2": 280,
+          "density_tier": 0
+        }
+      ],
+      "representation": "middle",
+      "color_support_expansion": 2.15
+    },
+    {
+      "id": "right-rise",
+      "role": "rear-vegetation-relay",
+      "center_mm": [
+        466,
+        694
+      ],
+      "span_mm": 98,
+      "trees": [
+        {
+          "key": "b9",
+          "x_offset_mm": -29,
+          "host_offset_mm": 0,
+          "height_mm": 80,
+          "form": "U",
+          "flow": -1,
+          "overlap_rank": 3,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9,
+          "reallocated_from": "middle-right-belt/b9"
+        },
+        {
+          "key": "b10",
+          "x_offset_mm": 0,
+          "host_offset_mm": 0,
+          "height_mm": 45,
+          "form": "U",
+          "flow": -1,
+          "overlap_rank": 2,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9,
+          "reallocated_from": "middle-right-belt/b10"
+        },
+        {
+          "key": "b11",
+          "x_offset_mm": 31,
+          "host_offset_mm": 0,
+          "height_mm": 26,
+          "form": "B",
+          "flow": -1,
+          "overlap_rank": 3,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9,
+          "reallocated_from": "middle-right-belt/b11"
+        }
+      ],
+      "rocks": [],
+      "soils": [],
+      "representation": "middle",
+      "color_support_expansion": 1.8
+    },
+    {
+      "id": "right-link",
+      "role": "middle-vegetation-transition",
+      "center_mm": [
+        518,
+        635
+      ],
+      "span_mm": 70,
+      "trees": [
+        {
+          "key": "rear",
+          "x_offset_mm": -10,
+          "host_offset_mm": 0,
+          "height_mm": 40,
+          "form": "U",
+          "flow": -1,
+          "overlap_rank": 3,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9,
+          "reallocated_from": "near-right-shrubs/rear"
+        },
+        {
+          "key": "terminal",
+          "x_offset_mm": 15,
+          "host_offset_mm": 0,
+          "height_mm": 30,
+          "form": "B",
+          "flow": -1,
+          "overlap_rank": 2,
+          "posture": "upright",
+          "vigor": 1.0,
+          "stem_ratio": 0.9,
+          "reallocated_from": "near-right-shrubs/terminal"
+        }
+      ],
+      "rocks": [],
+      "soils": [],
+      "representation": "middle",
+      "color_support_expansion": 1.8
+    }
+  ],
+  "a_color_controls": {
+    "selection_near_middle_far": [
+      0.7,
+      0.55,
+      0.25,
+      0.11
+    ],
+    "normal_offset_mm": [
+      0.7,
+      2.4
+    ],
+    "tangent_shift_mm": 1.5,
+    "phase_wavelength_mm": 43,
+    "maximum_turn_deg": 9,
+    "source_segment_mm": [
+      35,
+      82
+    ],
+    "note": "Displacement of visible A fragments, not changed A ink; bounded by local spacing and visibility",
+    "selection_depth_knots_m": [
+      800,
+      1600,
+      2200,
+      3400
+    ]
+  },
+  "c_color_controls": {
+    "source_passes": 1,
+    "extra_field_pitch_mm": 7.8,
+    "field_length_near_far_mm": [
+      27,
+      18
+    ],
+    "field_selection_near_far": [
+      0.88,
+      0.68
+    ],
+    "note": "Exact C supports, independently offset parallels and C/B-guided streamline extensions on visible retained terrain",
+    "parallel_pass_retention": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        0.85,
+        0.6,
+        0.35
+      ],
+      [
+        0.6,
+        0.35,
+        0.15
+      ]
+    ],
+    "selection_depth_knots_m": [
+      400,
+      1600,
+      3000
+    ],
+    "field_depth_multiplier": [
+      0.95,
+      0.78,
+      0.55
+    ],
+    "direction_interpolation_neighbors": 8,
+    "streamline_turn_inertia": 0.65,
+    "b_blend_range": [
+      0.18,
+      0.53
+    ],
+    "source_episode_selection": 0.42
+  },
+  "display_modes": {
+    "restrained": {
+      "alpha_multiplier": 1.0
+    },
+    "diagnostic": {
+      "alpha_multiplier": 2.8,
+      "maximum_alpha": 0.83
+    }
+  },
+  "control_v03_commit": "a8e17107247718a8addb0c2fd5035bd86e4b078a",
+  "version": "v05",
+  "macro_fields": [
+    {
+      "id": "left-ascending-grove",
+      "role": "tree-led primary field",
+      "groups": [
+        "near-left-grove",
+        "left-step",
+        "middle-left-attached",
+        "left-upper-link",
+        "middle-left-belt",
+        "far-left-shoulder"
+      ],
+      "strength": [
+        1,
+        0.58,
+        0.69,
+        0.27,
+        0.43,
+        0.17
+      ],
+      "open_edges": [
+        [
+          "left-upper-link",
+          "middle-left-belt"
+        ]
+      ]
+    },
+    {
+      "id": "right-rock-counterflow",
+      "role": "rock-led foreground and rear vegetation field",
+      "groups": [
+        "near-right-exposure",
+        "right-rise",
+        "right-link",
+        "middle-right-belt",
+        "upper-right-mixed",
+        "far-right-shoulder"
+      ],
+      "strength": [
+        1,
+        0.54,
+        0.32,
+        0.48,
+        0.22,
+        0.14
+      ],
+      "open_edges": [
+        [
+          "middle-right-belt",
+          "upper-right-mixed"
+        ]
+      ]
+    },
+    {
+      "id": "outer-punctuated-support",
+      "role": "subordinate discontinuous counterweight",
+      "groups": [
+        "near-edge-stones",
+        "middle-edge-growth",
+        "far-left-exposure"
+      ],
+      "strength": [
+        0.38,
+        0.3,
+        0.13
+      ],
+      "open_edges": [
+        [
+          "near-edge-stones",
+          "middle-edge-growth"
+        ],
+        [
+          "middle-edge-growth",
+          "far-left-exposure"
+        ]
+      ]
+    }
+  ],
+  "scale_policy": {
+    "tree_validated_mm": [
+      22,
+      45,
+      95,
+      130
+    ],
+    "tree_native_used_range_mm": [
+      24,
+      130
+    ],
+    "tree_20mm_note": "Inherited v03 floor, below published 22mm acceptance specimen; no new extrapolation",
+    "rock_validated_B_max_mm": [
+      307,
+      89
+    ],
+    "dominant_rock_previous_mm": [
+      188,
+      69
+    ],
+    "dominant_rock_current_mm": [
+      252,
+      84
+    ],
+    "tree_count_controlled": 28,
+    "finished_vectors_scaled": false
+  },
+  "d_color_controls": {
+    "selected_source_ids": [
+      "D-terminal-000003",
+      "D-terminal-000004",
+      "D-terminal-000000",
+      "D-terminal-000012"
+    ],
+    "source_world_sigma_m": [
+      125,
+      185,
+      72
+    ],
+    "maximum_attachment_distance_mm": 4.5,
+    "far_source_q_m": 2200,
+    "background_A_probability": 0.045,
+    "emphasized_A_probability": 0.93,
+    "second_pass_emphasis_min": 0.62,
+    "second_pass_probability": 0.48,
+    "far_C_background_keep": 0.2,
+    "far_C_emphasized_keep": 0.42,
+    "D_peak_warm_green_gain": 1.5
+  },
+  "mist_color_controls": {
+    "eligible_retention_floor": 0.08,
+    "fully_omitted_retention_max": 0.001,
+    "feather_retention_range": [
+      0.08,
+      0.48
+    ],
+    "coherent_threshold_range": [
+      0.08,
+      0.32
+    ],
+    "minimum_shortened_fraction": 0.23,
+    "shortening_gain": 0.7,
+    "minimum_path_mm": 3.2,
+    "minimum_selection_probability": 0.35
+  },
+  "brush_controls": {
+    "large_height_mm": 95,
+    "foliage_peak_width_mm": [
+      0.8,
+      3.1
+    ],
+    "foliage_gesture_length_mm": [
+      3.2,
+      17.5
+    ],
+    "dense_unit_probability": 0.72,
+    "light_unit_probability": 0.47,
+    "open_unit_probability": 0.22,
+    "large_double_gesture_probability": 0.28,
+    "maximum_branch_reach_mm": 9.0,
+    "trunk_minimum_height_mm": 55,
+    "trunk_peak_width_mm": 1.4,
+    "branch_peak_width_mm": 0.65,
+    "width_intent": "uncalibrated widening/release; physical pressure/Z unspecified"
+  },
+  "reference_rules": [
+    {
+      "id": "R1",
+      "files": [
+        "image(20261017-200132).png",
+        "image(20261017-200148).png"
+      ],
+      "observed": "Major and subordinate groves form an unequal larger flow.",
+      "rule": "Separate individual scale, group extent, member count and between-group continuity.",
+      "application": [
+        "left-ascending-grove",
+        "right-rock-counterflow"
+      ]
+    },
+    {
+      "id": "R2",
+      "files": [
+        "image(20261017-200229).png"
+      ],
+      "observed": "A foreground rock body hides trunks while rear crowns continue the composition.",
+      "rule": "Larger native B formation, reciprocal ranks and actual clipping.",
+      "application": [
+        "near-right-exposure",
+        "right-rise"
+      ]
+    },
+    {
+      "id": "R3",
+      "files": [
+        "image(20261017-200222).png",
+        "image(20261017-200234).png"
+      ],
+      "observed": "Selected distant peaks retain color; adjacent ink and mist remain restrained.",
+      "rule": "D-linked source-space A emphasis at two masses; lower other far color.",
+      "application": [
+        "D-terminal-000003",
+        "D-terminal-000004",
+        "D-terminal-000000",
+        "D-terminal-000012"
+      ]
+    },
+    {
+      "id": "R4",
+      "files": [
+        "image(20261017-200148).png",
+        "image(20261017-200234).png"
+      ],
+      "observed": "Masses dissolve and reconnect through open intervals.",
+      "rule": "Open macro edges and actual carrier selection/shortening through mist.",
+      "application": [
+        "left-upper-link",
+        "middle-right-belt",
+        "central-middle",
+        "central-foreground"
+      ]
+    },
+    {
+      "id": "R5",
+      "files": [
+        "image(20261017-200229).png"
+      ],
+      "observed": "Color follows foliage growth and longitudinal trunks without replacing ink.",
+      "rule": "Actual leaf/branch-supported gestures; longitudinal paths within paired contours.",
+      "application": [
+        "near-left-grove",
+        "near-right-exposure"
+      ]
+    }
+  ],
+  "reference_sha256": {
+    "image(20261017-200229).png": "b8a7aa5bb726a1684b1a525b746c9463a3540a7b2acec3a8a6df090fafdf6b4f",
+    "image(20261017-200222).png": "8a40eb5decbb69159a48a03553b1a010850e4091b938760afb9bf81e0db931f0",
+    "image(20261017-200132).png": "8137bea75791bc8f039f5cabfe80b69faa53bf08969e7f0e98a28f5907653db1",
+    "image(20261017-200148).png": "a94ecc9209fea5a923a72dab37a72e7649cdbdaa7b11744bf5f8744071f6ba14",
+    "image(20261017-200234).png": "fc4365d79aab5d5fe546081b54bb997e41dcd39461809263bdd68c64cb9e5640"
+  },
+  "local_source_recovery_commit": "bbd23b0",
+  "slope_color_controls": {
+    "lateral_sigma_m": 185,
+    "forward_up_sigma_m": 315,
+    "forward_down_sigma_m": 650,
+    "maximum_descent_m": 650,
+    "maximum_ascent_m": 80,
+    "episode_mm": 35,
+    "focus_probability": 0.94,
+    "second_pass_threshold": 0.28,
+    "second_pass_probability": 0.48
+  },
+  "far_B": {
+    "enabled": false,
+    "linked_ink_color_implemented": false,
+    "reason": "Deferred: historical B lacks shared coherent ink contribution"
+  },
+  "recovery_note": "Earlier uncommitted v05 runtime/output was pruned. This implementation is reconstructed from retained decisions and revalidated; not claimed byte-identical to the lost run.",
+  "forest_passages": [
+    {
+      "id": "middle-right-shoulder",
+      "family": "S",
+      "mode": "M2",
+      "bounds_mm": [
+        320,
+        510,
+        535,
+        665
+      ],
+      "y_search_mm": [
+        540,
+        665
+      ],
+      "base_height_mm": 25,
+      "patches": [
+        {
+          "center": [
+            357,
+            1280
+          ],
+          "radii": [
+            24,
+            170
+          ],
+          "count": 9,
+          "role": "subordinate"
+        },
+        {
+          "center": [
+            411,
+            1210
+          ],
+          "radii": [
+            31,
+            210
+          ],
+          "count": 19,
+          "role": "dominant"
+        },
+        {
+          "center": [
+            480,
+            1315
+          ],
+          "radii": [
+            25,
+            175
+          ],
+          "count": 10,
+          "role": "subordinate"
+        },
+        {
+          "center": [
+            447,
+            1310
+          ],
+          "radii": [
+            12,
+            110
+          ],
+          "count": 4,
+          "role": "relay"
+        }
+      ]
+    },
+    {
+      "id": "middle-left-diagonal",
+      "family": "R",
+      "mode": "M1",
+      "bounds_mm": [
+        45,
+        460,
+        245,
+        610
+      ],
+      "y_search_mm": [
+        485,
+        610
+      ],
+      "base_height_mm": 25,
+      "patches": [
+        {
+          "center": [
+            92,
+            1530
+          ],
+          "radii": [
+            26,
+            140
+          ],
+          "count": 9,
+          "role": "subordinate"
+        },
+        {
+          "center": [
+            142,
+            1670
+          ],
+          "radii": [
+            33,
+            200
+          ],
+          "count": 16,
+          "role": "dominant"
+        },
+        {
+          "center": [
+            201,
+            1810
+          ],
+          "radii": [
+            17,
+            120
+          ],
+          "count": 6,
+          "role": "extension"
+        }
+      ]
+    },
+    {
+      "id": "upper-right-outcrop",
+      "family": "S",
+      "mode": "F1",
+      "bounds_mm": [
+        390,
+        395,
+        535,
+        505
+      ],
+      "y_search_mm": [
+        405,
+        505
+      ],
+      "base_height_mm": 14,
+      "patches": [
+        {
+          "center": [
+            435,
+            2180
+          ],
+          "radii": [
+            30,
+            150
+          ],
+          "count": 17,
+          "role": "dominant"
+        },
+        {
+          "center": [
+            487,
+            2320
+          ],
+          "radii": [
+            20,
+            130
+          ],
+          "count": 9,
+          "role": "subordinate"
+        }
+      ]
+    },
+    {
+      "id": "left-grove-release",
+      "family": "R",
+      "mode": "M1",
+      "bounds_mm": [
+        65,
+        595,
+        235,
+        735
+      ],
+      "y_search_mm": [
+        605,
+        735
+      ],
+      "base_height_mm": 29,
+      "patches": [
+        {
+          "center": [
+            164,
+            900
+          ],
+          "radii": [
+            28,
+            120
+          ],
+          "count": 10,
+          "role": "dominant"
+        },
+        {
+          "center": [
+            213,
+            1020
+          ],
+          "radii": [
+            14,
+            90
+          ],
+          "count": 4,
+          "role": "extension"
+        }
+      ]
+    },
+    {
+      "id": "right-upright-link",
+      "family": "U",
+      "mode": "M1",
+      "bounds_mm": [
+        465,
+        590,
+        567,
+        705
+      ],
+      "y_search_mm": [
+        610,
+        705
+      ],
+      "base_height_mm": 26,
+      "patches": [
+        {
+          "center": [
+            523,
+            940
+          ],
+          "radii": [
+            23,
+            130
+          ],
+          "count": 7,
+          "role": "subordinate"
+        }
+      ]
+    },
+    {
+      "id": "far-central-canopy",
+      "family": "S",
+      "mode": "F2",
+      "bounds_mm": [
+        245,
+        280,
+        400,
+        385
+      ],
+      "y_search_mm": [
+        285,
+        382
+      ],
+      "base_height_mm": 10,
+      "patches": [
+        {
+          "center": [
+            299,
+            3300
+          ],
+          "radii": [
+            27,
+            165
+          ],
+          "count": 19,
+          "role": "dominant"
+        },
+        {
+          "center": [
+            352,
+            3370
+          ],
+          "radii": [
+            25,
+            120
+          ],
+          "count": 14,
+          "role": "subordinate"
+        }
+      ]
+    },
+    {
+      "id": "far-central-radial-edge",
+      "family": "R",
+      "mode": "F2",
+      "bounds_mm": [
+        245,
+        280,
+        400,
+        385
+      ],
+      "y_search_mm": [
+        285,
+        382
+      ],
+      "base_height_mm": 9,
+      "patches": [
+        {
+          "center": [
+            272,
+            3120
+          ],
+          "radii": [
+            17,
+            100
+          ],
+          "count": 7,
+          "role": "extension"
+        }
+      ]
+    },
+    {
+      "id": "far-right-canopy",
+      "family": "S",
+      "mode": "F2",
+      "bounds_mm": [
+        440,
+        315,
+        580,
+        410
+      ],
+      "y_search_mm": [
+        335,
+        415
+      ],
+      "base_height_mm": 10,
+      "patches": [
+        {
+          "center": [
+            500,
+            2770
+          ],
+          "radii": [
+            30,
+            150
+          ],
+          "count": 18,
+          "role": "dominant"
+        },
+        {
+          "center": [
+            551,
+            2910
+          ],
+          "radii": [
+            17,
+            100
+          ],
+          "count": 9,
+          "role": "subordinate"
+        }
+      ]
+    },
+    {
+      "id": "far-left-joints",
+      "family": "U",
+      "mode": "F1",
+      "bounds_mm": [
+        50,
+        350,
+        190,
+        460
+      ],
+      "y_search_mm": [
+        365,
+        460
+      ],
+      "base_height_mm": 12,
+      "patches": [
+        {
+          "center": [
+            116,
+            2550
+          ],
+          "radii": [
+            35,
+            180
+          ],
+          "count": 13,
+          "role": "subordinate"
+        }
+      ]
+    }
+  ]
+}

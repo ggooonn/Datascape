@@ -1,0 +1,1520 @@
+{
+  "config": {
+    "study": "Spring v12 final local refinement candidate",
+    "parent_commit": "813a079067ddd2fb15209bc42ad1fc657a6b1851",
+    "seed": 2026101912,
+    "main_tree": {
+      "owner": "v03/tree/near-right-exposure/behind-main",
+      "form": "P",
+      "height_mm": 175,
+      "posture": "redirected",
+      "accent": "bent",
+      "stem_ratio": 0.74,
+      "vigor": 1.12,
+      "flow": -0.55
+    },
+    "secondary_tree": {
+      "owner": "v03/tree/near-right-exposure/emerging-crown",
+      "form": "P",
+      "height_mm": 118,
+      "posture": "upright",
+      "accent": "none",
+      "stem_ratio": 0.88,
+      "vigor": 0.88,
+      "flow": 0.7
+    },
+    "left_accumulation_bounds_mm": [
+      140,
+      665,
+      270,
+      735
+    ],
+    "low_vegetation_field_mm": [
+      115,
+      694,
+      270,
+      750
+    ],
+    "low_vegetation_sites": 18,
+    "left_ground_patches": [
+      [
+        55,
+        780,
+        340,
+        4.2,
+        -12
+      ],
+      [
+        114,
+        798,
+        550,
+        5.2,
+        6
+      ],
+      [
+        205,
+        784,
+        350,
+        4.6,
+        -4
+      ],
+      [
+        231,
+        811,
+        290,
+        5.7,
+        -8
+      ],
+      [
+        156,
+        824,
+        210,
+        4.8,
+        3
+      ],
+      [
+        82,
+        765,
+        300,
+        5.2,
+        -8
+      ],
+      [
+        168,
+        769,
+        430,
+        6.0,
+        5
+      ]
+    ],
+    "source_depth_tolerance_local_m": 5,
+    "published": false,
+    "machine_output": false
+  },
+  "pair": [
+    {
+      "owner": "v03/tree/near-right-exposure/behind-main",
+      "site": {
+        "xy_mm": [
+          422.0,
+          777.8113088468757
+        ],
+        "mapped_face_id": 25579,
+        "original_mesh_face_id": 52540,
+        "barycentric": [
+          0.17736170574804566,
+          0.38137564407525937,
+          0.441262650176695
+        ],
+        "source_xyz_utm_m": [
+          325016.44126932224,
+          4168701.7621204946,
+          37.992507876031205
+        ],
+        "source_forward_m": 386.6023120304911,
+        "lateral_q_per_mm": 0.10242302138556128,
+        "crs": "EPSG:32652",
+        "slope_deg": 3.5132639233509972,
+        "ndvi": 0.09694517532198164,
+        "effective_observations": 29.0,
+        "retained_ground": 0.5040892021138028,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "form": "P",
+      "height_mm": 175,
+      "source_q_m": 386.6023120304911,
+      "pose_rotation_deg": -25.0,
+      "axis_lean_ratio": -0.06600869064990807,
+      "axis_nodes_mm": [
+        [
+          422.0,
+          777.8113088468757
+        ],
+        [
+          440.6131300888145,
+          706.8137601388263
+        ],
+        [
+          429.1986739977626,
+          644.9542033601047
+        ],
+        [
+          410.4484791362661,
+          622.5460464880332
+        ]
+      ],
+      "members": [
+        "axis/0",
+        "axis/1",
+        "axis/2",
+        "arm-0",
+        "arm-1",
+        "arm-2",
+        "arm-3"
+      ]
+    },
+    {
+      "owner": "v03/tree/near-right-exposure/emerging-crown",
+      "site": {
+        "xy_mm": [
+          471.0,
+          773.6730175904007
+        ],
+        "mapped_face_id": 55020,
+        "original_mesh_face_id": 149924,
+        "barycentric": [
+          0.11390677584468345,
+          0.8309850030488749,
+          0.05510822110644169
+        ],
+        "source_xyz_utm_m": [
+          325033.3467533668,
+          4168778.4172032755,
+          41.72237166433611
+        ],
+        "source_forward_m": 399.80803282589164,
+        "lateral_q_per_mm": 0.002803593397485485,
+        "crs": "EPSG:32652",
+        "slope_deg": 2.6563212292889617,
+        "ndvi": 0.07228843983233559,
+        "effective_observations": 30.449489883985393,
+        "retained_ground": 0.5320644372308673,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "form": "P",
+      "height_mm": 118,
+      "source_q_m": 399.80803282589164,
+      "pose_rotation_deg": -0.544132613931037,
+      "axis_lean_ratio": 0.12924817231969793,
+      "axis_nodes_mm": [
+        [
+          471.0,
+          773.6730175904007
+        ],
+        [
+          473.6759127135293,
+          747.0254455172144
+        ],
+        [
+          478.2200823356083,
+          712.9682032083529
+        ],
+        [
+          482.66770948635207,
+          688.2537978542925
+        ],
+        [
+          486.25128433372436,
+          670.3915222518825
+        ]
+      ],
+      "members": [
+        "axis/0",
+        "axis/1",
+        "axis/2",
+        "axis/3",
+        "arm-0",
+        "arm-1",
+        "arm-2",
+        "arm-3"
+      ]
+    }
+  ],
+  "pair_occlusion_changes": {
+    "v03/tree/right-rise/b10": 6,
+    "v03/tree/right-rise/b11": 4,
+    "v03/tree/right-rise/b9": 25,
+    "v03/tree/right-rise/v07-grove-0": 2,
+    "v03/tree/right-rise/v07-grove-1": 2,
+    "v03/tree/right-rise/v07-grove-2": 10,
+    "v03/tree/right-rise/v07-grove-3": 15,
+    "v08/right-rock-to-shoulder/stratum-3/patch-1/body-6": 3,
+    "v03/tree/near-right-exposure/emerging-crown": 31,
+    "v08/right-rock-to-shoulder/stratum-2/patch-0/body-0": 1,
+    "v08/right-rock-to-shoulder/stratum-1/patch-1/body-9": 1,
+    "v08/right-rock-to-shoulder/stratum-3/patch-1/body-4": 1,
+    "v08/right-rock-to-shoulder/stratum-3/patch-1/body-8": 4,
+    "v10/field/7-18/unit-0": 1
+  },
+  "left_accumulation_contributors": [
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-2/body-0",
+      "family": "R",
+      "root_xy_mm": [
+        143.7543455909317,
+        719.7445695812185
+      ],
+      "source_q_m": 608.7802943155601,
+      "paths_in_accumulation": 1,
+      "color_length_mm": 3.6608619733092564
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-2/body-1",
+      "family": "R",
+      "root_xy_mm": [
+        146.64654181843844,
+        725.8357219059163
+      ],
+      "source_q_m": 583.6102184731675,
+      "paths_in_accumulation": 5,
+      "color_length_mm": 35.066378197811815
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-2/body-2",
+      "family": "R",
+      "root_xy_mm": [
+        150.0254981465805,
+        727.0844051046321
+      ],
+      "source_q_m": 578.6167189755256,
+      "paths_in_accumulation": 6,
+      "color_length_mm": 38.51071596300081
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-2/body-3",
+      "family": "R",
+      "root_xy_mm": [
+        154.0628786520913,
+        721.5571157679332
+      ],
+      "source_q_m": 600.9601605778884,
+      "paths_in_accumulation": 8,
+      "color_length_mm": 59.2272297118123
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-2/body-4",
+      "family": "R",
+      "root_xy_mm": [
+        158.10774401574798,
+        716.193987933213
+      ],
+      "source_q_m": 623.8712555208535,
+      "paths_in_accumulation": 5,
+      "color_length_mm": 25.357366090369514
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-2/body-5",
+      "family": "R",
+      "root_xy_mm": [
+        160.47224129669263,
+        727.3393213767226
+      ],
+      "source_q_m": 577.5323879268834,
+      "paths_in_accumulation": 7,
+      "color_length_mm": 52.5351025234053
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-2/body-6",
+      "family": "R",
+      "root_xy_mm": [
+        165.95301452917704,
+        707.7942448573816
+      ],
+      "source_q_m": 660.7243909865329,
+      "paths_in_accumulation": 9,
+      "color_length_mm": 50.771513934082726
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-2/body-7",
+      "family": "R",
+      "root_xy_mm": [
+        167.8067878601977,
+        723.3181457034785
+      ],
+      "source_q_m": 593.9338935292311,
+      "paths_in_accumulation": 5,
+      "color_length_mm": 34.33249335791819
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-3/body-0",
+      "family": "R",
+      "root_xy_mm": [
+        191.69886652945345,
+        721.8102159625714
+      ],
+      "source_q_m": 600.0237382509221,
+      "paths_in_accumulation": 7,
+      "color_length_mm": 51.89017115283391
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-3/body-1",
+      "family": "R",
+      "root_xy_mm": [
+        196.00864265430215,
+        712.8831566521167
+      ],
+      "source_q_m": 639.2154666823125,
+      "paths_in_accumulation": 9,
+      "color_length_mm": 64.21253363231358
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-3/body-2",
+      "family": "R",
+      "root_xy_mm": [
+        198.95107388774454,
+        717.1159280909447
+      ],
+      "source_q_m": 620.3623760998515,
+      "paths_in_accumulation": 9,
+      "color_length_mm": 63.43405911529627
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-3/body-3",
+      "family": "R",
+      "root_xy_mm": [
+        202.82084360823995,
+        712.4832930369198
+      ],
+      "source_q_m": 641.0223812536815,
+      "paths_in_accumulation": 9,
+      "color_length_mm": 61.315810686501656
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-3/body-4",
+      "family": "R",
+      "root_xy_mm": [
+        206.92912271045185,
+        705.8327225213843
+      ],
+      "source_q_m": 671.8006662860088,
+      "paths_in_accumulation": 7,
+      "color_length_mm": 44.84976997444067
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-3/body-5",
+      "family": "R",
+      "root_xy_mm": [
+        209.327737594017,
+        714.9992282229232
+      ],
+      "source_q_m": 629.7068275490703,
+      "paths_in_accumulation": 9,
+      "color_length_mm": 64.13893726966016
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-3/body-6",
+      "family": "R",
+      "root_xy_mm": [
+        214.54681371640515,
+        698.1157630724879
+      ],
+      "source_q_m": 707.278419729708,
+      "paths_in_accumulation": 8,
+      "color_length_mm": 43.43697622228473
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-3/body-7",
+      "family": "R",
+      "root_xy_mm": [
+        218.21125364654063,
+        695.8457072804338
+      ],
+      "source_q_m": 718.4543808817749,
+      "paths_in_accumulation": 6,
+      "color_length_mm": 32.71055389872033
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-2/patch-3/body-8",
+      "family": "R",
+      "root_xy_mm": [
+        221.6747282372688,
+        695.4249338168762
+      ],
+      "source_q_m": 720.7579167734173,
+      "paths_in_accumulation": 5,
+      "color_length_mm": 39.953880011295205
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-2/body-0",
+      "family": "S",
+      "root_xy_mm": [
+        139.69232924891523,
+        744.2306996504115
+      ],
+      "source_q_m": 509.03705689979887,
+      "paths_in_accumulation": 1,
+      "color_length_mm": 4.213842203184544
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-2/body-1",
+      "family": "S",
+      "root_xy_mm": [
+        141.88629143281926,
+        741.6541843784
+      ],
+      "source_q_m": 519.19426916661,
+      "paths_in_accumulation": 6,
+      "color_length_mm": 34.045602662668074
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-2/body-3",
+      "family": "S",
+      "root_xy_mm": [
+        145.42860352322006,
+        751.3980998988268
+      ],
+      "source_q_m": 480.2089010033969,
+      "paths_in_accumulation": 2,
+      "color_length_mm": 12.052252010147464
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-2/body-4",
+      "family": "S",
+      "root_xy_mm": [
+        147.956440129652,
+        742.9614501891418
+      ],
+      "source_q_m": 514.0707814915438,
+      "paths_in_accumulation": 3,
+      "color_length_mm": 12.177294341564487
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-2/body-8",
+      "family": "S",
+      "root_xy_mm": [
+        156.42997333586894,
+        737.8817191172639
+      ],
+      "source_q_m": 534.9354068059058,
+      "paths_in_accumulation": 1,
+      "color_length_mm": 3.361422496676671
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-2/body-13",
+      "family": "S",
+      "root_xy_mm": [
+        167.16070665684185,
+        728.4098377117973
+      ],
+      "source_q_m": 573.0910169455935,
+      "paths_in_accumulation": 1,
+      "color_length_mm": 5.240821460037755
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-3/body-4",
+      "family": "S",
+      "root_xy_mm": [
+        197.19638835530677,
+        725.7102708365978
+      ],
+      "source_q_m": 583.4455377545589,
+      "paths_in_accumulation": 8,
+      "color_length_mm": 62.51972003470018
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-3/body-6",
+      "family": "S",
+      "root_xy_mm": [
+        201.33435623754022,
+        722.5631856903889
+      ],
+      "source_q_m": 596.5567832719934,
+      "paths_in_accumulation": 10,
+      "color_length_mm": 84.68704146909619
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-3/body-8",
+      "family": "S",
+      "root_xy_mm": [
+        205.05723383900096,
+        726.6215427476255
+      ],
+      "source_q_m": 579.4361507963849,
+      "paths_in_accumulation": 9,
+      "color_length_mm": 82.37998078063981
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-3/body-12",
+      "family": "S",
+      "root_xy_mm": [
+        213.79678963425965,
+        712.9709234020252
+      ],
+      "source_q_m": 638.8847420668061,
+      "paths_in_accumulation": 12,
+      "color_length_mm": 109.81658881309299
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-3/body-13",
+      "family": "S",
+      "root_xy_mm": [
+        215.53582750679126,
+        716.8992055784736
+      ],
+      "source_q_m": 621.1477468999077,
+      "paths_in_accumulation": 12,
+      "color_length_mm": 80.19955406281457
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-1/patch-3/body-14",
+      "family": "S",
+      "root_xy_mm": [
+        218.03578837898445,
+        708.7170688790725
+      ],
+      "source_q_m": 658.5601577152803,
+      "paths_in_accumulation": 10,
+      "color_length_mm": 67.13361804028429
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-3/patch-2/body-6",
+      "family": "S",
+      "root_xy_mm": [
+        156.9283593230486,
+        710.4005794566407
+      ],
+      "source_q_m": 649.2614106995326,
+      "paths_in_accumulation": 10,
+      "color_length_mm": 76.00456455703167
+    },
+    {
+      "unit_id": "v08/left-foreground-to-bench/stratum-3/patch-2/body-11",
+      "family": "S",
+      "root_xy_mm": [
+        167.4333337152333,
+        705.4257772470786
+      ],
+      "source_q_m": 671.6045190402382,
+      "paths_in_accumulation": 9,
+      "color_length_mm": 97.79976392650288
+    }
+  ],
+  "left_source_family_counts": {
+    "R": 17,
+    "S": 14
+  },
+  "low_sites": [
+    {
+      "id": "v12/low-ground/0",
+      "stand_id": "v12/low-ground/0",
+      "patch_id": "v12/low-ground/0",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 0,
+      "member_count": 1,
+      "root_xy_mm": [
+        265.28743522055095,
+        694.219251983378
+      ],
+      "height_mm": 8.637529925147458,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          265.28743522055095,
+          694.219251983378
+        ],
+        "source_forward_m": 730.3437757800357,
+        "source_xyz_utm_m": [
+          324602.6026408259,
+          4168596.5193573814,
+          48.41206381406438
+        ],
+        "support_source_id": "C-rhythm-combined-300-168-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.4421457253675849,
+      "guide_source_id": "C-rhythm-combined-300-168-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "S",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/0",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/1",
+      "stand_id": "v12/low-ground/1",
+      "patch_id": "v12/low-ground/1",
+      "stand_index": 1,
+      "stand_role": "subordinate",
+      "member_index": 1,
+      "member_count": 1,
+      "root_xy_mm": [
+        179.765,
+        719.312
+      ],
+      "height_mm": 8.735984867801587,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          179.765,
+          719.312
+        ],
+        "source_forward_m": 610.8540898348081,
+        "source_xyz_utm_m": [
+          324656.9461591456,
+          4168412.9013569322,
+          52.029249960516516
+        ],
+        "support_source_id": "C-rhythm-combined-786-436-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.2996083333333333,
+      "guide_source_id": "C-rhythm-combined-786-436-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "R",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/1",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/2",
+      "stand_id": "v12/low-ground/2",
+      "patch_id": "v12/low-ground/2",
+      "stand_index": 2,
+      "stand_role": "subordinate",
+      "member_index": 2,
+      "member_count": 1,
+      "root_xy_mm": [
+        206.167,
+        748.806
+      ],
+      "height_mm": 10.685445638874782,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          206.167,
+          748.806
+        ],
+        "source_forward_m": 490.44435824711485,
+        "source_xyz_utm_m": [
+          324792.22780356195,
+          4168425.947979379,
+          47.73583146084588
+        ],
+        "support_source_id": "C-rhythm-combined-2089-1129-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.34361166666666665,
+      "guide_source_id": "C-rhythm-combined-2089-1129-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "U",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/2",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/3",
+      "stand_id": "v12/low-ground/3",
+      "patch_id": "v12/low-ground/3",
+      "stand_index": 3,
+      "stand_role": "subordinate",
+      "member_index": 3,
+      "member_count": 1,
+      "root_xy_mm": [
+        260.28896314512986,
+        742.4579401454902
+      ],
+      "height_mm": 10.262079238261972,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          260.28896314512986,
+          742.4579401454902
+        ],
+        "source_forward_m": 517.05724015137,
+        "source_xyz_utm_m": [
+          324800.7300296479,
+          4168517.533561322,
+          44.77764972037252
+        ],
+        "support_source_id": "C-rhythm-combined-63-42-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.4338149385752164,
+      "guide_source_id": "C-rhythm-combined-63-42-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "S",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/3",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/4",
+      "stand_id": "v12/low-ground/4",
+      "patch_id": "v12/low-ground/4",
+      "stand_index": 4,
+      "stand_role": "subordinate",
+      "member_index": 4,
+      "member_count": 1,
+      "root_xy_mm": [
+        119.37618122011942,
+        731.7664363448645
+      ],
+      "height_mm": 8.526353123832493,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          119.37618122011942,
+          731.7664363448645
+        ],
+        "source_forward_m": 558.5695530743204,
+        "source_xyz_utm_m": [
+          324668.87395594735,
+          4168303.402939726,
+          49.79606859829233
+        ],
+        "support_source_id": "C-rhythm-combined-942-516-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.19896030203353238,
+      "guide_source_id": "C-rhythm-combined-942-516-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "R",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/4",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/5",
+      "stand_id": "v12/low-ground/5",
+      "patch_id": "v12/low-ground/5",
+      "stand_index": 5,
+      "stand_role": "subordinate",
+      "member_index": 5,
+      "member_count": 1,
+      "root_xy_mm": [
+        124.51687468401101,
+        743.9240014052601
+      ],
+      "height_mm": 9.427307389000568,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          124.51687468401101,
+          743.9240014052601
+        ],
+        "source_forward_m": 510.19181430411686,
+        "source_xyz_utm_m": [
+          324721.3091365807,
+          4168303.9271297767,
+          46.90220159010813
+        ],
+        "support_source_id": "C-rhythm-combined-470-267-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.2075281244733517,
+      "guide_source_id": "C-rhythm-combined-470-267-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "U",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/5",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/6",
+      "stand_id": "v12/low-ground/6",
+      "patch_id": "v12/low-ground/6",
+      "stand_index": 6,
+      "stand_role": "subordinate",
+      "member_index": 6,
+      "member_count": 1,
+      "root_xy_mm": [
+        121.63369707569262,
+        701.3844355742963
+      ],
+      "height_mm": 11.983005116780099,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          121.63369707569262,
+          701.3844355742963
+        ],
+        "source_forward_m": 691.7048280428737,
+        "source_xyz_utm_m": [
+          324535.085306505,
+          4168327.8215730772,
+          53.62225877116402
+        ],
+        "support_source_id": "C-rhythm-combined-1573-878-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.20272282845948772,
+      "guide_source_id": "C-rhythm-combined-1573-878-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "S",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/6",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/7",
+      "stand_id": "v12/low-ground/7",
+      "patch_id": "v12/low-ground/7",
+      "stand_index": 7,
+      "stand_role": "subordinate",
+      "member_index": 7,
+      "member_count": 1,
+      "root_xy_mm": [
+        184.7552230473354,
+        701.2722413617812
+      ],
+      "height_mm": 7.794930704394041,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          184.7552230473354,
+          701.2722413617812
+        ],
+        "source_forward_m": 690.8480948852634,
+        "source_xyz_utm_m": [
+          324581.6273533378,
+          4168440.0399663313,
+          55.50653837457793
+        ],
+        "support_source_id": "C-rhythm-combined-579-324-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.307925371745559,
+      "guide_source_id": "C-rhythm-combined-579-324-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "R",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/7",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/8",
+      "stand_id": "v12/low-ground/8",
+      "patch_id": "v12/low-ground/8",
+      "stand_index": 8,
+      "stand_role": "subordinate",
+      "member_index": 8,
+      "member_count": 1,
+      "root_xy_mm": [
+        226.8231947745692,
+        700.2861009513404
+      ],
+      "height_mm": 10.37703180674173,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          226.8231947745692,
+          700.2861009513404
+        ],
+        "source_forward_m": 697.3547526163096,
+        "source_xyz_utm_m": [
+          324605.78720219806,
+          4168516.7515258156,
+          53.02198815003889
+        ],
+        "support_source_id": "C-rhythm-combined-704-388-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.3780386579576153,
+      "guide_source_id": "C-rhythm-combined-704-388-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "U",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/8",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/9",
+      "stand_id": "v12/low-ground/9",
+      "patch_id": "v12/low-ground/9",
+      "stand_index": 9,
+      "stand_role": "subordinate",
+      "member_index": 9,
+      "member_count": 1,
+      "root_xy_mm": [
+        152.59104067158728,
+        706.1208317711008
+      ],
+      "height_mm": 9.000185859240553,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          152.59104067158728,
+          706.1208317711008
+        ],
+        "source_forward_m": 668.4858440420406,
+        "source_xyz_utm_m": [
+          324580.72610286874,
+          4168378.4402709613,
+          55.022526465108996
+        ],
+        "support_source_id": "C-rhythm-combined-449-256-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.25431840111931214,
+      "guide_source_id": "C-rhythm-combined-449-256-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "S",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/9",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/10",
+      "stand_id": "v12/low-ground/10",
+      "patch_id": "v12/low-ground/10",
+      "stand_index": 10,
+      "stand_role": "subordinate",
+      "member_index": 10,
+      "member_count": 1,
+      "root_xy_mm": [
+        161.4129843832298,
+        732.3914797109994
+      ],
+      "height_mm": 8.494485339270188,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          161.4129843832298,
+          732.3914797109994
+        ],
+        "source_forward_m": 557.0443677194722,
+        "source_xyz_utm_m": [
+          324698.000136488,
+          4168371.0032371925,
+          47.65390491806239
+        ],
+        "support_source_id": "C-rhythm-combined-2237-1206-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.2690216406387163,
+      "guide_source_id": "C-rhythm-combined-2237-1206-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "R",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/10",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/11",
+      "stand_id": "v12/low-ground/11",
+      "patch_id": "v12/low-ground/11",
+      "stand_index": 11,
+      "stand_role": "subordinate",
+      "member_index": 11,
+      "member_count": 1,
+      "root_xy_mm": [
+        172.034,
+        703.571
+      ],
+      "height_mm": 11.609507595183786,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          172.034,
+          703.571
+        ],
+        "source_forward_m": 680.1784312678597,
+        "source_xyz_utm_m": [
+          324582.9976877695,
+          4168415.077858519,
+          55.29615271181971
+        ],
+        "support_source_id": "C-rhythm-combined-1990-1081-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.28672333333333333,
+      "guide_source_id": "C-rhythm-combined-1990-1081-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "U",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/11",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/12",
+      "stand_id": "v12/low-ground/12",
+      "patch_id": "v12/low-ground/12",
+      "stand_index": 12,
+      "stand_role": "subordinate",
+      "member_index": 12,
+      "member_count": 1,
+      "root_xy_mm": [
+        132.53116656110623,
+        729.2832653454848
+      ],
+      "height_mm": 11.51137330615338,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          132.53116656110623,
+          729.2832653454848
+        ],
+        "source_forward_m": 568.5784629160518,
+        "source_xyz_utm_m": [
+          324667.3965245022,
+          4168326.3469672194,
+          50.68166663290486
+        ],
+        "support_source_id": "C-rhythm-combined-2186-1180-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.22088527760184373,
+      "guide_source_id": "C-rhythm-combined-2186-1180-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "S",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/12",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/13",
+      "stand_id": "v12/low-ground/13",
+      "patch_id": "v12/low-ground/13",
+      "stand_index": 13,
+      "stand_role": "subordinate",
+      "member_index": 13,
+      "member_count": 1,
+      "root_xy_mm": [
+        201.443,
+        708.088
+      ],
+      "height_mm": 10.11258340538177,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          201.443,
+          708.088
+        ],
+        "source_forward_m": 660.7144313018213,
+        "source_xyz_utm_m": [
+          324623.1013167271,
+          4168462.0464279484,
+          53.100737405359006
+        ],
+        "support_source_id": "C-rhythm-combined-789-437-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.33573833333333336,
+      "guide_source_id": "C-rhythm-combined-789-437-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "R",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/13",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/14",
+      "stand_id": "v12/low-ground/14",
+      "patch_id": "v12/low-ground/14",
+      "stand_index": 14,
+      "stand_role": "subordinate",
+      "member_index": 14,
+      "member_count": 1,
+      "root_xy_mm": [
+        249.89795261318315,
+        701.369013479546
+      ],
+      "height_mm": 11.3838811299612,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          249.89795261318315,
+          701.369013479546
+        ],
+        "source_forward_m": 694.8947926613665,
+        "source_xyz_utm_m": [
+          324624.89721082547,
+          4168557.2297605495,
+          49.30124522290045
+        ],
+        "support_source_id": "C-rhythm-combined-704-388-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.41649658768863856,
+      "guide_source_id": "C-rhythm-combined-704-388-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "U",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/14",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/15",
+      "stand_id": "v12/low-ground/15",
+      "patch_id": "v12/low-ground/15",
+      "stand_index": 15,
+      "stand_role": "subordinate",
+      "member_index": 15,
+      "member_count": 1,
+      "root_xy_mm": [
+        155.31692895366854,
+        722.0811481988375
+      ],
+      "height_mm": 11.40992786499476,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          155.31692895366854,
+          722.0811481988375
+        ],
+        "source_forward_m": 598.824331067538,
+        "source_xyz_utm_m": [
+          324652.2594825706,
+          4168369.4272899237,
+          51.81360261892327
+        ],
+        "support_source_id": "C-rhythm-combined-2237-1206-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.25886154825611424,
+      "guide_source_id": "C-rhythm-combined-2237-1206-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "S",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/15",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/16",
+      "stand_id": "v12/low-ground/16",
+      "patch_id": "v12/low-ground/16",
+      "stand_index": 16,
+      "stand_role": "subordinate",
+      "member_index": 16,
+      "member_count": 1,
+      "root_xy_mm": [
+        215.321,
+        699.21
+      ],
+      "height_mm": 12.097873791926066,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          215.321,
+          699.21
+        ],
+        "source_forward_m": 702.1288700397623,
+        "source_xyz_utm_m": [
+          324592.8097335675,
+          4168497.504549665,
+          53.536879877544514
+        ],
+        "support_source_id": "C-rhythm-combined-704-388-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.35886833333333334,
+      "guide_source_id": "C-rhythm-combined-704-388-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "R",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/16",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    },
+    {
+      "id": "v12/low-ground/17",
+      "stand_id": "v12/low-ground/17",
+      "patch_id": "v12/low-ground/17",
+      "stand_index": 17,
+      "stand_role": "subordinate",
+      "member_index": 17,
+      "member_count": 1,
+      "root_xy_mm": [
+        267.269,
+        709.751
+      ],
+      "height_mm": 10.763853218796804,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          267.269,
+          709.751
+        ],
+        "source_forward_m": 656.8371913873851,
+        "source_xyz_utm_m": [
+          324673.4034103825,
+          4168575.4936263342,
+          47.34917252727316
+        ],
+        "support_source_id": "C-rhythm-combined-904-491-000000",
+        "support_layer": "C",
+        "exact_contact": false,
+        "depth_provider": "saved-F2-1mm-fields-on-fixed-pre-object-terrain-source",
+        "crs": "EPSG:32652"
+      },
+      "guide_u": 0.44544833333333334,
+      "guide_source_id": "C-rhythm-combined-904-491-000000",
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "family": "U",
+      "mode": "M3",
+      "zone_id": "v12/low-ground/17",
+      "relationship": "dispersed-low-ground",
+      "nearby_rock_id": null
+    }
+  ],
+  "left_ground_patches": [
+    {
+      "id": "v12/left-ground/patch-0",
+      "center_xy_mm": [
+        52.068,
+        780.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-12-23-000000",
+      "host_offset_mm": 0.20283483742673525,
+      "cross_flow_id": "C-rhythm-combined-1270-710-000000",
+      "source_q_m": 375.7025723175715,
+      "area_mm2": 340,
+      "bounds": [
+        31.571525653519522,
+        763.3306890107532,
+        76.60031729449001,
+        786.523072941561
+      ]
+    },
+    {
+      "id": "v12/left-ground/patch-1",
+      "center_xy_mm": [
+        114.0,
+        798.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-8-17-000000",
+      "host_offset_mm": -4.440143305723041,
+      "cross_flow_id": "C-rhythm-combined-1789-989-000000",
+      "source_q_m": 316.09965396818995,
+      "area_mm2": 550,
+      "bounds": [
+        86.55221391531204,
+        791.535517070478,
+        148.17192035746314,
+        803.9490693395151
+      ]
+    },
+    {
+      "id": "v12/left-ground/patch-2",
+      "center_xy_mm": [
+        205.0,
+        784.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-8-16-000000",
+      "host_offset_mm": -19.017396843863594,
+      "cross_flow_id": "C-rhythm-combined-236-126-000000",
+      "source_q_m": 363.15478971879566,
+      "area_mm2": 350,
+      "bounds": [
+        182.58020287583915,
+        779.4192400232116,
+        228.4270997004232,
+        790.2568568775938
+      ]
+    },
+    {
+      "id": "v12/left-ground/patch-3",
+      "center_xy_mm": [
+        231.0,
+        811.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-8-16-000000",
+      "host_offset_mm": 8.01276992515352,
+      "cross_flow_id": "C-rhythm-combined-1677-933-000000",
+      "source_q_m": 275.55562514309463,
+      "area_mm2": 290,
+      "bounds": [
+        207.98420981295823,
+        804.2605692376828,
+        253.13242602415826,
+        816.5075930791515
+      ]
+    },
+    {
+      "id": "v12/left-ground/patch-4",
+      "center_xy_mm": [
+        129.792,
+        824.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-6-10-000000",
+      "host_offset_mm": 1.1388250310736794,
+      "cross_flow_id": "C-rhythm-combined-762-424-000000",
+      "source_q_m": 236.25018375296466,
+      "area_mm2": 210,
+      "bounds": [
+        110.09785383103149,
+        820.2261192812924,
+        146.88514177042418,
+        828.2596503604096
+      ]
+    },
+    {
+      "id": "v12/left-ground/patch-5",
+      "center_xy_mm": [
+        83.367,
+        765.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-14-33-000000",
+      "host_offset_mm": 4.900115385402273,
+      "cross_flow_id": "C-rhythm-combined-1651-915-000000",
+      "source_q_m": 429.1998590789848,
+      "area_mm2": 300,
+      "bounds": [
+        56.94317120971661,
+        756.0072320460516,
+        103.8952654168217,
+        776.0035410621883
+      ]
+    },
+    {
+      "id": "v12/left-ground/patch-6",
+      "center_xy_mm": [
+        168.0,
+        769.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-12-22-000000",
+      "host_offset_mm": -3.659100878055483,
+      "cross_flow_id": "C-rhythm-combined-463-263-000000",
+      "source_q_m": 415.201491814625,
+      "area_mm2": 430,
+      "bounds": [
+        135.76095535918023,
+        763.7712297191636,
+        199.1193575637845,
+        774.8080971355245
+      ]
+    }
+  ],
+  "added_ground_ink_paths": 15,
+  "added_ground_C_paths": 10,
+  "added_low_color_paths": 80,
+  "exact_fixed_ink": {
+    "A": true,
+    "B": true,
+    "D": true
+  },
+  "A_color_exact": true,
+  "profile_errors": [],
+  "unique_ids": true,
+  "field_hashes": {
+    "xyz": "13a51d4058f5f1989e729412873bedeab3ca73a40747ea434a5ce7c1e8625650",
+    "depth_m": "ba74c509357ae5984552c3ef7f95fe8f17977ae1fb2ffce8b2d187442ad0f081",
+    "occupied": "6cde64b2a2aeef0ed2555afa85361d231f8c8eec26f0bb7ec630841bb83e31c0"
+  },
+  "baseline_input_hashes": {
+    "after_channel_RSU.json.gz": "79a0334f9892461cfcc1c1e7d6cdf5ad9d7f8ff214acafcf3f3167c77872b8a7",
+    "after_channel_C.json.gz": "7076ba2deff840632bed605452603084c9b10532703656cd4c488bd91a211769",
+    "after_color.json.gz": "209500417e6db301c14a2822b2fea032e677052ee186880114fab3b4b2aa5bf7",
+    "after_ink.json.gz": "6c24bc96753df4c0f7eaa43f85229061ffd0a98ecd70524296c0b8be9199dcd4",
+    "after_channel_rock_soil.json.gz": "b630e6160d222a40c8525603c2ca5f99c113c6fa35e721a93865b26edace1b2b",
+    "after_channel_trunk.json.gz": "e81db9b82d0bf5bf5d5a294e01063b21164d8269fb350332b6788aaeafab2d22",
+    "after_channel_gestures.json.gz": "749b83362d8cf3d49d29ef61fffb5ea51f944ec812ccdaddc53cc08e9569c629",
+    "after_channel_A.json.gz": "032ccd52046fd385c5a2728a4226dc1a0ae73ccd7866eef9a481a4f90ae9d245"
+  },
+  "status": "interim-finished vector candidate; awaiting visual review",
+  "published": false,
+  "merged": false,
+  "machine_output": false
+}

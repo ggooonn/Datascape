@@ -1,0 +1,195 @@
+{
+  "config": {
+    "study": "v13_recovered_candidate - reconstructed from the visible conversation, not original v13 source",
+    "parent_commit": "4f365064ae014fa8b2248bf6033020bdea5579d2",
+    "seed": 2026101913,
+    "remove_native_groups": [
+      "near-left-grove",
+      "left-step",
+      "near-edge-stones"
+    ],
+    "receiving_release_bounds_mm": [
+      0,
+      680,
+      295,
+      855
+    ],
+    "receiving_release_max_source_q_m": 650,
+    "retained_low_site_max_height_mm": 13,
+    "short_C_bounds_mm": [
+      0,
+      700,
+      295,
+      860
+    ],
+    "left_ground_patches": [
+      [
+        73,
+        741,
+        210,
+        4.8,
+        -7
+      ],
+      [
+        132,
+        720,
+        180,
+        5.1,
+        8
+      ],
+      [
+        215,
+        745,
+        200,
+        4.4,
+        -4
+      ]
+    ],
+    "scope": "Review only. Preserve right anchor, middle/far scene, fixed ink and A color. No publication before visual approval."
+  },
+  "removed_native_owners": [
+    "v03/rock/near-edge-stones/dissolution",
+    "v03/rock/near-edge-stones/linked/front",
+    "v03/rock/near-edge-stones/linked/parent",
+    "v03/rock/near-edge-stones/low-stone",
+    "v03/tree/left-step/c10",
+    "v03/tree/left-step/c8",
+    "v03/tree/left-step/c9",
+    "v03/tree/left-step/v07-grove-0",
+    "v03/tree/left-step/v07-grove-1",
+    "v03/tree/left-step/v07-grove-2",
+    "v03/tree/left-step/v07-grove-3",
+    "v03/tree/near-left-grove/dissolving-end",
+    "v03/tree/near-left-grove/dominant",
+    "v03/tree/near-left-grove/forward-shrub",
+    "v03/tree/near-left-grove/leaning-companion",
+    "v03/tree/near-left-grove/low-left",
+    "v03/tree/near-left-grove/rear-crown",
+    "v03/tree/near-left-grove/serial-end",
+    "v03/tree/near-left-grove/v07-grove-0",
+    "v03/tree/near-left-grove/v07-grove-1",
+    "v03/tree/near-left-grove/v07-grove-2",
+    "v03/tree/near-left-grove/v07-grove-3",
+    "v03/tree/near-left-grove/v07-grove-4",
+    "v03/tree/near-left-grove/v07-grove-5",
+    "v03/tree/near-left-grove/v07-grove-6"
+  ],
+  "removed_RSU_units": [
+    "v08/left-foreground-to-bench/stratum-0/patch-0/body-9",
+    "v08/left-foreground-to-bench/stratum-0/patch-1/body-9",
+    "v08/left-foreground-to-bench/stratum-0/patch-2/body-2",
+    "v08/left-foreground-to-bench/stratum-0/patch-2/body-6",
+    "v08/left-foreground-to-bench/stratum-1/patch-0/body-1",
+    "v08/left-foreground-to-bench/stratum-1/patch-0/body-10",
+    "v08/left-foreground-to-bench/stratum-1/patch-0/body-12",
+    "v08/left-foreground-to-bench/stratum-1/patch-0/body-2",
+    "v08/left-foreground-to-bench/stratum-1/patch-0/body-3",
+    "v08/left-foreground-to-bench/stratum-1/patch-0/body-5",
+    "v08/left-foreground-to-bench/stratum-1/patch-1/body-14",
+    "v08/left-foreground-to-bench/stratum-1/patch-1/body-4",
+    "v08/left-foreground-to-bench/stratum-1/patch-1/body-7",
+    "v08/left-foreground-to-bench/stratum-1/patch-2/body-2",
+    "v08/left-foreground-to-bench/stratum-2/patch-0/body-1",
+    "v08/left-foreground-to-bench/stratum-2/patch-0/body-3",
+    "v08/left-foreground-to-bench/stratum-2/patch-1/body-0",
+    "v08/left-foreground-to-bench/stratum-2/patch-1/body-3",
+    "v08/left-foreground-to-bench/stratum-2/patch-1/body-5",
+    "v08/left-foreground-to-bench/stratum-2/patch-1/body-6",
+    "v08/left-foreground-to-bench/stratum-2/patch-1/body-7",
+    "v12/low-ground/1",
+    "v12/low-ground/10",
+    "v12/low-ground/2",
+    "v12/low-ground/3",
+    "v12/low-ground/5"
+  ],
+  "removed_paths_by_family": {
+    "Soil": 30,
+    "rock": 20,
+    "tree": 272,
+    "RSU": 130,
+    "material-C-like": 191
+  },
+  "removed_path_count": 643,
+  "removed_length_mm": 5061.695510875835,
+  "added_patches": [
+    {
+      "id": "v13/left-ground/patch-0",
+      "center_xy_mm": [
+        73.0,
+        741.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-17-39-000000",
+      "host_offset_mm": -1.0215992071136952,
+      "cross_flow_id": "C-rhythm-combined-303-170-000000",
+      "source_q_m": 520.8362343211752,
+      "area_mm2": 210,
+      "bounds": [
+        55.4275403617931,
+        734.5602021476723,
+        93.81246148511588,
+        746.694162649728
+      ]
+    },
+    {
+      "id": "v13/left-ground/patch-1",
+      "center_xy_mm": [
+        132.0,
+        720.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-19-44-000000",
+      "host_offset_mm": 1.9435483824569246,
+      "cross_flow_id": "C-rhythm-combined-1574-879-000000",
+      "source_q_m": 608.0967456040544,
+      "area_mm2": 180,
+      "bounds": [
+        116.57365346313719,
+        715.6028062410122,
+        151.27172956066238,
+        724.6990005867797
+      ]
+    },
+    {
+      "id": "v13/left-ground/patch-2",
+      "center_xy_mm": [
+        216.061,
+        745.0
+      ],
+      "host_id": "v4n-A-rhythm-combined-17-38-000000",
+      "host_offset_mm": 14.441674046598564,
+      "cross_flow_id": "C-rhythm-combined-2089-1129-000000",
+      "source_q_m": 505.6989565959202,
+      "area_mm2": 200,
+      "bounds": [
+        199.47995962541503,
+        741.0129116275524,
+        233.3790614927151,
+        749.5763526284447
+      ]
+    }
+  ],
+  "added_ink_paths": 9,
+  "added_C_paths": 3,
+  "fixed_terrain_ink_exact": {
+    "A": true,
+    "B": true,
+    "C": true,
+    "D": true
+  },
+  "A_color_exact": true,
+  "profile_errors": [],
+  "unique_ids": true,
+  "parent_vector_hashes": {
+    "after_channel_C.json.gz": "5453e95d6e4f986e78e93ba3e45911dc0eb793fd3e4c5e6778ffbedff6746dab",
+    "after_channel_gestures.json.gz": "08541dd963da07ea4c971af40faebcf092ba561c6cfb851f17858f9eb49de040",
+    "after_channel_A.json.gz": "032ccd52046fd385c5a2728a4226dc1a0ae73ccd7866eef9a481a4f90ae9d245",
+    "after_channel_trunk.json.gz": "c27d3f99b62a30a59151e95b88ae23f1e02da43e7c30c4605ae81233b6bb8183",
+    "after_channel_rock_soil.json.gz": "d45069f785a58e0db54ba337277b745f71475da2154358217aea6491c8d0a99a",
+    "after_ink.json.gz": "1fa991bbf5b17b54a6f95ea9da38c990ae7f6993f23266865bfc5866a57b314e",
+    "after_color.json.gz": "d42d1c797bcab73472858e00c8b14966b36b7e0c03b34620b20ac744cd489f2f",
+    "after_channel_RSU.json.gz": "a59aea3dec7045e8bf23350eb0fbae74c918338858e4db5ee7523b6d19f8cef8"
+  },
+  "status": "v13_recovered_candidate; original v13 source identity unproven; awaiting reference PNG and visual approval",
+  "published": false,
+  "merged": false,
+  "machine_output": false
+}

@@ -1,0 +1,64 @@
+{
+  "label": "v13_recovered_candidate",
+  "original_v13_source_recovered": false,
+  "search_scope": [
+    "current workspace",
+    "accessible /workspace, /tmp and /mnt/data archives",
+    "Library exact v13 title query",
+    "historical local commit on GitHub (previous attempt 404)"
+  ],
+  "source_archives": [
+    {
+      "name": "Datascape_Spring_v12_Package.zip",
+      "sha256": "6826ddbeba293403d36ac72e4ec3c47029070bba7d90409f3307c61a62f6d999",
+      "bytes": 308491891
+    }
+  ],
+  "recovered_source_commits": {
+    "v5": {
+      "commit": "205adee181d1d5cfabdf1f216dc2c4b9882c0428",
+      "tree": "423bb1f3abcd94eaea2e71648c3bf4f0e76b8985"
+    },
+    "v6": {
+      "commit": "d4fa2c133728545b5aa9f42a741eb3c733b3e642",
+      "tree": "e947aba6e95990c9316dc0153bf54394012a4caa"
+    },
+    "v7": {
+      "commit": "a8978529f262f69eee4f46f517bc85b38b906c81",
+      "tree": "55fde6d726071d60f3f04e95d2b6bea3d7f27342"
+    },
+    "v8": {
+      "commit": "af1704093c6378fc474ffc3c9a265051dec9864b",
+      "tree": "a36c33b31d51149c07562d97cb393f7803b8057e"
+    },
+    "v9": {
+      "commit": "319cf46c39974313a1cf870b8a692b4bc5136a97",
+      "tree": "24662fefa871cab4d19597155147142d6ed748cb"
+    },
+    "v10": {
+      "commit": "2de1c39e7918fed2438e640d9e15e824997d87c8",
+      "tree": "f78a365d465b323abe6c43b279a0d1d7411ebd65"
+    },
+    "v11": {
+      "commit": "813a079067ddd2fb15209bc42ad1fc657a6b1851",
+      "tree": "1c1d36ab1e1d44044680d4a6ba52234b47023f47"
+    },
+    "v12": {
+      "commit": "4f365064ae014fa8b2248bf6033020bdea5579d2",
+      "tree": "7478d04261870688d69c150506c97729b04eac8d"
+    }
+  },
+  "historical_v13_log_crosscheck": {
+    "removed_paths": 643,
+    "new_ink_paths": 9,
+    "new_C_paths": 3,
+    "matches_recorded_643_9_3": true,
+    "identity_evidence": false
+  },
+  "reference_png_status": "not attached yet",
+  "original_v13_png_size_only_crosscheck": {
+    "recorded_size_bytes": 1819479,
+    "candidate_size_bytes": 1819479,
+    "identity_proof": false
+  }
+}

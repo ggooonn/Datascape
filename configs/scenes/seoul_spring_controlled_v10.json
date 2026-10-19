@@ -1,0 +1,21 @@
+{
+  "study": "Spring v10 controlled shared refinements and two foreground responses",
+  "parent_commit": "319cf46c39974313a1cf870b8a692b4bc5136a97",
+  "seed": 2026101901,
+  "A_extra_normal_fraction": 0.18,
+  "A_extra_normal_min_mm": 0.22,
+  "A_extra_normal_max_mm": 0.65,
+  "mid_native_depth_range_m": [650, 2100],
+  "native_height_scale_range": [0.68, 1.32],
+  "native_width_scale_range": [0.72, 1.25],
+  "RSU_height_scale_range": [0.72, 1.30],
+  "RSU_width_scale_range": [0.64, 1.24],
+  "new_field_cell_mm": [48, 37],
+  "minimum_color_mm": 3.2,
+  "minimum_ink_mm": 2.8,
+  "composition_v10_2": "Open left foreground; retain right rock and raise a narrow rooted vertical companion",
+  "composition_v10_3": "Low lateral left remnants; modest right vertical; strengthen left near-middle relay",
+  "shared_refinements": ["A displacement", "mid/far vegetation variation and distribution"],
+  "published": false,
+  "machine_output": false
+}

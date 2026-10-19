@@ -1,0 +1,12 @@
+{
+  "study": "v13_recovered_candidate - reconstructed from the visible conversation, not original v13 source",
+  "parent_commit": "4f365064ae014fa8b2248bf6033020bdea5579d2",
+  "seed": 2026101913,
+  "remove_native_groups": ["near-left-grove", "left-step", "near-edge-stones"],
+  "receiving_release_bounds_mm": [0, 680, 295, 855],
+  "receiving_release_max_source_q_m": 650,
+  "retained_low_site_max_height_mm": 13,
+  "short_C_bounds_mm": [0, 700, 295, 860],
+  "left_ground_patches": [[73, 741, 210, 4.8, -7], [132, 720, 180, 5.1, 8], [215, 745, 200, 4.4, -4]],
+  "scope": "Review only. Preserve right anchor, middle/far scene, fixed ink and A color. No publication before visual approval."
+}
