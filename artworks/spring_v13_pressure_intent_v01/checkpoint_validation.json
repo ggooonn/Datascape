@@ -1,0 +1,71 @@
+{
+  "schema": "datascape.pressure_intent.checkpoint_validation.v01",
+  "baseline_commit": "67ba146b1213644d40bc9dabed9d52024d2bbe58",
+  "sidecar_sha256": "0b8d59b7ca9268c70378b7a78df3f8825763b2b43e5667785459b2838d2b0b4e",
+  "strokes": 14951,
+  "pressure_values": 240974,
+  "ink_strokes": 3345,
+  "color_strokes": 11606,
+  "reproduction": {
+    "fresh_process_runs_compared_to_accepted": 2,
+    "files_byte_identical_each_run": {
+      "D_hierarchy_cohorts.json": true,
+      "anomaly_audit.csv": true,
+      "artistic_modifiers.json.gz": true,
+      "context_audit.json": true,
+      "family_statistics.json": true,
+      "generation_policy.json": true,
+      "historical_675_comparison.csv": true,
+      "historical_675_experimental_reference.json.gz": true,
+      "historical_comparison_summary.json": true,
+      "spring_v13.pressure_intent_v01.json.gz": true,
+      "stroke_statistics.csv": true,
+      "validation.json": true
+    },
+    "accepted_engine_bytes_unchanged": true,
+    "accepted_config_bytes_unchanged": true,
+    "all_675_historical_input_removal_counterfactuals_passed": true
+  },
+  "binding_tests": {
+    "unittest_cases_passed": 3,
+    "malformed_in_memory_subcases_rejected": 24,
+    "corrupt_file_subcases_rejected": 4,
+    "original_study_binding_checks_passed": 6,
+    "checks_enabled_under_python_optimized_mode": true,
+    "all_nonpressure_machine_fields_and_source_hashes_exact": true,
+    "source_inputs_not_mutated": true,
+    "all_675_historical_profiles_differ_from_experiments": true
+  },
+  "backend_contract_check": {
+    "backend_commit": "a2c3967b9d79030810f297cf5e1f5df079519aa3",
+    "actual_loader_strokes": 14951,
+    "all_240974_loaded_pressure_values_equal_sidecar": true,
+    "scheduler_ID_order_preserved": true,
+    "fallback_used": false,
+    "backend_files_sha256": {
+      "io.py": "118f72265929436f40a2665ac5dd8af7d70d4972932da386174f73e9797dfce6",
+      "models.py": "d297ec96e997de060a9d6e28fc0107bb6a500b2689098a409f2ee910bad80472",
+      "scheduling.py": "668faf62b67d6292ea86b5b29dedee5f72a5c95dee7c9b32a8b1531a303f5bda"
+    }
+  },
+  "replacement_counts": {
+    "historical_profiles": 675,
+    "historical_values": 8975,
+    "placeholder_profiles": 14276,
+    "placeholder_values": 231999
+  },
+  "derived_machine_payload_sha256": "6586df2ea3c48ee45de7df10926a2845172f39203ec805f61724f0c7e504ff2b",
+  "known_limitations_preserved": {
+    "family_bound_clipped_strokes": 3277,
+    "nearly_flat_strokes": 507,
+    "longer_nonflat_width_but_nearly_flat_pressure_strokes": 28,
+    "D_mass_ids_estimated": true,
+    "distant_vegetation_0_22_uncalibrated": true
+  },
+  "calibrated": false,
+  "hardware_mapping_or_Gcode_generated": false,
+  "frozen_baseline_regression_tests": {
+    "pytest_version": "8.3.5",
+    "tests_passed": 10
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "datascape.pressure_intent.acceptance.v01",
+  "status": "provisionally_accepted_artistic_pressure_baseline_for_offline_backend_development",
+  "baseline_commit": "67ba146b1213644d40bc9dabed9d52024d2bbe58",
+  "sidecar_file": "spring_v13.pressure_intent_v01.json.gz",
+  "sidecar_sha256": "0b8d59b7ca9268c70378b7a78df3f8825763b2b43e5667785459b2838d2b0b4e",
+  "sidecar_payload_sha256": "55b1f933e66a8a2e3bac2a6b143766b0739ae41d6e1fac4d780023920eb44b5d",
+  "config_sha256": "9398ce60b57dbed4b89b9856e03e413a3d3b9e39608b6d62b2a0cd999135e06d",
+  "baseline_manifest_sha256": "5dbf0b71292e83a1e7b2b5fcb626876aa9dcb2b09532417643bbe7be95b817d1",
+  "strokes": 14951,
+  "vertices": 240974,
+  "historical_experimental_strokes_recomputed": 675,
+  "historical_experimental_vertices_replaced": 8975,
+  "placeholder_strokes_replaced": 14276,
+  "placeholder_vertices_replaced": 231999,
+  "source_rich_records_sha256": "b24112cd71801487604f51eb58f097cbe950c56ec8e05013aa002d106540a8c3",
+  "calibrated": false,
+  "canonical_payload_status_note": "Generation-time candidate status is preserved byte-for-byte. This acceptance record supersedes review status without rewriting the accepted dataset.",
+  "historical_vector_identity_note": "Approved recovered PNG identity was independently verified by the user; identity with lost historical vector source remains unproven. Frozen PR24 source is the exact binding baseline."
+}
