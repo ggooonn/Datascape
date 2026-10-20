@@ -1,0 +1,504 @@
+{
+  "schema": "datascape.backend_offline_report.v0.2",
+  "offline_only": true,
+  "output_level": 1,
+  "pressure_commit": "d30ac7be302e1cbfcd2cf66de9087e35ea091b6c",
+  "spring_commit": "67ba146b1213644d40bc9dabed9d52024d2bbe58",
+  "pressure_sidecar_sha256": "0b8d59b7ca9268c70378b7a78df3f8825763b2b43e5667785459b2838d2b0b4e",
+  "bound_machine_payload_sha256": "6586df2ea3c48ee45de7df10926a2845172f39203ec805f61724f0c7e504ff2b",
+  "provenance_core_sha256": "c8baa3e46ce773a8752f488c889dc422e34d2ab9ba0ee87582efd9126c7e88d4",
+  "source_strokes": 14951,
+  "source_pressure_samples": 240974,
+  "source_files_modified": false,
+  "artistic_pressure_regenerated": false,
+  "fallback_used": false,
+  "machine_trajectory_available": false,
+  "executable_output_available": false,
+  "z_interpretation": "synthetic_preview",
+  "synthetic_profile": {
+    "brush_id": "SYNTHETIC-NOT-A-BRUSH",
+    "family": "synthetic",
+    "brush_type": "illustration",
+    "dimensions_mm": {},
+    "mounting": "unmeasured",
+    "medium": "unspecified",
+    "substrate": "unspecified",
+    "substrate_surface_height_mm": null,
+    "calibration_date": null,
+    "hardware_version": "unverified",
+    "knots": [
+      [
+        0,
+        0
+      ],
+      [
+        0.2,
+        -0.08
+      ],
+      [
+        0.5,
+        -0.3
+      ],
+      [
+        0.8,
+        -0.65
+      ],
+      [
+        1,
+        -1
+      ]
+    ],
+    "observations": [],
+    "status": "synthetic_preview",
+    "notes": ""
+  },
+  "bound_load_seconds": 1.5846564170000192,
+  "layouts": [
+    {
+      "layout": {
+        "mode": "A",
+        "gap_mm": 0,
+        "registrations": []
+      },
+      "artwork_frame": "top-left X-right Y-down mm",
+      "work_frame": "G54 front-left X-right Y-rear Z-up, registration unverified",
+      "setup_footprints": {
+        "P1": [
+          0.0,
+          0.0,
+          300.0,
+          900.0
+        ],
+        "P2": [
+          0.0,
+          0.0,
+          300.0,
+          900.0
+        ]
+      },
+      "audit": {
+        "sources_covered": 14951,
+        "fragments": 15001,
+        "fragment_vertices": 241074,
+        "stream_fragment_counts": {
+          "P2_ink": 1851,
+          "P1_ink": 1494,
+          "P1_color": 5684,
+          "P2_color": 5972
+        },
+        "original_drawing_mm": 184618.40243308205,
+        "clipped_drawing_mm": 184618.40243307786,
+        "all_pressure_segment_bindings_valid": true,
+        "complete_source_parameter_partition": true,
+        "original_direction_preserved": true
+      },
+      "streams": {
+        "P1_ink": {
+          "fragments": 1494,
+          "vertices": 32553,
+          "drawing_mm": 42321.18582380789
+        },
+        "P1_color": {
+          "fragments": 5684,
+          "vertices": 82518,
+          "drawing_mm": 46375.75739734725
+        },
+        "P2_ink": {
+          "fragments": 1851,
+          "vertices": 36548,
+          "drawing_mm": 45961.67819909561
+        },
+        "P2_color": {
+          "fragments": 5972,
+          "vertices": 89455,
+          "drawing_mm": 49959.78101283158
+        }
+      },
+      "motion_events": 331080,
+      "estimates": {
+        "assumptions_not_measured": {
+          "draw_mm_min": 1200,
+          "travel_mm_min": 6000,
+          "z_mm_min": 600,
+          "xy_accel_mm_s2": 100,
+          "z_accel_mm_s2": 50
+        },
+        "counts": {
+          "lift": 30002,
+          "travel": 15001,
+          "approach": 15001,
+          "initial_contact": 15001,
+          "pressure_variation": 15001,
+          "draw": 226073,
+          "release": 15001
+        },
+        "drawing_mm": 184618.40243308313,
+        "non_drawing_xy_mm": 412908.77721028094,
+        "illustrative_z_mm": 97269.79428707456,
+        "unresolved_z_moves": 0,
+        "nominal_feed_seconds_excluding_stations": 22938.09799498122,
+        "stop_each_segment_seconds_excluding_stations": 72002.1286209983,
+        "station_travel_mm": null,
+        "machine_bounds_verified": false,
+        "excluded": [
+          "first positioning in each setup",
+          "setup/panel replacement",
+          "station routes",
+          "manual checks/refills",
+          "drying",
+          "controller lookahead and junction behavior"
+        ],
+        "interpretation": "two simplified models, not guaranteed bounds or measured job time"
+      },
+      "station_simulation": {
+        "counts": {
+          "pause_checkpoint": 2,
+          "resume_preparation": 2,
+          "manual_brush_condition_check": 2,
+          "color_tool_request": 8883,
+          "ink_reload": 72,
+          "same_color_replenishment_request": 70,
+          "wash": 8881,
+          "sponge_wipe": 8881,
+          "controlled_rewet": 8881,
+          "gouache_load": 8881
+        },
+        "assumed_operation_seconds_excluding_travel_and_manual": 266718.0,
+        "coordinates_used": false,
+        "thresholds_deferred_to_next_fragment": true
+      },
+      "runtime_seconds": 20.35241888400003
+    },
+    {
+      "layout": {
+        "mode": "B",
+        "gap_mm": 0,
+        "registrations": []
+      },
+      "artwork_frame": "top-left X-right Y-down mm",
+      "work_frame": "G54 front-left X-right Y-rear Z-up, registration unverified",
+      "setup_footprints": {
+        "P1": [
+          0.0,
+          0.0,
+          300.0,
+          900.0
+        ],
+        "P2": [
+          300.0,
+          0.0,
+          600.0,
+          900.0
+        ]
+      },
+      "audit": {
+        "sources_covered": 14951,
+        "fragments": 15001,
+        "fragment_vertices": 241074,
+        "stream_fragment_counts": {
+          "P2_ink": 1851,
+          "P1_ink": 1494,
+          "P1_color": 5684,
+          "P2_color": 5972
+        },
+        "original_drawing_mm": 184618.40243308205,
+        "clipped_drawing_mm": 184618.40243307786,
+        "all_pressure_segment_bindings_valid": true,
+        "complete_source_parameter_partition": true,
+        "original_direction_preserved": true
+      },
+      "streams": {
+        "P2_ink": {
+          "fragments": 1851,
+          "vertices": 36548,
+          "drawing_mm": 45961.67819909561
+        },
+        "P1_ink": {
+          "fragments": 1494,
+          "vertices": 32553,
+          "drawing_mm": 42321.18582380789
+        },
+        "P1_color": {
+          "fragments": 5684,
+          "vertices": 82518,
+          "drawing_mm": 46375.75739734725
+        },
+        "P2_color": {
+          "fragments": 5972,
+          "vertices": 89455,
+          "drawing_mm": 49959.78101283158
+        }
+      },
+      "motion_events": 331080,
+      "estimates": {
+        "assumptions_not_measured": {
+          "draw_mm_min": 1200,
+          "travel_mm_min": 6000,
+          "z_mm_min": 600,
+          "xy_accel_mm_s2": 100,
+          "z_accel_mm_s2": 50
+        },
+        "counts": {
+          "lift": 30002,
+          "travel": 15001,
+          "approach": 15001,
+          "initial_contact": 15001,
+          "pressure_variation": 15001,
+          "draw": 226073,
+          "release": 15001
+        },
+        "drawing_mm": 184618.40243307795,
+        "non_drawing_xy_mm": 541117.7647712391,
+        "illustrative_z_mm": 97269.79428707992,
+        "unresolved_z_moves": 0,
+        "nominal_feed_seconds_excluding_stations": 24220.187870588026,
+        "stop_each_segment_seconds_excluding_stations": 73286.52704138297,
+        "station_travel_mm": null,
+        "machine_bounds_verified": false,
+        "excluded": [
+          "first positioning in each setup",
+          "setup/panel replacement",
+          "station routes",
+          "manual checks/refills",
+          "drying",
+          "controller lookahead and junction behavior"
+        ],
+        "interpretation": "two simplified models, not guaranteed bounds or measured job time"
+      },
+      "station_simulation": {
+        "counts": {
+          "pause_checkpoint": 1,
+          "resume_preparation": 1,
+          "manual_brush_condition_check": 1,
+          "color_tool_request": 8828,
+          "ink_reload": 72,
+          "same_color_replenishment_request": 71,
+          "wash": 8827,
+          "sponge_wipe": 8827,
+          "controlled_rewet": 8827,
+          "gouache_load": 8827
+        },
+        "assumed_operation_seconds_excluding_travel_and_manual": 265098.0,
+        "coordinates_used": false,
+        "thresholds_deferred_to_next_fragment": true
+      },
+      "runtime_seconds": 3.675777994999976
+    },
+    {
+      "layout": {
+        "mode": "C",
+        "gap_mm": 50,
+        "registrations": []
+      },
+      "artwork_frame": "top-left X-right Y-down mm",
+      "work_frame": "G54 front-left X-right Y-rear Z-up, registration unverified",
+      "setup_footprints": {
+        "P1": [
+          0.0,
+          0.0,
+          300.0,
+          900.0
+        ],
+        "P2": [
+          350.0,
+          0.0,
+          650.0,
+          900.0
+        ]
+      },
+      "audit": {
+        "sources_covered": 14951,
+        "fragments": 15001,
+        "fragment_vertices": 241074,
+        "stream_fragment_counts": {
+          "P2_ink": 1851,
+          "P1_ink": 1494,
+          "P1_color": 5684,
+          "P2_color": 5972
+        },
+        "original_drawing_mm": 184618.40243308205,
+        "clipped_drawing_mm": 184618.40243307786,
+        "all_pressure_segment_bindings_valid": true,
+        "complete_source_parameter_partition": true,
+        "original_direction_preserved": true
+      },
+      "streams": {
+        "P2_ink": {
+          "fragments": 1851,
+          "vertices": 36548,
+          "drawing_mm": 45961.67819909561
+        },
+        "P1_ink": {
+          "fragments": 1494,
+          "vertices": 32553,
+          "drawing_mm": 42321.18582380789
+        },
+        "P1_color": {
+          "fragments": 5684,
+          "vertices": 82518,
+          "drawing_mm": 46375.75739734725
+        },
+        "P2_color": {
+          "fragments": 5972,
+          "vertices": 89455,
+          "drawing_mm": 49959.78101283158
+        }
+      },
+      "motion_events": 331080,
+      "estimates": {
+        "assumptions_not_measured": {
+          "draw_mm_min": 1200,
+          "travel_mm_min": 6000,
+          "z_mm_min": 600,
+          "xy_accel_mm_s2": 100,
+          "z_accel_mm_s2": 50
+        },
+        "counts": {
+          "lift": 30002,
+          "travel": 15001,
+          "approach": 15001,
+          "initial_contact": 15001,
+          "pressure_variation": 15001,
+          "draw": 226073,
+          "release": 15001
+        },
+        "drawing_mm": 184618.40243307792,
+        "non_drawing_xy_mm": 603826.7325035565,
+        "illustrative_z_mm": 97269.79428707992,
+        "unresolved_z_moves": 0,
+        "nominal_feed_seconds_excluding_stations": 24847.27754791077,
+        "stop_each_segment_seconds_excluding_stations": 74037.73062573616,
+        "station_travel_mm": null,
+        "machine_bounds_verified": false,
+        "excluded": [
+          "first positioning in each setup",
+          "setup/panel replacement",
+          "station routes",
+          "manual checks/refills",
+          "drying",
+          "controller lookahead and junction behavior"
+        ],
+        "interpretation": "two simplified models, not guaranteed bounds or measured job time"
+      },
+      "station_simulation": {
+        "counts": {
+          "pause_checkpoint": 1,
+          "resume_preparation": 1,
+          "manual_brush_condition_check": 1,
+          "color_tool_request": 8828,
+          "ink_reload": 72,
+          "same_color_replenishment_request": 71,
+          "wash": 8827,
+          "sponge_wipe": 8827,
+          "controlled_rewet": 8827,
+          "gouache_load": 8827
+        },
+        "assumed_operation_seconds_excluding_travel_and_manual": 265098.0,
+        "coordinates_used": false,
+        "thresholds_deferred_to_next_fragment": true
+      },
+      "runtime_seconds": 3.5508836470000915
+    },
+    {
+      "layout": {
+        "mode": "D",
+        "gap_mm": 0,
+        "registrations": []
+      },
+      "artwork_frame": "top-left X-right Y-down mm",
+      "work_frame": "G54 front-left X-right Y-rear Z-up, registration unverified",
+      "setup_footprints": {
+        "FULL": [
+          0.0,
+          0.0,
+          600.0,
+          900.0
+        ]
+      },
+      "audit": {
+        "sources_covered": 14951,
+        "fragments": 14951,
+        "fragment_vertices": 240974,
+        "stream_fragment_counts": {
+          "FULL_ink": 3345,
+          "FULL_color": 11606
+        },
+        "original_drawing_mm": 184618.40243308205,
+        "clipped_drawing_mm": 184618.4024330779,
+        "all_pressure_segment_bindings_valid": true,
+        "complete_source_parameter_partition": true,
+        "original_direction_preserved": true
+      },
+      "streams": {
+        "FULL_ink": {
+          "fragments": 3345,
+          "vertices": 69101,
+          "drawing_mm": 88282.86402290345
+        },
+        "FULL_color": {
+          "fragments": 11606,
+          "vertices": 171873,
+          "drawing_mm": 96335.5384101786
+        }
+      },
+      "motion_events": 330680,
+      "estimates": {
+        "assumptions_not_measured": {
+          "draw_mm_min": 1200,
+          "travel_mm_min": 6000,
+          "z_mm_min": 600,
+          "xy_accel_mm_s2": 100,
+          "z_accel_mm_s2": 50
+        },
+        "counts": {
+          "lift": 29902,
+          "travel": 14951,
+          "approach": 14951,
+          "initial_contact": 14951,
+          "pressure_variation": 14951,
+          "draw": 226023,
+          "release": 14951
+        },
+        "drawing_mm": 184618.40243307798,
+        "non_drawing_xy_mm": 541117.7647712391,
+        "illustrative_z_mm": 96953.6256943276,
+        "unresolved_z_moves": 0,
+        "nominal_feed_seconds_excluding_stations": 24188.571011312844,
+        "stop_each_segment_seconds_excluding_stations": 73213.86413247365,
+        "station_travel_mm": null,
+        "machine_bounds_verified": false,
+        "excluded": [
+          "first positioning in each setup",
+          "setup/panel replacement",
+          "station routes",
+          "manual checks/refills",
+          "drying",
+          "controller lookahead and junction behavior"
+        ],
+        "interpretation": "two simplified models, not guaranteed bounds or measured job time"
+      },
+      "station_simulation": {
+        "counts": {
+          "pause_checkpoint": 1,
+          "resume_preparation": 1,
+          "manual_brush_condition_check": 1,
+          "color_tool_request": 8828,
+          "ink_reload": 72,
+          "same_color_replenishment_request": 71,
+          "wash": 8827,
+          "sponge_wipe": 8827,
+          "controlled_rewet": 8827,
+          "gouache_load": 8827
+        },
+        "assumed_operation_seconds_excluding_travel_and_manual": 265098.0,
+        "coordinates_used": false,
+        "thresholds_deferred_to_next_fragment": true
+      },
+      "runtime_seconds": 3.165620323999974
+    }
+  ],
+  "runtime_seconds": 32.411405858999956,
+  "peak_process_rss_mib_linux": 250.0546875,
+  "memory_scope": "peak Python process including parsed input and output construction",
+  "full_scene": true
+}

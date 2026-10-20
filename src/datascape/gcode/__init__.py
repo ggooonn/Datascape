@@ -1,4 +1,7 @@
-"""Datascape offline machine-vector and brush-motion prototype, v0.1.
+"""Datascape offline machine-vector backend, v0.1 compatibility + v0.2 IR.
+
+V0.2 entry point: python -m datascape.gcode.offline.
+Legacy plan/PreviewProfile below remain illustrative v0.1 APIs.
 
 NO hardware command execution or production G-code in this release.
 """

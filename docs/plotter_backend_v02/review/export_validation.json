@@ -1,0 +1,10 @@
+{
+  "output_manifest_entries_verified": 27,
+  "exported_fragments_verified": 15001,
+  "source_strokes_covered": 14951,
+  "motion_events_verified": 331080,
+  "fragment_artistic_pressure_samples_verified": 241074,
+  "comment_only_lines_verified": 331084,
+  "all_physical_trajectory_fields_absent": true,
+  "all_exported_pressure_matches_original_segment": true
+}

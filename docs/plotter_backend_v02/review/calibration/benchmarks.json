@@ -1,0 +1,4468 @@
+[
+  {
+    "name": "constant-line--0.1",
+    "stroke": {
+      "stroke_id": "constant-line--0.1",
+      "points": [
+        {
+          "x": 20,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 20,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 20,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 0,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "constant",
+    "constant_z_mm": -0.1,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "constant-line--0.3",
+    "stroke": {
+      "stroke_id": "constant-line--0.3",
+      "points": [
+        {
+          "x": 20,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 38,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 38,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 1,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "constant",
+    "constant_z_mm": -0.3,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "constant-line--0.6",
+    "stroke": {
+      "stroke_id": "constant-line--0.6",
+      "points": [
+        {
+          "x": 20,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 56,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 56,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 2,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "constant",
+    "constant_z_mm": -0.6,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "constant-curve",
+    "stroke": {
+      "stroke_id": "constant-curve",
+      "points": [
+        {
+          "x": 20,
+          "y": 74.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 74.78217232520116,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 75.54508497187474,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 76.26995249869773,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 76.93892626146237,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 77.53553390593274,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 78.04508497187474,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 78.45503262094184,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 78.75528258147577,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 78.9384417029757,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 79.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 78.9384417029757,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 78.75528258147577,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 78.45503262094184,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 78.04508497187474,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 77.53553390593274,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 76.93892626146237,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 76.26995249869773,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 75.54508497187474,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 74.78217232520116,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 74.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 73.21782767479884,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 72.45491502812527,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 71.73004750130227,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 71.06107373853763,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 70.46446609406726,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 69.95491502812527,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 69.54496737905816,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 69.24471741852423,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 69.0615582970243,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 69.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 69.0615582970243,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 69.24471741852423,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 69.54496737905816,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 69.95491502812526,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 70.46446609406726,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 71.06107373853763,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 71.73004750130227,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 72.45491502812526,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 73.21782767479884,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 74.0,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 3,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "constant",
+    "constant_z_mm": -0.3,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "gradual-ramp",
+    "stroke": {
+      "stroke_id": "gradual-ramp",
+      "points": [
+        {
+          "x": 20,
+          "y": 92,
+          "pressure": 0.2
+        },
+        {
+          "x": 22,
+          "y": 92,
+          "pressure": 0.21825
+        },
+        {
+          "x": 24,
+          "y": 92,
+          "pressure": 0.23650000000000002
+        },
+        {
+          "x": 26,
+          "y": 92,
+          "pressure": 0.25475000000000003
+        },
+        {
+          "x": 28,
+          "y": 92,
+          "pressure": 0.273
+        },
+        {
+          "x": 30,
+          "y": 92,
+          "pressure": 0.29125
+        },
+        {
+          "x": 32,
+          "y": 92,
+          "pressure": 0.3095
+        },
+        {
+          "x": 34,
+          "y": 92,
+          "pressure": 0.32775
+        },
+        {
+          "x": 36,
+          "y": 92,
+          "pressure": 0.346
+        },
+        {
+          "x": 38,
+          "y": 92,
+          "pressure": 0.36425
+        },
+        {
+          "x": 40,
+          "y": 92,
+          "pressure": 0.3825
+        },
+        {
+          "x": 42,
+          "y": 92,
+          "pressure": 0.40075
+        },
+        {
+          "x": 44,
+          "y": 92,
+          "pressure": 0.41900000000000004
+        },
+        {
+          "x": 46,
+          "y": 92,
+          "pressure": 0.43725
+        },
+        {
+          "x": 48,
+          "y": 92,
+          "pressure": 0.45549999999999996
+        },
+        {
+          "x": 50,
+          "y": 92,
+          "pressure": 0.47375
+        },
+        {
+          "x": 52,
+          "y": 92,
+          "pressure": 0.492
+        },
+        {
+          "x": 54,
+          "y": 92,
+          "pressure": 0.5102500000000001
+        },
+        {
+          "x": 56,
+          "y": 92,
+          "pressure": 0.5285
+        },
+        {
+          "x": 58,
+          "y": 92,
+          "pressure": 0.5467500000000001
+        },
+        {
+          "x": 60,
+          "y": 92,
+          "pressure": 0.565
+        },
+        {
+          "x": 62,
+          "y": 92,
+          "pressure": 0.58325
+        },
+        {
+          "x": 64,
+          "y": 92,
+          "pressure": 0.6014999999999999
+        },
+        {
+          "x": 66,
+          "y": 92,
+          "pressure": 0.61975
+        },
+        {
+          "x": 68,
+          "y": 92,
+          "pressure": 0.638
+        },
+        {
+          "x": 70,
+          "y": 92,
+          "pressure": 0.65625
+        },
+        {
+          "x": 72,
+          "y": 92,
+          "pressure": 0.6745000000000001
+        },
+        {
+          "x": 74,
+          "y": 92,
+          "pressure": 0.69275
+        },
+        {
+          "x": 76,
+          "y": 92,
+          "pressure": 0.7109999999999999
+        },
+        {
+          "x": 78,
+          "y": 92,
+          "pressure": 0.72925
+        },
+        {
+          "x": 80,
+          "y": 92,
+          "pressure": 0.7475
+        },
+        {
+          "x": 82,
+          "y": 92,
+          "pressure": 0.7657499999999999
+        },
+        {
+          "x": 84,
+          "y": 92,
+          "pressure": 0.784
+        },
+        {
+          "x": 86,
+          "y": 92,
+          "pressure": 0.8022499999999999
+        },
+        {
+          "x": 88,
+          "y": 92,
+          "pressure": 0.8205
+        },
+        {
+          "x": 90,
+          "y": 92,
+          "pressure": 0.8387500000000001
+        },
+        {
+          "x": 92,
+          "y": 92,
+          "pressure": 0.857
+        },
+        {
+          "x": 94,
+          "y": 92,
+          "pressure": 0.8752499999999999
+        },
+        {
+          "x": 96,
+          "y": 92,
+          "pressure": 0.8935
+        },
+        {
+          "x": 98,
+          "y": 92,
+          "pressure": 0.9117500000000001
+        },
+        {
+          "x": 100,
+          "y": 92,
+          "pressure": 0.9299999999999999
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 4,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "entry-exit-artistic-taper",
+    "stroke": {
+      "stroke_id": "entry-exit-artistic-taper",
+      "points": [
+        {
+          "x": 20,
+          "y": 110,
+          "pressure": 0.22
+        },
+        {
+          "x": 22,
+          "y": 110,
+          "pressure": 0.2709984122230992
+        },
+        {
+          "x": 24,
+          "y": 110,
+          "pressure": 0.3216824022761501
+        },
+        {
+          "x": 26,
+          "y": 110,
+          "pressure": 0.3717394865063385
+        },
+        {
+          "x": 28,
+          "y": 110,
+          "pressure": 0.4208610463437158
+        },
+        {
+          "x": 30,
+          "y": 110,
+          "pressure": 0.46874423103730833
+        },
+        {
+          "x": 32,
+          "y": 110,
+          "pressure": 0.5150938248307054
+        },
+        {
+          "x": 34,
+          "y": 110,
+          "pressure": 0.5596240670653667
+        },
+        {
+          "x": 36,
+          "y": 110,
+          "pressure": 0.6020604139901076
+        },
+        {
+          "x": 38,
+          "y": 110,
+          "pressure": 0.6421412314146194
+        },
+        {
+          "x": 40,
+          "y": 110,
+          "pressure": 0.6796194077712558
+        },
+        {
+          "x": 42,
+          "y": 110,
+          "pressure": 0.7142638776400201
+        },
+        {
+          "x": 44,
+          "y": 110,
+          "pressure": 0.7458610463437159
+        },
+        {
+          "x": 46,
+          "y": 110,
+          "pressure": 0.77421610683016
+        },
+        {
+          "x": 48,
+          "y": 110,
+          "pressure": 0.799154240722439
+        },
+        {
+          "x": 50,
+          "y": 110,
+          "pressure": 0.8205216961323364
+        },
+        {
+          "x": 52,
+          "y": 110,
+          "pressure": 0.8381867355918498
+        },
+        {
+          "x": 54,
+          "y": 110,
+          "pressure": 0.8520404482584898
+        },
+        {
+          "x": 56,
+          "y": 110,
+          "pressure": 0.8619974213868395
+        },
+        {
+          "x": 58,
+          "y": 110,
+          "pressure": 0.8679962669265332
+        },
+        {
+          "x": 60,
+          "y": 110,
+          "pressure": 0.87
+        },
+        {
+          "x": 62,
+          "y": 110,
+          "pressure": 0.8679962669265332
+        },
+        {
+          "x": 64,
+          "y": 110,
+          "pressure": 0.8619974213868395
+        },
+        {
+          "x": 66,
+          "y": 110,
+          "pressure": 0.8520404482584898
+        },
+        {
+          "x": 68,
+          "y": 110,
+          "pressure": 0.8381867355918499
+        },
+        {
+          "x": 70,
+          "y": 110,
+          "pressure": 0.8205216961323364
+        },
+        {
+          "x": 72,
+          "y": 110,
+          "pressure": 0.7991542407224391
+        },
+        {
+          "x": 74,
+          "y": 110,
+          "pressure": 0.77421610683016
+        },
+        {
+          "x": 76,
+          "y": 110,
+          "pressure": 0.7458610463437159
+        },
+        {
+          "x": 78,
+          "y": 110,
+          "pressure": 0.7142638776400202
+        },
+        {
+          "x": 80,
+          "y": 110,
+          "pressure": 0.679619407771256
+        },
+        {
+          "x": 82,
+          "y": 110,
+          "pressure": 0.6421412314146194
+        },
+        {
+          "x": 84,
+          "y": 110,
+          "pressure": 0.6020604139901077
+        },
+        {
+          "x": 86,
+          "y": 110,
+          "pressure": 0.5596240670653668
+        },
+        {
+          "x": 88,
+          "y": 110,
+          "pressure": 0.5150938248307054
+        },
+        {
+          "x": 90,
+          "y": 110,
+          "pressure": 0.46874423103730845
+        },
+        {
+          "x": 92,
+          "y": 110,
+          "pressure": 0.4208610463437159
+        },
+        {
+          "x": 94,
+          "y": 110,
+          "pressure": 0.3717394865063386
+        },
+        {
+          "x": 96,
+          "y": 110,
+          "pressure": 0.32168240227615014
+        },
+        {
+          "x": 98,
+          "y": 110,
+          "pressure": 0.2709984122230993
+        },
+        {
+          "x": 100,
+          "y": 110,
+          "pressure": 0.22000000000000008
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 5,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "alternating-pressure",
+    "stroke": {
+      "stroke_id": "alternating-pressure",
+      "points": [
+        {
+          "x": 20,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 22,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 24,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 26,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 28,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 30,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 32,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 34,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 36,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 38,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 40,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 42,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 44,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 46,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 48,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 50,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 52,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 54,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 56,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 58,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 60,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 62,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 64,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 66,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 68,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 70,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 72,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 74,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 76,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 78,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 80,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 82,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 84,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 86,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 88,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 90,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 92,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 94,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 96,
+          "y": 128,
+          "pressure": 0.25
+        },
+        {
+          "x": 98,
+          "y": 128,
+          "pressure": 0.8
+        },
+        {
+          "x": 100,
+          "y": 128,
+          "pressure": 0.25
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 6,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "short-0.1",
+    "stroke": {
+      "stroke_id": "short-0.1",
+      "points": [
+        {
+          "x": 20,
+          "y": 146,
+          "pressure": 0.3
+        },
+        {
+          "x": 20.1,
+          "y": 146,
+          "pressure": 0.6
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 7,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "short-0.5",
+    "stroke": {
+      "stroke_id": "short-0.5",
+      "points": [
+        {
+          "x": 20,
+          "y": 164,
+          "pressure": 0.3
+        },
+        {
+          "x": 20.5,
+          "y": 164,
+          "pressure": 0.6
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 8,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "short-2",
+    "stroke": {
+      "stroke_id": "short-2",
+      "points": [
+        {
+          "x": 20,
+          "y": 182,
+          "pressure": 0.3
+        },
+        {
+          "x": 22,
+          "y": 182,
+          "pressure": 0.6
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 9,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "long-continuous",
+    "stroke": {
+      "stroke_id": "long-continuous",
+      "points": [
+        {
+          "x": 20,
+          "y": 200.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 200.19985188477017,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 200.39881586786694,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 200.59600799238518,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 200.7905521734306,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 200.98158409038845,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 201.16825502692595,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 201.349735641668,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 201.5252196527939,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 201.6939274201851,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 201.8551094092092,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 202.0080495207514,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 202.15206827269856,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 202.28652581874152,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 202.41082479108323,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 202.5244129544237,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 202.62678565943008,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 202.71748808479214,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 202.79611725790167,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 202.86232384517865,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 202.91581370408994,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 202.95634918996538,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 202.98375021180516,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 202.9978950323879,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 202.9987208091245,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 202.98622387325528,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 202.96045974614938,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 202.9215428926346,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 202.8696462124531,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 202.80500027210286,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 202.72789228047705,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 202.63866481285268,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 202.53771428889783,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 202.42548921145877,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 202.30248817395216,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 202.16925764521497,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 202.02638954165346,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 201.87451859747776,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 201.71431954470575,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 201.5465041154644,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 201.37181787990744,
+          "pressure": 0.5
+        },
+        {
+          "x": 102,
+          "y": 201.19103693379725,
+          "pressure": 0.5
+        },
+        {
+          "x": 104,
+          "y": 201.00496445046772,
+          "pressure": 0.5
+        },
+        {
+          "x": 106,
+          "y": 200.81442711248684,
+          "pressure": 0.5
+        },
+        {
+          "x": 108,
+          "y": 200.62027143887266,
+          "pressure": 0.5
+        },
+        {
+          "x": 110,
+          "y": 200.4233600241796,
+          "pressure": 0.5
+        },
+        {
+          "x": 112,
+          "y": 200.22456770616478,
+          "pressure": 0.5
+        },
+        {
+          "x": 114,
+          "y": 200.02477767905992,
+          "pressure": 0.5
+        },
+        {
+          "x": 116,
+          "y": 199.82487756971727,
+          "pressure": 0.5
+        },
+        {
+          "x": 118,
+          "y": 199.6257554940623,
+          "pressure": 0.5
+        },
+        {
+          "x": 120,
+          "y": 199.42829611137356,
+          "pressure": 0.5
+        },
+        {
+          "x": 122,
+          "y": 199.2333766939195,
+          "pressure": 0.5
+        },
+        {
+          "x": 124,
+          "y": 199.04186322941473,
+          "pressure": 0.5
+        },
+        {
+          "x": 126,
+          "y": 198.85460657361077,
+          "pressure": 0.5
+        },
+        {
+          "x": 128,
+          "y": 198.67243867011544,
+          "pressure": 0.5
+        },
+        {
+          "x": 130,
+          "y": 198.49616885423495,
+          "pressure": 0.5
+        },
+        {
+          "x": 132,
+          "y": 198.32658025726016,
+          "pressure": 0.5
+        },
+        {
+          "x": 134,
+          "y": 198.16442632717184,
+          "pressure": 0.5
+        },
+        {
+          "x": 136,
+          "y": 198.01042748122325,
+          "pressure": 0.5
+        },
+        {
+          "x": 138,
+          "y": 197.86526790527122,
+          "pressure": 0.5
+        },
+        {
+          "x": 140,
+          "y": 197.72959251407622,
+          "pressure": 0.5
+        },
+        {
+          "x": 142,
+          "y": 197.604004086076,
+          "pressure": 0.5
+        },
+        {
+          "x": 144,
+          "y": 197.48906058536244,
+          "pressure": 0.5
+        },
+        {
+          "x": 146,
+          "y": 197.38527268275922,
+          "pressure": 0.5
+        },
+        {
+          "x": 148,
+          "y": 197.2931014870146,
+          "pressure": 0.5
+        },
+        {
+          "x": 150,
+          "y": 197.2129564961877,
+          "pressure": 0.5
+        },
+        {
+          "x": 152,
+          "y": 197.14519377833145,
+          "pressure": 0.5
+        },
+        {
+          "x": 154,
+          "y": 197.0901143895537,
+          "pressure": 0.5
+        },
+        {
+          "x": 156,
+          "y": 197.04796303648564,
+          "pressure": 0.5
+        },
+        {
+          "x": 158,
+          "y": 197.0189269890996,
+          "pressure": 0.5
+        },
+        {
+          "x": 160,
+          "y": 197.0031352487062,
+          "pressure": 0.5
+        },
+        {
+          "x": 162,
+          "y": 197.00065797482753,
+          "pressure": 0.5
+        },
+        {
+          "x": 164,
+          "y": 197.01150617349248,
+          "pressure": 0.5
+        },
+        {
+          "x": 166,
+          "y": 197.03563164833923,
+          "pressure": 0.5
+        },
+        {
+          "x": 168,
+          "y": 197.07292721474198,
+          "pressure": 0.5
+        },
+        {
+          "x": 170,
+          "y": 197.12322717601057,
+          "pressure": 0.5
+        },
+        {
+          "x": 172,
+          "y": 197.18630805954768,
+          "pressure": 0.5
+        },
+        {
+          "x": 174,
+          "y": 197.26188960969233,
+          "pressure": 0.5
+        },
+        {
+          "x": 176,
+          "y": 197.34963603283953,
+          "pressure": 0.5
+        },
+        {
+          "x": 178,
+          "y": 197.4491574893036,
+          "pressure": 0.5
+        },
+        {
+          "x": 180,
+          "y": 197.56001182529727,
+          "pressure": 0.5
+        },
+        {
+          "x": 182,
+          "y": 197.68170653733205,
+          "pressure": 0.5
+        },
+        {
+          "x": 184,
+          "y": 197.81370096031193,
+          "pressure": 0.5
+        },
+        {
+          "x": 186,
+          "y": 197.95540866959965,
+          "pressure": 0.5
+        },
+        {
+          "x": 188,
+          "y": 198.10620008638304,
+          "pressure": 0.5
+        },
+        {
+          "x": 190,
+          "y": 198.26540527476706,
+          "pressure": 0.5
+        },
+        {
+          "x": 192,
+          "y": 198.43231691816405,
+          "pressure": 0.5
+        },
+        {
+          "x": 194,
+          "y": 198.60619346175872,
+          "pressure": 0.5
+        },
+        {
+          "x": 196,
+          "y": 198.78626240708704,
+          "pressure": 0.5
+        },
+        {
+          "x": 198,
+          "y": 198.9717237440912,
+          "pressure": 0.5
+        },
+        {
+          "x": 200,
+          "y": 199.16175350540323,
+          "pressure": 0.5
+        },
+        {
+          "x": 202,
+          "y": 199.35550742706602,
+          "pressure": 0.5
+        },
+        {
+          "x": 204,
+          "y": 199.55212469942808,
+          "pressure": 0.5
+        },
+        {
+          "x": 206,
+          "y": 199.7507317915475,
+          "pressure": 0.5
+        },
+        {
+          "x": 208,
+          "y": 199.95044633211393,
+          "pressure": 0.5
+        },
+        {
+          "x": 210,
+          "y": 200.15038102964652,
+          "pressure": 0.5
+        },
+        {
+          "x": 212,
+          "y": 200.3496476145515,
+          "pressure": 0.5
+        },
+        {
+          "x": 214,
+          "y": 200.5473607855248,
+          "pressure": 0.5
+        },
+        {
+          "x": 216,
+          "y": 200.74264214276772,
+          "pressure": 0.5
+        },
+        {
+          "x": 218,
+          "y": 200.93462409054013,
+          "pressure": 0.5
+        },
+        {
+          "x": 220,
+          "y": 201.12245369171367,
+          "pressure": 0.5
+        },
+        {
+          "x": 222,
+          "y": 201.3052964571996,
+          "pressure": 0.5
+        },
+        {
+          "x": 224,
+          "y": 201.4823400534158,
+          "pressure": 0.5
+        },
+        {
+          "x": 226,
+          "y": 201.65279791132136,
+          "pressure": 0.5
+        },
+        {
+          "x": 228,
+          "y": 201.81591272098407,
+          "pressure": 0.5
+        },
+        {
+          "x": 230,
+          "y": 201.97095979615636,
+          "pressure": 0.5
+        },
+        {
+          "x": 232,
+          "y": 202.11725029391008,
+          "pressure": 0.5
+        },
+        {
+          "x": 234,
+          "y": 202.25413427502687,
+          "pressure": 0.5
+        },
+        {
+          "x": 236,
+          "y": 202.38100359154745,
+          "pressure": 0.5
+        },
+        {
+          "x": 238,
+          "y": 202.49729458865025,
+          "pressure": 0.5
+        },
+        {
+          "x": 240,
+          "y": 202.6024906088564,
+          "pressure": 0.5
+        },
+        {
+          "x": 242,
+          "y": 202.69612428743488,
+          "pressure": 0.5
+        },
+        {
+          "x": 244,
+          "y": 202.77777962880975,
+          "pressure": 0.5
+        },
+        {
+          "x": 246,
+          "y": 202.84709385474488,
+          "pressure": 0.5
+        },
+        {
+          "x": 248,
+          "y": 202.90375901609445,
+          "pressure": 0.5
+        },
+        {
+          "x": 250,
+          "y": 202.9475233609591,
+          "pressure": 0.5
+        },
+        {
+          "x": 252,
+          "y": 202.97819245316887,
+          "pressure": 0.5
+        },
+        {
+          "x": 254,
+          "y": 202.99563003612383,
+          "pressure": 0.5
+        },
+        {
+          "x": 256,
+          "y": 202.99975863815487,
+          "pressure": 0.5
+        },
+        {
+          "x": 258,
+          "y": 202.99055991671474,
+          "pressure": 0.5
+        },
+        {
+          "x": 260,
+          "y": 202.96807473987013,
+          "pressure": 0.5
+        },
+        {
+          "x": 262,
+          "y": 202.9324030047332,
+          "pressure": 0.5
+        },
+        {
+          "x": 264,
+          "y": 202.88370319363878,
+          "pressure": 0.5
+        },
+        {
+          "x": 266,
+          "y": 202.82219167003933,
+          "pressure": 0.5
+        },
+        {
+          "x": 268,
+          "y": 202.7481417172456,
+          "pressure": 0.5
+        },
+        {
+          "x": 270,
+          "y": 202.66188232428408,
+          "pressure": 0.5
+        },
+        {
+          "x": 272,
+          "y": 202.56379672426485,
+          "pressure": 0.5
+        },
+        {
+          "x": 274,
+          "y": 202.4543206917541,
+          "pressure": 0.5
+        },
+        {
+          "x": 276,
+          "y": 202.3339406067156,
+          "pressure": 0.5
+        },
+        {
+          "x": 278,
+          "y": 202.20319129362235,
+          "pressure": 0.5
+        },
+        {
+          "x": 280,
+          "y": 202.0626536453392,
+          "pressure": 0.5
+        },
+        {
+          "x": 282,
+          "y": 201.91295204233288,
+          "pressure": 0.5
+        },
+        {
+          "x": 284,
+          "y": 201.7547515786753,
+          "pressure": 0.5
+        },
+        {
+          "x": 286,
+          "y": 201.58875510716456,
+          "pressure": 0.5
+        },
+        {
+          "x": 288,
+          "y": 201.41570011669157,
+          "pressure": 0.5
+        },
+        {
+          "x": 290,
+          "y": 201.23635545572526,
+          "pressure": 0.5
+        },
+        {
+          "x": 292,
+          "y": 201.05151791647395,
+          "pressure": 0.5
+        },
+        {
+          "x": 294,
+          "y": 200.8620086948978,
+          "pressure": 0.5
+        },
+        {
+          "x": 296,
+          "y": 200.66866974230075,
+          "pressure": 0.5
+        },
+        {
+          "x": 298,
+          "y": 200.4723600247102,
+          "pressure": 0.5
+        },
+        {
+          "x": 300,
+          "y": 200.27395170666423,
+          "pressure": 0.5
+        },
+        {
+          "x": 302,
+          "y": 200.07432627636007,
+          "pressure": 0.5
+        },
+        {
+          "x": 304,
+          "y": 199.8743706293795,
+          "pressure": 0.5
+        },
+        {
+          "x": 306,
+          "y": 199.67497312839058,
+          "pressure": 0.5
+        },
+        {
+          "x": 308,
+          "y": 199.47701965633107,
+          "pressure": 0.5
+        },
+        {
+          "x": 310,
+          "y": 199.28138968060904,
+          "pressure": 0.5
+        },
+        {
+          "x": 312,
+          "y": 199.08895234580638,
+          "pressure": 0.5
+        },
+        {
+          "x": 314,
+          "y": 198.90056261224422,
+          "pressure": 0.5
+        },
+        {
+          "x": 316,
+          "y": 198.7170574575667,
+          "pressure": 0.5
+        },
+        {
+          "x": 318,
+          "y": 198.53925215821772,
+          "pressure": 0.5
+        },
+        {
+          "x": 320,
+          "y": 198.3679366673319,
+          "pressure": 0.5
+        },
+        {
+          "x": 322,
+          "y": 198.2038721051319,
+          "pressure": 0.5
+        },
+        {
+          "x": 324,
+          "y": 198.04778737742458,
+          "pressure": 0.5
+        },
+        {
+          "x": 326,
+          "y": 197.90037593721937,
+          "pressure": 0.5
+        },
+        {
+          "x": 328,
+          "y": 197.7622927038561,
+          "pressure": 0.5
+        },
+        {
+          "x": 330,
+          "y": 197.63415115333032,
+          "pressure": 0.5
+        },
+        {
+          "x": 332,
+          "y": 197.51652059274303,
+          "pressure": 0.5
+        },
+        {
+          "x": 334,
+          "y": 197.40992363098385,
+          "pressure": 0.5
+        },
+        {
+          "x": 336,
+          "y": 197.31483385688503,
+          "pressure": 0.5
+        },
+        {
+          "x": 338,
+          "y": 197.2316737351616,
+          "pressure": 0.5
+        },
+        {
+          "x": 340,
+          "y": 197.16081272948568,
+          "pressure": 0.5
+        },
+        {
+          "x": 342,
+          "y": 197.10256566103396,
+          "pressure": 0.5
+        },
+        {
+          "x": 344,
+          "y": 197.05719130980052,
+          "pressure": 0.5
+        },
+        {
+          "x": 346,
+          "y": 197.02489126488936,
+          "pressure": 0.5
+        },
+        {
+          "x": 348,
+          "y": 197.0058090288947,
+          "pressure": 0.5
+        },
+        {
+          "x": 350,
+          "y": 197.00002938034788,
+          "pressure": 0.5
+        },
+        {
+          "x": 352,
+          "y": 197.00757799706338,
+          "pressure": 0.5
+        },
+        {
+          "x": 354,
+          "y": 197.02842134205738,
+          "pressure": 0.5
+        },
+        {
+          "x": 356,
+          "y": 197.06246681254603,
+          "pressure": 0.5
+        },
+        {
+          "x": 358,
+          "y": 197.1095631513608,
+          "pressure": 0.5
+        },
+        {
+          "x": 360,
+          "y": 197.16950111895355,
+          "pressure": 0.5
+        },
+        {
+          "x": 362,
+          "y": 197.24201442300597,
+          "pressure": 0.5
+        },
+        {
+          "x": 364,
+          "y": 197.3267809015125,
+          "pressure": 0.5
+        },
+        {
+          "x": 366,
+          "y": 197.42342395408127,
+          "pressure": 0.5
+        },
+        {
+          "x": 368,
+          "y": 197.53151421509386,
+          "pressure": 0.5
+        },
+        {
+          "x": 370,
+          "y": 197.65057146129024,
+          "pressure": 0.5
+        },
+        {
+          "x": 372,
+          "y": 197.78006674530388,
+          "pressure": 0.5
+        },
+        {
+          "x": 374,
+          "y": 197.91942474566864,
+          "pressure": 0.5
+        },
+        {
+          "x": 376,
+          "y": 198.06802632285584,
+          "pressure": 0.5
+        },
+        {
+          "x": 378,
+          "y": 198.22521126998677,
+          "pressure": 0.5
+        },
+        {
+          "x": 380,
+          "y": 198.3902812459987,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 10,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "feed-600",
+    "stroke": {
+      "stroke_id": "feed-600",
+      "points": [
+        {
+          "x": 20,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 218,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 218,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 11,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 600,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "feed-1200",
+    "stroke": {
+      "stroke_id": "feed-1200",
+      "points": [
+        {
+          "x": 20,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 236,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 236,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 12,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "feed-2400",
+    "stroke": {
+      "stroke_id": "feed-2400",
+      "points": [
+        {
+          "x": 20,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 254,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 254,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 13,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 2400,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "medium-ink",
+    "stroke": {
+      "stroke_id": "medium-ink",
+      "points": [
+        {
+          "x": 20,
+          "y": 272.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 272.78217232520115,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 273.54508497187476,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 274.26995249869776,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 274.93892626146237,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 275.5355339059327,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 276.04508497187476,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 276.45503262094184,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 276.75528258147574,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 276.9384417029757,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 277.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 276.9384417029757,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 276.75528258147574,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 276.45503262094184,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 276.04508497187476,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 275.53553390593277,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 274.93892626146237,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 274.26995249869776,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 273.54508497187476,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 272.78217232520115,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 272.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 271.21782767479885,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 270.45491502812524,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 269.7300475013023,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 269.06107373853763,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 268.4644660940673,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 267.95491502812524,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 267.54496737905816,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 267.24471741852426,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 267.0615582970243,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 267.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 267.0615582970243,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 267.24471741852426,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 267.54496737905816,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 267.95491502812524,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 268.46446609406723,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 269.06107373853763,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 269.73004750130224,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 270.45491502812524,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 271.21782767479885,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 272.0,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 14,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "medium-color",
+    "stroke": {
+      "stroke_id": "medium-color",
+      "points": [
+        {
+          "x": 20,
+          "y": 290.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 290.78217232520115,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 291.54508497187476,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 292.26995249869776,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 292.93892626146237,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 293.5355339059327,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 294.04508497187476,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 294.45503262094184,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 294.75528258147574,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 294.9384417029757,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 295.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 294.9384417029757,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 294.75528258147574,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 294.45503262094184,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 294.04508497187476,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 293.53553390593277,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 292.93892626146237,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 292.26995249869776,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 291.54508497187476,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 290.78217232520115,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 290.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 289.21782767479885,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 288.45491502812524,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 287.7300475013023,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 287.06107373853763,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 286.4644660940673,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 285.95491502812524,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 285.54496737905816,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 285.24471741852426,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 285.0615582970243,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 285.0,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 285.0615582970243,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 285.24471741852426,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 285.54496737905816,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 285.95491502812524,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 286.46446609406723,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 287.06107373853763,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 287.73004750130224,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 288.45491502812524,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 289.21782767479885,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 290.0,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "A1",
+      "medium": "color",
+      "order_group": 0,
+      "sequence": 15,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "record_required",
+    "pigment_loading": "record_required"
+  },
+  {
+    "name": "loading-low",
+    "stroke": {
+      "stroke_id": "loading-low",
+      "points": [
+        {
+          "x": 20,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 308,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 308,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 16,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "low",
+    "pigment_loading": "low"
+  },
+  {
+    "name": "loading-ordinary",
+    "stroke": {
+      "stroke_id": "loading-ordinary",
+      "points": [
+        {
+          "x": 20,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 326,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 326,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 17,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "ordinary",
+    "pigment_loading": "ordinary"
+  },
+  {
+    "name": "loading-high",
+    "stroke": {
+      "stroke_id": "loading-high",
+      "points": [
+        {
+          "x": 20,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 22,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 24,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 26,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 28,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 30,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 32,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 34,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 36,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 38,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 40,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 42,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 44,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 46,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 48,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 50,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 52,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 54,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 56,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 58,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 60,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 62,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 64,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 66,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 68,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 70,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 72,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 74,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 76,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 78,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 80,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 82,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 84,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 86,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 88,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 90,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 92,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 94,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 96,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 98,
+          "y": 344,
+          "pressure": 0.5
+        },
+        {
+          "x": 100,
+          "y": 344,
+          "pressure": 0.5
+        }
+      ],
+      "layer": "CALIBRATION",
+      "color_slot": "INK",
+      "medium": "ink",
+      "order_group": 0,
+      "sequence": 18,
+      "reorderable": false,
+      "reversible": false,
+      "source_id": null,
+      "source_locations": [],
+      "source_spans": [],
+      "pressure_sidecar_sha256": null
+    },
+    "mode": "variable",
+    "constant_z_mm": null,
+    "feed_mm_min": 1200,
+    "water_loading": "high",
+    "pigment_loading": "high"
+  }
+]
