@@ -1,0 +1,92 @@
+{
+  "schema": "datascape.pressure_intent.full_config.v01",
+  "baseline_commit": "67ba146b1213644d40bc9dabed9d52024d2bbe58",
+  "bases": {
+    "A": 0.5,
+    "B": 0.55,
+    "D": 0.82,
+    "C": 0.48,
+    "A-color": 0.42,
+    "rock": 0.68,
+    "Soil": 0.5,
+    "trunk": 0.63,
+    "branch-foliage": 0.45,
+    "mid-far-vegetation": 0.4
+  },
+  "limits": {
+    "A": [
+      0.25,
+      0.68
+    ],
+    "B": [
+      0.3,
+      0.72
+    ],
+    "D": [
+      0.44,
+      0.93
+    ],
+    "C": [
+      0.24,
+      0.61
+    ],
+    "A-color": [
+      0.22,
+      0.55
+    ],
+    "rock": [
+      0.44,
+      0.81
+    ],
+    "Soil": [
+      0.28,
+      0.63
+    ],
+    "trunk": [
+      0.38,
+      0.76
+    ],
+    "branch-foliage": [
+      0.24,
+      0.58
+    ],
+    "mid-far-vegetation": [
+      0.22,
+      0.5
+    ]
+  },
+  "width_log2_gain": 0.085,
+  "width_delta_cap": 0.15,
+  "context_budget": 0.13,
+  "smoothing_mm": 1.2,
+  "maximum_ground_attachment_mm": 6.0,
+  "source_patch_neighbors": 48,
+  "D_same_depth_tolerance_m": 150.0,
+  "D_source_distance_sigma_m": 180.0,
+  "D_between_mass_gain": 0.08,
+  "D_within_mass_gain": 0.06,
+  "D_mass_partition": "original D support-event cohorts with estimated source-world terrain neighborhoods; not authored mountain IDs",
+  "crowding_radius_mm": 7.0,
+  "crowding_maximum_reduction": 0.075,
+  "minimum_crowding_depth_gate_m": 50.0,
+  "crowding_relative_depth_gate": 0.08,
+  "terrain_peak_gain": 0.045,
+  "terrain_slope_gain": 0.025,
+  "structural_valley_gain": 0.045,
+  "mist_release_gain": 0.09,
+  "A_D_gain": 0.035,
+  "color_context_gain": 0.5,
+  "rock_entry_gain": 0.065,
+  "rock_release_gain": -0.045,
+  "rock_terminal_gain": 0.035,
+  "branch_entry_gain": 0.025,
+  "branch_exit_release": 0.045,
+  "sub_1mm_envelope_gain": 0.35,
+  "status": "provisional full generation; all 14951 recomputed; historical 675 are reference only; normalized artistic intent, no hardware mapping",
+  "policy": {
+    "historical_675": "recompute with identical new rules; preserve original source only for provenance",
+    "machine_placeholder": "never a pressure input",
+    "width_mapping": "bounded logarithmic relative change; never per-stroke min-max to 0-1",
+    "rule_coefficients_changed_from_sample_study": false
+  }
+}
