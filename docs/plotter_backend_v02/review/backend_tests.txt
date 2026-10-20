@@ -1,0 +1,25 @@
+test_crossing_reenter_disconnected (test_gcode_backend.PlotterBackendTests.test_crossing_reenter_disconnected) ... ok
+test_crossing_without_internal_vertices (test_gcode_backend.PlotterBackendTests.test_crossing_without_internal_vertices) ... ok
+test_determinism_and_preservation (test_gcode_backend.PlotterBackendTests.test_determinism_and_preservation) ... ok
+test_polyline_crosses_and_returns (test_gcode_backend.PlotterBackendTests.test_polyline_crosses_and_returns) ... ok
+test_preview_is_comment_only (test_gcode_backend.PlotterBackendTests.test_preview_is_comment_only) ... ok
+test_reject_dot (test_gcode_backend.PlotterBackendTests.test_reject_dot) ... ok
+test_reorder_preserves_locked_strokes (test_gcode_backend.PlotterBackendTests.test_reorder_preserves_locked_strokes) ... ok
+test_full_bound_pressure_and_source_parameter_preservation (test_gcode_v02.FullSpringTests.test_full_bound_pressure_and_source_parameter_preservation) ... ok
+test_corners_asymmetric_landmark_and_offsets (test_gcode_v02.GeometryTests.test_corners_asymmetric_landmark_and_offsets) ... ok
+test_no_bridge_after_seam_or_omitted_interval (test_gcode_v02.GeometryTests.test_no_bridge_after_seam_or_omitted_interval) ... ok
+test_original_profiles_tiny_paths_and_arc_provenance (test_gcode_v02.GeometryTests.test_original_profiles_tiny_paths_and_arc_provenance) ... ok
+test_random_partition_conserves_length_and_source_parameter (test_gcode_v02.GeometryTests.test_random_partition_conserves_length_and_source_parameter) ... ok
+test_seam_owned_once_but_crossings_on_both_edges (test_gcode_v02.GeometryTests.test_seam_owned_once_but_crossings_on_both_edges) ... ok
+test_shared_order_streams_direction_and_gap_lift (test_gcode_v02.GeometryTests.test_shared_order_streams_direction_and_gap_lift) ... ok
+test_benchmark_families (test_gcode_v02.MotionAndCalibrationTests.test_benchmark_families) ... ok
+test_estimates_analytic_distance_and_assumptions (test_gcode_v02.MotionAndCalibrationTests.test_estimates_analytic_distance_and_assumptions) ... ok
+test_missing_pressure_numeric_and_duplicate_ids_fail (test_gcode_v02.MotionAndCalibrationTests.test_missing_pressure_numeric_and_duplicate_ids_fail) ... ok
+test_nonlinear_mapping_domain_and_measurement_requirements (test_gcode_v02.MotionAndCalibrationTests.test_nonlinear_mapping_domain_and_measurement_requirements) ... ok
+test_preserve_all_artistic_samples_in_constant_and_variable_modes (test_gcode_v02.MotionAndCalibrationTests.test_preserve_all_artistic_samples_in_constant_and_variable_modes) ... ok
+test_station_sequence_reload_manual_refill_and_restart (test_gcode_v02.MotionAndCalibrationTests.test_station_sequence_reload_manual_refill_and_restart) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 3.933s
+
+OK

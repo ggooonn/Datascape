@@ -1,4 +1,5 @@
 """Deterministic, constraint-aware distance heuristic, NOT global time optimization."""
+from dataclasses import replace
 from .models import Stroke
 
 
@@ -40,11 +41,11 @@ def schedule(strokes: tuple[Stroke,...]) -> tuple[Stroke,...]:
                 _,n,rev=min(choices)
                 chosen=pool.pop(n)
                 if rev:
-                    chosen=Stroke(stroke_id=chosen.stroke_id,source_id=chosen.source_id,
-                                  points=tuple(reversed(chosen.points)),layer=chosen.layer,
-                                  color_slot=chosen.color_slot,medium=chosen.medium,
-                                  order_group=chosen.order_group,sequence=chosen.sequence,
-                                  reorderable=True,reversible=True)
+                    chosen=replace(chosen,points=tuple(reversed(chosen.points)),
+                                   source_locations=tuple(reversed(chosen.source_locations)),
+                                   source_spans=tuple(replace(span,t_start=span.t_end,t_end=span.t_start,
+                                                             arc_start_mm=span.arc_end_mm,arc_end_mm=span.arc_start_mm)
+                                                      for span in reversed(chosen.source_spans)))
                 out.append(chosen)
                 last_xy=(chosen.points[-1].x,chosen.points[-1].y)
     return tuple(out)

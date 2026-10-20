@@ -1,0 +1,35 @@
+{
+  "schema": "datascape.stations.v0.2",
+  "status": "unverified",
+  "coordinate_frame": null,
+  "measured_work_xyz": {},
+  "well_mapping": {
+    "WELL_1": null,
+    "WELL_2": null
+  },
+  "station_clearance_mm": null,
+  "palette_slots": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5"
+  ],
+  "container_height_is_not_dip_depth": true,
+  "station_contact_trajectories_enabled": false
+}

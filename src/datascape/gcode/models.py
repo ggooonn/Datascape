@@ -25,6 +25,23 @@ class Point:
 
 
 @dataclass(frozen=True)
+class SourceLocation:
+    """Parameter on an ORIGINAL segment; arclength is never panel-normalized."""
+    segment: int
+    t: float
+    arc_mm: float
+
+
+@dataclass(frozen=True)
+class SourceSpan:
+    segment: int
+    t_start: float
+    t_end: float
+    arc_start_mm: float
+    arc_end_mm: float
+
+
+@dataclass(frozen=True)
 class Stroke:
     stroke_id: str
     points: tuple[Point, ...]
@@ -36,6 +53,9 @@ class Stroke:
     reorderable: bool = False
     reversible: bool = False
     source_id: str | None = None
+    source_locations: tuple[SourceLocation, ...] = ()
+    source_spans: tuple[SourceSpan, ...] = ()
+    pressure_sidecar_sha256: str | None = None
 
     def __post_init__(self):
         if not self.stroke_id or not self.layer or not self.color_slot:
@@ -46,6 +66,8 @@ class Stroke:
             raise ValueError('medium must be ink or color')
         if self.reversible and not self.reorderable:
             raise ValueError('reversible requires reorderable')
+        if self.source_locations and len(self.source_locations) != len(self.points):
+            raise ValueError('source location count must match points')
 
     @property
     def origin_id(self) -> str:
@@ -59,6 +81,7 @@ class Panel:
     x_max: float
     y_min: float = 0.0
     y_max: float = 900.0
+    excluded_boundary_x: float | None = None
 
     def __post_init__(self):
         _finite(self.x_min, self.x_max, self.y_min, self.y_max)
@@ -68,5 +91,5 @@ class Panel:
 
 PANELS = (
     Panel('P1', 0.0, 300.0),
-    Panel('P2', 300.0, 600.0),
+    Panel('P2', 300.0, 600.0, excluded_boundary_x=300.0),
 )
