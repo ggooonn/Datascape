@@ -1,0 +1,15 @@
+{
+  "approach_boundary_mm": 1,
+  "authorized": false,
+  "clearance_verified": false,
+  "hypothetical_local_hover": {
+    "height_mm": 5,
+    "max_distance_mm": 10
+  },
+  "meaning": "Offline overrides only; the physical profile is incomplete and local hover is disabled",
+  "profile_local_hover_enabled": false,
+  "wet_departure_arrival_mm": [
+    10,
+    10
+  ]
+}

@@ -1,0 +1,63 @@
+; SHARED_INK ACTUAL LOCAL TRANSFER EXCERPT; gap 8.916148339056022 mm; REVIEW ONLY
+; release source=v4n-A-rhythm-combined-6-9-000000/visible-f53f9ef73e9ab9 accepted_pressure=None
+; G1 X227.096137623 Y75.612421880 Z0.000000000 F2000.000000000
+; paper_release_clearance source=None accepted_pressure=None
+; G1 X227.096137623 Y75.612421880 Z1.000000000 F2000.000000000
+; retract source=None accepted_pressure=None
+; G1 X227.096137623 Y75.612421880 Z5.000000000 F6000.000000000
+; source_complete source=v4n-A-rhythm-combined-6-9-000000/visible-f53f9ef73e9ab9 accepted_pressure=None
+; source_begin source=v4n-A-rhythm-combined-6-9-000000/visible-5e06836b8de144 accepted_pressure=None
+; lift source=None accepted_pressure=None
+; G1 X227.096137623 Y75.612421880 Z5.000000000 F6000.000000000
+; travel source=None accepted_pressure=None
+; G1 X222.638393399 Y75.558184155 Z5.000000000 F3000.000000000
+; travel source=None accepted_pressure=None
+; G1 X222.638393399 Y75.558184155 Z5.000000000 F9000.000000000
+; travel source=None accepted_pressure=None
+; G1 X218.180649174 Y75.503946429 Z5.000000000 F3000.000000000
+; paper_hover source=None accepted_pressure=None
+; G1 X218.180649174 Y75.503946429 Z5.000000000 F6000.000000000
+; approach source=v4n-A-rhythm-combined-6-9-000000/visible-5e06836b8de144 accepted_pressure=None
+; G1 X218.180649174 Y75.503946429 Z1.000000000 F5000.000000000
+; initial_contact source=v4n-A-rhythm-combined-6-9-000000/visible-5e06836b8de144 accepted_pressure=None
+; G1 X218.180649174 Y75.503946429 Z0.000000000 F2000.000000000
+; pressure_variation source=v4n-A-rhythm-combined-6-9-000000/visible-5e06836b8de144 accepted_pressure=0.4471728981667188
+; G1 X218.180649174 Y75.503946429 Z-2.941906548 F2000.000000000
+; draw source=v4n-A-rhythm-combined-6-9-000000/visible-5e06836b8de144 accepted_pressure=0.44944902055676916
+; G1 X216.053000000 Y75.501000000 Z-2.956473732 F5000.000000000
+; UNRESOLVED same_material_reload {"contact_box_xyz": null, "deep_surface_xyz": null, "dwell_seconds": null, "feed_mm_min": null, "grammar": "sloped_inkstone", "nominal_center_xy": [840.0, 402.5], "pattern": null, "provisional_target_z": 10, "radius_mm": null, "retract": "measured station exit -> global clearance 32; actual exit XY unresolved for stones", "revolutions": null, "role": "ink", "shallow_surface_xyz": null, "sponge_compression_mm": null, "sponge_surface_z": null, "transport_proxy_only": "timing resumes at nominal center Z32; unknown station handling excluded", "wash_cycles": null}
+; G1 X800.000000000 Y900.000000000 Z32.000000000 ; nominal final park, reachability unverified
+; M2
+; SHARED_COLOR ACTUAL LOCAL TRANSFER EXCERPT; gap 4.050263581664203 mm; REVIEW ONLY
+; release source=v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered accepted_pressure=None
+; G1 X345.770195573 Y163.969235687 Z0.000000000 F2000.000000000
+; paper_release_clearance source=None accepted_pressure=None
+; G1 X345.770195573 Y163.969235687 Z1.000000000 F2000.000000000
+; retract source=None accepted_pressure=None
+; G1 X345.770195573 Y163.969235687 Z5.000000000 F6000.000000000
+; source_complete source=v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered accepted_pressure=None
+; source_begin source=v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered accepted_pressure=None
+; lift source=None accepted_pressure=None
+; G1 X345.770195573 Y163.969235687 Z5.000000000 F6000.000000000
+; travel source=None accepted_pressure=None
+; G1 X347.719081131 Y163.418777830 Z5.000000000 F3000.000000000
+; travel source=None accepted_pressure=None
+; G1 X347.719081131 Y163.418777830 Z5.000000000 F9000.000000000
+; travel source=None accepted_pressure=None
+; G1 X349.667966689 Y162.868319973 Z5.000000000 F3000.000000000
+; paper_hover source=None accepted_pressure=None
+; G1 X349.667966689 Y162.868319973 Z5.000000000 F6000.000000000
+; approach source=v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered accepted_pressure=None
+; G1 X349.667966689 Y162.868319973 Z1.000000000 F5000.000000000
+; initial_contact source=v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered accepted_pressure=None
+; G1 X349.667966689 Y162.868319973 Z0.000000000 F2000.000000000
+; pressure_variation source=v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered accepted_pressure=0.32759565602949287
+; G1 X349.667966689 Y162.868319973 Z-2.408306099 F2000.000000000
+; draw source=v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered accepted_pressure=0.34998779197054597
+; G1 X349.252813248 Y163.013339495 Z-2.479960934 F5000.000000000
+; UNRESOLVED wash {"contact_box_xyz": null, "deep_surface_xyz": null, "dwell_seconds": null, "feed_mm_min": null, "grammar": "sloped_inkstone", "nominal_center_xy": [840.0, 252.5], "pattern": null, "provisional_target_z": 10, "radius_mm": null, "retract": "measured station exit -> global clearance 32; actual exit XY unresolved for stones", "revolutions": null, "role": "water", "shallow_surface_xyz": null, "sponge_compression_mm": null, "sponge_surface_z": null, "transport_proxy_only": "timing resumes at nominal center Z32; unknown station handling excluded", "wash_cycles": null}
+; UNRESOLVED absorbent_contact {"contact_box_xyz": null, "deep_surface_xyz": null, "dwell_seconds": null, "feed_mm_min": null, "grammar": "absorbent", "nominal_center_xy": [840.0, 137.5], "pattern": null, "provisional_target_z": null, "radius_mm": null, "retract": "measured station exit -> global clearance 32; actual exit XY unresolved for stones", "revolutions": null, "role": "sponge", "shallow_surface_xyz": null, "sponge_compression_mm": 2, "sponge_surface_z": null, "transport_proxy_only": "timing resumes at nominal center Z32; unknown station handling excluded", "wash_cycles": null}
+; UNRESOLVED controlled_rewet {"contact_box_xyz": null, "deep_surface_xyz": null, "dwell_seconds": null, "feed_mm_min": null, "grammar": "sloped_inkstone", "nominal_center_xy": [840.0, 252.5], "pattern": null, "provisional_target_z": 12, "radius_mm": null, "retract": "measured station exit -> global clearance 32; actual exit XY unresolved for stones", "revolutions": null, "role": "water", "shallow_surface_xyz": null, "sponge_compression_mm": null, "sponge_surface_z": null, "transport_proxy_only": "timing resumes at nominal center Z32; unknown station handling excluded", "wash_cycles": null}
+; UNRESOLVED same_material_reload {"contact_box_xyz": null, "deep_surface_xyz": null, "dwell_seconds": null, "feed_mm_min": null, "grammar": "palette", "nominal_center_xy": [824.5, 721.5], "pattern": "circle", "provisional_target_z": 7, "radius_mm": null, "retract": "measured station exit -> global clearance 32; actual exit XY unresolved for stones", "revolutions": null, "role": "C1", "shallow_surface_xyz": null, "sponge_compression_mm": null, "sponge_surface_z": null, "transport_proxy_only": "timing resumes at nominal center Z32; unknown station handling excluded", "wash_cycles": null}
+; G1 X800.000000000 Y900.000000000 Z32.000000000 ; nominal final park, reachability unverified
+; M2

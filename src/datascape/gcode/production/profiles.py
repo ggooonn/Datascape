@@ -76,7 +76,7 @@ class Profile:
         geometry = {role:{k:st.get(k) for k in ('hardware_id','coordinate_frame','contact_box_xyz',
                         'center_xy','deep_surface_xyz','shallow_surface_xyz')} for role,st in stations.items()}
         context = {'machine':machine, 'check':check}
-        if check in ('brush_response','paper_contact','microsegment_response','continuous_seam'):
+        if check in ('brush_response','paper_contact','microsegment_response','continuous_seam','local_hover_clearance'):
             context.update(motion=motion, brushes=self.data.get('brush_profiles', {}))
         elif check in ('station_contacts','contamination_cleaning','ink_to_color_inspection'):
             brushes = {name:{k:v for k,v in b.items() if k not in ('knots','observations')}
@@ -147,6 +147,17 @@ class Profile:
             need(v['station_clearance_mm'] >= v['paper_hover_mm'], 'station clearance below paper hover')
         if vector(v.get('park_xyz')) and number(v.get('station_clearance_mm')):
             need(v['park_xyz'][2] >= v['station_clearance_mm'], 'park below station clearance')
+        local = v.get('local_hover')
+        if local is not None:
+            need(isinstance(local, dict) and type(local.get('enabled')) is bool, 'local_hover needs explicit enabled policy')
+            if isinstance(local, dict) and local.get('enabled'):
+                need(number(local.get('height_mm'), True) and number(v.get('paper_hover_mm'))
+                     and number(v.get('paper_approach_mm'))
+                     and v['paper_approach_mm'] <= local.get('height_mm', -1) <= v['paper_hover_mm'],
+                     'local hover must clear the measured approach boundary and not exceed normal hover')
+                need(number(local.get('max_distance_mm'), True), 'positive local hover distance threshold required')
+                if stage == 'painting':
+                    need(self.evidence_passed('local_hover_clearance'), 'missing current-profile evidence: local_hover_clearance')
         if stage in ('painting', 'fixture', 'calibration'):
             material = self.data.get('material', {})
             for k in ('ink_reload_mm', 'color_reload_mm'):

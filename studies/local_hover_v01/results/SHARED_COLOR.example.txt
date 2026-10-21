@@ -1,0 +1,176 @@
+; REVIEW ONLY; INCOMPLETE STATION GEOMETRY; NOT A MACHINE JOB
+; PROFILE 9300d39ddeb5c94105a94822bf295116eba028d7daf880b1ecabfa8b3198f2ec
+; PLAN 8b4804f561f0eaab28753ae1790ce3b0f5b9ab8ba9a4a2ffe1e4daecbe2596bd
+; JOB SHARED_COLOR
+; HYPOTHETICAL_POLICY {"approach_boundary_mm": 1, "authorized": false, "clearance_verified": false, "hypothetical_local_hover": {"height_mm": 5, "max_distance_mm": 10}, "meaning": "Offline overrides only; the physical profile is incomplete and local hover is disabled", "profile_local_hover_enabled": false, "wet_departure_arrival_mm": [10, 10]}
+; All XY/station targets provisional; machine offsets, volumes and physical readiness unverified
+; G21 G90 G94 G54
+; review_only  No physical readiness/authorization; all station contacts symbolic
+; material_change  C1
+; G1 X800.000000000 Y900.000000000 Z32.000000000 F6000.000000000
+; G1 X824.500000000 Y721.500000000 Z32.000000000 F12000.000000000
+; nominal_station_center  C1; historical frame unverified; not a measured deep/shallow point
+; UNRESOLVED pigment_load {"contact_box_xyz": null, "deep_surface_xyz": null, "dwell_seconds": null, "feed_mm_min": null, "grammar": "palette", "nominal_center_xy": [824.5, 721.5], "pattern": "circle", "provisional_target_z": 7, "radius_mm": null, "retract": "measured station exit -> global clearance 32; actual exit XY unresolved for stones", "revolutions": null, "role": "C1", "shallow_surface_xyz": null, "sponge_compression_mm": null, "sponge_surface_z": null, "transport_proxy_only": "timing resumes at nominal center Z32; unknown station handling excluded", "wash_cycles": null}
+; source_begin v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered 0
+; G1 X824.500000000 Y721.500000000 Z32.000000000 F6000.000000000
+; G1 X818.038834777 Y713.867612171 Z32.000000000 F3000.000000000
+; G1 X359.463794657 Y172.166164495 Z32.000000000 F9000.000000000
+; G1 X353.002629435 Y164.533776667 Z32.000000000 F3000.000000000
+; G1 X353.002629435 Y164.533776667 Z10.000000000 F6000.000000000
+; G1 X353.002629435 Y164.533776667 Z1.000000000 F5000.000000000
+; G1 X353.002629435 Y164.533776667 Z0.000000000 F2000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.3145057011856237, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 0}
+; G1 X353.002629435 Y164.533776667 Z-2.366418244 F2000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.35462844113971065, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 1}
+; G1 X353.723203136 Y165.009781795 Z-2.494811012 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.39309523014844766, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 2}
+; G1 X354.395859518 Y165.485012318 Z-2.617904736 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.4204619602791443, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 3}
+; G1 X355.020598580 Y165.959468238 Z-2.770956546 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.4341900828805603, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 4}
+; G1 X355.597420322 Y166.433149554 Z-2.858816530 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.43524512461210113, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 5}
+; G1 X356.126324744 Y166.906056265 Z-2.865568798 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.42488718481462506, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 6}
+; G1 X356.607311846 Y167.378188372 Z-2.799277983 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.40488570490124365, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 7}
+; G1 X357.040381628 Y167.849545875 Z-2.671268511 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.37694851370392923, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 8}
+; G1 X357.425534090 Y168.320128774 Z-2.566235244 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.34423854816474897, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 9}
+; G1 X357.762769232 Y168.789937069 Z-2.461563354 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.3100832105666138, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 10}
+; G1 X358.052087053 Y169.258970759 Z-2.352266274 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.27815340359769913, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 11}
+; G1 X358.293487555 Y169.727229846 Z-2.250090892 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered__FULL__001", "pressure": 0.2510173543545258, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered", "vertex": 12}
+; G1 X358.486970737 Y170.194714328 Z-2.163255534 F5000.000000000
+; G1 X358.486970737 Y170.194714328 Z0.000000000 F2000.000000000
+; G1 X358.486970737 Y170.194714328 Z1.000000000 F2000.000000000
+; G1 X358.486970737 Y170.194714328 Z10.000000000 F6000.000000000
+; source_complete v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-1/fan/8-2/gesture-1/feathered 0
+; source_begin v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered 1
+; G1 X358.486970737 Y170.194714328 Z10.000000000 F6000.000000000
+; G1 X354.021341715 Y166.837721137 Z10.000000000 F3000.000000000
+; G1 X354.021341715 Y166.837721137 Z10.000000000 F9000.000000000
+; G1 X349.555712692 Y163.480727947 Z10.000000000 F3000.000000000
+; G1 X349.555712692 Y163.480727947 Z10.000000000 F6000.000000000
+; G1 X349.555712692 Y163.480727947 Z1.000000000 F5000.000000000
+; G1 X349.555712692 Y163.480727947 Z0.000000000 F2000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.33159887710833374, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 0}
+; G1 X349.555712692 Y163.480727947 Z-2.421116407 F2000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.35390706741963773, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 1}
+; G1 X349.133525157 Y163.526572566 Z-2.492502616 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.37164749341090747, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 2}
+; G1 X348.730742672 Y163.571483433 Z-2.549271979 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.38230563743472823, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 3}
+; G1 X348.347365237 Y163.615460547 Z-2.583378040 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.38491635660484197, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 4}
+; G1 X347.983392852 Y163.658503908 Z-2.591732341 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.3800554784145933, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 5}
+; G1 X347.638825517 Y163.700613516 Z-2.576177531 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.36937494340039423, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 6}
+; G1 X347.313663232 Y163.741789370 Z-2.541999819 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.354956399124437, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 7}
+; G1 X347.007905997 Y163.782031472 Z-2.495860477 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.33873625152073833, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 8}
+; G1 X346.721553812 Y163.821339821 Z-2.443956005 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.32214870875538726, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 9}
+; G1 X346.454606678 Y163.859714417 Z-2.390875868 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.3064035519275874, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 10}
+; G1 X346.207064593 Y163.897155260 Z-2.340491366 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.2924014749025672, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 11}
+; G1 X345.978927558 Y163.933662350 Z-2.295684720 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered__FULL__001", "pressure": 0.2799114339715323, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered", "vertex": 12}
+; G1 X345.770195573 Y163.969235687 Z-2.255716589 F5000.000000000
+; G1 X345.770195573 Y163.969235687 Z0.000000000 F2000.000000000
+; G1 X345.770195573 Y163.969235687 Z1.000000000 F2000.000000000
+; G1 X345.770195573 Y163.969235687 Z5.000000000 F6000.000000000
+; source_complete v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-0/feathered 1
+; source_begin v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered 2
+; G1 X345.770195573 Y163.969235687 Z5.000000000 F6000.000000000
+; G1 X347.719081131 Y163.418777830 Z5.000000000 F3000.000000000
+; G1 X347.719081131 Y163.418777830 Z5.000000000 F9000.000000000
+; G1 X349.667966689 Y162.868319973 Z5.000000000 F3000.000000000
+; G1 X349.667966689 Y162.868319973 Z5.000000000 F6000.000000000
+; G1 X349.667966689 Y162.868319973 Z1.000000000 F5000.000000000
+; G1 X349.667966689 Y162.868319973 Z0.000000000 F2000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.32759565602949287, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 0}
+; G1 X349.667966689 Y162.868319973 Z-2.408306099 F2000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.34998779197054597, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 1}
+; G1 X349.252813248 Y163.013339495 Z-2.479960934 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.3670622384766176, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 2}
+; G1 X348.868116357 Y163.157305149 Z-2.534599163 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.3765278921145766, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 3}
+; G1 X348.513876018 Y163.300216937 Z-2.564889255 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.37795946796256463, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 4}
+; G1 X348.190092231 Y163.442074858 Z-2.569470297 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.37258707856025325, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 5}
+; G1 X347.896764994 Y163.582878911 Z-2.552278651 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.3625551784591613, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 6}
+; G1 X347.633894309 Y163.722629098 Z-2.520176571 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.3500359961459477, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 7}
+; G1 X347.401480174 Y163.861325418 Z-2.480115188 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.3362607219533038, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 8}
+; G1 X347.199522591 Y163.998967872 Z-2.436034310 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.3229028828568212, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 9}
+; G1 X347.028021560 Y164.135556458 Z-2.393289225 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.3107253777384004, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 10}
+; G1 X346.886977079 Y164.271091177 Z-2.354321209 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.29997758877387465, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 11}
+; G1 X346.776389149 Y164.405572030 Z-2.319928284 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered__FULL__001", "pressure": 0.2903700317663756, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered", "vertex": 12}
+; G1 X346.696257771 Y164.538999015 Z-2.289184102 F5000.000000000
+; G1 X346.696257771 Y164.538999015 Z0.000000000 F2000.000000000
+; G1 X346.696257771 Y164.538999015 Z1.000000000 F2000.000000000
+; G1 X346.696257771 Y164.538999015 Z10.000000000 F6000.000000000
+; source_complete v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-0/crown-3/fan/0-0/gesture-1/feathered 2
+; source_begin v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered 3
+; G1 X346.696257771 Y164.538999015 Z10.000000000 F6000.000000000
+; G1 X355.246334249 Y169.725152910 Z10.000000000 F3000.000000000
+; G1 X366.053794939 Y176.280550922 Z10.000000000 F9000.000000000
+; G1 X374.603871417 Y181.466704816 Z10.000000000 F3000.000000000
+; G1 X374.603871417 Y181.466704816 Z10.000000000 F6000.000000000
+; G1 X374.603871417 Y181.466704816 Z1.000000000 F5000.000000000
+; G1 X374.603871417 Y181.466704816 Z0.000000000 F2000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.3070219796386019, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 0}
+; G1 X374.603871417 Y181.466704816 Z-2.342470335 F2000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.34542908492283, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 1}
+; G1 X373.932310659 Y182.089428705 Z-2.465373072 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.3804408659155566, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 2}
+; G1 X373.256523356 Y182.681123364 Z-2.577410771 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.40204034951676015, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 3}
+; G1 X372.576509511 Y183.241788793 Z-2.653058237 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.4096937105492284, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 4}
+; G1 X371.892269122 Y183.771424991 Z-2.702039748 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.40651681746352897, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 5}
+; G1 X371.203802189 Y184.270031959 Z-2.681707632 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.3953927492400138, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 6}
+; G1 X370.511108713 Y184.737609697 Z-2.625256798 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.3788651468860677, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 7}
+; G1 X369.814188694 Y185.174158204 Z-2.572368470 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.3580005645972751, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 8}
+; G1 X369.113042131 Y185.579677481 Z-2.505601807 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.331570752992691, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 9}
+; G1 X368.407669025 Y185.954167528 Z-2.421026410 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.29944251988924603, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 10}
+; G1 X367.698069375 Y186.297628345 Z-2.318216064 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.2650709417564267, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 11}
+; G1 X366.984243182 Y186.610059931 Z-2.208227014 F5000.000000000
+; SAMPLE {"fragment": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered__FULL__001", "pressure": 0.24, "source": "v08/v04/foliage/v03/tree/near-right-exposure/v07-grove-1/apex/fan/4-0/gesture-0/feathered", "vertex": 12}
+; ... FULL COMMENT-ONLY PREVIEW CONTINUES IN GZIP ...
+; SAMPLE {"fragment": "v08/v03/C-field/row-73/col-39/v08-zone-episode-0/feathered/visible-87a5637d0b3093/v08/C/episode-0/visible-68a23c972d74cc__FULL__001", "pressure": 0.4469157639853187, "source": "v08/v03/C-field/row-73/col-39/v08-zone-episode-0/feathered/visible-87a5637d0b3093/v08/C/episode-0/visible-68a23c972d74cc", "vertex": 11}
+; G1 X499.928941959 Y97.333769909 Z-2.940260890 F5000.000000000
+; SAMPLE {"fragment": "v08/v03/C-field/row-73/col-39/v08-zone-episode-0/feathered/visible-87a5637d0b3093/v08/C/episode-0/visible-68a23c972d74cc__FULL__001", "pressure": 0.43962479147716604, "source": "v08/v03/C-field/row-73/col-39/v08-zone-episode-0/feathered/visible-87a5637d0b3093/v08/C/episode-0/visible-68a23c972d74cc", "vertex": 12}
+; G1 X500.468572801 Y96.500488930 Z-2.893598665 F5000.000000000
+; G1 X500.468572801 Y96.500488930 Z0.000000000 F2000.000000000
+; G1 X500.468572801 Y96.500488930 Z1.000000000 F2000.000000000
+; G1 X500.468572801 Y96.500488930 Z10.000000000 F6000.000000000
+; source_complete v08/v03/C-field/row-73/col-39/v08-zone-episode-0/feathered/visible-87a5637d0b3093/v08/C/episode-0/visible-68a23c972d74cc 11605
+; G1 X500.468572801 Y96.500488930 Z32.000000000 F6000.000000000
+; G1 X503.961592975 Y105.870590854 Z32.000000000 F3000.000000000
+; G1 X796.506979826 Y890.629898076 Z32.000000000 F9000.000000000
+; G1 X800.000000000 Y900.000000000 Z32.000000000 F3000.000000000
+; G1 X800.000000000 Y900.000000000 Z32.000000000 F6000.000000000
+; program_end  M2
+; M2

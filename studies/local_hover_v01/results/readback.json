@@ -1,0 +1,46 @@
+{
+  "authorized": false,
+  "physical_readiness_verified": false,
+  "file_hashes_verified": 16,
+  "jobs": {
+    "SHARED_INK": {
+      "source_samples": {
+        "all_artistic_pressure_samples_verified": 69101,
+        "all_draw_XYZ_synchronized_with_accepted_intent": true
+      },
+      "D_continuity": {
+        "continuous_crossing_sources_checked": 0,
+        "crossing_pressure_samples_checked": 0,
+        "no_seam_lift_reload_or_pause_inside_drawing_run": true
+      },
+      "all_preview_lines_commented": true,
+      "unresolved_operations_preserved": 84,
+      "M0_count": 0,
+      "commented_M2": true
+    },
+    "SHARED_COLOR": {
+      "source_samples": {
+        "all_artistic_pressure_samples_verified": 171873,
+        "all_draw_XYZ_synchronized_with_accepted_intent": true
+      },
+      "D_continuity": {
+        "continuous_crossing_sources_checked": 50,
+        "crossing_pressure_samples_checked": 616,
+        "no_seam_lift_reload_or_pause_inside_drawing_run": true
+      },
+      "all_preview_lines_commented": true,
+      "unresolved_operations_preserved": 159,
+      "M0_count": 0,
+      "commented_M2": true
+    }
+  },
+  "source_plan": {
+    "written_fragment_count": 14951,
+    "written_pressure_samples": 240974,
+    "all_written_source_pressure_and_work_transform_bindings_verified": true,
+    "complete_source_partition": true,
+    "D_original_strokes_unsplit": 14951,
+    "D_X300_crossing_strokes_continuous": 50
+  },
+  "A_and_D_source_atomic_S3a_order_verified": true
+}

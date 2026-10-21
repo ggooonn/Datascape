@@ -74,6 +74,7 @@ class Builder:
         require_path(self.position, self.position, self.m)
         self.in_paper = False; self.last_panel = None; self.at_station = False
         self.time_context = None
+        self.paper_transfer_height = self.v['paper_hover_mm']
 
     def move(self, target, feed, action, state='ordinary_travel', **lineage):
         if not vector(target) or not number(feed, True): raise ValueError('invalid spatial motion')
@@ -328,7 +329,29 @@ class Materials:
                                   'overrun_mm': self.distance-limit})
 
 
-def draw_fragment(b, fragment, material, stage):
+def local_transition_geometry(previous, following, distance_since_load, material, policy):
+    """Only consecutive complete original sources; never hides a material service."""
+    if not policy or not policy.get('enabled') or not following: return False
+    a,z=previous[-1],following[0]
+    if (a.setup,a.panel,a.stroke.medium,a.stroke.color_slot)!=(z.setup,z.panel,z.stroke.medium,z.stroke.color_slot): return False
+    if a.stroke.origin_id==z.stroke.origin_id: return False
+    limit=material['ink_reload_mm'] if a.stroke.medium=='ink' else material['color_reload_mm']
+    if distance_since_load >= limit: return False
+    return dist(a.work_xy[-1],z.work_xy[0]) <= policy['max_distance_mm']+1e-12
+
+
+def local_transition_height(profile, previous, following, distance_since_load, stage):
+    normal=profile.data['motion']['paper_hover_mm'];policy=profile.data['motion'].get('local_hover')
+    if stage=='air' or not local_transition_geometry(previous,following,distance_since_load,profile.data['material'],policy):return normal
+    if stage=='painting' and not profile.evidence_passed('local_hover_clearance'):
+        raise ValueError('local hover requires current clearance/recovery evidence')
+    h=policy['height_mm'];a=(*previous[-1].work_xy[-1],h);z=(*following[0].work_xy[0],h)
+    try:require_path(a,z,profile.data['machine'])
+    except ValueError:return normal  # A blocked low corridor falls back to normal; the actual path is still validated.
+    return h
+
+
+def draw_fragment(b, fragment, material, stage, retract_height=None):
     s = fragment.stroke
     if stage == 'air':
         depth = None
@@ -341,13 +364,14 @@ def draw_fragment(b, fragment, material, stage):
     # Reuse v0.2 event/contact model and each clipped vertex without resampling.
     settings = MotionSettings(depth, hover_z_mm=b.v['paper_hover_mm'], approach_z_mm=b.v['paper_approach_mm'])
     lineage = {'source_id': s.origin_id, 'fragment_id': s.stroke_id}
-    height = b.v['paper_hover_mm']
+    entry = b.paper_transfer_height if b.in_paper and b.last_panel==fragment.panel else b.v['paper_hover_mm']
+    height = entry
     if not b.in_paper or b.last_panel != fragment.panel: height = b.v['station_clearance_mm']
     state = 'ordinary_travel' if material is None else material.state
     return_before = b.lengths['non_draw_mm']
     b.time_context = 'station_transfer' if b.at_station else None
     b.xy(fragment.work_xy[0], height, state)
-    b.move((*fragment.work_xy[0], b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'paper_hover')
+    b.move((*fragment.work_xy[0], entry), b.v['z_travel_mm_min'], 'paper_hover')
     if b.at_station: b.lengths['station_return_3d_mm'] += b.lengths['non_draw_mm']-return_before
     b.at_station = False
     b.time_context = None
@@ -364,7 +388,9 @@ def draw_fragment(b, fragment, material, stage):
     if stage != 'air':
         b.move((*fragment.work_xy[-1], b.v['paper_approach_mm']), b.v['paper_release_mm_min'],
                'paper_release_clearance', state, **lineage)
-    b.move((*fragment.work_xy[-1], b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'retract', state, **lineage)
+    retract_height=b.v['paper_hover_mm'] if retract_height is None else retract_height
+    b.move((*fragment.work_xy[-1], retract_height), b.v['z_travel_mm_min'], 'retract', state, **lineage)
+    b.paper_transfer_height=retract_height
     b.in_paper = True; b.last_panel = fragment.panel
 
 
@@ -380,9 +406,13 @@ def build_job(profile, units, stage):
     for n, unit in enumerate(units):
         if material is not None: material.before(unit)
         b.marker('source_begin', str(n), source_id=unit[0].stroke.origin_id)
-        for f in unit: draw_fragment(b, f, material, stage)
+        distance_after=0. if material is None else material.distance+sum(hypot(b.x-a.x,b.y-a.y) for f in unit for a,b in zip(f.stroke.points,f.stroke.points[1:]))
+        following=units[n+1] if n+1<len(units) else None
+        retract=local_transition_height(profile,unit,following,distance_after,stage)
+        for i,f in enumerate(unit):draw_fragment(b,f,material,stage,retract if i==len(unit)-1 else None)
         if material is not None: material.after(unit)
         b.marker('source_complete', str(n), source_id=unit[0].stroke.origin_id)
+        if retract < b.v['paper_hover_mm']:b.marker('local_hover_transfer',str(retract),source_id=unit[0].stroke.origin_id)
     if material is not None and profile.data['material']['end_cleanup']:
         material.wash()
     b.park('ordinary_travel' if material is None else material.state)

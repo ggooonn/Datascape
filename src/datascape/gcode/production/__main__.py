@@ -50,7 +50,7 @@ def main(argv=None):
             except ValueError as e: issues.append(str(e))
             print(json.dumps({'stage': a.stage, 'profile_sha256': prof.sha256,
                 'calibration_sha256_for_evidence': prof.calibration_sha256,
-                'preferred_evidence_scope_sha256': {c:prof.evidence_scope_sha256(c) for c in (*BASE_CHECKS,'air_run',*PAINT_CHECKS,'continuous_seam')},
+                'preferred_evidence_scope_sha256': {c:prof.evidence_scope_sha256(c) for c in (*BASE_CHECKS,'air_run',*PAINT_CHECKS,'continuous_seam','local_hover_clearance')},
                 'structurally_ready': not issues, 'blocking_issues': issues,
                 'operator_stage_authorization_still_required': True}, indent=2))
             return 2 if issues else 0
