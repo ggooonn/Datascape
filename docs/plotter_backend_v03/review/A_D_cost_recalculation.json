@@ -1,0 +1,2287 @@
+{
+  "Gcode_written": false,
+  "color_reload_mm": 800,
+  "counts_are_exact_for_frozen_S3a_and_reload_policy": true,
+  "elapsed_seconds": 77.392275143,
+  "hardware_executed": false,
+  "ink_reload_mm": 1000,
+  "layouts": {
+    "A": {
+      "jobs": {
+        "P1_COLOR": {
+          "D_continuity_validation": null,
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 11,
+          "actual_XY_drawing_mm": 46375.75739734721,
+          "color_changes": 11,
+          "full_washes": 11,
+          "lineage_validation": {
+            "all_artistic_pressure_samples_verified": 82518,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "loads_including_initial": 64,
+          "medium": "color",
+          "original_units": 5684,
+          "same_material_reloads": 52,
+          "scenario_commanded_feed_hours": 10.337979236963621,
+          "scenario_non_draw_3d_mm": 310661.2988562198,
+          "scenario_seconds_by_action": {
+            "absorbent_contact_dwell": 1.0999999999999999,
+            "approach": 25578.0,
+            "controlled_rewet_dwell": 0.5499999999999999,
+            "draw": 556.5825022672442,
+            "initial_contact": 2842.0,
+            "lift": 603.5940000000664,
+            "paper_hover": 14.080000000000014,
+            "pigment_load_dwell": 1.2,
+            "pressure_variation": 492.29221149208126,
+            "release": 452.78025069659896,
+            "same_color_reload_dwell": 5.1999999999999975,
+            "station_absorbent_contact": 22.43999999999999,
+            "station_approach": 363.19999999999953,
+            "station_controlled_rewet": 231.9875372981936,
+            "station_pigment_load": 183.81970406250036,
+            "station_same_color_reload": 796.552050937487,
+            "station_wash": 509.4423454765489,
+            "travel": 4559.704650843768,
+            "wash_dwell": 2.2000000000000006
+          },
+          "scenario_station_access_outbound_mm": 54729.24408802837,
+          "scenario_station_return_mm": 46577.22943310836,
+          "scenario_station_transfer_3d_mm": 101306.47352113674,
+          "scenario_stop_each_segment_hours": 16.825850457131082,
+          "threshold_overruns": [
+            {
+              "distance_since_active_load_mm": 802.4612522760133,
+              "overrun_mm": 2.4612522760132833,
+              "source_id": "v08/far-central-closure/stratum-1/patch-1/body-4/S-crown/lobe-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 800.5098522091314,
+              "overrun_mm": 0.5098522091313953,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-2/body-0/R/ray-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 805.9888306217484,
+              "overrun_mm": 5.988830621748434,
+              "source_id": "v10/shared-RSU/v08/left-upper-rock-release/stratum-0/patch-0/body-1/R/ray-6/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 806.1568843152221,
+              "overrun_mm": 6.156884315222101,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-1/patch-3/body-13/S-crown/lobe-4/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 809.670036334833,
+              "overrun_mm": 9.670036334832957,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-75-237-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 801.2623044457628,
+              "overrun_mm": 1.2623044457627657,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-117-305-000000/episode-1/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 807.3744199183437,
+              "overrun_mm": 7.374419918343733,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-327-687-000000/episode-0/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 802.1570981192476,
+              "overrun_mm": 2.157098119247621,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-75-235-000000/episode-0/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 800.5904497368481,
+              "overrun_mm": 0.5904497368480861,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-300-633-000000/episode-0/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 800.3060028449881,
+              "overrun_mm": 0.3060028449881429,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-174-425-000000/episode-6/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 800.6241075470315,
+              "overrun_mm": 0.6241075470314854,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-192-460-000000/episode-4/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 800.7516302289077,
+              "overrun_mm": 0.751630228907743,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-184-446-000000/episode-4/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 806.9824221612599,
+              "overrun_mm": 6.982422161259933,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-168-402-000000/visible-3805de471652de/episode-0/pass-0/feathered/visible-3bcbe4c0a314fd/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 803.2701222515791,
+              "overrun_mm": 3.270122251579096,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-150-348-000000/visible-9d0ee16a1adb2f/episode-0/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 811.8378963030631,
+              "overrun_mm": 11.837896303063076,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-168-402-000000/visible-60773c8d5d9324/episode-0/pass-0/feathered/visible-35526028f26757/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 806.5385931793659,
+              "overrun_mm": 6.538593179365876,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-321-675-000000/episode-2/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 809.3478100045726,
+              "overrun_mm": 9.34781000457258,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-164-388-000000/visible-109fe80bb486c2/episode-0/pass-0/feathered/visible-edcd18cd5c4fbc/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 803.4808556993517,
+              "overrun_mm": 3.4808556993516504,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-320-673-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 806.985622922747,
+              "overrun_mm": 6.985622922746984,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-167-398-000000/visible-467a55087c92ee/episode-0/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 802.5214680727586,
+              "overrun_mm": 2.52146807275858,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-1/body-7/R/ray-4/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 807.0336221873173,
+              "overrun_mm": 7.033622187317292,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-0/body-10/R/ray-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.7772925049998,
+              "overrun_mm": 3.777292504999764,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-3/patch-4/body-7/S-crown/lobe-4/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.081245240806,
+              "overrun_mm": 3.08124524080597,
+              "source_id": "v10/field/5-16/unit-1/U/lateral-2/visible-ba28821ac19f62"
+            },
+            {
+              "distance_since_active_load_mm": 805.2788411305614,
+              "overrun_mm": 5.278841130561432,
+              "source_id": "v11/far/2-11/unit-0/U/leader-0"
+            },
+            {
+              "distance_since_active_load_mm": 809.3595856040056,
+              "overrun_mm": 9.359585604005588,
+              "source_id": "v10/shared-A/v08/v05/A-color/v4n-A-rhythm-combined-63-186-000000/visible-ba050504596c31/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 828.0672985981998,
+              "overrun_mm": 28.06729859819984,
+              "source_id": "v08/v03/material/v03/Soil/far-left-exposure/broad-flow-18/1/feathered/visible-05ab7e02bda693"
+            },
+            {
+              "distance_since_active_load_mm": 801.1001598299472,
+              "overrun_mm": 1.100159829947188,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-161-378-000000/visible-9e330c26bb46f5/episode-1/pass-0/feathered/visible-08c0ac21e674fe/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 806.1741131272594,
+              "overrun_mm": 6.174113127259375,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-144-337-000000/episode-1/pass-1/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 813.8400534801123,
+              "overrun_mm": 13.84005348011226,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-100-290-000000/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 809.7631028460872,
+              "overrun_mm": 9.763102846087236,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-271-582-000000/episode-1/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 810.3411703888719,
+              "overrun_mm": 10.341170388871888,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-173-422-000000/visible-41ff673717ca5c/episode-0/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 808.1505980066734,
+              "overrun_mm": 8.150598006673363,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-324-681-000000/episode-1/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 840.5400589078309,
+              "overrun_mm": 40.54005890783094,
+              "source_id": "v08/v03/material/v03/Soil/far-left-exposure/broad-flow-19/2/feathered/visible-2a1801d134a078"
+            },
+            {
+              "distance_since_active_load_mm": 801.3165596262191,
+              "overrun_mm": 1.3165596262191457,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-120-306-000000/episode-2/pass-1/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 814.5423110345174,
+              "overrun_mm": 14.542311034517411,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-171-413-000000/visible-30ade109a09d24/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 803.2679086887387,
+              "overrun_mm": 3.2679086887386575,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-3/patch-2/body-6/S-crown/lobe-4/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 806.2963221526312,
+              "overrun_mm": 6.296322152631205,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-85-261-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 806.9033038229618,
+              "overrun_mm": 6.903303822961789,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-271-579-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 826.9110327220981,
+              "overrun_mm": 26.91103272209807,
+              "source_id": "v08/v03/material/v03/Soil/far-left-exposure/broad-flow-12/0/feathered/visible-0f8ac32a59d14f"
+            },
+            {
+              "distance_since_active_load_mm": 803.9897027526172,
+              "overrun_mm": 3.989702752617177,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-3/body-1/R/ray-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 801.3015605279951,
+              "overrun_mm": 1.3015605279950933,
+              "source_id": "v10/field/5-16/unit-0/S-crown/lobe-11/visible-a02ecb590daf71"
+            },
+            {
+              "distance_since_active_load_mm": 804.8456494239142,
+              "overrun_mm": 4.84564942391421,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-1/patch-0/body-16/S-crown/lobe-6/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 804.651014879947,
+              "overrun_mm": 4.651014879946956,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-2/body-4/R/ray-3/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 808.4646505746646,
+              "overrun_mm": 8.464650574664574,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-1/body-4/R/ray-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 815.1409210029982,
+              "overrun_mm": 15.140921002998198,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-66-201-000000/visible-b5031fa9ebe707/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 805.7808418969087,
+              "overrun_mm": 5.780841896908669,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-165-391-000000/visible-ebf912ffab5bad/episode-0/pass-1/feathered/visible-1e544f978ba5bf/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 801.9556960230773,
+              "overrun_mm": 1.9556960230772802,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-3/patch-4/body-14/S-crown/lobe-3/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.1245647005835,
+              "overrun_mm": 3.1245647005835053,
+              "source_id": "v10/shared-native/v08/v04/foliage/v03/tree/middle-left-attached/v07-grove-2/mass-3/fan/6-4/gesture-0/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 801.6177621481947,
+              "overrun_mm": 1.6177621481947426,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-3/patch-2/body-2/S-crown/lobe-0/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.4586502009727,
+              "overrun_mm": 3.45865020097267,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-0/body-0/R/ray-8/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 802.3913547233348,
+              "overrun_mm": 2.391354723334757,
+              "source_id": "v10/field/1-10/unit-1/U/lateral-2"
+            },
+            {
+              "distance_since_active_load_mm": 800.4861138513371,
+              "overrun_mm": 0.4861138513371088,
+              "source_id": "v10/shared-A/v08/v05/A-color/v4n-A-rhythm-combined-35-77-000000/visible-32596c107c8df3/episode-0/pass-0/feathered/visible-a31237e4852e3f/v08/A/episode-0"
+            }
+          ]
+        },
+        "P1_INK": {
+          "D_continuity_validation": null,
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 0,
+          "actual_XY_drawing_mm": 42321.185823807835,
+          "color_changes": 0,
+          "full_washes": 0,
+          "lineage_validation": {
+            "all_artistic_pressure_samples_verified": 32553,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "loads_including_initial": 41,
+          "medium": "ink",
+          "original_units": 1494,
+          "same_material_reloads": 40,
+          "scenario_commanded_feed_hours": 3.2666027878637176,
+          "scenario_non_draw_3d_mm": 173785.03220857345,
+          "scenario_seconds_by_action": {
+            "approach": 6723.0,
+            "draw": 507.86147556912164,
+            "initial_contact": 747.0,
+            "lift": 167.43999999999482,
+            "paper_hover": 9.020000000000001,
+            "pigment_load_dwell": 0.1,
+            "pressure_variation": 226.02864116423544,
+            "release": 211.3205205380633,
+            "same_color_reload_dwell": 4.000000000000002,
+            "station_approach": 164.0,
+            "station_pigment_load": 23.156470248934028,
+            "station_same_color_reload": 926.2588099573599,
+            "travel": 2050.5841188308464
+          },
+          "scenario_station_access_outbound_mm": 30670.487514517892,
+          "scenario_station_return_mm": 28504.725154359247,
+          "scenario_station_transfer_3d_mm": 59175.21266887714,
+          "scenario_stop_each_segment_hours": 6.045276417370691,
+          "threshold_overruns": [
+            {
+              "distance_since_active_load_mm": 1017.8470930347894,
+              "overrun_mm": 17.847093034789395,
+              "source_id": "v4n-A-rhythm-combined-35-78-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1037.9404247999767,
+              "overrun_mm": 37.940424799976654,
+              "source_id": "v4n-A-rhythm-combined-56-159-000000/visible-3297b497b68da1"
+            },
+            {
+              "distance_since_active_load_mm": 1018.0463960743216,
+              "overrun_mm": 18.046396074321592,
+              "source_id": "v2-A-rhythm-combined-67-206-000000/visible-94b3b19772ad7f"
+            },
+            {
+              "distance_since_active_load_mm": 1129.5721463595396,
+              "overrun_mm": 129.5721463595396,
+              "source_id": "v2-A-rhythm-combined-73-227-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1083.3299127444207,
+              "overrun_mm": 83.32991274442065,
+              "source_id": "v2-A-rhythm-combined-77-243-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1061.00684294249,
+              "overrun_mm": 61.00684294249004,
+              "source_id": "v2-A-rhythm-combined-85-261-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1038.541491022015,
+              "overrun_mm": 38.54149102201495,
+              "source_id": "v2-A-rhythm-combined-93-280-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1145.3985076325027,
+              "overrun_mm": 145.39850763250274,
+              "source_id": "v2-A-rhythm-combined-107-295-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1146.9519773458828,
+              "overrun_mm": 146.95197734588282,
+              "source_id": "v2-A-rhythm-combined-126-312-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1007.8230663135392,
+              "overrun_mm": 7.823066313539243,
+              "source_id": "v2-A-rhythm-combined-141-333-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1000.9584620824372,
+              "overrun_mm": 0.9584620824372223,
+              "source_id": "v2-A-rhythm-combined-151-350-000000/visible-680d5d10b949de"
+            },
+            {
+              "distance_since_active_load_mm": 1006.1832758458437,
+              "overrun_mm": 6.183275845843696,
+              "source_id": "v2-A-rhythm-combined-158-369-000000/visible-7391272e2cfffb"
+            },
+            {
+              "distance_since_active_load_mm": 1003.801458060366,
+              "overrun_mm": 3.8014580603660306,
+              "source_id": "v2-A-rhythm-combined-162-381-000000/visible-110c67e9d8e42f"
+            },
+            {
+              "distance_since_active_load_mm": 1022.0767802019378,
+              "overrun_mm": 22.076780201937822,
+              "source_id": "v2-A-rhythm-combined-166-395-000000/visible-58a017f3118fef"
+            },
+            {
+              "distance_since_active_load_mm": 1002.3461844727244,
+              "overrun_mm": 2.346184472724417,
+              "source_id": "v2-A-rhythm-combined-169-406-000000/visible-c06d8a6930bd63"
+            },
+            {
+              "distance_since_active_load_mm": 1216.62318019903,
+              "overrun_mm": 216.62318019903,
+              "source_id": "v2-A-rhythm-combined-172-418-000000/visible-a9a28bf20cc97c"
+            },
+            {
+              "distance_since_active_load_mm": 1152.9644173057645,
+              "overrun_mm": 152.96441730576453,
+              "source_id": "v2-A-rhythm-combined-175-428-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1090.1735395524765,
+              "overrun_mm": 90.17353955247654,
+              "source_id": "v2-A-rhythm-combined-182-442-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1008.5461689033322,
+              "overrun_mm": 8.546168903332159,
+              "source_id": "v2-A-rhythm-combined-189-457-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1146.281133632012,
+              "overrun_mm": 146.28113363201192,
+              "source_id": "v2-A-rhythm-combined-196-467-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1070.965968124477,
+              "overrun_mm": 70.96596812447706,
+              "source_id": "v2-A-rhythm-combined-205-482-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1091.6211399663741,
+              "overrun_mm": 91.62113996637413,
+              "source_id": "v2-A-rhythm-combined-218-501-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1021.4346824616259,
+              "overrun_mm": 21.434682461625925,
+              "source_id": "v2-A-rhythm-combined-236-528-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1086.49724129293,
+              "overrun_mm": 86.49724129293008,
+              "source_id": "v2-A-rhythm-combined-257-560-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1025.2481428426363,
+              "overrun_mm": 25.248142842636298,
+              "source_id": "v2-A-rhythm-combined-284-608-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1098.9333956526075,
+              "overrun_mm": 98.93339565260749,
+              "source_id": "v2-A-rhythm-combined-307-647-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1074.3344518421172,
+              "overrun_mm": 74.33445184211723,
+              "source_id": "v2-A-rhythm-combined-317-667-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1039.78146351339,
+              "overrun_mm": 39.78146351339001,
+              "source_id": "v2-A-rhythm-combined-329-689-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1018.1000400946015,
+              "overrun_mm": 18.100040094601468,
+              "source_id": "v2-A-rhythm-combined-394-762-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1003.3037337827335,
+              "overrun_mm": 3.3037337827335023,
+              "source_id": "v2-A-rhythm-combined-476-845-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1006.3214183456478,
+              "overrun_mm": 6.321418345647771,
+              "source_id": "v2-A-rhythm-combined-525-887-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1034.9532554426469,
+              "overrun_mm": 34.95325544264688,
+              "source_id": "v2-A-rhythm-combined-556-916-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1022.9319264749901,
+              "overrun_mm": 22.931926474990064,
+              "source_id": "B-internal-000079"
+            },
+            {
+              "distance_since_active_load_mm": 1002.3744291204505,
+              "overrun_mm": 2.374429120450486,
+              "source_id": "v03/Soil/far-left-exposure/flow-11/0/contact-gradient-1"
+            },
+            {
+              "distance_since_active_load_mm": 1011.7805295053537,
+              "overrun_mm": 11.780529505353684,
+              "source_id": "v10_3/composition/v10/shared-native/catalog-v10/v03/tree/left-bench-transition/v08-rise-1/arm-3/single/outside-0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1001.3082641219224,
+              "overrun_mm": 1.3082641219224342,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/left-lower-middle-rise/v08-rise-3/axis/single-tail-000000/visible-6ea9b6c9008f2d"
+            },
+            {
+              "distance_since_active_load_mm": 1003.921038879252,
+              "overrun_mm": 3.9210388792520234,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/middle-left-attached/behind-outcrop/arm-0/single/outside-0-000000/visible-3d9bb77d586bbf"
+            },
+            {
+              "distance_since_active_load_mm": 1001.2606480069958,
+              "overrun_mm": 1.2606480069957797,
+              "source_id": "v10/shared-native/catalog-v10/v03/tree/middle-left-attached/v07-grove-1/axis/single-tail-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1005.3665385900996,
+              "overrun_mm": 5.366538590099594,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-3/body-5/R/ink-axis"
+            },
+            {
+              "distance_since_active_load_mm": 1001.0338527981735,
+              "overrun_mm": 1.0338527981734842,
+              "source_id": "v11/far/1-8/unit-0/S/ink-axis"
+            }
+          ]
+        },
+        "P2_COLOR": {
+          "D_continuity_validation": null,
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 11,
+          "actual_XY_drawing_mm": 49959.7810128315,
+          "color_changes": 11,
+          "full_washes": 11,
+          "lineage_validation": {
+            "all_artistic_pressure_samples_verified": 89455,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "loads_including_initial": 68,
+          "medium": "color",
+          "original_units": 5972,
+          "same_material_reloads": 56,
+          "scenario_commanded_feed_hours": 10.855087521127013,
+          "scenario_non_draw_3d_mm": 330186.1569810765,
+          "scenario_seconds_by_action": {
+            "absorbent_contact_dwell": 1.0999999999999999,
+            "approach": 26874.0,
+            "controlled_rewet_dwell": 0.5499999999999999,
+            "draw": 599.6004624103394,
+            "initial_contact": 2986.0,
+            "lift": 634.0340000000733,
+            "paper_hover": 14.960000000000017,
+            "pigment_load_dwell": 1.2,
+            "pressure_variation": 510.67201920986076,
+            "release": 471.02856721901463,
+            "same_color_reload_dwell": 5.599999999999996,
+            "station_absorbent_contact": 22.43999999999999,
+            "station_approach": 375.9999999999995,
+            "station_controlled_rewet": 231.9875372981936,
+            "station_pigment_load": 183.81970406250036,
+            "station_same_color_reload": 857.8252856249848,
+            "station_wash": 509.4423454765489,
+            "travel": 4795.8551547606585,
+            "wash_dwell": 2.2000000000000006
+          },
+          "scenario_station_access_outbound_mm": 57936.776383273434,
+          "scenario_station_return_mm": 52626.2036776664,
+          "scenario_station_transfer_3d_mm": 110562.98006093984,
+          "scenario_stop_each_segment_hours": 17.74191937072733,
+          "threshold_overruns": [
+            {
+              "distance_since_active_load_mm": 802.4601378001807,
+              "overrun_mm": 2.460137800180746,
+              "source_id": "v08/far-right-closure/stratum-0/patch-2/body-1/S-crown/lobe-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 804.0418794295371,
+              "overrun_mm": 4.041879429537062,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-3/body-10/S-crown/lobe-8/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 806.6202929621817,
+              "overrun_mm": 6.620292962181679,
+              "source_id": "v12/pair/v04/foliage/v03/tree/near-right-exposure/behind-main/pad-3/fan/5-3/gesture-1"
+            },
+            {
+              "distance_since_active_load_mm": 803.0634540305716,
+              "overrun_mm": 3.06345403057162,
+              "source_id": "v08/far-central-closure/stratum-2/patch-5/body-0/R/ray-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 805.5649311874213,
+              "overrun_mm": 5.56493118742128,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-256-552-000000/episode-2/pass-0/feathered/v08/A/episode-3"
+            },
+            {
+              "distance_since_active_load_mm": 804.1845048969826,
+              "overrun_mm": 4.184504896982617,
+              "source_id": "v08/v03/material/v03/tree/right-rise/v07-grove-1/root-contact-Soil/broad-flow-2/0/feathered/visible-4d408960f23065"
+            },
+            {
+              "distance_since_active_load_mm": 807.4404515972105,
+              "overrun_mm": 7.44045159721054,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-307-647-000001/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 805.3146699990554,
+              "overrun_mm": 5.314669999055354,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-336-699-000001/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 803.2244498405449,
+              "overrun_mm": 3.224449840544935,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-696-1041-000000/episode-1/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 805.7621975291962,
+              "overrun_mm": 5.762197529196214,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-673-1017-000000/episode-0/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 800.7149470882052,
+              "overrun_mm": 0.7149470882052356,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-373-749-000001/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 802.3694512175431,
+              "overrun_mm": 2.3694512175430873,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-345-710-000001/episode-1/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 802.3936999788489,
+              "overrun_mm": 2.393699978848872,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-457-827-000000/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 804.8574692496043,
+              "overrun_mm": 4.857469249604264,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-66-200-000000/episode-1/pass-0/feathered/visible-e41f8030aa97d8/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 813.2183701595513,
+              "overrun_mm": 13.218370159551341,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-204-479-000000/episode-0/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 814.1749212889271,
+              "overrun_mm": 14.174921288927067,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-284-607-000000/episode-1/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 815.0037847867123,
+              "overrun_mm": 15.003784786712345,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-664-1009-000000/episode-0/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 812.2732424603399,
+              "overrun_mm": 12.27324246033993,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-713-1058-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 807.2133022647769,
+              "overrun_mm": 7.213302264776871,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-73-227-000001/visible-add763b26a5299/episode-0/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 801.5530360175649,
+              "overrun_mm": 1.5530360175648639,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-159-370-000000/visible-9fc219b5f898a2/episode-1/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 807.0092875394063,
+              "overrun_mm": 7.009287539406273,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-151-349-000000/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 804.1063132381337,
+              "overrun_mm": 4.10631323813368,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-0/patch-2/body-6/S-crown/lobe-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 800.4297882321075,
+              "overrun_mm": 0.42978823210751216,
+              "source_id": "v11/far/7-11/unit-0/S-crown/lobe-3"
+            },
+            {
+              "distance_since_active_load_mm": 801.1799637260356,
+              "overrun_mm": 1.1799637260355667,
+              "source_id": "v10/field/8-11/unit-0/R/ray-8"
+            },
+            {
+              "distance_since_active_load_mm": 800.4908390695707,
+              "overrun_mm": 0.4908390695707112,
+              "source_id": "v08/upper-right-diagonal/stratum-1/patch-2/body-1/R/ray-0/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 801.4089639163935,
+              "overrun_mm": 1.4089639163935317,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-1/patch-2/body-13/S-crown/lobe-7/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 802.1021922273586,
+              "overrun_mm": 2.102192227358614,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-4/patch-3/body-7/S-crown/lobe-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 812.2527583327436,
+              "overrun_mm": 12.25275833274361,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-69-212-000001/visible-93d166f116e0a2/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 842.611759014865,
+              "overrun_mm": 42.611759014865015,
+              "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-2/pass-0/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 815.6421033971401,
+              "overrun_mm": 15.64210339714009,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-67-202-000000/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 800.1664223780514,
+              "overrun_mm": 0.16642237805137938,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-334-696-000001/episode-0/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 805.1795074218618,
+              "overrun_mm": 5.179507421861786,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-718-1064-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 804.783016672646,
+              "overrun_mm": 4.783016672645999,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-252-545-000000/episode-1/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 812.6959009635315,
+              "overrun_mm": 12.695900963531471,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-661-1006-000000/episode-1/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 813.6589307009464,
+              "overrun_mm": 13.658930700946371,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-222-504-000000/episode-1/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 801.3428194718631,
+              "overrun_mm": 1.3428194718630948,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-160-373-000000/visible-b71e288526cda4/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 803.6154492690142,
+              "overrun_mm": 3.6154492690142206,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-276-589-000000/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 800.774854274035,
+              "overrun_mm": 0.7748542740349649,
+              "source_id": "v08/far-central-closure/stratum-2/patch-4/body-3/R/ray-0/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 812.5100596272106,
+              "overrun_mm": 12.51005962721058,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-149-343-000000/episode-1/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 802.6445497222844,
+              "overrun_mm": 2.6445497222844097,
+              "source_id": "v08/upper-right-diagonal/stratum-0/patch-1/body-6/S-crown/lobe-6/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.9177883727352,
+              "overrun_mm": 3.917788372735231,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-591-943-000000/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 813.6408997625686,
+              "overrun_mm": 13.640899762568552,
+              "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/front/plane-12/pass-1/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 801.7695573353344,
+              "overrun_mm": 1.7695573353344116,
+              "source_id": "v10/field/10-15/unit-0/S-crown/lobe-3"
+            },
+            {
+              "distance_since_active_load_mm": 802.6822501232983,
+              "overrun_mm": 2.6822501232983313,
+              "source_id": "v10/shared-RSU/v08/right-middle-return/stratum-2/patch-0/body-16/S-crown/lobe-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 807.4614641489808,
+              "overrun_mm": 7.461464148980781,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-1/patch-2/body-0/S-crown/lobe-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 801.3551906823033,
+              "overrun_mm": 1.3551906823032596,
+              "source_id": "v10/shared-native/v08/v04/foliage/v03/tree/middle-right-bedrock/v07-grove-3/crown-3/fan/3-0/gesture-0/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 800.3317329402174,
+              "overrun_mm": 0.33173294021742095,
+              "source_id": "v08/far-central-closure/stratum-0/patch-4/body-0/S-crown/lobe-1/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 801.500430059038,
+              "overrun_mm": 1.5004300590379671,
+              "source_id": "v10/field/12-9/unit-1/U/lateral-2"
+            },
+            {
+              "distance_since_active_load_mm": 801.6304570170994,
+              "overrun_mm": 1.6304570170993884,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-352-719-000001/episode-2/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 805.2022134745164,
+              "overrun_mm": 5.202213474516384,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-90-271-000000/visible-948e0717dce00a/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 803.3294758467106,
+              "overrun_mm": 3.3294758467105794,
+              "source_id": "v10/field/12-9/unit-3/R/ray-2"
+            },
+            {
+              "distance_since_active_load_mm": 800.8575192366671,
+              "overrun_mm": 0.8575192366671445,
+              "source_id": "v08/upper-right-diagonal/stratum-1/patch-1/body-0/R/ray-4/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.7096583257511,
+              "overrun_mm": 3.709658325751093,
+              "source_id": "v10/field/11-16/unit-2/S-crown/lobe-2"
+            },
+            {
+              "distance_since_active_load_mm": 803.0205820464287,
+              "overrun_mm": 3.0205820464286717,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-3/body-7/S-crown/lobe-1/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 810.5600116182493,
+              "overrun_mm": 10.560011618249291,
+              "source_id": "v10/field/7-16/unit-1/R/ray-2"
+            },
+            {
+              "distance_since_active_load_mm": 801.991080226124,
+              "overrun_mm": 1.9910802261240406,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-1/patch-2/body-13/S-crown/lobe-6/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 800.0396122918744,
+              "overrun_mm": 0.0396122918743913,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-70-216-000001/visible-29e47a4f56c3f9/episode-2/pass-0/feathered/v08/A/episode-2"
+            }
+          ]
+        },
+        "P2_INK": {
+          "D_continuity_validation": null,
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 0,
+          "actual_XY_drawing_mm": 45961.678199095695,
+          "color_changes": 0,
+          "full_washes": 0,
+          "lineage_validation": {
+            "all_artistic_pressure_samples_verified": 36548,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "loads_including_initial": 45,
+          "medium": "ink",
+          "original_units": 1851,
+          "same_material_reloads": 44,
+          "scenario_commanded_feed_hours": 3.9371806362568864,
+          "scenario_non_draw_3d_mm": 202365.03362009214,
+          "scenario_seconds_by_action": {
+            "approach": 8329.5,
+            "draw": 551.5502592827379,
+            "initial_contact": 925.5,
+            "lift": 204.89999999999287,
+            "paper_hover": 9.900000000000002,
+            "pigment_load_dwell": 0.1,
+            "pressure_variation": 275.1400404991228,
+            "release": 248.1882553249329,
+            "same_color_reload_dwell": 4.4,
+            "station_approach": 180.0,
+            "station_pigment_load": 23.156470248934028,
+            "station_same_color_reload": 1018.8846909530956,
+            "travel": 2402.630574215
+          },
+          "scenario_station_access_outbound_mm": 34309.999662538336,
+          "scenario_station_return_mm": 32990.57133333699,
+          "scenario_station_transfer_3d_mm": 67300.57099587533,
+          "scenario_stop_each_segment_hours": 7.118851599742117,
+          "threshold_overruns": [
+            {
+              "distance_since_active_load_mm": 1017.438381218438,
+              "overrun_mm": 17.438381218438053,
+              "source_id": "v4n-A-rhythm-combined-32-62-000000/visible-90593ac8f68681"
+            },
+            {
+              "distance_since_active_load_mm": 1073.5501276360303,
+              "overrun_mm": 73.55012763603031,
+              "source_id": "v4n-A-rhythm-combined-42-108-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1004.3747274124082,
+              "overrun_mm": 4.37472741240822,
+              "source_id": "v4n-A-rhythm-combined-55-154-000000/visible-ed731639c7934a"
+            },
+            {
+              "distance_since_active_load_mm": 1007.526499867084,
+              "overrun_mm": 7.526499867083999,
+              "source_id": "v4n-A-rhythm-combined-65-195-000000/visible-fe283aa1fa49ff"
+            },
+            {
+              "distance_since_active_load_mm": 1147.1316825153401,
+              "overrun_mm": 147.13168251534012,
+              "source_id": "v2-A-rhythm-combined-70-216-000001/visible-29e47a4f56c3f9"
+            },
+            {
+              "distance_since_active_load_mm": 1117.26329866403,
+              "overrun_mm": 117.26329866402989,
+              "source_id": "v2-A-rhythm-combined-77-243-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1010.1367064335595,
+              "overrun_mm": 10.136706433559539,
+              "source_id": "v2-A-rhythm-combined-114-302-000000/visible-8507d7af163dd0"
+            },
+            {
+              "distance_since_active_load_mm": 1037.469753187448,
+              "overrun_mm": 37.46975318744808,
+              "source_id": "v2-A-rhythm-combined-142-334-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1047.0242484388386,
+              "overrun_mm": 47.02424843883864,
+              "source_id": "v2-A-rhythm-combined-157-364-000000/visible-f7cd4382f9a84d"
+            },
+            {
+              "distance_since_active_load_mm": 1065.4974951745073,
+              "overrun_mm": 65.49749517450732,
+              "source_id": "v2-A-rhythm-combined-164-386-000000/visible-df9a34e1e006cb"
+            },
+            {
+              "distance_since_active_load_mm": 1006.8290800907787,
+              "overrun_mm": 6.829080090778689,
+              "source_id": "v2-A-rhythm-combined-169-404-000000/visible-ad63779695ffe2"
+            },
+            {
+              "distance_since_active_load_mm": 1077.2837372981505,
+              "overrun_mm": 77.28373729815053,
+              "source_id": "v2-A-rhythm-combined-173-420-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1054.8143080267878,
+              "overrun_mm": 54.814308026787785,
+              "source_id": "v2-A-rhythm-combined-178-434-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1013.8038382515633,
+              "overrun_mm": 13.80383825156332,
+              "source_id": "v2-A-rhythm-combined-187-450-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1085.5680696487984,
+              "overrun_mm": 85.56806964879843,
+              "source_id": "v2-A-rhythm-combined-197-468-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1002.5902675662642,
+              "overrun_mm": 2.590267566264174,
+              "source_id": "v2-A-rhythm-combined-207-485-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1123.4166799995128,
+              "overrun_mm": 123.41667999951278,
+              "source_id": "v2-A-rhythm-combined-226-508-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1148.4846632367835,
+              "overrun_mm": 148.4846632367835,
+              "source_id": "v2-A-rhythm-combined-245-538-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1026.954496649907,
+              "overrun_mm": 26.954496649907014,
+              "source_id": "v2-A-rhythm-combined-261-564-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1109.8863673819703,
+              "overrun_mm": 109.88636738197033,
+              "source_id": "v2-A-rhythm-combined-278-594-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1014.5762298970516,
+              "overrun_mm": 14.576229897051576,
+              "source_id": "v2-A-rhythm-combined-294-620-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1018.7293381844304,
+              "overrun_mm": 18.72933818443039,
+              "source_id": "v2-A-rhythm-combined-311-655-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1045.9986854120339,
+              "overrun_mm": 45.998685412033865,
+              "source_id": "v2-A-rhythm-combined-323-679-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1081.1867252772472,
+              "overrun_mm": 81.1867252772472,
+              "source_id": "v2-A-rhythm-combined-348-713-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1115.3360416229484,
+              "overrun_mm": 115.33604162294841,
+              "source_id": "v2-A-rhythm-combined-367-739-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1054.4532280820783,
+              "overrun_mm": 54.45322808207834,
+              "source_id": "v2-A-rhythm-combined-404-776-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1034.546562091747,
+              "overrun_mm": 34.54656209174709,
+              "source_id": "v2-A-rhythm-combined-589-941-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1025.2767249807098,
+              "overrun_mm": 25.276724980709787,
+              "source_id": "v2-A-rhythm-combined-622-972-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1055.4999125674358,
+              "overrun_mm": 55.499912567435786,
+              "source_id": "v2-A-rhythm-combined-642-991-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1029.4174515828597,
+              "overrun_mm": 29.417451582859712,
+              "source_id": "v2-A-rhythm-combined-664-1009-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1004.2634929731295,
+              "overrun_mm": 4.263492973129473,
+              "source_id": "v2-A-rhythm-combined-691-1036-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1016.3754838825241,
+              "overrun_mm": 16.375483882524122,
+              "source_id": "v2-A-rhythm-combined-710-1055-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1008.402919073418,
+              "overrun_mm": 8.402919073418047,
+              "source_id": "B-internal-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1094.8780298546028,
+              "overrun_mm": 94.8780298546028,
+              "source_id": "D-terminal-000007"
+            },
+            {
+              "distance_since_active_load_mm": 1025.3378974102918,
+              "overrun_mm": 25.337897410291816,
+              "source_id": "v03/rock/near-right-exposure/connected/front/visible-contour-2/fragment-0"
+            },
+            {
+              "distance_since_active_load_mm": 1006.4211439879818,
+              "overrun_mm": 6.42114398798185,
+              "source_id": "v03/rock/near-right-exposure/connected/parent/cross-fracture-4/0/fragment-0/visible-668af8009671a2"
+            },
+            {
+              "distance_since_active_load_mm": 1000.2774566210038,
+              "overrun_mm": 0.2774566210038074,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/middle-right-bedrock/v08-rock-fringe-1/arm-1/single/outside-0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1011.0900148773377,
+              "overrun_mm": 11.090014877337694,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/right-link/terminal/arm-0/single/outside-0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1015.9402499979811,
+              "overrun_mm": 15.940249997981141,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/right-lower-middle-rise/v08-rise-3/arm-1/single/outside-0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1008.6229695350725,
+              "overrun_mm": 8.622969535072457,
+              "source_id": "catalog-v09/v03/tree/upper-right-mixed/v08-rock-fringe-2/axis/single-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1002.2362659194652,
+              "overrun_mm": 2.236265919465154,
+              "source_id": "v08/far-central-closure/stratum-0/patch-4/body-0/S/ink-axis"
+            },
+            {
+              "distance_since_active_load_mm": 1000.8167815983105,
+              "overrun_mm": 0.8167815983105129,
+              "source_id": "v12/pair/catalog-v10/v03/tree/near-right-exposure/behind-main/arm-1/side-1/0/outside-0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1004.860512762166,
+              "overrun_mm": 4.860512762165968,
+              "source_id": "v12/pair/catalog-v10/v03/tree/near-right-exposure/behind-main/bridge/fan/2-0-0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1001.9523830768777,
+              "overrun_mm": 1.9523830768777088,
+              "source_id": "v12/pair/catalog-v10/v03/tree/near-right-exposure/emerging-crown/bridge/fan/6-0-3-000000"
+            }
+          ]
+        }
+      },
+      "plan_sha256": "c9380e0b7c3967d1a8622dfa83974a568e2d1b2a67987dba479f348a66d9e074",
+      "source_readback": {
+        "D_X300_crossing_strokes_continuous": null,
+        "D_original_strokes_unsplit": null,
+        "all_written_source_pressure_and_work_transform_bindings_verified": true,
+        "complete_source_partition": true,
+        "written_fragment_count": 15001,
+        "written_pressure_samples": 241074
+      },
+      "totals": {
+        "M0_count": 0,
+        "PURGE_contacts": 22,
+        "actual_XY_drawing_mm": 184618.40243308223,
+        "color_changes": 22,
+        "color_reloads": 108,
+        "full_washes": 22,
+        "ink_reloads": 84,
+        "loads_including_initial": 218,
+        "same_material_reloads": 192,
+        "scenario_commanded_feed_hours": 28.39685018221124,
+        "scenario_non_draw_3d_mm": 1016997.521665962,
+        "scenario_station_transfer_3d_mm": 338345.237246829,
+        "scenario_stop_each_segment_hours": 47.73189784497122
+      }
+    },
+    "D": {
+      "jobs": {
+        "SHARED_COLOR": {
+          "D_continuity_validation": {
+            "continuous_crossing_sources_checked": 50,
+            "crossing_pressure_samples_checked": 616,
+            "no_seam_lift_reload_or_pause_inside_drawing_run": true
+          },
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 11,
+          "actual_XY_drawing_mm": 96335.53841017872,
+          "color_changes": 11,
+          "full_washes": 11,
+          "lineage_validation": {
+            "all_artistic_pressure_samples_verified": 171873,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "loads_including_initial": 126,
+          "medium": "color",
+          "original_units": 11606,
+          "same_material_reloads": 114,
+          "scenario_commanded_feed_hours": 20.72630983934164,
+          "scenario_non_draw_3d_mm": 580802.3995443708,
+          "scenario_seconds_by_action": {
+            "absorbent_contact_dwell": 1.0999999999999999,
+            "approach": 52227.0,
+            "controlled_rewet_dwell": 0.5499999999999999,
+            "draw": 1156.1829646775866,
+            "initial_contact": 5803.0,
+            "lift": 1221.2139999999918,
+            "paper_hover": 27.71999999999996,
+            "pigment_load_dwell": 1.2,
+            "pressure_variation": 998.9220825138581,
+            "release": 919.766669727509,
+            "same_color_reload_dwell": 11.399999999999975,
+            "station_absorbent_contact": 22.43999999999999,
+            "station_approach": 561.5999999999995,
+            "station_controlled_rewet": 231.9875372981936,
+            "station_pigment_load": 183.81970406250036,
+            "station_same_color_reload": 1746.2871885938248,
+            "station_wash": 509.4423454765489,
+            "travel": 8988.882929278394,
+            "wash_dwell": 2.2000000000000006
+          },
+          "scenario_station_access_outbound_mm": 84783.31853692608,
+          "scenario_station_return_mm": 78305.0124582666,
+          "scenario_station_transfer_3d_mm": 163088.3309951927,
+          "scenario_stop_each_segment_hours": 33.99390993440459,
+          "threshold_overruns": [
+            {
+              "distance_since_active_load_mm": 802.4601378001807,
+              "overrun_mm": 2.460137800180746,
+              "source_id": "v08/far-right-closure/stratum-0/patch-2/body-1/S-crown/lobe-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 804.0418794295371,
+              "overrun_mm": 4.041879429537062,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-3/body-10/S-crown/lobe-8/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 806.6202929621817,
+              "overrun_mm": 6.620292962181679,
+              "source_id": "v12/pair/v04/foliage/v03/tree/near-right-exposure/behind-main/pad-3/fan/5-3/gesture-1"
+            },
+            {
+              "distance_since_active_load_mm": 804.7908134600992,
+              "overrun_mm": 4.79081346009923,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-1/patch-4/body-14/S-crown/lobe-7/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 804.0911789129177,
+              "overrun_mm": 4.091178912917712,
+              "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-1/patch-2/body-1/R/ray-6/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.0400793560258,
+              "overrun_mm": 3.0400793560257853,
+              "source_id": "v10/field/0-11/unit-1/U/leader-0"
+            },
+            {
+              "distance_since_active_load_mm": 811.4386712401362,
+              "overrun_mm": 11.43867124013616,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-0/patch-0/body-9/S-crown/lobe-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 800.6241641810608,
+              "overrun_mm": 0.6241641810607916,
+              "source_id": "v10/shared-native/v08/v04/foliage/v03/tree/middle-left-attached/v07-grove-0/crown-1/fan/4-0/gesture-0/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 805.5649311874213,
+              "overrun_mm": 5.56493118742128,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-256-552-000000/episode-2/pass-0/feathered/v08/A/episode-3"
+            },
+            {
+              "distance_since_active_load_mm": 800.7943965616485,
+              "overrun_mm": 0.7943965616484547,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-97-287-000000/episode-1/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 808.8240740409592,
+              "overrun_mm": 8.824074040959204,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-120-306-000000/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 803.7063447217289,
+              "overrun_mm": 3.7063447217288967,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-184-446-000000/episode-1/pass-1/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 802.1054900330463,
+              "overrun_mm": 2.1054900330462942,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-4/body-0/R/ray-3/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 802.845813038674,
+              "overrun_mm": 2.8458130386740095,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-74-231-000001/visible-e576544f038cb8/episode-1/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 808.1513781320471,
+              "overrun_mm": 8.151378132047057,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-172-415-000000/episode-2/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 804.8508653758586,
+              "overrun_mm": 4.850865375858575,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-297-626-000001/episode-2/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 808.1063510992324,
+              "overrun_mm": 8.10635109923237,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-406-779-000000/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 802.8855623367631,
+              "overrun_mm": 2.885562336763087,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-181-439-000000/episode-2/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 807.7142379224239,
+              "overrun_mm": 7.714237922423877,
+              "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-4/pass-0/feathered/visible-11cf616ccc5944"
+            },
+            {
+              "distance_since_active_load_mm": 805.0409486163103,
+              "overrun_mm": 5.040948616310288,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-67-204-000001/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 801.0131614006791,
+              "overrun_mm": 1.0131614006791096,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-182-442-000000/episode-5/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 803.1052955016646,
+              "overrun_mm": 3.1052955016646138,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-209-489-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 800.6184605533201,
+              "overrun_mm": 0.6184605533201193,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-196-467-000000/episode-3/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 807.0389519509847,
+              "overrun_mm": 7.0389519509847105,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-165-391-000000/visible-c88e2667dcf2c6/episode-0/pass-0/feathered/visible-f571d5310c4f3d/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 805.7904799018398,
+              "overrun_mm": 5.790479901839831,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-163-384-000000/visible-d24f7279ba36b6/episode-0/pass-1/feathered/visible-15f54efbf27a40/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 806.2521104398777,
+              "overrun_mm": 6.252110439877697,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-186-448-000000/episode-1/pass-1/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 806.1433821714594,
+              "overrun_mm": 6.143382171459393,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-325-685-000000/episode-0/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 806.9409857746665,
+              "overrun_mm": 6.940985774666501,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-190-458-000000/episode-0/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 801.3540395032461,
+              "overrun_mm": 1.3540395032460992,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-293-619-000000/episode-0/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 806.4796273298934,
+              "overrun_mm": 6.479627329893447,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-368-741-000001/episode-2/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 804.4314546265482,
+              "overrun_mm": 4.431454626548202,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-704-1049-000000/episode-1/pass-1/feathered/v08/A/episode-3"
+            },
+            {
+              "distance_since_active_load_mm": 806.1526988858385,
+              "overrun_mm": 6.152698885838504,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-93-280-000000/episode-1/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 804.878955604063,
+              "overrun_mm": 4.8789556040629805,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-111-297-000000/episode-0/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 811.8767702740687,
+              "overrun_mm": 11.87677027406869,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-281-602-000000/episode-2/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 803.5366485484967,
+              "overrun_mm": 3.5366485484967143,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-222-504-000000/episode-2/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 812.714200161075,
+              "overrun_mm": 12.714200161075041,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-631-979-000000/episode-0/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 807.2939622911287,
+              "overrun_mm": 7.293962291128651,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-613-963-000000/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 805.1872048331229,
+              "overrun_mm": 5.187204833122905,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-159-370-000000/visible-aa8d201eab9458/episode-0/pass-0/feathered/visible-74b431a3094d9c/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 804.110421600641,
+              "overrun_mm": 4.1104216006409615,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-172-415-000000/episode-1/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 800.2435567652344,
+              "overrun_mm": 0.24355676523441616,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-178-434-000000/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 807.437561829547,
+              "overrun_mm": 7.437561829547008,
+              "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/front/plane-9/pass-0/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 802.0716540178173,
+              "overrun_mm": 2.071654017817309,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-154-356-000000/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 804.1063132381337,
+              "overrun_mm": 4.10631323813368,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-0/patch-2/body-6/S-crown/lobe-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 800.4297882321075,
+              "overrun_mm": 0.42978823210751216,
+              "source_id": "v11/far/7-11/unit-0/S-crown/lobe-3"
+            },
+            {
+              "distance_since_active_load_mm": 801.1799637260356,
+              "overrun_mm": 1.1799637260355667,
+              "source_id": "v10/field/8-11/unit-0/R/ray-8"
+            },
+            {
+              "distance_since_active_load_mm": 806.0532950566677,
+              "overrun_mm": 6.053295056667707,
+              "source_id": "v11/far/3-6/unit-0/R/ray-3"
+            },
+            {
+              "distance_since_active_load_mm": 802.519005160673,
+              "overrun_mm": 2.519005160673032,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-3/patch-1/body-9/S-crown/lobe-3/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 805.5540476346022,
+              "overrun_mm": 5.5540476346021705,
+              "source_id": "v10/field/2-10/unit-0/U/leader-0"
+            },
+            {
+              "distance_since_active_load_mm": 809.9419052689442,
+              "overrun_mm": 9.941905268944197,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-3/patch-4/body-5/S-crown/lobe-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 801.5448158154823,
+              "overrun_mm": 1.5448158154822522,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-1/patch-4/body-14/S-crown/lobe-3/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 805.0468294565754,
+              "overrun_mm": 5.046829456575438,
+              "source_id": "v10/field/10-17/unit-1/S-crown/lobe-7"
+            },
+            {
+              "distance_since_active_load_mm": 803.8092826082884,
+              "overrun_mm": 3.809282608288413,
+              "source_id": "v12/pair/v04/foliage/v03/tree/near-right-exposure/behind-main/pad-2/fan/11-1/gesture-0"
+            },
+            {
+              "distance_since_active_load_mm": 801.7634630639848,
+              "overrun_mm": 1.7634630639847728,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-2/patch-3/body-6/R/ray-0/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 812.2527583327436,
+              "overrun_mm": 12.25275833274361,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-69-212-000001/visible-93d166f116e0a2/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 815.5457859027732,
+              "overrun_mm": 15.545785902773218,
+              "source_id": "v10/shared-A/v08/v05/A-color/v4n-A-rhythm-combined-31-56-000000/episode-1/pass-0/feathered/visible-6d8cef0a71ff50/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 812.932763588871,
+              "overrun_mm": 12.932763588871012,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-154-358-000000/visible-6d727bc85f8e64/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 814.1464553179487,
+              "overrun_mm": 14.146455317948721,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-173-422-000000/visible-41ff673717ca5c/episode-3/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 806.1707941541988,
+              "overrun_mm": 6.170794154198802,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-70-216-000000/visible-fdf3cf70afa383/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 816.3598870387258,
+              "overrun_mm": 16.359887038725788,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-77-243-000000/episode-2/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 803.8651820342254,
+              "overrun_mm": 3.865182034225427,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-299-632-000000/episode-1/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 800.9871823197934,
+              "overrun_mm": 0.9871823197934191,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-265-571-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 804.6860236710469,
+              "overrun_mm": 4.6860236710468826,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-319-671-000000/episode-1/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 803.4548651791772,
+              "overrun_mm": 3.4548651791772045,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-312-657-000000/episode-0/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 810.2665971779912,
+              "overrun_mm": 10.26659717799123,
+              "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-2/pass-0/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 815.6421033971401,
+              "overrun_mm": 15.64210339714009,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-67-202-000000/episode-0/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 800.1664223780514,
+              "overrun_mm": 0.16642237805137938,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-334-696-000001/episode-0/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 805.1795074218618,
+              "overrun_mm": 5.179507421861786,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-718-1064-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 804.783016672646,
+              "overrun_mm": 4.783016672645999,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-252-545-000000/episode-1/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 812.6959009635315,
+              "overrun_mm": 12.695900963531471,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-661-1006-000000/episode-1/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 813.6589307009464,
+              "overrun_mm": 13.658930700946371,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-222-504-000000/episode-1/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 801.3428194718631,
+              "overrun_mm": 1.3428194718630948,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-160-373-000000/visible-b71e288526cda4/episode-0/pass-0/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 802.3018157239059,
+              "overrun_mm": 2.301815723905861,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-3/patch-2/body-2/S-crown/lobe-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 808.6852417740595,
+              "overrun_mm": 8.685241774059477,
+              "source_id": "v10/shared-native/v08/v04/foliage/v03/tree/left-lower-middle-rise/v08-rise-2/crown-2/fan/5-0/gesture-0/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 802.9749059830093,
+              "overrun_mm": 2.9749059830093074,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-234-524-000000/episode-0/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 800.5996182816735,
+              "overrun_mm": 0.5996182816735427,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-257-560-000000/episode-0/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 803.9852410149334,
+              "overrun_mm": 3.985241014933422,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-166-394-000000/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 808.2747940047872,
+              "overrun_mm": 8.274794004787168,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-340-705-000001/episode-2/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 801.1832328576972,
+              "overrun_mm": 1.1832328576972486,
+              "source_id": "v08/far-central-closure/stratum-2/patch-4/body-3/R/ray-0/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 812.5100596272106,
+              "overrun_mm": 12.51005962721058,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-149-343-000000/episode-1/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 802.6445497222844,
+              "overrun_mm": 2.6445497222844097,
+              "source_id": "v08/upper-right-diagonal/stratum-0/patch-1/body-6/S-crown/lobe-6/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.9177883727352,
+              "overrun_mm": 3.917788372735231,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-591-943-000000/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 801.5345649583069,
+              "overrun_mm": 1.5345649583068735,
+              "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/front/plane-0/pass-1/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 801.7695573353344,
+              "overrun_mm": 1.7695573353344116,
+              "source_id": "v10/field/10-15/unit-0/S-crown/lobe-3"
+            },
+            {
+              "distance_since_active_load_mm": 802.6822501232983,
+              "overrun_mm": 2.6822501232983313,
+              "source_id": "v10/shared-RSU/v08/right-middle-return/stratum-2/patch-0/body-16/S-crown/lobe-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 807.4614641489808,
+              "overrun_mm": 7.461464148980781,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-1/patch-2/body-0/S-crown/lobe-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 801.3551906823033,
+              "overrun_mm": 1.3551906823032596,
+              "source_id": "v10/shared-native/v08/v04/foliage/v03/tree/middle-right-bedrock/v07-grove-3/crown-3/fan/3-0/gesture-0/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 800.0360825396039,
+              "overrun_mm": 0.03608253960385355,
+              "source_id": "v10/field/5-9/unit-1/R/ray-8"
+            },
+            {
+              "distance_since_active_load_mm": 801.5577346023545,
+              "overrun_mm": 1.5577346023544578,
+              "source_id": "v10/shared-RSU/v08/far-left-shoulder/stratum-2/patch-0/body-5/S-crown/lobe-2/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 804.029432432478,
+              "overrun_mm": 4.029432432477961,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-4/body-5/R/ray-3/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 849.1197885025666,
+              "overrun_mm": 49.11978850256662,
+              "source_id": "v08/v03/material/v03/Soil/far-left-exposure/broad-flow-13/0/feathered"
+            },
+            {
+              "distance_since_active_load_mm": 805.0255458503927,
+              "overrun_mm": 5.025545850392746,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-3/patch-0/body-20/S-crown/lobe-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 812.409506953058,
+              "overrun_mm": 12.409506953057985,
+              "source_id": "v08/v03/material/v03/Soil/middle-left-attached/broad-flow-18/1/feathered/visible-45c857f1450f3d"
+            },
+            {
+              "distance_since_active_load_mm": 808.3695263324804,
+              "overrun_mm": 8.369526332480405,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-2/body-8/R/ray-7/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 804.0219633561145,
+              "overrun_mm": 4.021963356114497,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-1/S-crown/lobe-7/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 801.2350509685587,
+              "overrun_mm": 1.235050968558653,
+              "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-2/S-crown/lobe-1/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 800.8357642051523,
+              "overrun_mm": 0.8357642051522589,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-3/patch-0/body-5/S-crown/lobe-1/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.946607105549,
+              "overrun_mm": 3.946607105548992,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-91-276-000000/episode-1/pass-1/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 805.3690240149241,
+              "overrun_mm": 5.3690240149240935,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-396-764-000000/episode-1/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 803.2915852599805,
+              "overrun_mm": 3.2915852599804793,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-156-363-000000/visible-82968da77548a6/episode-0/pass-1/feathered/v08/A/episode-0"
+            },
+            {
+              "distance_since_active_load_mm": 802.1645806272343,
+              "overrun_mm": 2.1645806272342725,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-217-500-000000/episode-1/pass-0/feathered/v08/A/episode-1"
+            },
+            {
+              "distance_since_active_load_mm": 800.5699154930335,
+              "overrun_mm": 0.5699154930334771,
+              "source_id": "v10/field/7-13/unit-1/R/ray-8"
+            },
+            {
+              "distance_since_active_load_mm": 803.2012745988409,
+              "overrun_mm": 3.2012745988408824,
+              "source_id": "v08/far-central-closure/stratum-1/patch-1/body-0/S-crown/lobe-0/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 804.8810582170605,
+              "overrun_mm": 4.881058217060513,
+              "source_id": "v10/field/12-11/unit-0/R/ray-2"
+            },
+            {
+              "distance_since_active_load_mm": 800.4388697584957,
+              "overrun_mm": 0.43886975849568444,
+              "source_id": "v10/field/9-10/unit-2/S-crown/lobe-5"
+            },
+            {
+              "distance_since_active_load_mm": 802.8524872891245,
+              "overrun_mm": 2.852487289124497,
+              "source_id": "v10/field/12-14/unit-0/U/lateral-1"
+            },
+            {
+              "distance_since_active_load_mm": 806.4420626485022,
+              "overrun_mm": 6.442062648502201,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-3/body-12/S-crown/lobe-7/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 808.1696293915231,
+              "overrun_mm": 8.16962939152313,
+              "source_id": "v10/field/7-16/unit-2/R/ray-2/visible-c70e71f0d5ce72"
+            },
+            {
+              "distance_since_active_load_mm": 807.5371367229129,
+              "overrun_mm": 7.537136722912919,
+              "source_id": "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-0/patch-2/body-7/S-crown/lobe-1/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 809.0238599223511,
+              "overrun_mm": 9.023859922351107,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-3/body-5/R/ray-7/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 803.1501541739507,
+              "overrun_mm": 3.150154173950682,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-2/patch-0/body-6/R/ray-5/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 800.4598209493943,
+              "overrun_mm": 0.45982094939427043,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-1/patch-0/body-12/S-crown/lobe-4/mist-release"
+            },
+            {
+              "distance_since_active_load_mm": 800.0396122918744,
+              "overrun_mm": 0.0396122918743913,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-70-216-000001/visible-29e47a4f56c3f9/episode-2/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 811.2177970408878,
+              "overrun_mm": 11.217797040887831,
+              "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-643-992-000000/episode-0/pass-0/feathered/v08/A/episode-2"
+            },
+            {
+              "distance_since_active_load_mm": 808.0534711923563,
+              "overrun_mm": 8.053471192356255,
+              "source_id": "v08/v03/C-color/C-rhythm-combined-1843-1014-000000/visible-f7be6bd742a8e0/pass-0/v08-zone-episode-0/feathered/visible-4a1178196306ab/v08/C/episode-0"
+            }
+          ]
+        },
+        "SHARED_INK": {
+          "D_continuity_validation": {
+            "continuous_crossing_sources_checked": 0,
+            "crossing_pressure_samples_checked": 0,
+            "no_seam_lift_reload_or_pause_inside_drawing_run": true
+          },
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 0,
+          "actual_XY_drawing_mm": 88282.86402290354,
+          "color_changes": 0,
+          "full_washes": 0,
+          "lineage_validation": {
+            "all_artistic_pressure_samples_verified": 69101,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "loads_including_initial": 84,
+          "medium": "ink",
+          "original_units": 3345,
+          "same_material_reloads": 83,
+          "scenario_commanded_feed_hours": 7.228491284337313,
+          "scenario_non_draw_3d_mm": 396135.710115079,
+          "scenario_seconds_by_action": {
+            "approach": 15052.5,
+            "draw": 1059.4117348518482,
+            "initial_contact": 1672.5,
+            "lift": 371.46000000001663,
+            "paper_hover": 18.480000000000008,
+            "pigment_load_dwell": 0.1,
+            "pressure_variation": 501.16868166335723,
+            "release": 459.50877586300055,
+            "same_color_reload_dwell": 8.299999999999986,
+            "station_approach": 336.0,
+            "station_pigment_load": 23.156470248934028,
+            "station_same_color_reload": 1921.9870306615237,
+            "travel": 4597.995930328485
+          },
+          "scenario_station_access_outbound_mm": 52486.960400330856,
+          "scenario_station_return_mm": 44068.73504888866,
+          "scenario_station_transfer_3d_mm": 96555.69544921952,
+          "scenario_stop_each_segment_hours": 13.199207432178117,
+          "threshold_overruns": [
+            {
+              "distance_since_active_load_mm": 1012.9839288960433,
+              "overrun_mm": 12.983928896043267,
+              "source_id": "v4n-A-rhythm-combined-17-38-000000/visible-07a4b470a3dc26"
+            },
+            {
+              "distance_since_active_load_mm": 1021.6573412440974,
+              "overrun_mm": 21.657341244097438,
+              "source_id": "v4n-A-rhythm-combined-35-72-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1036.2517991466395,
+              "overrun_mm": 36.25179914663954,
+              "source_id": "v4n-A-rhythm-combined-40-96-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1008.6957042631993,
+              "overrun_mm": 8.695704263199332,
+              "source_id": "v4n-A-rhythm-combined-48-128-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1000.8486442563283,
+              "overrun_mm": 0.8486442563282708,
+              "source_id": "v4n-A-rhythm-combined-55-156-000000/visible-86909e9b7e8b62"
+            },
+            {
+              "distance_since_active_load_mm": 1050.039060012057,
+              "overrun_mm": 50.03906001205701,
+              "source_id": "v4n-A-rhythm-combined-62-181-000000/visible-590e6fd1b5eeb0"
+            },
+            {
+              "distance_since_active_load_mm": 1012.5255471614405,
+              "overrun_mm": 12.5255471614405,
+              "source_id": "v2-A-rhythm-combined-65-196-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1051.351340343712,
+              "overrun_mm": 51.35134034371208,
+              "source_id": "v2-A-rhythm-combined-69-211-000000/visible-7adc5dc501cfdd"
+            },
+            {
+              "distance_since_active_load_mm": 1028.0856223044755,
+              "overrun_mm": 28.085622304475464,
+              "source_id": "v2-A-rhythm-combined-71-219-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1029.8308227534478,
+              "overrun_mm": 29.83082275344782,
+              "source_id": "v2-A-rhythm-combined-74-231-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1041.9826340129523,
+              "overrun_mm": 41.9826340129523,
+              "source_id": "v2-A-rhythm-combined-76-240-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1021.1215398486959,
+              "overrun_mm": 21.121539848695875,
+              "source_id": "v2-A-rhythm-combined-81-253-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1215.453203979654,
+              "overrun_mm": 215.45320397965406,
+              "source_id": "v2-A-rhythm-combined-87-265-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1044.8112718540467,
+              "overrun_mm": 44.81127185404671,
+              "source_id": "v2-A-rhythm-combined-93-282-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1186.3378785559971,
+              "overrun_mm": 186.33787855599712,
+              "source_id": "v2-A-rhythm-combined-107-295-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1201.9829426298543,
+              "overrun_mm": 201.98294262985428,
+              "source_id": "v2-A-rhythm-combined-123-308-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1008.970616777181,
+              "overrun_mm": 8.970616777181021,
+              "source_id": "v2-A-rhythm-combined-133-320-000000/visible-1e3af2f9effd8d"
+            },
+            {
+              "distance_since_active_load_mm": 1031.0388982463835,
+              "overrun_mm": 31.038898246383496,
+              "source_id": "v2-A-rhythm-combined-141-333-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1094.8610407872484,
+              "overrun_mm": 94.86104078724838,
+              "source_id": "v2-A-rhythm-combined-149-346-000000/visible-36268cdb3e3c6c"
+            },
+            {
+              "distance_since_active_load_mm": 1031.9500152305884,
+              "overrun_mm": 31.950015230588406,
+              "source_id": "v2-A-rhythm-combined-153-355-000000/visible-515120f038198c"
+            },
+            {
+              "distance_since_active_load_mm": 1004.4218357247213,
+              "overrun_mm": 4.421835724721291,
+              "source_id": "v2-A-rhythm-combined-157-366-000000/visible-449082b1caf25e"
+            },
+            {
+              "distance_since_active_load_mm": 1069.4832291951673,
+              "overrun_mm": 69.48322919516727,
+              "source_id": "v2-A-rhythm-combined-160-375-000000/visible-c128a78bf0f886"
+            },
+            {
+              "distance_since_active_load_mm": 1042.3473092991276,
+              "overrun_mm": 42.34730929912757,
+              "source_id": "v2-A-rhythm-combined-163-383-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1021.7300373521607,
+              "overrun_mm": 21.730037352160707,
+              "source_id": "v2-A-rhythm-combined-165-391-000000/visible-15655bcbc4487a"
+            },
+            {
+              "distance_since_active_load_mm": 1017.1309450162419,
+              "overrun_mm": 17.130945016241867,
+              "source_id": "v2-A-rhythm-combined-167-398-000000/visible-cfee8342873145"
+            },
+            {
+              "distance_since_active_load_mm": 1030.1138449399277,
+              "overrun_mm": 30.11384493992773,
+              "source_id": "v2-A-rhythm-combined-169-406-000000/visible-6ab8d6213a62aa"
+            },
+            {
+              "distance_since_active_load_mm": 1003.1341675412102,
+              "overrun_mm": 3.1341675412102177,
+              "source_id": "v2-A-rhythm-combined-171-412-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1011.3705111716056,
+              "overrun_mm": 11.370511171605585,
+              "source_id": "v2-A-rhythm-combined-172-418-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1313.0810430872466,
+              "overrun_mm": 313.0810430872466,
+              "source_id": "v2-A-rhythm-combined-174-425-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1272.0530405463628,
+              "overrun_mm": 272.0530405463628,
+              "source_id": "v2-A-rhythm-combined-177-433-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1250.6918495551424,
+              "overrun_mm": 250.69184955514243,
+              "source_id": "v2-A-rhythm-combined-182-442-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1110.4715871522922,
+              "overrun_mm": 110.47158715229216,
+              "source_id": "v2-A-rhythm-combined-186-448-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1187.380104580485,
+              "overrun_mm": 187.38010458048507,
+              "source_id": "v2-A-rhythm-combined-190-458-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1050.1539614582312,
+              "overrun_mm": 50.15396145823115,
+              "source_id": "v2-A-rhythm-combined-195-463-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1034.3875119648526,
+              "overrun_mm": 34.38751196485259,
+              "source_id": "v2-A-rhythm-combined-199-470-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1027.9058502336438,
+              "overrun_mm": 27.905850233643832,
+              "source_id": "v2-A-rhythm-combined-204-478-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1214.640106922126,
+              "overrun_mm": 214.64010692212605,
+              "source_id": "v2-A-rhythm-combined-210-490-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1017.0207780637452,
+              "overrun_mm": 17.020778063745183,
+              "source_id": "v2-A-rhythm-combined-217-500-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1028.5210930674843,
+              "overrun_mm": 28.521093067484344,
+              "source_id": "v2-A-rhythm-combined-228-512-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1036.1406686120301,
+              "overrun_mm": 36.14066861203014,
+              "source_id": "v2-A-rhythm-combined-236-526-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1117.4338132781302,
+              "overrun_mm": 117.43381327813017,
+              "source_id": "v2-A-rhythm-combined-245-541-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1035.7038984908463,
+              "overrun_mm": 35.70389849084631,
+              "source_id": "v2-A-rhythm-combined-256-553-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1085.839209603608,
+              "overrun_mm": 85.83920960360797,
+              "source_id": "v2-A-rhythm-combined-265-571-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1063.5893922777407,
+              "overrun_mm": 63.58939227774067,
+              "source_id": "v2-A-rhythm-combined-276-589-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1074.4887456141105,
+              "overrun_mm": 74.48874561411048,
+              "source_id": "v2-A-rhythm-combined-284-607-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1075.5703998278573,
+              "overrun_mm": 75.57039982785727,
+              "source_id": "v2-A-rhythm-combined-297-626-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1089.1730592663212,
+              "overrun_mm": 89.17305926632116,
+              "source_id": "v2-A-rhythm-combined-306-645-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1062.851754131394,
+              "overrun_mm": 62.851754131394046,
+              "source_id": "v2-A-rhythm-combined-312-657-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1114.7832700620413,
+              "overrun_mm": 114.78327006204131,
+              "source_id": "v2-A-rhythm-combined-318-669-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1081.4559167696598,
+              "overrun_mm": 81.45591676965978,
+              "source_id": "v2-A-rhythm-combined-323-679-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1026.7073983839834,
+              "overrun_mm": 26.707398383983445,
+              "source_id": "v2-A-rhythm-combined-334-696-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1042.8629292745607,
+              "overrun_mm": 42.862929274560656,
+              "source_id": "v2-A-rhythm-combined-348-713-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1000.0560216799108,
+              "overrun_mm": 0.056021679910827515,
+              "source_id": "v2-A-rhythm-combined-360-731-000001"
+            },
+            {
+              "distance_since_active_load_mm": 1040.4279726295556,
+              "overrun_mm": 40.4279726295556,
+              "source_id": "v2-A-rhythm-combined-377-755-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1006.0078916850367,
+              "overrun_mm": 6.007891685036725,
+              "source_id": "v2-A-rhythm-combined-420-791-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1005.3174680264669,
+              "overrun_mm": 5.3174680264669405,
+              "source_id": "v2-A-rhythm-combined-473-842-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1020.2735577947775,
+              "overrun_mm": 20.273557794777503,
+              "source_id": "v2-A-rhythm-combined-519-883-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1018.012714066878,
+              "overrun_mm": 18.012714066877948,
+              "source_id": "v2-A-rhythm-combined-553-913-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1059.4297211480484,
+              "overrun_mm": 59.42972114804843,
+              "source_id": "v2-A-rhythm-combined-592-944-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1048.1411714783653,
+              "overrun_mm": 48.14117147836532,
+              "source_id": "v2-A-rhythm-combined-627-977-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1049.0228157647198,
+              "overrun_mm": 49.02281576471978,
+              "source_id": "v2-A-rhythm-combined-647-994-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1006.2379674200522,
+              "overrun_mm": 6.2379674200522,
+              "source_id": "v2-A-rhythm-combined-670-1014-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1044.2445874589312,
+              "overrun_mm": 44.244587458931164,
+              "source_id": "v2-A-rhythm-combined-696-1041-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1024.7723727986895,
+              "overrun_mm": 24.772372798689503,
+              "source_id": "v2-A-rhythm-combined-714-1059-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1006.5603423443956,
+              "overrun_mm": 6.560342344395622,
+              "source_id": "B-internal-000019/visible-e66bfca21f36ec"
+            },
+            {
+              "distance_since_active_load_mm": 1013.8287819175862,
+              "overrun_mm": 13.828781917586184,
+              "source_id": "B-internal-000068"
+            },
+            {
+              "distance_since_active_load_mm": 1112.865665984795,
+              "overrun_mm": 112.86566598479499,
+              "source_id": "D-terminal-000007"
+            },
+            {
+              "distance_since_active_load_mm": 1014.0877534051327,
+              "overrun_mm": 14.08775340513273,
+              "source_id": "v03/Soil/middle-left-attached/flow-2/0/contact-gradient-0/visible-cd511c82927d2b"
+            },
+            {
+              "distance_since_active_load_mm": 1006.0076093924255,
+              "overrun_mm": 6.007609392425479,
+              "source_id": "v03/rock/middle-left-attached/v07-stone-0/primary-joint-0/0/fragment-1"
+            },
+            {
+              "distance_since_active_load_mm": 1019.731555332883,
+              "overrun_mm": 19.731555332882976,
+              "source_id": "v03/rock/near-right-exposure/connected/parent/primary-joint--8/0/fragment-0/visible-55355aed40ad68"
+            },
+            {
+              "distance_since_active_load_mm": 1005.6510390505389,
+              "overrun_mm": 5.651039050538884,
+              "source_id": "v10_3/composition/v10/shared-native/catalog-v10/v03/tree/left-bench-transition/v08-rise-2/axis/side-1/1-000000/visible-0ecf2f88a8176f"
+            },
+            {
+              "distance_since_active_load_mm": 1023.6014983546902,
+              "overrun_mm": 23.601498354690193,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/left-lower-middle-rise/v08-rise-3/arm-1/single/outside-0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1010.2053755978209,
+              "overrun_mm": 10.205375597820876,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/middle-left-attached/end/axis/single-000000/visible-20a6b7bbc31cdd"
+            },
+            {
+              "distance_since_active_load_mm": 1000.8598260682589,
+              "overrun_mm": 0.8598260682589398,
+              "source_id": "v10/shared-native/catalog-v10/v03/tree/middle-left-attached/v07-grove-1/arm-3/single/outside-0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1003.8433485938691,
+              "overrun_mm": 3.843348593869109,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/middle-right-bedrock/v08-rock-fringe-0/arm-1/single/outside-0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1002.9529325466726,
+              "overrun_mm": 2.9529325466726277,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/right-link/rear/mass-1/fan/2-5-2-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1000.7244630631014,
+              "overrun_mm": 0.7244630631014388,
+              "source_id": "v10/shared-native/catalog-v09/v03/tree/right-lower-middle-rise/v08-rise-3/axis/side1/0-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1023.01757374816,
+              "overrun_mm": 23.017573748159975,
+              "source_id": "catalog-v09/v03/tree/upper-right-mixed/v08-rock-fringe-1/basal-1/single-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1013.1761679964027,
+              "overrun_mm": 13.176167996402683,
+              "source_id": "v10/shared-RSU/v08/left-middle-bench/stratum-1/patch-4/body-15/S/ink-axis"
+            },
+            {
+              "distance_since_active_load_mm": 1001.0262109694721,
+              "overrun_mm": 1.0262109694721175,
+              "source_id": "v08/far-central-closure/stratum-1/patch-1/body-1/S/ink-axis"
+            },
+            {
+              "distance_since_active_load_mm": 1002.6911579159772,
+              "overrun_mm": 2.6911579159772145,
+              "source_id": "v11/transition/16-25/unit-0/U/ink-axis"
+            },
+            {
+              "distance_since_active_load_mm": 1005.2343221328238,
+              "overrun_mm": 5.234322132823763,
+              "source_id": "v12/pair/catalog-v10/v03/tree/near-right-exposure/behind-main/apex/fan/8-1-3-000000"
+            },
+            {
+              "distance_since_active_load_mm": 1011.967960741765,
+              "overrun_mm": 11.967960741764955,
+              "source_id": "v12/pair/catalog-v10/v03/tree/near-right-exposure/emerging-crown/arm-3/side1/0/outside-0-000000"
+            }
+          ]
+        }
+      },
+      "plan_sha256": "8b4804f561f0eaab28753ae1790ce3b0f5b9ab8ba9a4a2ffe1e4daecbe2596bd",
+      "source_readback": {
+        "D_X300_crossing_strokes_continuous": 50,
+        "D_original_strokes_unsplit": 14951,
+        "all_written_source_pressure_and_work_transform_bindings_verified": true,
+        "complete_source_partition": true,
+        "written_fragment_count": 14951,
+        "written_pressure_samples": 240974
+      },
+      "totals": {
+        "M0_count": 0,
+        "PURGE_contacts": 11,
+        "actual_XY_drawing_mm": 184618.40243308226,
+        "color_changes": 11,
+        "color_reloads": 114,
+        "full_washes": 11,
+        "ink_reloads": 83,
+        "loads_including_initial": 210,
+        "same_material_reloads": 197,
+        "scenario_commanded_feed_hours": 27.95480112367895,
+        "scenario_non_draw_3d_mm": 976938.1096594499,
+        "scenario_station_transfer_3d_mm": 259644.02644441221,
+        "scenario_stop_each_segment_hours": 47.19311736658271
+      }
+    }
+  },
+  "physical_job_duration_seconds": null,
+  "physical_station_travel_mm": null,
+  "scenario_is_unverified_not_physical_calibration": true,
+  "scenario_profile_sha256": "41bb88c214d2400fff7d4ef250751e14850e764787243f0f0b8186c85ef5be76",
+  "schema": "datascape.A_D.cost_recalculation.v0.3"
+}

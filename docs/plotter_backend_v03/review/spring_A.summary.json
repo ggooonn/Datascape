@@ -1,0 +1,467 @@
+{
+  "S3a_reference_reused": true,
+  "actual_color_slots": [
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "D1",
+    "D2",
+    "D4",
+    "D5"
+  ],
+  "actual_plan_readback": {
+    "all_written_source_pressure_and_work_transform_bindings_verified": true,
+    "complete_source_partition": true,
+    "written_fragment_count": 15001,
+    "written_pressure_samples": 241074
+  },
+  "cross_panel_sources": [
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v4n-A-rhythm-combined-42-108-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v4n-A-rhythm-combined-54-148-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-111-297-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-111-297-000000/episode-0/pass-1/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-168-402-000001/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-252-546-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-302-635-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-354-722-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-358-728-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-363-735-000000/episode-0/pass-1/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-378-756-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-403-774-000000/episode-0/pass-0/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/shared-A/v08/v05/A-color/v2-A-rhythm-combined-403-774-000001/episode-0/pass-1/feathered/v08/A/episode-0"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v08/v03/material/v03/Soil/middle-left-attached/broad-flow-17/0/feathered/visible-18e3cb48521b4e"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v08/v03/material/v03/Soil/middle-left-attached/broad-flow-18/1/feathered/visible-84c1dfed93cd38"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-2/S-crown/lobe-2/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-2/S-crown/lobe-3/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-2/S-crown/lobe-4/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-2/S-crown/lobe-6/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-3/S-crown/lobe-1/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-3/S-crown/lobe-3/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-3/S-crown/lobe-4/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-3/S-crown/lobe-5/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-0/patch-2/body-3/S-crown/lobe-6/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-2/patch-2/body-1/S-crown/lobe-1/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-2/patch-2/body-1/S-crown/lobe-2/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/shared-RSU/v08/upper-left-diagonal/stratum-2/patch-2/body-1/S-crown/lobe-3/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v08/far-central-closure/stratum-2/patch-2/body-1/R/ray-2/mist-release"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/5-16/unit-3/U/terminal-1"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/field/6-11/unit-0/R/ray-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/field/6-11/unit-0/R/ray-1"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/field/6-11/unit-0/R/ray-2"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/6-11/unit-2/S-crown/lobe-0"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/6-11/unit-2/S-crown/lobe-1"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/6-11/unit-2/S-crown/lobe-2"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/6-11/unit-2/S-crown/lobe-3"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/6-11/unit-2/S-crown/lobe-4"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/6-11/unit-2/S-crown/lobe-6"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v10/field/6-13/unit-2/U/lateral-1"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/6-16/unit-1/U/lateral-1"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/6-16/unit-2/R/ray-7/visible-860f970b633983"
+    },
+    {
+      "first_panel": "P1",
+      "sequential_P1_first_changes_global_fragment_time": false,
+      "source_id": "v10/field/6-16/unit-2/R/ray-8/visible-a14c9705d9e6f1"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v11/far/4-11/unit-0/R/ray-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v11/far/4-11/unit-0/R/ray-1"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v11/far/4-11/unit-0/R/ray-2"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v11/far/4-11/unit-0/R/ray-3"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v11/far/4-10/unit-0/R/ray-0"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v11/far/4-10/unit-0/R/ray-1"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v11/far/4-10/unit-0/R/ray-2"
+    },
+    {
+      "first_panel": "P2",
+      "sequential_P1_first_changes_global_fragment_time": true,
+      "source_id": "v11/far/4-10/unit-0/R/ray-3"
+    }
+  ],
+  "hardware_executed": false,
+  "job_fragments": {
+    "P1_COLOR": 5684,
+    "P1_INK": 1494,
+    "P2_COLOR": 5972,
+    "P2_INK": 1851
+  },
+  "job_source_units": {
+    "P1_COLOR": 5684,
+    "P1_INK": 1494,
+    "P2_COLOR": 5972,
+    "P2_INK": 1851
+  },
+  "no_artwork_or_pressure_generation": true,
+  "plan_sha256": "c9380e0b7c3967d1a8622dfa83974a568e2d1b2a67987dba479f348a66d9e074",
+  "production_Gcode_written": false,
+  "readiness": {
+    "air": [
+      "profile status must be measured",
+      "record mounted brush, hardware assembly and substrate identities",
+      "record installed firmware version and configuration SHA256",
+      "measure machine.g54_to_machine_xyz",
+      "measure machine.start_work_xyz",
+      "measure usable machine bounds",
+      "measure positive machine.axis_max_rate_mm_min",
+      "measure positive machine.axis_acceleration_mm_s2",
+      "measure positive machine.steps_per_mm",
+      "record controller junction deviation",
+      "measure tool-envelope margin",
+      "measure swept-tool free-space boxes",
+      "record swept-tool keepout boxes (explicit [] allowed after inspection)",
+      "calibrate motion.station_approach_mm_min",
+      "calibrate motion.contact_mm_min",
+      "calibrate motion.wet_departure_mm",
+      "calibrate motion.wet_arrival_mm",
+      "calibrate motion.paper_approach_mm",
+      "calibrate motion.wet_max_xy_acceleration_mm_s2",
+      "calibrate motion.contact_max_z_acceleration_mm_s2",
+      "missing current-profile evidence: installed_controller",
+      "missing current-profile evidence: homing_limits_estop",
+      "missing current-profile evidence: g54_registration",
+      "missing current-profile evidence: motion_limits",
+      "missing current-profile evidence: swept_clearance",
+      "missing current-profile evidence: park",
+      "missing current-profile evidence: paper_flatness",
+      "missing current-profile evidence: paper_hover"
+    ],
+    "painting": [
+      "profile status must be measured",
+      "record mounted brush, hardware assembly and substrate identities",
+      "record installed firmware version and configuration SHA256",
+      "measure machine.g54_to_machine_xyz",
+      "measure machine.start_work_xyz",
+      "measure usable machine bounds",
+      "measure positive machine.axis_max_rate_mm_min",
+      "measure positive machine.axis_acceleration_mm_s2",
+      "measure positive machine.steps_per_mm",
+      "record controller junction deviation",
+      "measure tool-envelope margin",
+      "measure swept-tool free-space boxes",
+      "record swept-tool keepout boxes (explicit [] allowed after inspection)",
+      "calibrate motion.station_approach_mm_min",
+      "calibrate motion.contact_mm_min",
+      "calibrate motion.wet_departure_mm",
+      "calibrate motion.wet_arrival_mm",
+      "calibrate motion.paper_approach_mm",
+      "calibrate motion.wet_max_xy_acceleration_mm_s2",
+      "calibrate motion.contact_max_z_acceleration_mm_s2",
+      "water: calibrate contact feed",
+      "water: calibrate dwell",
+      "water: missing/invalid contact trajectory parameters: measure deep/shallow stone points",
+      "water: station contact calibration missing",
+      "water: measured allowed contact volume required",
+      "sponge: calibrate contact feed",
+      "sponge: calibrate dwell",
+      "sponge: missing/invalid contact trajectory parameters: measure absorbent surface and gentle compression",
+      "sponge: station contact calibration missing",
+      "sponge: measured allowed contact volume required",
+      "ink: calibrate contact feed",
+      "ink: calibrate dwell",
+      "ink: missing/invalid contact trajectory parameters: measure deep/shallow stone points",
+      "ink: station contact calibration missing",
+      "ink: measured allowed contact volume required",
+      "A2: calibrate contact feed",
+      "A2: calibrate dwell",
+      "A2: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "A2: station contact calibration missing",
+      "A2: measured allowed contact volume required",
+      "A3: calibrate contact feed",
+      "A3: calibrate dwell",
+      "A3: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "A3: station contact calibration missing",
+      "A3: measured allowed contact volume required",
+      "A4: calibrate contact feed",
+      "A4: calibrate dwell",
+      "A4: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "A4: station contact calibration missing",
+      "A4: measured allowed contact volume required",
+      "A5: calibrate contact feed",
+      "A5: calibrate dwell",
+      "A5: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "A5: station contact calibration missing",
+      "A5: measured allowed contact volume required",
+      "C1: calibrate contact feed",
+      "C1: calibrate dwell",
+      "C1: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "C1: station contact calibration missing",
+      "C1: measured allowed contact volume required",
+      "C2: calibrate contact feed",
+      "C2: calibrate dwell",
+      "C2: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "C2: station contact calibration missing",
+      "C2: measured allowed contact volume required",
+      "C3: calibrate contact feed",
+      "C3: calibrate dwell",
+      "C3: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "C3: station contact calibration missing",
+      "C3: measured allowed contact volume required",
+      "C4: calibrate contact feed",
+      "C4: calibrate dwell",
+      "C4: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "C4: station contact calibration missing",
+      "C4: measured allowed contact volume required",
+      "D1: calibrate contact feed",
+      "D1: calibrate dwell",
+      "D1: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "D1: station contact calibration missing",
+      "D1: measured allowed contact volume required",
+      "D2: calibrate contact feed",
+      "D2: calibrate dwell",
+      "D2: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "D2: station contact calibration missing",
+      "D2: measured allowed contact volume required",
+      "D4: calibrate contact feed",
+      "D4: calibrate dwell",
+      "D4: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "D4: station contact calibration missing",
+      "D4: measured allowed contact volume required",
+      "D5: calibrate contact feed",
+      "D5: calibrate dwell",
+      "D5: missing/invalid contact trajectory parameters: measure palette center/level/immersion/radius",
+      "D5: station contact calibration missing",
+      "D5: measured allowed contact volume required",
+      "ink: invalid/missing brush profile: brush ID and >=2 knots required",
+      "A2: invalid/missing brush profile: brush ID and >=2 knots required",
+      "A3: invalid/missing brush profile: brush ID and >=2 knots required",
+      "A4: invalid/missing brush profile: brush ID and >=2 knots required",
+      "A5: invalid/missing brush profile: brush ID and >=2 knots required",
+      "C1: invalid/missing brush profile: brush ID and >=2 knots required",
+      "C2: invalid/missing brush profile: brush ID and >=2 knots required",
+      "C3: invalid/missing brush profile: brush ID and >=2 knots required",
+      "C4: invalid/missing brush profile: brush ID and >=2 knots required",
+      "D1: invalid/missing brush profile: brush ID and >=2 knots required",
+      "D2: invalid/missing brush profile: brush ID and >=2 knots required",
+      "D4: invalid/missing brush profile: brush ID and >=2 knots required",
+      "D5: invalid/missing brush profile: brush ID and >=2 knots required",
+      "measure paper contact Z range; no -12 fallback",
+      "missing current-profile evidence: installed_controller",
+      "missing current-profile evidence: homing_limits_estop",
+      "missing current-profile evidence: g54_registration",
+      "missing current-profile evidence: motion_limits",
+      "missing current-profile evidence: swept_clearance",
+      "missing current-profile evidence: park",
+      "missing current-profile evidence: paper_flatness",
+      "missing current-profile evidence: paper_hover",
+      "missing current-profile evidence: air_run",
+      "missing current-profile evidence: station_contacts",
+      "missing current-profile evidence: brush_response",
+      "missing current-profile evidence: contamination_cleaning",
+      "missing current-profile evidence: ink_to_color_inspection",
+      "missing current-profile evidence: paper_contact",
+      "missing current-profile evidence: microsegment_response",
+      "missing current-profile evidence: registration_repeatability"
+    ]
+  },
+  "schema": "datascape.preparation_report.v0.3",
+  "source_validation": {
+    "all_pressure_segment_bindings_valid": true,
+    "clipped_drawing_mm": 184618.40243307786,
+    "complete_source_parameter_partition": true,
+    "fragment_vertices": 241074,
+    "fragments": 15001,
+    "original_direction_preserved": true,
+    "original_drawing_mm": 184618.40243308205,
+    "sources_covered": 14951,
+    "stream_fragment_counts": {
+      "P1_color": 5684,
+      "P1_ink": 1494,
+      "P2_color": 5972,
+      "P2_ink": 1851
+    }
+  }
+}

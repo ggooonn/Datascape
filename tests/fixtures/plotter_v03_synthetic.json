@@ -1,0 +1,409 @@
+{
+  "schema": "datascape.print_profile.v0.3",
+  "profile_id": "SYNTHETIC-UNIT-TEST-NOT-MEASURED-HARDWARE",
+  "status": "synthetic_fixture",
+  "machine": {
+    "controller": "FluidNC",
+    "kinematics": "Cartesian",
+    "firmware_version": "SYNTHETIC-CARTESIAN-TEST",
+    "installed_config_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "g54_to_machine_xyz": [
+      10,
+      20,
+      5
+    ],
+    "start_work_xyz": [
+      800,
+      900,
+      32
+    ],
+    "machine_bounds_xyz": [
+      [
+        -1000,
+        -1000,
+        -100
+      ],
+      [
+        2000,
+        2000,
+        100
+      ]
+    ],
+    "axis_max_rate_mm_min": [
+      15000,
+      15000,
+      6000
+    ],
+    "axis_acceleration_mm_s2": [
+      100,
+      100,
+      20
+    ],
+    "steps_per_mm": [
+      80,
+      80,
+      400
+    ],
+    "junction_deviation_mm": 0.01,
+    "tool_envelope_margin_mm": 1,
+    "validated_free_boxes": [
+      [
+        [
+          -500,
+          -500,
+          -20
+        ],
+        [
+          1000,
+          1000,
+          60
+        ]
+      ]
+    ],
+    "keepout_boxes": [],
+    "mounted_brush_id": "SYNTHETIC-NOT-A-BRUSH",
+    "hardware_version": "unverified",
+    "substrate_id": "unspecified",
+    "paper_surface_above_bed_mm": 3,
+    "substrate_assembly": "continuous_sheet"
+  },
+  "motion": {
+    "paper_hover_mm": 10,
+    "station_clearance_mm": 32,
+    "park_xyz": [
+      800,
+      900,
+      32
+    ],
+    "paper_approach_mm": 1,
+    "paper_contact_z_range": [
+      -1,
+      0
+    ],
+    "draw_mm_min": 5000,
+    "ordinary_travel_mm_min": 12000,
+    "partially_depleted_mm_min": 12000,
+    "wet_loaded_mm_min": 9000,
+    "station_approach_mm_min": 300,
+    "z_travel_mm_min": 6000,
+    "contact_mm_min": 120,
+    "pressure_z_mm_min": 600,
+    "wet_departure_mm": 10,
+    "wet_max_xy_acceleration_mm_s2": 100,
+    "contact_max_z_acceleration_mm_s2": 20,
+    "wet_departure_mm_min": 1000,
+    "wet_arrival_mm": 10,
+    "wet_arrival_mm_min": 1000,
+    "paper_approach_mm_min": 5000,
+    "paper_contact_mm_min": 2000,
+    "paper_release_mm_min": 2000
+  },
+  "material": {
+    "liquid_levels": "manual_reference",
+    "ink_reload_mm": 1000,
+    "color_reload_mm": 800,
+    "water_change_every_washes": null,
+    "manual_refill_every_loads": null,
+    "end_cleanup": false,
+    "color_order": [
+      "C1",
+      "D1"
+    ]
+  },
+  "stations": {
+    "water": {
+      "status": "synthetic_fixture",
+      "coordinate_frame": "G54",
+      "contact_box_xyz": [
+        [
+          680,
+          80,
+          0
+        ],
+        [
+          720,
+          160,
+          12
+        ]
+      ],
+      "feed_mm_min": 100,
+      "dwell_seconds": 0.1,
+      "hardware_id": "WELL_1",
+      "kind": "sloped_inkstone",
+      "deep_surface_xyz": [
+        700,
+        100,
+        1
+      ],
+      "shallow_surface_xyz": [
+        700,
+        140,
+        5
+      ],
+      "liquid_reference_z": 9,
+      "immersion_mm": 5,
+      "stone_gap_mm": 1,
+      "exit_above_liquid_mm": 1,
+      "agitation_cycles": 0,
+      "agitation_xy_mm": [
+        0,
+        0
+      ],
+      "agitation_floor_max_z": null,
+      "wash_cycles": 2,
+      "rewet_immersion_mm": 2,
+      "rewet_dwell_seconds": 0.05
+    },
+    "ink": {
+      "status": "synthetic_fixture",
+      "coordinate_frame": "G54",
+      "contact_box_xyz": [
+        [
+          680,
+          180,
+          0
+        ],
+        [
+          720,
+          260,
+          12
+        ]
+      ],
+      "feed_mm_min": 100,
+      "dwell_seconds": 0.1,
+      "hardware_id": "WELL_2",
+      "kind": "sloped_inkstone",
+      "deep_surface_xyz": [
+        700,
+        200,
+        1
+      ],
+      "shallow_surface_xyz": [
+        700,
+        240,
+        5
+      ],
+      "liquid_reference_z": 9,
+      "immersion_mm": 5,
+      "stone_gap_mm": 1,
+      "exit_above_liquid_mm": 1,
+      "agitation_cycles": 0,
+      "agitation_xy_mm": [
+        0,
+        0
+      ],
+      "agitation_floor_max_z": null
+    },
+    "sponge": {
+      "status": "synthetic_fixture",
+      "coordinate_frame": "G54",
+      "contact_box_xyz": [
+        [
+          805,
+          102.5,
+          10
+        ],
+        [
+          875,
+          172.5,
+          20
+        ]
+      ],
+      "feed_mm_min": 100,
+      "dwell_seconds": 0.1,
+      "hardware_id": "PURGE",
+      "kind": "absorbent",
+      "center_xy": [
+        840,
+        137.5
+      ],
+      "surface_z": 17,
+      "compression_mm": 0.4,
+      "wipe_xy_mm": [
+        0,
+        0
+      ],
+      "repetitions": 1,
+      "material_overrides": {}
+    },
+    "A2": {
+      "status": "synthetic_fixture",
+      "coordinate_frame": "G54",
+      "contact_box_xyz": [
+        [
+          690,
+          470,
+          5
+        ],
+        [
+          710,
+          490,
+          16
+        ]
+      ],
+      "feed_mm_min": 100,
+      "dwell_seconds": 0.1,
+      "hardware_id": "A2",
+      "kind": "palette",
+      "center_xy": [
+        700,
+        480
+      ],
+      "liquid_reference_z": 12,
+      "immersion_mm": 2,
+      "bottom_z": 5,
+      "bottom_gap_mm": 2,
+      "radius_mm": 2,
+      "revolutions": 1,
+      "segments_per_revolution": 24,
+      "pattern": "circle",
+      "exit_above_liquid_mm": 1
+    },
+    "C1": {
+      "status": "synthetic_fixture",
+      "coordinate_frame": "G54",
+      "contact_box_xyz": [
+        [
+          690,
+          390,
+          5
+        ],
+        [
+          710,
+          410,
+          16
+        ]
+      ],
+      "feed_mm_min": 100,
+      "dwell_seconds": 0.1,
+      "hardware_id": "C1",
+      "kind": "palette",
+      "center_xy": [
+        700,
+        400
+      ],
+      "liquid_reference_z": 12,
+      "immersion_mm": 2,
+      "bottom_z": 5,
+      "bottom_gap_mm": 2,
+      "radius_mm": 2,
+      "revolutions": 1,
+      "segments_per_revolution": 24,
+      "pattern": "circle",
+      "exit_above_liquid_mm": 1
+    },
+    "D1": {
+      "status": "synthetic_fixture",
+      "coordinate_frame": "G54",
+      "contact_box_xyz": [
+        [
+          690,
+          430,
+          5
+        ],
+        [
+          710,
+          450,
+          16
+        ]
+      ],
+      "feed_mm_min": 100,
+      "dwell_seconds": 0.1,
+      "hardware_id": "D1",
+      "kind": "palette",
+      "center_xy": [
+        700,
+        440
+      ],
+      "liquid_reference_z": 12,
+      "immersion_mm": 2,
+      "bottom_z": 5,
+      "bottom_gap_mm": 2,
+      "radius_mm": 2,
+      "revolutions": 1,
+      "segments_per_revolution": 24,
+      "pattern": "circle",
+      "exit_above_liquid_mm": 1
+    }
+  },
+  "brush_profiles": {
+    "ink": {
+      "brush_id": "SYNTHETIC-NOT-A-BRUSH",
+      "family": "synthetic",
+      "brush_type": "illustration",
+      "dimensions_mm": {},
+      "mounting": "unmeasured",
+      "medium": "ink",
+      "substrate": "unspecified",
+      "substrate_surface_height_mm": null,
+      "calibration_date": null,
+      "hardware_version": "unverified",
+      "knots": [
+        [
+          0,
+          0
+        ],
+        [
+          0.2,
+          -0.08
+        ],
+        [
+          0.5,
+          -0.3
+        ],
+        [
+          0.8,
+          -0.65
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "observations": [],
+      "status": "synthetic_preview",
+      "notes": "",
+      "interpolation": "piecewise_linear"
+    },
+    "color": {
+      "brush_id": "SYNTHETIC-NOT-A-BRUSH",
+      "family": "synthetic",
+      "brush_type": "illustration",
+      "dimensions_mm": {},
+      "mounting": "unmeasured",
+      "medium": "color",
+      "substrate": "unspecified",
+      "substrate_surface_height_mm": null,
+      "calibration_date": null,
+      "hardware_version": "unverified",
+      "knots": [
+        [
+          0,
+          0
+        ],
+        [
+          0.2,
+          -0.08
+        ],
+        [
+          0.5,
+          -0.3
+        ],
+        [
+          0.8,
+          -0.65
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "observations": [],
+      "status": "synthetic_preview",
+      "notes": "",
+      "interpolation": "piecewise_linear"
+    }
+  },
+  "evidence": [],
+  "notes": "Invented test volumes and depths. Never use on the Datascape machine."
+}

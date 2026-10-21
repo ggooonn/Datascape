@@ -1,0 +1,28 @@
+{
+  "stage": null,
+  "profile_sha256": null,
+  "plan_sha256": null,
+  "job_ids": [],
+  "operator": null,
+  "date": null,
+  "explicit_operator_authorization": false,
+  "pre_run_confirmations": {
+    "SHARED_INK": {
+      "coordinates_and_start_verified": false,
+      "paper_and_clearance_verified": false,
+      "tool_and_controller_state_verified": false,
+      "brush_clean_and_prepared": false,
+      "materials_and_clean_water_prepared": false,
+      "continuous_substrate_or_tested_seam_verified": false
+    },
+    "SHARED_COLOR": {
+      "coordinates_and_start_verified": false,
+      "paper_and_clearance_verified": false,
+      "tool_and_controller_state_verified": false,
+      "brush_clean_and_prepared": false,
+      "materials_and_clean_water_prepared": false,
+      "continuous_substrate_or_tested_seam_verified": false,
+      "ink_dry_and_registration_verified": false
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "v02_package_sha256": "55dbd8fd6ac5b7967013f16afd675f52b079be3be95d4d499592d53b3261cdc2",
+  "package_manifest_files_verified": 175,
+  "reused_S3a_file_sha256": "df46a0aed239813af6b79f082b0551a447ca7198d421e28e8d8609b2b8d9c48f",
+  "pressure_source_commit": "d30ac7be302e1cbfcd2cf66de9087e35ea091b6c",
+  "spring_source_commit": "67ba146b1213644d40bc9dabed9d52024d2bbe58",
+  "backend_base_commit": "7047db4d45ba0c3ca950002fe2d43c061699c627"
+}
