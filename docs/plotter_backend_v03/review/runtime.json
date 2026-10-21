@@ -5,5 +5,7 @@
     "exit_code": 0
   },
   "focused_A_D_cost_and_full_sample_reverification_seconds": 77.392275143,
-  "hardware_executed": false
+  "hardware_executed": false,
+  "focused_motion_comparison_seconds": 135.59958261199995,
+  "motion_comparison_scope": "Fixed S3a A/D plan read-back, pressure lineage, 11 feed scenarios and two explicitly unverified dynamics cases; no G-code"
 }

@@ -16,6 +16,7 @@ configuration, homing setting or work offset is changed.
 - [Measurements, calibration and operating procedure](CALIBRATION_AND_OPERATION.md)
 - [Controller behavior and implementation contract](ARCHITECTURE.md)
 - [Executed software results and remaining limits](RESULTS.md)
+- [Paper-speed policy and focused A/D time comparison](MOTION_AND_TIME.md)
 - [Unmeasured reusable profile](../../config/plotter_v03/profile.unmeasured.json)
 - [Stage authorization template](../../config/plotter_v03/authorization.template.json)
 - [Small calibration request template](../../config/plotter_v03/calibration_plan.template.json)

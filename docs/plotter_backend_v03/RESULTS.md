@@ -1,14 +1,14 @@
 # Executed v0.3 results — automatic A/D workflow correction
 
-The update remains on Draft PR #27, following `3202f875b02fa454248a64c4d62529b2885d66e4`.
+The update remains on Draft PR #27, following `e424782585818de7c9b98fa6a4af196da9aff198`.
 No Spring geometry, pressure, S3a order, physical calibration curve, station
 primitive, controller configuration or earlier PR is changed. No hardware runs.
 
 ## Software and source verification
 
-- **63 tests passed**, one legacy environment-gated full-scene unittest skipped.
-  The focused correction adds nine behavioral tests, while retaining earlier
-  regression and air/calibration/painting gate tests. Full Spring verification
+- **74 tests passed**, one legacy environment-gated full-scene unittest skipped.
+  The focused correction adds nine workflow and eleven motion/timing tests,
+  while retaining earlier regression and air/calibration/painting gate tests. Full Spring verification
   is separately executed below; the skipped unittest is not counted as a pass.
 - Accepted binding validates **14,951 original strokes / 240,974 samples**.
 - **D is the preferred first printing mode:** two jobs, `SHARED_INK` (3,345 paths)
@@ -57,9 +57,18 @@ independent panel/color batch endings discard residual load distance. This does
 not mean less pigment consumption. D has fewer washes, load starts and transfers,
 while preserving the uninterrupted original cross-seam strokes.
 
-## Conditional station travel and time — not measured physical duration
+## Historical coupled-contact cost model — superseded for time estimates
 
-`cost_scenario.synthetic.json` is deliberately a synthetic fixture. It assumes
+The table and `review/A_D_cost_recalculation.json` below retain the exact results
+from parent `e424782585818de7c9b98fa6a4af196da9aff198`, using its original profile
+and coupled 120-mm/min paper approach. The current profile has separated paper
+feeds; use [MOTION_AND_TIME.md](MOTION_AND_TIME.md) and
+`review/motion_comparison.json` for current categories and requested comparisons.
+The new full A/D read-back reproduces both plan hashes and all material counts.
+
+### Previous conditional station travel and time
+
+The parent version of `cost_scenario.synthetic.json` is deliberately a synthetic fixture. It assumes
 the old `tool_coordinates.yaml` XY frame is G54, retains nominal PURGE X840 Y137.5,
 and invents +/-15-mm stone withdrawal offsets around nominal centers. All Z,
 immersion, brush curve, dwell, contact and dynamic values remain unit-fixture

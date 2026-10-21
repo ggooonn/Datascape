@@ -125,7 +125,9 @@ class Profile:
              'record swept-tool keepout boxes (explicit [] allowed after inspection)')
         for key in ('paper_hover_mm', 'station_clearance_mm', 'draw_mm_min', 'ordinary_travel_mm_min',
                     'partially_depleted_mm_min', 'wet_loaded_mm_min', 'station_approach_mm_min',
-                    'z_travel_mm_min', 'contact_mm_min', 'wet_departure_mm', 'wet_edge_mm_min',
+                    'z_travel_mm_min', 'contact_mm_min', 'wet_departure_mm', 'wet_departure_mm_min',
+                    'wet_arrival_mm', 'wet_arrival_mm_min', 'paper_approach_mm_min',
+                    'paper_contact_mm_min', 'paper_release_mm_min',
                     'paper_approach_mm', 'pressure_z_mm_min', 'wet_max_xy_acceleration_mm_s2',
                     'contact_max_z_acceleration_mm_s2'):
             need(number(v.get(key), True), 'calibrate motion.' + key)

@@ -1,0 +1,2986 @@
+{
+  "Gcode_written": false,
+  "before_report_sha256": "e0464bf16a5c23fc5333f8b2cbd209fcc80eb72857846d5846720b9f7f4f69a1",
+  "color_reload_mm": 800,
+  "controller_candidate": {
+    "hypothetical_dynamics_exceed_fixture_brush_acceleration_limits": true,
+    "junction_deviation_mm": 0.01,
+    "junction_deviation_status": "synthetic 0.01; absent from candidate YAML",
+    "path": "hardware/fluidnc/config_DEV_2026-10-10_UNVERIFIED.yaml",
+    "sha256": "e35cdc3dfb6e74a2a8d450ef314377e0d6230f8c12434e6deb674009f1349f07",
+    "status": "UNVERIFIED file; installed settings unknown; not physical brush approval"
+  },
+  "dynamics": {
+    "inherited_slow_fixture": {
+      "axis_acceleration_mm_s2": [
+        100,
+        100,
+        20
+      ],
+      "axis_max_rate_mm_min": [
+        15000,
+        15000,
+        6000
+      ],
+      "junction_deviation_mm": 0.01
+    },
+    "unverified_DEV_yaml": {
+      "axis_acceleration_mm_s2": [
+        1200.0,
+        1200.0,
+        1000.0
+      ],
+      "axis_max_rate_mm_min": [
+        15000.0,
+        15000.0,
+        8000.0
+      ],
+      "junction_deviation_mm": 0.01
+    }
+  },
+  "elapsed_seconds": 135.59958261199995,
+  "hardware_executed": false,
+  "ink_reload_mm": 1000,
+  "layouts": {
+    "A": {
+      "jobs": {
+        "P1_COLOR": {
+          "D_continuity": null,
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 11,
+          "before_commanded_feed_hours": 10.337979236963621,
+          "before_seconds_by_action": {
+            "absorbent_contact_dwell": 1.0999999999999999,
+            "approach": 25578.0,
+            "controlled_rewet_dwell": 0.5499999999999999,
+            "draw": 556.5825022672442,
+            "initial_contact": 2842.0,
+            "lift": 603.5940000000664,
+            "paper_hover": 14.080000000000014,
+            "pigment_load_dwell": 1.2,
+            "pressure_variation": 492.29221149208126,
+            "release": 452.78025069659896,
+            "same_color_reload_dwell": 5.1999999999999975,
+            "station_absorbent_contact": 22.43999999999999,
+            "station_approach": 363.19999999999953,
+            "station_controlled_rewet": 231.9875372981936,
+            "station_pigment_load": 183.81970406250036,
+            "station_same_color_reload": 796.552050937487,
+            "station_wash": 509.4423454765489,
+            "travel": 4559.704650843768,
+            "wash_dwell": 2.2000000000000006
+          },
+          "before_stop_each_segment_hours": 16.825850457131082,
+          "original_units": 5684,
+          "pressure_lineage": {
+            "all_artistic_pressure_samples_verified": 82518,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "reloads": 52,
+          "scenarios": {
+            "approach3000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25331.713570780586,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3648.1076231200063,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1028.026100582316
+                },
+                "commanded_feed_seconds": 7054.167365782912,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 2330.168695462108,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 42670.44067758505
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8293.628859009134,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1620.4486635822034,
+                  "paper_engagement": 2987.616043084699,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 640.8096881835094
+                },
+                "commanded_feed_seconds": 7054.167365782912,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 2330.168695462108,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 11507.531683336185
+              }
+            },
+            "approach3000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25331.713570780586,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3648.1076231200063,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1028.026100582316
+                },
+                "commanded_feed_seconds": 6789.004467295499,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 2065.0057969746945,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 42670.44067758505
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8007.074721617442,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1620.4486635822034,
+                  "paper_engagement": 2701.0619056930072,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 640.8096881835094
+                },
+                "commanded_feed_seconds": 6789.004467295499,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 2065.0057969746945,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 11374.865158984017
+              }
+            },
+            "approach3000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25331.713570780586,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3648.1076231200063,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1028.026100582316
+                },
+                "commanded_feed_seconds": 6656.42301805187,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1932.4243477310652,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 42670.44067758505
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7866.953474519375,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1620.4486635822034,
+                  "paper_engagement": 2560.9406585949396,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 640.8096881835094
+                },
+                "commanded_feed_seconds": 6656.42301805187,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1932.4243477310652,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 11354.920607797878
+              }
+            },
+            "approach5000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25331.713570780586,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3648.1076231200063,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1028.026100582316
+                },
+                "commanded_feed_seconds": 6644.919365782555,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1920.920695461751,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 42670.44067758505
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8064.987633113646,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1620.4486635822034,
+                  "paper_engagement": 2759.6859283003228,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 640.0985770723971
+                },
+                "commanded_feed_seconds": 6644.919365782555,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1920.920695461751,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 11287.7503500056
+              }
+            },
+            "approach5000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25331.713570780586,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3648.1076231200063,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1028.026100582316
+                },
+                "commanded_feed_seconds": 6379.756467295274,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1655.757796974469,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 42670.44067758505
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7770.539051277161,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1620.4486635822034,
+                  "paper_engagement": 2465.237346463838,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 640.0985770723971
+                },
+                "commanded_feed_seconds": 6379.756467295274,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1655.757796974469,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 11155.083825653026
+              }
+            },
+            "approach5000_contact2000_wet1000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26790.020232537525,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 5046.906200757467,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1087.5341847017944
+                },
+                "commanded_feed_seconds": 8806.429138616522,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 3923.813567516125,
+                  "paper_engagement": 1523.1763477308311,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 664.0510833275337
+                },
+                "stop_each_segment_seconds": 43311.33028831636
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 10080.36891452736,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 4029.287544343447,
+                  "paper_engagement": 2314.0638771440717,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 692.2630288811181
+                },
+                "commanded_feed_seconds": 8806.429138616522,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 3923.813567516125,
+                  "paper_engagement": 1523.1763477308311,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 664.0510833275337
+                },
+                "stop_each_segment_seconds": 13414.96756698493
+              }
+            },
+            "approach5000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25331.713570780586,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3648.1076231200063,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1028.026100582316
+                },
+                "commanded_feed_seconds": 6247.175018051636,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1523.1763477308311,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 42670.44067758505
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7619.365581957395,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1620.4486635822034,
+                  "paper_engagement": 2314.0638771440717,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 640.0985770723971
+                },
+                "commanded_feed_seconds": 6247.175018051636,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1523.1763477308311,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 11135.139274467032
+              }
+            },
+            "approach5000_contact2000_wet5000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25563.24940087754,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3677.698459095562,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1229.9710947037122
+                },
+                "commanded_feed_seconds": 6098.609993583401,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1043.3585321730939,
+                  "paper_engagement": 1523.1763477308311,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 836.6869736374435
+                },
+                "stop_each_segment_seconds": 42890.67124081637
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7561.6334532532965,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1340.5106731713947,
+                  "paper_engagement": 2314.0638771440717,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 862.304438779107
+                },
+                "commanded_feed_seconds": 6098.609993583401,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1043.3585321730939,
+                  "paper_engagement": 1523.1763477308311,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 836.6869736374435
+                },
+                "stop_each_segment_seconds": 11195.201622007475
+              }
+            },
+            "approach6000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25331.713570780586,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3648.1076231200063,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1028.026100582316
+                },
+                "commanded_feed_seconds": 6542.607365782624,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1818.6086954618195,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 42670.44067758505
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8053.970623995714,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1620.4486635822034,
+                  "paper_engagement": 2748.7578080712788,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 640.0096881835088
+                },
+                "commanded_feed_seconds": 6542.607365782624,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1818.6086954618195,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 11278.67485656137
+              }
+            },
+            "approach6000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25331.713570780586,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3648.1076231200063,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1028.026100582316
+                },
+                "commanded_feed_seconds": 6277.444467295388,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1553.445796974583,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 42670.44067758505
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7757.940367442133,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1620.4486635822034,
+                  "paper_engagement": 2452.727551517698,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 640.0096881835088
+                },
+                "commanded_feed_seconds": 6277.444467295388,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1553.445796974583,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 11146.008332208909
+              }
+            },
+            "approach6000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 25331.713570780586,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3072.1363628977806,
+                  "non_drawing_travel": 3648.1076231200063,
+                  "paper_engagement": 15241.980257485608,
+                  "station_handling": 2341.4632266948765,
+                  "station_transfer": 1028.026100582316
+                },
+                "commanded_feed_seconds": 6144.863018051753,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1420.8643477309488,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 42670.44067758505
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7604.395215694965,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 895.6447402974766,
+                  "non_drawing_travel": 1620.4486635822034,
+                  "paper_engagement": 2299.1823997705305,
+                  "station_handling": 2149.109723861246,
+                  "station_transfer": 640.0096881835088
+                },
+                "commanded_feed_seconds": 6144.863018051753,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 556.5825022672443,
+                  "non_drawing_travel": 1415.7594469512403,
+                  "paper_engagement": 1420.8643477309488,
+                  "station_handling": 2138.805637774788,
+                  "station_transfer": 612.8510833275319
+                },
+                "stop_each_segment_seconds": 11126.063781022933
+              }
+            }
+          },
+          "station_transfer_3d_mm": 101306.47352113674,
+          "washes": 11,
+          "station_transfer_distance_and_operation_counts_unchanged": true
+        },
+        "P1_INK": {
+          "D_continuity": null,
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 0,
+          "before_commanded_feed_hours": 3.2666027878637176,
+          "before_seconds_by_action": {
+            "approach": 6723.0,
+            "draw": 507.86147556912164,
+            "initial_contact": 747.0,
+            "lift": 167.43999999999482,
+            "paper_hover": 9.020000000000001,
+            "pigment_load_dwell": 0.1,
+            "pressure_variation": 226.02864116423544,
+            "release": 211.3205205380633,
+            "same_color_reload_dwell": 4.000000000000002,
+            "station_approach": 164.0,
+            "station_pigment_load": 23.156470248934028,
+            "station_same_color_reload": 926.2588099573599,
+            "travel": 2050.5841188308464
+          },
+          "before_stop_each_segment_hours": 6.045276417370691,
+          "original_units": 1494,
+          "pressure_lineage": {
+            "all_artistic_pressure_samples_verified": 32553,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "reloads": 40,
+          "scenarios": {
+            "approach3000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9394.260058519007,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1684.1245605188496,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 592.5840630965301
+                },
+                "commanded_feed_seconds": 3452.59645091838,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 635.1418994042366,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 16929.61881021532
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3854.1683509542922,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 900.8287760579241,
+                  "paper_engagement": 806.5228859221284,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 375.70655903089545
+                },
+                "commanded_feed_seconds": 3452.59645091838,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 635.1418994042366,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 5341.708084260703
+              }
+            },
+            "approach3000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9394.260058519007,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1684.1245605188496,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 592.5840630965301
+                },
+                "commanded_feed_seconds": 3375.3424844503343,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 557.8879329361909,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 16929.61881021532
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3771.315046982371,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 900.8287760579241,
+                  "paper_engagement": 723.669581950207,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 375.70655903089545
+                },
+                "commanded_feed_seconds": 3375.3424844503343,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 557.8879329361909,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 5306.1832732167095
+              }
+            },
+            "approach3000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9394.260058519007,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1684.1245605188496,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 592.5840630965301
+                },
+                "commanded_feed_seconds": 3336.715501216234,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 519.2609497020901,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 16929.61881021532
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3730.717037587195,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 900.8287760579241,
+                  "paper_engagement": 683.0715725550313,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 375.70655903089545
+                },
+                "commanded_feed_seconds": 3336.715501216234,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 519.2609497020901,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 5300.940131441344
+              }
+            },
+            "approach5000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9394.260058519007,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1684.1245605188496,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 592.5840630965301
+                },
+                "commanded_feed_seconds": 3345.028450918409,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 527.5738994042651,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 16929.61881021532
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3793.403027973134,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 900.8287760579241,
+                  "paper_engagement": 746.2131184965262,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 375.25100347533964
+                },
+                "commanded_feed_seconds": 3345.028450918409,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 527.5738994042651,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 5283.940084260839
+              }
+            },
+            "approach5000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9394.260058519007,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1684.1245605188496,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 592.5840630965301
+                },
+                "commanded_feed_seconds": 3267.774484450341,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 450.31993293619735,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 16929.61881021532
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3708.4747240012584,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 900.8287760579241,
+                  "paper_engagement": 661.2848145246506,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 375.25100347533964
+                },
+                "commanded_feed_seconds": 3267.774484450341,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 450.31993293619735,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 5248.415273216862
+              }
+            },
+            "approach5000_contact2000_wet1000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 10125.7535303976,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 2377.8168859920643,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 630.3852095019079
+                },
+                "commanded_feed_seconds": 4114.713824308401,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 1674.1001802292296,
+                  "paper_engagement": 411.6929497021018,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 394.5239386016524
+                },
+                "stop_each_segment_seconds": 17205.640751592062
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4544.911939126545,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 1747.3038584208045,
+                  "paper_engagement": 617.7818051294233,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 408.7161456329728
+                },
+                "commanded_feed_seconds": 4114.713824308401,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 1674.1001802292296,
+                  "paper_engagement": 411.6929497021018,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 394.5239386016524
+                },
+                "stop_each_segment_seconds": 6053.506130425831
+              }
+            },
+            "approach5000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9394.260058519007,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1684.1245605188496,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 592.5840630965301
+                },
+                "commanded_feed_seconds": 3229.1475012162455,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 411.6929497021018,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 16929.61881021532
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3664.971714606031,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 900.8287760579241,
+                  "paper_engagement": 617.7818051294233,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 375.25100347533964
+                },
+                "commanded_feed_seconds": 3229.1475012162455,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 411.6929497021018,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 5243.1721314414735
+              }
+            },
+            "approach5000_contact2000_wet5000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9640.853825031358,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1810.2629560586568,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 713.0394340690739
+                },
+                "commanded_feed_seconds": 3510.6599938938075,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 966.5651489913872,
+                  "paper_engagement": 411.6929497021018,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 498.0051394249019
+                },
+                "stop_each_segment_seconds": 17150.543738688953
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3944.5886635771967,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 1045.2886868983983,
+                  "paper_engagement": 617.7818051294233,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 510.40804160603085
+                },
+                "commanded_feed_seconds": 3510.6599938938075,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 966.5651489913872,
+                  "paper_engagement": 411.6929497021018,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 498.0051394249019
+                },
+                "stop_each_segment_seconds": 5557.357337247478
+              }
+            },
+            "approach6000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9394.260058519007,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1684.1245605188496,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 592.5840630965301
+                },
+                "commanded_feed_seconds": 3318.1364509183936,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 500.68189940424986,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 16929.61881021532
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3790.277494213747,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 900.8287760579241,
+                  "paper_engagement": 743.1445291815835,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 375.1940590308954
+                },
+                "commanded_feed_seconds": 3318.1364509183936,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 500.68189940424986,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 5281.554653718579
+              }
+            },
+            "approach6000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9394.260058519007,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1684.1245605188496,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 592.5840630965301
+                },
+                "commanded_feed_seconds": 3240.8824844503224,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 423.42793293617893,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 16929.61881021532
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3704.931768817249,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 900.8287760579241,
+                  "paper_engagement": 657.7988037850854,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 375.1940590308954
+                },
+                "commanded_feed_seconds": 3240.8824844503224,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 423.42793293617893,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 5246.029842674595
+              }
+            },
+            "approach6000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 9394.260058519007,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1894.521072366418,
+                  "non_drawing_travel": 1684.1245605188496,
+                  "paper_engagement": 4015.3077778750203,
+                  "station_handling": 1207.7225846621889,
+                  "station_transfer": 592.5840630965301
+                },
+                "commanded_feed_seconds": 3202.255501216236,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 384.8009497020926,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 16929.61881021532
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 3660.803691300461,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 640.6675411707292,
+                  "non_drawing_travel": 900.8287760579241,
+                  "paper_engagement": 613.6707262682976,
+                  "station_handling": 1130.442588772615,
+                  "station_transfer": 375.1940590308954
+                },
+                "commanded_feed_seconds": 3202.255501216236,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 507.86147556912164,
+                  "non_drawing_travel": 821.3338571370757,
+                  "paper_engagement": 384.8009497020926,
+                  "station_handling": 1126.535280206295,
+                  "station_transfer": 361.7239386016512
+                },
+                "stop_each_segment_seconds": 5240.786700899205
+              }
+            }
+          },
+          "station_transfer_3d_mm": 59175.21266887714,
+          "washes": 0,
+          "station_transfer_distance_and_operation_counts_unchanged": true
+        },
+        "P2_COLOR": {
+          "D_continuity": null,
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 11,
+          "before_commanded_feed_hours": 10.855087521127013,
+          "before_seconds_by_action": {
+            "absorbent_contact_dwell": 1.0999999999999999,
+            "approach": 26874.0,
+            "controlled_rewet_dwell": 0.5499999999999999,
+            "draw": 599.6004624103394,
+            "initial_contact": 2986.0,
+            "lift": 634.0340000000733,
+            "paper_hover": 14.960000000000017,
+            "pigment_load_dwell": 1.2,
+            "pressure_variation": 510.67201920986076,
+            "release": 471.02856721901463,
+            "same_color_reload_dwell": 5.599999999999996,
+            "station_absorbent_contact": 22.43999999999999,
+            "station_approach": 375.9999999999995,
+            "station_controlled_rewet": 231.9875372981936,
+            "station_pigment_load": 183.81970406250036,
+            "station_same_color_reload": 857.8252856249848,
+            "station_wash": 509.4423454765489,
+            "travel": 4795.8551547606585,
+            "wash_dwell": 2.2000000000000006
+          },
+          "before_stop_each_segment_hours": 17.74191937072733,
+          "original_units": 5972,
+          "pressure_lineage": {
+            "all_artistic_pressure_samples_verified": 89455,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "reloads": 56,
+          "scenarios": {
+            "approach3000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26631.238162506455,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3822.6408055310076,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1106.7758428443317
+                },
+                "commanded_feed_seconds": 7412.3995452253685,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 2446.8840703709584,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 45061.25630930274
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8717.268472625012,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1695.61893817024,
+                  "paper_engagement": 3137.5413325523195,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 700.1908540938566
+                },
+                "commanded_feed_seconds": 7412.3995452253685,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 2446.8840703709584,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 12153.334684806054
+              }
+            },
+            "approach3000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26631.238162506455,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3822.6408055310076,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1106.7758428443317
+                },
+                "commanded_feed_seconds": 7134.25152176829,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 2168.7360469138803,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 45061.25630930274
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8416.63613714262,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1695.61893817024,
+                  "paper_engagement": 2836.908997069927,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 700.1908540938566
+                },
+                "commanded_feed_seconds": 7134.25152176829,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 2168.7360469138803,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 12013.707236896667
+              }
+            },
+            "approach3000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26631.238162506455,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3822.6408055310076,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1106.7758428443317
+                },
+                "commanded_feed_seconds": 6995.177510039903,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 2029.6620351854929,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 45061.25630930274
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8269.635665049978,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1695.61893817024,
+                  "paper_engagement": 2689.908524977285,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 700.1908540938566
+                },
+                "commanded_feed_seconds": 6995.177510039903,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 2029.6620351854929,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 11992.752124355065
+              }
+            },
+            "approach5000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26631.238162506455,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3822.6408055310076,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1106.7758428443317
+                },
+                "commanded_feed_seconds": 6982.415545224916,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 2016.900070370506,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 45061.25630930274
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8477.02135015241,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1695.61893817024,
+                  "paper_engagement": 2898.0497656352745,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 699.4352985382997
+                },
+                "commanded_feed_seconds": 6982.415545224916,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 2016.900070370506,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 11922.417351475855
+              }
+            },
+            "approach5000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26631.238162506455,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3822.6408055310076,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1106.7758428443317
+                },
+                "commanded_feed_seconds": 6704.267521768035,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1738.7520469136255,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 45061.25630930274
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8168.0945702250965,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1695.61893817024,
+                  "paper_engagement": 2589.12298570796,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 699.4352985382997
+                },
+                "commanded_feed_seconds": 6704.267521768035,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1738.7520469136255,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 11782.789903566074
+              }
+            },
+            "approach5000_contact2000_wet1000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 28155.876963787632,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 5284.021536939993,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1170.033912716522
+                },
+                "commanded_feed_seconds": 9239.092524818405,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 4100.359914993071,
+                  "paper_engagement": 1599.6780351852328,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 725.4152397674791
+                },
+                "stop_each_segment_seconds": 45729.912938729954
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 10579.642814448029,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 4210.358372555801,
+                  "paper_engagement": 2430.5102913936953,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 754.856802689936
+                },
+                "commanded_feed_seconds": 9239.092524818405,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 4100.359914993071,
+                  "paper_engagement": 1599.6780351852328,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 725.4152397674791
+                },
+                "stop_each_segment_seconds": 14142.107943593905
+              }
+            },
+            "approach5000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26631.238162506455,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3822.6408055310076,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1106.7758428443317
+                },
+                "commanded_feed_seconds": 6565.193510039642,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1599.6780351852328,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 45061.25630930274
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8009.481875910831,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1695.61893817024,
+                  "paper_engagement": 2430.5102913936953,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 699.4352985382997
+                },
+                "commanded_feed_seconds": 6565.193510039642,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1599.6780351852328,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 11761.834791024665
+              }
+            },
+            "approach5000_contact2000_wet5000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26892.927061224058,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3852.8959552261535,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1338.2095918667856
+                },
+                "commanded_feed_seconds": 6432.567907624458,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1093.6742115182387,
+                  "paper_engagement": 1599.6780351852328,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 925.5763260483649
+                },
+                "stop_each_segment_seconds": 45311.096868251174
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7972.403207502451,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1405.7056367577452,
+                  "paper_engagement": 2430.5102913936953,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 952.2699315424139
+                },
+                "commanded_feed_seconds": 6432.567907624458,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1093.6742115182387,
+                  "paper_engagement": 1599.6780351852328,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 925.5763260483649
+                },
+                "stop_each_segment_seconds": 11847.428769410957
+              }
+            },
+            "approach6000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26631.238162506455,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3822.6408055310076,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1106.7758428443317
+                },
+                "commanded_feed_seconds": 6874.919545224979,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1909.4040703705691,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 45061.25630930274
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8465.43892080888,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1695.61893817024,
+                  "paper_engagement": 2886.561780736187,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 699.340854093856
+                },
+                "commanded_feed_seconds": 6874.919545224979,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1909.4040703705691,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 11912.88201599875
+              }
+            },
+            "approach6000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26631.238162506455,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3822.6408055310076,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1106.7758428443317
+                },
+                "commanded_feed_seconds": 6596.77152176814,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1631.25604691373,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 45061.25630930274
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8154.850271612178,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1695.61893817024,
+                  "paper_engagement": 2575.973131539486,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 699.340854093856
+                },
+                "commanded_feed_seconds": 6596.77152176814,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1631.25604691373,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 11773.254568089085
+              }
+            },
+            "approach6000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 26631.238162506455,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 3266.2098019825216,
+                  "non_drawing_travel": 3822.6408055310076,
+                  "paper_engagement": 16011.537047161191,
+                  "station_handling": 2424.074664987404,
+                  "station_transfer": 1106.7758428443317
+                },
+                "commanded_feed_seconds": 6457.697510039753,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1492.1820351853435,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 45061.25630930274
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7993.745671645056,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 959.193134481553,
+                  "non_drawing_travel": 1695.61893817024,
+                  "paper_engagement": 2414.8685315723637,
+                  "station_handling": 2224.7242133270433,
+                  "station_transfer": 699.340854093856
+                },
+                "commanded_feed_seconds": 6457.697510039753,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 599.6004624103394,
+                  "non_drawing_travel": 1480.8609002143105,
+                  "paper_engagement": 1492.1820351853435,
+                  "station_handling": 2214.038872462282,
+                  "station_transfer": 671.0152397674777
+                },
+                "stop_each_segment_seconds": 11752.299455547698
+              }
+            }
+          },
+          "station_transfer_3d_mm": 110562.98006093984,
+          "washes": 11,
+          "station_transfer_distance_and_operation_counts_unchanged": true
+        },
+        "P2_INK": {
+          "D_continuity": null,
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 0,
+          "before_commanded_feed_hours": 3.9371806362568864,
+          "before_seconds_by_action": {
+            "approach": 8329.5,
+            "draw": 551.5502592827379,
+            "initial_contact": 925.5,
+            "lift": 204.89999999999287,
+            "paper_hover": 9.900000000000002,
+            "pigment_load_dwell": 0.1,
+            "pressure_variation": 275.1400404991228,
+            "release": 248.1882553249329,
+            "same_color_reload_dwell": 4.4,
+            "station_approach": 180.0,
+            "station_pigment_load": 23.156470248934028,
+            "station_same_color_reload": 1018.8846909530956,
+            "travel": 2402.630574215
+          },
+          "before_stop_each_segment_hours": 7.118851599742117,
+          "original_units": 1851,
+          "pressure_lineage": {
+            "all_artistic_pressure_samples_verified": 36548,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "reloads": 44,
+          "scenarios": {
+            "approach3000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11127.752549746316,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2012.0153958237167,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 664.6474910976045
+                },
+                "commanded_feed_seconds": 3944.9191687580774,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 784.6893954988059,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 19668.564053827078
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4434.6850355583765,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1056.7314586919886,
+                  "paper_engagement": 997.3796670322279,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 426.94451312506595
+                },
+                "commanded_feed_seconds": 3944.9191687580774,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 784.6893954988059,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 6087.929303682574
+              }
+            },
+            "approach3000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11127.752549746316,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2012.0153958237167,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 664.6474910976045
+                },
+                "commanded_feed_seconds": 3849.946036925172,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 689.7162636659004,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 19668.564053827078
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4332.772730528659,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1056.7314586919886,
+                  "paper_engagement": 895.4673620025104,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 426.94451312506595
+                },
+                "commanded_feed_seconds": 3849.946036925172,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 689.7162636659004,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 6043.83551513811
+              }
+            },
+            "approach3000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11127.752549746316,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2012.0153958237167,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 664.6474910976045
+                },
+                "commanded_feed_seconds": 3802.45947100864,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 642.2296977493683,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 19668.564053827078
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4282.843431132486,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1056.7314586919886,
+                  "paper_engagement": 845.5380626063376,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 426.94451312506595
+                },
+                "commanded_feed_seconds": 3802.45947100864,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 642.2296977493683,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 6037.339080238594
+              }
+            },
+            "approach5000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11127.752549746316,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2012.0153958237167,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 664.6474910976045
+                },
+                "commanded_feed_seconds": 3811.647168758101,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 651.4173954988296,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 19668.564053827078
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4359.559726103929,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1056.7314586919886,
+                  "paper_engagement": 922.7543575777811,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 426.4445131250657
+                },
+                "commanded_feed_seconds": 3811.647168758101,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 651.4173954988296,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 6016.357303682844
+              }
+            },
+            "approach5000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11127.752549746316,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2012.0153958237167,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 664.6474910976045
+                },
+                "commanded_feed_seconds": 3716.6740369251966,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 556.4442636659253,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 19668.564053827078
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4255.076587740929,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1056.7314586919886,
+                  "paper_engagement": 818.2712192147809,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 426.4445131250657
+                },
+                "commanded_feed_seconds": 3716.6740369251966,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 556.4442636659253,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 5972.263515138386
+              }
+            },
+            "approach5000_contact2000_wet1000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11976.764584421237,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2819.511663841679,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 706.1632577545631
+                },
+                "commanded_feed_seconds": 4719.3796924491835,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 1974.803433680093,
+                  "paper_engagement": 508.9576977493811,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 447.62714053494034
+                },
+                "stop_each_segment_seconds": 19982.165062269298
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 5241.903857541499,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 2060.3601545938373,
+                  "paper_engagement": 764.7427531518875,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 463.17155308668003
+                },
+                "commanded_feed_seconds": 4719.3796924491835,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 1974.803433680093,
+                  "paper_engagement": 508.9576977493811,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 447.62714053494034
+                },
+                "stop_each_segment_seconds": 6922.3346331048315
+              }
+            },
+            "approach5000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11127.752549746316,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2012.0153958237167,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 664.6474910976045
+                },
+                "commanded_feed_seconds": 3669.1874710086527,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 508.9576977493811,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 19668.564053827078
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4201.548121678035,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1056.7314586919886,
+                  "paper_engagement": 764.7427531518875,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 426.4445131250657
+                },
+                "commanded_feed_seconds": 3669.1874710086527,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 508.9576977493811,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 5965.767080238866
+              }
+            },
+            "approach5000_contact2000_wet5000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11408.09072511783,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2150.933215243998,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 806.0678470488386
+                },
+                "commanded_feed_seconds": 3987.6548217136806,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 1120.408849166793,
+                  "paper_engagement": 508.9576977493811,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 570.2968543127377
+                },
+                "stop_each_segment_seconds": 19919.59836867773
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4521.023142517028,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1218.7655424762736,
+                  "paper_engagement": 764.7427531518875,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 583.8854501797729
+                },
+                "commanded_feed_seconds": 3987.6548217136806,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 1120.408849166793,
+                  "paper_engagement": 508.9576977493811,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 570.2968543127377
+                },
+                "stop_each_segment_seconds": 6327.666210275289
+              }
+            },
+            "approach6000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11127.752549746316,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2012.0153958237167,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 664.6474910976045
+                },
+                "commanded_feed_seconds": 3778.3291687581163,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 618.0993954988447,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 19668.564053827078
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4355.742412979748,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1056.7314586919886,
+                  "paper_engagement": 918.9995444536,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 426.38201312506607
+                },
+                "commanded_feed_seconds": 3778.3291687581163,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 618.0993954988447,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 6013.40186062155
+              }
+            },
+            "approach6000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11127.752549746316,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2012.0153958237167,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 664.6474910976045
+                },
+                "commanded_feed_seconds": 3683.356036925185,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 523.1262636659136,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 19668.564053827078
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4250.742512193359,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1056.7314586919886,
+                  "paper_engagement": 813.9996436672104,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 426.38201312506607
+                },
+                "commanded_feed_seconds": 3683.356036925185,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 523.1262636659136,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 5969.308072077092
+              }
+            },
+            "approach6000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 11127.752549746316,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 2149.0453689558,
+                  "non_drawing_travel": 2012.0153958237167,
+                  "paper_engagement": 4976.495115581426,
+                  "station_handling": 1325.5491782877682,
+                  "station_transfer": 664.6474910976045
+                },
+                "commanded_feed_seconds": 3635.8694710086334,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 475.63969774936174,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 19668.564053827078
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 4196.440018037402,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 712.8997261050049,
+                  "non_drawing_travel": 1056.7314586919886,
+                  "paper_engagement": 759.6971495112535,
+                  "station_handling": 1240.729670604089,
+                  "station_transfer": 426.38201312506607
+                },
+                "commanded_feed_seconds": 3635.8694710086334,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 551.5502592827379,
+                  "non_drawing_travel": 960.6112122395637,
+                  "paper_engagement": 475.63969774936174,
+                  "station_handling": 1236.441161202031,
+                  "station_transfer": 411.62714053493886
+                },
+                "stop_each_segment_seconds": 5962.81163717757
+              }
+            }
+          },
+          "station_transfer_3d_mm": 67300.57099587533,
+          "washes": 0,
+          "station_transfer_distance_and_operation_counts_unchanged": true
+        }
+      },
+      "plan_sha256": "c9380e0b7c3967d1a8622dfa83974a568e2d1b2a67987dba479f348a66d9e074",
+      "source_readback": {
+        "D_X300_crossing_strokes_continuous": null,
+        "D_original_strokes_unsplit": null,
+        "all_written_source_pressure_and_work_transform_bindings_verified": true,
+        "complete_source_partition": true,
+        "written_fragment_count": 15001,
+        "written_pressure_samples": 241074
+      }
+    },
+    "D": {
+      "jobs": {
+        "SHARED_COLOR": {
+          "D_continuity": {
+            "continuous_crossing_sources_checked": 50,
+            "crossing_pressure_samples_checked": 616,
+            "no_seam_lift_reload_or_pause_inside_drawing_run": true
+          },
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 11,
+          "before_commanded_feed_hours": 20.72630983934164,
+          "before_seconds_by_action": {
+            "absorbent_contact_dwell": 1.0999999999999999,
+            "approach": 52227.0,
+            "controlled_rewet_dwell": 0.5499999999999999,
+            "draw": 1156.1829646775866,
+            "initial_contact": 5803.0,
+            "lift": 1221.2139999999918,
+            "paper_hover": 27.71999999999996,
+            "pigment_load_dwell": 1.2,
+            "pressure_variation": 998.9220825138581,
+            "release": 919.766669727509,
+            "same_color_reload_dwell": 11.399999999999975,
+            "station_absorbent_contact": 22.43999999999999,
+            "station_approach": 561.5999999999995,
+            "station_controlled_rewet": 231.9875372981936,
+            "station_pigment_load": 183.81970406250036,
+            "station_same_color_reload": 1746.2871885938248,
+            "station_wash": 509.4423454765489,
+            "travel": 8988.882929278394,
+            "wash_dwell": 2.2000000000000006
+          },
+          "before_stop_each_segment_hours": 33.99390993440459,
+          "original_units": 11606,
+          "pressure_lineage": {
+            "all_artistic_pressure_samples_verified": 171873,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "reloads": 114,
+          "scenarios": {
+            "approach3000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50194.86945788737,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7369.423757928654,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1747.3023962388438
+                },
+                "commanded_feed_seconds": 13061.373778264448,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 4756.582650270351,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 85827.21239683818
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 15580.819080320298,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 3256.8313427902235,
+                  "paper_engagement": 6099.243727639659,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1050.1734387676115
+                },
+                "commanded_feed_seconds": 13061.373778264448,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 4756.582650270351,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 22218.509948362094
+              }
+            },
+            "approach3000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50194.86945788737,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7369.423757928654,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1747.3023962388438
+                },
+                "commanded_feed_seconds": 12520.386228172569,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 4215.5951001784715,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 85827.21239683818
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 14996.143283209778,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 3256.8313427902235,
+                  "paper_engagement": 5514.567930529139,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1050.1734387676115
+                },
+                "commanded_feed_seconds": 12520.386228172569,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 4215.5951001784715,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 21947.382702938794
+              }
+            },
+            "approach3000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50194.86945788737,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7369.423757928654,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1747.3023962388438
+                },
+                "commanded_feed_seconds": 12249.892453130666,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3945.101325136569,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 85827.21239683818
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 14710.249330452045,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 3256.8313427902235,
+                  "paper_engagement": 5228.673977771406,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1050.1734387676115
+                },
+                "commanded_feed_seconds": 12249.892453130666,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3945.101325136569,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 21906.65848389577
+              }
+            },
+            "approach5000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50194.86945788737,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7369.423757928654,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1747.3023962388438
+                },
+                "commanded_feed_seconds": 12225.741778263755,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3920.950650269657,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 85827.21239683818
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 15114.092296524514,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 3256.8313427902235,
+                  "paper_engagement": 5633.9169438438785,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1048.7734387676073
+                },
+                "commanded_feed_seconds": 12225.741778263755,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3920.950650269657,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 21769.74461503262
+              }
+            },
+            "approach5000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50194.86945788737,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7369.423757928654,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1747.3023962388438
+                },
+                "commanded_feed_seconds": 11684.754228173584,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3379.9631001794864,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 85827.21239683818
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 14513.297054967265,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 3256.8313427902235,
+                  "paper_engagement": 5033.12170228663,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1048.7734387676073
+                },
+                "commanded_feed_seconds": 11684.754228173584,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3379.9631001794864,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 21498.61736961067
+              }
+            },
+            "approach5000_contact2000_wet1000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 53141.68534040493,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 10198.831275975053,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1864.7107607100106
+                },
+                "commanded_feed_seconds": 16614.895994523427,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 7940.9829202051205,
+                  "paper_engagement": 3109.4693251367544,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1103.3400090730802
+                },
+                "stop_each_segment_seconds": 87127.1919502644
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 19202.826923822693,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 8152.150581869883,
+                  "paper_engagement": 4724.660527308433,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1151.4452435215708
+                },
+                "commanded_feed_seconds": 16614.895994523427,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 7940.9829202051205,
+                  "paper_engagement": 3109.4693251367544,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1103.3400090730802
+                },
+                "stop_each_segment_seconds": 26088.372269664145
+              }
+            },
+            "approach5000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50194.86945788737,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7369.423757928654,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1747.3023962388438
+                },
+                "commanded_feed_seconds": 11414.260453130852,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3109.4693251367544,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 85827.21239683818
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 14204.835879989068,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 3256.8313427902235,
+                  "paper_engagement": 4724.660527308433,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1048.7734387676073
+                },
+                "commanded_feed_seconds": 11414.260453130852,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3109.4693251367544,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 21457.893150567135
+              }
+            },
+            "approach5000_contact2000_wet5000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50566.37716596815,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7413.690445565738,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 2074.543416682542
+                },
+                "commanded_feed_seconds": 10996.343764456542,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2053.9879570274875,
+                  "paper_engagement": 3109.4693251367544,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1371.7827421838278
+                },
+                "stop_each_segment_seconds": 86178.39791399257
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 13974.50822538496,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 2660.424508983355,
+                  "paper_engagement": 4724.660527308433,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1414.8526179703676
+                },
+                "commanded_feed_seconds": 10996.343764456542,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2053.9879570274875,
+                  "paper_engagement": 3109.4693251367544,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1371.7827421838278
+                },
+                "stop_each_segment_seconds": 21466.86486474638
+              }
+            },
+            "approach6000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50194.86945788737,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7369.423757928654,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1747.3023962388438
+                },
+                "commanded_feed_seconds": 12016.833778263495,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3712.0426502693977,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 85827.21239683818
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 15091.641434905783,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 3256.8313427902235,
+                  "paper_engagement": 5611.641082225146,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1048.5984387676092
+                },
+                "commanded_feed_seconds": 12016.833778263495,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3712.0426502693977,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 21751.21361979647
+              }
+            },
+            "approach6000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50194.86945788737,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7369.423757928654,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1747.3023962388438
+                },
+                "commanded_feed_seconds": 11475.846228173315,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3171.055100179219,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 85827.21239683818
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 14487.616942023036,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 3256.8313427902235,
+                  "paper_engagement": 5007.6165893423995,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1048.5984387676092
+                },
+                "commanded_feed_seconds": 11475.846228173315,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 3171.055100179219,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 21480.086374374496
+              }
+            },
+            "approach6000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 50194.86945788737,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 6332.673790036563,
+                  "non_drawing_travel": 7369.423757928654,
+                  "paper_engagement": 31123.528993454347,
+                  "station_handling": 3621.9405202289604,
+                  "station_transfer": 1747.3023962388438
+                },
+                "commanded_feed_seconds": 11205.352453130281,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 2900.5613251361847,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 85827.21239683818
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 14174.313420513121,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1853.4362605417105,
+                  "non_drawing_travel": 3256.8313427902235,
+                  "paper_engagement": 4694.313067832485,
+                  "station_handling": 3321.1343105810934,
+                  "station_transfer": 1048.5984387676092
+                },
+                "commanded_feed_seconds": 11205.352453130281,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1156.1829646775866,
+                  "non_drawing_travel": 2841.1473788125436,
+                  "paper_engagement": 2900.5613251361847,
+                  "station_handling": 3304.9207754308854,
+                  "station_transfer": 1002.5400090730815
+                },
+                "stop_each_segment_seconds": 21439.36215533094
+              }
+            }
+          },
+          "station_transfer_3d_mm": 163088.3309951927,
+          "washes": 11,
+          "station_transfer_distance_and_operation_counts_unchanged": true
+        },
+        "SHARED_INK": {
+          "D_continuity": {
+            "continuous_crossing_sources_checked": 0,
+            "crossing_pressure_samples_checked": 0,
+            "no_seam_lift_reload_or_pause_inside_drawing_run": true
+          },
+          "M0_count": 0,
+          "M0_reasons": [],
+          "PURGE_contacts": 0,
+          "before_commanded_feed_hours": 7.228491284337313,
+          "before_seconds_by_action": {
+            "approach": 15052.5,
+            "draw": 1059.4117348518482,
+            "initial_contact": 1672.5,
+            "lift": 371.46000000001663,
+            "paper_hover": 18.480000000000008,
+            "pigment_load_dwell": 0.1,
+            "pressure_variation": 501.16868166335723,
+            "release": 459.50877586300055,
+            "same_color_reload_dwell": 8.299999999999986,
+            "station_approach": 336.0,
+            "station_pigment_load": 23.156470248934028,
+            "station_same_color_reload": 1921.9870306615237,
+            "travel": 4597.995930328485
+          },
+          "before_stop_each_segment_hours": 13.199207432178117,
+          "original_units": 3345,
+          "pressure_lineage": {
+            "all_artistic_pressure_samples_verified": 69101,
+            "all_draw_XYZ_synchronized_with_accepted_intent": true
+          },
+          "reloads": 83,
+          "scenarios": {
+            "approach3000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 20636.66247517061,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4062.658499817418,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1062.5010086802513
+                },
+                "commanded_feed_seconds": 7494.641559572859,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1419.8312949028686,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 36729.30474354722
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8386.740164964187,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2290.869732543835,
+                  "paper_engagement": 1804.0633316644723,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 622.2111150191813
+                },
+                "commanded_feed_seconds": 7494.641559572859,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1419.8312949028686,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 11528.571501670796
+              }
+            },
+            "approach3000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 20636.66247517061,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4062.658499817418,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1062.5010086802513
+                },
+                "commanded_feed_seconds": 7322.414461271929,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1247.604196601939,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 36729.30474354722
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8201.974700448072,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2290.869732543835,
+                  "paper_engagement": 1619.297867148357,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 622.2111150191813
+                },
+                "commanded_feed_seconds": 7322.414461271929,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1247.604196601939,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 11448.952902087902
+              }
+            },
+            "approach3000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 20636.66247517061,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4062.658499817418,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1062.5010086802513
+                },
+                "commanded_feed_seconds": 7236.300912121383,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1161.4906474513928,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 36729.30474354722
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8111.4475377131785,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2290.869732543835,
+                  "paper_engagement": 1528.7707044134634,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 622.2111150191813
+                },
+                "commanded_feed_seconds": 7236.300912121383,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1161.4906474513928,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 11437.213325410452
+              }
+            },
+            "approach5000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 20636.66247517061,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4062.658499817418,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1062.5010086802513
+                },
+                "commanded_feed_seconds": 7253.801559572845,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1178.9912949028549,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 36729.30474354722
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8250.905224652679,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2290.869732543835,
+                  "paper_engagement": 1669.161724686299,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 621.2777816858465
+                },
+                "commanded_feed_seconds": 7253.801559572845,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1178.9912949028549,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 11399.231501673232
+              }
+            },
+            "approach5000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 20636.66247517061,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4062.658499817418,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1062.5010086802513
+                },
+                "commanded_feed_seconds": 7081.574461271965,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1006.7641966019756,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 36729.30474354722
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8061.49392680328,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2290.869732543835,
+                  "paper_engagement": 1479.7504268369005,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 621.2777816858465
+                },
+                "commanded_feed_seconds": 7081.574461271965,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1006.7641966019756,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 11319.612902090219
+              }
+            },
+            "approach5000_contact2000_wet1000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 22226.028296074044,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 5574.328787833112,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1140.196541567988
+                },
+                "commanded_feed_seconds": 8923.04181354202,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 3973.839561334074,
+                  "paper_engagement": 920.6506474513941,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 661.1163689942504
+                },
+                "stop_each_segment_seconds": 37314.09170728279
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 9877.148200338415,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 4135.020560227401,
+                  "paper_engagement": 1382.719097435524,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 689.8125569387923
+                },
+                "commanded_feed_seconds": 8923.04181354202,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 3973.839561334074,
+                  "paper_engagement": 920.6506474513941,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 661.1163689942504
+                },
+                "stop_each_segment_seconds": 13066.237619932786
+              }
+            },
+            "approach5000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 20636.66247517061,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4062.658499817418,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1062.5010086802513
+                },
+                "commanded_feed_seconds": 6995.460912121384,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 920.6506474513941,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 36729.30474354722
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7964.462597401904,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2290.869732543835,
+                  "paper_engagement": 1382.719097435524,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 621.2777816858465
+                },
+                "commanded_feed_seconds": 6995.460912121384,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 920.6506474513941,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 11307.873325412784
+              }
+            },
+            "approach5000_contact2000_wet5000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 21314.237625539885,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4568.7553967202375,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1233.9792621467045
+                },
+                "commanded_feed_seconds": 7772.600552793267,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2687.8210469912474,
+                  "paper_engagement": 920.6506474513941,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 796.693622588322
+                },
+                "stop_each_segment_seconds": 37346.140822543355
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8739.50378584572,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2865.3895829525227,
+                  "paper_engagement": 1382.719097435524,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 821.7991197209742
+                },
+                "commanded_feed_seconds": 7772.600552793267,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2687.8210469912474,
+                  "paper_engagement": 920.6506474513941,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 796.693622588322
+                },
+                "stop_each_segment_seconds": 12159.47901420972
+              }
+            },
+            "approach6000_contact1000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 20636.66247517061,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4062.658499817418,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1062.5010086802513
+                },
+                "commanded_feed_seconds": 7193.591559572978,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1118.7812949029878,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 36729.30474354722
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8243.981460943545,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2290.869732543835,
+                  "paper_engagement": 1662.354627643831,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 621.1611150191808
+                },
+                "commanded_feed_seconds": 7193.591559572978,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 1118.7812949029878,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 11393.890628066876
+              }
+            },
+            "approach6000_contact1500_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 20636.66247517061,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4062.658499817418,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1062.5010086802513
+                },
+                "commanded_feed_seconds": 7021.364461272083,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 946.5541966020927,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 36729.30474354722
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 8053.636123731368,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2290.869732543835,
+                  "paper_engagement": 1472.0092904316534,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 621.1611150191808
+                },
+                "commanded_feed_seconds": 7021.364461272083,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 946.5541966020927,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 11314.272028483889
+              }
+            },
+            "approach6000_contact2000_wet3000": {
+              "inherited_slow_fixture": {
+                "acceleration_sensitive_seconds": 20636.66247517061,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 4043.5664413222225,
+                  "non_drawing_travel": 4062.658499817418,
+                  "paper_engagement": 8993.578059213554,
+                  "station_handling": 2474.358466137167,
+                  "station_transfer": 1062.5010086802513
+                },
+                "commanded_feed_seconds": 6935.250912121477,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 860.4406474514872,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 36729.30474354722
+              },
+              "unverified_DEV_yaml": {
+                "acceleration_sensitive_seconds": 7955.205844172025,
+                "acceleration_sensitive_seconds_by_category": {
+                  "drawing": 1353.5672672757391,
+                  "non_drawing_travel": 2290.869732543835,
+                  "paper_engagement": 1373.57901087231,
+                  "station_handling": 2316.028718460959,
+                  "station_transfer": 621.1611150191808
+                },
+                "commanded_feed_seconds": 6935.250912121477,
+                "commanded_feed_seconds_by_category": {
+                  "drawing": 1059.4117348518482,
+                  "non_drawing_travel": 2113.458659913439,
+                  "paper_engagement": 860.4406474514872,
+                  "station_handling": 2308.0235009104545,
+                  "station_transfer": 593.9163689942484
+                },
+                "stop_each_segment_seconds": 11302.53245180647
+              }
+            }
+          },
+          "station_transfer_3d_mm": 96555.69544921952,
+          "washes": 0,
+          "station_transfer_distance_and_operation_counts_unchanged": true
+        }
+      },
+      "plan_sha256": "8b4804f561f0eaab28753ae1790ce3b0f5b9ab8ba9a4a2ffe1e4daecbe2596bd",
+      "source_readback": {
+        "D_X300_crossing_strokes_continuous": 50,
+        "D_original_strokes_unsplit": 14951,
+        "all_written_source_pressure_and_work_transform_bindings_verified": true,
+        "complete_source_partition": true,
+        "written_fragment_count": 14951,
+        "written_pressure_samples": 240974
+      }
+    }
+  },
+  "motion": {
+    "contact_max_z_acceleration_mm_s2": 20,
+    "contact_mm_min": 120,
+    "draw_mm_min": 5000,
+    "ordinary_travel_mm_min": 12000,
+    "paper_approach_mm": 1,
+    "paper_approach_mm_min": 5000,
+    "paper_contact_mm_min": 2000,
+    "paper_contact_z_range": [
+      -1,
+      0
+    ],
+    "paper_hover_mm": 10,
+    "paper_release_mm_min": 2000,
+    "park_xyz": [
+      800,
+      900,
+      32
+    ],
+    "partially_depleted_mm_min": 12000,
+    "pressure_z_mm_min": 2000,
+    "station_approach_mm_min": 300,
+    "station_clearance_mm": 32,
+    "wet_arrival_mm": 10,
+    "wet_arrival_mm_min": 3000,
+    "wet_departure_mm": 10,
+    "wet_departure_mm_min": 3000,
+    "wet_loaded_mm_min": 9000,
+    "wet_max_xy_acceleration_mm_s2": 100,
+    "z_travel_mm_min": 6000
+  },
+  "physical_printing_time_seconds": null,
+  "profile_sha256": "f2bf5244649b9f9f25ec5073e4bdb7b8bb69d10866cf178245eccc2e741c3743",
+  "schema": "datascape.motion_comparison.v0.3",
+  "source_commit": "e424782585818de7c9b98fa6a4af196da9aff198",
+  "timing_model": {
+    "model": "Cartesian projected-axis / junction deviation / full lookahead",
+    "verified_physical_time": false,
+    "limitations": [
+      "adequate full lookahead and continuous streaming assumed",
+      "finite buffer, step quantization and controller/serial overhead omitted",
+      "brush recovery and physical dynamic approval not inferred"
+    ]
+  }
+}

@@ -40,11 +40,16 @@
     "station_approach_mm_min": null,
     "z_travel_mm_min": 6000,
     "contact_mm_min": null,
-    "pressure_z_mm_min": null,
+    "pressure_z_mm_min": 2000,
     "wet_departure_mm": null,
-    "wet_edge_mm_min": null,
     "wet_max_xy_acceleration_mm_s2": null,
-    "contact_max_z_acceleration_mm_s2": null
+    "contact_max_z_acceleration_mm_s2": null,
+    "wet_departure_mm_min": 3000,
+    "wet_arrival_mm": null,
+    "wet_arrival_mm_min": 3000,
+    "paper_approach_mm_min": 5000,
+    "paper_contact_mm_min": 2000,
+    "paper_release_mm_min": 2000
   },
   "material": {
     "liquid_levels": "manual_reference",

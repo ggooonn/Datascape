@@ -53,9 +53,8 @@
       "calibrate motion.station_approach_mm_min",
       "calibrate motion.contact_mm_min",
       "calibrate motion.wet_departure_mm",
-      "calibrate motion.wet_edge_mm_min",
+      "calibrate motion.wet_arrival_mm",
       "calibrate motion.paper_approach_mm",
-      "calibrate motion.pressure_z_mm_min",
       "calibrate motion.wet_max_xy_acceleration_mm_s2",
       "calibrate motion.contact_max_z_acceleration_mm_s2",
       "missing current-profile evidence: installed_controller",
@@ -84,9 +83,8 @@
       "calibrate motion.station_approach_mm_min",
       "calibrate motion.contact_mm_min",
       "calibrate motion.wet_departure_mm",
-      "calibrate motion.wet_edge_mm_min",
+      "calibrate motion.wet_arrival_mm",
       "calibrate motion.paper_approach_mm",
-      "calibrate motion.pressure_z_mm_min",
       "calibrate motion.wet_max_xy_acceleration_mm_s2",
       "calibrate motion.contact_max_z_acceleration_mm_s2",
       "water: calibrate contact feed",
@@ -193,8 +191,7 @@
       "missing current-profile evidence: ink_to_color_inspection",
       "missing current-profile evidence: paper_contact",
       "missing current-profile evidence: microsegment_response",
-      "missing current-profile evidence: registration_repeatability",
-      "Layout D requires explicit continuous_sheet or adjacent_panels substrate assembly"
+      "missing current-profile evidence: registration_repeatability"
     ]
   },
   "schema": "datascape.preparation_report.v0.3",

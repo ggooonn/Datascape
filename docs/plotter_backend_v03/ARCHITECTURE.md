@@ -50,11 +50,26 @@ Violations block export. The operator must adjust/revalidate controller settings
 outside this program if necessary; no automatic acceleration/YAML changes occur.
 
 Wet-loaded XY travels include configurable slow departure/arrival lengths and
-feed caps. Intermediate XY points are inserted only in lifted travel. Drawing
+feed caps (`wet_departure_mm/mm_min`, `wet_arrival_mm/mm_min`). Short travels
+scale both end distances proportionally, without overlap or overshoot. The
+provisional policy is 3,000 → 9,000 → 3,000 mm/min. Intermediate XY points are inserted only in lifted travel. Drawing
 vertices and pressure are never inserted or removed. `partially_depleted` means
 accumulated loading distance exceeded its experimental threshold, not physically
 dry. XYZ pressure changes remain on the original synchronized G1 segments;
 rapid changes reduce commanded feed rather than rewriting intent.
+
+Paper engagement now has independent `paper_approach_mm_min`,
+`paper_contact_mm_min`, `paper_release_mm_min` and `pressure_z_mm_min` controls.
+Fast descent stops at measured `paper_approach_mm` above Z0. Initial contact and
+first compression use the paper-contact feed, with the pressure-Z cap also
+enforced on compression. Release returns to Z0 and then slowly to the same
+verified no-contact boundary before fast retraction to hover at
+`z_travel_mm_min`. None of these bookend moves inserts an artistic sample.
+`contact_mm_min` remains the independent station-contact ceiling alongside each
+station's calibrated feed; fast paper settings never raise liquid/PURGE feeds.
+Changing these values invalidates the relevant motion/contact evidence and
+profile-bound authorization. Missing new fields fail validation; there is no
+silent reuse of the former paper/station contact coupling.
 
 Requested drawing feed is a 3D feed ceiling. When Z changes, resulting XY speed
 can be below 5,000 mm/min even before acceleration and junction limits. Candidate
@@ -106,9 +121,21 @@ XY at global clearance, without descending into a station or using liquid data.
 
 Metrics separate original XY drawing distance, synchronized 3D drawing distance,
 non-drawing 3D travel, station access AND return transfers, station operation distance and commanded-feed
-time by action. An additional rest-to-rest-per-segment time model uses measured
-axis acceleration. Neither model reproduces all FluidNC lookahead/step quantization
-or proves physical duration. Manual interventions and drying remain null. Station
+time by action. `production.timing` also partitions every motion/dwell into
+drawing, paper engagement, ordinary non-drawing travel, station transfer or
+station handling, with station returns counted once. Its acceleration-sensitive
+model uses per-axis projected rates/accelerations, junction-deviation corner
+limits and reverse braking/forward acceleration passes, followed by triangular
+or trapezoidal segment integration. Collinear feed changes cannot occur
+instantaneously; reversals and G4/M0 break motion continuity. Zero-length moves
+and comment/lineage markers do not force stops.
+
+The model follows the constraints reviewed in upstream FluidNC Planner.cpp;
+it assumes sufficient full lookahead and uninterrupted streaming. It does not
+emulate finite planner-buffer occupancy, step rounding, installed firmware or
+serial/CPU overhead, and does not approve brush acceleration. The separate
+stop-each-segment sensitivity model is retained. Neither is a verified physical
+bound or duration. Manual interventions and drying remain null. Station
 travel becomes spatially accounted for only in measured or explicitly synthetic
 trajectories; the synthetic examples are not Spring time estimates.
 

@@ -157,3 +157,27 @@ The scenario intentionally uses nominal unverified station XY and invented Z,
 curve, feed/contact/dwell/dynamic assumptions. It writes no G-code or physical
 trajectory files. Physical station travel and total duration remain null; the
 reported numerical scenario is not measured calibration. See RESULTS.md.
+
+
+## Focused motion-speed comparison
+
+```sh
+PYTHONPATH=src python -m datascape.gcode.production.motion_comparison \
+  --machine /absolute/offline/spring.machine.json \
+  --provenance /absolute/offline/spring.provenance.json \
+  --s3a-order config/plotter_v03/spring_s3a_order.json \
+  --scenario config/plotter_v03/cost_scenario.synthetic.json \
+  --controller-candidate hardware/fluidnc/config_DEV_2026-10-10_UNVERIFIED.yaml \
+  --before docs/plotter_backend_v03/review/A_D_cost_recalculation.json \
+  --output /absolute/offline/A-D-motion-comparison
+```
+
+The output directory must be new. This verifies serialized A/D plans, exact
+pressure lineage and D continuity, then compares the requested 3×3 approach/
+contact grid and three wet-travel policies on unchanged motion geometry. It
+writes plans and a report, never G-code or executable trajectory files. Two
+explicitly synthetic dynamics cases are reported. The DEV YAML is read only;
+its rates/accelerations do not establish installed configuration or authorize
+brush motion. Its absent junction deviation is explicitly assumed 0.01 mm.
+See [MOTION_AND_TIME.md](MOTION_AND_TIME.md) for the categories, limitations,
+conditional target assessment and physical commissioning requirements.

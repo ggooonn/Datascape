@@ -60,6 +60,8 @@ class Command:
     message: str = ''
     projected_acceleration_mm_s2: float | None = None
     axis_velocity_mm_min: tuple | None = None
+    time_category: str = ''
+    travel_phase: str = ''
 
 
 class Builder:
@@ -71,6 +73,7 @@ class Builder:
         self.nominal_seconds = 0.; self.stop_segment_seconds = 0.; self.seconds_by_action = Counter()
         require_path(self.position, self.position, self.m)
         self.in_paper = False; self.last_panel = None; self.at_station = False
+        self.time_context = None
 
     def move(self, target, feed, action, state='ordinary_travel', **lineage):
         if not vector(target) or not number(feed, True): raise ValueError('invalid spatial motion')
@@ -88,9 +91,13 @@ class Builder:
             self.seconds_by_action[action] += length/speed*60
             self.stop_segment_seconds += rest_to_rest_seconds(length, speed, acceleration)
         else: axis_rates = (0., 0., 0.)
+        category = self.time_context or ('drawing' if action == 'draw' else
+            'paper_engagement' if action in ('approach', 'initial_contact', 'pressure_variation',
+                'release', 'paper_release_clearance', 'retract') else
+            'station_handling' if action.startswith('station_') else 'non_drawing_travel')
         self.commands.append(Command('move', action, target, speed, state,
                                      projected_acceleration_mm_s2=acceleration,
-                                     axis_velocity_mm_min=axis_rates, **lineage))
+                                     axis_velocity_mm_min=axis_rates, time_category=category, **lineage))
         if speed < feed-1e-9: self.counts['feed_limited_segments'] += 1
         self.counts[action] += 1
         self.lengths['synchronized_drawing_3d_mm' if action == 'draw' else 'non_draw_mm'] += length
@@ -99,7 +106,7 @@ class Builder:
 
     def dwell(self, seconds, action):
         if not number(seconds) or seconds < 0: raise ValueError('invalid dwell')
-        self.commands.append(Command('dwell', action, seconds=seconds))
+        self.commands.append(Command('dwell', action, seconds=seconds, time_category='station_handling'))
         self.nominal_seconds += seconds; self.stop_segment_seconds += seconds
         self.seconds_by_action[action] += seconds
         self.counts[action] += 1
@@ -120,21 +127,24 @@ class Builder:
         # Travel-only segmentation: low-speed wet departure AND arrival. FluidNC
         # lookahead handles acceleration; no per-move acceleration command exists.
         if state == 'wet_loaded' and length:
-            edge = min(self.v['wet_departure_mm'], length/2)
-            for f, cap in ((edge/length, self.v['wet_edge_mm_min']),
-                           (1-edge/length, feed), (1., self.v['wet_edge_mm_min'])):
+            departure, arrival = self.v['wet_departure_mm'], self.v['wet_arrival_mm']
+            scale = min(1., length/(departure+arrival))
+            for phase, f, cap in (('departure', departure*scale/length, self.v['wet_departure_mm_min']),
+                           ('main', 1-arrival*scale/length, feed), ('arrival', 1., self.v['wet_arrival_mm_min'])):
                 p = tuple(a+f*(b-a) for a, b in zip(start, end))
-                self.move(p, min(feed, cap), 'travel', state)
+                self.move(p, min(feed, cap), 'travel', state, travel_phase=phase)
         else:
             self.move(end, feed, 'travel', state)
 
     def park(self, state='ordinary_travel'):
         p = tuple(self.v['park_xyz']); before = self.lengths['non_draw_mm']
+        self.time_context = 'station_transfer' if self.at_station else None
         self.lift(max(self.v['station_clearance_mm'], p[2]))
         self.xy(p[:2], self.position[2], state)
         self.move(p, self.v['z_travel_mm_min'], 'park')
         if self.at_station: self.lengths['station_to_park_3d_mm'] += self.lengths['non_draw_mm']-before
         self.in_paper = False; self.last_panel = None; self.at_station = False
+        self.time_context = None
 
     def pause(self, reason, state='ordinary_travel'):
         self.park(state)
@@ -142,6 +152,8 @@ class Builder:
         self.counts['manual_checkpoint'] += 1
 
     def result(self):
+        from .timing import estimate_commands
+        timing = estimate_commands(self.commands, self.profile)
         self.lengths['station_transfer_3d_mm'] = sum(self.lengths[k] for k in ('station_access_3d_mm','station_return_3d_mm','station_to_park_3d_mm'))
         return {'counts': dict(self.counts), 'distances': dict(self.lengths),
                 'commanded_feed_subtotal_seconds': self.nominal_seconds,
@@ -151,7 +163,8 @@ class Builder:
                 'controller_reached_speeds_verified': False,
                 'full_job_time_verified': False,
                 'M0_count': sum(c.kind == 'pause' for c in self.commands),
-                'M0_reasons': [c.message for c in self.commands if c.kind == 'pause']}
+                'M0_reasons': [c.message for c in self.commands if c.kind == 'pause'],
+                'timing': timing}
 
 
 def station_points(station):
@@ -255,7 +268,9 @@ class Materials:
         if not number(st['feed_mm_min'], True): raise ValueError('station operation feed must be positive')
         # Approach above the station at GLOBAL clearance, then descend vertically.
         access_before = b.lengths['non_draw_mm']
+        b.time_context = 'station_transfer'
         b.xy(dip[:2], b.v['station_clearance_mm'], self.state)
+        b.time_context = 'station_handling'
         b.lengths['station_access_3d_mm'] += b.lengths['non_draw_mm']-access_before
         approach = (*dip[:2], st['contact_box_xyz'][1][2])
         b.move(approach, b.v['station_approach_mm_min'], 'station_approach', 'station_approach')
@@ -271,6 +286,7 @@ class Materials:
         b.lift(b.v['station_clearance_mm'])
         b.lengths['station_retract_3d_mm'] += b.lengths['non_draw_mm']-retract_before
         b.in_paper = False; b.last_panel = None; b.at_station = True
+        b.time_context = None
         b.marker(action, role)
 
     def wash(self):
@@ -329,19 +345,26 @@ def draw_fragment(b, fragment, material, stage):
     if not b.in_paper or b.last_panel != fragment.panel: height = b.v['station_clearance_mm']
     state = 'ordinary_travel' if material is None else material.state
     return_before = b.lengths['non_draw_mm']
+    b.time_context = 'station_transfer' if b.at_station else None
     b.xy(fragment.work_xy[0], height, state)
     b.move((*fragment.work_xy[0], b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'paper_hover')
     if b.at_station: b.lengths['station_return_3d_mm'] += b.lengths['non_draw_mm']-return_before
     b.at_station = False
+    b.time_context = None
     for e in stroke_events(fragment, settings):
         if e.action in (Action.LIFT, Action.TRAVEL): continue
         z = b.v['paper_hover_mm'] if stage == 'air' else e.preview_z_mm
         xy = e.work_xy
         action = e.action.value
-        feed = b.v['draw_mm_min'] if e.action == Action.DRAW else b.v['contact_mm_min']
+        feed = {Action.DRAW: b.v['draw_mm_min'], Action.APPROACH: b.v['paper_approach_mm_min'],
+                Action.CONTACT: b.v['paper_contact_mm_min'], Action.PRESSURE: b.v['paper_contact_mm_min'],
+                Action.RELEASE: b.v['paper_release_mm_min']}[e.action]
         b.move((*xy, z), feed, action, state, **lineage,
                source_vertex=e.source_vertex, artistic_pressure=e.artistic_pressure)
-    b.move((*fragment.work_xy[-1], b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'lift', **lineage)
+    if stage != 'air':
+        b.move((*fragment.work_xy[-1], b.v['paper_approach_mm']), b.v['paper_release_mm_min'],
+               'paper_release_clearance', state, **lineage)
+    b.move((*fragment.work_xy[-1], b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'retract', state, **lineage)
     b.in_paper = True; b.last_panel = fragment.panel
 
 

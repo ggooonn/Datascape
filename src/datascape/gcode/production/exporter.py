@@ -75,11 +75,23 @@ def readback(text, commands, profile, stage):
         else: raise ValueError('unapproved G-code command: '+line)
     expected = [c for c in commands if c.kind != 'marker']
     if len(expected) != len(parsed): raise ValueError('G-code/IR command coverage mismatch')
+    position = tuple(profile.data['machine']['start_work_xyz'])
     for c, row in zip(expected, parsed):
         if row[0] != c.kind: raise ValueError('G-code action ordering mismatch')
         if c.kind == 'move':
             if any(abs(a-b) > 5.1e-10 for a, b in zip(c.xyz, row[1])) or abs(c.feed_mm_min-row[2]) > 5.1e-10:
                 raise ValueError('serialized coordinate/feed differs from planned motion')
+            from math import dist
+            length = dist(position, row[1]); motion = profile.data['motion']
+            if stage != 'calibration':
+                from .timing import requested_feed
+                cap = requested_feed((length, (), c.feed_mm_min, c.time_category,
+                                      c.action, c.travel_state, c.travel_phase), motion)
+                if row[2] > cap+1e-6: raise ValueError('serialized feed exceeds motion-policy cap')
+            z_cap = motion['pressure_z_mm_min'] if c.action in ('draw','pressure_variation') else motion['z_travel_mm_min']
+            if length and abs(row[1][2]-position[2])/length*row[2] > z_cap+1e-6:
+                raise ValueError('serialized Z velocity exceeds calibrated limit')
+            position = row[1]
         if c.kind == 'dwell' and abs(c.seconds-row[1]) > 5.1e-10:
             raise ValueError('serialized dwell mismatch')
     if stage == 'calibration' and expected[0].kind != 'pause':
@@ -182,10 +194,13 @@ def export_calibration(request, profile, authorization, output):
             b.pause('BRUSH TEST '+str(i)+': manually set recorded loading; inspect/measure width, continuity and recovery after test')
             b.xy(line['start_xy'], b.v['station_clearance_mm'])
             x, y = line['start_xy']
-            b.move((x, y, 0), b.v['contact_mm_min'], 'initial_contact')
-            b.move((x, y, z), b.v['contact_mm_min'], 'calibration_compression')
+            b.move((x, y, b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'paper_hover')
+            b.move((x, y, b.v['paper_approach_mm']), b.v['paper_approach_mm_min'], 'approach')
+            b.move((x, y, 0), b.v['paper_contact_mm_min'], 'initial_contact')
+            b.move((x, y, z), b.v['paper_contact_mm_min'], 'calibration_compression')
             b.move((*line['end_xy'], z), line['feed_mm_min'], 'draw')
-            b.move((*line['end_xy'], 0), b.v['contact_mm_min'], 'release')
+            b.move((*line['end_xy'], 0), b.v['paper_release_mm_min'], 'release')
+            b.move((*line['end_xy'], b.v['paper_approach_mm']), b.v['paper_release_mm_min'], 'paper_release_clearance')
             b.lift(b.v['paper_hover_mm'])
         b.pause('CALIBRATION COMPLETE: record observations; do not automatically mark evidence passed')
         text = _serialize(b.commands, profile, plan_hash, 'CALIBRATION', 'calibration')

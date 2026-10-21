@@ -29,6 +29,30 @@ completed. Ink-only painting checks the relevant ink profile/stations without
 requiring unused color profiles. Separate profile copies may be retained per
 brush, medium, paper setup and test condition.
 
+## Paper-speed candidates and profile migration
+
+Candidate feeds are draw 5,000, ordinary XY 12,000, general Z 6,000,
+non-contact paper approach 5,000, paper contact/release up to 2,000 and pressure Z
+up to 2,000 mm/min. Wet travel is provisionally 3,000 → 9,000 → 3,000. All are
+unapproved test candidates, not measured performance. Keep the approach boundary,
+wet departure/arrival distances and allowable accelerations unset until measured.
+
+Existing local profiles must add `paper_approach_mm_min`,
+`paper_contact_mm_min`, `paper_release_mm_min`, `wet_arrival_mm` and separate
+`wet_departure_mm_min` / `wet_arrival_mm_min` in place of `wet_edge_mm_min`.
+The old `contact_mm_min` now caps station contact only; each stone/palette/PURGE
+also retains its own calibrated feed. No paper speed propagates to stations.
+The measured approach boundary must clear the highest paper/fixture deviation
+and brush recovery before fast descent or retraction is allowed. Revalidate
+paper-contact, motion, microsegment and relevant wet-travel evidence after speed
+changes. The installed global accelerations must still fit measured brush
+limits; the software never raises them or changes YAML automatically.
+
+See [motion/time comparison](MOTION_AND_TIME.md) for the focused synthetic
+comparisons and the difference between candidate controller values and measured
+settings. Calibration examples now use the same separated approach/contact/
+release sequence as production, with their intentional inspection pauses.
+
 ## Stage evidence and authorization
 
 Run `readiness` to obtain blockers and `preferred_evidence_scope_sha256` values.
