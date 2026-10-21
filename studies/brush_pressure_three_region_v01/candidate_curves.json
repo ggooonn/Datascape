@@ -1,0 +1,282 @@
+{
+  "schema": "datascape.unmeasured_response_candidates.v01",
+  "backend_pin": "12b28bd5b7ad575b1438ed5af61618746c7effe9",
+  "maximum_depths_are_unapproved": true,
+  "principal_pressure_regions": [
+    0.2,
+    0.4,
+    0.6,
+    0.93
+  ],
+  "three_region_remainder_fractions_after_3mm": {
+    ".4": 0.08,
+    ".6": 0.24,
+    ".93": 0.85
+  },
+  "curves": [
+    {
+      "id": "global_linear_10",
+      "model": "global_linear",
+      "maximum_compression_mm": 10,
+      "knots": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -10
+        ]
+      ],
+      "status": "unmeasured_offline_candidate",
+      "satisfies_pressure_0_2_compression_3mm": false,
+      "interpolation": "piecewise_linear",
+      "extrapolation": "reject"
+    },
+    {
+      "id": "anchored_linear_10",
+      "model": "anchored_linear",
+      "maximum_compression_mm": 10,
+      "knots": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -3.0
+        ],
+        [
+          1.0,
+          -10
+        ]
+      ],
+      "status": "unmeasured_offline_candidate",
+      "satisfies_pressure_0_2_compression_3mm": true,
+      "interpolation": "piecewise_linear",
+      "extrapolation": "reject"
+    },
+    {
+      "id": "convex_reference_10",
+      "model": "convex_reference",
+      "maximum_compression_mm": 10,
+      "knots": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -3.0
+        ],
+        [
+          0.3,
+          -3.109375
+        ],
+        [
+          0.4,
+          -3.4375
+        ],
+        [
+          0.5,
+          -3.9843749999999996
+        ],
+        [
+          0.6,
+          -4.75
+        ],
+        [
+          0.7,
+          -5.734374999999999
+        ],
+        [
+          0.8,
+          -6.937500000000002
+        ],
+        [
+          0.9,
+          -8.359374999999998
+        ],
+        [
+          0.93,
+          -8.82859375
+        ],
+        [
+          1.0,
+          -10.0
+        ]
+      ],
+      "status": "unmeasured_offline_candidate",
+      "satisfies_pressure_0_2_compression_3mm": true,
+      "interpolation": "piecewise_linear",
+      "extrapolation": "reject"
+    },
+    {
+      "id": "three_region_10",
+      "model": "three_region",
+      "maximum_compression_mm": 10,
+      "knots": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -3.0
+        ],
+        [
+          0.4,
+          -3.56
+        ],
+        [
+          0.6,
+          -4.68
+        ],
+        [
+          0.93,
+          -8.95
+        ],
+        [
+          1.0,
+          -10.0
+        ]
+      ],
+      "status": "unmeasured_offline_candidate",
+      "satisfies_pressure_0_2_compression_3mm": true,
+      "interpolation": "piecewise_linear",
+      "extrapolation": "reject"
+    },
+    {
+      "id": "global_linear_12",
+      "model": "global_linear",
+      "maximum_compression_mm": 12,
+      "knots": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -12
+        ]
+      ],
+      "status": "unmeasured_offline_candidate",
+      "satisfies_pressure_0_2_compression_3mm": false,
+      "interpolation": "piecewise_linear",
+      "extrapolation": "reject"
+    },
+    {
+      "id": "anchored_linear_12",
+      "model": "anchored_linear",
+      "maximum_compression_mm": 12,
+      "knots": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -3.0
+        ],
+        [
+          1.0,
+          -12
+        ]
+      ],
+      "status": "unmeasured_offline_candidate",
+      "satisfies_pressure_0_2_compression_3mm": true,
+      "interpolation": "piecewise_linear",
+      "extrapolation": "reject"
+    },
+    {
+      "id": "convex_reference_12",
+      "model": "convex_reference",
+      "maximum_compression_mm": 12,
+      "knots": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -3.0
+        ],
+        [
+          0.3,
+          -3.140625
+        ],
+        [
+          0.4,
+          -3.5625
+        ],
+        [
+          0.5,
+          -4.265625
+        ],
+        [
+          0.6,
+          -5.25
+        ],
+        [
+          0.7,
+          -6.515624999999999
+        ],
+        [
+          0.8,
+          -8.062500000000002
+        ],
+        [
+          0.9,
+          -9.890624999999998
+        ],
+        [
+          0.93,
+          -10.49390625
+        ],
+        [
+          1.0,
+          -12.0
+        ]
+      ],
+      "status": "unmeasured_offline_candidate",
+      "satisfies_pressure_0_2_compression_3mm": true,
+      "interpolation": "piecewise_linear",
+      "extrapolation": "reject"
+    },
+    {
+      "id": "three_region_12",
+      "model": "three_region",
+      "maximum_compression_mm": 12,
+      "knots": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -3.0
+        ],
+        [
+          0.4,
+          -3.7199999999999998
+        ],
+        [
+          0.6,
+          -5.16
+        ],
+        [
+          0.93,
+          -10.649999999999999
+        ],
+        [
+          1.0,
+          -12.0
+        ]
+      ],
+      "status": "unmeasured_offline_candidate",
+      "satisfies_pressure_0_2_compression_3mm": true,
+      "interpolation": "piecewise_linear",
+      "extrapolation": "reject"
+    }
+  ]
+}

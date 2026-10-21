@@ -1,0 +1,13 @@
+test_all_candidates_monotonic_no_extrapolation_and_explicit_linear_anchor_difference (test_brush_pressure_study.ThreeRegionStudyTests.test_all_candidates_monotonic_no_extrapolation_and_explicit_linear_anchor_difference) ... ok
+test_benchmark_is_a_design_with_explicit_depth_progression_not_a_machine_job (test_brush_pressure_study.ThreeRegionStudyTests.test_benchmark_is_a_design_with_explicit_depth_progression_not_a_machine_job) ... ok
+test_editable_config_reuses_mapper_and_rejects_reversal_or_false_measured_status (test_brush_pressure_study.ThreeRegionStudyTests.test_editable_config_reuses_mapper_and_rejects_reversal_or_false_measured_status) ... ok
+test_exact_preferred_values_and_convex_piecewise_reference (test_brush_pressure_study.ThreeRegionStudyTests.test_exact_preferred_values_and_convex_piecewise_reference) ... ok
+test_first_depth_request_uses_existing_schema_but_still_requires_physical_gate (test_brush_pressure_study.ThreeRegionStudyTests.test_first_depth_request_uses_existing_schema_but_still_requires_physical_gate) ... ok
+test_rebuilt_deep_trajectories_preserve_pressure_and_seam_without_M0 (test_brush_pressure_study.ThreeRegionStudyTests.test_rebuilt_deep_trajectories_preserve_pressure_and_seam_without_M0) ... ok
+test_six_knots_mean_three_principal_regions_and_two_outer_domains (test_brush_pressure_study.ThreeRegionStudyTests.test_six_knots_mean_three_principal_regions_and_two_outer_domains) ... ok
+test_unmeasured_candidates_cannot_authorize_or_serialize_real_Spring (test_brush_pressure_study.ThreeRegionStudyTests.test_unmeasured_candidates_cannot_authorize_or_serialize_real_Spring) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.037s
+
+OK

@@ -1,0 +1,31 @@
+{
+  "backend_pin": "12b28bd5b7ad575b1438ed5af61618746c7effe9",
+  "source_files_executed": false,
+  "reviews": [
+    {
+      "source": "artworks/2026-03-17_geumgang/original/source.py",
+      "sha256": "fb6a5ae288097a82842e4e6eea159369a3463d174382c11837d6900f42e75108",
+      "drawing": "Ink base -4 to -8, color base -4.5 plus +/-1 before shared +/-2.25 modulation/mist fade; final dynamic Z clamp [-8,0]. Z_TOUCH=-3.5 is an export/contact-selection threshold; cubic spline interpolation may overshoot the input clamp.",
+      "stations": "Z_DIP=-11 for palette/ink refill, not drawing compression.",
+      "coordinate_reference": "Z_HOVER=Z_SAFE=0; physical paper first-contact reference not established as this zero.",
+      "transferable_physical_calibration": false
+    },
+    {
+      "source": "artworks/2026-08-15_taebaek_yang/original/source.py",
+      "sha256": "1a035cb3f18cf183d48650e8075491fac5e647e3e1baceb1e5a8ea69d4bb20f6",
+      "drawing": "Ink base -10 to -3.5 plus +/-0.75 modulation, input clamp [-10.5,0]. Color base -6 to -2 plus +/-0.75, input clamp [-10,0]. Export uses cubic splines; clamp is not a proof of final spline extrema.",
+      "stations": "Pigment dip -15 (ink) or -16 (colors), water -13; distinct station geometry.",
+      "coordinate_reference": "Z_HOVER=Z_SAFE=0; ink/color selection thresholds -2/-3.5 are not measured current G54 contact zero.",
+      "transferable_physical_calibration": false
+    },
+    {
+      "source": "artworks/2026-08-20_taebaek_eum/original/source.py",
+      "sha256": "16505bc70f12db977658ac44670ad40546d27dedfe0873bb6bf759e7cf735ea3",
+      "drawing": "All final panel drawing vertices use Z_BASE_DRAW=-5.3 plus local-Y tilt +1 to -1: -4.3 to -6.3. The source comment intends 0.3-mm compression relative to central contact -5.0.",
+      "stations": "Silver/gold dip -12; water -11. These do not imply 12-mm paper compression.",
+      "coordinate_reference": "Hover/safe 0; local tilt-compensated paper contact reference differs from new first-contact Z0.",
+      "transferable_physical_calibration": false
+    }
+  ],
+  "interpretation": "Historical coordinates and stated design intent, not measured current compression or widths"
+}

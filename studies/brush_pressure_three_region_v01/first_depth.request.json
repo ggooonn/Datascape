@@ -1,0 +1,19 @@
+{
+  "schema": "datascape.calibration_plan.v0.3",
+  "station_roles": [],
+  "brush_lines": [
+    {
+      "start_xy": [
+        20,
+        20
+      ],
+      "end_xy": [
+        40,
+        20
+      ],
+      "z_mm": -0.25,
+      "feed_mm_min": 500
+    }
+  ],
+  "notes": "UNAPPROVED first-depth candidate only; no G-code. Replace XY if the measured free coupon area differs. Use only after current machine/frame/air/contact-envelope checks and separate calibration authorization. Set candidate paper_contact_mm_min and paper_release_mm_min to 100 in a local test profile only after approval; do not use production 2000 by default for the first test. Inspect and record before proposing any deeper request."
+}

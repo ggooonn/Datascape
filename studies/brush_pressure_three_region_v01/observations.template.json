@@ -1,0 +1,30 @@
+{
+  "status": "blank_physical_observation_template",
+  "production_approval": false,
+  "observations": [
+    {
+      "test_id": null,
+      "curve_id": null,
+      "medium": null,
+      "pressure_or_direct_depth": null,
+      "commanded_and_measured_Z_mm": null,
+      "free_bristle_length_mm": null,
+      "mounting": null,
+      "paper_and_mounting": null,
+      "liquid_loading_and_dilution": null,
+      "draw_contact_release_feeds": null,
+      "installed_acceleration_and_junction": null,
+      "width_start_mid_end_mm": null,
+      "width_after_drying_mm": null,
+      "continuity": null,
+      "pigment_distribution": null,
+      "paper_response": null,
+      "recovery_time_and_clearance": null,
+      "photo_scale_and_id": null,
+      "operator": null,
+      "date": null,
+      "pass_reduce_stop": null,
+      "notes": null
+    }
+  ]
+}
