@@ -20,7 +20,8 @@
     "mounted_brush_id": null,
     "hardware_version": null,
     "substrate_id": "semi-sized Xuan paper, edge fixed",
-    "paper_surface_above_bed_mm": null
+    "paper_surface_above_bed_mm": null,
+    "substrate_assembly": "unconfirmed"
   },
   "motion": {
     "paper_hover_mm": 10,
@@ -47,11 +48,11 @@
   },
   "material": {
     "liquid_levels": "manual_reference",
-    "ink_reload_mm": 2000,
-    "color_reload_mm": 1000,
-    "water_change_every_washes": 1,
-    "manual_refill_every_loads": 1,
-    "end_cleanup": true,
+    "ink_reload_mm": 1000,
+    "color_reload_mm": 800,
+    "water_change_every_washes": null,
+    "manual_refill_every_loads": null,
+    "end_cleanup": false,
     "color_order": [
       "C1",
       "D1",
@@ -121,14 +122,23 @@
       "dwell_seconds": null,
       "hardware_id": "PURGE",
       "kind": "absorbent",
-      "center_xy": null,
+      "center_xy": [
+        840.0,
+        137.5
+      ],
       "surface_z": null,
       "compression_mm": null,
       "wipe_xy_mm": [
         0,
         0
       ],
-      "repetitions": 1
+      "repetitions": 1,
+      "material_overrides": {},
+      "nominal_area_mm": [
+        70,
+        70
+      ],
+      "notes": "Nominal PURGE center/area only; actual G54 registration, contact volume and Z still require measurement. Centered vertical contact is the initial operation."
     },
     "A1": {
       "status": "unverified",

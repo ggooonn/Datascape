@@ -64,7 +64,8 @@
     "mounted_brush_id": "SYNTHETIC-NOT-A-BRUSH",
     "hardware_version": "unverified",
     "substrate_id": "unspecified",
-    "paper_surface_above_bed_mm": 3
+    "paper_surface_above_bed_mm": 3,
+    "substrate_assembly": "continuous_sheet"
   },
   "motion": {
     "paper_hover_mm": 10,
@@ -94,11 +95,11 @@
   },
   "material": {
     "liquid_levels": "manual_reference",
-    "ink_reload_mm": 2000,
-    "color_reload_mm": 1000,
-    "water_change_every_washes": 1,
-    "manual_refill_every_loads": 10,
-    "end_cleanup": true,
+    "ink_reload_mm": 1000,
+    "color_reload_mm": 800,
+    "water_change_every_washes": null,
+    "manual_refill_every_loads": null,
+    "end_cleanup": false,
     "color_order": [
       "C1",
       "D1"
@@ -193,13 +194,13 @@
       "coordinate_frame": "G54",
       "contact_box_xyz": [
         [
-          680,
-          280,
+          805,
+          102.5,
           10
         ],
         [
-          720,
-          320,
+          875,
+          172.5,
           20
         ]
       ],
@@ -208,8 +209,8 @@
       "hardware_id": "PURGE",
       "kind": "absorbent",
       "center_xy": [
-        700,
-        300
+        840,
+        137.5
       ],
       "surface_z": 17,
       "compression_mm": 0.4,
@@ -217,7 +218,8 @@
         0,
         0
       ],
-      "repetitions": 1
+      "repetitions": 1,
+      "material_overrides": {}
     },
     "A2": {
       "status": "synthetic_fixture",

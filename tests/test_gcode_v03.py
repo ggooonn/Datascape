@@ -55,7 +55,10 @@ def measured_test_profile():
 def auth(p, manifest, stage, jobs):
     return {'stage':stage,'profile_sha256':p.sha256,'plan_sha256':digest(manifest),
             'job_ids':list(jobs),'operator':'synthetic-test','date':'synthetic-test',
-            'explicit_operator_authorization':True}
+            'explicit_operator_authorization':True,
+            'pre_run_confirmations':{name:{k:True for k in ('coordinates_and_start_verified', 'paper_and_clearance_verified',
+                'tool_and_controller_state_verified','brush_clean_and_prepared','materials_and_clean_water_prepared',
+                'ink_dry_and_registration_verified','continuous_substrate_or_tested_seam_verified')} for name in jobs}}
 
 
 class ProfileAndGeometryTests(unittest.TestCase):
@@ -181,7 +184,7 @@ class StationAndMaterialTests(unittest.TestCase):
 
     def test_reload_deferred_to_original_source_boundary_and_overrun_recorded(self):
         jobs,_=plan(Layout('B'));b=Builder(fixture());mat=Materials(b)
-        unit=jobs['SHARED_INK'][0];mat.before(unit);n=len(b.commands);mat.distance=1999;mat.after(unit)
+        unit=jobs['SHARED_INK'][0];mat.before(unit);n=len(b.commands);mat.distance=999;mat.after(unit)
         self.assertEqual(len(b.commands),n)
         self.assertGreater(mat.overruns[-1]['overrun_mm'],0)
         mat.before(unit);self.assertEqual(mat.distance,0)
@@ -226,7 +229,7 @@ class ExportTests(unittest.TestCase):
                 text=path.read_text();active='\n'.join(x for x in text.splitlines() if not x.startswith(';'))
                 self.assertNotIn('G10',active);self.assertNotIn('G92 ',active)
                 executable=[x for x in text.splitlines() if x and not x.startswith(';')]
-                self.assertEqual(executable[1],'M0')
+                self.assertFalse(any(x=='M0' for x in executable))
 
     def test_missing_calibration_blocks_painting_and_atomic_failure_leaves_no_job(self):
         jobs,m=plan();p=measured_test_profile();bad=deepcopy(p.data);bad['stations']['C1']['immersion_mm']=30
@@ -281,7 +284,7 @@ class ReadbackAndReadinessTests(unittest.TestCase):
             self.assertTrue((out/'P1_COLOR.nc').exists())
             self.assertEqual(verify_export(out)['jobs']['P1_COLOR']['all_artistic_pressure_samples_verified'],6)
             text=(out/'P1_COLOR.nc').read_text();self.assertIn('Z-',text)
-            self.assertIn('INK/COLOR checkpoint',text)
+            self.assertNotIn('M0', '\n'.join(x for x in text.splitlines() if not x.startswith(';')))
             (out/'P1_COLOR.nc').write_text(text+'G10 L20 P1 X0\n')
             with self.assertRaises(ValueError):verify_export(out)
 
@@ -369,7 +372,7 @@ class SharedWorkflowBoundaryTests(unittest.TestCase):
     def test_shared_architecture_does_not_bypass_mandatory_split_panel_workflow(self):
         p=measured_test_profile();jobs,m=plan(Layout('B'))
         with tempfile.TemporaryDirectory() as d:
-            with self.assertRaisesRegex(ValueError,'separate panel'):
+            with self.assertRaisesRegex(ValueError,'B/C remain planning-only'):
                 export_jobs(jobs,m,p,'painting',auth(p,m,'painting',jobs),Path(d)/'out')
 
 

@@ -53,8 +53,17 @@ test_cli_readiness_reports_and_does_not_create_motion_files (test_gcode_v03.Work
 test_ink_job_does_not_require_unmeasured_color_profile (test_gcode_v03.WorkflowTests.test_ink_job_does_not_require_unmeasured_color_profile) ... ok
 test_optional_station_air_tour_stays_at_clearance_without_dipping (test_gcode_v03.WorkflowTests.test_optional_station_air_tour_stays_at_clearance_without_dipping) ... ok
 test_pressure_knot_change_keeps_machine_evidence_but_invalidates_brush_evidence (test_gcode_v03.WorkflowTests.test_pressure_knot_change_keeps_machine_evidence_but_invalidates_brush_evidence) ... ok
+test_A_four_jobs_share_paper_origin_and_D_two_jobs (test_gcode_v03_workflow.AutomaticWorkflowTests.test_A_four_jobs_share_paper_origin_and_D_two_jobs) ... ok
+test_D_continuity_and_services_never_interrupt_long_X300_source (test_gcode_v03_workflow.AutomaticWorkflowTests.test_D_continuity_and_services_never_interrupt_long_X300_source) ... ok
+test_automatic_reload_at_next_original_boundary_for_ink_and_color (test_gcode_v03_workflow.AutomaticWorkflowTests.test_automatic_reload_at_next_original_boundary_for_ink_and_color) ... ok
+test_centered_PURGE_has_only_vertical_contact_and_material_specific_parameters (test_gcode_v03_workflow.AutomaticWorkflowTests.test_centered_PURGE_has_only_vertical_contact_and_material_specific_parameters) ... ok
+test_color_starts_prepared_washes_only_between_colors_and_finishes_without_M0 (test_gcode_v03_workflow.AutomaticWorkflowTests.test_color_starts_prepared_washes_only_between_colors_and_finishes_without_M0) ... ok
+test_current_defaults_and_nominal_PURGE_remain_unmeasured (test_gcode_v03_workflow.AutomaticWorkflowTests.test_current_defaults_and_nominal_PURGE_remain_unmeasured) ... ok
+test_explicit_end_cleanup_is_optional_and_calibration_pauses_are_reported (test_gcode_v03_workflow.AutomaticWorkflowTests.test_explicit_end_cleanup_is_optional_and_calibration_pauses_are_reported) ... ok
+test_periodic_manual_pauses_are_explicit_opt_in_not_startup (test_gcode_v03_workflow.AutomaticWorkflowTests.test_periodic_manual_pauses_are_explicit_opt_in_not_startup) ... ok
+test_pre_run_confirmations_and_adjacent_D_seam_gate (test_gcode_v03_workflow.AutomaticWorkflowTests.test_pre_run_confirmations_and_adjacent_D_seam_gate) ... ok
 
 ----------------------------------------------------------------------
-Ran 55 tests in 0.210s
+Ran 64 tests in 0.280s
 
 OK (skipped=1)

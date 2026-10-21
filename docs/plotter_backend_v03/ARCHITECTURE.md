@@ -16,7 +16,11 @@ membership, G54 coordinates, layout/registration and source aggregate hash.
 No vector schema migration, pressure defaults, artistic resampling, simplification,
 merging, reversal or reconnection of gaps is used.
 
-A source is atomic for material services and restart within its job. Shared
+D uses a single FULL substrate primitive with no X=300 clipping or seam events.
+Every original stroke and pressure vertex is retained; serialized-plan and full
+trajectory audits check all 50 Spring crossing sources. Two adjacent substrates
+require a current physical continuous-seam contact test in addition to the usual
+calibration gates. A source is atomic for material services and restart within its job. Shared
 B/C IR keeps original fragment arc traversal, including P2-first crossings.
 Separate A panel jobs necessarily separate 50 source paths across sessions; 25
 start in P2 in original traversal. This temporal limitation is reported, not
@@ -101,7 +105,7 @@ An optional air station tour (`motion.air_station_roles`) visits measured statio
 XY at global clearance, without descending into a station or using liquid data.
 
 Metrics separate original XY drawing distance, synchronized 3D drawing distance,
-non-drawing 3D travel, station access, station operation distance and commanded-feed
+non-drawing 3D travel, station access AND return transfers, station operation distance and commanded-feed
 time by action. An additional rest-to-rest-per-segment time model uses measured
 axis acceleration. Neither model reproduces all FluidNC lookahead/step quantization
 or proves physical duration. Manual interventions and drying remain null. Station
@@ -110,12 +114,25 @@ trajectories; the synthetic examples are not Spring time estimates.
 
 ## Interruption and delivered-file checks
 
-M0 checkpoints occur at park after the initial no-motion verification gate.
-They assume no jogging, offset changes, tool changes or controller reset during
-the pause. If that assumption fails, abort and re-establish registration; never
-resume from an arbitrary G-code line. `--resume-after` regenerates an entire suffix
-at a completed original-source boundary, repeats start/cleaning/loading gates,
-and changes the plan hash/authorization. Ink remains ink-only and color color-only.
+Standard A/D ink/color programs have no routine M0. Operator confirmations are
+recorded in the job-bound authorization BEFORE execution: coordinate/start state,
+controller/tool state, paper/clearance, prepared clean brush and adequate supplies;
+color also confirms ink drying/registration, and D confirms a continuous substrate
+or tested seam. Export fails if confirmations are absent. No runtime G-code can
+query/conditionally compare offsets; the operator must check them before starting.
+
+Manual refill/water-change pauses are disabled by `null` intervals, while positive
+integers explicitly opt in after completed operations. End cleanup is optional;
+standard completion parks and ends with M2. All actual pause counts and reasons
+are derived from IR and checked against G-code. Small explicit calibration tests
+retain their intentional startup/inspection/recording pauses.
+
+After an interruption that invalidates state, abort and re-establish registration;
+never resume at an arbitrary G-code line. `--resume-after` regenerates a complete-
+source suffix with a fresh initial load and pre-run confirmations, changing the
+plan hash/authorization. The operator prepares a clean brush before restart;
+there is no redundant forced initial color wash. Ink remains ink-only and color
+color-only.
 
 `verify` rechecks all delivered file hashes, the dialect, coordinates, complete
 segments and each artistic sample against the saved plan. Use it after transfer

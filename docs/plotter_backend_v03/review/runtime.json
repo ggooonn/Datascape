@@ -1,5 +1,9 @@
 {
-  "elapsed_seconds": 19.120975952000663,
-  "max_RSS_KiB": 754224,
-  "exit_code": 0
+  "initial_PR27_A_preparation_record": {
+    "elapsed_seconds": 19.120975952000663,
+    "max_RSS_KiB": 754224,
+    "exit_code": 0
+  },
+  "focused_A_D_cost_and_full_sample_reverification_seconds": 77.392275143,
+  "hardware_executed": false
 }

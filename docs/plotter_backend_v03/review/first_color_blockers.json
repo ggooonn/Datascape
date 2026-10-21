@@ -1,7 +1,8 @@
 {
   "stage": "painting",
+  "layout": "D",
   "media": "color",
-  "profile_sha256": "4a3539fcd46f0a45b7f708e8cba7539f585fd3f0e6377ebfeb9c663662d184c7",
+  "profile_sha256": "b3edd072f1b1cf3c2a6e1338d39e96aaecfd31f3ed1d6ba9ca1df62dbbd902a9",
   "blocking_issues": [
     "profile status must be measured",
     "record mounted brush, hardware assembly and substrate identities",
@@ -122,7 +123,8 @@
     "missing current-profile evidence: ink_to_color_inspection",
     "missing current-profile evidence: paper_contact",
     "missing current-profile evidence: microsegment_response",
-    "missing current-profile evidence: registration_repeatability"
+    "missing current-profile evidence: registration_repeatability",
+    "Layout D requires explicit continuous_sheet or adjacent_panels substrate assembly"
   ],
   "operator_stage_authorization_still_required": true
 }

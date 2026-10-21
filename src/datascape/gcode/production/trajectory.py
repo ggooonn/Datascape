@@ -70,7 +70,7 @@ class Builder:
         self.commands = []; self.counts = Counter(); self.lengths = Counter()
         self.nominal_seconds = 0.; self.stop_segment_seconds = 0.; self.seconds_by_action = Counter()
         require_path(self.position, self.position, self.m)
-        self.in_paper = False; self.last_panel = None
+        self.in_paper = False; self.last_panel = None; self.at_station = False
 
     def move(self, target, feed, action, state='ordinary_travel', **lineage):
         if not vector(target) or not number(feed, True): raise ValueError('invalid spatial motion')
@@ -129,11 +129,12 @@ class Builder:
             self.move(end, feed, 'travel', state)
 
     def park(self, state='ordinary_travel'):
-        p = tuple(self.v['park_xyz'])
+        p = tuple(self.v['park_xyz']); before = self.lengths['non_draw_mm']
         self.lift(max(self.v['station_clearance_mm'], p[2]))
         self.xy(p[:2], self.position[2], state)
         self.move(p, self.v['z_travel_mm_min'], 'park')
-        self.in_paper = False; self.last_panel = None
+        if self.at_station: self.lengths['station_to_park_3d_mm'] += self.lengths['non_draw_mm']-before
+        self.in_paper = False; self.last_panel = None; self.at_station = False
 
     def pause(self, reason, state='ordinary_travel'):
         self.park(state)
@@ -141,13 +142,16 @@ class Builder:
         self.counts['manual_checkpoint'] += 1
 
     def result(self):
+        self.lengths['station_transfer_3d_mm'] = sum(self.lengths[k] for k in ('station_access_3d_mm','station_return_3d_mm','station_to_park_3d_mm'))
         return {'counts': dict(self.counts), 'distances': dict(self.lengths),
                 'commanded_feed_subtotal_seconds': self.nominal_seconds,
                 'stop_each_segment_model_seconds': self.stop_segment_seconds,
                 'commanded_feed_seconds_by_action': dict(self.seconds_by_action),
                 'manual_and_drying_seconds': None,
                 'controller_reached_speeds_verified': False,
-                'full_job_time_verified': False}
+                'full_job_time_verified': False,
+                'M0_count': sum(c.kind == 'pause' for c in self.commands),
+                'M0_reasons': [c.message for c in self.commands if c.kind == 'pause']}
 
 
 def station_points(station):
@@ -217,6 +221,18 @@ def station_points(station):
     raise ValueError('unknown physical station kind')
 
 
+def material_station(station, material):
+    """Optional calibrated absorbent compression/dwell per ink, color or slot."""
+    result = deepcopy(station)
+    overrides = result.get('material_overrides', {})
+    key = None if material is None else (material if material in overrides else ('ink' if material == 'ink' else 'color'))
+    values = overrides.get(key, {})
+    if not isinstance(values, dict) or set(values)-{'compression_mm', 'dwell_seconds'}:
+        raise ValueError('absorbent overrides may change only compression_mm and dwell_seconds')
+    result.update(values)
+    return result
+
+
 class Materials:
     def __init__(self, builder):
         self.b = builder; self.p = builder.profile.data['material']
@@ -228,8 +244,9 @@ class Materials:
         limit = self.p['ink_reload_mm'] if self.loaded == 'ink' else self.p['color_reload_mm']
         return 'partially_depleted' if self.distance >= limit else 'wet_loaded'
 
-    def station(self, role, action):
+    def station(self, role, action, material_key=None):
         b = self.b; st = deepcopy(b.profile.data['stations'][role])
+        if role == 'sponge': st = material_station(st, material_key or self.loaded)
         if action == 'controlled_rewet':
             st['immersion_mm'] = st['rewet_immersion_mm']
             st['dwell_seconds'] = st['rewet_dwell_seconds']
@@ -250,22 +267,28 @@ class Materials:
             b.dwell(st['dwell_seconds'], action+'_dwell')
             for p in points:
                 b.move(p, min(st['feed_mm_min'], b.v['contact_mm_min']), 'station_'+action, 'station_approach')
-        b.lift(b.v['station_clearance_mm']); b.in_paper = False; b.last_panel = None
+        retract_before = b.lengths['non_draw_mm']
+        b.lift(b.v['station_clearance_mm'])
+        b.lengths['station_retract_3d_mm'] += b.lengths['non_draw_mm']-retract_before
+        b.in_paper = False; b.last_panel = None; b.at_station = True
         b.marker(action, role)
 
     def wash(self):
-        if self.washes % self.p['water_change_every_washes'] == 0:
+        interval = self.p['water_change_every_washes']
+        if interval is not None and self.washes > 0 and self.washes % interval == 0:
             self.b.pause('CHANGE/INSPECT clean water and brush; restore manual reference levels; resume only without moving axes', self.state)
+        previous = self.loaded
         self.loaded = None; self.distance = 0.
         st = self.b.profile.data['stations']['water']; cycles = st['wash_cycles']
         if type(cycles) is not int or cycles < 1: raise ValueError('positive calibrated wash_cycles required')
         for _ in range(cycles): self.station('water', 'wash')
-        self.station('sponge', 'absorbent_contact')
+        self.station('sponge', 'absorbent_contact', previous)
         self.station('water', 'controlled_rewet')
         self.washes += 1; self.b.marker('full_wash')
 
     def load(self, slot, same_color=False):
-        if self.loads[slot] % self.p['manual_refill_every_loads'] == 0:
+        interval = self.p['manual_refill_every_loads']
+        if interval is not None and self.loads[slot] > 0 and self.loads[slot] % interval == 0:
             self.b.pause('VERIFY manually maintained liquid reference in '+slot+'; inspect brush; do not jog or change offsets', self.state)
         self.station('ink' if slot == 'ink' else slot, 'same_color_reload' if same_color else 'pigment_load')
         self.loads[slot] += 1; self.loaded = slot; self.distance = 0.
@@ -305,8 +328,11 @@ def draw_fragment(b, fragment, material, stage):
     height = b.v['paper_hover_mm']
     if not b.in_paper or b.last_panel != fragment.panel: height = b.v['station_clearance_mm']
     state = 'ordinary_travel' if material is None else material.state
+    return_before = b.lengths['non_draw_mm']
     b.xy(fragment.work_xy[0], height, state)
     b.move((*fragment.work_xy[0], b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'paper_hover')
+    if b.at_station: b.lengths['station_return_3d_mm'] += b.lengths['non_draw_mm']-return_before
+    b.at_station = False
     for e in stroke_events(fragment, settings):
         if e.action in (Action.LIFT, Action.TRAVEL): continue
         z = b.v['paper_hover_mm'] if stage == 'air' else e.preview_z_mm
@@ -321,21 +347,13 @@ def draw_fragment(b, fragment, material, stage):
 
 def build_job(profile, units, stage):
     b = Builder(profile); material = None if stage == 'air' else Materials(b)
-    b.commands.append(Command('pause', 'startup_verification', message='VERIFY homed/idle; G54 offset and MPos/WPos equal header; G92/TLO zero; override 100%; paper flat/registered; abort if mismatched'))
+    b.marker('pre_run_confirmation_required', 'Verify G54/start, paper, clean brush and supplies BEFORE starting; export authorization records operator confirmation')
     if stage == 'air':
         for role in profile.data['motion'].get('air_station_roles', []):
             st = profile.data['stations'][role]
             xy = st.get('center_xy') or st.get('deep_surface_xyz', [])[:2]
             if not vector(xy, 2): raise ValueError('measure station XY for optional non-contact station air tour')
             b.xy(xy, b.v['station_clearance_mm']); b.marker('station_air_only', role)
-    if material is not None:
-        medium = units[0][0].stroke.medium
-        if medium == 'color':
-            b.pause('INK/COLOR checkpoint: inspect ink, confirm substrate sufficiently dry and registration unchanged')
-            material.wash()
-            b.pause('INSPECT ink-to-color contamination after deep wash; manual brush correction if needed; do not move axes')
-        else:
-            b.pause('VERIFY clean brush and inkstone reference level before initial ink load')
     for n, unit in enumerate(units):
         if material is not None: material.before(unit)
         b.marker('source_begin', str(n), source_id=unit[0].stroke.origin_id)
@@ -344,7 +362,8 @@ def build_job(profile, units, stage):
         b.marker('source_complete', str(n), source_id=unit[0].stroke.origin_id)
     if material is not None and profile.data['material']['end_cleanup']:
         material.wash()
-    b.pause('JOB COMPLETE: manual review; ink/color jobs remain separate; do not concatenate or resume at an arbitrary line', 'ordinary_travel' if material is None else material.state)
+    b.park('ordinary_travel' if material is None else material.state)
+    b.marker('job_complete', 'Parked; program terminates with M2. Manual review/drying/preparation occurs between programs.')
     result = b.result()
     result['artwork_xy_drawing_mm'] = sum(hypot(q.x-p.x, q.y-p.y) for u in units for f in u for p,q in zip(f.stroke.points,f.stroke.points[1:]))
     result['threshold_overruns'] = [] if material is None else material.overruns

@@ -1,0 +1,163 @@
+{
+  "schema": "datascape.export_report.v0.3",
+  "stage": "fixture",
+  "profile_sha256": "0b419a25892ec858f3e9a1d5652ff600bf648d86801fd0db91dcda26dce8625f",
+  "plan_sha256": "ef2fb9558f07582c52b41c477f1f525d9d1d55958568a94706bc5de6471c5cbe",
+  "jobs": {
+    "SHARED_COLOR": {
+      "metrics": {
+        "counts": {
+          "pre_run_confirmation_required": 1,
+          "material_change": 2,
+          "travel": 18,
+          "station_approach": 6,
+          "station_pigment_load": 56,
+          "pigment_load_dwell": 2,
+          "lift": 11,
+          "pigment_load": 2,
+          "source_begin": 3,
+          "paper_hover": 3,
+          "approach": 3,
+          "initial_contact": 3,
+          "pressure_variation": 3,
+          "feed_limited_segments": 1,
+          "draw": 3,
+          "release": 3,
+          "source_complete": 3,
+          "station_wash": 4,
+          "wash_dwell": 2,
+          "wash": 2,
+          "station_absorbent_contact": 1,
+          "absorbent_contact_dwell": 1,
+          "absorbent_contact": 1,
+          "station_controlled_rewet": 2,
+          "controlled_rewet_dwell": 1,
+          "controlled_rewet": 1,
+          "full_wash": 1,
+          "park": 1,
+          "job_complete": 1
+        },
+        "distances": {
+          "non_draw_mm": 5158.550818125459,
+          "station_access_3d_mm": 2188.8324692754313,
+          "station_operation_mm": 300.46836481113996,
+          "station_retract_3d_mm": 119.40000000000009,
+          "station_return_3d_mm": 1686.096520661384,
+          "synchronized_drawing_3d_mm": 5.8659079454972485,
+          "station_transfer_3d_mm": 3874.928989936815
+        },
+        "commanded_feed_subtotal_seconds": 188.67835170002851,
+        "stop_each_segment_model_seconds": 230.9109924443675,
+        "commanded_feed_seconds_by_action": {
+          "travel": 30.70963668441419,
+          "station_approach": 20.8,
+          "station_pigment_load": 30.636617343749993,
+          "pigment_load_dwell": 0.2,
+          "lift": 1.934,
+          "paper_hover": 0.44,
+          "approach": 13.5,
+          "initial_contact": 1.5,
+          "pressure_variation": 0.31066666666666665,
+          "draw": 0.13927946226389648,
+          "release": 0.91375,
+          "station_wash": 58.13699619877604,
+          "wash_dwell": 0.2,
+          "station_absorbent_contact": 2.039999999999999,
+          "absorbent_contact_dwell": 0.1,
+          "station_controlled_rewet": 27.067405344157898,
+          "controlled_rewet_dwell": 0.05
+        },
+        "manual_and_drying_seconds": null,
+        "controller_reached_speeds_verified": false,
+        "full_job_time_verified": false,
+        "M0_count": 0,
+        "M0_reasons": [],
+        "artwork_xy_drawing_mm": 5.074495102245979,
+        "threshold_overruns": [],
+        "loads_per_slot": {
+          "C1": 1,
+          "D1": 1
+        }
+      },
+      "readback": {
+        "commands_verified": 123,
+        "all_moves_reachable_and_in_corridors": true,
+        "dialect_whitelist_verified": true,
+        "M0_count": 0,
+        "M0_reasons": [],
+        "production_verification_occurs_before_start": true,
+        "all_artistic_pressure_samples_verified": 6,
+        "all_draw_XYZ_synchronized_with_accepted_intent": true
+      }
+    },
+    "SHARED_INK": {
+      "metrics": {
+        "counts": {
+          "pre_run_confirmation_required": 1,
+          "material_change": 1,
+          "travel": 7,
+          "station_approach": 1,
+          "station_pigment_load": 2,
+          "pigment_load_dwell": 1,
+          "lift": 3,
+          "pigment_load": 1,
+          "source_begin": 1,
+          "paper_hover": 1,
+          "approach": 1,
+          "initial_contact": 1,
+          "pressure_variation": 1,
+          "draw": 1,
+          "release": 1,
+          "source_complete": 1,
+          "park": 1,
+          "job_complete": 1
+        },
+        "distances": {
+          "non_draw_mm": 2126.6187415636755,
+          "station_access_3d_mm": 707.1067811865476,
+          "station_operation_mm": 68.44749683231336,
+          "station_retract_3d_mm": 22.0,
+          "station_return_3d_mm": 784.693254198567,
+          "synchronized_drawing_3d_mm": 10.228041260562932,
+          "station_transfer_3d_mm": 1491.8000353851146
+        },
+        "commanded_feed_subtotal_seconds": 53.63346714630183,
+        "stop_each_segment_model_seconds": 67.20455233468904,
+        "commanded_feed_seconds_by_action": {
+          "travel": 14.096149218453723,
+          "station_approach": 4.0,
+          "station_pigment_load": 29.06849809938802,
+          "pigment_load_dwell": 0.1,
+          "lift": 0.54,
+          "paper_hover": 0.22,
+          "approach": 4.5,
+          "initial_contact": 0.5,
+          "pressure_variation": 0.04733333333333333,
+          "draw": 0.12273649512675519,
+          "release": 0.43875000000000003
+        },
+        "manual_and_drying_seconds": null,
+        "controller_reached_speeds_verified": false,
+        "full_job_time_verified": false,
+        "M0_count": 0,
+        "M0_reasons": [],
+        "artwork_xy_drawing_mm": 10.198039027185569,
+        "threshold_overruns": [],
+        "loads_per_slot": {
+          "ink": 1
+        }
+      },
+      "readback": {
+        "commands_verified": 21,
+        "all_moves_reachable_and_in_corridors": true,
+        "dialect_whitelist_verified": true,
+        "M0_count": 0,
+        "M0_reasons": [],
+        "production_verification_occurs_before_start": true,
+        "all_artistic_pressure_samples_verified": 2,
+        "all_draw_XYZ_synchronized_with_accepted_intent": true
+      }
+    }
+  },
+  "hardware_executed": false
+}

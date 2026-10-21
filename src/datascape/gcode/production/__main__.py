@@ -7,7 +7,7 @@ from collections import Counter
 from ..binding import load_bound_spring, digest
 from ..layout import Layout, Registration
 from ..validation import validate_layout
-from .profiles import Profile, BASE_CHECKS, PAINT_CHECKS
+from .profiles import Profile, BASE_CHECKS, PAINT_CHECKS, require_physical_layout
 from .sequence import reference_order, make_plan, pressure_distribution, verify_plan, accepted_family_distribution, apply_color_order
 from .exporter import save_json, export_jobs, export_calibration, _atomic_output, verify_export
 
@@ -22,7 +22,7 @@ def main(argv=None):
     for command in ('prepare', 'export'):
         s = sub.add_parser(command)
         for key in ('machine', 'provenance', 's3a-order', 'output'): s.add_argument('--'+key, required=True, type=Path)
-        s.add_argument('--layout', choices=('A', 'B', 'C', 'D'), default='A')
+        s.add_argument('--layout', choices=('A', 'B', 'C', 'D'), default='D')
         s.add_argument('--gap-mm', type=float, default=0)
         s.add_argument('--registration', type=Path, help='JSON list of existing Registration fields')
         s.add_argument('--resume-after', type=Path, help='JSON job -> last completed source ID; complete source boundaries only')
@@ -35,6 +35,7 @@ def main(argv=None):
     s = sub.add_parser('verify'); s.add_argument('--output', required=True, type=Path)
     s = sub.add_parser('readiness'); s.add_argument('--profile', required=True, type=Path)
     s.add_argument('--stage', required=True, choices=('air', 'calibration', 'painting'))
+    s.add_argument('--layout', choices=('A','B','C','D'), default='D')
     s.add_argument('--slots', nargs='*', default=[])
     s.add_argument('--media', nargs='+', choices=('ink','color'), default=['ink','color'])
     s = sub.add_parser('calibration')
@@ -45,9 +46,11 @@ def main(argv=None):
             print(json.dumps(verify_export(a.output), indent=2)); return 0
         if a.command == 'readiness':
             prof = Profile.load(a.profile); issues = prof.issues(a.stage, a.slots, a.media)
+            try: require_physical_layout(prof, {'layout':{'mode':a.layout}}, a.stage)
+            except ValueError as e: issues.append(str(e))
             print(json.dumps({'stage': a.stage, 'profile_sha256': prof.sha256,
                 'calibration_sha256_for_evidence': prof.calibration_sha256,
-                'preferred_evidence_scope_sha256': {c:prof.evidence_scope_sha256(c) for c in (*BASE_CHECKS,'air_run',*PAINT_CHECKS)},
+                'preferred_evidence_scope_sha256': {c:prof.evidence_scope_sha256(c) for c in (*BASE_CHECKS,'air_run',*PAINT_CHECKS,'continuous_seam')},
                 'structurally_ready': not issues, 'blocking_issues': issues,
                 'operator_stage_authorization_still_required': True}, indent=2))
             return 2 if issues else 0

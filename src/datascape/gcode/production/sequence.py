@@ -138,6 +138,9 @@ def verify_plan(manifest, strokes, layout):
     for job, units in manifest['jobs'].items():
         for unit in units:
             original = originals[unit['source_id']]; previous_arc = -1.
+            if layout.mode == 'D':
+                if len(unit['fragments']) != 1 or tuple(unit['fragments'][0]['stroke']['points']) != tuple(asdict(p) for p in original.points):
+                    raise ValueError('Layout D must retain one unsplit original stroke with every original pressure vertex')
             for f in unit['fragments']:
                 r = f['stroke']; panel = next(p for p in layout.panels if p.name == f['panel'])
                 if r['stroke_id'] in seen: raise ValueError('duplicate written fragment')
@@ -171,4 +174,7 @@ def verify_plan(manifest, strokes, layout):
                 if not isclose(cursor,1.,abs_tol=1e-12):raise ValueError('serialized source span incomplete')
     return {'written_fragment_count':len(seen),'written_pressure_samples':samples,
             'all_written_source_pressure_and_work_transform_bindings_verified':True,
-            'complete_source_partition':not bool(manifest['resume_after_source'])}
+            'complete_source_partition':not bool(manifest['resume_after_source']),
+            'D_original_strokes_unsplit': len(seen) if layout.mode == 'D' else None,
+            'D_X300_crossing_strokes_continuous': sum(min(p.x for p in originals[u['source_id']].points) < 300 < max(p.x for p in originals[u['source_id']].points)
+                for units in manifest['jobs'].values() for u in units) if layout.mode == 'D' else None}

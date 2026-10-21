@@ -76,7 +76,7 @@ class Profile:
         geometry = {role:{k:st.get(k) for k in ('hardware_id','coordinate_frame','contact_box_xyz',
                         'center_xy','deep_surface_xyz','shallow_surface_xyz')} for role,st in stations.items()}
         context = {'machine':machine, 'check':check}
-        if check in ('brush_response','paper_contact','microsegment_response'):
+        if check in ('brush_response','paper_contact','microsegment_response','continuous_seam'):
             context.update(motion=motion, brushes=self.data.get('brush_profiles', {}))
         elif check in ('station_contacts','contamination_cleaning','ink_to_color_inspection'):
             brushes = {name:{k:v for k,v in b.items() if k not in ('knots','observations')}
@@ -151,7 +151,7 @@ class Profile:
                 need(number(material.get(k), True), 'positive material.' + k + ' required')
             for k in ('water_change_every_washes', 'manual_refill_every_loads'):
                 n = material.get(k)
-                need(type(n) is int and n >= 1, 'explicit positive checkpoint interval: ' + k)
+                need(n is None or (type(n) is int and n >= 1), 'checkpoint interval must be null (disabled) or a positive integer: ' + k)
             need(type(material.get('end_cleanup')) is bool, 'explicit end_cleanup policy required')
             need(material.get('liquid_levels') == 'manual_reference', 'manual liquid reference policy required')
             stations = self.data.get('stations', {})
@@ -167,8 +167,16 @@ class Profile:
                 need(number(st.get('feed_mm_min'), True), role + ': calibrate contact feed')
                 need(number(st.get('dwell_seconds')) and st['dwell_seconds'] >= 0, role + ': calibrate dwell')
                 try:
-                    from .trajectory import station_points
+                    from .trajectory import station_points, material_station
                     station_points(st)
+                    if role == 'sponge':
+                        overrides = st.get('material_overrides', {})
+                        if not isinstance(overrides, dict): raise ValueError('absorbent material overrides must be a mapping')
+                        for material in overrides:
+                            variant = material_station(st, material)
+                            station_points(variant)
+                            if not number(variant.get('dwell_seconds')) or variant['dwell_seconds'] < 0:
+                                raise ValueError('invalid material-specific absorbent dwell')
                     if role == 'water':
                         need(type(st.get('wash_cycles')) is int and st['wash_cycles'] >= 1, role + ': calibrate wash cycles')
                         rewet = dict(st, immersion_mm=st.get('rewet_immersion_mm'), dwell_seconds=st.get('rewet_dwell_seconds'), agitation_cycles=0)
@@ -232,3 +240,36 @@ def authorize(authorization, profile, plan_hash, stage, job_ids):
             and set(a.get('job_ids', [])) == set(job_ids)
             and all(isinstance(a.get(k), str) and a[k].strip() for k in ('operator', 'date'))):
         raise ValueError('explicit stage/job/profile/plan-bound operator authorization required')
+    require_pre_run(a, stage, job_ids)
+
+
+PRE_RUN_COMMON = ('coordinates_and_start_verified', 'paper_and_clearance_verified',
+                  'tool_and_controller_state_verified')
+PRE_RUN_PAINTING = ('brush_clean_and_prepared', 'materials_and_clean_water_prepared')
+
+
+def require_pre_run(authorization, stage, job_ids):
+    """Operator confirms conditions before starting; no routine startup M0."""
+    if stage not in ('air', 'painting'): return
+    confirmations = (authorization or {}).get('pre_run_confirmations', {})
+    if not isinstance(confirmations, dict): raise ValueError('pre-run confirmations must be a job-keyed mapping')
+    for name in job_ids:
+        required = list(PRE_RUN_COMMON)
+        if stage == 'painting':
+            required += list(PRE_RUN_PAINTING)
+            if name.endswith('_COLOR'): required.append('ink_dry_and_registration_verified')
+            if name.startswith('SHARED_'): required.append('continuous_substrate_or_tested_seam_verified')
+        record = confirmations.get(name, {})
+        if not isinstance(record, dict): raise ValueError('invalid pre-run record for '+name)
+        if any(record.get(k) is not True for k in required):
+            raise ValueError('pre-run operator confirmation missing for '+name+': '+', '.join(k for k in required if record.get(k) is not True))
+
+
+def require_physical_layout(profile, manifest, stage):
+    """D is unsplit contact, including a physically tested adjacent-sheet seam."""
+    if stage == 'painting' and manifest['layout']['mode'] == 'D':
+        assembly = profile.data['machine'].get('substrate_assembly')
+        if assembly not in ('continuous_sheet', 'adjacent_panels'):
+            raise ValueError('Layout D requires explicit continuous_sheet or adjacent_panels substrate assembly')
+        if assembly == 'adjacent_panels' and not profile.evidence_passed('continuous_seam'):
+            raise ValueError('Layout D adjacent panels require current continuous_seam contact/clearance test evidence')

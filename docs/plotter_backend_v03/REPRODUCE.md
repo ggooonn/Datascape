@@ -44,20 +44,22 @@ PYTHONPATH=src python -m datascape.gcode.production prepare \
   --s3a-order config/plotter_v03/spring_s3a_order.json \
   --pressure-sidecar /absolute/Pressure/artworks/spring_v13_pressure_intent_v01/spring_v13.pressure_intent_v01.json.gz \
   --profile config/plotter_v03/profile.unmeasured.json \
+  --layout D \
   --output /absolute/offline/spring-v03-prepared
 ```
 
 Writes deterministic full `plan.json.gz`, validation/readiness `summary.json`,
 layer and accepted-family pressure distributions and hashes. It does not write
 executable Spring G-code. It verifies 14,951 sources, 240,974 accepted samples,
-15,001 clipped fragments and 241,074 fragment samples, including exact original
+14,951 unsplit D paths and 240,974 samples (A: 15,001 fragments / 241,074
+samples), including exact original
 segment/fraction pressure interpolation and G54 work transformation. The compact
 committed execution manifest records the exact source/fragment/job IDs and hashes
 of all point/pressure/location/span/work-coordinate payloads. Recreate the complete
 15-MB compressed plan with this command; do not duplicate frozen artwork in git.
 
 `--registration` accepts a JSON list of existing `Registration` fields (`panel`,
-`x_mm`, `y_mm`, `rotation_deg`). A is the default; B/C/D planning remains available.
+`x_mm`, `y_mm`, `rotation_deg`). D is the production CLI default; A and B/C planning remain available.
 C uses explicit `--gap-mm`; no exhibition gap is inferred. Nondefault registration
 or physical color order changes the prepared plan hash and requires review.
 
@@ -66,7 +68,7 @@ or physical color order changes the prepared plan hash and requires review.
 ```sh
 PYTHONPATH=src python -m datascape.gcode.production readiness \
   --profile /absolute/local/measured-profile.json \
-  --stage painting --media ink
+  --stage painting --layout D --media ink
 ```
 
 For color readiness include `--media color --slots C1 D1 A2 D2 C2 A4 A3 A5 C3 D4 C4 D5`.
@@ -86,12 +88,13 @@ PYTHONPATH=src python -m datascape.gcode.production export \
   --profile /absolute/local/measured-profile.json \
   --stage air \
   --authorization /absolute/local/air-authorization.json \
-  --jobs P1_INK \
-  --output /absolute/jobs/P1-ink-air
+  --jobs SHARED_INK \
+  --output /absolute/jobs/shared-ink-air
 ```
 
 Use `--stage painting` only after its own current evidence and matching painting
-authorization. Keep `P1_INK`, `P1_COLOR`, `P2_INK`, `P2_COLOR` separate; select one
+authorization. D uses separate `SHARED_INK`/`SHARED_COLOR`; use `--layout A` for
+`P1_INK`, `P1_COLOR`, `P2_INK`, `P2_COLOR`. Select one
 job at a time if paper registration or profiles differ. A profile must not claim
 contact calibration just because its machine/air stage passed. Changing knots,
 feeds, registration or selection never silently reuses old authorization.
@@ -121,7 +124,7 @@ authorization are still required. Missing test depths fail; none default to -12.
 
 ```sh
 PYTHONPATH=src python -m datascape.gcode.production verify \
-  --output /absolute/jobs/P1-ink-air
+  --output /absolute/jobs/shared-ink-air
 ```
 
 Run after copying files, before manual sending. An altered or unmanifested `.nc`
@@ -131,6 +134,26 @@ mismatch fails verification.
 For an interrupted job, supply a JSON mapping such as
 `{"P1_INK":"<last completely printed ORIGINAL source ID>"}` to `prepare` and
 `export` through `--resume-after`. The new suffix starts from the measured initial
-position, repeats preparation/inspection/load, and has a new plan hash. Do not
+position, repeats pre-run confirmation/load, and has a new plan hash. Do not
 skip an unfinished source, manually edit `.nc`, concatenate panel/medium files,
 or resume at an arbitrary line after state loss.
+
+
+## Focused reload and cost recalculation
+
+```sh
+PYTHONPATH=src python -m datascape.gcode.production.costs \
+  --machine /absolute/offline/spring.machine.json \
+  --provenance /absolute/offline/spring.provenance.json \
+  --s3a-order config/plotter_v03/spring_s3a_order.json \
+  --scenario config/plotter_v03/cost_scenario.synthetic.json \
+  --output /absolute/offline/A-D-costs
+```
+
+This runs the current automatic 1,000-mm ink / 800-mm color policy on the fixed
+S3a order, validates written A/D plans and every trajectory pressure sample, and
+reports reloads, station transfer and time models. It is not a scheduling search.
+The scenario intentionally uses nominal unverified station XY and invented Z,
+curve, feed/contact/dwell/dynamic assumptions. It writes no G-code or physical
+trajectory files. Physical station travel and total duration remain null; the
+reported numerical scenario is not measured calibration. See RESULTS.md.

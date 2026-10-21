@@ -16,7 +16,7 @@ installed YAML is inferred from historical files.
 | Brush response | Brush dimensions/mounting, medium and substrate; multi-knot intent/Z pairs; width, continuity, loading, feed, quality and recovery observations at selected physical depths; safe paper-contact Z range; pressure-Z speed limit |
 | WELL_1 water / WELL_2 ink | G54 frame and contact volume; measured deep/shallow stone surface XYZ; maintained liquid reference Z; immersion, minimum stone gap, gradual exit height/feed/dwell; optional measured gentle agitation area; wash cycles and separate controlled-rewet immersion/dwell |
 | Color slots | Used slot G54 XY, contact volume, manually maintained liquid Z, bottom Z/clearance, immersion, circle radius/revolutions/segments/feed/dwell/exit height; optional cross loading only after testing |
-| PURGE | Replaceable absorbent geometry, surface Z, gentle compression/feed/dwell, optional contact repetition or short linear wipe; default has no circular rubbing |
+| PURGE | Nominal center X840 Y137.5 and area 70x70 mm; confirm actual G54 center, contact volume and surface Z. Default is one centered vertical gentle contact/dwell/retract, without XY wipe or rubbing. Optional material_overrides can calibrate ink/color/slot compression and dwell. |
 
 `WELL_1=water`, `WELL_2=ink`, `PURGE=sponge/absorbent` are checked, not guessed.
 The old station XY YAML remains reference-only with unknown coordinate frame.
@@ -59,7 +59,8 @@ installed paper; a historical pass is not a sensor reading.
 ## Commissioning without another backend rewrite
 
 1. **Preparation only:** reproduce the accepted binding and S3a plan. No runnable
-   Spring G-code is written. Review exact four job IDs and remaining blockers.
+   Spring G-code is written. D is preferred with two shared jobs; A retains four
+   separate panel jobs. Review the selected IDs and remaining blockers.
 2. **Machine/frame/no-contact checks:** confirm actual configuration, homing,
    limits, E-stop, coordinate directions, available travel and measured collision
    volumes. Home outside this software, jog using OpenBuilds CONTROL, then set G54
@@ -88,26 +89,63 @@ installed paper; a historical pass is not a sensor reading.
    Water/animal glue/Marie's gouache recipe is a recorded test condition, not a
    firmware motion constraint. Liquid is manually restored to reference levels;
    there is no sensing or adaptive dipping.
-7. **Painting stage:** authorize and export `P1_INK`, verify delivered files, then
-   manually send only after checks. At start, M0 requires exact header offset and
-   position confirmation. The job loads/reloads ink and parks. Review/dry manually.
-   Authorize `P1_COLOR` separately; it requires paper/registration review, deep
-   wash, absorbent contact, controlled rewet and manual contamination inspection
-   before first pigment load. Later color changes repeat full washing; same-color
-   replenishment only reloads. Repeat independently for P2 after registration.
+7. **Painting stage:** confirm all pre-run conditions, authorize/export the chosen
+   job, verify the delivered files and then start it. D uses `SHARED_INK`, followed
+   by manual review/drying/preparation and `SHARED_COLOR`. A uses `P1_INK`,
+   `P1_COLOR`, `P2_INK`, `P2_COLOR`, re-establishing the same paper origin for P2.
+   Each program automatically loads/reloads, draws, parks at the validated target
+   and terminates with M2. Standard programs contain no M0.
 
-Initial distances are color 1,000 mm and ink 2,000 mm, configurable. Only actual
-XY drawing since the most recent active-material load accumulates. Load, wash,
-material change and restart reset it. Finish a whole original source unit before
-reloading; report overrun. Never split a canonical stroke to meet the threshold.
-Manual palette refills and water changes are separate park/M0 checkpoints with
-explicit intervals; no unlimited clean-water assumption or liquid volume model.
+Before EACH job, complete `authorization.pre_run_confirmations[job_id]`:
+`coordinates_and_start_verified`, `paper_and_clearance_verified`,
+`tool_and_controller_state_verified`, `brush_clean_and_prepared`, and
+`materials_and_clean_water_prepared` must be true. Color also requires
+`ink_dry_and_registration_verified`; D requires
+`continuous_substrate_or_tested_seam_verified`. These are explicit operator
+records, not automatic sensing. Air requires the first three common checks.
+Stage/profile/plan/job-bound authorization and measured evidence remain mandatory.
+Reconfirm conditions immediately before sending; an old record does not observe
+current controller or paper state. There is no startup pause to correct mistakes.
 
-Semi-sized Xuan paper is initially edge fixed; any lightly dampened/stretch-then-
-dry preparation must be inspected for flatness. Washing does not dry the paper.
-At the final parked M0, acknowledge the review to finish M2 before starting another file; this acknowledgment adds no motion.
-No automatic buckling detection exists. Do not resume after jogging, offset/tool
-changes or reset; regenerate a reviewed complete-source suffix instead.
+For D, set `machine.substrate_assembly`: `continuous_sheet` or `adjacent_panels`.
+The adjacent-sheet choice additionally requires a current `continuous_seam`
+physical contact/clearance evidence record. Test edge alignment, flatness, fixture
+and brush passage before enabling unsplit contact across X=300. No seam lift or
+stroke split is synthesized. B/C remain planning-only.
+
+Between separate ink and color executions, manually clean/inspect the brush,
+replace water, replenish palette materials, confirm drying, registration and G54.
+The color job begins from that prepared state: it loads its first pigment without
+an additional initial wash or inspection pause. Automatic full washing, centered
+PURGE absorption, controlled rewet and loading remain BETWEEN different colors.
+
+Initial distances are **ink 1,000 mm and color 800 mm**, independently configurable.
+A later color trial can use 1,000 mm. Only actual XY drawing since the most recent
+active-material load accumulates. Load, wash, material change and restart reset
+it. Finish a whole original source unit before reloading and report overrun;
+never split a source or wash merely to reload the same material.
+
+`manual_refill_every_loads` and `water_change_every_washes` default to `null`, so
+routine work never waits for manual refilling. Prepare enough pigment and cleaning
+water before starting each job. Any safely arranged replenishment is external;
+there is no sensing, depletion model or adaptive dipping. Positive integer values
+explicitly enable optional park/M0 checks after the specified completed operations,
+without adding a first-load/startup pause. Their exact reasons/counts appear in
+export metrics and independent read-back. `end_cleanup` defaults to false; true
+adds automatic final washing before parking, with no mandatory final M0.
+
+Semi-sized Xuan paper is initially edge fixed; inspect any dampened/stretch-then-
+dry preparation for flatness. Washing does not dry the paper. No automatic
+buckling detection exists. After jogging, offsets/tool changes, reset or a partly
+printed stroke, abort and regenerate a reviewed complete-source suffix. Reconfirm
+the prepared brush/state before restart; partly printed sources repeat from their
+beginning, so review possible overpainting first.
+
+Explicit calibration programs retain inspection stops: startup (1), before/after
+each station test (2 per role), before each brush line (1 per line), and final
+recording (1). Thus M0 count is `2 + 2*station_roles + brush_lines`; the one-station,
+one-line test has 5 M0, with all reasons recorded. These are manual calibration
+programs, not the zero-M0 standard ink/color printing jobs.
 
 ## What changes need code work?
 
@@ -121,5 +159,5 @@ feedback pressure control, non-Cartesian kinematics, an installed controller wit
 an incompatible dialect/planner contract, a new station primitive absent from the
 existing slope/circle/cross/absorbent options, or an evidence-driven PCHIP option.
 A future shared continuous B/C job organization also needs an explicit policy
-choice and focused exporter extension; current A split jobs are complete.
-None of these optional extensions is a prerequisite for calibrated A printing.
+choice and focused exporter extension; current A split and continuous D jobs are complete.
+None of these optional extensions is a prerequisite for calibrated A/D printing.

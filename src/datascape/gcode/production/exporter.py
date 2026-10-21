@@ -9,7 +9,7 @@ import re
 import shutil
 import tempfile
 from ..binding import digest, SIDECAR_SHA
-from .profiles import authorize, Profile
+from .profiles import authorize, Profile, require_physical_layout
 from .trajectory import build_job, Builder, Materials, Command, require_path
 
 
@@ -22,7 +22,7 @@ def _serialize(commands, profile, plan_hash, job_id, stage):
              _comment('PROFILE '+profile.sha256), _comment('PLAN '+plan_hash),
              _comment('EXPECTED G54 offset '+str(profile.data['machine']['g54_to_machine_xyz'])),
              _comment('EXPECTED initial work XYZ '+str(profile.data['machine']['start_work_xyz'])),
-             _comment('VERIFY G92 and tool offsets zero; feed override 100%; do not jog at pauses'),
+             _comment('BEFORE START verify G54/start, G92/TLO zero, feed override 100%, paper, brush and supplies'),
              'G21 G90 G94 G54']
     for c in commands:
         if c.kind == 'move':
@@ -82,9 +82,13 @@ def readback(text, commands, profile, stage):
                 raise ValueError('serialized coordinate/feed differs from planned motion')
         if c.kind == 'dwell' and abs(c.seconds-row[1]) > 5.1e-10:
             raise ValueError('serialized dwell mismatch')
-    if expected[0].kind != 'pause': raise ValueError('motion before startup verification')
+    if stage == 'calibration' and expected[0].kind != 'pause':
+        raise ValueError('calibration requires its explicit startup pause')
     return {'commands_verified': len(parsed), 'all_moves_reachable_and_in_corridors': True,
-            'dialect_whitelist_verified': True, 'startup_pause_before_any_motion': True}
+            'dialect_whitelist_verified': True,
+            'M0_count': sum(c.kind == 'pause' for c in commands),
+            'M0_reasons': [c.message for c in commands if c.kind == 'pause'],
+            'production_verification_occurs_before_start': stage != 'calibration'}
 
 
 def save_json(path, value):
@@ -114,13 +118,14 @@ def _atomic_output(output, write):
 def export_jobs(jobs, manifest, profile, stage, authorization, output, selected_jobs=None):
     if stage not in ('fixture', 'air', 'painting'): raise ValueError('use separate calibration exporter')
     if stage != 'fixture' and manifest['layout']['mode'] in ('B','C'):
-        raise ValueError('shared-session plans remain offline: physical v0.3 workflow requires separate panel ink/color jobs; use layout A')
+        raise ValueError('shared-session plans remain offline: physical v0.3 supports separate panel jobs (A) or continuous ink/color jobs (D); B/C remain planning-only')
     names = list(selected_jobs) if selected_jobs is not None else list(jobs)
     if not names or len(set(names)) != len(names) or set(names)-set(jobs): raise ValueError('invalid job selection')
     selected = {name: jobs[name] for name in names}
     slots = sorted({f.stroke.color_slot for units in selected.values() for u in units for f in u if f.stroke.medium == 'color'})
     media = sorted({f.stroke.medium for units in selected.values() for u in units for f in u})
     profile.require(stage, slots, media)
+    require_physical_layout(profile, manifest, stage)
     plan_hash = digest(manifest)
     authorize(authorization, profile, plan_hash, stage, names)
     if stage == 'fixture' and any(f.stroke.pressure_sidecar_sha256 == SIDECAR_SHA
@@ -140,7 +145,7 @@ def export_jobs(jobs, manifest, profile, stage, authorization, output, selected_
             (root/(name+suffix)).write_text(text)
             save_json(root/(name+'.trajectory.json.gz'), [asdict(c) for c in commands])
             # Restart only from a completed ORIGINAL source; suffix regeneration
-            # starts at park and repeats all initial wash/inspection/load gates.
+            # starts from the verified position with fresh pre-run confirmation/load.
             save_json(root/(name+'.restart.json'), {'plan_sha256': plan_hash,
                 'allowed_resume_after_source_ids': [u[0].stroke.origin_id for u in units[:-1]],
                 'arbitrary_line_resume_supported': False})
