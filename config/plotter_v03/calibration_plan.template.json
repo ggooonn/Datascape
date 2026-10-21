@@ -1,0 +1,6 @@
+{
+  "schema": "datascape.calibration_plan.v0.3",
+  "station_roles": [],
+  "brush_lines": [],
+  "notes": "List only explicitly authorized small tests inside a measured envelope. Each brush line: start_xy, end_xy, z_mm, feed_mm_min. No default contact depth."
+}
