@@ -129,6 +129,12 @@ def _atomic_output(output, write):
 
 def export_jobs(jobs, manifest, profile, stage, authorization, output, selected_jobs=None):
     if stage not in ('fixture', 'air', 'painting'): raise ValueError('use separate calibration exporter')
+    if 'benchmark' in manifest:
+        from .benchmark import air_plan,require_air_profile
+        if stage!='air':raise ValueError('benchmark manifest only permits the no-contact air stage')
+        request=manifest['benchmark']['request'];require_air_profile(request,profile)
+        _,_,expected_plan=air_plan(request)
+        if digest(manifest)!=digest(expected_plan):raise ValueError('benchmark manifest differs from requested work-coordinate paths')
     if stage != 'fixture' and manifest['layout']['mode'] in ('B','C'):
         raise ValueError('shared-session plans remain offline: physical v0.3 supports separate panel jobs (A) or continuous ink/color jobs (D); B/C remain planning-only')
     names = list(selected_jobs) if selected_jobs is not None else list(jobs)
@@ -172,43 +178,17 @@ def export_jobs(jobs, manifest, profile, stage, authorization, output, selected_
 
 def export_calibration(request, profile, authorization, output):
     """Small explicit station/constant-Z tests; never substitutes Spring pressure."""
-    if request.get('schema') != 'datascape.calibration_plan.v0.3': raise ValueError('unknown calibration plan')
-    if set(request)-{'schema', 'station_roles', 'brush_lines', 'notes'}: raise ValueError('unknown calibration request fields')
-    roles = request.get('station_roles', []); lines = request.get('brush_lines', [])
-    if not roles and not lines: raise ValueError('empty calibration plan')
-    profile.require('calibration', roles)
+    from .calibration_jobs import validate_request,build_calibration
+    validate_request(request,profile)
     plan_hash = digest(request); authorize(authorization, profile, plan_hash, 'calibration', ['CALIBRATION'])
     def write(root):
-        b = Builder(profile)
-        b.commands.append(Command('pause', 'startup_verification', message='CALIBRATION ONLY: verify G54/MPos/start; manual load; explicit contact test limits; abort on mismatch'))
-        material = Materials(b)
-        for role in roles:
-            b.pause('INSPECT '+role+' and measured reference/geometry before this explicit station test')
-            material.station(role, 'calibration_contact')
-            b.pause('INSPECT station test result; abort before next test if uncertain')
-        for i, line in enumerate(lines):
-            if set(line) != {'start_xy', 'end_xy', 'z_mm', 'feed_mm_min'}: raise ValueError('invalid brush calibration line')
-            low, high = b.v['paper_contact_z_range']; z = line['z_mm']
-            if not number(z) or not low <= z <= high: raise ValueError('calibration depth outside measured test envelope')
-            if not vector(line['start_xy'], 2) or not vector(line['end_xy'], 2): raise ValueError('invalid test XY')
-            b.pause('BRUSH TEST '+str(i)+': manually set recorded loading; inspect/measure width, continuity and recovery after test')
-            b.xy(line['start_xy'], b.v['station_clearance_mm'])
-            x, y = line['start_xy']
-            b.move((x, y, b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'paper_hover')
-            b.move((x, y, b.v['paper_approach_mm']), b.v['paper_approach_mm_min'], 'approach')
-            b.move((x, y, 0), b.v['paper_contact_mm_min'], 'initial_contact')
-            b.move((x, y, z), b.v['paper_contact_mm_min'], 'calibration_compression')
-            b.move((*line['end_xy'], z), line['feed_mm_min'], 'draw')
-            b.move((*line['end_xy'], 0), b.v['paper_release_mm_min'], 'release')
-            b.move((*line['end_xy'], b.v['paper_approach_mm']), b.v['paper_release_mm_min'], 'paper_release_clearance')
-            b.lift(b.v['paper_hover_mm'])
-        b.pause('CALIBRATION COMPLETE: record observations; do not automatically mark evidence passed')
-        text = _serialize(b.commands, profile, plan_hash, 'CALIBRATION', 'calibration')
-        result = {'stage': 'calibration', 'hardware_executed': False, 'metrics': b.result(),
-                  'readback': readback(text, b.commands, profile, 'calibration')}
+        commands,metrics = build_calibration(request,profile)
+        text = _serialize(commands, profile, plan_hash, 'CALIBRATION', 'calibration')
+        result = {'stage': 'calibration', 'hardware_executed': False, 'metrics': metrics,
+                  'readback': readback(text, commands, profile, 'calibration')}
         (root/'CALIBRATION.nc').write_text(text)
         for n, d in [('plan', request), ('profile', profile.data), ('authorization', authorization),
-                     ('report', result), ('trajectory', [asdict(c) for c in b.commands])]:
+                     ('report', result), ('trajectory', [asdict(c) for c in commands])]:
             save_json(root/(n+'.json'), d)
         return result
     return _atomic_output(output, write)
@@ -250,11 +230,29 @@ def verify_export(output):
     authorize(authorization, profile, digest(plan), stage, names)
     if stage != 'calibration' and (report['profile_sha256'] != profile.sha256 or report['plan_sha256'] != digest(plan)):
         raise ValueError('export report hash binding mismatch')
+    if stage == 'calibration':
+        from .calibration_jobs import build_calibration
+        regenerated,_ = build_calibration(plan,profile)
+    else:
+        if 'benchmark' in plan:
+            from .benchmark import air_plan,require_air_profile
+            if stage!='air':raise ValueError('benchmark manifest cannot authorize production painting')
+            request=plan['benchmark']['request'];require_air_profile(request,profile)
+            _,_,expected_plan=air_plan(request)
+            if digest(plan)!=digest(expected_plan):raise ValueError('benchmark manifest differs from requested work-coordinate paths')
+        slots=sorted({f['stroke']['color_slot'] for name in names for u in plan['jobs'][name]
+                      for f in u['fragments'] if f['stroke']['medium']=='color'})
+        media=sorted({f['stroke']['medium'] for name in names for u in plan['jobs'][name] for f in u['fragments']})
+        profile.require(stage,slots,media);require_physical_layout(profile,plan,stage)
     results = {}
     for name in names:
         path = root/('trajectory.json' if stage == 'calibration' else name+'.trajectory.json.gz')
         raw = path.read_bytes();data = json.loads(gzip.decompress(raw) if path.suffix == '.gz' else raw)
         commands = [Command(**c) for c in data]
+        if stage == 'calibration' and data != [asdict(c) for c in regenerated]:
+            # JSON converts tuples to arrays; canonical digest normalizes both.
+            if digest(data) != digest([asdict(c) for c in regenerated]):
+                raise ValueError('delivered calibration IR differs from authorized test request')
         suffix = '.example.txt' if stage == 'fixture' else '.nc'
         results[name] = readback((root/(name+suffix)).read_text(), commands, profile, stage)
         if stage != 'calibration':

@@ -78,7 +78,7 @@ class Profile:
         context = {'machine':machine, 'check':check}
         if check in ('brush_response','paper_contact','microsegment_response','continuous_seam','local_hover_clearance'):
             context.update(motion=motion, brushes=self.data.get('brush_profiles', {}))
-        elif check in ('station_contacts','contamination_cleaning','ink_to_color_inspection'):
+        elif check in ('station_contacts','contamination_cleaning','ink_to_color_inspection','station_ink_trial','station_water_trial','cloth_purge_trial'):
             brushes = {name:{k:v for k,v in b.items() if k not in ('knots','observations')}
                        for name,b in self.data.get('brush_profiles', {}).items()}
             context.update(motion=motion, stations=stations, brushes=brushes, material=self.data.get('material', {}))

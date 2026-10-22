@@ -1,0 +1,28 @@
+; OFFLINE COMMISSIONING REVIEW ONLY; NOT AUTHORIZED; NO HARDWARE VALIDATION
+; No synthetic G54 offset, machine bounds or free-space box is supplied
+; PROFILE b6b71ae48b68f413d1ac3078e5a06a3b1d33477b70cd9fa6ad6c7cd759964202
+; REQUEST d17e4536c1742a6661278017dddc6ebb2b71f36d083661e8fe142839aec32ad3
+; G21 G90 G94 G54
+; RECORD {"action":"source_begin","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":null,"fragment_id":null,"kind":"marker","message":"0","projected_acceleration_mm_s2":null,"seconds":null,"source_id":"A_SHORT-rectangle-0","source_vertex":null,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":null}
+; RECORD {"action":"travel","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":1200,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":null,"source_vertex":null,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[15.0,15.0,35]}
+; G1 X15.000000000 Y15.000000000 Z35.000000000 F1200.000000000
+; RECORD {"action":"paper_hover","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":300,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":null,"source_vertex":null,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[15.0,15.0,10]}
+; G1 X15.000000000 Y15.000000000 Z10.000000000 F300.000000000
+; RECORD {"action":"air_path","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":600,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":"A_SHORT-rectangle-0","source_vertex":0,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[15.0,15.0,10]}
+; G1 X15.000000000 Y15.000000000 Z10.000000000 F600.000000000
+; RECORD {"action":"air_path","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":600,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":"A_SHORT-rectangle-0","source_vertex":1,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[315.0,15.0,10]}
+; G1 X315.000000000 Y15.000000000 Z10.000000000 F600.000000000
+; RECORD {"action":"air_path","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":600,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":"A_SHORT-rectangle-0","source_vertex":2,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[315.0,315.0,10]}
+; G1 X315.000000000 Y315.000000000 Z10.000000000 F600.000000000
+; RECORD {"action":"air_path","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":600,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":"A_SHORT-rectangle-0","source_vertex":3,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[15.0,315.0,10]}
+; G1 X15.000000000 Y315.000000000 Z10.000000000 F600.000000000
+; RECORD {"action":"air_path","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":600,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":"A_SHORT-rectangle-0","source_vertex":4,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[15.0,15.0,10]}
+; G1 X15.000000000 Y15.000000000 Z10.000000000 F600.000000000
+; RECORD {"action":"source_complete","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":null,"fragment_id":null,"kind":"marker","message":"0","projected_acceleration_mm_s2":null,"seconds":null,"source_id":"A_SHORT-rectangle-0","source_vertex":null,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":null}
+; RECORD {"action":"lift","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":300,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":null,"source_vertex":null,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[15.0,15.0,32]}
+; G1 X15.000000000 Y15.000000000 Z32.000000000 F300.000000000
+; RECORD {"action":"travel","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":1200,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":null,"source_vertex":null,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[800,800,32]}
+; G1 X800.000000000 Y800.000000000 Z32.000000000 F1200.000000000
+; RECORD {"action":"park","artistic_pressure":null,"axis_velocity_mm_min":null,"feed_mm_min":300,"fragment_id":null,"kind":"move","message":"","projected_acceleration_mm_s2":null,"seconds":null,"source_id":null,"source_vertex":null,"time_category":"","travel_phase":"","travel_state":"ordinary_travel","xyz":[800,800,32]}
+; G1 X800.000000000 Y800.000000000 Z32.000000000 F300.000000000
+; M2

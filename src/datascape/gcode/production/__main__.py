@@ -1,4 +1,4 @@
-"""Prepare pinned Spring jobs, inspect readiness, or export an authorized stage."""
+"""Prepare Spring or commissioning plans, inspect readiness, and export authorized stages."""
 import argparse
 import json
 import sys
@@ -21,7 +21,8 @@ def main(argv=None):
     sub = p.add_subparsers(dest='command', required=True)
     for command in ('prepare', 'export'):
         s = sub.add_parser(command)
-        for key in ('machine', 'provenance', 's3a-order', 'output'): s.add_argument('--'+key, required=True, type=Path)
+        for key in ('machine', 'provenance', 's3a-order', 'output'): s.add_argument('--'+key, required=(key=='output'), type=Path)
+        s.add_argument('--benchmark-plan', type=Path, help='independent 330x330 work-coordinate Air Run request; excludes Spring inputs')
         s.add_argument('--layout', choices=('A', 'B', 'C', 'D'), default='D')
         s.add_argument('--gap-mm', type=float, default=0)
         s.add_argument('--registration', type=Path, help='JSON list of existing Registration fields')
@@ -50,14 +51,28 @@ def main(argv=None):
             except ValueError as e: issues.append(str(e))
             print(json.dumps({'stage': a.stage, 'profile_sha256': prof.sha256,
                 'calibration_sha256_for_evidence': prof.calibration_sha256,
-                'preferred_evidence_scope_sha256': {c:prof.evidence_scope_sha256(c) for c in (*BASE_CHECKS,'air_run',*PAINT_CHECKS,'continuous_seam','local_hover_clearance')},
+                'preferred_evidence_scope_sha256': {c:prof.evidence_scope_sha256(c) for c in (*BASE_CHECKS,'air_run',*PAINT_CHECKS,'continuous_seam','local_hover_clearance','station_ink_trial','station_water_trial','cloth_purge_trial')},
                 'structurally_ready': not issues, 'blocking_issues': issues,
                 'operator_stage_authorization_still_required': True}, indent=2))
             return 2 if issues else 0
         if a.command == 'calibration':
             report = export_calibration(load_json(a.plan), Profile.load(a.profile),
                                         load_json(a.authorization), a.output)
+        elif a.benchmark_plan is not None:
+            from .benchmark import air_plan,prepare_air,require_air_profile
+            if any(getattr(a,k) is not None for k in ('machine','provenance','s3a_order','registration','resume_after','pressure_sidecar')) or a.layout!='D' or a.gap_mm!=0:
+                raise ValueError('benchmark plan cannot be mixed with Spring inputs or layout transforms')
+            request=load_json(a.benchmark_plan)
+            prof=None if a.profile is None else Profile.load(a.profile)
+            if a.command=='prepare': report=prepare_air(request,prof,a.output)
+            else:
+                if a.stage!='air':raise ValueError('benchmark-plan only supports the no-contact air stage')
+                require_air_profile(request,prof)
+                _,jobs,manifest=air_plan(request)
+                report=export_jobs(jobs,manifest,prof,'air',load_json(a.authorization),a.output,a.jobs)
         else:
+            if any(getattr(a,k) is None for k in ('machine','provenance','s3a_order')):
+                raise ValueError('provide all Spring inputs or an independent --benchmark-plan')
             strokes, provenance = load_bound_spring(a.machine, a.provenance)
             reg = () if a.registration is None else tuple(Registration(**r) for r in load_json(a.registration))
             layout = Layout(a.layout, a.gap_mm, reg)
