@@ -1,0 +1,1 @@
+{"notes":"WELL_1 one isolated water operation; no automatic repeated washing cycles or PURGE.","paper_region_xy":[[10,10],[320,320]],"requires_evidence":["paper_contact"],"schema":"datascape.calibration_plan.v0.3","station_roles":["water"]}

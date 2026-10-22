@@ -1,0 +1,1 @@
+{"brush_lines":[{"end_xy":[90,100],"feed_mm_min":600,"start_xy":[30,100],"z_mm":-3}],"notes":"Manually loaded ink; advance only after shallower depth observations and explicit safe envelope approval.","paper_region_xy":[[10,10],[320,320]],"schema":"datascape.calibration_plan.v0.3"}
