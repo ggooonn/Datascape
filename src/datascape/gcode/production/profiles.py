@@ -28,6 +28,20 @@ def box(v):
             and vector(v[1]) and all(x < y for x, y in zip(*v)))
 
 
+def air_minimum_z(profile):
+    """Explicit no-contact local-hover trial; never enables production hover."""
+    v = profile.data['motion']
+    local = v.get('air_local_hover', {})
+    return local['height_mm'] if local.get('enabled') is True else v['paper_hover_mm']
+
+
+def exact_free_segments(machine):
+    """Optional inspected full-tool segments in G54; no clearance volume inferred."""
+    segments = machine.get('validated_free_segments', [])
+    return (isinstance(segments, list) and bool(segments)
+            and all(isinstance(s, list) and len(s) == 2 and all(vector(p) for p in s) for s in segments))
+
+
 def brush(data):
     d = deepcopy(data)
     if d.pop('interpolation', 'piecewise_linear') != 'piecewise_linear':
@@ -76,7 +90,18 @@ class Profile:
         geometry = {role:{k:st.get(k) for k in ('hardware_id','coordinate_frame','contact_box_xyz',
                         'center_xy','deep_surface_xyz','shallow_surface_xyz')} for role,st in stations.items()}
         context = {'machine':machine, 'check':check}
-        if check in ('brush_response','paper_contact','microsegment_response','continuous_seam','local_hover_clearance'):
+        if check in ('air_run', 'air_local_hover_clearance'):
+            # A successful Air trial concerns this physical setup and dry policy.
+            # A subsequent job has its own verified start and swept-path evidence;
+            # adding measured contact corridors does not undo the past Air result.
+            context['machine'] = {k:v for k,v in machine.items() if k not in
+                ('start_work_xyz', 'validated_free_boxes', 'validated_free_segments',
+                 'keepout_boxes', 'tool_envelope_margin_mm')}
+            context['motion'] = {k:motion.get(k) for k in ('air_xy_mm_min', 'ordinary_travel_mm_min',
+                'z_travel_mm_min', 'paper_hover_mm', 'station_clearance_mm', 'park_xyz', 'air_local_hover', 'air_station_roles')}
+            if check == 'air_run':
+                context['station_geometry'] = {k:geometry[k] for k in motion.get('air_station_roles', []) if k in geometry}
+        elif check in ('brush_response','paper_contact','microsegment_response','continuous_seam','local_hover_clearance'):
             context.update(motion=motion, brushes=self.data.get('brush_profiles', {}))
         elif check in ('station_contacts','contamination_cleaning','ink_to_color_inspection','station_ink_trial','station_water_trial','cloth_purge_trial'):
             brushes = {name:{k:v for k,v in b.items() if k not in ('knots','observations')}
@@ -116,22 +141,36 @@ class Profile:
         for key in ('axis_max_rate_mm_min', 'axis_acceleration_mm_s2', 'steps_per_mm'):
             need(vector(m.get(key)) and all(number(x, True) for x in m.get(key, [])),
                  'measure positive machine.' + key)
-        need(number(m.get('junction_deviation_mm'), True), 'record controller junction deviation')
-        need(number(m.get('tool_envelope_margin_mm')) and m['tool_envelope_margin_mm'] >= 0,
+        # Junction deviation is needed for the timing model, not for checking an
+        # Air Run's coordinates, axis speed caps or complete swept corridors.
+        if stage != 'air':
+            need(number(m.get('junction_deviation_mm'), True), 'record controller junction deviation')
+        need(m.get('machine_bounds_reference', 'tool_envelope') in ('tool_envelope', 'axis_reference'),
+             'unknown machine bounds reference')
+        exact_only = (exact_free_segments(m) and m.get('machine_bounds_reference') == 'axis_reference'
+                      and m.get('keepout_boxes') == [])
+        need((number(m.get('tool_envelope_margin_mm')) and m['tool_envelope_margin_mm'] >= 0) or exact_only,
              'measure tool-envelope margin')
-        need(bool(m.get('validated_free_boxes')) and all(box(b) for b in m.get('validated_free_boxes', [])),
-             'measure swept-tool free-space boxes')
+        need((bool(m.get('validated_free_boxes')) and all(box(b) for b in m.get('validated_free_boxes', [])))
+             or exact_only, 'measure swept-tool free-space boxes or inspect exact full-tool segments')
         need(isinstance(m.get('keepout_boxes'), list) and all(box(b) for b in m.get('keepout_boxes', [])),
              'record swept-tool keepout boxes (explicit [] allowed after inspection)')
-        for key in ('paper_hover_mm', 'station_clearance_mm', 'draw_mm_min', 'ordinary_travel_mm_min',
+        motion_keys = ('paper_hover_mm', 'station_clearance_mm', 'draw_mm_min', 'ordinary_travel_mm_min',
                     'partially_depleted_mm_min', 'wet_loaded_mm_min', 'station_approach_mm_min',
                     'z_travel_mm_min', 'contact_mm_min', 'wet_departure_mm', 'wet_departure_mm_min',
                     'wet_arrival_mm', 'wet_arrival_mm_min', 'paper_approach_mm_min',
                     'paper_contact_mm_min', 'paper_release_mm_min',
                     'paper_approach_mm', 'pressure_z_mm_min', 'wet_max_xy_acceleration_mm_s2',
-                    'contact_max_z_acceleration_mm_s2'):
+                    'contact_max_z_acceleration_mm_s2')
+        if stage == 'air':
+            motion_keys = ('paper_hover_mm', 'station_clearance_mm', 'draw_mm_min',
+                           'ordinary_travel_mm_min', 'z_travel_mm_min')
+            if 'air_xy_mm_min' in v:
+                need(number(v['air_xy_mm_min'], True), 'positive Air-only XY simulation feed required')
+                motion_keys = tuple(k for k in motion_keys if k != 'draw_mm_min')
+        for key in motion_keys:
             need(number(v.get(key), True), 'calibrate motion.' + key)
-        if vector(m.get('axis_acceleration_mm_s2')):
+        if stage != 'air' and vector(m.get('axis_acceleration_mm_s2')):
             if number(v.get('wet_max_xy_acceleration_mm_s2'), True):
                 need(max(m['axis_acceleration_mm_s2'][:2]) <= v['wet_max_xy_acceleration_mm_s2'],
                      'installed XY acceleration exceeds calibrated wet-brush limit; adjust controller manually')
@@ -141,13 +180,20 @@ class Profile:
         if vector(m.get('start_work_xyz')) and number(v.get('paper_hover_mm')):
             need(m['start_work_xyz'][2] >= v['paper_hover_mm'], 'initial position must already be at verified no-contact hover or above')
         need(vector(v.get('park_xyz')), 'measure and validate parking target')
-        if number(v.get('paper_hover_mm')) and number(v.get('paper_approach_mm')):
+        if stage != 'air' and number(v.get('paper_hover_mm')) and number(v.get('paper_approach_mm')):
             need(0 < v['paper_approach_mm'] <= v['paper_hover_mm'], 'paper approach must lie below hover and above contact')
         if number(v.get('paper_hover_mm')) and number(v.get('station_clearance_mm')):
             need(v['station_clearance_mm'] >= v['paper_hover_mm'], 'station clearance below paper hover')
         if vector(v.get('park_xyz')) and number(v.get('station_clearance_mm')):
             need(v['park_xyz'][2] >= v['station_clearance_mm'], 'park below station clearance')
-        local = v.get('local_hover')
+        air_local = v.get('air_local_hover', {})
+        need(isinstance(air_local, dict), 'invalid Air local-hover policy')
+        if stage == 'air' and isinstance(air_local, dict) and air_local.get('enabled'):
+            need(air_local.get('enabled') is True and number(air_local.get('height_mm'), True)
+                 and air_local['height_mm'] <= v['paper_hover_mm'], 'invalid Air local-hover height')
+            need(self.evidence_passed('air_local_hover_clearance'),
+                 'missing current-profile evidence: air_local_hover_clearance')
+        local = v.get('local_hover') if stage != 'air' else None
         if local is not None:
             need(isinstance(local, dict) and type(local.get('enabled')) is bool, 'local_hover needs explicit enabled policy')
             if isinstance(local, dict) and local.get('enabled'):

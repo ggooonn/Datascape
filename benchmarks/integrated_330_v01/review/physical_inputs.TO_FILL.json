@@ -1,0 +1,46 @@
+{
+  "schema": "datascape.integrated_benchmark_pending_inputs.v01",
+  "do_not_repeat_confirmed_controller_queries": true,
+  "air": {
+    "new_integrated_full_tool_segments_including_Z5_inspected": null,
+    "paper_maximum_height_on_these_paths_and_clearance": null,
+    "physical_emergency_stop_and_USB_loss_stop_procedure_verified": null,
+    "initial_F5000_dry_trial_with_installed_axis_limits_authorized": false,
+    "note": "Keep all previously checked paper/park and homing facts. Review only the new complete integrated path scope. Exact inspected segments may replace invented free-space boxes; no zero tool-radius measurement is required for that route."
+  },
+  "optional_air_station_roles": [],
+  "paint": {
+    "actual_backend_integrated_air_result_reference": null,
+    "WELL_2_ink": {
+      "deep_floor_G54_xyz": null,
+      "shallow_floor_G54_xyz": null,
+      "actual_liquid_G54_z": null,
+      "allowed_contact_volume_G54_xyz": null
+    },
+    "WELL_1_water": {
+      "deep_floor_G54_xyz": null,
+      "shallow_floor_G54_xyz": null,
+      "actual_liquid_G54_z": null,
+      "allowed_contact_volume_G54_xyz": null
+    },
+    "C1": {
+      "confirmed_G54_center_xy": null,
+      "actual_liquid_G54_z": null,
+      "bottom_G54_z": null,
+      "initial_immersion_mm": null,
+      "safe_loading_radius_mm": null,
+      "allowed_contact_volume_G54_xyz": null
+    },
+    "trial_configuration_review": "Confirm or revise the existing initial 2-mm well immersion, gap1/exit2/feed60/dwell1/wash1 and 5-mm wet edges. Supply safe wet/contact acceleration trial limits; installed axis acceleration is already known. Junction deviation remains a runtime setting to record for the wet profile.",
+    "operator_job_authorization": false
+  },
+  "optional_only": {
+    "cloth_enabled": false,
+    "secured_cloth_surface_G54_z": null,
+    "cloth_compression_and_dwell": null,
+    "cloth_contact_volume_G54_xyz": null,
+    "second_color": "C2 only if explicitly selected and measured"
+  },
+  "operator": null,
+  "date": null
+}

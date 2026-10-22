@@ -9,7 +9,7 @@ import re
 import shutil
 import tempfile
 from ..binding import digest, SIDECAR_SHA
-from .profiles import authorize, Profile, require_physical_layout
+from .profiles import authorize, Profile, require_physical_layout, air_minimum_z
 from .trajectory import build_job, Builder, Materials, Command, require_path
 
 
@@ -63,7 +63,7 @@ def readback(text, commands, profile, stage):
             x, y, z, f = map(float, m.groups()); xyz = (x, y, z)
             if f <= 0: raise ValueError('nonpositive feed')
             require_path(pos, xyz, profile.data['machine'])
-            if stage == 'air' and z < profile.data['motion']['paper_hover_mm']-1e-9:
+            if stage == 'air' and z < air_minimum_z(profile)-1e-9:
                 raise ValueError('air run contains contact/negative Z')
             from math import dist
             length = dist(pos, xyz)
@@ -85,10 +85,13 @@ def readback(text, commands, profile, stage):
             length = dist(position, row[1]); motion = profile.data['motion']
             if stage != 'calibration':
                 from .timing import requested_feed
-                cap = requested_feed((length, (), c.feed_mm_min, c.time_category,
-                                      c.action, c.travel_state, c.travel_phase), motion)
+                if stage == 'air' and c.action == 'draw':
+                    cap = motion.get('air_xy_mm_min', motion.get('draw_mm_min'))
+                else:
+                    cap = requested_feed((length, (), c.feed_mm_min, c.time_category,
+                                          c.action, c.travel_state, c.travel_phase), motion)
                 if row[2] > cap+1e-6: raise ValueError('serialized feed exceeds motion-policy cap')
-            z_cap = motion['pressure_z_mm_min'] if c.action in ('draw','pressure_variation') else motion['z_travel_mm_min']
+            z_cap = motion['pressure_z_mm_min'] if stage != 'air' and c.action in ('draw','pressure_variation') else motion['z_travel_mm_min']
             if length and abs(row[1][2]-position[2])/length*row[2] > z_cap+1e-6:
                 raise ValueError('serialized Z velocity exceeds calibrated limit')
             position = row[1]
@@ -220,9 +223,12 @@ def verify_export(output):
         p = root/name
         if not p.resolve().is_relative_to(root.resolve()) or hashlib.sha256(p.read_bytes()).hexdigest() != sha:
             raise ValueError('export artifact hash/path mismatch: '+name)
-    if any(str(p.relative_to(root)) not in hashes for p in root.rglob('*.nc')):
+    if any(str(p.relative_to(root)) not in hashes for p in root.rglob('*') if p.suffix.lower() in ('.nc', '.gcode')):
         raise ValueError('unmanifested executable file')
     report = json.loads((root/'report.json').read_text());stage = report['stage']
+    if report.get('schema') == 'datascape.integrated_benchmark_export.v0.3':
+        from .integrated_benchmark import verify_integrated
+        return verify_integrated(root, hashes)
     profile = Profile.load(root/'profile.json');authorization = json.loads((root/'authorization.json').read_text())
     plan_path = root/('plan.json' if stage == 'calibration' else 'plan.json.gz')
     raw = plan_path.read_bytes();plan = json.loads(gzip.decompress(raw) if plan_path.suffix == '.gz' else raw)

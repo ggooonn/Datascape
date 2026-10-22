@@ -6,7 +6,7 @@ from collections import Counter
 from ..layout import WorkToMachine
 from ..motion import MotionSettings, stroke_events, Action
 from ..estimation import rest_to_rest_seconds
-from .profiles import number, vector, box
+from .profiles import number, vector, box, exact_free_segments
 
 
 def interval_in_box(a, b, bounds):
@@ -26,8 +26,21 @@ def require_path(a, b, machine):
     """Validate the complete segment, not just its endpoints or nominal XY fit."""
     offset = WorkToMachine(tuple(machine['g54_to_machine_xyz']), verified=True)
     margin = machine['tool_envelope_margin_mm']
+    direct = (exact_free_segments(machine) and machine.get('machine_bounds_reference') == 'axis_reference'
+              and machine.get('keepout_boxes') == [])
+    if not number(margin) or margin < 0:
+        if not direct: raise ValueError('measured tool envelope or exact inspected full-tool path required')
+        # This zero is only unused obstacle expansion, NOT a measured radius.
+        # The actual tool is explicitly inspected over the exact segments below.
+        margin = 0.
     bounds = machine['machine_bounds_xyz']
-    inner = [[x+margin for x in bounds[0]], [x-margin for x in bounds[1]]]
+    # Axis-reference travel limits already describe carriage reference points.
+    # Tool clearance is still enforced against expanded obstacles and full-tool
+    # validated corridors. Legacy envelope bounds keep their existing erosion.
+    if machine.get('machine_bounds_reference') == 'axis_reference':
+        inner = bounds
+    else:
+        inner = [[x+margin for x in bounds[0]], [x-margin for x in bounds[1]]]
     for p in (offset.xyz(a), offset.xyz(b)):
         if any(not x-1e-9 <= q <= y+1e-9 for q, x, y in zip(p, *inner)):
             raise ValueError('unreachable machine trajectory after G54 offset/tool margin: ' + str(p))
@@ -35,8 +48,20 @@ def require_path(a, b, machine):
         expanded = [[x-margin for x in obstacle[0]], [x+margin for x in obstacle[1]]]
         if interval_in_box(a, b, expanded) is not None:
             raise ValueError('swept-tool path intersects measured keepout')
-    spans = sorted(v for bounds in machine['validated_free_boxes']
-                   if (v := interval_in_box(a, b, bounds)) is not None)
+    spans = [v for bounds in machine['validated_free_boxes']
+             if (v := interval_in_box(a, b, bounds)) is not None]
+    if direct:
+        for start, end in machine['validated_free_segments']:
+            delta = tuple(y-x for x,y in zip(start,end))
+            norm2 = sum(d*d for d in delta)
+            def on_segment(p):
+                if norm2 < 1e-20: return dist(p,start) < 1e-9
+                t = sum((x-y)*d for x,y,d in zip(p,start,delta))/norm2
+                return -1e-10 <= t <= 1+1e-10 and dist(p,tuple(x+t*d for x,d in zip(start,delta))) < 1e-8
+            if on_segment(a) and on_segment(b):
+                spans.append((0.,1.))
+                break
+    spans.sort()
     cursor = 0.
     for lo, hi in spans:
         if lo > cursor+1e-10: break
@@ -154,7 +179,10 @@ class Builder:
 
     def result(self):
         from .timing import estimate_commands
-        timing = estimate_commands(self.commands, self.profile)
+        timing = (estimate_commands(self.commands, self.profile)
+                  if number(self.m.get('junction_deviation_mm'), True) else
+                  {'available': False, 'reason': 'controller junction deviation unrecorded',
+                   'verified_physical_time': False})
         self.lengths['station_transfer_3d_mm'] = sum(self.lengths[k] for k in ('station_access_3d_mm','station_return_3d_mm','station_to_park_3d_mm'))
         return {'counts': dict(self.counts), 'distances': dict(self.lengths),
                 'commanded_feed_subtotal_seconds': self.nominal_seconds,
@@ -354,7 +382,16 @@ def local_transition_height(profile, previous, following, distance_since_load, s
 def draw_fragment(b, fragment, material, stage, retract_height=None):
     s = fragment.stroke
     if stage == 'air':
-        depth = None
+        # An Air Run does not instantiate the contact-event model or require
+        # its unmeasured approach boundary, pressure curve or wet-brush limits.
+        lineage = {'source_id': s.origin_id, 'fragment_id': s.stroke_id}
+        b.xy(fragment.work_xy[0], b.v['station_clearance_mm'] if not b.in_paper else b.v['paper_hover_mm'])
+        b.move((*fragment.work_xy[0], b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'paper_hover')
+        for i, (xy, p) in enumerate(zip(fragment.work_xy, s.points)):
+            b.move((*xy, b.v['paper_hover_mm']), b.v.get('air_xy_mm_min', b.v['draw_mm_min']), 'draw',
+                   **lineage, source_vertex=i, artistic_pressure=p.pressure)
+        b.in_paper = True; b.last_panel = fragment.panel
+        return
     else:
         depth = b.profile.brush_for(s.medium, s.color_slot)
         low, high = b.v['paper_contact_z_range']

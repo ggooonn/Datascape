@@ -1,5 +1,11 @@
 # Hardware commissioning and 330x330 mm benchmark v01
 
+**Current operator workflow:** the integrated successor on the dedicated branch
+uses [two principal jobs](../integrated_330_v01/README.md), rather than thirteen
+operator sessions. The plans below remain unchanged source components and
+regression fixtures. The new record uses the supplied installed YAML and actual
+FluidNC v4.1.1 query; historical unknowns below are not current facts.
+
 Base Backend PR #27: `12b28bd5b7ad575b1438ed5af61618746c7effe9`.
 Parent Local Hover study: `0eeff5d0d874b9b869c3f274d06bf524ac18282a`.
 This independent branch changes neither existing Draft PR nor Spring artwork,
