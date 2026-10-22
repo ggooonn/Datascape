@@ -41,6 +41,9 @@ def main(argv=None):
     s.add_argument('--media', nargs='+', choices=('ink','color'), default=['ink','color'])
     s = sub.add_parser('calibration')
     for k in ('profile', 'plan', 'authorization', 'output'): s.add_argument('--'+k, required=True, type=Path)
+    s = sub.add_parser('integrated', help='one gated integrated Air or paint commissioning job')
+    s.add_argument('--kind', choices=('air', 'paint'), required=True)
+    for k in ('profile', 'plan', 'authorization', 'output'): s.add_argument('--'+k, required=True, type=Path)
     a = p.parse_args(argv)
     try:
         if a.command == 'verify':
@@ -55,7 +58,11 @@ def main(argv=None):
                 'structurally_ready': not issues, 'blocking_issues': issues,
                 'operator_stage_authorization_still_required': True}, indent=2))
             return 2 if issues else 0
-        if a.command == 'calibration':
+        if a.command == 'integrated':
+            from .integrated_benchmark import export_integrated
+            report = export_integrated(load_json(a.plan), Profile.load(a.profile), a.kind,
+                                       load_json(a.authorization), a.output)
+        elif a.command == 'calibration':
             report = export_calibration(load_json(a.plan), Profile.load(a.profile),
                                         load_json(a.authorization), a.output)
         elif a.benchmark_plan is not None:

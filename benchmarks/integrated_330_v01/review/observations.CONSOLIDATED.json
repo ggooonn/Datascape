@@ -1,0 +1,44 @@
+{
+  "one_consolidated_feedback_record": true,
+  "operator": null,
+  "date": null,
+  "AIR": {
+    "delivered_gcode_sha256": null,
+    "pre_start_MPos_WPos": null,
+    "final_park_MPos_WPos": null,
+    "Z5_clearance_and_recovery": null,
+    "USB_errors_resets_alarms": null,
+    "elapsed_seconds": null,
+    "pass_or_abort": null
+  },
+  "PAINT": {
+    "delivered_gcode_sha256": null,
+    "inspection_pause_results": {
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null,
+      "8": null,
+      "9": null,
+      "10": null
+    },
+    "depth_minus_1_2_3_width_continuity_paper_recovery": null,
+    "C_LOW_response": null,
+    "hover_10_vs_5": null,
+    "well_loading_and_slope_withdrawal": null,
+    "water_cleaning_effectiveness": null,
+    "color_loading_and_mark": null,
+    "cloth_if_enabled": null,
+    "final_park": null,
+    "USB_and_stop_events": null
+  },
+  "recipe": {
+    "water_mL_actual": null,
+    "gouache_scoops_actual": null,
+    "pigment_mass_g_if_measured": null
+  },
+  "next": "Consolidated calibration update, then full Spring Air and SHARED_INK/SHARED_COLOR; no artwork/S3a changes."
+}

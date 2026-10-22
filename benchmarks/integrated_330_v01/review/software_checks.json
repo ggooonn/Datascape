@@ -1,0 +1,22 @@
+{
+  "command": "PYTHONPATH=src:tests:. python -m unittest discover -s tests -p 'test_gcode_*.py' -q",
+  "tests_run": 112,
+  "passed": 111,
+  "skipped": 1,
+  "failures": 0,
+  "added_integrated_tests": 13,
+  "actual_partial_profile_exports_blocked": 2,
+  "executable_files_delivered": 0,
+  "hardware_executed": false,
+  "test_log_sha256": "32e335a354669b53c8015a21791ed8d23f299e336c4507c1d65260df3fa1a852",
+  "CLI_export_smoke": {
+    "air": {
+      "exit_code": 2,
+      "no_partial_output": true
+    },
+    "paint": {
+      "exit_code": 2,
+      "no_partial_output": true
+    }
+  }
+}
