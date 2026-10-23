@@ -196,13 +196,40 @@ class Builder:
                 'timing': timing}
 
 
+def palette_pattern_xy(station):
+    """One shared XY grammar for wet loading and elevated dry simulation."""
+    center = station['center_xy']; radius = station['radius_mm']
+    repeats = station['revolutions']; steps = station['segments_per_revolution']
+    if not vector(center, 2) or not number(radius, True):
+        raise ValueError('measure palette center and approve loading radius')
+    if type(repeats) is not int or repeats < 1 or type(steps) is not int or steps < 12:
+        raise ValueError('positive revolutions and >=12 polygon segments required')
+    points = []
+    for _ in range(repeats):
+        if station.get('pattern', 'circle') == 'circle':
+            points += [(center[0]+radius*cos(2*pi*j/steps), center[1]+radius*sin(2*pi*j/steps))
+                       for j in range(steps+1)]
+            points.append(tuple(center))
+        elif station['pattern'] == 'cross':
+            for dx, dy in ((radius, 0), (-radius, 0), (0, radius), (0, -radius)):
+                points += [(center[0]+dx, center[1]+dy), tuple(center)]
+        else: raise ValueError('unknown palette loading pattern')
+    return tuple(points)
+
+
 def station_points(station):
     """Measured two-point slope, circle/cross palette, or gentle sponge contact."""
-    kind = station['kind']; bounds = station['contact_box_xyz']
+    bounds = station['contact_box_xyz']
     def check(p):
         if not vector(p) or interval_in_box(p, p, bounds) is None:
             raise ValueError('station contact leaves calibrated volume')
         return tuple(p)
+    return _station_geometry(station, check)
+
+
+def _station_geometry(station, check):
+    """Shared numeric grammar; official station_points always adds physical bounds."""
+    kind = station['kind']
     if kind == 'sloped_inkstone':
         deep = station['deep_surface_xyz']; shallow = station['shallow_surface_xyz']
         if not vector(deep) or not vector(shallow): raise ValueError('measure deep/shallow stone points')
@@ -223,6 +250,8 @@ def station_points(station):
             if not vector(offset, 2) or not number(floor) or dip[2] < floor+gap:
                 raise ValueError('measure agitation-area maximum floor and non-scraping clearance')
             for _ in range(agitation):
+                if station.get('agitation_bidirectional', False):
+                    points += [check((dip[0]-offset[0], dip[1]-offset[1], dip[2]))]
                 points += [check((dip[0]+offset[0], dip[1]+offset[1], dip[2])), dip]
         return dip, tuple(points)+(end,)
     if kind == 'palette':
@@ -236,19 +265,7 @@ def station_points(station):
         if z < station['bottom_z']+station['bottom_gap_mm'] or station['bottom_gap_mm'] <= 0:
             raise ValueError('palette bottom scrape risk')
         dip = check((*center, z)); points = []
-        repeats = station['revolutions']; steps = station['segments_per_revolution']
-        if type(repeats) is not int or repeats < 1 or type(steps) is not int or steps < 12:
-            raise ValueError('positive revolutions and >=12 polygon segments required')
-        pattern = station.get('pattern', 'circle')
-        for _ in range(repeats):
-            if pattern == 'circle':
-                points += [check((center[0]+radius*cos(2*pi*j/steps),
-                                  center[1]+radius*sin(2*pi*j/steps), z)) for j in range(steps+1)]
-                points.append(dip)
-            elif pattern == 'cross':
-                for dx, dy in ((radius, 0), (-radius, 0), (0, radius), (0, -radius)):
-                    points += [check((center[0]+dx, center[1]+dy, z)), dip]
-            else: raise ValueError('unknown palette loading pattern')
+        points += [check((*xy, z)) for xy in palette_pattern_xy(station)]
         points.append(check((*center, level+station['exit_above_liquid_mm'])))
         return dip, tuple(points)
     if kind == 'absorbent':
@@ -275,6 +292,52 @@ def material_station(station, material):
     return result
 
 
+def station_phase_feed(station, motion, phase):
+    """Explicit liquid/fabric caps are independent of the legacy contact clamp."""
+    feeds = station.get('phase_feeds_mm_min')
+    if feeds is None:
+        return min(station['feed_mm_min'], motion['contact_mm_min'])
+    cap = motion.get('station_phase_limits_mm_min', {}).get(phase)
+    feed = feeds.get(phase)
+    if not number(feed, True) or not number(cap, True) or feed > cap:
+        raise ValueError('station phase feed requires an independent positive cap: ' + phase)
+    return feed
+
+
+def emit_station_operation(b, station, action, state, geometry=station_points):
+    """Shared measured/review grammar; the official default checks contact volume."""
+    st = station; dip, points = geometry(st)
+    explicit = st.get('phase_feeds_mm_min') is not None
+    if explicit:
+        approach_z = st.get('approach_z')
+        reference = st.get('surface_z') if st['kind'] == 'absorbent' else st.get('liquid_reference_z')
+        if not number(approach_z) or not number(reference) or not reference < approach_z <= b.v['station_clearance_mm']:
+            raise ValueError('station fast approach must end above contact reference and below global clearance')
+    else: approach_z = st['contact_box_xyz'][1][2]
+    access_before = b.lengths['non_draw_mm']; b.time_context = 'station_transfer'
+    b.xy(dip[:2], b.v['station_clearance_mm'], state)
+    b.lengths['station_access_3d_mm'] += b.lengths['non_draw_mm']-access_before
+    b.time_context = 'station_handling'
+    approach = (*dip[:2], approach_z)
+    b.move(approach, b.v['station_approach_mm_min'], 'station_approach', 'station_approach')
+    repeats = st.get('repetitions', 1) if st['kind'] == 'absorbent' else 1
+    if type(repeats) is not int or repeats < 1: raise ValueError('positive contact repetition count required')
+    for cycle in range(repeats):
+        if cycle: b.move(approach, b.v['station_approach_mm_min'], 'station_approach', 'station_approach')
+        phase = 'purge_contact' if st['kind'] == 'absorbent' else 'immersion'
+        b.move(dip, station_phase_feed(st, b.v, phase), 'station_'+action, 'station_approach', travel_phase=phase)
+        b.dwell(st['dwell_seconds'], action+'_dwell')
+        for index, point in enumerate(points):
+            phase = 'withdrawal' if index == len(points)-1 else 'agitation'
+            b.move(point, station_phase_feed(st, b.v, phase), 'station_'+action, 'station_approach', travel_phase=phase)
+        if explicit and st['kind'] == 'absorbent':
+            b.move(approach, station_phase_feed(st, b.v, 'purge_contact'),
+                   'station_'+action, 'station_approach', travel_phase='purge_release')
+    retract_before = b.lengths['non_draw_mm']; b.lift(b.v['station_clearance_mm'])
+    b.lengths['station_retract_3d_mm'] += b.lengths['non_draw_mm']-retract_before
+    b.in_paper = False; b.last_panel = None; b.at_station = True; b.time_context = None
+
+
 class Materials:
     def __init__(self, builder):
         self.b = builder; self.p = builder.profile.data['material']
@@ -293,29 +356,8 @@ class Materials:
             st['immersion_mm'] = st['rewet_immersion_mm']
             st['dwell_seconds'] = st['rewet_dwell_seconds']
             st['agitation_cycles'] = 0
-        dip, points = station_points(st)
         if not number(st['feed_mm_min'], True): raise ValueError('station operation feed must be positive')
-        # Approach above the station at GLOBAL clearance, then descend vertically.
-        access_before = b.lengths['non_draw_mm']
-        b.time_context = 'station_transfer'
-        b.xy(dip[:2], b.v['station_clearance_mm'], self.state)
-        b.time_context = 'station_handling'
-        b.lengths['station_access_3d_mm'] += b.lengths['non_draw_mm']-access_before
-        approach = (*dip[:2], st['contact_box_xyz'][1][2])
-        b.move(approach, b.v['station_approach_mm_min'], 'station_approach', 'station_approach')
-        repeats = st.get('repetitions', 1) if st['kind'] == 'absorbent' else 1
-        if type(repeats) is not int or repeats < 1: raise ValueError('positive gentle-contact repetition count required')
-        for cycle in range(repeats):
-            if cycle: b.move(approach, b.v['station_approach_mm_min'], 'station_approach', 'station_approach')
-            b.move(dip, min(st['feed_mm_min'], b.v['contact_mm_min']), 'station_'+action, 'station_approach')
-            b.dwell(st['dwell_seconds'], action+'_dwell')
-            for p in points:
-                b.move(p, min(st['feed_mm_min'], b.v['contact_mm_min']), 'station_'+action, 'station_approach')
-        retract_before = b.lengths['non_draw_mm']
-        b.lift(b.v['station_clearance_mm'])
-        b.lengths['station_retract_3d_mm'] += b.lengths['non_draw_mm']-retract_before
-        b.in_paper = False; b.last_panel = None; b.at_station = True
-        b.time_context = None
+        emit_station_operation(b, st, action, self.state)
         b.marker(action, role)
 
     def wash(self):

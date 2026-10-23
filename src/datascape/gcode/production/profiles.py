@@ -98,12 +98,22 @@ class Profile:
                 ('start_work_xyz', 'validated_free_boxes', 'validated_free_segments',
                  'keepout_boxes', 'tool_envelope_margin_mm')}
             context['motion'] = {k:motion.get(k) for k in ('air_xy_mm_min', 'ordinary_travel_mm_min',
-                'z_travel_mm_min', 'paper_hover_mm', 'station_clearance_mm', 'park_xyz', 'air_local_hover', 'air_station_roles')}
+                'z_travel_mm_min', 'paper_hover_mm', 'station_clearance_mm', 'park_xyz', 'air_local_hover', 'air_station_roles',
+                'benchmark_plan_sha256', 'air_station_top_mm', 'air_station_simulation_z_mm', 'wet_loaded_mm_min',
+                'wet_departure_mm', 'wet_arrival_mm', 'wet_departure_mm_min', 'wet_arrival_mm_min')}
             if check == 'air_run':
                 context['station_geometry'] = {k:geometry[k] for k in motion.get('air_station_roles', []) if k in geometry}
+                if motion.get('benchmark_plan_sha256'):
+                    context['station_geometry'] = {role: {k: st.get(k) for k in
+                        ('hardware_id', 'coordinate_frame', 'center_xy', 'radius_mm', 'pattern',
+                         'revolutions', 'segments_per_revolution', 'wash_cycles', 'agitation_cycles')}
+                        | {k: (st[k][:2] if isinstance(st.get(k), (list, tuple)) else None)
+                           for k in ('deep_surface_xyz', 'shallow_surface_xyz')}
+                        for role, st in stations.items() if role in motion.get('air_station_roles', [])}
         elif check in ('brush_response','paper_contact','microsegment_response','continuous_seam','local_hover_clearance'):
             context.update(motion=motion, brushes=self.data.get('brush_profiles', {}))
-        elif check in ('station_contacts','contamination_cleaning','ink_to_color_inspection','station_ink_trial','station_water_trial','cloth_purge_trial'):
+        elif check in ('station_contacts','contamination_cleaning','ink_to_color_inspection','station_ink_trial','station_water_trial','cloth_purge_trial',
+                       'continuous_benchmark_contact','wet_motion'):
             brushes = {name:{k:v for k,v in b.items() if k not in ('knots','observations')}
                        for name,b in self.data.get('brush_profiles', {}).items()}
             context.update(motion=motion, stations=stations, brushes=brushes, material=self.data.get('material', {}))
@@ -226,8 +236,11 @@ class Profile:
                 need(number(st.get('feed_mm_min'), True), role + ': calibrate contact feed')
                 need(number(st.get('dwell_seconds')) and st['dwell_seconds'] >= 0, role + ': calibrate dwell')
                 try:
-                    from .trajectory import station_points, material_station
+                    from .trajectory import station_points, material_station, station_phase_feed
                     station_points(st)
+                    if st.get('phase_feeds_mm_min') is not None:
+                        for phase in (('purge_contact',) if role == 'sponge' else ('immersion','agitation','withdrawal')):
+                            station_phase_feed(st, v, phase)
                     if role == 'sponge':
                         overrides = st.get('material_overrides', {})
                         if not isinstance(overrides, dict): raise ValueError('absorbent material overrides must be a mapping')

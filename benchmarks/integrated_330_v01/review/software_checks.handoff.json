@@ -1,0 +1,26 @@
+{
+  "base_commit": "e3e51bfa22cca615d29c39f9a960f38d4a193da3",
+  "branch": "commissioning/air-z10-ink-a2-handoff",
+  "date": "2026-10-23",
+  "command": "PYTHONPATH=src:tests:. python -m unittest discover -s tests -p 'test_gcode*.py' -q",
+  "tests_run": 120,
+  "tests_passed": 119,
+  "tests_skipped": 1,
+  "failures": 0,
+  "integrated_tests": 21,
+  "synthetic_only_export_tests": true,
+  "hardware_executed": false,
+  "measured_profile_executable_export_attempted": false,
+  "actual_air_result_available": false,
+  "actual_paint_result_available": false,
+  "paired_benchmark_tests": 4,
+  "execution_mode": "continuous_40",
+  "M0_count_air": 0,
+  "M0_count_paint": 0,
+  "identical_40_stroke_XY_and_station_visit_order_tested": true,
+  "executable_names": [
+    "BENCHMARK_330_AIR.gcode",
+    "BENCHMARK_330_PAINT.gcode"
+  ],
+  "test_log_sha256": "6d0f86ff21873192a0afa0d1747f1888137f32cf340b621c963d690939fd313e"
+}
