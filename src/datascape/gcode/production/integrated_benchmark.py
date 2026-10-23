@@ -40,7 +40,7 @@ def validate(request, profile, kind, physical=True):
         raise ValueError('unknown integrated benchmark kind/schema')
     allowed = {'schema', 'substrate_mm', 'source_commit', 'sources', 'color_slots', 'include_cloth',
                'air_station_roles', 'recipe', 'notes'}
-    optional = {'air_hover_mm', 'paint_trial', 'execution_mode', 'benchmark_columns'}
+    optional = {'air_hover_mm', 'paint_trial', 'execution_mode', 'benchmark_columns', 'station_policy'}
     if not allowed <= set(request) or set(request) - allowed - optional or request['substrate_mm'] != [330, 330]:
         raise ValueError('invalid integrated 330-mm request')
     if 'air_hover_mm' in request and request['air_hover_mm'] != 10:
@@ -49,6 +49,9 @@ def validate(request, profile, kind, physical=True):
         raise ValueError('unknown integrated paint trial')
     series = request.get('paint_trial') == 'ink_a2_depth_series_40'
     paired = continuous(request)
+    final_stations = request.get('station_policy') == 'final_station_v01'
+    if 'station_policy' in request and (not final_stations or not paired):
+        raise ValueError('unknown station benchmark policy')
     if 'execution_mode' in request and not paired:
         raise ValueError('unknown benchmark execution mode')
     if paired and (not series or request.get('air_hover_mm') != 10 or
@@ -56,7 +59,7 @@ def validate(request, profile, kind, physical=True):
         raise ValueError('continuous benchmark requires its shared 40-stroke source')
     if not paired and 'benchmark_columns' in request:
         raise ValueError('shared columns require continuous execution mode')
-    if series and (request['color_slots'] != ['A2'] or request['include_cloth']):
+    if series and (request['color_slots'] != ['A2'] or (request['include_cloth'] and not final_stations)):
         raise ValueError('40-stroke trial requires ink/A2 and no cloth')
     if request['source_commit'] != '29fccadc9a270afe65d46c7e8711c5c2ec0d8ea8':
         raise ValueError('integrated benchmark requires the pinned PR28 source')
@@ -108,7 +111,8 @@ def validate(request, profile, kind, physical=True):
             if (v.get('ordinary_travel_mm_min'), v.get('draw_mm_min'), v.get('air_xy_mm_min'),
                 v.get('wet_loaded_mm_min'), v.get('z_travel_mm_min')) != (8000, 5000, 5000, 8000, 3000):
                 raise ValueError('continuous benchmark requires approved XY8000/draw5000/wet8000/noncontact-Z3000 policy')
-            if roles != ['ink', 'water', 'A2'] or v.get('air_local_hover', {}).get('enabled') is not False:
+            expected_roles = ['ink', 'water', 'sponge', 'A2'] if final_stations else ['ink', 'water', 'A2']
+            if roles != expected_roles or v.get('air_local_hover', {}).get('enabled') is not False:
                 raise ValueError('continuous benchmark requires all three station routes and no local hover')
             if v.get('benchmark_plan_sha256') != digest(request):
                 raise ValueError('motion/evidence must bind the shared benchmark source plan')
@@ -150,7 +154,7 @@ def validate(request, profile, kind, physical=True):
                     raise ValueError('missing current-profile Air station/corridor evidence: ' + role + ' (air_station_' + role + ')')
         else:
             profile.require('calibration', station_roles(request))
-            if any(profile.data['stations'][r]['immersion_mm'] != 2 for r in ('ink', 'water')):
+            if not final_stations and any(profile.data['stations'][r]['immersion_mm'] != 2 for r in ('ink', 'water')):
                 raise ValueError('initial integrated well trial uses 2-mm immersion; 3 mm is a later reviewed expansion')
             # The first three constant lines establish observations inside this
             # job. Each deeper trial and C_LOW has an unconditional inspect M0.
@@ -344,11 +348,22 @@ def dry_station_xy(st):
                 raise ValueError('record actual deep/shallow station XY; region limits are not contact endpoints')
             points.append(tuple(p[:2]))
         if points[1][1] <= points[0][1]: raise ValueError('station withdrawal XY must proceed Y+')
-        if st.get('agitation_cycles', 0) != 0:
-            raise ValueError('continuous benchmark uses the initial no-agitation well grammar')
-        return tuple(points)
+        cycles = st.get('agitation_cycles', 0)
+        if type(cycles) is not int or cycles < 0: raise ValueError('invalid dry agitation count')
+        deep, shallow = points; points = [deep]
+        if cycles:
+            offset = st.get('agitation_xy_mm')
+            if not vector(offset, 2): raise ValueError('record dry agitation XY extent')
+            for _ in range(cycles):
+                if st.get('agitation_bidirectional', False):
+                    points.append(tuple(x-d for x,d in zip(deep,offset)))
+                points += [tuple(x+d for x,d in zip(deep,offset)), deep]
+        return tuple(points+[shallow])
     if st['kind'] == 'palette':
         return (tuple(st['center_xy']), *palette_pattern_xy(st), tuple(st['center_xy']))
+    if st['kind'] == 'absorbent':
+        if st.get('wipe_xy_mm', [0,0]) != [0,0]: raise ValueError('dry purge is a centered vertical dab only')
+        return (tuple(st['center_xy']),)
     raise ValueError('unsupported shared benchmark station')
 
 
@@ -363,9 +378,12 @@ def render_continuous(request, profile, b, kind, station_contact=None):
             points = dry_station_xy(profile.data['stations'][role])
             # Safe simulation plane is independent of unmeasured liquid Z.
             b.xy(points[0], v['air_station_top_mm'], material.state)
-            b.move((*points[0], v['station_clearance_mm']), v['z_travel_mm_min'], 'paper_hover')
+            simulation_z = v.get('air_station_simulation_z_mm', v['station_clearance_mm'])
+            if not 10 <= simulation_z <= v['air_station_top_mm']:
+                raise ValueError('invalid elevated station simulation plane')
+            b.move((*points[0], simulation_z), v['z_travel_mm_min'], 'paper_hover')
             for xy in points[1:]:
-                b.move((*xy, v['station_clearance_mm']), v['air_xy_mm_min'], 'travel',
+                b.move((*xy, simulation_z), v['air_xy_mm_min'], 'travel',
                        source_id='station-' + role)
             b.move((*points[-1], v['air_station_top_mm']), v['z_travel_mm_min'], 'lift')
             b.at_station = True
@@ -376,6 +394,7 @@ def render_continuous(request, profile, b, kind, station_contact=None):
         if column in (1, 3): station(role, 'same_color_reload')
         if column == 2:
             for _ in range(profile.data['stations']['water']['wash_cycles']): station('water', 'wash')
+            if request['include_cloth']: station('sponge', 'absorbent_contact')
             station('A2', 'pigment_load')
         for index, line in enumerate(part['brush_lines']):
             source = f'{role}-column-{column+1}-stroke-{index+1}'

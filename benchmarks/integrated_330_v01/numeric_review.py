@@ -153,7 +153,7 @@ def readback_review(text, commands, profile, kind):
             if not m or abs(float(m.group(1))-c.seconds) > 5.1e-10: raise ValueError('review dwell mismatch')
         else: raise ValueError('unexpected review action')
     strokes = [c for c in commands if c.action == 'draw']
-    if len(strokes) != 40 or position != (800,800,32): raise ValueError('stroke count/final park mismatch')
+    if len(strokes) != 40 or position != tuple(profile.data['motion']['park_xyz']): raise ValueError('stroke count/final park mismatch')
     return {'numeric_commands_read_back': len(expected), 'moves_read_back': moves,
             'configured_axis_reference_envelope_checked': True, 'axis_and_Z_rate_caps_checked': True,
             'stroke_count': 40, 'M0_count': 0, 'M2_verified': True,

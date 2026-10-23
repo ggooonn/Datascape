@@ -99,7 +99,7 @@ class Profile:
                  'keepout_boxes', 'tool_envelope_margin_mm')}
             context['motion'] = {k:motion.get(k) for k in ('air_xy_mm_min', 'ordinary_travel_mm_min',
                 'z_travel_mm_min', 'paper_hover_mm', 'station_clearance_mm', 'park_xyz', 'air_local_hover', 'air_station_roles',
-                'benchmark_plan_sha256', 'air_station_top_mm', 'wet_loaded_mm_min',
+                'benchmark_plan_sha256', 'air_station_top_mm', 'air_station_simulation_z_mm', 'wet_loaded_mm_min',
                 'wet_departure_mm', 'wet_arrival_mm', 'wet_departure_mm_min', 'wet_arrival_mm_min')}
             if check == 'air_run':
                 context['station_geometry'] = {k:geometry[k] for k in motion.get('air_station_roles', []) if k in geometry}
@@ -236,8 +236,11 @@ class Profile:
                 need(number(st.get('feed_mm_min'), True), role + ': calibrate contact feed')
                 need(number(st.get('dwell_seconds')) and st['dwell_seconds'] >= 0, role + ': calibrate dwell')
                 try:
-                    from .trajectory import station_points, material_station
+                    from .trajectory import station_points, material_station, station_phase_feed
                     station_points(st)
+                    if st.get('phase_feeds_mm_min') is not None:
+                        for phase in (('purge_contact',) if role == 'sponge' else ('immersion','agitation','withdrawal')):
+                            station_phase_feed(st, v, phase)
                     if role == 'sponge':
                         overrides = st.get('material_overrides', {})
                         if not isinstance(overrides, dict): raise ValueError('absorbent material overrides must be a mapping')

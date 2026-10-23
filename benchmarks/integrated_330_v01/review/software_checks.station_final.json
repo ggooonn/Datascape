@@ -1,0 +1,11 @@
+{
+  "source_pin": "42bff2398f9394e9840a291b5a1c48567f575a95",
+  "tests_run": 129,
+  "tests_passed": 128,
+  "tests_skipped": 1,
+  "failures": 0,
+  "final_station_tests": 6,
+  "operator_prior_UGS_TCP_Air_water_and_minus10_success_recorded": true,
+  "new_candidate_station_motion_physically_verified": false,
+  "test_log_sha256": "d4318eee51a55916ea6e6b15082870604405175dfe2c64697e111a75615fc440"
+}

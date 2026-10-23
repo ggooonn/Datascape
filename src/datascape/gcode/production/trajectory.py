@@ -250,6 +250,8 @@ def _station_geometry(station, check):
             if not vector(offset, 2) or not number(floor) or dip[2] < floor+gap:
                 raise ValueError('measure agitation-area maximum floor and non-scraping clearance')
             for _ in range(agitation):
+                if station.get('agitation_bidirectional', False):
+                    points += [check((dip[0]-offset[0], dip[1]-offset[1], dip[2]))]
                 points += [check((dip[0]+offset[0], dip[1]+offset[1], dip[2])), dip]
         return dip, tuple(points)+(end,)
     if kind == 'palette':
@@ -290,6 +292,52 @@ def material_station(station, material):
     return result
 
 
+def station_phase_feed(station, motion, phase):
+    """Explicit liquid/fabric caps are independent of the legacy contact clamp."""
+    feeds = station.get('phase_feeds_mm_min')
+    if feeds is None:
+        return min(station['feed_mm_min'], motion['contact_mm_min'])
+    cap = motion.get('station_phase_limits_mm_min', {}).get(phase)
+    feed = feeds.get(phase)
+    if not number(feed, True) or not number(cap, True) or feed > cap:
+        raise ValueError('station phase feed requires an independent positive cap: ' + phase)
+    return feed
+
+
+def emit_station_operation(b, station, action, state, geometry=station_points):
+    """Shared measured/review grammar; the official default checks contact volume."""
+    st = station; dip, points = geometry(st)
+    explicit = st.get('phase_feeds_mm_min') is not None
+    if explicit:
+        approach_z = st.get('approach_z')
+        reference = st.get('surface_z') if st['kind'] == 'absorbent' else st.get('liquid_reference_z')
+        if not number(approach_z) or not number(reference) or not reference < approach_z <= b.v['station_clearance_mm']:
+            raise ValueError('station fast approach must end above contact reference and below global clearance')
+    else: approach_z = st['contact_box_xyz'][1][2]
+    access_before = b.lengths['non_draw_mm']; b.time_context = 'station_transfer'
+    b.xy(dip[:2], b.v['station_clearance_mm'], state)
+    b.lengths['station_access_3d_mm'] += b.lengths['non_draw_mm']-access_before
+    b.time_context = 'station_handling'
+    approach = (*dip[:2], approach_z)
+    b.move(approach, b.v['station_approach_mm_min'], 'station_approach', 'station_approach')
+    repeats = st.get('repetitions', 1) if st['kind'] == 'absorbent' else 1
+    if type(repeats) is not int or repeats < 1: raise ValueError('positive contact repetition count required')
+    for cycle in range(repeats):
+        if cycle: b.move(approach, b.v['station_approach_mm_min'], 'station_approach', 'station_approach')
+        phase = 'purge_contact' if st['kind'] == 'absorbent' else 'immersion'
+        b.move(dip, station_phase_feed(st, b.v, phase), 'station_'+action, 'station_approach', travel_phase=phase)
+        b.dwell(st['dwell_seconds'], action+'_dwell')
+        for index, point in enumerate(points):
+            phase = 'withdrawal' if index == len(points)-1 else 'agitation'
+            b.move(point, station_phase_feed(st, b.v, phase), 'station_'+action, 'station_approach', travel_phase=phase)
+        if explicit and st['kind'] == 'absorbent':
+            b.move(approach, station_phase_feed(st, b.v, 'purge_contact'),
+                   'station_'+action, 'station_approach', travel_phase='purge_release')
+    retract_before = b.lengths['non_draw_mm']; b.lift(b.v['station_clearance_mm'])
+    b.lengths['station_retract_3d_mm'] += b.lengths['non_draw_mm']-retract_before
+    b.in_paper = False; b.last_panel = None; b.at_station = True; b.time_context = None
+
+
 class Materials:
     def __init__(self, builder):
         self.b = builder; self.p = builder.profile.data['material']
@@ -308,29 +356,8 @@ class Materials:
             st['immersion_mm'] = st['rewet_immersion_mm']
             st['dwell_seconds'] = st['rewet_dwell_seconds']
             st['agitation_cycles'] = 0
-        dip, points = station_points(st)
         if not number(st['feed_mm_min'], True): raise ValueError('station operation feed must be positive')
-        # Approach above the station at GLOBAL clearance, then descend vertically.
-        access_before = b.lengths['non_draw_mm']
-        b.time_context = 'station_transfer'
-        b.xy(dip[:2], b.v['station_clearance_mm'], self.state)
-        b.time_context = 'station_handling'
-        b.lengths['station_access_3d_mm'] += b.lengths['non_draw_mm']-access_before
-        approach = (*dip[:2], st['contact_box_xyz'][1][2])
-        b.move(approach, b.v['station_approach_mm_min'], 'station_approach', 'station_approach')
-        repeats = st.get('repetitions', 1) if st['kind'] == 'absorbent' else 1
-        if type(repeats) is not int or repeats < 1: raise ValueError('positive gentle-contact repetition count required')
-        for cycle in range(repeats):
-            if cycle: b.move(approach, b.v['station_approach_mm_min'], 'station_approach', 'station_approach')
-            b.move(dip, min(st['feed_mm_min'], b.v['contact_mm_min']), 'station_'+action, 'station_approach')
-            b.dwell(st['dwell_seconds'], action+'_dwell')
-            for p in points:
-                b.move(p, min(st['feed_mm_min'], b.v['contact_mm_min']), 'station_'+action, 'station_approach')
-        retract_before = b.lengths['non_draw_mm']
-        b.lift(b.v['station_clearance_mm'])
-        b.lengths['station_retract_3d_mm'] += b.lengths['non_draw_mm']-retract_before
-        b.in_paper = False; b.last_panel = None; b.at_station = True
-        b.time_context = None
+        emit_station_operation(b, st, action, self.state)
         b.marker(action, role)
 
     def wash(self):
