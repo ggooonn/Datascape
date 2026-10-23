@@ -28,15 +28,20 @@ Palette floor1/liquid6/dip4 still nominal, radius5/one24-segment circle/dwell1s.
 Purge840/137.5 to0.5, single vertical dab/dwell4s/no rubbing.
 
 Solid wiping is modeled SEPARATELY: ink445->455, water295->305; two passes,
-second X830, lifted return toward slope middle402.5/252.5. Actual surface_z,
-gentle compression_mm and reentry_lift_mm are missing for EACH well. No old
-slope line is extrapolated. Production rejects these nulls before motion.
-ALL three review files include this XY at Z35 ONLY. The two Paint files have
-real loading/washing/purge/palette and forty paper strokes, but DO NOT perform
-the requested solid squeezing/wiping yet: incomplete contact benchmarks, NOT
-run-ready final Paint files. WATER_ONLY and INK_GOUACHE numeric commands match.
-Once those inputs are supplied, regenerate actual contact through the shared
-production primitive and obtain scoped physical authorization; do not edit G-code.
+second X830, lifted return toward slope middle402.5/252.5. Operator test inputs:
+surface9, compression1.5, contact7.5, reentry_lift10 FROM CONTACT ->17.5.
+The extended flat9 is an explicit assumption based on the existing shallow
+reference, NOT a newly measured surface or a slope-line extrapolation.
+After the first pass: controlled vertical release7.5->9 at750, vertical
+lift9->17.5 at3000, THEN X-10 and noncontact return/second approach at17.5.
+After the second pass: controlled vertical release to9 then retract35 before
+station transfer. No lateral X shift at compressed contact depth.
+Paint includes actual two-pass contact, without Z35-only substitution. Air
+keeps the identical XY at35, no paper/liquid/stone contact. WATER_ONLY and
+INK_GOUACHE numeric commands match. Motion-complete REVIEW files are still
+not physically authorized: controller installation/readback and actual final
+Air/water/pigment outcomes remain pending. Formal measured-volume/evidence
+and stage authorization gates are unchanged; no physical validation is inferred.
 
 Reproduce: PYTHONPATH=src:. python -m benchmarks.integrated_330_v01.measured_stations --output NEW_DIR
 Verify: same command with --verify. Checks include regenerated IR, actual numeric

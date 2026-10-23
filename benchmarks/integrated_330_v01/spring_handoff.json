@@ -1,8 +1,8 @@
 {
   "schema": "datascape.spring_unified_handoff.v0.3",
-  "base_remote_commit": "20a8070f66bcaea5adc38c67d2ef9dbb64ee9544",
+  "base_remote_commit": "943d0b1e9d59f9e6978aec85589c986bd8f06c64",
   "profile_file": "review_measured_stations/profile.review.json",
-  "profile_sha256": "4155f186189d74a5e1686f2bc7a1af4150d2cdccfbe879804afc3d073fbfc5fd",
+  "profile_sha256": "9ebe280e325c205729dd58addf05750c38b4aab3f9fefe6ab49ef27310adce38",
   "runner": "benchmarks.integrated_330_v01.spring_pipeline",
   "modes": [
     "prepare",
@@ -36,9 +36,18 @@
   "local_hover_enabled": false,
   "global_station_transfer_Z": 35,
   "required_followup": [
-    "X860 candidate installation and actual config readback",
-    "Per well: actual solid surface_z, gentle compression_mm, reentry_lift_mm",
-    "Revised matched Air/water/pigment outcomes and scoped stage authorization",
-    "Existing brush multi-knot/media profiles refined from actual results; production palette liquid calibration"
-  ]
+    "Operator installs unchanged X860 candidate, reports actual configuration readback and homing verification",
+    "Revised matched Air as needed, final water-only/ink-gouache outcomes and scoped stage authorization",
+    "Apply actual brush/material results to existing multi-knot/media profiles and production palette fills"
+  ],
+  "shallow_wiping_test_parameters": {
+    "surface_z": 9.0,
+    "compression_mm": 1.5,
+    "reentry_lift_mm": 10.0,
+    "contact_z": 7.5,
+    "reentry_z": 17.5,
+    "lift_reference": "compressed_contact_target",
+    "surface_status": "operator assumption from existing shallow Z9; extended surface NOT newly measured",
+    "lift_before_X_offset": true
+  }
 }

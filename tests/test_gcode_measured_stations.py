@@ -59,17 +59,23 @@ class MeasuredStationTests(unittest.TestCase):
             st=p.data['stations'][role]
             self.assertEqual(st['agitation_xy_mm'],[15,0])
             self.assertIn((840,y),shallow_wipe_xy(st));self.assertIn((830,y+10),shallow_wipe_xy(st))
-            with self.assertRaisesRegex(ValueError,'actual surface_z'):shallow_wipe_points(st)
+            w=st['shallow_wipe']
+            self.assertEqual([w[k] for k in ('surface_z','compression_mm','reentry_lift_mm')],[9.0,1.5,10.0])
+            self.assertIn('NOT newly measured',w['contact_status'])
+            missing=deepcopy(st);missing['shallow_wipe']['surface_z']=None
+            with self.assertRaisesRegex(ValueError,'requires surface_z'):shallow_wipe_points(missing)
         self.assertEqual(p.data['stations']['A2']['liquid_reference_z'],6)
         self.assertEqual(p.data['stations']['A2']['bottom_z'],1)
 
-    def test_air_paint_pairing_safe_substitution_and_z10_links(self):
+    def test_air_paint_pairing_real_two_pass_contact_and_z10_links(self):
         r,p,*_=inputs(ROOT); air=build(r,p,'air');paint=build(r,p,'paint')
         self.assertEqual(xy_route(air),xy_route(paint))
         self.assertTrue(all(c.xyz[2]>=10 for c in air if c.kind=='move'))
         substitutions=[c for c in paint if c.travel_phase=='NONCONTACT_SUBSTITUTION']
-        self.assertTrue(substitutions);self.assertTrue(all(c.xyz[2]==35 for c in substitutions))
-        self.assertFalse(any(c.travel_phase in ('shallow_wipe','shallow_contact') for c in paint))
+        self.assertEqual(substitutions,[])
+        wipes=[c for c in paint if c.travel_phase=='shallow_wipe']
+        self.assertEqual([c.xyz for c in wipes],[(840,455,7.5),(830,455,7.5)]*2+[(840,305,7.5),(830,305,7.5)])
+        self.assertTrue(all(c.feed_mm_min==1000 for c in wipes))
         # Exactly 36 within-column links, at normal hover rather than Z35.
         pos=p.data['machine']['start_work_xyz'];low_links=0
         for c in paint:
@@ -102,10 +108,10 @@ class MeasuredStationTests(unittest.TestCase):
         d=deepcopy(unit_profile().data);d['motion'].update(p.data['motion']);d['stations']['ink']=st
         b=Builder(bind(d));Materials(b).station('ink','pigment_load')
         wipes=[c for c in b.commands if c.travel_phase=='shallow_wipe']
-        self.assertEqual([c.xyz for c in wipes],[(840,455,11),(830,455,11),(830,455,11)])
+        self.assertEqual([c.xyz for c in wipes],[(840,455,11),(830,455,11)])
         self.assertTrue(all(c.feed_mm_min==1000 for c in wipes))
         reentry=[c for c in b.commands if c.travel_phase=='reentry']
-        self.assertTrue(any(c.xyz==(830,402.5,15) for c in reentry))
+        self.assertTrue(any(c.xyz==(830,402.5,14) for c in reentry))
         self.assertEqual(b.position[2],35)
 
     def test_both_controller_bounds_and_formal_gates(self):
@@ -128,11 +134,13 @@ class MeasuredStationTests(unittest.TestCase):
     def test_review_round_trip_and_rehashed_gcode_mutation_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
             out=Path(tmp)/'review';report=export(ROOT,out)
-            self.assertTrue(verify(out)['solid_contact_Z_pending'])
+            self.assertFalse(verify(out)['solid_contact_Z_pending'])
             for name,job in report['jobs'].items():
                 self.assertFalse(job['controller_bounds']['recorded_installed_X850_bounds_pass'])
                 self.assertEqual(job['controller_bounds']['maximum_commanded_X'],855)
                 self.assertEqual(job['M0_count'],0);self.assertTrue(job['M2_verified'])
+                self.assertEqual(job['solid_wipe_contact_emitted'],'AIR' not in name)
+                self.assertFalse(job['extended_surface_newly_measured'])
                 self.assertTrue((out/(name+'.gcode')).read_text().endswith('M2\n'))
             path=out/(NAMES['water']+'.gcode')
             path.write_text(path.read_text().replace('F1000.000000000','F60.000000000',1))
@@ -140,6 +148,23 @@ class MeasuredStationTests(unittest.TestCase):
             hashes[path.name]=hashlib.sha256(path.read_bytes()).hexdigest()
             (out/'MANIFEST_SHA256.json').write_text(json.dumps(hashes))
             with self.assertRaisesRegex(ValueError,'shared plan'):verify(out)
+
+    def test_lift_from_contact_before_any_lateral_offset_and_reject_low_clearance(self):
+        r,p,*_=inputs(ROOT);commands=build(r,p,'paint')
+        moves=[c for c in commands if c.kind=='move']
+        first=[i for i,c in enumerate(moves) if c.travel_phase=='shallow_wipe' and c.xyz[0]==840]
+        self.assertEqual(len(first),3)
+        for i in first:
+            end=moves[i].xyz
+            self.assertEqual([c.xyz for c in moves[i+1:i+4]],
+                             [(840,end[1],9),(840,end[1],17.5),(830,end[1],17.5)])
+            self.assertEqual([c.feed_mm_min for c in moves[i+1:i+4]],[750,3000,3000])
+            self.assertEqual(moves[i+2].xyz[2]-end[2],10)
+        st=deepcopy(p.data['stations']['ink'])
+        st['shallow_wipe']['reentry_lift_mm']=1
+        with self.assertRaisesRegex(ValueError,'does not clear'):shallow_wipe_points(st,tuple)
+        # Missing physical contact volume is still rejected by the official sink.
+        with self.assertRaises((TypeError,ValueError)):emit_station_operation(Builder(unit_profile()),p.data['stations']['ink'],'pigment_load','ordinary_travel')
 
     def test_spring_profile_no_fallback_no_authorization_and_paper10(self):
         _,p,*_=inputs(ROOT);require_unified_profile(p)

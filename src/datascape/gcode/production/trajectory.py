@@ -247,20 +247,26 @@ def shallow_wipe_xy(station):
 
 
 def shallow_wipe_points(station, check=None):
-    """Measured solid contact plus lifted re-entry, with separately auditable feeds.
+    """Configured solid contact plus lifted re-entry, with auditable phase feeds.
 
-    A nominal sloped floor cannot supply these surface/compliance measurements.
-    Missing values fail before the first physical station command is emitted.
+    The caller preserves measured versus assumed trial-parameter status.
+    Missing values fail before any station command; explicit trial parameters
+    alone do not satisfy measured-volume, evidence or authorization gates.
     """
     xy = shallow_wipe_xy(station)
     if not xy: return ()
     w = station['shallow_wipe']
     surface, compression, lift = (w.get(k) for k in ('surface_z','compression_mm','reentry_lift_mm'))
     if not number(surface) or not number(compression, True) or not number(lift, True):
-        raise ValueError('shallow_wipe requires actual surface_z, compression_mm and reentry_lift_mm')
+        raise ValueError('shallow_wipe requires surface_z, compression_mm and reentry_lift_mm')
     contact = surface-compression
-    clear = max(surface+lift, station['shallow_surface_xyz'][2]+station['stone_gap_mm'],
-                station['liquid_reference_z']+station['exit_above_liquid_mm'])
+    # Lift is measured FROM THE COMPRESSED CONTACT TARGET, not the surface:
+    # surface9 - compression1.5 + lift10 =17.5. Never silently change that value.
+    clear = contact+lift
+    required = max(surface, station['shallow_surface_xyz'][2]+station['stone_gap_mm'],
+                   station['liquid_reference_z']+station['exit_above_liquid_mm'])
+    if clear <= surface or clear < required:
+        raise ValueError('shallow wipe re-entry lift does not clear configured surface/slope exit')
     if clear >= 35: raise ValueError('shallow wipe re-entry must fit below global Z35')
     if check is None:
         def check(p):
@@ -272,9 +278,15 @@ def shallow_wipe_points(station, check=None):
             (check((*xy[1],contact)), 'shallow_wipe')]
     for i in range(2,len(xy),4):
         side, middle, start, end = xy[i:i+4]
-        out += [(check((*side,contact)), 'shallow_wipe'), (check((*side,clear)), 'reentry'),
+        # Release and lift VERTICALLY at the first pass end BEFORE any X step.
+        # Contact release keeps the independent gentle feed; only the free
+        # portion uses reentry feed. Total rise remains exactly lift mm.
+        previous = xy[i-1]
+        out += [(check((*previous,surface)), 'shallow_contact'),
+                (check((*previous,clear)), 'reentry'), (check((*side,clear)), 'reentry'),
                 (check((*middle,clear)), 'reentry'), (check((*start,clear)), 'reentry'),
                 (check((*start,contact)), 'shallow_contact'), (check((*end,contact)), 'shallow_wipe')]
+    out.append((check((*xy[-1],surface)), 'shallow_contact'))
     return tuple(out)
 
 
@@ -355,10 +367,10 @@ def station_phase_feed(station, motion, phase):
     return feed
 
 
-def emit_station_operation(b, station, action, state, geometry=station_points):
+def emit_station_operation(b, station, action, state, geometry=station_points, wipe_geometry=shallow_wipe_points):
     """Shared measured/review grammar; the official default checks contact volume."""
     st = station; dip, points = geometry(st)
-    wipes = shallow_wipe_points(st)
+    wipes = wipe_geometry(st)
     explicit = st.get('phase_feeds_mm_min') is not None
     if explicit:
         approach_z = st.get('approach_z')

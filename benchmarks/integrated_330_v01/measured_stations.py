@@ -1,9 +1,9 @@
-"""Measured XY revision; missing solid-contact Z never becomes guessed contact.
+"""Measured XY and explicit operator-selected shallow-wiping test parameters.
 
 Produces numeric offline reviews, not a bypass of machine authorization.
-Unknown shallow-solid contact is explicitly replaced by a Z35 XY rehearsal.
-The real production primitive fails closed until its three Z/compliance inputs
-are supplied for each well. Original artwork, pressure and S3a are untouched.
+Paint emits the intended contact; Air lifts the same XY to a noncontact plane.
+The extended flat Z9 is an operator-selected assumption, NOT a new measurement.
+Original artwork, pressure and S3a are untouched; official gates remain intact.
 """
 from copy import deepcopy
 from dataclasses import asdict
@@ -15,13 +15,13 @@ import difflib
 
 from datascape.gcode.binding import digest
 from datascape.gcode.production.profiles import Profile
-from datascape.gcode.production.trajectory import emit_station_operation, _station_geometry, shallow_wipe_xy, palette_pattern_xy
+from datascape.gcode.production.trajectory import emit_station_operation, _station_geometry, shallow_wipe_points, palette_pattern_xy
 from datascape.gcode.production.integrated_benchmark import validate, render_continuous, benchmark_columns
 from datascape.gcode.production.exporter import _serialize, _atomic_output, save_json
 from .numeric_review import NumericReviewBuilder, BANNER, STATUS, readback_review, xy_route
 from .station_final import final_inputs, commanded_seconds
 
-PIN = '20a8070f66bcaea5adc38c67d2ef9dbb64ee9544'
+PIN = '943d0b1e9d59f9e6978aec85589c986bd8f06c64'
 NAMES = {'air':'BENCHMARK_330_MEASURED_AIR_REVIEW',
          'water':'BENCHMARK_330_MEASURED_WATER_ONLY_REVIEW',
          'pigment':'BENCHMARK_330_MEASURED_INK_GOUACHE_REVIEW'}
@@ -42,6 +42,7 @@ def controller_candidate(root):
         sole_configuration_change={'axes.x.max_travel_mm':{'from':850,'to':860}},
         installed_recorded_X_max=850, operator_measured_physical_X_max=860,
         candidate_X_max=860, candidate_installed_or_read_back=False,
+        operator_confirmed_intended_X_max=860,
         homing_offsets_rates_acceleration_pulloff_unchanged=True,
         soft_limits_key_present=bool(re.search(rb'^\s*soft_limits:',original,re.M)),
         soft_limits_setting_changed=False,
@@ -55,9 +56,9 @@ def controller_candidate(root):
 def inputs(root):
     request, base, assumptions, prior, mapping = final_inputs(root)
     request.update(station_policy='measured_station_v01', benchmark_columns=benchmark_columns(6000),
-                   notes='Same forty XY paths/depths/order, Spring-equivalent feeds; unknown shallow-solid Z is NOT extrapolated.')
+                   notes='Same forty XY paths/depths/order and feeds; explicit flatZ9 test assumption, contact7.5 and reentry17.5. No slope-line extrapolation.')
     d=deepcopy(base.data); v=d['motion']; candidate,reconciliation=controller_candidate(root)
-    d['profile_id']='MEASURED-XY-SPRING-MOTION-REVIEW-Z-PENDING'
+    d['profile_id']='MEASURED-XY-OPERATOR-SHALLOW-TEST-SPRING-MOTION-REVIEW'
     d['machine']['machine_bounds_xyz'][1][0]=860
     d['machine']['target_config_sha256']=reconciliation['candidate_sha256']
     d['machine']['target_config_installed']=False
@@ -75,9 +76,10 @@ def inputs(root):
                   dwell_seconds=2 if role=='ink' else 5,
                   shallow_wipe=dict(enabled=True,start_xy=[840,y],end_xy=[840,y+10],
                     return_xy=[830,(deep[1]+shallow[1])/2],second_pass_x_offset_mm=-10,
-                    passes=2,surface_z=None,compression_mm=None,reentry_lift_mm=None,
+                    passes=2,surface_z=9.0,compression_mm=1.5,reentry_lift_mm=10.0,
+                    reentry_lift_reference='compressed_contact_target',
                     xy_status='operator physically inspected/tested',
-                    contact_status='missing actual solid surface/compliance; NOT derived from slope'))
+                    contact_status='operator-selected trial; extended flat surface9 assumed from existing shallow endpoint, NOT newly measured'))
     d['stations']['sponge'].update(dwell_seconds=4,phase_feeds_mm_min=deepcopy(PHASE_FEEDS))
     for slot in mapping['all_registered_centers']:
         st=d['stations'][slot]
@@ -94,6 +96,7 @@ def inputs(root):
         agitation_plus_minus15_XY_and_holder_space_confirmed=True,
         palette_radius5_XY_space_confirmed=True, extended_shallow_XY_space_confirmed=True,
         new_unified_speeds_physically_verified=False,
+        shallow_wiping_test_parameters_operator_selected=True,
         extended_solid_surface_Z_compression_reentry_measured=False)
     assumptions.update(station_phase_feeds_mm_min=PHASE_FEEDS, noncontact_station_approach_mm_min=6000,
         dwell_seconds={'ink':2,'water':5,'A2':1,'purge':4},
@@ -101,9 +104,11 @@ def inputs(root):
                    'XY_space_operator_confirmed':True,'floor_z_still_nominal':True},
         a2_pattern='operator-confirmed radius5, one circle, 24 segments',
         high_speed_and_minus9_minus10='prior -10 water-only success reported; new unified feeds are candidates',
-        unresolved_shallow_contact={role:d['stations'][role]['shallow_wipe'] for role in ('ink','water')},
-        review_substitution='Both Paint reviews rehearse unknown solid-wipe XY at Z35; no solid contact is emitted. They are INCOMPLETE contact benchmarks, not run-ready.')
-    d['notes']='User-measured XY accepted, actual installed YAML850 retained, X860 candidate pending installation. Separate solid wipe surface/compression/reentry remain null. No passed evidence, calibrated volumes or authorization invented.'
+        shallow_contact_test_settings={role:d['stations'][role]['shallow_wipe'] for role in ('ink','water')},
+        calculated_shallow_contact_Z=7.5,calculated_reentry_Z=17.5,
+        review_substitution='None in Paint: actual intended two-pass contact is emitted. Air alone elevates station XY to35.',
+        extended_shallow_surface_status='operator-assumed constant G54Z9 from existing shallow reference; NOT a newly measured extended surface')
+    d['notes']='User-measured XY accepted; X860 intended configuration confirmed, installation/readback pending. Flat9/compression1.5/lift10 are operator-selected trial settings, contact7.5/reentry17.5, not newly measured clearance. No passed evidence or official authorization invented.'
     return request,Profile.from_dict(d),assumptions,prior,mapping,reconciliation,candidate
 
 
@@ -118,16 +123,13 @@ def build(request,profile,kind):
     b=NumericReviewBuilder(profile,kind); loaded=None
     def contact(role,action):
         nonlocal loaded
-        st=deepcopy(profile.data['stations'][role]); wipe=shallow_wipe_xy(st)
-        # Explicit noncontact substitution, ONLY in this offline-review sink.
-        # Real production emit_station_operation still rejects missing wipe Z.
-        if wipe: st['shallow_wipe']['enabled']=False
+        st=profile.data['stations'][role]
+        # The shared production grammar emits every intended contact/re-entry.
+        # This numeric REVIEW sink adds axis/rate checks, not invented calibrated
+        # contact boxes. Official emitter defaults still require actual volumes.
         emit_station_operation(b,st,action,'ordinary_travel' if loaded is None else 'wet_loaded',
-                               lambda s:_station_geometry(s,tuple))
-        for xy in wipe:
-            b.move((*xy,35),v['air_xy_mm_min'],'station_wipe_Z_PENDING_NONCONTACT',
-                   travel_phase='NONCONTACT_SUBSTITUTION',source_id='station-'+role)
-        if wipe: b.marker('solid_wipe_contact_NOT_EMITTED',role+': surface_z/compression_mm/reentry_lift_mm missing; XY at35 only')
+                               lambda s:_station_geometry(s,tuple),
+                               lambda s:shallow_wipe_points(s,tuple))
         b.marker(action,role); loaded=role
     render_continuous(request,profile,b,kind,contact if kind=='paint' else None)
     if any(c.kind not in ('move','dwell','marker') for c in b.commands): raise ValueError('unresolved numeric command or pause')
@@ -148,11 +150,32 @@ def check_controller(commands,profile,reconciliation):
 
 def job_check(text,commands,p,kind,reconciliation):
     checked=readback_review(text,commands,p,kind)
+    wiping=[(i,c) for i,c in enumerate(commands) if c.kind=='move' and c.travel_phase=='shallow_wipe']
+    if kind=='paint':
+        expected=[(840,455),(830,455),(840,455),(830,455),(840,305),(830,305)]
+        if [c.xyz for _,c in wiping]!=[(*xy,7.5) for xy in expected]:raise ValueError('two-pass wiping contact sequence mismatch')
+        for n,(i,c) in enumerate(wiping):
+            after=[row for row in commands[i+1:] if row.kind=='move']
+            if after[0].xyz!=(*c.xyz[:2],9.0) or after[0].travel_phase!='shallow_contact':
+                raise ValueError('wipe must release vertically at controlled contact feed')
+            lifted=17.5 if n%2==0 else 35
+            if after[1].xyz!=(*c.xyz[:2],lifted):raise ValueError('vertical lift must precede lateral re-entry/transfer')
+            if n%2==0 and after[2].xyz!=(830,c.xyz[1],17.5):raise ValueError('X-10 must follow complete 10mm vertical lift')
+        previous=p.data['machine']['start_work_xyz']
+        for c in commands:
+            if c.kind=='move':
+                if c.travel_phase=='reentry' and tuple(previous[:2])!=c.xyz[:2] and min(previous[2],c.xyz[2])<17.5:
+                    raise ValueError('lateral re-entry below lifted plane')
+                previous=c.xyz
+    elif wiping:raise ValueError('Air contains solid wiping contact')
     checked.update(controller_bounds=check_controller(commands,p,reconciliation),
         commanded_feed_seconds_not_physical_runtime=commanded_seconds(commands,p),
-        solid_wipe_contact_emitted=False,contact_benchmark_complete=False,
+        solid_wipe_contact_emitted=kind=='paint',contact_benchmark_complete=kind=='paint',
+        shallow_wiping_passes=len(wiping),vertical_lift_before_X_offset_verified=kind=='paint',
+        operator_assumed_surface_z=9.0,contact_z=7.5,reentry_z=17.5,
+        extended_surface_newly_measured=False,
         station_feeds_by_phase={phase:sorted({c.feed_mm_min for c in commands if c.kind=='move' and c.travel_phase==phase})
-                               for phase in (*PHASE_FEEDS,'NONCONTACT_SUBSTITUTION')})
+                               for phase in PHASE_FEEDS})
     return checked
 
 
@@ -171,12 +194,13 @@ def export(root,output):
         report=dict(schema='datascape.measured_station_review.v0.3',status=STATUS,source_pin=PIN,
             plan_sha256=digest(request),profile_sha256=p.sha256,paired_XY_identical=True,
             original_40_geometry_depth_order_preserved=True, drawing_feed_intentionally_changed_to6000=True,
-            complete_solid_contact_benchmark=False,authorized=False,jobs={})
+            complete_solid_contact_benchmark=True,extended_surface_newly_measured=False,authorized=False,jobs={})
         executables=[]
         for variant,name in NAMES.items():
             kind='air' if variant=='air' else 'paint'; commands=paths[kind]
             text=(BANNER+'; REQUIRES X860 CONTROLLER CANDIDATE INSTALLATION/READBACK; RECORDED CONFIG STILL X850\n'+
-                '; SOLID WIPE CONTACT Z UNKNOWN: XY REHEARSAL AT Z35 ONLY; PAINT CONTACT BENCHMARK INCOMPLETE\n'+
+                ('; AIR ONLY: STATION XY AT Z35; NO CONTACT\n' if kind=='air' else
+                 '; OPERATOR TEST ASSUMPTION: FLAT SURFACE Z9 / COMPRESSION1.5 / CONTACT7.5 / LIFT10 TO17.5\n')+
                 '; FILL: '+('NO CONTACT - AIR ONLY' if variant=='air' else
                     'WATER IN WELL_2 AND A2, CLEAN WATER WELL_1' if variant=='water' else 'INK WELL_2, GOUACHE A2, CLEAN WATER WELL_1')+'\n'+
                 _serialize(commands,p,digest(request),name,'offline_review'))
@@ -202,7 +226,8 @@ def verify(output):
     request=json.loads((out/'plan.json').read_text()); p=Profile.load(out/'profile.review.json')
     report=json.loads((out/'verification.json').read_text()); reconciliation=json.loads((out/'controller_reconciliation.json').read_text())
     if (report['plan_sha256']!=digest(request) or report['profile_sha256']!=p.sha256 or
-        report['authorized'] is not False or report['status']!=STATUS or report['complete_solid_contact_benchmark'] is not False):
+        report['authorized'] is not False or report['status']!=STATUS or report['complete_solid_contact_benchmark'] is not True or
+        report['extended_surface_newly_measured'] is not False):
         raise ValueError('review binding mismatch')
     candidate_sha=hashlib.sha256((out/'config.X860.candidate.yaml').read_bytes()).hexdigest()
     if candidate_sha!=reconciliation['candidate_sha256'] or candidate_sha!=p.data['machine']['target_config_sha256']:
@@ -223,7 +248,8 @@ def verify(output):
     if executable[0]!=executable[1] or hashlib.sha256(executable[0].encode()).hexdigest()!=report['water_pigment_executable_sha256']:
         raise ValueError('water/pigment executable hash mismatch')
     return dict(SHA256_files_verified=len(hashes),trajectories_regenerated=True,M0_count=0,
-                actual_installed_X850_conflict_reported=True,solid_contact_Z_pending=True,authorized=False)
+                actual_installed_X850_conflict_reported=True,solid_contact_Z_pending=False,
+                Paint_two_pass_contact_verified=True,operator_assumed_surface_not_newly_measured=True,authorized=False)
 
 
 README='''# Measured XY benchmark / Spring motion handoff
@@ -256,15 +282,20 @@ Palette floor1/liquid6/dip4 still nominal, radius5/one24-segment circle/dwell1s.
 Purge840/137.5 to0.5, single vertical dab/dwell4s/no rubbing.
 
 Solid wiping is modeled SEPARATELY: ink445->455, water295->305; two passes,
-second X830, lifted return toward slope middle402.5/252.5. Actual surface_z,
-gentle compression_mm and reentry_lift_mm are missing for EACH well. No old
-slope line is extrapolated. Production rejects these nulls before motion.
-ALL three review files include this XY at Z35 ONLY. The two Paint files have
-real loading/washing/purge/palette and forty paper strokes, but DO NOT perform
-the requested solid squeezing/wiping yet: incomplete contact benchmarks, NOT
-run-ready final Paint files. WATER_ONLY and INK_GOUACHE numeric commands match.
-Once those inputs are supplied, regenerate actual contact through the shared
-production primitive and obtain scoped physical authorization; do not edit G-code.
+second X830, lifted return toward slope middle402.5/252.5. Operator test inputs:
+surface9, compression1.5, contact7.5, reentry_lift10 FROM CONTACT ->17.5.
+The extended flat9 is an explicit assumption based on the existing shallow
+reference, NOT a newly measured surface or a slope-line extrapolation.
+After the first pass: controlled vertical release7.5->9 at750, vertical
+lift9->17.5 at3000, THEN X-10 and noncontact return/second approach at17.5.
+After the second pass: controlled vertical release to9 then retract35 before
+station transfer. No lateral X shift at compressed contact depth.
+Paint includes actual two-pass contact, without Z35-only substitution. Air
+keeps the identical XY at35, no paper/liquid/stone contact. WATER_ONLY and
+INK_GOUACHE numeric commands match. Motion-complete REVIEW files are still
+not physically authorized: controller installation/readback and actual final
+Air/water/pigment outcomes remain pending. Formal measured-volume/evidence
+and stage authorization gates are unchanged; no physical validation is inferred.
 
 Reproduce: PYTHONPATH=src:. python -m benchmarks.integrated_330_v01.measured_stations --output NEW_DIR
 Verify: same command with --verify. Checks include regenerated IR, actual numeric
