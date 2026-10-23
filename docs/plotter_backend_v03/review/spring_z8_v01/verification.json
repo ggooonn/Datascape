@@ -1,0 +1,696 @@
+{
+  "XY_and_source_order_direction_unchanged": true,
+  "actual_candidate_sample_Z_range": [
+    -6.949999999999999,
+    -1.056
+  ],
+  "all_240974_piecewise_interpolations_checked": true,
+  "base_commit": "19d01e1cdb631ab7f526b95d1272da0a96710a0f",
+  "baseline_profile_sha256": "e34e1790581ebedc3be50c5b3b8f16761afc29d175ea9f7bd8aa5e3d9350d3c2",
+  "benchmark_contact_range_preserved": [
+    -10,
+    0
+  ],
+  "candidate_global_anchor_Z_range": [
+    -8,
+    0
+  ],
+  "candidate_profile_sha256": "50a2a9b9bd4e507919c59b88a354443456362df8f1aa43ab74edc470f86d421e",
+  "canonical_plan_sha256": "8b4804f561f0eaab28753ae1790ce3b0f5b9ab8ba9a4a2ffe1e4daecbe2596bd",
+  "canonical_source_sha256": "9c47e5f7aaf5580dfa652b69224dbf5fcc9e4d9361d1fc834dc9cd75d7fd4eeb",
+  "crop_regions_artwork_mm": {
+    "foreground": [
+      350,
+      670,
+      550,
+      830
+    ],
+    "mountain": [
+      175,
+      220,
+      375,
+      380
+    ],
+    "vegetation": [
+      320,
+      500,
+      520,
+      660
+    ]
+  },
+  "display_palette_source_sha256": "36ef7d125d447f5b38b2e914f96427536251964b41cb63f2fc2fde0b484b4adb",
+  "distribution": {
+    "color": {
+      "baseline_compression_mm": {
+        "count": 171873,
+        "max": 5.646744581135248,
+        "mean": 2.541623808884971,
+        "median": 2.4493130112073085,
+        "min": 2.064,
+        "p10": 2.1452339970623004,
+        "p90": 2.968215473672177
+      },
+      "candidate_compression_mm": {
+        "count": 171873,
+        "max": 4.190901508493342,
+        "mean": 1.4739208327743496,
+        "median": 1.393148884806395,
+        "min": 1.056,
+        "p10": 1.127079747429513,
+        "p90": 1.8471885394631546
+      },
+      "pressure": {
+        "count": 171873,
+        "max": 0.7167675638882443,
+        "mean": 0.3515950384645174,
+        "median": 0.34041031600228394,
+        "min": 0.22,
+        "p10": 0.24538562408196893,
+        "p90": 0.4512836677612776
+      }
+    },
+    "color/A-color": {
+      "baseline_compression_mm": {
+        "count": 64374,
+        "max": 3.227117278806549,
+        "mean": 2.7716815180091703,
+        "median": 2.7902390639286123,
+        "min": 2.211252190594032,
+        "p10": 2.515186932342449,
+        "p90": 3.0139594250370747
+      },
+      "candidate_compression_mm": {
+        "count": 64374,
+        "max": 2.0737276189557305,
+        "mean": 1.6752213282580244,
+        "median": 1.6914591809375357,
+        "min": 1.1848456667697782,
+        "p10": 1.4507885657996427,
+        "p90": 1.8872144969074405
+      },
+      "pressure": {
+        "count": 64374,
+        "max": 0.4917370748135233,
+        "mean": 0.4157287401343532,
+        "median": 0.4234748537388457,
+        "min": 0.26601630956063504,
+        "p10": 0.3609959163570153,
+        "p90": 0.45843116016204294
+      }
+    },
+    "color/C": {
+      "baseline_compression_mm": {
+        "count": 2974,
+        "max": 3.389193876941328,
+        "mean": 2.90771599490461,
+        "median": 2.961726630676548,
+        "min": 2.393984061572033,
+        "p10": 2.596838004843981,
+        "p90": 3.1178924977737794
+      },
+      "candidate_compression_mm": {
+        "count": 2974,
+        "max": 2.215544642323662,
+        "mean": 1.7942514955415336,
+        "median": 1.841510801841979,
+        "min": 1.3447360538755286,
+        "p10": 1.5222332542384833,
+        "p90": 1.978155935552057
+      },
+      "pressure": {
+        "count": 2974,
+        "max": 0.5170615432720825,
+        "mean": 0.43989736303692156,
+        "median": 0.45026978604321055,
+        "min": 0.32312001924126027,
+        "p10": 0.3865118765137441,
+        "p90": 0.47467070277715306
+      }
+    },
+    "color/Soil": {
+      "baseline_compression_mm": {
+        "count": 2482,
+        "max": 3.5018421690787225,
+        "mean": 3.038877585374939,
+        "median": 3.054735434441609,
+        "min": 2.4813739199360927,
+        "p10": 2.743416063172519,
+        "p90": 3.318919632325011
+      },
+      "candidate_compression_mm": {
+        "count": 2482,
+        "max": 2.3141118979438824,
+        "mean": 1.9090178872030719,
+        "median": 1.922893505136408,
+        "min": 1.421202179944081,
+        "p10": 1.650489055275954,
+        "p90": 2.1540546782843846
+      },
+      "pressure": {
+        "count": 2482,
+        "max": 0.5346628389185504,
+        "mean": 0.4619252597959963,
+        "median": 0.46480241163150143,
+        "min": 0.3504293499800289,
+        "p10": 0.41615875987070605,
+        "p90": 0.506081192550783
+      }
+    },
+    "color/branch-foliage": {
+      "baseline_compression_mm": {
+        "count": 8547,
+        "max": 3.1503358244080713,
+        "mean": 2.5405444202418894,
+        "median": 2.5443686038480755,
+        "min": 2.128,
+        "p10": 2.2731195856801834,
+        "p90": 2.8134881636813103
+      },
+      "candidate_compression_mm": {
+        "count": 8547,
+        "max": 2.0065438463570624,
+        "mean": 1.4729763677116534,
+        "median": 1.476322528367066,
+        "min": 1.1119999999999999,
+        "p10": 1.2389796374701603,
+        "p90": 1.7118021432211465
+      },
+      "pressure": {
+        "count": 8547,
+        "max": 0.4797399725637611,
+        "mean": 0.3625641076516851,
+        "median": 0.3701151887025236,
+        "min": 0.24,
+        "p10": 0.2853498705250573,
+        "p90": 0.42710752557520476
+      }
+    },
+    "color/mid-far-vegetation": {
+      "baseline_compression_mm": {
+        "count": 90285,
+        "max": 2.6838021240831806,
+        "mean": 2.284374031349426,
+        "median": 2.292574444624269,
+        "min": 2.064,
+        "p10": 2.071694439884143,
+        "p90": 2.4587389912045676
+      },
+      "candidate_compression_mm": {
+        "count": 90285,
+        "max": 1.598326858572783,
+        "mean": 1.2488272774307472,
+        "median": 1.2560026390462353,
+        "min": 1.056,
+        "p10": 1.0627326348986248,
+        "p90": 1.4013966173039967
+      },
+      "pressure": {
+        "count": 90285,
+        "max": 0.406844081887997,
+        "mean": 0.28886626326683457,
+        "median": 0.29142951394508404,
+        "min": 0.22,
+        "p10": 0.2224045124637946,
+        "p90": 0.3433559347514274
+      }
+    },
+    "color/rock": {
+      "baseline_compression_mm": {
+        "count": 2783,
+        "max": 5.646744581135248,
+        "mean": 4.508010140615002,
+        "median": 4.550335531063971,
+        "min": 3.712382821473563,
+        "p10": 4.128988435950205,
+        "p90": 4.811562953928262
+      },
+      "candidate_compression_mm": {
+        "count": 2783,
+        "max": 4.190901508493342,
+        "mean": 3.194508873038127,
+        "median": 3.2315435896809745,
+        "min": 2.4983349687893677,
+        "p10": 2.8628648814564297,
+        "p90": 3.4601175846872296
+      },
+      "pressure": {
+        "count": 2783,
+        "max": 0.7167675638882443,
+        "mean": 0.63928955076976,
+        "median": 0.6426251486170308,
+        "min": 0.5675598158552442,
+        "p10": 0.6141324147261409,
+        "p90": 0.6602901177861324
+      }
+    },
+    "color/trunk": {
+      "baseline_compression_mm": {
+        "count": 428,
+        "max": 5.005598641536454,
+        "mean": 4.013333006765195,
+        "median": 3.9763410779814303,
+        "min": 2.938969893300884,
+        "p10": 3.476119738799537,
+        "p90": 4.615871774040527
+      },
+      "candidate_compression_mm": {
+        "count": 428,
+        "max": 3.6298988113443977,
+        "mean": 2.761666380919546,
+        "median": 2.729298443233752,
+        "min": 1.8215986566382736,
+        "p10": 2.291604771449595,
+        "p90": 3.288887802285461
+      },
+      "pressure": {
+        "count": 428,
+        "max": 0.6734113835465225,
+        "mean": 0.5947431055614967,
+        "median": 0.6038099499454656,
+        "min": 0.44671404582826313,
+        "p10": 0.5306437091874276,
+        "p90": 0.6470569027527405
+      }
+    },
+    "ink": {
+      "baseline_compression_mm": {
+        "count": 69101,
+        "max": 8.8,
+        "mean": 3.4652081432087902,
+        "median": 3.4824978215035247,
+        "min": 2.162225164946141,
+        "p10": 2.5298346354405203,
+        "p90": 3.891457940532294
+      },
+      "candidate_compression_mm": {
+        "count": 69101,
+        "max": 6.949999999999999,
+        "mean": 2.282057125307692,
+        "median": 2.297185593815584,
+        "min": 1.1419470193278736,
+        "p10": 1.463605306010455,
+        "p90": 2.655025697965758
+      },
+      "pressure": {
+        "count": 69101,
+        "max": 0.93,
+        "mean": 0.5153235784807262,
+        "median": 0.5316402846099257,
+        "min": 0.2506953640456691,
+        "p10": 0.36557332357516253,
+        "p90": 0.595540303208171
+      }
+    },
+    "ink/A": {
+      "baseline_compression_mm": {
+        "count": 43938,
+        "max": 3.993799767419922,
+        "mean": 3.520101138324047,
+        "median": 3.538048607960074,
+        "min": 2.599598535240406,
+        "p10": 3.2262340283854325,
+        "p90": 3.78387989235051
+      },
+      "candidate_compression_mm": {
+        "count": 43938,
+        "max": 2.7445747964924316,
+        "mean": 2.330088496033541,
+        "median": 2.345792531965065,
+        "min": 1.5246487183353552,
+        "p10": 2.072954774837253,
+        "p90": 2.5608949058066965
+      },
+      "pressure": {
+        "count": 43938,
+        "max": 0.6049905580427406,
+        "mean": 0.5374762663551782,
+        "median": 0.5403200949937617,
+        "min": 0.38737454226262685,
+        "p10": 0.49159906693522376,
+        "p90": 0.5787312331797672
+      }
+    },
+    "ink/B": {
+      "baseline_compression_mm": {
+        "count": 1839,
+        "max": 4.291510549297744,
+        "mean": 3.490527644217257,
+        "median": 3.5509136588624477,
+        "min": 2.6128792642436416,
+        "p10": 3.0339345845882444,
+        "p90": 3.795485951115173
+      },
+      "candidate_compression_mm": {
+        "count": 1839,
+        "max": 3.0050717306355264,
+        "mean": 2.3042116886900996,
+        "median": 2.3570494515046416,
+        "min": 1.5362693562131864,
+        "p10": 1.9046927615147136,
+        "p90": 2.5710502072257766
+      },
+      "pressure": {
+        "count": 1839,
+        "max": 0.6251226396041507,
+        "mean": 0.5326878094415134,
+        "median": 0.5423302591972574,
+        "min": 0.39152477007613795,
+        "p10": 0.46155227884191313,
+        "p90": 0.5805446798617458
+      }
+    },
+    "ink/D": {
+      "baseline_compression_mm": {
+        "count": 1545,
+        "max": 8.8,
+        "mean": 6.711011127259583,
+        "median": 7.061834278688021,
+        "min": 4.134165071225977,
+        "p10": 5.010050580417753,
+        "p90": 7.875271214324212
+      },
+      "candidate_compression_mm": {
+        "count": 1545,
+        "max": 6.949999999999999,
+        "mean": 5.122134736352136,
+        "median": 5.429104993852018,
+        "min": 2.8673944373227305,
+        "p10": 3.6337942578655333,
+        "p90": 6.1408623125336845
+      },
+      "pressure": {
+        "count": 1545,
+        "max": 0.93,
+        "mean": 0.7887364081958325,
+        "median": 0.8124601049112801,
+        "min": 0.6144824740788059,
+        "p10": 0.6737124367905447,
+        "p90": 0.8674671108047111
+      }
+    },
+    "ink/Soil": {
+      "baseline_compression_mm": {
+        "count": 4254,
+        "max": 3.4558962758583354,
+        "mean": 3.12590032251415,
+        "median": 3.1487809474672415,
+        "min": 2.698026255428255,
+        "p10": 2.8809035679856487,
+        "p90": 3.326425848472056
+      },
+      "candidate_compression_mm": {
+        "count": 4254,
+        "max": 2.2739092413760433,
+        "mean": 1.9851627821998812,
+        "median": 2.0051833290338363,
+        "min": 1.610772973499723,
+        "p10": 1.7707906219874427,
+        "p90": 2.1606226174130487
+      },
+      "pressure": {
+        "count": 4254,
+        "max": 0.5274837931028649,
+        "mean": 0.4759219253928359,
+        "median": 0.47949702304175645,
+        "min": 0.40906660241066484,
+        "p10": 0.43764118249775763,
+        "p90": 0.5072540388237587
+      }
+    },
+    "ink/branch-foliage": {
+      "baseline_compression_mm": {
+        "count": 4610,
+        "max": 3.0974664010843154,
+        "mean": 2.5834792554441965,
+        "median": 2.582416864893846,
+        "min": 2.162225164946141,
+        "p10": 2.429966236638642,
+        "p90": 2.740920253968407
+      },
+      "candidate_compression_mm": {
+        "count": 4610,
+        "max": 1.9602831009487758,
+        "mean": 1.510544348513672,
+        "median": 1.5096147567821152,
+        "min": 1.1419470193278736,
+        "p10": 1.376220457058812,
+        "p90": 1.6483052222223566
+      },
+      "pressure": {
+        "count": 4610,
+        "max": 0.47147912516942425,
+        "mean": 0.37848127720428015,
+        "median": 0.3820052702793269,
+        "min": 0.2506953640456691,
+        "p10": 0.3343644489495757,
+        "p90": 0.41576878968256364
+      }
+    },
+    "ink/mid-far-vegetation": {
+      "baseline_compression_mm": {
+        "count": 6458,
+        "max": 2.68428684670538,
+        "mean": 2.384968102533595,
+        "median": 2.375579597443582,
+        "min": 2.224,
+        "p10": 2.224,
+        "p90": 2.5580638066364654
+      },
+      "candidate_compression_mm": {
+        "count": 6458,
+        "max": 1.5987509908672075,
+        "mean": 1.3368470897168956,
+        "median": 1.328632147763134,
+        "min": 1.196,
+        "p10": 1.196,
+        "p90": 1.4883058308069073
+      },
+      "pressure": {
+        "count": 6458,
+        "max": 0.40691981979771563,
+        "mean": 0.3202928517224635,
+        "median": 0.31736862420111933,
+        "min": 0.27,
+        "p10": 0.27,
+        "p90": 0.37439493957389547
+      }
+    },
+    "ink/rock": {
+      "baseline_compression_mm": {
+        "count": 3209,
+        "max": 6.059294371326436,
+        "mean": 4.669419370184314,
+        "median": 4.536885034122925,
+        "min": 4.2004263242542255,
+        "p10": 4.302176210347061,
+        "p90": 5.360997666527662
+      },
+      "candidate_compression_mm": {
+        "count": 3209,
+        "max": 4.551882574910631,
+        "mean": 3.3357419489112745,
+        "median": 3.2197744048575587,
+        "min": 2.925373033722447,
+        "p10": 3.0144041840536784,
+        "p90": 3.9408729582117044
+      },
+      "pressure": {
+        "count": 3209,
+        "max": 0.744665398061009,
+        "mean": 0.6506779492132836,
+        "median": 0.6417155863238863,
+        "min": 0.6189632555335849,
+        "p10": 0.625843883076748,
+        "p90": 0.6974445143348623
+      }
+    },
+    "ink/trunk": {
+      "baseline_compression_mm": {
+        "count": 3248,
+        "max": 5.1674981412350185,
+        "mean": 3.818300940332733,
+        "median": 3.7889600158321173,
+        "min": 2.8931444289519797,
+        "p10": 3.410695033779252,
+        "p90": 4.294117688835541
+      },
+      "candidate_compression_mm": {
+        "count": 3248,
+        "max": 3.7715608735806407,
+        "mean": 2.5910133227911407,
+        "median": 2.5653400138531026,
+        "min": 1.781501375332982,
+        "p10": 2.2343581545568454,
+        "p90": 3.0073529777310983
+      },
+      "pressure": {
+        "count": 3248,
+        "max": 0.684359505452368,
+        "mean": 0.5756417608606474,
+        "median": 0.5795250024737683,
+        "min": 0.4395538170237468,
+        "p10": 0.520421099028008,
+        "p90": 0.6252989420728952
+      }
+    }
+  },
+  "max_interpolation_error_mm": 1.7763568394002505e-15,
+  "motion_policy_unchanged": true,
+  "operator_small_brush_test_pending": true,
+  "physical_width_or_diffusion_measured": false,
+  "physically_authorized": false,
+  "pressure_values_unchanged": true,
+  "production_Gcode_written": false,
+  "registered_station_and_palette_coordinates_unchanged": true,
+  "saved_profile_readback_verified": true,
+  "schema": "datascape.spring_z8_visual_review.v01",
+  "source_readback": {
+    "D_X300_crossing_strokes_continuous": 50,
+    "D_original_strokes_unsplit": 14951,
+    "all_written_source_pressure_and_work_transform_bindings_verified": true,
+    "complete_source_partition": true,
+    "written_fragment_count": 14951,
+    "written_pressure_samples": 240974
+  },
+  "trajectory_validation": {
+    "baseline": {
+      "SHARED_COLOR": {
+        "M0_count": 0,
+        "authorized_for_machine_execution": false,
+        "collision_clearance_certified": false,
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "A2": 23,
+          "A3": 12,
+          "A4": 19,
+          "A5": 11,
+          "C1": 9,
+          "C2": 12,
+          "C3": 5,
+          "C4": 12,
+          "D1": 12,
+          "D2": 2,
+          "D4": 5,
+          "D5": 4
+        },
+        "normal_paper_links_without_Z35_checked": 11480,
+        "paper_Z": {
+          "count": 160267,
+          "max": -2.064,
+          "mean": -2.5504488000134002,
+          "median": -2.4534460920440306,
+          "min": -5.643782050894915,
+          "p10": -2.9756359219919633,
+          "p90": -2.1542710592403647
+        },
+        "paper_hover_mm": 15,
+        "pressure_samples_verified": 171873,
+        "source_units": 11606,
+        "trajectory_hash_contract": "SHA256 of each canonical sorted command JSON plus newline in order",
+        "trajectory_sha256": "fe9b36c3ee2bab3a09c4d3f8102b3849d137771d1e2852570cefb23fc4b89aec"
+      },
+      "SHARED_INK": {
+        "M0_count": 0,
+        "authorized_for_machine_execution": false,
+        "collision_clearance_certified": false,
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "ink": 84
+        },
+        "normal_paper_links_without_Z35_checked": 3261,
+        "paper_Z": {
+          "count": 65756,
+          "max": -2.162225164946141,
+          "mean": -3.47691082185899,
+          "median": -3.4905827864457315,
+          "min": -8.8,
+          "p10": -3.891912964018301,
+          "p90": -2.530310237852297
+        },
+        "paper_hover_mm": 15,
+        "pressure_samples_verified": 69101,
+        "source_units": 3345,
+        "trajectory_hash_contract": "SHA256 of each canonical sorted command JSON plus newline in order",
+        "trajectory_sha256": "990a9d47cfef6de8734b7702647fcf442d947244566aea2bd06eef5f6b50d7f3"
+      }
+    },
+    "candidate": {
+      "SHARED_COLOR": {
+        "M0_count": 0,
+        "authorized_for_machine_execution": false,
+        "collision_clearance_certified": false,
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "A2": 23,
+          "A3": 12,
+          "A4": 19,
+          "A5": 11,
+          "C1": 9,
+          "C2": 12,
+          "C3": 5,
+          "C4": 12,
+          "D1": 12,
+          "D2": 2,
+          "D4": 5,
+          "D5": 4
+        },
+        "normal_paper_links_without_Z35_checked": 11480,
+        "paper_Z": {
+          "count": 160267,
+          "max": -1.056,
+          "mean": -1.4816427000117254,
+          "median": -1.3967653305385268,
+          "min": -4.188309294533051,
+          "p10": -1.853681431742968,
+          "p90": -1.1349871768353192
+        },
+        "paper_hover_mm": 15,
+        "pressure_samples_verified": 171873,
+        "source_units": 11606,
+        "trajectory_hash_contract": "SHA256 of each canonical sorted command JSON plus newline in order",
+        "trajectory_sha256": "11bb4365dabae217bf73fe0525f36e0c37ba3b9ee44f88498dd1a96aa093502d"
+      },
+      "SHARED_INK": {
+        "M0_count": 0,
+        "authorized_for_machine_execution": false,
+        "collision_clearance_certified": false,
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "ink": 84
+        },
+        "normal_paper_links_without_Z35_checked": 3261,
+        "paper_Z": {
+          "count": 65756,
+          "max": -1.1419470193278736,
+          "mean": -2.292296969126616,
+          "median": -2.3042599381400146,
+          "min": -6.949999999999999,
+          "p10": -2.6554238435160133,
+          "p90": -1.4640214581207598
+        },
+        "paper_hover_mm": 15,
+        "pressure_samples_verified": 69101,
+        "source_units": 3345,
+        "trajectory_hash_contract": "SHA256 of each canonical sorted command JSON plus newline in order",
+        "trajectory_sha256": "d4c0e4f762ddf8d5e821b7e9cc6ad5a1a47ea62e4c86f98d186390a2f4e9eda4"
+      }
+    }
+  },
+  "width_proxy": "authored width intent * (0.35 + compression_mm / 4); illustrative ONLY, not measured brush width or diffusion"
+}

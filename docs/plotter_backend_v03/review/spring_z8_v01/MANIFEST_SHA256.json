@@ -1,0 +1,16 @@
+{
+  "DISTRIBUTIONS.md": "6c303cd90cf5284e48731ce20d742bf1535246bfa39af010da0cd811c69cc26f",
+  "README.md": "a31b997992b6ce74b652f10b4615b2aae3a3d591ff96e6390b2b02535509d863",
+  "comparison_combined.png": "6badcde83a75dc5b17a316a35b11e19e834264f62c106f769095f7492f624c92",
+  "comparison_depth.png": "fbbf16b8bf3dbffe867730a764e0b26a65a8b1f042656c604b3821ab79e863e2",
+  "comparison_ink.png": "da33a54eab0c75ad61b68fbef7287b63ed4d6a5c01d02c2755cc4d6f4ed3d6ab",
+  "crop_foreground_comparison.png": "a2daf189e3b18ce16ade9c1f52b4f97facc1e3ea3930f3f277183d071e9ed74b",
+  "crop_mountain_comparison.png": "8be2fa80f38d2ff202cf63cf9240896a510cbe230aa983c23bc90098abac9dd0",
+  "crop_vegetation_comparison.png": "b2e491c7e6cecc0fd4dbcf4886649e4f45192a1975cb5e81cd2c41523d8b80d0",
+  "palette.canonical.json": "264cd57620f9e4c0fa56afcb4dab27363e9298bc7a51427951f6093e0ac7d939",
+  "pressure_depth_comparison.png": "3ea3a396728f40fd32f99a979f8dd9341981bfbed0481dd193361ec63dc3ebe4",
+  "profile.pr31_z10.snapshot.json": "c88e630444e8cc2be1f60ebf545cb025709a82e167a160d4b8b6e827612ce2af",
+  "profile.spring_z8.candidate.json": "0b54aaef3d28dc1f04fa3b1542732eab07b79fb17f41ff7d250d5a17db684302",
+  "software_tests.json": "b285ba00270e71ec8f0872e0d5a6c47a87d79e1c6bec7d5857204f6f620067e8",
+  "verification.json": "2fd59961f4fcba3a7db275f52d5fe9f59415fd51d01223910995fb8fa4e29bd4"
+}
