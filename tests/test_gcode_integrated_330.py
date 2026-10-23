@@ -12,9 +12,10 @@ from datascape.gcode.binding import digest
 from datascape.gcode.production.profiles import Profile, BASE_CHECKS
 from datascape.gcode.production.trajectory import Builder, require_path
 from datascape.gcode.production.exporter import verify_export
-from datascape.gcode.production.integrated_benchmark import build, export_integrated, validate
+from datascape.gcode.production.integrated_benchmark import build, export_integrated, validate, depth_column
 from benchmarks.integrated_330_v01.design import plan, configured_profile, facts
 from benchmarks.commissioning_330_v01.design import KNOTS
+from benchmarks.integrated_330_v01.handoff import execution_profile, execution_request
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -48,6 +49,95 @@ def unit_profile():
 
 
 class IntegratedBenchmarkTests(unittest.TestCase):
+    def test_handoff_records_confirmed_registration_without_inventing_contacts_or_stops(self):
+        p = execution_profile(ROOT); r = execution_request(ROOT)
+        validate(r, p, 'air', physical=False)
+        self.assertEqual(p.data['machine']['start_work_xyz'], [0, 898, 35])
+        self.assertEqual(p.data['stations']['A2']['center_xy'], [824.5, 554.5])
+        self.assertEqual(p.data['stations']['A2']['coordinate_frame'], 'G54')
+        self.assertIsNone(p.data['stations']['A2']['liquid_reference_z'])
+        self.assertIsNone(p.data['stations']['A2']['bottom_z'])
+        self.assertIsNone(p.data['stations']['ink']['deep_surface_xyz'])
+        self.assertFalse(p.data['machine']['stopping']['physical_emergency_stop_installed'])
+        self.assertFalse(p.evidence_passed('air_run'))
+        self.assertFalse(p.evidence_passed('homing_limits_estop'))
+        self.assertFalse(p.evidence_passed('motion_limits'))
+        self.assertFalse(any('air_local_hover_clearance' in s for s in p.issues('air')))
+        self.assertEqual(p.data['motion']['paper_contact_z_range'], [-3, 0])
+
+    def depth_series(self):
+        r = plan(ROOT)
+        r.update(air_hover_mm=10, paint_trial='ink_a2_depth_series_40', color_slots=['A2'])
+        d = deepcopy(unit_profile().data)
+        d['motion'].update(air_local_hover={'enabled': False, 'height_mm': 5}, paper_contact_z_range=[-10, 0])
+        d['stations']['A2'] = deepcopy(d['stations']['C1'])
+        d['stations']['A2'].update(hardware_id='A2', center_xy=[824.5, 554.5],
+                                    contact_box_xyz=[[814, 544, 5], [835, 565, 16]])
+        for role in ('ink', 'water'):
+            d['stations'][role].update(deep_surface_xyz=[700, 200, 5], shallow_surface_xyz=[700, 220, 9],
+                                      contact_box_xyz=[[680, 180, 0], [720, 260, 12]])
+        # These invented station values exist ONLY inside this unit fixture.
+        return r, bind(d)
+
+    def test_z10_air_keeps_sources_and_has_no_local_or_contact_dependencies(self):
+        r, p = self.depth_series()
+        original_sources = deepcopy(r['sources'])
+        d = deepcopy(p.data); d['brush_profiles'] = {}; d['machine']['junction_deviation_mm'] = None
+        d['evidence'] = [e for e in bind(d).data['evidence'] if e['check'] != 'air_local_hover_clearance']
+        p = Profile.from_dict(d)
+        commands, metrics = build(r, p, 'air')
+        self.assertTrue(all(c.xyz[2] >= 10 for c in commands if c.kind == 'move'))
+        self.assertEqual(metrics['M0_count'], 0)
+        self.assertEqual(commands[-2].xyz, (800, 800, 32))
+        self.assertEqual(sum(c.action == 'park' for c in commands), 1)
+        self.assertEqual(r['sources'], original_sources)
+        with tempfile.TemporaryDirectory() as t:
+            out = Path(t)/'air'
+            export_integrated(r, p, 'air', auth(p, r, 'air', ['BENCHMARK_AIR']), out)
+            self.assertTrue(verify_export(out)['regenerated_from_authorized_plan'])
+        bad = deepcopy(p.data); bad['motion']['air_local_hover']['enabled'] = True
+        with self.assertRaisesRegex(ValueError, 'disabled Air local hover'): build(r, bind(bad), 'air')
+
+    def test_40_strokes_four_columns_automatic_reload_and_ordered_inspection(self):
+        r, p = self.depth_series(); commands, metrics = build(r, p, 'paint')
+        strokes = [c for c in commands if c.action == 'draw' and c.kind == 'move']
+        self.assertEqual(len(strokes), 40)
+        expected = list(range(-1, -11, -1)) + list(range(-10, 0))
+        self.assertEqual([c.xyz[2] for c in strokes], expected * 2)
+        self.assertEqual(metrics['M0_count'], 27)
+        for depth in (-9, -10):
+            self.assertEqual(sum(f'BEFORE depth {depth} mm' in s for s in metrics['M0_reasons']), 4 if depth == -10 else 2)
+        markers = [c.message for c in commands if c.action == 'depth_trial']
+        self.assertEqual(markers, ['ink']*20 + ['A2']*20)
+        loads = [c for c in commands if c.action == 'pigment_load']
+        self.assertEqual(len(loads), 4)
+        self.assertEqual(sum(c.action == 'wash' for c in commands), 1)
+        self.assertTrue(all(c.feed_mm_min <= 600 for c in strokes))
+        self.assertEqual(commands[-2].xyz, (800, 800, 32))
+        for column in range(4):
+            lines = depth_column(column)['brush_lines']
+            self.assertTrue(all(10 <= v <= 320 for l in lines for k in ('start_xy', 'end_xy') for v in l[k]))
+        # Exported synthetic bytes must independently regenerate from the plan.
+        with tempfile.TemporaryDirectory() as t:
+            out = Path(t)/'paint'
+            export_integrated(r, p, 'paint', auth(p, r, 'calibration', ['BENCHMARK_PAINT']), out)
+            result = verify_export(out)
+            self.assertTrue(result['regenerated_from_authorized_plan'])
+            self.assertEqual((out/'BENCHMARK_PAINT.gcode').read_text().splitlines().count('M0'), 27)
+
+    def test_40_stroke_unsafe_depth_slope_start_air_result_and_stopping_still_block(self):
+        r, p = self.depth_series()
+        for mutation, error in (
+            (lambda d: d['motion'].update(paper_contact_z_range=[-3, 0]), 'test envelope'),
+            (lambda d: d['machine'].update(start_work_xyz=[800, 800, 32]), 'explicitly rehomed'),
+            (lambda d: d['stations']['ink'].update(shallow_surface_xyz=[700, 190, 9]), 'Y\\+'),
+            (lambda d: d['motion']['local_hover'].update(enabled=True), 'disables production local hover')):
+            d = deepcopy(p.data); mutation(d)
+            with self.assertRaisesRegex(ValueError, error): build(r, bind(d), 'paint')
+        for check, kind in (('air_run', 'paint'), ('homing_limits_estop', 'air'), ('motion_limits', 'air')):
+            d = deepcopy(p.data); d['evidence'] = [e for e in d['evidence'] if e['check'] != check]
+            with self.assertRaisesRegex(ValueError, check): build(r, Profile.from_dict(d), kind)
+
     def test_confirmed_controller_facts_and_source_plans_preserved_without_auto_air_pass(self):
         p = configured_profile(ROOT); r = plan(ROOT); f = facts(ROOT)
         self.assertEqual(p.data['machine']['g54_to_machine_xyz'], [0, 0, 0])

@@ -196,13 +196,40 @@ class Builder:
                 'timing': timing}
 
 
+def palette_pattern_xy(station):
+    """One shared XY grammar for wet loading and elevated dry simulation."""
+    center = station['center_xy']; radius = station['radius_mm']
+    repeats = station['revolutions']; steps = station['segments_per_revolution']
+    if not vector(center, 2) or not number(radius, True):
+        raise ValueError('measure palette center and approve loading radius')
+    if type(repeats) is not int or repeats < 1 or type(steps) is not int or steps < 12:
+        raise ValueError('positive revolutions and >=12 polygon segments required')
+    points = []
+    for _ in range(repeats):
+        if station.get('pattern', 'circle') == 'circle':
+            points += [(center[0]+radius*cos(2*pi*j/steps), center[1]+radius*sin(2*pi*j/steps))
+                       for j in range(steps+1)]
+            points.append(tuple(center))
+        elif station['pattern'] == 'cross':
+            for dx, dy in ((radius, 0), (-radius, 0), (0, radius), (0, -radius)):
+                points += [(center[0]+dx, center[1]+dy), tuple(center)]
+        else: raise ValueError('unknown palette loading pattern')
+    return tuple(points)
+
+
 def station_points(station):
     """Measured two-point slope, circle/cross palette, or gentle sponge contact."""
-    kind = station['kind']; bounds = station['contact_box_xyz']
+    bounds = station['contact_box_xyz']
     def check(p):
         if not vector(p) or interval_in_box(p, p, bounds) is None:
             raise ValueError('station contact leaves calibrated volume')
         return tuple(p)
+    return _station_geometry(station, check)
+
+
+def _station_geometry(station, check):
+    """Shared numeric grammar; official station_points always adds physical bounds."""
+    kind = station['kind']
     if kind == 'sloped_inkstone':
         deep = station['deep_surface_xyz']; shallow = station['shallow_surface_xyz']
         if not vector(deep) or not vector(shallow): raise ValueError('measure deep/shallow stone points')
@@ -236,19 +263,7 @@ def station_points(station):
         if z < station['bottom_z']+station['bottom_gap_mm'] or station['bottom_gap_mm'] <= 0:
             raise ValueError('palette bottom scrape risk')
         dip = check((*center, z)); points = []
-        repeats = station['revolutions']; steps = station['segments_per_revolution']
-        if type(repeats) is not int or repeats < 1 or type(steps) is not int or steps < 12:
-            raise ValueError('positive revolutions and >=12 polygon segments required')
-        pattern = station.get('pattern', 'circle')
-        for _ in range(repeats):
-            if pattern == 'circle':
-                points += [check((center[0]+radius*cos(2*pi*j/steps),
-                                  center[1]+radius*sin(2*pi*j/steps), z)) for j in range(steps+1)]
-                points.append(dip)
-            elif pattern == 'cross':
-                for dx, dy in ((radius, 0), (-radius, 0), (0, radius), (0, -radius)):
-                    points += [check((center[0]+dx, center[1]+dy, z)), dip]
-            else: raise ValueError('unknown palette loading pattern')
+        points += [check((*xy, z)) for xy in palette_pattern_xy(station)]
         points.append(check((*center, level+station['exit_above_liquid_mm'])))
         return dip, tuple(points)
     if kind == 'absorbent':

@@ -47,7 +47,7 @@ _MOVE = re.compile(r'G1 X(-?\d+\.\d+) Y(-?\d+\.\d+) Z(-?\d+\.\d+) F(\d+\.\d+)\Z'
 _DWELL = re.compile(r'G4 P(\d+\.\d+)\Z')
 
 
-def readback(text, commands, profile, stage):
+def readback(text, commands, profile, stage, *, continuous_calibration=False):
     """Reject dialect drift, coordinate mutation, unexpected actions or contact in air."""
     if stage == 'fixture':
         lines = text.splitlines()[1:]
@@ -97,13 +97,19 @@ def readback(text, commands, profile, stage):
             position = row[1]
         if c.kind == 'dwell' and abs(c.seconds-row[1]) > 5.1e-10:
             raise ValueError('serialized dwell mismatch')
-    if stage == 'calibration' and expected[0].kind != 'pause':
+    if continuous_calibration:
+        if stage != 'calibration' or not all(profile.evidence_passed(c) for c in
+                ('continuous_benchmark_contact', 'station_contacts', 'wet_motion')):
+            raise ValueError('continuous calibration requires preverified contact, stations and wet motion')
+        if any(c.kind == 'pause' for c in commands):
+            raise ValueError('continuous benchmark must have zero M0')
+    if stage == 'calibration' and not continuous_calibration and expected[0].kind != 'pause':
         raise ValueError('calibration requires its explicit startup pause')
     return {'commands_verified': len(parsed), 'all_moves_reachable_and_in_corridors': True,
             'dialect_whitelist_verified': True,
             'M0_count': sum(c.kind == 'pause' for c in commands),
             'M0_reasons': [c.message for c in commands if c.kind == 'pause'],
-            'production_verification_occurs_before_start': stage != 'calibration'}
+            'production_verification_occurs_before_start': stage != 'calibration' or continuous_calibration}
 
 
 def save_json(path, value):
