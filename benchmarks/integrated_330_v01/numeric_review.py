@@ -67,7 +67,7 @@ def nominal_profile(root):
     return Profile.from_dict(d), assumptions
 
 
-def check_move(start, target, feed, action, profile, kind):
+def check_move(start, target, feed, action, profile, kind, exact_benchmark_draw=True):
     """Axis-reference envelope/rates only; NOT swept-brush or collision validation."""
     if not vector(target) or not number(feed, True): raise ValueError('nonfinite review move/feed')
     m, v = profile.data['machine'], profile.data['motion']
@@ -75,7 +75,7 @@ def check_move(start, target, feed, action, profile, kind):
         mp = [x+o for x, o in zip(p, m['g54_to_machine_xyz'])]
         if any(not lo-1e-9 <= x <= hi+1e-9 for x, lo, hi in zip(mp, *m['machine_bounds_xyz'])):
             raise ValueError('review move outside configured machine axis envelope')
-    if kind == 'air' and min(start[2], target[2]) < 10-1e-9:
+    if kind == 'air' and min(start[2], target[2]) < v['paper_hover_mm']-1e-9:
         raise ValueError('Air review below paper no-contact plane')
     length = dist(start, target)
     if length:
@@ -86,7 +86,7 @@ def check_move(start, target, feed, action, profile, kind):
                                                  'initial_contact', 'release', 'paper_release_clearance')
         if rates[2] > v['pressure_z_mm_min' if pressure else 'z_travel_mm_min']+1e-6:
             raise ValueError('review exceeds independent Z velocity limit')
-    if action == 'draw' and feed != v['draw_mm_min']: raise ValueError('benchmark stroke must retain its profile drawing feed')
+    if exact_benchmark_draw and action == 'draw' and feed != v['draw_mm_min']: raise ValueError('benchmark stroke must retain its profile drawing feed')
 
 
 class NumericReviewBuilder(ReviewBuilder):

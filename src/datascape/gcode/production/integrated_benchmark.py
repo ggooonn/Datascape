@@ -43,19 +43,21 @@ def validate(request, profile, kind, physical=True):
     optional = {'air_hover_mm', 'paint_trial', 'execution_mode', 'benchmark_columns', 'station_policy'}
     if not allowed <= set(request) or set(request) - allowed - optional or request['substrate_mm'] != [330, 330]:
         raise ValueError('invalid integrated 330-mm request')
-    if 'air_hover_mm' in request and request['air_hover_mm'] != 10:
-        raise ValueError('explicit Air-only hover override must be Z10')
+    feedback = request.get('station_policy') == 'physical_feedback_v01'
+    hover = 15 if feedback else 10
+    if 'air_hover_mm' in request and request['air_hover_mm'] != hover:
+        raise ValueError('explicit Air-only hover must match the versioned normal height')
     if 'paint_trial' in request and request['paint_trial'] != 'ink_a2_depth_series_40':
         raise ValueError('unknown integrated paint trial')
     series = request.get('paint_trial') == 'ink_a2_depth_series_40'
     paired = continuous(request)
-    measured_stations = request.get('station_policy') == 'measured_station_v01'
+    measured_stations = request.get('station_policy') in ('measured_station_v01','physical_feedback_v01')
     final_stations = request.get('station_policy') == 'final_station_v01' or measured_stations
     if 'station_policy' in request and (not final_stations or not paired):
         raise ValueError('unknown station benchmark policy')
     if 'execution_mode' in request and not paired:
         raise ValueError('unknown benchmark execution mode')
-    if paired and (not series or request.get('air_hover_mm') != 10 or
+    if paired and (not series or request.get('air_hover_mm') != hover or
                    request.get('benchmark_columns') != benchmark_columns(6000 if measured_stations else 5000)):
         raise ValueError('continuous benchmark requires its shared 40-stroke source')
     if not paired and 'benchmark_columns' in request:
@@ -74,8 +76,8 @@ def validate(request, profile, kind, physical=True):
     if any(c not in profile.data['stations'] or profile.data['stations'][c].get('kind') != 'palette' for c in colors):
         raise ValueError('unknown representative palette')
     if type(request['include_cloth']) is not bool: raise ValueError('explicit optional cloth policy required')
-    if profile.data['motion']['paper_hover_mm'] != 10:
-        raise ValueError('this benchmark retains normal paper hover Z10')
+    if profile.data['motion']['paper_hover_mm'] != hover:
+        raise ValueError('benchmark normal paper hover differs from versioned request')
     if series:
         if profile.data['motion'].get('local_hover', {}).get('enabled') is not False:
             raise ValueError('40-stroke trial disables production local hover')
@@ -111,7 +113,7 @@ def validate(request, profile, kind, physical=True):
                 raise ValueError('continuous benchmark starts at rehomed X0 Y898 Z35')
             if (v.get('ordinary_travel_mm_min'), v.get('draw_mm_min'), v.get('air_xy_mm_min'),
                 v.get('wet_loaded_mm_min'), v.get('z_travel_mm_min')) != (
-                    (12000, 6000, 6000, 9000, 6000) if measured_stations else (8000, 5000, 5000, 8000, 3000)):
+                    (12000, 6000, 6000, 9000, 7000 if feedback else 6000) if measured_stations else (8000, 5000, 5000, 8000, 3000)):
                 raise ValueError('continuous benchmark requires its approved versioned motion policy')
             expected_roles = ['ink', 'water', 'sponge', 'A2'] if final_stations else ['ink', 'water', 'A2']
             if roles != expected_roles or v.get('air_local_hover', {}).get('enabled') is not False:
@@ -141,7 +143,7 @@ def validate(request, profile, kind, physical=True):
         if kind == 'air':
             profile.require('air', media=('ink',))
             local = profile.data['motion'].get('air_local_hover', {})
-            if request.get('air_hover_mm') == 10:
+            if request.get('air_hover_mm') == hover:
                 if local.get('enabled') is not False:
                     raise ValueError('Z10-only Air requires disabled Air local hover')
             elif local.get('enabled') is not True or local.get('height_mm') != 5:
@@ -383,12 +385,12 @@ def render_continuous(request, profile, b, kind, station_contact=None):
             # Safe simulation plane is independent of unmeasured liquid Z.
             b.xy(points[0], v['air_station_top_mm'], material.state)
             simulation_z = v.get('air_station_simulation_z_mm', v['station_clearance_mm'])
-            if not 10 <= simulation_z <= v['air_station_top_mm']:
+            if not v['paper_hover_mm'] <= simulation_z <= v['air_station_top_mm']:
                 raise ValueError('invalid elevated station simulation plane')
             b.move((*points[0], simulation_z), v['z_travel_mm_min'], 'paper_hover')
             for index,xy in enumerate(points[1:],1):
                 feed=v['air_xy_mm_min']; phase=None
-                if request.get('station_policy') == 'measured_station_v01':
+                if request.get('station_policy') in ('measured_station_v01','physical_feedback_v01'):
                     from .trajectory import shallow_wipe_xy, station_phase_feed
                     if st['kind']=='sloped_inkstone':
                         slope_end=len(points)-len(shallow_wipe_xy(st))-1
@@ -416,18 +418,18 @@ def render_continuous(request, profile, b, kind, station_contact=None):
             if kind == 'paint':
                 before = len(b.commands)
                 render_calibration(dict(part, brush_lines=[line]), profile, b, integrated=True,
-                                   normal_paper_links=request.get('station_policy') == 'measured_station_v01')
+                                   normal_paper_links=request.get('station_policy') in ('measured_station_v01','physical_feedback_v01'))
                 # Preserve explicit stroke provenance in either execution mode.
                 from dataclasses import replace
                 for i in range(before, len(b.commands)):
                     if b.commands[i].action == 'draw':
                         b.commands[i] = replace(b.commands[i], source_id=source)
             else:
-                height = (10 if request.get('station_policy') == 'measured_station_v01' and b.in_paper
+                height = (v['paper_hover_mm'] if request.get('station_policy') in ('measured_station_v01','physical_feedback_v01') and b.in_paper
                           else v['station_clearance_mm'])
                 b.xy(line['start_xy'], height, material.state)
-                b.move((*line['start_xy'], 10), v['z_travel_mm_min'], 'paper_hover')
-                b.move((*line['end_xy'], 10), line['feed_mm_min'], 'draw', source_id=source)
+                b.move((*line['start_xy'], v['paper_hover_mm']), v['z_travel_mm_min'], 'paper_hover')
+                b.move((*line['end_xy'], v['paper_hover_mm']), line['feed_mm_min'], 'draw', source_id=source)
                 b.in_paper = True; b.at_station = False
     b.park(material.state)
     b.marker('job_complete', '40 original benchmark strokes; zero routine M0; physical results recorded separately')

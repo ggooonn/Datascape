@@ -1,8 +1,8 @@
 {
   "schema": "datascape.spring_unified_handoff.v0.3",
-  "base_remote_commit": "943d0b1e9d59f9e6978aec85589c986bd8f06c64",
+  "base_remote_commit": "f6aca60a24499036c4e17de994abde63c9189839",
   "profile_file": "review_measured_stations/profile.review.json",
-  "profile_sha256": "9ebe280e325c205729dd58addf05750c38b4aab3f9fefe6ab49ef27310adce38",
+  "profile_sha256": "e34e1790581ebedc3be50c5b3b8f16761afc29d175ea9f7bd8aa5e3d9350d3c2",
   "runner": "benchmarks.integrated_330_v01.spring_pipeline",
   "modes": [
     "prepare",
@@ -10,8 +10,8 @@
     "ink",
     "color"
   ],
-  "canonical_inputs": "Existing PR25 adapter spring.machine.json and spring.provenance.json; not regenerated or available in this checkout",
-  "full_scene_rebuilt_this_revision": false,
+  "canonical_inputs": "Recovered exact canonical spring.machine.json/spring.provenance.json included in delivery package; immutable existing checksums verified",
+  "full_scene_rebuilt_this_revision": true,
   "existing_committed_readback": {
     "D_X300_crossing_strokes_continuous": 50,
     "D_original_strokes_unsplit": 14951,
@@ -32,13 +32,13 @@
   "artwork_pressure_order_changed": false,
   "production_files_exported": false,
   "official_gates_preserved": true,
-  "paper_to_paper_hover_Z": 10,
+  "paper_to_paper_hover_Z": 15,
   "local_hover_enabled": false,
   "global_station_transfer_Z": 35,
   "required_followup": [
-    "Operator installs unchanged X860 candidate, reports actual configuration readback and homing verification",
-    "Revised matched Air as needed, final water-only/ink-gouache outcomes and scoped stage authorization",
-    "Apply actual brush/material results to existing multi-knot/media profiles and production palette fills"
+    "Operator reports final hover15/Z7000/wiping20/purge1.5/palette5 trial outcomes and explicit stage authorization",
+    "Actual X860 controller installation/config readback/homing verification remain unreported",
+    "Complete existing measured-profile/scoped safety records for full Spring setup using actual evidence; no new measurements are inferred from330mm benchmark success"
   ],
   "shallow_wiping_test_parameters": {
     "surface_z": 9.0,
@@ -48,6 +48,42 @@
     "reentry_z": 17.5,
     "lift_reference": "compressed_contact_target",
     "surface_status": "operator assumption from existing shallow Z9; extended surface NOT newly measured",
-    "lift_before_X_offset": true
+    "lift_before_X_offset": true,
+    "pressed_length_mm": 20,
+    "ink_end_y": 465,
+    "water_end_y": 315,
+    "optional_ink_end_y": 475,
+    "optional_water_end_y": 325
+  },
+  "noncontact_Z_feed_mm_min": 7000,
+  "full_plan_sha256": "8b4804f561f0eaab28753ae1790ce3b0f5b9ab8ba9a4a2ffe1e4daecbe2596bd",
+  "current_purge": {
+    "center_xy": [
+      840,
+      137.5
+    ],
+    "surface_z_nominal": 1.5,
+    "contact_target_z": 1.5,
+    "nominal_compression_mm": 0,
+    "alternate_target_z": 1.0,
+    "dwell_seconds": 4
+  },
+  "current_palette": {
+    "common_liquid_z": 6,
+    "immersion_mm": 1,
+    "dip_z": 5,
+    "radius_mm": 5,
+    "note": "Existing common geometry assumption where equivalent; no new per-slot measurements inferred"
+  },
+  "program_outputs_after_authorization": {
+    "air": [
+      "air/SHARED_INK.gcode",
+      "air/SHARED_COLOR.gcode"
+    ],
+    "painting": [
+      "ink/SHARED_INK.gcode",
+      "color/SHARED_COLOR.gcode"
+    ],
+    "verify": "Existing production verifier; extension included in report and SHA256 manifest"
   }
 }

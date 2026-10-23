@@ -46,7 +46,7 @@ class MeasuredStationTests(unittest.TestCase):
         self.assertTrue(all(c.source_id for c in draw));self.assertFalse(any(c.kind=='pause' for c in commands))
         self.assertTrue(prior['X860_physically_measured_reported'])
         self.assertTrue(prior['large_baegunmo_strokes_to_G54_minus10_successful'])
-        self.assertFalse(prior['new_unified_speeds_physically_verified']);self.assertEqual(p.data['evidence'],[])
+        self.assertFalse(prior['new_hover15_Z7000_and_other_feedback_refinements_physically_verified']);self.assertEqual(p.data['evidence'],[])
 
     def test_measured_xy_and_nominal_z_stay_distinct(self):
         r,p,_,_,mapping,_,_=inputs(ROOT)
@@ -58,7 +58,7 @@ class MeasuredStationTests(unittest.TestCase):
         for role,y in (('ink',445),('water',295)):
             st=p.data['stations'][role]
             self.assertEqual(st['agitation_xy_mm'],[15,0])
-            self.assertIn((840,y),shallow_wipe_xy(st));self.assertIn((830,y+10),shallow_wipe_xy(st))
+            self.assertIn((840,y),shallow_wipe_xy(st));self.assertIn((830,y+20),shallow_wipe_xy(st))
             w=st['shallow_wipe']
             self.assertEqual([w[k] for k in ('surface_z','compression_mm','reentry_lift_mm')],[9.0,1.5,10.0])
             self.assertIn('NOT newly measured',w['contact_status'])
@@ -70,17 +70,17 @@ class MeasuredStationTests(unittest.TestCase):
     def test_air_paint_pairing_real_two_pass_contact_and_z10_links(self):
         r,p,*_=inputs(ROOT); air=build(r,p,'air');paint=build(r,p,'paint')
         self.assertEqual(xy_route(air),xy_route(paint))
-        self.assertTrue(all(c.xyz[2]>=10 for c in air if c.kind=='move'))
+        self.assertTrue(all(c.xyz[2]>=15 for c in air if c.kind=='move'))
         substitutions=[c for c in paint if c.travel_phase=='NONCONTACT_SUBSTITUTION']
         self.assertEqual(substitutions,[])
         wipes=[c for c in paint if c.travel_phase=='shallow_wipe']
-        self.assertEqual([c.xyz for c in wipes],[(840,455,7.5),(830,455,7.5)]*2+[(840,305,7.5),(830,305,7.5)])
+        self.assertEqual([c.xyz for c in wipes],[(840,465,7.5),(830,465,7.5)]*2+[(840,315,7.5),(830,315,7.5)])
         self.assertTrue(all(c.feed_mm_min==1000 for c in wipes))
         # Exactly 36 within-column links, at normal hover rather than Z35.
         pos=p.data['machine']['start_work_xyz'];low_links=0
         for c in paint:
             if c.kind=='move':
-                if c.action=='travel' and c.xyz[:2]!=tuple(pos[:2]) and min(pos[2],c.xyz[2])==10:low_links+=1
+                if c.action=='travel' and c.xyz[:2]!=tuple(pos[:2]) and min(pos[2],c.xyz[2])==15:low_links+=1
                 pos=c.xyz
         self.assertEqual(low_links,36*3)  # retained wet departure/main/arrival
         self.assertEqual(paint[-2].xyz,(800,800,35))
@@ -93,7 +93,7 @@ class MeasuredStationTests(unittest.TestCase):
         self.assertTrue(any(c.travel_phase=='agitation' and c.xyz==(855,380,8) for c in commands))
         self.assertTrue(any(c.travel_phase=='palette_loading' and c.feed_mm_min==1000 for c in commands))
         purge=[c for c in commands if c.action=='station_absorbent_contact']
-        self.assertEqual([c.xyz for c in purge],[(840,137.5,.5),(840,137.5,3.5)])
+        self.assertEqual([c.xyz for c in purge],[(840,137.5,1.5),(840,137.5,3.5)])
         d=deepcopy(p.data);d['motion']['contact_mm_min']=60
         self.assertEqual(station_phase_feed(d['stations']['A2'],d['motion'],'palette_loading'),1000)
 
@@ -103,12 +103,12 @@ class MeasuredStationTests(unittest.TestCase):
         b=Builder(unit_profile())
         with self.assertRaises((ValueError,TypeError)):emit_station_operation(b,st,'pigment_load','ordinary_travel')
         self.assertEqual(b.commands,[])
-        st['contact_box_xyz']=[[820,370,0],[860,460,20]]
+        st['contact_box_xyz']=[[820,370,0],[860,480,20]]
         st['shallow_wipe'].update(surface_z=12,compression_mm=1,reentry_lift_mm=3)
         d=deepcopy(unit_profile().data);d['motion'].update(p.data['motion']);d['stations']['ink']=st
         b=Builder(bind(d));Materials(b).station('ink','pigment_load')
         wipes=[c for c in b.commands if c.travel_phase=='shallow_wipe']
-        self.assertEqual([c.xyz for c in wipes],[(840,455,11),(830,455,11)])
+        self.assertEqual([c.xyz for c in wipes],[(840,465,11),(830,465,11)])
         self.assertTrue(all(c.feed_mm_min==1000 for c in wipes))
         reentry=[c for c in b.commands if c.travel_phase=='reentry']
         self.assertTrue(any(c.xyz==(830,402.5,14) for c in reentry))
@@ -182,7 +182,66 @@ class MeasuredStationTests(unittest.TestCase):
         begins=[i for i,c in enumerate(b.commands) if c.action=='initial_contact']
         self.assertEqual(len(begins),2)
         second_link=[c for c in b.commands[begins[0]+1:begins[1]] if c.action=='travel']
-        self.assertTrue(second_link);self.assertTrue(all(c.xyz[2]==10 for c in second_link))
+        self.assertTrue(second_link);self.assertTrue(all(c.xyz[2]==15 for c in second_link))
+
+    def test_final_feedback_hover_feed_palette_and_zero_compression_purge(self):
+        from datascape.gcode.production.trajectory import _station_geometry
+        r,p,*_=inputs(ROOT);commands=build(r,p,'paint');air=build(r,p,'air')
+        self.assertTrue(all(c.xyz[2]>=15 for c in air if c.kind=='move'))
+        self.assertTrue(any(c.action=='paper_hover' and c.xyz[2]==15 and c.feed_mm_min==7000 for c in commands))
+        self.assertTrue(all(c.feed_mm_min==7000 for c in commands if c.kind=='move' and c.action in ('lift','retract','paper_hover','approach','station_approach','park')))
+        self.assertTrue(all(c.feed_mm_min==2000 for c in commands if c.kind=='move' and c.action in ('initial_contact','calibration_compression','release','paper_release_clearance')))
+        for slot in p.data['material']['color_order']:
+            st=p.data['stations'][slot];self.assertEqual(st['immersion_mm'],1)
+            self.assertEqual(st['radius_mm'],5);self.assertEqual(_station_geometry(st,tuple)[0][2],5)
+        sponge=p.data['stations']['sponge'];self.assertEqual(sponge['compression_mm'],0)
+        self.assertEqual(_station_geometry(sponge,tuple)[0],(840,137.5,1.5))
+        bad=deepcopy(sponge);bad['compression_mm']=-.1
+        with self.assertRaises(ValueError):_station_geometry(bad,tuple)
+
+    def test_pressed_lengths_and_configurable_endpoints_and_depth(self):
+        from benchmarks.integrated_330_v01.measured_stations import job_check
+        from datascape.gcode.production.exporter import _serialize
+        from benchmarks.integrated_330_v01.numeric_review import BANNER
+        r,p,_,prior,_,rec,_=inputs(ROOT)
+        self.assertTrue(prior['previous_revision_both_Paint_completed_UGS_TCP'])
+        d=deepcopy(p.data)
+        for role,y in (('ink',475),('water',325)):
+            d['stations'][role]['shallow_wipe']['end_xy'][1]=y
+            d['stations'][role]['shallow_wipe']['compression_mm']=1.0
+        alt=Profile.from_dict(d);commands=build(r,alt,'paint')
+        text=BANNER+_serialize(commands,alt,digest(r),'alternate-offline-test','offline_review')
+        checked=job_check(text,commands,alt,'paint',rec)
+        self.assertEqual(checked['pressed_wiping_lengths_mm'],[30]*6)
+        self.assertEqual(checked['wiping_parameters']['ink']['contact_z'],8)
+        self.assertFalse(checked['controller_bounds']['actual_controller_configuration_reconciled'])
+
+    def test_runtime_sink_matches_actual_production_geometry_and_feed_limits(self):
+        from datascape.gcode.production.trajectory import build_job
+        from benchmarks.integrated_330_v01.spring_runtime import RuntimeBuilder
+        _,p,*_=inputs(ROOT)
+        d=deepcopy(unit_profile().data);d['motion'].update(p.data['motion'])
+        d['motion']['paper_contact_z_range']=[-10,0];profile=bind(d)
+        same=(strokes()[0],replace(strokes()[0],stroke_id='second',sequence=1))
+        jobs,_=make_plan(same,Layout('D'),(0,1));units=jobs['SHARED_INK']
+        from datascape.gcode.production.trajectory import draw_fragment
+        strict=Builder(profile);offline=RuntimeBuilder(profile)
+        for unit in units:
+            draw_fragment(strict,unit[0],None,'painting');draw_fragment(offline,unit[0],None,'painting')
+        compare=lambda rows:[(c.kind,c.action,c.xyz,c.feed_mm_min,c.source_id,c.source_vertex,c.artistic_pressure) for c in rows]
+        self.assertEqual(compare(strict.commands),compare(offline.commands))
+
+    def test_authorized_test_export_gcode_extension_remains_hash_verified_and_gated(self):
+        from test_gcode_v03 import plan,measured_test_profile,auth
+        from datascape.gcode.production.exporter import export_jobs,verify_export
+        jobs,manifest=plan(Layout('D'));p=measured_test_profile()
+        with tempfile.TemporaryDirectory() as tmp:
+            out=Path(tmp)/'export'
+            export_jobs(jobs,manifest,p,'air',auth(p,manifest,'air',jobs),out,program_extension='.gcode')
+            self.assertTrue((out/'SHARED_INK.gcode').read_text().endswith('M2\n'))
+            self.assertTrue(verify_export(out)['artifact_hashes_verified'])
+            with self.assertRaises(ValueError):export_jobs(jobs,manifest,p,'air',None,Path(tmp)/'blocked',program_extension='.gcode')
+            self.assertFalse((Path(tmp)/'blocked').exists())
 
 
 if __name__=='__main__':unittest.main()

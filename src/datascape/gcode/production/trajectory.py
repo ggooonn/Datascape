@@ -333,7 +333,7 @@ def _station_geometry(station, check):
         return dip, tuple(points)
     if kind == 'absorbent':
         xy = station['center_xy']; surface = station['surface_z']; compression = station['compression_mm']
-        if not vector(xy, 2) or not number(surface) or not number(compression, True):
+        if not vector(xy, 2) or not number(surface) or not number(compression) or compression < 0:
             raise ValueError('measure absorbent surface and gentle compression')
         dip = check((*xy, surface-compression))
         wipe = station.get('wipe_xy_mm', [0, 0])
@@ -541,8 +541,12 @@ def draw_fragment(b, fragment, material, stage, retract_height=None):
     b.in_paper = True; b.last_panel = fragment.panel
 
 
-def build_job(profile, units, stage):
-    b = Builder(profile); material = None if stage == 'air' else Materials(b)
+def build_job(profile, units, stage, *, offline_builder=None, offline_material=None):
+    # Official exporter always uses the default spatially validated Builder.
+    # Explicit offline sinks reuse this exact renderer for trajectory estimates;
+    # they are never accepted as measured profiles/evidence or physical exports.
+    b = Builder(profile) if offline_builder is None else offline_builder
+    material = None if stage == 'air' else (Materials(b) if offline_material is None else offline_material)
     b.marker('pre_run_confirmation_required', 'Verify G54/start, paper, clean brush and supplies BEFORE starting; export authorization records operator confirmation')
     if stage == 'air':
         for role in profile.data['motion'].get('air_station_roles', []):

@@ -21,7 +21,7 @@ from datascape.gcode.production.exporter import _serialize, _atomic_output, save
 from .numeric_review import NumericReviewBuilder, BANNER, STATUS, readback_review, xy_route
 from .station_final import final_inputs, commanded_seconds
 
-PIN = '943d0b1e9d59f9e6978aec85589c986bd8f06c64'
+PIN = 'f6aca60a24499036c4e17de994abde63c9189839'
 NAMES = {'air':'BENCHMARK_330_MEASURED_AIR_REVIEW',
          'water':'BENCHMARK_330_MEASURED_WATER_ONLY_REVIEW',
          'pigment':'BENCHMARK_330_MEASURED_INK_GOUACHE_REVIEW'}
@@ -55,17 +55,17 @@ def controller_candidate(root):
 
 def inputs(root):
     request, base, assumptions, prior, mapping = final_inputs(root)
-    request.update(station_policy='measured_station_v01', benchmark_columns=benchmark_columns(6000),
-                   notes='Same forty XY paths/depths/order and feeds; explicit flatZ9 test assumption, contact7.5 and reentry17.5. No slope-line extrapolation.')
+    request.update(station_policy='physical_feedback_v01',air_hover_mm=15,benchmark_columns=benchmark_columns(6000),
+                   notes='Same forty paths/depths/order. Feedback: hover15/Z7000, pressed wipe20mm, purge1.5 and palette5. Flat9 remains an assumption.')
     d=deepcopy(base.data); v=d['motion']; candidate,reconciliation=controller_candidate(root)
     d['profile_id']='MEASURED-XY-OPERATOR-SHALLOW-TEST-SPRING-MOTION-REVIEW'
     d['machine']['machine_bounds_xyz'][1][0]=860
     d['machine']['target_config_sha256']=reconciliation['candidate_sha256']
     d['machine']['target_config_installed']=False
     v.update(ordinary_travel_mm_min=12000, wet_loaded_mm_min=9000, draw_mm_min=6000,
-             air_xy_mm_min=6000, z_travel_mm_min=6000, station_approach_mm_min=6000,
-             paper_approach_mm_min=6000, paper_contact_mm_min=2000, paper_release_mm_min=2000,
-             pressure_z_mm_min=2000, paper_hover_mm=10, station_clearance_mm=35,
+             air_xy_mm_min=6000, z_travel_mm_min=7000, station_approach_mm_min=7000,
+             paper_approach_mm_min=7000, paper_contact_mm_min=2000, paper_release_mm_min=2000,
+             pressure_z_mm_min=2000, paper_hover_mm=15, station_clearance_mm=35,
              park_xyz=[800,800,35], air_station_top_mm=35, air_station_simulation_z_mm=35,
              benchmark_plan_sha256=digest(request),
              station_phase_limits_mm_min={key:(6000 if key=='reentry' else 1000) for key in PHASE_FEEDS})
@@ -74,41 +74,57 @@ def inputs(root):
         y=445 if role=='ink' else 295
         st.update(phase_feeds_mm_min=deepcopy(PHASE_FEEDS), agitation_xy_mm=[15,0],
                   dwell_seconds=2 if role=='ink' else 5,
-                  shallow_wipe=dict(enabled=True,start_xy=[840,y],end_xy=[840,y+10],
+                  shallow_wipe=dict(enabled=True,start_xy=[840,y],end_xy=[840,y+20],
+                    optional_end_y=y+30,previous_tested_end_y=y+10,
+                    new_end_status='operator-requested final trial extension, not yet physically tested',
                     return_xy=[830,(deep[1]+shallow[1])/2],second_pass_x_offset_mm=-10,
                     passes=2,surface_z=9.0,compression_mm=1.5,reentry_lift_mm=10.0,
                     reentry_lift_reference='compressed_contact_target',
                     xy_status='operator physically inspected/tested',
                     contact_status='operator-selected trial; extended flat surface9 assumed from existing shallow endpoint, NOT newly measured'))
-    d['stations']['sponge'].update(dwell_seconds=4,phase_feeds_mm_min=deepcopy(PHASE_FEEDS))
+    d['stations']['sponge'].update(dwell_seconds=4,compression_mm=0,
+        alternate_contact_target_z=1.0,phase_feeds_mm_min=deepcopy(PHASE_FEEDS),
+        notes='Operator feedback: prior0.5 too deep; target1.5 equals nominal surface1.5 (zero nominal compression). Optional target1.0 needs separate review.')
     for slot in mapping['all_registered_centers']:
         st=d['stations'][slot]
-        st.update(radius_mm=5,phase_feeds_mm_min=deepcopy(PHASE_FEEDS),dwell_seconds=1,
+        st.update(radius_mm=5,immersion_mm=1,phase_feeds_mm_min=deepcopy(PHASE_FEEDS),dwell_seconds=1,
                   common_geometry_status='nominal common floor/liquid; XY radius/holder space operator-confirmed')
         points=palette_pattern_xy(st); low=min(p[0] for p in points); high=max(p[0] for p in points)
         mapping['slot_assessments'][slot]=dict(center_xy=st['center_xy'],path_x_range=[low,high],
             axis_X860_headroom_mm=860-high, recorded_X850_exceeded=high>850,
             brush_holder_XY_space_operator_confirmed=True, per_slot_liquid_height_measured=False)
     mapping.update(physical_brush_holder_footprint_verified='operator-confirmed relevant XY space; no numeric swept-volume certificate',
-        common_model='Existing nominal floor1/liquid6/dip4; NOT newly measured per-slot liquid heights',
+        common_model='Common nominal floor1/liquid6, corrected dip5/immersion1; equivalent geometry only, NOT per-slot measured liquid heights',
         palette_radius_mm=5, controller_target_X_max=860)
     prior.update(source_pin=PIN, X860_physically_measured_reported=True,
         agitation_plus_minus15_XY_and_holder_space_confirmed=True,
         palette_radius5_XY_space_confirmed=True, extended_shallow_XY_space_confirmed=True,
-        new_unified_speeds_physically_verified=False,
+        previous_revision_both_Paint_completed_UGS_TCP=True,
+        previous_revision_higher_feeds_Z35_palette_visits_successful=True,
+        previous_revision_vibration_noise_acceptable=True,
+        previous_revision_wiping_mechanical_success_but_water_removal_weak=True,
+        previous_revision_purge_too_deep=True,
+        new_hover15_Z7000_and_other_feedback_refinements_physically_verified=False,
         shallow_wiping_test_parameters_operator_selected=True,
         extended_solid_surface_Z_compression_reentry_measured=False)
-    assumptions.update(station_phase_feeds_mm_min=PHASE_FEEDS, noncontact_station_approach_mm_min=6000,
+    assumptions.update(station_phase_feeds_mm_min=PHASE_FEEDS, noncontact_station_approach_mm_min=7000,
         dwell_seconds={'ink':2,'water':5,'A2':1,'purge':4},
         agitation={'cycles':1,'x_offset_mm':15,'sequence':'840 -> 825 -> 855 -> 840',
                    'XY_space_operator_confirmed':True,'floor_z_still_nominal':True},
         a2_pattern='operator-confirmed radius5, one circle, 24 segments',
-        high_speed_and_minus9_minus10='prior -10 water-only success reported; new unified feeds are candidates',
+        high_speed_and_minus9_minus10='Both pinned Paint jobs and higher feeds operated successfully per operator; new Z7000/hover15 refinements remain candidates',
         shallow_contact_test_settings={role:d['stations'][role]['shallow_wipe'] for role in ('ink','water')},
         calculated_shallow_contact_Z=7.5,calculated_reentry_Z=17.5,
         review_substitution='None in Paint: actual intended two-pass contact is emitted. Air alone elevates station XY to35.',
         extended_shallow_surface_status='operator-assumed constant G54Z9 from existing shallow reference; NOT a newly measured extended surface')
-    d['notes']='User-measured XY accepted; X860 intended configuration confirmed, installation/readback pending. Flat9/compression1.5/lift10 are operator-selected trial settings, contact7.5/reentry17.5, not newly measured clearance. No passed evidence or official authorization invented.'
+    assumptions['calculated_review_coordinates_G54']['A2']['dip_z']=5
+    assumptions['purge'].update(target_G54_z=1.5,compression_mm=0,alternate_target_G54_z=1.0)
+    assumptions['a2_initial_immersion_mm']=1
+    prior['new_Z35_station_phase_agitation_purge_pigment_policy_verified']=False
+    prior['previous_revision_success_is_operator_report_not_current_scoped_authorization']=True
+    assumptions['pressed_wiping_length_mm']=20
+    assumptions['weak_wiping_diagnosis']='Prior pressed passes were10mm. New passes20mm; actual contact force/surface mismatch remains separate and is NOT solved by increasing compression.'
+    d['notes']='Both pinned Paint trials successful per operator, with saturated-brush Z10 trails, weak wiping and deep purge. Final corrections: hover15/Z7000, wipe20 at unchanged7.5, purge1.5, palettes5. X860 installation/readback still unreported; no passing authorization or measured volumes invented.'
     return request,Profile.from_dict(d),assumptions,prior,mapping,reconciliation,candidate
 
 
@@ -118,7 +134,7 @@ def build(request,profile,kind):
     if profile.data['status']!='nominal_review' or (
         v['ordinary_travel_mm_min'],v['wet_loaded_mm_min'],v['draw_mm_min'],v['z_travel_mm_min'],
         v['paper_contact_mm_min'],v['pressure_z_mm_min'],v['paper_hover_mm'],v['park_xyz']) != (
-            12000,9000,6000,6000,2000,2000,10,[800,800,35]):
+            12000,9000,6000,7000,2000,2000,15,[800,800,35]):
         raise ValueError('unified candidate motion policy changed')
     b=NumericReviewBuilder(profile,kind); loaded=None
     def contact(role,action):
@@ -151,28 +167,51 @@ def check_controller(commands,profile,reconciliation):
 def job_check(text,commands,p,kind,reconciliation):
     checked=readback_review(text,commands,p,kind)
     wiping=[(i,c) for i,c in enumerate(commands) if c.kind=='move' and c.travel_phase=='shallow_wipe']
+    lengths=[]
     if kind=='paint':
-        expected=[(840,455),(830,455),(840,455),(830,455),(840,305),(830,305)]
-        if [c.xyz for _,c in wiping]!=[(*xy,7.5) for xy in expected]:raise ValueError('two-pass wiping contact sequence mismatch')
+        expected=[];planes=[]
+        for role in ('ink','ink','water'):
+            w=p.data['stations'][role]['shallow_wipe'];contact=w['surface_z']-w['compression_mm']
+            clear=contact+w['reentry_lift_mm'];x=w['start_xy'][0]
+            expected += [(x,w['end_xy'][1],contact),(x+w['second_pass_x_offset_mm'],w['end_xy'][1],contact)]
+            planes += [(w['surface_z'],clear)]*2
+            lengths += [w['end_xy'][1]-w['start_xy'][1]]*2
+        if [c.xyz for _,c in wiping]!=expected:raise ValueError('two-pass wiping contact sequence mismatch')
         for n,(i,c) in enumerate(wiping):
-            after=[row for row in commands[i+1:] if row.kind=='move']
-            if after[0].xyz!=(*c.xyz[:2],9.0) or after[0].travel_phase!='shallow_contact':
+            surface,clear=planes[n];after=[row for row in commands[i+1:] if row.kind=='move']
+            if after[0].xyz!=(*c.xyz[:2],surface) or after[0].travel_phase!='shallow_contact':
                 raise ValueError('wipe must release vertically at controlled contact feed')
-            lifted=17.5 if n%2==0 else 35
+            lifted=clear if n%2==0 else p.data['motion']['station_clearance_mm']
             if after[1].xyz!=(*c.xyz[:2],lifted):raise ValueError('vertical lift must precede lateral re-entry/transfer')
-            if n%2==0 and after[2].xyz!=(830,c.xyz[1],17.5):raise ValueError('X-10 must follow complete 10mm vertical lift')
-        previous=p.data['machine']['start_work_xyz']
+            if n%2==0 and after[2].xyz!=expected[n+1][:2]+(clear,):raise ValueError('X offset must follow complete vertical lift')
+            before=next(row for row in reversed(commands[:i]) if row.kind=='move')
+            if before.xyz!=(c.xyz[0],c.xyz[1]-lengths[n],c.xyz[2]):raise ValueError('pressed Y+ wiping length/height mismatch')
+        previous=p.data['machine']['start_work_xyz'];active_role=None
         for c in commands:
+            if c.kind=='marker' and c.action=='benchmark_station_visit':active_role=c.message.split(':')[0]
             if c.kind=='move':
-                if c.travel_phase=='reentry' and tuple(previous[:2])!=c.xyz[:2] and min(previous[2],c.xyz[2])<17.5:
-                    raise ValueError('lateral re-entry below lifted plane')
+                if c.travel_phase=='reentry' and tuple(previous[:2])!=c.xyz[:2]:
+                    w=p.data['stations'][active_role]['shallow_wipe']
+                    clear=w['surface_z']-w['compression_mm']+w['reentry_lift_mm']
+                    if min(previous[2],c.xyz[2])<clear:
+                        raise ValueError('lateral re-entry below lifted plane')
                 previous=c.xyz
     elif wiping:raise ValueError('Air contains solid wiping contact')
+    v=p.data['motion']
+    paper_hover=[c for c in commands if c.kind=='move' and c.action=='paper_hover' and c.xyz[0]<=330 and c.xyz[1]<=330]
+    if not paper_hover or any(c.xyz[2]!=v['paper_hover_mm'] for c in paper_hover):raise ValueError('paper hover height mismatch')
+    if any(c.kind=='move' and c.action in ('lift','retract','approach','paper_hover','park','station_approach') and
+           c.feed_mm_min!=v['z_travel_mm_min'] for c in commands):raise ValueError('noncontact Z feed mismatch')
     checked.update(controller_bounds=check_controller(commands,p,reconciliation),
         commanded_feed_seconds_not_physical_runtime=commanded_seconds(commands,p),
         solid_wipe_contact_emitted=kind=='paint',contact_benchmark_complete=kind=='paint',
-        shallow_wiping_passes=len(wiping),vertical_lift_before_X_offset_verified=kind=='paint',
-        operator_assumed_surface_z=9.0,contact_z=7.5,reentry_z=17.5,
+        shallow_wiping_passes=len(wiping),pressed_wiping_lengths_mm=lengths,vertical_lift_before_X_offset_verified=kind=='paint',
+        paper_hover_mm=v['paper_hover_mm'],noncontact_Z_feed_mm_min=v['z_travel_mm_min'],
+        purge_target_z=p.data['stations']['sponge']['surface_z']-p.data['stations']['sponge']['compression_mm'],
+        palette_dip_z=p.data['stations']['A2']['liquid_reference_z']-p.data['stations']['A2']['immersion_mm'],
+        wiping_parameters={role:dict(surface_z=p.data['stations'][role]['shallow_wipe']['surface_z'],
+            contact_z=p.data['stations'][role]['shallow_wipe']['surface_z']-p.data['stations'][role]['shallow_wipe']['compression_mm'],
+            reentry_z=p.data['stations'][role]['shallow_wipe']['surface_z']-p.data['stations'][role]['shallow_wipe']['compression_mm']+p.data['stations'][role]['shallow_wipe']['reentry_lift_mm']) for role in ('ink','water')},
         extended_surface_newly_measured=False,
         station_feeds_by_phase={phase:sorted({c.feed_mm_min for c in commands if c.kind=='move' and c.travel_phase==phase})
                                for phase in PHASE_FEEDS})
@@ -252,58 +291,7 @@ def verify(output):
                 Paint_two_pass_contact_verified=True,operator_assumed_surface_not_newly_measured=True,authorized=False)
 
 
-README='''# Measured XY benchmark / Spring motion handoff
-
-Numeric G1/G4/M2 offline reviews, not machine authorization. Same forty original
-45mm strokes, four columns, original depth order and visits. Drawing6000,
-dry12000, wet-main9000 (departure/arrival3000 over5mm retained), noncontactZ6000,
-contact/release/pressureZ2000. Paper hover10/local disabled. Consecutive paper
-strokes remain at10; station/cross-region access35. Home start0/898/35,
-park800/800/35/M2, M0=0. No artwork, pressure or S3a changes.
-
-The operator reports prior stable Air/water-only streaming via UGS TCP and
-large-brush strokes to -10. X860, X840+/-15 agitation, radius5 palette/holder
-space and extended shallow XY sections are now operator-confirmed, not treated
-as arbitrary unmeasured XY expansion. New feeds/material response remain candidates.
-
-Installed YAML still records X850. config.X860.candidate.yaml changes ONLY
-axes.x.max_travel_mm to860; original installed bytes/hash and homing/pull-offs
-remain unchanged. Runtime installation/readback is pending. Reviews reach855;
-they FAIL the recorded850 bound and pass the proposed860 bound with5mm axis
-headroom. Right palette radius5 reaches852, with8mm axis headroom. These margins
-are axis-reference distances, not invented measured tool-volume certificates.
-soft_limits is absent in the original YAML (v4.1.1 source default false); this
-patch does not change its state or claim runtime enforcement.
-
-Ink dip8/dwell2s, water dip7/dwell5s, agitation825->855->840, then Y+ slope
-withdrawal to the existing shallow reference. Immersion/agitation/withdrawal1000,
-palette1000, purge750, approach6000; separately capped, no legacyF60 clamp.
-Palette floor1/liquid6/dip4 still nominal, radius5/one24-segment circle/dwell1s.
-Purge840/137.5 to0.5, single vertical dab/dwell4s/no rubbing.
-
-Solid wiping is modeled SEPARATELY: ink445->455, water295->305; two passes,
-second X830, lifted return toward slope middle402.5/252.5. Operator test inputs:
-surface9, compression1.5, contact7.5, reentry_lift10 FROM CONTACT ->17.5.
-The extended flat9 is an explicit assumption based on the existing shallow
-reference, NOT a newly measured surface or a slope-line extrapolation.
-After the first pass: controlled vertical release7.5->9 at750, vertical
-lift9->17.5 at3000, THEN X-10 and noncontact return/second approach at17.5.
-After the second pass: controlled vertical release to9 then retract35 before
-station transfer. No lateral X shift at compressed contact depth.
-Paint includes actual two-pass contact, without Z35-only substitution. Air
-keeps the identical XY at35, no paper/liquid/stone contact. WATER_ONLY and
-INK_GOUACHE numeric commands match. Motion-complete REVIEW files are still
-not physically authorized: controller installation/readback and actual final
-Air/water/pigment outcomes remain pending. Formal measured-volume/evidence
-and stage authorization gates are unchanged; no physical validation is inferred.
-
-Reproduce: PYTHONPATH=src:. python -m benchmarks.integrated_330_v01.measured_stations --output NEW_DIR
-Verify: same command with --verify. Checks include regenerated IR, actual numeric
-read-back, both controller bounds, axis/Z feeds, 40 strokes, paired XY, dwell,
-M0=0/M2 and SHA256. No physical sweep, stopping or speed test is manufactured.
-See spring_pipeline.py for the same-profile, canonical-input, gated Spring
-Air/SHARED_INK/SHARED_COLOR path; normal paper links10, global transfers35.
-'''
+README="# Final physical-feedback benchmark and Spring handoff\n\nActual numeric REVIEW commands, not authorized physical exports. Both previous\nPaint variants at pinned f6aca60a were successfully run over UGS TCP according\nto the operator: higher feeds, station visits, Z35 and palette loading worked;\nvibration/noise acceptable. New refinements below remain awaiting confirmation.\nNo controller configuration readback or exact attained speed is inferred.\n\nSame original40 strokes/depth order/visits. Ordinary12000, wet-main9000,\ndrawing6000, noncontact Z/approach7000, paper contact/release/pressureZ2000.\nNormal paper hover15, local disabled; no per-strokeZ35 round trips. Station and\ncross-region clearance35. Home start0/898/35; park800/800/35/M2; M0=0.\nExisting wet departure/arrival3000 over5mm and separate station feeds retained.\n\nBoth shallow passes are now PRESSED20mm atZ7.5: ink445->465, water295->315.\nOptional endpoints475/325 are configurable candidates, not defaults. Surface9\nand compression1.5 stay operator assumptions; no blind slope extrapolation.\nFirst pass X840, controlled release to9, vertical lift to17.5 BEFORE X-10,\nlifted return via middleY402.5/252.5, second passX830, release and retract35.\nPrior pressed passes were only10mm. Doubling distance does not prove actual\nsurface contact; insufficient contact/force remains a separate possible cause\nof weak removal. Compression is not increased automatically.\n\nPurge840/137.5, target1.5, dwell4s, one vertical dab, no rubbing. Nominal\nsurface1.5 implies ZERO nominal compression; target1.0 is an explicit alternate\nif later selected, not automatic fallback. Negative compression is rejected.\nAll registered palettes keep radius5/feeds/centers; common equivalent geometry\nuses liquid6 minus immersion1 -> dip5, instead of prior dip4. No new per-slot\nmeasured liquid height is invented. Ink dwell2s, water5s unchanged.\n\nX860 candidate YAML is byte-identical to pinned PR31 and changes only X max\ntravel versus recorded installed850. The operator's intended860 and physical\nreach are retained; installation/readback/homing verification are STILL\nunreported. Reviews reach855, pass candidate860 bounds and explicitly fail the\nrecorded850 bound. Formal profile/evidence/authorization gates stay intact.\n\nMatched Air: paper strokes15 and station XY35, no paper/liquid/stone/cloth\ncontact. WATER_ONLY and INK_GOUACHE numeric commands match and include actual\nwiping, purge and loading, not Z35-only Paint substitutes. Verification covers\nregeneration, bounds/feeds, actual15/7000, pressed length/height, lift-before-X,\n40 strokes, M0=0, finalpark/M2, read-back and SHA256.\n\nReproduce: PYTHONPATH=src:. python -m benchmarks.integrated_330_v01.measured_stations --output NEW_DIR\nVerify: same command with --verify. Original source-plan hover10/5 metadata is\nretained provenance, not this version's execution height.\n\nCanonical Spring inputs have now been recovered with the byte-verified PR25\nadapter and exact existing machine/provenance SHA256s. Full LayoutD plan readback\npreserves14951 unsplit sources/240974 pressure samples/50 continuous X300\ncrossings and S3a. spring_runtime.py compares hover10/Z6000, hover15/Z6000 and\nhover15/Z7000 on FULL synchronized trajectories with existing material visits,\nreloads and separate jobs. Estimates are not measured runtimes or safety tests.\nAfter final refinement feedback, the same-profile spring_pipeline exports Air,\nSHARED_INK and SHARED_COLOR through the official gates and verifier. No preview\nfiles are substituted for requested authorized Spring executions.\n"
 
 
 if __name__=='__main__':

@@ -1,0 +1,34 @@
+{
+  "plan_sha256": "8b4804f561f0eaab28753ae1790ce3b0f5b9ab8ba9a4a2ffe1e4daecbe2596bd",
+  "S3a_reference_reused": true,
+  "no_artwork_or_pressure_generation": true,
+  "job_source_units": {
+    "SHARED_COLOR": 11606,
+    "SHARED_INK": 3345
+  },
+  "actual_color_slots": [
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "D1",
+    "D2",
+    "D4",
+    "D5"
+  ],
+  "actual_plan_readback": {
+    "D_X300_crossing_strokes_continuous": 50,
+    "D_original_strokes_unsplit": 14951,
+    "all_written_source_pressure_and_work_transform_bindings_verified": true,
+    "complete_source_partition": true,
+    "written_fragment_count": 14951,
+    "written_pressure_samples": 240974
+  },
+  "hardware_executed": false,
+  "production_Gcode_written": false,
+  "current_profile_sha256": "e34e1790581ebedc3be50c5b3b8f16761afc29d175ea9f7bd8aa5e3d9350d3c2"
+}

@@ -1,0 +1,551 @@
+{
+  "canonical_preservation": {
+    "D_X300_crossing_strokes_continuous": 50,
+    "D_original_strokes_unsplit": 14951,
+    "all_written_source_pressure_and_work_transform_bindings_verified": true,
+    "complete_source_partition": true,
+    "written_fragment_count": 14951,
+    "written_pressure_samples": 240974
+  },
+  "controller_installation_inferred": false,
+  "curves_unchanged": true,
+  "dynamics": {
+    "low_acceleration": {
+      "axis_acceleration_mm_s2": [
+        100,
+        100,
+        100
+      ],
+      "junction_deviation_mm": 0.01,
+      "status": "synthetic conservative comparison"
+    },
+    "recorded_controller_reference": {
+      "axis_acceleration_mm_s2": [
+        1200.0,
+        1200.0,
+        1000.0
+      ],
+      "junction_deviation_mm": 0.01,
+      "status": "recorded installed YAML acceleration; junction0.01 ASSUMED, attained dynamics not measured"
+    }
+  },
+  "hover_impact_seconds": {
+    "SHARED_COLOR": {
+      "combined_hover15_Z7000_vs_hover10_Z6000": 796.9499999937325,
+      "hover_only_at_Z6000": 1147.9999999993925
+    },
+    "SHARED_INK": {
+      "combined_hover15_Z7000_vs_hover10_Z6000": 219.8485714285398,
+      "hover_only_at_Z6000": 326.099999999944
+    }
+  },
+  "physical_runtime_verified": false,
+  "plan_sha256": "8b4804f561f0eaab28753ae1790ce3b0f5b9ab8ba9a4a2ffe1e4daecbe2596bd",
+  "production_Gcode_written": false,
+  "profile_sha256": "e34e1790581ebedc3be50c5b3b8f16761afc29d175ea9f7bd8aa5e3d9350d3c2",
+  "scenarios": {
+    "hover10_Z6000": {
+      "SHARED_COLOR": {
+        "M0_count": 0,
+        "acceleration_models": {
+          "low_acceleration": {
+            "acceleration_sensitive_seconds": 37774.54799883085,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 6115.370888783559,
+              "non_drawing_travel": 7164.457811592337,
+              "paper_engagement": 15455.859939576761,
+              "station_handling": 1334.9972813816746,
+              "station_transfer": 7703.862077496518
+            },
+            "commanded_feed_seconds": 17914.794475745588,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 967.3337576693381,
+              "non_drawing_travel": 2341.1610071029054,
+              "paper_engagement": 6304.239742014834,
+              "station_handling": 948.1709281138678,
+              "station_transfer": 7353.889040844644
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 72569.3978715364,
+            "verified_physical_time": false
+          },
+          "recorded_controller_reference": {
+            "acceleration_sensitive_seconds": 20999.33726538863,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 1801.0233929288224,
+              "non_drawing_travel": 2889.3788839516005,
+              "paper_engagement": 7943.134848163346,
+              "station_handling": 983.7639243333929,
+              "station_transfer": 7382.036216011468
+            },
+            "commanded_feed_seconds": 17914.794475745588,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 967.3337576693381,
+              "non_drawing_travel": 2341.1610071029054,
+              "paper_engagement": 6304.239742014834,
+              "station_handling": 948.1709281138678,
+              "station_transfer": 7353.889040844644
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 28822.85872191159,
+            "verified_physical_time": false
+          }
+        },
+        "commanded_feed_seconds": 17914.794475745588,
+        "commanded_feed_seconds_by_category": {
+          "drawing": 967.3337576693381,
+          "non_drawing_travel": 2341.1610071029054,
+          "paper_engagement": 6304.239742014834,
+          "station_handling": 948.1709281138678,
+          "station_transfer": 7353.889040844644
+        },
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "A2": 23,
+          "A3": 12,
+          "A4": 19,
+          "A5": 11,
+          "C1": 9,
+          "C2": 12,
+          "C3": 5,
+          "C4": 12,
+          "D1": 12,
+          "D2": 2,
+          "D4": 5,
+          "D5": 4
+        },
+        "moves": 280797,
+        "noncontact_Z_mm_min": 6000,
+        "paper_hover_mm": 10,
+        "source_units": 11606
+      },
+      "SHARED_INK": {
+        "M0_count": 0,
+        "acceleration_models": {
+          "low_acceleration": {
+            "acceleration_sensitive_seconds": 19915.769634296008,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 3991.074431478027,
+              "non_drawing_travel": 4000.820540941122,
+              "paper_engagement": 4598.0193088058295,
+              "station_handling": 1778.4281487487915,
+              "station_transfer": 5547.427204322239
+            },
+            "commanded_feed_seconds": 11440.058523533453,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 883.6446777735147,
+              "non_drawing_travel": 1862.0109328342576,
+              "paper_engagement": 1971.419053530648,
+              "station_handling": 1367.1834412409978,
+              "station_transfer": 5355.800418154035
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 35103.10276718693,
+            "verified_physical_time": false
+          },
+          "recorded_controller_reference": {
+            "acceleration_sensitive_seconds": 12537.43294510207,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 1258.5508328495364,
+              "non_drawing_travel": 2061.690591549983,
+              "paper_engagement": 2442.0162264868495,
+              "station_handling": 1404.6066507011878,
+              "station_transfer": 5370.568643514513
+            },
+            "commanded_feed_seconds": 11440.058523533453,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 883.6446777735147,
+              "non_drawing_travel": 1862.0109328342576,
+              "paper_engagement": 1971.419053530648,
+              "station_handling": 1367.1834412409978,
+              "station_transfer": 5355.800418154035
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 16066.793475897533,
+            "verified_physical_time": false
+          }
+        },
+        "commanded_feed_seconds": 11440.058523533453,
+        "commanded_feed_seconds_by_category": {
+          "drawing": 883.6446777735147,
+          "non_drawing_travel": 1862.0109328342576,
+          "paper_engagement": 1971.419053530648,
+          "station_handling": 1367.1834412409978,
+          "station_transfer": 5355.800418154035
+        },
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "ink": 84
+        },
+        "moves": 100968,
+        "noncontact_Z_mm_min": 6000,
+        "paper_hover_mm": 10,
+        "source_units": 3345
+      }
+    },
+    "hover15_Z6000": {
+      "SHARED_COLOR": {
+        "M0_count": 0,
+        "acceleration_models": {
+          "low_acceleration": {
+            "acceleration_sensitive_seconds": 40959.818978582865,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 6115.370888783559,
+              "non_drawing_travel": 7164.359506533051,
+              "paper_engagement": 18665.903794268903,
+              "station_handling": 1334.9972813816746,
+              "station_transfer": 7679.1875076156775
+            },
+            "commanded_feed_seconds": 19062.79447574498,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 967.3337576693381,
+              "non_drawing_travel": 2341.111007102905,
+              "paper_engagement": 7464.839742014257,
+              "station_handling": 948.1709281138678,
+              "station_transfer": 7341.339040844613
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 76842.62935446267,
+            "verified_physical_time": false
+          },
+          "recorded_controller_reference": {
+            "acceleration_sensitive_seconds": 22294.884697984748,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 1801.0233929288224,
+              "non_drawing_travel": 2889.3288839516003,
+              "paper_engagement": 9251.282280759395,
+              "station_handling": 983.7639243333929,
+              "station_transfer": 7369.486216011538
+            },
+            "commanded_feed_seconds": 19062.79447574498,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 967.3337576693381,
+              "non_drawing_travel": 2341.111007102905,
+              "paper_engagement": 7464.839742014257,
+              "station_handling": 948.1709281138678,
+              "station_transfer": 7341.339040844613
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 30169.98620093572,
+            "verified_physical_time": false
+          }
+        },
+        "commanded_feed_seconds": 19062.79447574498,
+        "commanded_feed_seconds_by_category": {
+          "drawing": 967.3337576693381,
+          "non_drawing_travel": 2341.111007102905,
+          "paper_engagement": 7464.839742014257,
+          "station_handling": 948.1709281138678,
+          "station_transfer": 7341.339040844613
+        },
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "A2": 23,
+          "A3": 12,
+          "A4": 19,
+          "A5": 11,
+          "C1": 9,
+          "C2": 12,
+          "C3": 5,
+          "C4": 12,
+          "D1": 12,
+          "D2": 2,
+          "D4": 5,
+          "D5": 4
+        },
+        "moves": 280797,
+        "noncontact_Z_mm_min": 6000,
+        "paper_hover_mm": 15,
+        "source_units": 11606
+      },
+      "SHARED_INK": {
+        "M0_count": 0,
+        "acceleration_models": {
+          "low_acceleration": {
+            "acceleration_sensitive_seconds": 20820.57511197302,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 3991.074431478027,
+              "non_drawing_travel": 4000.7222358818353,
+              "paper_engagement": 5519.340036442943,
+              "station_handling": 1778.4281487487915,
+              "station_transfer": 5531.010259421421
+            },
+            "commanded_feed_seconds": 11766.158523533397,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 883.6446777735147,
+              "non_drawing_travel": 1861.9609328342576,
+              "paper_engagement": 2305.9190535306097,
+              "station_handling": 1367.1834412409978,
+              "station_transfer": 5347.450418154017
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 36324.63509068729,
+            "verified_physical_time": false
+          },
+          "recorded_controller_reference": {
+            "acceleration_sensitive_seconds": 12905.445042106083,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 1258.5508328495364,
+              "non_drawing_travel": 2061.6405915499827,
+              "paper_engagement": 2818.4283234908394,
+              "station_handling": 1404.6066507011878,
+              "station_transfer": 5362.218643514536
+            },
+            "commanded_feed_seconds": 11766.158523533397,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 883.6446777735147,
+              "non_drawing_travel": 1861.9609328342576,
+              "paper_engagement": 2305.9190535306097,
+              "station_handling": 1367.1834412409978,
+              "station_transfer": 5347.450418154017
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 16450.284602676926,
+            "verified_physical_time": false
+          }
+        },
+        "commanded_feed_seconds": 11766.158523533397,
+        "commanded_feed_seconds_by_category": {
+          "drawing": 883.6446777735147,
+          "non_drawing_travel": 1861.9609328342576,
+          "paper_engagement": 2305.9190535306097,
+          "station_handling": 1367.1834412409978,
+          "station_transfer": 5347.450418154017
+        },
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "ink": 84
+        },
+        "moves": 100968,
+        "noncontact_Z_mm_min": 6000,
+        "paper_hover_mm": 15,
+        "source_units": 3345
+      }
+    },
+    "hover15_Z7000": {
+      "SHARED_COLOR": {
+        "M0_count": 0,
+        "acceleration_models": {
+          "low_acceleration": {
+            "acceleration_sensitive_seconds": 40959.818978582865,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 6115.370888783559,
+              "non_drawing_travel": 7164.359506533051,
+              "paper_engagement": 18665.903794268903,
+              "station_handling": 1334.9972813816746,
+              "station_transfer": 7679.1875076156775
+            },
+            "commanded_feed_seconds": 18711.74447573932,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 967.3337576693381,
+              "non_drawing_travel": 2341.0824356743337,
+              "paper_engagement": 7133.2397420085545,
+              "station_handling": 935.9209281138667,
+              "station_transfer": 7334.167612273227
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 76842.62935446267,
+            "verified_physical_time": false
+          },
+          "recorded_controller_reference": {
+            "acceleration_sensitive_seconds": 22279.231531711197,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 1801.0233929288224,
+              "non_drawing_travel": 2889.3086214691225,
+              "paper_engagement": 9247.752291006143,
+              "station_handling": 976.7468933975094,
+              "station_transfer": 7364.400332909599
+            },
+            "commanded_feed_seconds": 18711.74447573932,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 967.3337576693381,
+              "non_drawing_travel": 2341.0824356743337,
+              "paper_engagement": 7133.2397420085545,
+              "station_handling": 935.9209281138667,
+              "station_transfer": 7334.167612273227
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 30160.03620093591,
+            "verified_physical_time": false
+          }
+        },
+        "commanded_feed_seconds": 18711.74447573932,
+        "commanded_feed_seconds_by_category": {
+          "drawing": 967.3337576693381,
+          "non_drawing_travel": 2341.0824356743337,
+          "paper_engagement": 7133.2397420085545,
+          "station_handling": 935.9209281138667,
+          "station_transfer": 7334.167612273227
+        },
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "A2": 23,
+          "A3": 12,
+          "A4": 19,
+          "A5": 11,
+          "C1": 9,
+          "C2": 12,
+          "C3": 5,
+          "C4": 12,
+          "D1": 12,
+          "D2": 2,
+          "D4": 5,
+          "D5": 4
+        },
+        "moves": 280797,
+        "noncontact_Z_mm_min": 7000,
+        "paper_hover_mm": 15,
+        "source_units": 11606
+      },
+      "SHARED_INK": {
+        "M0_count": 0,
+        "acceleration_models": {
+          "low_acceleration": {
+            "acceleration_sensitive_seconds": 20820.57511197302,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 3991.074431478027,
+              "non_drawing_travel": 4000.7222358818353,
+              "paper_engagement": 5519.340036442943,
+              "station_handling": 1778.4281487487915,
+              "station_transfer": 5531.010259421421
+            },
+            "commanded_feed_seconds": 11659.907094961993,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 883.6446777735147,
+              "non_drawing_travel": 1861.9323614056862,
+              "paper_engagement": 2210.3476249591945,
+              "station_handling": 1361.3034412409934,
+              "station_transfer": 5342.678989582604
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 36324.63509068729,
+            "verified_physical_time": false
+          },
+          "recorded_controller_reference": {
+            "acceleration_sensitive_seconds": 12897.27763847998,
+            "acceleration_sensitive_seconds_by_category": {
+              "drawing": 1258.5508328495364,
+              "non_drawing_travel": 2061.620329067505,
+              "paper_engagement": 2816.775155643954,
+              "station_handling": 1401.4965119782476,
+              "station_transfer": 5358.834808940736
+            },
+            "commanded_feed_seconds": 11659.907094961993,
+            "commanded_feed_seconds_by_category": {
+              "drawing": 883.6446777735147,
+              "non_drawing_travel": 1861.9323614056862,
+              "paper_engagement": 2210.3476249591945,
+              "station_handling": 1361.3034412409934,
+              "station_transfer": 5342.678989582604
+            },
+            "limitations": [
+              "adequate full lookahead and continuous streaming assumed",
+              "finite buffer, step quantization and controller/serial overhead omitted",
+              "brush recovery and physical dynamic approval not inferred"
+            ],
+            "model": "Cartesian projected-axis / junction deviation / full lookahead",
+            "stop_each_segment_seconds": 16445.204602676793,
+            "verified_physical_time": false
+          }
+        },
+        "commanded_feed_seconds": 11659.907094961993,
+        "commanded_feed_seconds_by_category": {
+          "drawing": 883.6446777735147,
+          "non_drawing_travel": 1861.9323614056862,
+          "paper_engagement": 2210.3476249591945,
+          "station_handling": 1361.3034412409934,
+          "station_transfer": 5342.678989582604
+        },
+        "end_G54_xyz": [
+          800,
+          800,
+          35
+        ],
+        "loads_per_slot": {
+          "ink": 84
+        },
+        "moves": 100968,
+        "noncontact_Z_mm_min": 7000,
+        "paper_hover_mm": 15,
+        "source_units": 3345
+      }
+    }
+  },
+  "retained_existing_depleted_return_feed_mm_min": 600,
+  "runtime_note": "Existing depleted-return state F600 preserved; not a new speed optimization. Same final station/material policy in all three hover scenarios. Junction0.01 assumed, not measured."
+}

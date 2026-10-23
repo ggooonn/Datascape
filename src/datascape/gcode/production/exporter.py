@@ -136,8 +136,9 @@ def _atomic_output(output, write):
         if temp.exists(): shutil.rmtree(temp)
 
 
-def export_jobs(jobs, manifest, profile, stage, authorization, output, selected_jobs=None):
+def export_jobs(jobs, manifest, profile, stage, authorization, output, selected_jobs=None, program_extension='.nc'):
     if stage not in ('fixture', 'air', 'painting'): raise ValueError('use separate calibration exporter')
+    if program_extension not in ('.nc','.gcode'): raise ValueError('unsupported program extension')
     if 'benchmark' in manifest:
         from .benchmark import air_plan,require_air_profile
         if stage!='air':raise ValueError('benchmark manifest only permits the no-contact air stage')
@@ -168,7 +169,7 @@ def export_jobs(jobs, manifest, profile, stage, authorization, output, selected_
             text = _serialize(commands, profile, plan_hash, name, stage)
             verification = readback(text, commands, profile, stage)
             verification.update(verify_draw_lineage(commands, manifest['jobs'][name], profile, stage))
-            suffix = '.example.txt' if stage == 'fixture' else '.nc'
+            suffix = '.example.txt' if stage == 'fixture' else program_extension
             (root/(name+suffix)).write_text(text)
             save_json(root/(name+'.trajectory.json.gz'), [asdict(c) for c in commands])
             # Restart only from a completed ORIGINAL source; suffix regeneration
@@ -179,7 +180,7 @@ def export_jobs(jobs, manifest, profile, stage, authorization, output, selected_
             reports[name] = {'metrics': metrics, 'readback': verification}
         report = {'schema': 'datascape.export_report.v0.3', 'stage': stage,
                   'profile_sha256': profile.sha256, 'plan_sha256': plan_hash,
-                  'jobs': reports, 'hardware_executed': False}
+                  'jobs': reports, 'program_extension':program_extension, 'hardware_executed': False}
         save_json(root/'report.json', report)
         return report
     return _atomic_output(output, write)
@@ -265,7 +266,9 @@ def verify_export(output):
             # JSON converts tuples to arrays; canonical digest normalizes both.
             if digest(data) != digest([asdict(c) for c in regenerated]):
                 raise ValueError('delivered calibration IR differs from authorized test request')
-        suffix = '.example.txt' if stage == 'fixture' else '.nc'
+        extension=report.get('program_extension','.nc')
+        if extension not in ('.nc','.gcode'):raise ValueError('unsupported program extension in report')
+        suffix = '.example.txt' if stage == 'fixture' else extension
         results[name] = readback((root/(name+suffix)).read_text(), commands, profile, stage)
         if stage != 'calibration':
             results[name].update(verify_draw_lineage(commands,plan['jobs'][name],profile,stage))

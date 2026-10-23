@@ -15,11 +15,11 @@ from datascape.gcode.production.__main__ import main as backend
 def require_unified_profile(p):
     v=p.data['motion']
     expected=dict(ordinary_travel_mm_min=12000,wet_loaded_mm_min=9000,draw_mm_min=6000,
-        z_travel_mm_min=6000,paper_approach_mm_min=6000,paper_contact_mm_min=2000,
-        paper_release_mm_min=2000,pressure_z_mm_min=2000,paper_hover_mm=10,
+        z_travel_mm_min=7000,paper_approach_mm_min=7000,station_approach_mm_min=7000,paper_contact_mm_min=2000,
+        paper_release_mm_min=2000,pressure_z_mm_min=2000,paper_hover_mm=15,
         station_clearance_mm=35,park_xyz=[800,800,35])
     if any(v.get(k)!=x for k,x in expected.items()) or v.get('local_hover',{}).get('enabled') is not False:
-        raise ValueError('Spring must use unified benchmark motion profile, normalZ10/local disabled')
+        raise ValueError('Spring must use unified benchmark motion profile, normalZ15/local disabled')
     if p.data['machine']['start_work_xyz']!=[0,898,35]:raise ValueError('Spring starts after rehoming, not at previous park')
     if tuple(p.data['material']['color_order'])!=SLOT_ORDER:raise ValueError('preserve canonical Spring12/S3a palette order')
     if p.data['material']['ink_reload_mm']!=1000 or p.data['material']['color_reload_mm']!=800:
@@ -38,7 +38,7 @@ def run(mode,machine,provenance,profile,output,authorization=None):
           '--profile',str(profile),'--layout','D','--output',str(output)]
     if mode!='prepare':
         if authorization is None:raise ValueError('explicit current-profile stage authorization required')
-        args+=['--stage','air' if mode=='air' else 'painting','--authorization',str(authorization)]
+        args+=['--stage','air' if mode=='air' else 'painting','--authorization',str(authorization),'--extension','.gcode']
         if mode!='air':args+=['--jobs','SHARED_'+mode.upper()]
     status=backend(args)
     if status==0 and mode!='prepare':status=backend(['verify','--output',str(output)])

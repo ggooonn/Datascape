@@ -1,51 +1,55 @@
-# Measured XY benchmark / Spring motion handoff
+# Final physical-feedback benchmark and Spring handoff
 
-Numeric G1/G4/M2 offline reviews, not machine authorization. Same forty original
-45mm strokes, four columns, original depth order and visits. Drawing6000,
-dry12000, wet-main9000 (departure/arrival3000 over5mm retained), noncontactZ6000,
-contact/release/pressureZ2000. Paper hover10/local disabled. Consecutive paper
-strokes remain at10; station/cross-region access35. Home start0/898/35,
-park800/800/35/M2, M0=0. No artwork, pressure or S3a changes.
+Actual numeric REVIEW commands, not authorized physical exports. Both previous
+Paint variants at pinned f6aca60a were successfully run over UGS TCP according
+to the operator: higher feeds, station visits, Z35 and palette loading worked;
+vibration/noise acceptable. New refinements below remain awaiting confirmation.
+No controller configuration readback or exact attained speed is inferred.
 
-The operator reports prior stable Air/water-only streaming via UGS TCP and
-large-brush strokes to -10. X860, X840+/-15 agitation, radius5 palette/holder
-space and extended shallow XY sections are now operator-confirmed, not treated
-as arbitrary unmeasured XY expansion. New feeds/material response remain candidates.
+Same original40 strokes/depth order/visits. Ordinary12000, wet-main9000,
+drawing6000, noncontact Z/approach7000, paper contact/release/pressureZ2000.
+Normal paper hover15, local disabled; no per-strokeZ35 round trips. Station and
+cross-region clearance35. Home start0/898/35; park800/800/35/M2; M0=0.
+Existing wet departure/arrival3000 over5mm and separate station feeds retained.
 
-Installed YAML still records X850. config.X860.candidate.yaml changes ONLY
-axes.x.max_travel_mm to860; original installed bytes/hash and homing/pull-offs
-remain unchanged. Runtime installation/readback is pending. Reviews reach855;
-they FAIL the recorded850 bound and pass the proposed860 bound with5mm axis
-headroom. Right palette radius5 reaches852, with8mm axis headroom. These margins
-are axis-reference distances, not invented measured tool-volume certificates.
-soft_limits is absent in the original YAML (v4.1.1 source default false); this
-patch does not change its state or claim runtime enforcement.
+Both shallow passes are now PRESSED20mm atZ7.5: ink445->465, water295->315.
+Optional endpoints475/325 are configurable candidates, not defaults. Surface9
+and compression1.5 stay operator assumptions; no blind slope extrapolation.
+First pass X840, controlled release to9, vertical lift to17.5 BEFORE X-10,
+lifted return via middleY402.5/252.5, second passX830, release and retract35.
+Prior pressed passes were only10mm. Doubling distance does not prove actual
+surface contact; insufficient contact/force remains a separate possible cause
+of weak removal. Compression is not increased automatically.
 
-Ink dip8/dwell2s, water dip7/dwell5s, agitation825->855->840, then Y+ slope
-withdrawal to the existing shallow reference. Immersion/agitation/withdrawal1000,
-palette1000, purge750, approach6000; separately capped, no legacyF60 clamp.
-Palette floor1/liquid6/dip4 still nominal, radius5/one24-segment circle/dwell1s.
-Purge840/137.5 to0.5, single vertical dab/dwell4s/no rubbing.
+Purge840/137.5, target1.5, dwell4s, one vertical dab, no rubbing. Nominal
+surface1.5 implies ZERO nominal compression; target1.0 is an explicit alternate
+if later selected, not automatic fallback. Negative compression is rejected.
+All registered palettes keep radius5/feeds/centers; common equivalent geometry
+uses liquid6 minus immersion1 -> dip5, instead of prior dip4. No new per-slot
+measured liquid height is invented. Ink dwell2s, water5s unchanged.
 
-Solid wiping is modeled SEPARATELY: ink445->455, water295->305; two passes,
-second X830, lifted return toward slope middle402.5/252.5. Operator test inputs:
-surface9, compression1.5, contact7.5, reentry_lift10 FROM CONTACT ->17.5.
-The extended flat9 is an explicit assumption based on the existing shallow
-reference, NOT a newly measured surface or a slope-line extrapolation.
-After the first pass: controlled vertical release7.5->9 at750, vertical
-lift9->17.5 at3000, THEN X-10 and noncontact return/second approach at17.5.
-After the second pass: controlled vertical release to9 then retract35 before
-station transfer. No lateral X shift at compressed contact depth.
-Paint includes actual two-pass contact, without Z35-only substitution. Air
-keeps the identical XY at35, no paper/liquid/stone contact. WATER_ONLY and
-INK_GOUACHE numeric commands match. Motion-complete REVIEW files are still
-not physically authorized: controller installation/readback and actual final
-Air/water/pigment outcomes remain pending. Formal measured-volume/evidence
-and stage authorization gates are unchanged; no physical validation is inferred.
+X860 candidate YAML is byte-identical to pinned PR31 and changes only X max
+travel versus recorded installed850. The operator's intended860 and physical
+reach are retained; installation/readback/homing verification are STILL
+unreported. Reviews reach855, pass candidate860 bounds and explicitly fail the
+recorded850 bound. Formal profile/evidence/authorization gates stay intact.
+
+Matched Air: paper strokes15 and station XY35, no paper/liquid/stone/cloth
+contact. WATER_ONLY and INK_GOUACHE numeric commands match and include actual
+wiping, purge and loading, not Z35-only Paint substitutes. Verification covers
+regeneration, bounds/feeds, actual15/7000, pressed length/height, lift-before-X,
+40 strokes, M0=0, finalpark/M2, read-back and SHA256.
 
 Reproduce: PYTHONPATH=src:. python -m benchmarks.integrated_330_v01.measured_stations --output NEW_DIR
-Verify: same command with --verify. Checks include regenerated IR, actual numeric
-read-back, both controller bounds, axis/Z feeds, 40 strokes, paired XY, dwell,
-M0=0/M2 and SHA256. No physical sweep, stopping or speed test is manufactured.
-See spring_pipeline.py for the same-profile, canonical-input, gated Spring
-Air/SHARED_INK/SHARED_COLOR path; normal paper links10, global transfers35.
+Verify: same command with --verify. Original source-plan hover10/5 metadata is
+retained provenance, not this version's execution height.
+
+Canonical Spring inputs have now been recovered with the byte-verified PR25
+adapter and exact existing machine/provenance SHA256s. Full LayoutD plan readback
+preserves14951 unsplit sources/240974 pressure samples/50 continuous X300
+crossings and S3a. spring_runtime.py compares hover10/Z6000, hover15/Z6000 and
+hover15/Z7000 on FULL synchronized trajectories with existing material visits,
+reloads and separate jobs. Estimates are not measured runtimes or safety tests.
+After final refinement feedback, the same-profile spring_pipeline exports Air,
+SHARED_INK and SHARED_COLOR through the official gates and verifier. No preview
+files are substituted for requested authorized Spring executions.
