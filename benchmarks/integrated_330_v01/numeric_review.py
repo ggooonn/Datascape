@@ -86,7 +86,7 @@ def check_move(start, target, feed, action, profile, kind):
                                                  'initial_contact', 'release', 'paper_release_clearance')
         if rates[2] > v['pressure_z_mm_min' if pressure else 'z_travel_mm_min']+1e-6:
             raise ValueError('review exceeds independent Z velocity limit')
-    if action == 'draw' and feed != 5000: raise ValueError('benchmark stroke must retain F5000')
+    if action == 'draw' and feed != v['draw_mm_min']: raise ValueError('benchmark stroke must retain its profile drawing feed')
 
 
 class NumericReviewBuilder(ReviewBuilder):

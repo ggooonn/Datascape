@@ -1,0 +1,101 @@
+# DATASCAPE FLUIDNC — FINAL CANDIDATE FOR HOMING-FRAME COMMISSIONING, 2026-10-22
+# Source: user-supplied config(2).yaml (direction-fixed Oct 19 development setup).
+# Only changed X pulloff, X/Y/Z home mpos labels, XYZ *conservative* travel lengths,
+# and config name. Existing pinouts, physical motor directions, rates, and accelerations retained.
+#
+# IMPORTANT — FLUIDNC mpos_mm is the MACHINE position ASSIGNED AFTER HOMING/PULLOFF.
+# Physical switch contacts do NOT define work (G54) offsets.
+# Planned post-home MPos: X0, Y898, Z35. X 2->5mm pulloff is ~+3mm physical shift.
+# Y pulloff stays 2mm: the observed physical painting-frame position is ~Y898.
+# Z pulloff stays 2mm: post-home Z35, candidate downward extent ~46mm to Z-11.
+# The operator must verify brush FIRST-TOUCH occurs at WPos Z0; labels do NOT move paper.
+#
+# CAUTION: Stored G54/G92/tool offsets remain until inspected and corrected separately.
+#   At verified post-home position with no other offset active, once:
+#   G21 / G90 / G54 / G10 L20 P1 X0 Y898 Z35
+#   Then query $# and ? to confirm WPos before any automated motion.
+# Do not run a job solely on the basis of this unverified YAML.
+#
+# TRAVEL ESTIMATES: X850 chosen BELOW previously jogged X~860 because X pulloff
+# moved +3mm toward the far end. Spring pigment centers at X847; radius and
+# brush envelope near that limit require explicit reach-and-collision verification.
+# Y898 excludes any canonical path or park position at Y900; adjust the backend
+# park (historically X800 Y900 Z32) to a physically verified in-bounds point.
+# Z46 nominal envelope is [-11,+35] if its top is +35. Candidate Z-10 leaves
+# only ~1mm lower margin; contact depths must be measured before being approved.
+# 29mm palette rim leaves ~4mm tip-only clearance at paper WPos+32 if paper
+# surface is 1mm above bed; holder/bristles and real rim contour need inspection.
+# Current USB connection intermittently disconnects; no automatic Air Run or
+# contact motion until power/USB reliability and homing repeatability are verified.
+# Physical board was reported MKS DLC32 V2.2. Retained legacy board key V2.1
+# because the installed firmware's interpretation is not yet established.
+# Comments intentionally appear on separate lines for FluidNC compatibility.
+board: MKS DLC32 V2.1
+name: DATASCAPE_HOME_FRAME_X0_Y898_Z35_261022
+i2so:
+  bck_pin: gpio.16
+  data_pin: gpio.21
+  ws_pin: gpio.17
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+stepping:
+  engine: I2S_STATIC
+  idle_ms: 255
+  pulse_us: 4
+  dir_delay_us: 1
+  disable_delay_us: 0
+axes:
+  shared_stepper_disable_pin: I2SO.0
+  x:
+    steps_per_mm: 80.0
+    max_rate_mm_per_min: 15000.0
+    acceleration_mm_per_sec2: 1200.0
+    max_travel_mm: 860.0
+    homing:
+      cycle: 2
+      mpos_mm: 0.0
+      positive_direction: false
+      seek_mm_per_min: 4000.0
+      feed_mm_per_min: 400.0
+    motor0:
+      limit_neg_pin: gpio.35:low
+      pulloff_mm: 5.0
+      standard_stepper:
+        step_pin: I2SO.1
+        direction_pin: I2SO.2
+  y:
+    steps_per_mm: 80.0
+    max_rate_mm_per_min: 15000.0
+    acceleration_mm_per_sec2: 1200.0
+    max_travel_mm: 898.0
+    homing:
+      cycle: 3
+      mpos_mm: 898.0
+      positive_direction: true
+      seek_mm_per_min: 4000.0
+      feed_mm_per_min: 400.0
+    motor0:
+      limit_pos_pin: gpio.36:low
+      pulloff_mm: 2.0
+      standard_stepper:
+        step_pin: I2SO.5
+        direction_pin: I2SO.6
+  z:
+    steps_per_mm: 80.0
+    max_rate_mm_per_min: 8000.0
+    acceleration_mm_per_sec2: 1000.0
+    max_travel_mm: 46.0
+    homing:
+      cycle: 1
+      mpos_mm: 35.0
+      positive_direction: true
+      seek_mm_per_min: 1500.0
+      feed_mm_per_min: 200.0
+    motor0:
+      limit_pos_pin: gpio.34:low
+      pulloff_mm: 2.0
+      standard_stepper:
+        step_pin: I2SO.3
+        direction_pin: I2SO.4:low

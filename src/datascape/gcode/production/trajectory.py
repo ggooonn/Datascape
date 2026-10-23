@@ -224,7 +224,58 @@ def station_points(station):
         if not vector(p) or interval_in_box(p, p, bounds) is None:
             raise ValueError('station contact leaves calibrated volume')
         return tuple(p)
-    return _station_geometry(station, check)
+    result = _station_geometry(station, check)
+    shallow_wipe_points(station, check)
+    return result
+
+
+def shallow_wipe_xy(station):
+    """Separately registered solid section; never extend the liquid slope line."""
+    w = station.get('shallow_wipe', {})
+    if not w.get('enabled'): return ()
+    start, end, middle = w.get('start_xy'), w.get('end_xy'), w.get('return_xy')
+    count, offset = w.get('passes'), w.get('second_pass_x_offset_mm')
+    if (not all(vector(p, 2) for p in (start,end,middle)) or
+        type(count) is not int or count < 1 or not number(offset) or
+        start[1] <= station['shallow_surface_xyz'][1] or end[1] <= start[1]):
+        raise ValueError('register distinct Y+ shallow solid-section XY and pass count')
+    points = [tuple(start), tuple(end)]
+    for _ in range(1,count):
+        x = start[0]+offset
+        points += [(x,end[1]), (x,middle[1]), (x,start[1]), (x,end[1])]
+    return tuple(points)
+
+
+def shallow_wipe_points(station, check=None):
+    """Measured solid contact plus lifted re-entry, with separately auditable feeds.
+
+    A nominal sloped floor cannot supply these surface/compliance measurements.
+    Missing values fail before the first physical station command is emitted.
+    """
+    xy = shallow_wipe_xy(station)
+    if not xy: return ()
+    w = station['shallow_wipe']
+    surface, compression, lift = (w.get(k) for k in ('surface_z','compression_mm','reentry_lift_mm'))
+    if not number(surface) or not number(compression, True) or not number(lift, True):
+        raise ValueError('shallow_wipe requires actual surface_z, compression_mm and reentry_lift_mm')
+    contact = surface-compression
+    clear = max(surface+lift, station['shallow_surface_xyz'][2]+station['stone_gap_mm'],
+                station['liquid_reference_z']+station['exit_above_liquid_mm'])
+    if clear >= 35: raise ValueError('shallow wipe re-entry must fit below global Z35')
+    if check is None:
+        def check(p):
+            if interval_in_box(p,p,station['contact_box_xyz']) is None:
+                raise ValueError('shallow wipe leaves calibrated contact/re-entry volume')
+            return tuple(p)
+    out = [(check((*station['shallow_surface_xyz'][:2], clear)), 'reentry')]
+    out += [(check((*xy[0],clear)), 'reentry'), (check((*xy[0],contact)), 'shallow_contact'),
+            (check((*xy[1],contact)), 'shallow_wipe')]
+    for i in range(2,len(xy),4):
+        side, middle, start, end = xy[i:i+4]
+        out += [(check((*side,contact)), 'shallow_wipe'), (check((*side,clear)), 'reentry'),
+                (check((*middle,clear)), 'reentry'), (check((*start,clear)), 'reentry'),
+                (check((*start,contact)), 'shallow_contact'), (check((*end,contact)), 'shallow_wipe')]
+    return tuple(out)
 
 
 def _station_geometry(station, check):
@@ -307,6 +358,7 @@ def station_phase_feed(station, motion, phase):
 def emit_station_operation(b, station, action, state, geometry=station_points):
     """Shared measured/review grammar; the official default checks contact volume."""
     st = station; dip, points = geometry(st)
+    wipes = shallow_wipe_points(st)
     explicit = st.get('phase_feeds_mm_min') is not None
     if explicit:
         approach_z = st.get('approach_z')
@@ -328,8 +380,12 @@ def emit_station_operation(b, station, action, state, geometry=station_points):
         b.move(dip, station_phase_feed(st, b.v, phase), 'station_'+action, 'station_approach', travel_phase=phase)
         b.dwell(st['dwell_seconds'], action+'_dwell')
         for index, point in enumerate(points):
-            phase = 'withdrawal' if index == len(points)-1 else 'agitation'
+            phase = ('withdrawal' if index == len(points)-1 else
+                     'palette_loading' if st['kind'] == 'palette' and 'palette_loading' in st.get('phase_feeds_mm_min',{}) else 'agitation')
             b.move(point, station_phase_feed(st, b.v, phase), 'station_'+action, 'station_approach', travel_phase=phase)
+        for point, phase in wipes:
+            b.move(point, station_phase_feed(st, b.v, phase), 'station_'+action,
+                   'station_approach', travel_phase=phase)
         if explicit and st['kind'] == 'absorbent':
             b.move(approach, station_phase_feed(st, b.v, 'purge_contact'),
                    'station_'+action, 'station_approach', travel_phase='purge_release')

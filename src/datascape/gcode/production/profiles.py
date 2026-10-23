@@ -106,7 +106,10 @@ class Profile:
                 if motion.get('benchmark_plan_sha256'):
                     context['station_geometry'] = {role: {k: st.get(k) for k in
                         ('hardware_id', 'coordinate_frame', 'center_xy', 'radius_mm', 'pattern',
-                         'revolutions', 'segments_per_revolution', 'wash_cycles', 'agitation_cycles')}
+                         'revolutions', 'segments_per_revolution', 'wash_cycles', 'agitation_cycles',
+                         'agitation_xy_mm', 'agitation_bidirectional')}
+                        | {'shallow_wipe_xy': {k:st.get('shallow_wipe',{}).get(k) for k in
+                            ('enabled','start_xy','end_xy','return_xy','passes','second_pass_x_offset_mm')}}
                         | {k: (st[k][:2] if isinstance(st.get(k), (list, tuple)) else None)
                            for k in ('deep_surface_xyz', 'shallow_surface_xyz')}
                         for role, st in stations.items() if role in motion.get('air_station_roles', [])}
@@ -136,6 +139,10 @@ class Profile:
             if not ok: errors.append(text)
         need(stage in STAGES, 'unknown readiness stage')
         fixture = stage == 'fixture'
+        if not fixture and self.data.get('machine',{}).get('target_config_sha256'):
+            need(self.data['machine'].get('target_config_installed') is True and
+                 self.data['machine'].get('installed_config_sha256') == self.data['machine']['target_config_sha256'],
+                 'controller target configuration installation/readback required; offline bounds alone are insufficient')
         need(self.data.get('status') == ('synthetic_fixture' if fixture else 'measured'),
              'profile status must be ' + ('synthetic_fixture' if fixture else 'measured'))
         m = self.data.get('machine', {}); v = self.data.get('motion', {})
@@ -241,6 +248,11 @@ class Profile:
                     if st.get('phase_feeds_mm_min') is not None:
                         for phase in (('purge_contact',) if role == 'sponge' else ('immersion','agitation','withdrawal')):
                             station_phase_feed(st, v, phase)
+                        for phase in ('palette_loading',) if st['kind']=='palette' and 'palette_loading' in st['phase_feeds_mm_min'] else ():
+                            station_phase_feed(st, v, phase)
+                        if st.get('shallow_wipe',{}).get('enabled'):
+                            for phase in ('shallow_contact','shallow_wipe','reentry'):
+                                station_phase_feed(st,v,phase)
                     if role == 'sponge':
                         overrides = st.get('material_overrides', {})
                         if not isinstance(overrides, dict): raise ValueError('absorbent material overrides must be a mapping')

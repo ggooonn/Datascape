@@ -1,0 +1,21 @@
+{
+  "schema": "datascape.software_checks.v0.3",
+  "base_remote_commit": "20a8070f66bcaea5adc38c67d2ef9dbb64ee9544",
+  "test_command": "PYTHONPATH=src:. python -m unittest discover -s tests -p 'test_gcode*.py' -q",
+  "tests_run": 139,
+  "passed": 138,
+  "skipped": 1,
+  "failures": 0,
+  "errors": 0,
+  "skip_reason": "Existing conditional full-scene source-input test; no physical or new full-scene pass inferred",
+  "new_focused_tests": 10,
+  "compileall_passed": true,
+  "package_hashed_files": 18,
+  "package_regenerated_readback_passed": true,
+  "recorded_installed_X850_conflict_preserved": true,
+  "candidate_X860_bounds_passed": true,
+  "hardware_operated": false,
+  "physically_authorized_export": false,
+  "solid_wipe_Z_missing_explicit": true,
+  "test_log_sha256": "674f098c25f1471d45abe25cd1320a875785c8963c335b1709bd5f9b45cb7ebd"
+}

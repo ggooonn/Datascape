@@ -1,0 +1,44 @@
+{
+  "schema": "datascape.spring_unified_handoff.v0.3",
+  "base_remote_commit": "20a8070f66bcaea5adc38c67d2ef9dbb64ee9544",
+  "profile_file": "review_measured_stations/profile.review.json",
+  "profile_sha256": "4155f186189d74a5e1686f2bc7a1af4150d2cdccfbe879804afc3d073fbfc5fd",
+  "runner": "benchmarks.integrated_330_v01.spring_pipeline",
+  "modes": [
+    "prepare",
+    "air",
+    "ink",
+    "color"
+  ],
+  "canonical_inputs": "Existing PR25 adapter spring.machine.json and spring.provenance.json; not regenerated or available in this checkout",
+  "full_scene_rebuilt_this_revision": false,
+  "existing_committed_readback": {
+    "D_X300_crossing_strokes_continuous": 50,
+    "D_original_strokes_unsplit": 14951,
+    "all_written_source_pressure_and_work_transform_bindings_verified": true,
+    "complete_source_partition": true,
+    "written_fragment_count": 14951,
+    "written_pressure_samples": 240974
+  },
+  "existing_job_sources": {
+    "SHARED_COLOR": 11606,
+    "SHARED_INK": 3345
+  },
+  "immutable_inputs": {
+    "config/plotter_v03/spring_s3a_order.json": "329cf46378eb909d094fe31fdbcef710739635cd279701bc2fb4a346bfbe2a96",
+    "docs/plotter_backend_v03/review/spring_D.execution_manifest.json.gz": "945a998370403b336d2af9ae81bd22505952cbf47463bdfe90e0e74ea351595b",
+    "docs/plotter_backend_v03/review/spring_D.summary.json": "3497c5a0f8bae175fdeae804b7dc78497a98b70a43955cf90f85dcc2a325eed9"
+  },
+  "artwork_pressure_order_changed": false,
+  "production_files_exported": false,
+  "official_gates_preserved": true,
+  "paper_to_paper_hover_Z": 10,
+  "local_hover_enabled": false,
+  "global_station_transfer_Z": 35,
+  "required_followup": [
+    "X860 candidate installation and actual config readback",
+    "Per well: actual solid surface_z, gentle compression_mm, reentry_lift_mm",
+    "Revised matched Air/water/pigment outcomes and scoped stage authorization",
+    "Existing brush multi-knot/media profiles refined from actual results; production palette liquid calibration"
+  ]
+}

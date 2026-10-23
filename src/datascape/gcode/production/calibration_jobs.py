@@ -61,7 +61,7 @@ def validate_request(request,profile,physical=True,in_job_checks=(),map_pressure
     return request
 
 
-def render_calibration(request,profile,b,station_contact=None,integrated=False):
+def render_calibration(request,profile,b,station_contact=None,integrated=False,normal_paper_links=False):
     """Shared geometry for a checked physical builder or a comment-only review sink."""
     v=profile.data['motion']
     if not integrated:
@@ -72,7 +72,8 @@ def render_calibration(request,profile,b,station_contact=None,integrated=False):
         station_contact(role)
         b.pause('INSPECT station test result; abort before next test if uncertain','wet_loaded')
     def begin(xy):
-        b.xy(xy,v['station_clearance_mm'],'wet_loaded')
+        height = v['paper_hover_mm'] if normal_paper_links and b.in_paper else v['station_clearance_mm']
+        b.xy(xy,height,'wet_loaded')
         b.move((*xy,v['paper_hover_mm']),v['z_travel_mm_min'],'paper_hover')
     def contact(xy):
         b.move((*xy,v['paper_approach_mm']),v['paper_approach_mm_min'],'approach')
@@ -88,6 +89,7 @@ def render_calibration(request,profile,b,station_contact=None,integrated=False):
         b.move((*start,item['z_mm']),v['paper_contact_mm_min'],'calibration_compression')
         b.move((*end,item['z_mm']),min(item['feed_mm_min'],v['draw_mm_min']),'draw')
         release(end,v['paper_hover_mm'])
+        if normal_paper_links: b.in_paper = True; b.at_station = False
     for i,line in enumerate(request.get('brush_lines',[])):
         if not integrated:b.pause('BRUSH TEST '+str(i)+': record loading; manually load if needed; inspect width, continuity and recovery','wet_loaded')
         constant(line)
