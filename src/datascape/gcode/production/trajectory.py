@@ -251,7 +251,30 @@ def station_points(station):
         return tuple(p)
     result = _station_geometry(station, check)
     shallow_wipe_points(station, check)
+    lip_stripping_points(station, check)
     return result
+
+
+def lip_stripping_points(station, check=tuple):
+    """Explicit measured-start, relative-X strip; never infer lip from the slope.
+
+    Official station_points supplies its calibrated contact-volume checker.
+    Review callers may use the same grammar with axis-envelope-only validation.
+    This parameter validation does not confer physical execution authorization.
+    """
+    lip = station.get('lip_stripping', {})
+    if not lip.get('enabled'): return ()
+    start = lip.get('measured_contact_xyz'); dx = lip.get('relative_x_mm')
+    feed = lip.get('contact_feed_mm_min'); retract = lip.get('safe_retract_z')
+    if (station.get('kind') != 'sloped_inkstone' or
+        lip.get('primitive') != 'measured_linear_x_v1' or
+        lip.get('coordinate_source') != 'operator_measured_confirmed' or
+        not vector(start) or not number(dx) or dx >= 0 or
+        not number(feed, True) or not number(lip.get('contact_feed_cap_mm_min'), True) or
+        feed > lip['contact_feed_cap_mm_min'] or not number(retract) or retract <= start[2]):
+        raise ValueError('stone-lip contact requires measured XYZ, negative relative X, independent feed/cap and safe retract')
+    end = (start[0]+dx, start[1], start[2])
+    return tuple(check(p) for p in ((*start[:2],retract),start,end,(*end[:2],retract)))
 
 
 def shallow_wipe_xy(station):
@@ -395,8 +418,9 @@ def station_phase_feed(station, motion, phase):
 def emit_station_operation(b, station, action, state, geometry=station_points, wipe_geometry=shallow_wipe_points):
     """Shared measured/review grammar; the official default checks contact volume."""
     st = station
-    if st.get('lip_stripping',{}).get('enabled'):
-        raise ValueError('stone-lip contact is disabled pending measured XYZ and a separately validated implementation')
+    lip_points = lip_stripping_points(st)
+    if lip_points and st['lip_stripping']['safe_retract_z'] != b.v['station_clearance_mm']:
+        raise ValueError('stone-lip retract must match global station clearance')
     dip, points = geometry(st)
     wipes = wipe_geometry(st)
     explicit = st.get('phase_feeds_mm_min') is not None
@@ -433,6 +457,16 @@ def emit_station_operation(b, station, action, state, geometry=station_points, w
                    'station_'+action, 'station_approach', travel_phase='purge_release')
     retract_before = b.lengths['non_draw_mm']; b.lift(b.v['station_clearance_mm'])
     b.lengths['station_retract_3d_mm'] += b.lengths['non_draw_mm']-retract_before
+    if lip_points:
+        approach, contact, end, retract = lip_points
+        b.move(approach, min(3000,b.v['ordinary_travel_mm_min']), 'station_lip_approach',
+               'station_approach', travel_phase='lip_approach')
+        b.move(contact, min(station_phase_feed(st,b.v,'immersion'),b.v['pressure_z_mm_min']), 'station_lip_contact',
+               'station_approach', travel_phase='lip_contact')
+        b.move(end, st['lip_stripping']['contact_feed_mm_min'], 'station_lip_strip',
+               'station_approach', travel_phase='lip_strip')
+        b.move(retract, b.v['z_travel_mm_min'], 'station_lip_retract',
+               'station_approach', travel_phase='lip_retract')
     b.in_paper = False; b.last_panel = None; b.at_station = True; b.time_context = None
 
 

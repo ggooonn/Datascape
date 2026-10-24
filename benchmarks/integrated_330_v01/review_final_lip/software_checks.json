@@ -1,0 +1,17 @@
+{
+  "tests": 178,
+  "passed": 178,
+  "failed": 0,
+  "skipped": 0,
+  "full_canonical_scene_enabled": true,
+  "new_focused_tests": 8,
+  "numeric_review_files_regenerated": 3,
+  "all_readback_and_SHA256_passed": true,
+  "prior_published_five_no_lip_and_eight_high_speed_reviews_reproduced": true,
+  "actual_lip_contact_coordinates_operator_confirmed": true,
+  "new_complete_sequence_physically_passed": false,
+  "new_Y900_yaml_installed_or_read_back": false,
+  "global_Y_translation_applied": false,
+  "hardware_operated": false,
+  "authorized": false
+}

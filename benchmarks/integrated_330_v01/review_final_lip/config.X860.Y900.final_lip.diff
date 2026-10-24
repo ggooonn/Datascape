@@ -1,0 +1,57 @@
+--- PR31/review_y900_lip/config.X860.Y900.high_speed.candidate.yaml
++++ config.X860.Y900.final_lip.candidate.yaml
+@@ -1,43 +1,15 @@
+-# Y900 COMMISSIONING CANDIDATE - NOT INSTALLED / NOT PHYSICALLY VERIFIED
+-# Physical Y0 and station registration are unchanged; only upper hardware travel extends to900.
+-# Expected post-home MPos/WPos:0/900/35 with existing zero G54/G92/TLO. Verify read-back.
+-# Do not translate stations or add a G54+2 correction; investigate any unexpected mismatch.
+-# Historical comments/name below remain archival; DO NOT execute their old G10 example.
+-# Y max_travel900: upper extension operator-reported; actual home/end-margin checks still pending.
+-# DATASCAPE FLUIDNC — FINAL CANDIDATE FOR HOMING-FRAME COMMISSIONING, 2026-10-22
+-# Source: user-supplied config(2).yaml (direction-fixed Oct 19 development setup).
+-# Only changed X pulloff, X/Y/Z home mpos labels, XYZ *conservative* travel lengths,
+-# and config name. Existing pinouts, physical motor directions, rates, and accelerations retained.
+-#
+-# IMPORTANT — FLUIDNC mpos_mm is the MACHINE position ASSIGNED AFTER HOMING/PULLOFF.
+-# Physical switch contacts do NOT define work (G54) offsets.
+-# Planned post-home MPos: X0, Y898, Z35. X 2->5mm pulloff is ~+3mm physical shift.
+-# Y pulloff stays 2mm: the observed physical painting-frame position is ~Y898.
+-# Z pulloff stays 2mm: post-home Z35, candidate downward extent ~46mm to Z-11.
+-# The operator must verify brush FIRST-TOUCH occurs at WPos Z0; labels do NOT move paper.
+-#
+-# CAUTION: Stored G54/G92/tool offsets remain until inspected and corrected separately.
+-#   At verified post-home position with no other offset active, once:
+-#   G21 / G90 / G54 / G10 L20 P1 X0 Y898 Z35
+-#   Then query $# and ? to confirm WPos before any automated motion.
+-# Do not run a job solely on the basis of this unverified YAML.
+-#
+-# TRAVEL ESTIMATES: X850 chosen BELOW previously jogged X~860 because X pulloff
+-# moved +3mm toward the far end. Spring pigment centers at X847; radius and
+-# brush envelope near that limit require explicit reach-and-collision verification.
+-# Y898 excludes any canonical path or park position at Y900; adjust the backend
+-# park (historically X800 Y900 Z32) to a physically verified in-bounds point.
+-# Z46 nominal envelope is [-11,+35] if its top is +35. Candidate Z-10 leaves
+-# only ~1mm lower margin; contact depths must be measured before being approved.
+-# 29mm palette rim leaves ~4mm tip-only clearance at paper WPos+32 if paper
+-# surface is 1mm above bed; holder/bristles and real rim contour need inspection.
+-# Current USB connection intermittently disconnects; no automatic Air Run or
+-# contact motion until power/USB reliability and homing repeatability are verified.
+-# Physical board was reported MKS DLC32 V2.2. Retained legacy board key V2.1
+-# because the installed firmware's interpretation is not yet established.
+-# Comments intentionally appear on separate lines for FluidNC compatibility.
++# DATASCAPE X860 / Y900 HIGH-SPEED COMMISSIONING CANDIDATE
++# Not installed or read back by this software. Back up the active YAML first.
++# Physical lower Y0 and all paper/station work coordinates remain unchanged.
++# Only the upper mechanical assembly/travel extends from 898 to 900 mm.
++# Expected home MPos AND G54 WPos: X0 Y900 Z35 with existing zero G54/G92/TLO.
++# Inspect actual offsets and registration; do not set a global +2 mm correction.
++# X/Y: max rate 20000 mm/min, acceleration 1500 mm/s^2; X travel 860, Y travel 900.
++# Z/motors/pins/directions/steps/pull-offs/homing cycles unchanged from prior Y900 candidate.
++# Nominal Z envelope -11..35; contact/holder clearances and stopping require physical checks.
++# No homing or offset-setting command is supplied in these comments.
+ board: MKS DLC32 V2.1
+-name: DATASCAPE_HOME_FRAME_X0_Y898_Z35_261022
++name: DATASCAPE_HOME_FRAME_X0_Y900_Z35_261024
+ i2so:
+   bck_pin: gpio.16
+   data_pin: gpio.21
