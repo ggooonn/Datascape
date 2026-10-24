@@ -1,5 +1,20 @@
 # Integrated 330 mm physical benchmark v01
 
+## Latest paper-reference correction / final ink test
+
+Use [review_paper_reference_1500](review_paper_reference_1500/README.md) and its
+`profile.paper_touch10.ink1500.json` for the current handoff: first-touch is
+approximately G54Z10, paper-only compression formula is Z=first-touch−compression,
+and preferred Spring reloads are ink1500/color800mm. The final test repeats all
+15 physical depths twice:30×50mm=1500mm, single automatic ink load/no reload.
+Prior negative-Z benchmark files below are HISTORICAL, not1..7mm tests under
+the corrected mounting/reference. Do not run them with their former labels.
+All absolute station Z/YAML/G54 coordinates remain unchanged. Final Spring
+pressure normalization is pending physical results; the Z−8 curve is only a
+historical/provisional reference. `spring_handoff.json` identifies this current
+profile; `spring_pipeline` accepts its corrected reference/motion/reload policy.
+The older workflow below is retained for reproducibility, not current operation.
+
 The operator workflow now has **two principal jobs**, `BENCHMARK_AIR.gcode` and
 `BENCHMARK_PAINT.gcode`. PR28's original plans remain immutable source components,
 not thirteen separate operator sessions. Base: PR28

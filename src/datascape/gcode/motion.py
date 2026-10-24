@@ -41,14 +41,20 @@ class MotionSettings:
             raise ValueError('unknown interpretation mode')
         if not all(isfinite(v) for v in (self.hover_z_mm,self.approach_z_mm)) or not 0<self.approach_z_mm<=self.hover_z_mm:
             raise ValueError('invalid illustrative hover/approach')
+        if self.approach_z_mm <= self.contact_z_mm:
+            raise ValueError('paper approach must remain above brush first-touch Z')
         if self.mode == 'constant' and (self.constant_z_mm is None or not isfinite(self.constant_z_mm) or self.constant_z_mm>0):
             raise ValueError('constant preview depth must be explicit and nonpositive')
         if self.mode == 'variable' and self.constant_z_mm is not None:
             raise ValueError('constant depth supplied for variable mode')
 
     def depth(self, pressure):
-        if self.mode == 'constant': return self.constant_z_mm
-        return None if self.profile is None else self.profile.z_for(pressure)
+        if self.mode == 'constant': return self.contact_z_mm + self.constant_z_mm
+        return None if self.profile is None else self.profile.work_z_for(pressure)
+
+    @property
+    def contact_z_mm(self):
+        return 0 if self.profile is None else self.profile.paper_first_touch_z_mm
 
 
 @dataclass(frozen=True)
@@ -112,7 +118,7 @@ def stroke_events(fragment: Fragment, settings=MotionSettings()):
     yield event(Action.LIFT,None,None,'clear_surface',settings.hover_z_mm)
     yield event(Action.TRAVEL,0,None,'clear_surface',settings.hover_z_mm)
     yield event(Action.APPROACH,0,None,'approach_contact',settings.approach_z_mm)
-    yield event(Action.CONTACT,0,None,'first_contact',0)
+    yield event(Action.CONTACT,0,None,'first_contact',settings.contact_z_mm)
     for i,p in enumerate(s.points):
         z=settings.depth(p.pressure)
         calibrated=(z if settings.mode=='variable' and settings.profile is not None
@@ -120,7 +126,7 @@ def stroke_events(fragment: Fragment, settings=MotionSettings()):
         yield event(Action.PRESSURE if i==0 else Action.DRAW,i,p.pressure,
                     'constant_contact_depth' if settings.mode=='constant' else 'pressure_intent_pending_brush_validation',z,calibrated)
     # Physical entry/release is separate, does not replace artistic endpoint intent.
-    yield event(Action.RELEASE,len(s.points)-1,None,'release_to_contact',0)
+    yield event(Action.RELEASE,len(s.points)-1,None,'release_to_contact',settings.contact_z_mm)
     yield event(Action.LIFT,len(s.points)-1,None,'clear_surface',settings.hover_z_mm)
 
 

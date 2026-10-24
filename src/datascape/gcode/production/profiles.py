@@ -83,6 +83,13 @@ class Profile:
         profiles = self.data['brush_profiles']
         return brush(profiles[slot] if slot in profiles else profiles[medium])
 
+    def paper_first_touch_for(self, medium, slot):
+        """Paper reference without requiring a pressure curve for Air/depth tests."""
+        profiles = self.data.get('brush_profiles', {})
+        value = profiles.get(slot,profiles.get(medium,{})).get('paper_first_touch_z_mm',0)
+        if not number(value): raise ValueError('finite brush paper first-touch Z required')
+        return value
+
     def evidence_scope_sha256(self, check):
         machine = self.data.get('machine', {})
         motion = self.data.get('motion', {})
@@ -90,6 +97,12 @@ class Profile:
         geometry = {role:{k:st.get(k) for k in ('hardware_id','coordinate_frame','contact_box_xyz',
                         'center_xy','deep_surface_xyz','shallow_surface_xyz')} for role,st in stations.items()}
         context = {'machine':machine, 'check':check}
+        references = {name:b['paper_first_touch_z_mm'] for name,b in self.data.get('brush_profiles',{}).items()
+                      if 'paper_first_touch_z_mm' in b}
+        if references and check in ('air_run','air_local_hover_clearance','paper_hover','paper_flatness',
+                'paper_contact','brush_response','microsegment_response','continuous_seam','local_hover_clearance',
+                'g54_registration','registration_repeatability'):
+            context['paper_first_touch_references'] = references
         if check in ('air_run', 'air_local_hover_clearance'):
             # A successful Air trial concerns this physical setup and dry policy.
             # A subsequent job has its own verified start and swept-path evidence;
@@ -207,6 +220,20 @@ class Profile:
         need(vector(v.get('park_xyz')), 'measure and validate parking target')
         if stage != 'air' and number(v.get('paper_hover_mm')) and number(v.get('paper_approach_mm')):
             need(0 < v['paper_approach_mm'] <= v['paper_hover_mm'], 'paper approach must lie below hover and above contact')
+        first_touches=[]
+        for role,b in self.data.get('brush_profiles',{}).items():
+            touch=b.get('paper_first_touch_z_mm',0)
+            need(number(touch), role+': finite brush paper first-touch Z required')
+            if number(touch):
+                first_touches.append(touch)
+                need(number(v.get('paper_hover_mm')) and v['paper_hover_mm'] > touch,
+                     role+': paper hover must exceed brush first-touch Z')
+                if stage != 'air':
+                    need(number(v.get('paper_approach_mm')) and v['paper_approach_mm'] > touch,
+                         role+': fast paper approach must end above brush first-touch Z')
+        if stage == 'painting':
+            need(self.data.get('material',{}).get('spring_pressure_response_selected') is not False,
+                 'Spring pressure distribution pending operator review of the physical compression benchmark')
         if number(v.get('paper_hover_mm')) and number(v.get('station_clearance_mm')):
             need(v['station_clearance_mm'] >= v['paper_hover_mm'], 'station clearance below paper hover')
         if vector(v.get('park_xyz')) and number(v.get('station_clearance_mm')):
@@ -303,12 +330,12 @@ class Profile:
                             observations = [o for o in p.observations if o.stroke_width_mm is not None and o.stroke_width_mm >= 0
                                             and o.quality != 'unrecorded' and o.continuity != 'unrecorded'
                                             and o.water_loading and o.pigment_loading]
-                            need(all(any(abs(o.tested_z_mm-z) < 1e-6 for o in observations) for _,z in p.knots),
+                            need(all(any(abs(o.tested_z_mm-(p.paper_first_touch_z_mm+z)) < 1e-6 for o in observations) for _,z in p.knots),
                                  role + ': each chosen knot depth needs recorded width/continuity/loading observations')
                     except (KeyError, TypeError, ValueError) as e:
                         errors.append(role + ': invalid/missing brush profile: ' + str(e))
             need(vector(v.get('paper_contact_z_range'), 2)
-                 and v['paper_contact_z_range'][0] < v['paper_contact_z_range'][1] <= 0,
+                 and v['paper_contact_z_range'][0] < v['paper_contact_z_range'][1] <= max(first_touches or [0]),
                  'measure paper contact Z range; no -12 fallback')
         if not fixture:
             checks = list(BASE_CHECKS)

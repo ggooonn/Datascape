@@ -594,7 +594,7 @@ def draw_fragment(b, fragment, material, stage, retract_height=None):
         depth = b.profile.brush_for(s.medium, s.color_slot)
         low, high = b.v['paper_contact_z_range']
         for p in s.points:
-            z = depth.z_for(p.pressure)
+            z = depth.work_z_for(p.pressure)
             if not low <= z <= high: raise ValueError('pressure mapping outside measured paper contact Z range')
     # Reuse v0.2 event/contact model and each clipped vertex without resampling.
     settings = MotionSettings(depth, hover_z_mm=b.v['paper_hover_mm'], approach_z_mm=b.v['paper_approach_mm'])
