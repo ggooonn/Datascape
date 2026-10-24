@@ -63,6 +63,38 @@ class LargeBaegunmoSpringTests(unittest.TestCase):
         d=deepcopy(p.data);d['motion']['paper_hover_mm']=15
         with self.assertRaises(ValueError):require_unified_profile(Profile.from_dict(d))
 
+    def test_shorter_reload_variant_changes_only_intervals_and_identity(self):
+        old=deepcopy(final.profile(ROOT).data);new=deepcopy(final.profile(ROOT,1100,700).data)
+        require_unified_profile(final.profile(ROOT,1100,700))
+        for d in (old,new):
+            for k in ('profile_id','notes'):d.pop(k)
+            for k in ('ink_reload_mm','color_reload_mm'):d['material'].pop(k)
+        self.assertEqual(old,new)
+        for pair in ((1100,1000),(1500,700)):
+            with self.assertRaises(ValueError):final.profile(ROOT,*pair)
+
+    def test_shorter_intervals_trigger_reload_at_original_stroke_boundaries(self):
+        from datascape.gcode.models import Point, Stroke
+        from datascape.gcode.layout import Layout
+        from datascape.gcode.production.sequence import make_plan
+        for medium,slot,length in (('ink','INK',275),('color','C1',175)):
+            strokes=tuple(Stroke(f'{medium}-{i}',(Point(20,20+i*5,.4),Point(20+length,20+i*5,.4)),
+                                 'A',slot,medium,sequence=i) for i in range(6))
+            jobs,m=make_plan(strokes,Layout('D'),tuple(range(6)))
+            name='SHARED_'+medium.upper();units=jobs[name]
+            before,old_metrics=final.build(final.profile(ROOT),units)
+            after,new_metrics=final.build(final.profile(ROOT,1100,700),units)
+            self.assertEqual(sum(old_metrics['loads_per_slot'].values()),1)
+            self.assertEqual(sum(new_metrics['loads_per_slot'].values()),2)
+            positions={}
+            for label,commands in (('before',before),('after',after)):
+                ids=[c.source_id for c in commands if c.action=='source_begin']
+                self.assertEqual(ids,[s.stroke_id for s in strokes])
+                positions[label]=[(c.xyz,c.artistic_pressure) for c in commands if c.artistic_pressure is not None]
+            self.assertEqual(positions['before'],positions['after'])
+            i=next(i for i,c in enumerate(after) if c.action=='same_color_reload')
+            self.assertEqual(next(c.source_id for c in after[i+1:] if c.action=='source_begin'),f'{medium}-4')
+
     def test_physical_observations_are_qualitative_not_invented_width_or_authorization(self):
         r=final.observations(ROOT)
         self.assertTrue(r['benchmark_completed_operator_reported'])

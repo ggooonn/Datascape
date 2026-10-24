@@ -4,9 +4,12 @@
 
 The final physical benchmark is operator-reported completed. The current Spring
 profile and full AIR/INK/COLOR review files are under
+[review_spring_reload_1100_700](review_spring_reload_1100_700/HANDOFF.md).
+Current reloads are ink1100/color700, requested after initial AIR feedback.
+The previous1500/1000 files and optional2000 profile remain preserved under
 [review_spring_large_baegunmo](review_spring_large_baegunmo/HANDOFF.md). Paper
-first-touch10 + relative hover10 = absolute20; approach+5 =15. Default ink1500,
-optional2000, color1000. New0..12mm compression candidate is separate from the
+first-touch10 + relative hover10 = absolute20; approach+5 =15.
+The0..12mm compression candidate is separate from the
 historical Z-8 curve. Stations/YAML/G54 and all canonical artwork remain unchanged.
 The entries below are preserved chronological benchmarks, not current Spring
 operation settings. See the current handoff for full files, observations and

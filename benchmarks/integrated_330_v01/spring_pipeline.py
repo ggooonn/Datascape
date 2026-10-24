@@ -36,8 +36,8 @@ def require_unified_profile(p):
         raise ValueError('Spring must use unified benchmark motion profile, derived paper hover/local disabled')
     if p.data['machine']['start_work_xyz']!=[0,900 if corrected else 898,35]:raise ValueError('Spring starts after rehoming, not at previous park')
     if tuple(p.data['material']['color_order'])!=SLOT_ORDER:raise ValueError('preserve canonical Spring12/S3a palette order')
-    ink_intervals=(1500,2000) if relative else ((1500,) if corrected else (1000,))
-    if p.data['material']['ink_reload_mm'] not in ink_intervals or p.data['material']['color_reload_mm']!=(1000 if relative else 800):
+    reload_pairs=((1500,1000),(2000,1000),(1100,700)) if relative else (((1500,800),) if corrected else ((1000,800),))
+    if (p.data['material']['ink_reload_mm'],p.data['material']['color_reload_mm']) not in reload_pairs:
         raise ValueError('preserve unified independent ink/color original-boundary reload policy')
     if any(p.data['material'][k] is not None for k in ('manual_refill_every_loads','water_change_every_washes')):
         raise ValueError('no routine refill/water M0 in Spring')

@@ -1,8 +1,8 @@
 {
   "schema": "datascape.spring_unified_handoff.v0.3",
-  "base_remote_commit": "e5e11ff4aa91eebc46eab44172b0da13ee03fd9c",
-  "profile_file": "review_spring_large_baegunmo/profile.spring.large_baegunmo.json",
-  "profile_sha256": "38be9c84c31453b6b6ef6b71ce263139cdf7ec5c946a77b0f087f9db701ae493",
+  "base_remote_commit": "b27fe4a424c43b006df4bf138ef4f9decb55e671",
+  "profile_file": "review_spring_reload_1100_700/profile.spring.large_baegunmo.json",
+  "profile_sha256": "8e02916632ccca80e43b89e06d648219fb14fd9ac3681627629977694653b156",
   "runner": "benchmarks.integrated_330_v01.spring_pipeline",
   "modes": [
     "prepare",
@@ -105,8 +105,8 @@
   "paper_first_touch_z_mm": 10,
   "paper_first_touch_status": "operator physically observed10; large Baegunmo benchmark completed",
   "paper_approach_boundary_z": 15,
-  "preferred_ink_reload_mm": 1500,
-  "color_reload_mm": 1000,
+  "preferred_ink_reload_mm": 1100,
+  "color_reload_mm": 700,
   "final_Spring_pressure_response_selected": false,
   "selected_pressure_to_compression_knots": [
     [
@@ -138,7 +138,7 @@
       12
     ]
   ],
-  "pressure_handoff_file": "review_spring_large_baegunmo/HANDOFF.md",
+  "pressure_handoff_file": "review_spring_reload_1100_700/HANDOFF.md",
   "start_work_xyz": [
     0,
     900,
@@ -167,5 +167,13 @@
     "SPRING_AIR_REVIEW.gcode.gz",
     "SHARED_INK_REVIEW.gcode.gz",
     "SHARED_COLOR_REVIEW.gcode.gz"
-  ]
+  ],
+  "previous_reload_review": {
+    "profile_file": "review_spring_large_baegunmo/profile.spring.large_baegunmo.json",
+    "ink_reload_mm": 1500,
+    "color_reload_mm": 1000,
+    "preserved": true
+  },
+  "reload_revision_report": "review_spring_reload_1100_700/RELOAD_COMPARISON.json",
+  "current_operator_feedback": "AIR run and drawing order appear to work; shorter reload variant requested. Pigment completion or formal authorization not inferred."
 }

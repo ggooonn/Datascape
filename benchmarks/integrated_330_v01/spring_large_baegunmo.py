@@ -31,12 +31,13 @@ RELATIVE_KNOTS=tuple((p,-c) for p,c in COMPRESSION_KNOTS)
 PAPER_ACTIONS={'paper_hover','approach','initial_contact','pressure_variation','draw','release','paper_release_clearance','retract'}
 
 
-def profile(root,ink_reload=1500):
-    if ink_reload not in (1500,2000):raise ValueError('selected ink default1500, optional2000 only')
-    d=deepcopy(prior_profile(root).data);d['profile_id']=f'SPRING-LARGE-BAEGUNMO-TOUCH10-HOVER20-INK{ink_reload}-COLOR1000-REVIEW'
+def profile(root,ink_reload=1500,color_reload=1000):
+    if (ink_reload,color_reload) not in ((1500,1000),(2000,1000),(1100,700)):
+        raise ValueError('select historical1500/1000, optional2000/1000, or revised1100/700')
+    d=deepcopy(prior_profile(root).data);d['profile_id']=f'SPRING-LARGE-BAEGUNMO-TOUCH10-HOVER20-INK{ink_reload}-COLOR{color_reload}-REVIEW'
     d['motion'].update(paper_hover_mm=20,paper_approach_mm=15,paper_hover_clearance_mm=10,
         paper_approach_clearance_mm=5,paper_contact_z_range=[-2,10])
-    d['material'].update(ink_reload_mm=ink_reload,color_reload_mm=1000,spring_pressure_response_selected=True,
+    d['material'].update(ink_reload_mm=ink_reload,color_reload_mm=color_reload,spring_pressure_response_selected=True,
         spring_pressure_response_status='operator-selected physical compression CANDIDATE; not calibrated width or machine authorization')
     for medium,b in d['brush_profiles'].items():
         b.update(paper_first_touch_z_mm=10,brush_type='large_baegunmo',family='baegunmo',
@@ -44,6 +45,8 @@ def profile(root,ink_reload=1500):
             notes='Large Baegunmo operator-selected; first-touch10 and1..15mm benchmark reported completed. Numeric widths not measured. New user-specified0..12mm response CANDIDATE, actual Spring pressure<=.93 maps<=10.2mm. Ink/color remain independent. Splitting begins around12mm per operator; no full Spring/width/dynamics authorization inferred.')
     d['machine']['Y900_operation_operator_reported_working']=True
     d['notes']='Post-physical-benchmark Spring review: paper touch10 + relative hover10=absolute20, approach+5=15; stations/global35/Y900/G54 unchanged. Ink1500 default/optional2000,color1000. Accepted artwork/Pressure Intent/S3a frozen. Physical qualitative observations are separate from numeric width calibration, measured-profile evidence and machine authorization.'
+    if (ink_reload,color_reload)==(1100,700):
+        d['notes']=d['notes'].replace('Ink1500 default/optional2000,color1000.','Selected ink1100,color700; historical1500/1000 and optional2000/1000 preserved separately.')
     return Profile.from_dict(d)
 
 
@@ -249,8 +252,8 @@ def visual_preview(out,strokes,order,p,rich,sidecar):
 <p>Paper first-touch10; relative hover10→absolute20; approach+5→15; global35. Numeric review files remain separate from physical machine authorization.</p>''')
 
 
-def export(root,output,machine,provenance,rich=None,sidecar=None):
-    p=profile(root);strokes,order,jobs,manifest,preserved=load_scene(root,machine,provenance)
+def export(root,output,machine,provenance,rich=None,sidecar=None,ink_reload=1500,color_reload=1000):
+    p=profile(root,ink_reload,color_reload);strokes,order,jobs,manifest,preserved=load_scene(root,machine,provenance)
     def write(out):
         save_json(out/'profile.spring.large_baegunmo.json',p.data);save_json(out/'profile.spring.ink2000.optional.json',profile(root,2000).data)
         save_json(out/'physical_benchmark_observations.json',observations(root))
@@ -280,7 +283,11 @@ def export(root,output,machine,provenance,rich=None,sidecar=None):
         save_json(out/'runtime.json',runtime_report);save_json(out/'verification.json',report)
         runtime_markdown(out,runtime_report)
         if rich and sidecar:visual_preview(out,strokes,order,p,rich,sidecar)
-        (out/'README.md').write_text(README)
+        readme=README
+        if (ink_reload,color_reload)!=(1500,1000):
+            readme=readme.replace('Ink1500 default/optional2000, color1000.',f'Ink{ink_reload} selected, color{color_reload}. Historical1500/1000 remains preserved separately.')
+            readme+=f'\nReproduce this reload variant with --ink-reload {ink_reload} --color-reload {color_reload}.\n'
+        (out/'README.md').write_text(readme)
         return report
     return _atomic_output(output,write)
 
@@ -378,6 +385,8 @@ if __name__=='__main__':
     ap.add_argument('--output',type=Path,required=True);ap.add_argument('--verify',action='store_true')
     for n in ('machine','provenance'):ap.add_argument('--'+n,type=Path)
     ap.add_argument('--rich',type=Path);ap.add_argument('--sidecar',type=Path)
+    ap.add_argument('--ink-reload',type=int,default=1500)
+    ap.add_argument('--color-reload',type=int,default=1000)
     a=ap.parse_args()
     if a.verify:print(json.dumps(verify(a.output)))
-    else:export(Path(__file__).resolve().parents[2],a.output,a.machine,a.provenance,a.rich,a.sidecar)
+    else:export(Path(__file__).resolve().parents[2],a.output,a.machine,a.provenance,a.rich,a.sidecar,a.ink_reload,a.color_reload)
