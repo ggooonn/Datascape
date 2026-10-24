@@ -1,0 +1,79 @@
+# DATASCAPE X860 / Y900 HIGH-SPEED COMMISSIONING CANDIDATE
+# Not installed or read back by this software. Back up the active YAML first.
+# Physical lower Y0 and all paper/station work coordinates remain unchanged.
+# Only the upper mechanical assembly/travel extends from 898 to 900 mm.
+# Expected home MPos AND G54 WPos: X0 Y900 Z35 with existing zero G54/G92/TLO.
+# Inspect actual offsets and registration; do not set a global +2 mm correction.
+# X/Y: max rate 20000 mm/min, acceleration 1500 mm/s^2; X travel 860, Y travel 900.
+# Z/motors/pins/directions/steps/pull-offs/homing cycles unchanged from prior Y900 candidate.
+# Nominal Z envelope -11..35; contact/holder clearances and stopping require physical checks.
+# No homing or offset-setting command is supplied in these comments.
+board: MKS DLC32 V2.1
+name: DATASCAPE_HOME_FRAME_X0_Y900_Z35_261024
+i2so:
+  bck_pin: gpio.16
+  data_pin: gpio.21
+  ws_pin: gpio.17
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+stepping:
+  engine: I2S_STATIC
+  idle_ms: 255
+  pulse_us: 4
+  dir_delay_us: 1
+  disable_delay_us: 0
+axes:
+  shared_stepper_disable_pin: I2SO.0
+  x:
+    steps_per_mm: 80.0
+    max_rate_mm_per_min: 20000.0
+    acceleration_mm_per_sec2: 1500.0
+    max_travel_mm: 860.0
+    homing:
+      cycle: 2
+      mpos_mm: 0.0
+      positive_direction: false
+      seek_mm_per_min: 4000.0
+      feed_mm_per_min: 400.0
+    motor0:
+      limit_neg_pin: gpio.35:low
+      pulloff_mm: 5.0
+      standard_stepper:
+        step_pin: I2SO.1
+        direction_pin: I2SO.2
+  y:
+    steps_per_mm: 80.0
+    max_rate_mm_per_min: 20000.0
+    acceleration_mm_per_sec2: 1500.0
+    max_travel_mm: 900.0
+    homing:
+      cycle: 3
+      mpos_mm: 900.0
+      positive_direction: true
+      seek_mm_per_min: 4000.0
+      feed_mm_per_min: 400.0
+    motor0:
+      limit_pos_pin: gpio.36:low
+      pulloff_mm: 2.0
+      standard_stepper:
+        step_pin: I2SO.5
+        direction_pin: I2SO.6
+  z:
+    steps_per_mm: 80.0
+    max_rate_mm_per_min: 8000.0
+    acceleration_mm_per_sec2: 1000.0
+    max_travel_mm: 46.0
+    homing:
+      cycle: 1
+      mpos_mm: 35.0
+      positive_direction: true
+      seek_mm_per_min: 1500.0
+      feed_mm_per_min: 200.0
+    motor0:
+      limit_pos_pin: gpio.34:low
+      pulloff_mm: 2.0
+      standard_stepper:
+        step_pin: I2SO.3
+        direction_pin: I2SO.4:low
