@@ -192,5 +192,15 @@
     ],
     "base_painting_prefix_preserved": true,
     "method": "terminal overlay after previous park and before M2; existing running jobs are unchanged"
+  },
+  "latest_physical_feedback": {
+    "report": "../../docs/plotter_backend_v03/physical_feedback/2026-10-24_spring_ink_first_full_run.md",
+    "structured_record": "spring_ink_physical_feedback_20261024.json",
+    "full_ink_run_completed_operator_reported": true,
+    "ink_elapsed_minutes_approx": 120,
+    "line_width_overlap_requires_followup": true,
+    "current_execution_files_preserved": true,
+    "negative_x_compensation_implemented": false,
+    "small_brush_1500_is_future_trial": true
   }
 }
