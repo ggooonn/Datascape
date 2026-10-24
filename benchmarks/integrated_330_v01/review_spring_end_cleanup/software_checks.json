@@ -1,0 +1,14 @@
+{
+  "tests": 217,
+  "passed": 217,
+  "skipped": 0,
+  "baseline_drawing_prefix_byte_identical": true,
+  "full_numeric_bounds_feeds_verified": true,
+  "standalone_start_xyz": [
+    800,
+    800,
+    35
+  ],
+  "no_final_rewet": true,
+  "hardware_operated": false
+}

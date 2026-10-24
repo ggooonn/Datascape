@@ -214,7 +214,7 @@ def verify_draw_lineage(commands, plan_units, profile, stage):
     if len(expected) != len(actual): raise ValueError('missing or extra serialized artistic sample')
     for (f, i, p), c in zip(expected, actual):
         s = f['stroke']; xy = f['work_xy'][i]
-        z = profile.data['motion']['paper_hover_mm'] if stage == 'air' else profile.brush_for(s['medium'],s['color_slot']).work_z_for(p['pressure'])
+        z = profile.paper_heights_for(s['medium'],s['color_slot'])[1] if stage == 'air' else profile.brush_for(s['medium'],s['color_slot']).work_z_for(p['pressure'])
         if not (c.source_id == s['source_id'] and c.fragment_id == s['stroke_id']
                 and c.source_vertex == i and c.artistic_pressure == p['pressure']
                 and tuple(c.xyz) == (*xy,z)):

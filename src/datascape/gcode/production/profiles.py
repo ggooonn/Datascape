@@ -90,6 +90,22 @@ class Profile:
         if not number(value): raise ValueError('finite brush paper first-touch Z required')
         return value
 
+    def paper_heights_for(self, medium, slot):
+        """Return absolute touch/hover/approach; relative clearances are explicit.
+
+        Legacy profiles retain their existing absolute motion fields. New
+        clearances follow each brush independently, never a global G54 shift.
+        """
+        touch=self.paper_first_touch_for(medium,slot);v=self.data['motion']
+        heights=[]
+        for relative,absolute in (('paper_hover_clearance_mm','paper_hover_mm'),
+                                  ('paper_approach_clearance_mm','paper_approach_mm')):
+            if relative in v:
+                if not number(v[relative],True):raise ValueError('positive relative paper clearance required: '+relative)
+                heights.append(touch+v[relative])
+            else:heights.append(v.get(absolute))
+        return (touch,*heights)
+
     def evidence_scope_sha256(self, check):
         machine = self.data.get('machine', {})
         motion = self.data.get('motion', {})
@@ -226,10 +242,15 @@ class Profile:
             need(number(touch), role+': finite brush paper first-touch Z required')
             if number(touch):
                 first_touches.append(touch)
-                need(number(v.get('paper_hover_mm')) and v['paper_hover_mm'] > touch,
+                try:_,hover,approach=self.paper_heights_for(role,role)
+                except ValueError as e:
+                    errors.append(str(e));hover=approach=None
+                need(number(hover) and hover > touch,
                      role+': paper hover must exceed brush first-touch Z')
+                if number(hover) and number(v.get('station_clearance_mm')):
+                    need(hover<=v['station_clearance_mm'],role+': derived paper hover exceeds global clearance')
                 if stage != 'air':
-                    need(number(v.get('paper_approach_mm')) and v['paper_approach_mm'] > touch,
+                    need(number(approach) and number(hover) and touch < approach <= hover,
                          role+': fast paper approach must end above brush first-touch Z')
         if stage == 'painting':
             need(self.data.get('material',{}).get('spring_pressure_response_selected') is not False,

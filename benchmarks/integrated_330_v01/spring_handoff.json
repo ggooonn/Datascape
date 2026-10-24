@@ -1,8 +1,8 @@
 {
   "schema": "datascape.spring_unified_handoff.v0.3",
-  "base_remote_commit": "1c4007f79c16a004db6db423e347fa7d11e5a1ef",
-  "profile_file": "review_paper_reference_1500/profile.paper_touch10.ink1500.json",
-  "profile_sha256": "ecf2d71d37bb528f85fa1ddae14d8ad1bfcfe1cb3fcfcfadd5c70ad02083d353",
+  "base_remote_commit": "b27fe4a424c43b006df4bf138ef4f9decb55e671",
+  "profile_file": "review_spring_reload_1100_700/profile.spring.large_baegunmo.json",
+  "profile_sha256": "8e02916632ccca80e43b89e06d648219fb14fd9ac3681627629977694653b156",
   "runner": "benchmarks.integrated_330_v01.spring_pipeline",
   "modes": [
     "prepare",
@@ -32,13 +32,13 @@
   "artwork_pressure_order_changed": false,
   "production_files_exported": false,
   "official_gates_preserved": true,
-  "paper_to_paper_hover_Z": 15,
+  "paper_to_paper_hover_Z": 20,
   "local_hover_enabled": false,
   "global_station_transfer_Z": 35,
   "required_followup": [
-    "Operator reviews final corrected first-touch10/physical1..15mm/1500mm test and selects brush plus pressure response; Z-8 remains historical only, no new3..15mm normalization selected",
-    "Apply selected compression curve and actual brush first-touch to paper only, record physical width/continuity/loading/recovery and existing current machine/station evidence; do not infer installation or fabricate clearance",
-    "Use existing prepare/air/ink/color workflow with scoped measured profile/read-back/authorization; preserve all canonical artwork and artistic pressure"
+    "Review complete Spring candidate using preserved benchmark results, candidate compression/brush/media profile and labeled runtime estimates",
+    "Use actual current profile/full-scene evidence and explicit stage authorization for official executable export; operator-reported lip/wash/recovery/Y900 success is preserved, not reclassified as unknown or a request for a new commissioning study",
+    "Keep ink/color jobs separate with manual preparation/drying/G54 review between them; do not regenerate artwork/Pressure Intent/S3a"
   ],
   "shallow_wiping_test_parameters": {
     "surface_z": 9.0,
@@ -103,13 +103,42 @@
     "status": "historical Z0 first-touch assumption; superseded"
   },
   "paper_first_touch_z_mm": 10,
-  "paper_first_touch_status": "operator-reported approximate; configurable per brush",
+  "paper_first_touch_status": "operator physically observed10; large Baegunmo benchmark completed",
   "paper_approach_boundary_z": 15,
-  "preferred_ink_reload_mm": 1500,
-  "color_reload_mm": 800,
+  "preferred_ink_reload_mm": 1100,
+  "color_reload_mm": 700,
   "final_Spring_pressure_response_selected": false,
-  "selected_pressure_to_compression_knots": null,
-  "pressure_handoff_file": "review_paper_reference_1500/spring_pressure_handoff.json",
+  "selected_pressure_to_compression_knots": [
+    [
+      0,
+      0
+    ],
+    [
+      0.2,
+      1
+    ],
+    [
+      0.4,
+      3.5
+    ],
+    [
+      0.6,
+      5.8
+    ],
+    [
+      0.8,
+      8.2
+    ],
+    [
+      0.93,
+      10.2
+    ],
+    [
+      1,
+      12
+    ]
+  ],
+  "pressure_handoff_file": "review_spring_reload_1100_700/HANDOFF.md",
   "start_work_xyz": [
     0,
     900,
@@ -128,5 +157,40 @@
     "noncontact_Z": 7000,
     "paper_contact_release_and_pressure_Z_cap": 2000,
     "lip_stripping": 1500
+  },
+  "paper_hover_relative_clearance_mm": 10,
+  "paper_approach_relative_clearance_mm": 5,
+  "optional_ink_reload_mm": 2000,
+  "integration_pressure_candidate_selected": true,
+  "physical_observations_file": "review_spring_large_baegunmo/physical_benchmark_observations.json",
+  "review_programs": [
+    "SPRING_AIR_REVIEW.gcode.gz",
+    "SHARED_INK_REVIEW.gcode.gz",
+    "SHARED_COLOR_REVIEW.gcode.gz"
+  ],
+  "previous_reload_review": {
+    "profile_file": "review_spring_large_baegunmo/profile.spring.large_baegunmo.json",
+    "ink_reload_mm": 1500,
+    "color_reload_mm": 1000,
+    "preserved": true
+  },
+  "reload_revision_report": "review_spring_reload_1100_700/RELOAD_COMPARISON.json",
+  "current_operator_feedback": "AIR run and drawing order appear to work; shorter reload variant requested. Pigment completion or formal authorization not inferred.",
+  "terminal_cleanup_review": {
+    "path": "review_spring_end_cleanup/README.md",
+    "generator": "benchmarks.integrated_330_v01.spring_end_cleanup",
+    "water_visits": 3,
+    "dwell_seconds_per_visit": 10,
+    "agitation_cycles_per_visit": 3,
+    "sponge_repetitions": 2,
+    "sponge_dwell_seconds": 4,
+    "final_rewet": false,
+    "standalone_start_xyz": [
+      800,
+      800,
+      35
+    ],
+    "base_painting_prefix_preserved": true,
+    "method": "terminal overlay after previous park and before M2; existing running jobs are unchanged"
   }
 }

@@ -1,0 +1,42 @@
+{
+  "schema": "datascape.spring_reload_revision.v01",
+  "base_pr": 32,
+  "base_remote_commit": "b27fe4a424c43b006df4bf138ef4f9decb55e671",
+  "ink_reload_mm": 1100,
+  "color_reload_mm": 700,
+  "previous_ink_reload_mm": 1500,
+  "previous_color_reload_mm": 1000,
+  "only_profile_intervals_and_identity_changed": true,
+  "canonical_plan_identical": true,
+  "all_source_order_and_pressure_stats_identical": true,
+  "Y900_yaml_identical": true,
+  "reload_at_original_stroke_boundaries": true,
+  "jobs": {
+    "SHARED_COLOR": {
+      "old_loads": 100,
+      "new_loads": 142,
+      "independent_numeric_reload_schedule_verified": true,
+      "drawing_xy_mm": 96335.53841017859,
+      "original_strokes": 11606,
+      "pressure_samples": 171873
+    },
+    "SHARED_INK": {
+      "old_loads": 58,
+      "new_loads": 78,
+      "independent_numeric_reload_schedule_verified": true,
+      "drawing_xy_mm": 88282.86402290345,
+      "original_strokes": 3345,
+      "pressure_samples": 69101
+    },
+    "SPRING_AIR": {
+      "old_loads": 158,
+      "new_loads": 220,
+      "independent_numeric_reload_schedule_verified": true,
+      "drawing_xy_mm": 184618.40243308237,
+      "original_strokes": 14951,
+      "pressure_samples": 240974
+    }
+  },
+  "operator_feedback": "AIR run and drawing order appear to operate correctly; shorter reload intervals requested. No completed pigment run or formal authorization inferred.",
+  "machine_authorized": false
+}

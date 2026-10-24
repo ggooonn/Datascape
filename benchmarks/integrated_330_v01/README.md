@@ -1,6 +1,27 @@
 # Integrated 330 mm physical benchmark v01
 
-## Latest paper-reference correction / final ink test
+## Current large-Baegunmo Spring integration
+
+Current complete review programs with terminal water washing and sponge purge
+are under [review_spring_end_cleanup](review_spring_end_cleanup/README.md).
+Standalone cleanup files start at the previous completed job's park800/800/35,
+not post-home. Running streams are unchanged. The frozen1100/700 painting prefix
+is preserved; terminal cleaning is appended after its park and before M2.
+
+The final physical benchmark is operator-reported completed. The current Spring
+profile and full AIR/INK/COLOR review files are under
+[review_spring_reload_1100_700](review_spring_reload_1100_700/HANDOFF.md).
+Current reloads are ink1100/color700, requested after initial AIR feedback.
+The previous1500/1000 files and optional2000 profile remain preserved under
+[review_spring_large_baegunmo](review_spring_large_baegunmo/HANDOFF.md). Paper
+first-touch10 + relative hover10 = absolute20; approach+5 =15.
+The0..12mm compression candidate is separate from the
+historical Z-8 curve. Stations/YAML/G54 and all canonical artwork remain unchanged.
+The entries below are preserved chronological benchmarks, not current Spring
+operation settings. See the current handoff for full files, observations and
+remaining distinction between offline review and formal machine authorization.
+
+## Previous paper-reference correction / preserved benchmark
 
 Use [review_paper_reference_1500](review_paper_reference_1500/README.md) and its
 `profile.paper_touch10.ink1500.json` for the current handoff: first-touch is
