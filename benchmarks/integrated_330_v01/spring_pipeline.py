@@ -15,6 +15,7 @@ from datascape.gcode.production.__main__ import main as backend
 def require_unified_profile(p):
     v=p.data['motion']
     corrected=any('paper_first_touch_z_mm' in b for b in p.data.get('brush_profiles',{}).values())
+    relative='paper_hover_clearance_mm' in v
     expected=dict(ordinary_travel_mm_min=12000,wet_loaded_mm_min=9000,draw_mm_min=6000,
         z_travel_mm_min=7000,paper_approach_mm_min=7000,station_approach_mm_min=7000,paper_contact_mm_min=2000,
         paper_release_mm_min=2000,pressure_z_mm_min=2000,paper_hover_mm=15,
@@ -22,19 +23,21 @@ def require_unified_profile(p):
     if corrected:
         expected.update(ordinary_travel_mm_min=15000,wet_loaded_mm_min=12000,
             partially_depleted_mm_min=15000,paper_approach_mm=15)
+        if relative:expected.update(paper_hover_mm=20,paper_hover_clearance_mm=10,paper_approach_clearance_mm=5)
         for medium,slot in (('ink','INK'),('color','A2')):
-            touch=p.paper_first_touch_for(medium,slot)
-            if not number(touch) or not touch < v.get('paper_approach_mm',0) <= v.get('paper_hover_mm',0):
+            touch,hover,approach=p.paper_heights_for(medium,slot)
+            if not number(touch) or not touch < approach <= hover <= v['station_clearance_mm']:
                 raise ValueError('unified paper approach must remain above each brush first-touch')
         for state in ('ordinary_travel','partially_depleted'):
             policy=v.get('segmented_travel',{}).get(state,{})
             if policy.get('departure_mm_min')!=15000 or policy.get('arrival_mm_min')!=3000:
                 raise ValueError('unified dry/return policy requires immediate15000 and controlled3000 arrival')
     if any(v.get(k)!=x for k,x in expected.items()) or v.get('local_hover',{}).get('enabled') is not False:
-        raise ValueError('Spring must use unified benchmark motion profile, normalZ15/local disabled')
+        raise ValueError('Spring must use unified benchmark motion profile, derived paper hover/local disabled')
     if p.data['machine']['start_work_xyz']!=[0,900 if corrected else 898,35]:raise ValueError('Spring starts after rehoming, not at previous park')
     if tuple(p.data['material']['color_order'])!=SLOT_ORDER:raise ValueError('preserve canonical Spring12/S3a palette order')
-    if p.data['material']['ink_reload_mm']!=(1500 if corrected else 1000) or p.data['material']['color_reload_mm']!=800:
+    ink_intervals=(1500,2000) if relative else ((1500,) if corrected else (1000,))
+    if p.data['material']['ink_reload_mm'] not in ink_intervals or p.data['material']['color_reload_mm']!=(1000 if relative else 800):
         raise ValueError('preserve unified independent ink/color original-boundary reload policy')
     if any(p.data['material'][k] is not None for k in ('manual_refill_every_loads','water_change_every_washes')):
         raise ValueError('no routine refill/water M0 in Spring')

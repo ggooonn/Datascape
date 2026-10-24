@@ -1,6 +1,18 @@
 # Integrated 330 mm physical benchmark v01
 
-## Latest paper-reference correction / final ink test
+## Current large-Baegunmo Spring integration
+
+The final physical benchmark is operator-reported completed. The current Spring
+profile and full AIR/INK/COLOR review files are under
+[review_spring_large_baegunmo](review_spring_large_baegunmo/HANDOFF.md). Paper
+first-touch10 + relative hover10 = absolute20; approach+5 =15. Default ink1500,
+optional2000, color1000. New0..12mm compression candidate is separate from the
+historical Z-8 curve. Stations/YAML/G54 and all canonical artwork remain unchanged.
+The entries below are preserved chronological benchmarks, not current Spring
+operation settings. See the current handoff for full files, observations and
+remaining distinction between offline review and formal machine authorization.
+
+## Previous paper-reference correction / preserved benchmark
 
 Use [review_paper_reference_1500](review_paper_reference_1500/README.md) and its
 `profile.paper_touch10.ink1500.json` for the current handoff: first-touch is

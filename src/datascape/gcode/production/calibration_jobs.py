@@ -57,7 +57,7 @@ def validate_request(request,profile,physical=True,in_job_checks=(),map_pressure
         if set(group)!={'strokes','hover_mm','max_transition_mm'} or not isinstance(group['strokes'],list) or len(group['strokes'])<2:raise ValueError('invalid explicit hover test group')
         h=group['hover_mm'];limit=group['max_transition_mm']
         if not number(h,True) or not h<=v['paper_hover_mm'] or not number(limit,True) or limit>10:raise ValueError('hover test exceeds explicit height/distance policy')
-        if physical and h<v['paper_approach_mm']:raise ValueError('hover test below measured approach boundary')
+        if physical and h<profile.paper_heights_for('ink','INK')[2]:raise ValueError('hover test below measured approach boundary')
         for item in group['strokes']:line(item)
         if any(dist(a['end_xy'],b['start_xy'])>limit+1e-12 for a,b in zip(group['strokes'],group['strokes'][1:])):raise ValueError('hover transition exceeds requested distance')
     return request
@@ -67,11 +67,11 @@ def render_calibration(request,profile,b,station_contact=None,integrated=False,n
     """Shared geometry for a checked physical builder or a comment-only review sink."""
     v=profile.data['motion']
     has_paper=any(request.get(k) for k in ('brush_lines','pressure_lines','hover_groups'))
-    first_touch=profile.paper_first_touch_for('ink','INK') if has_paper else 0
+    first_touch,normal_hover,approach=profile.paper_heights_for('ink','INK') if has_paper else (0,v.get('paper_hover_mm'),v.get('paper_approach_mm'))
     reference_declared=any('paper_first_touch_z_mm' in b for b in profile.data.get('brush_profiles',{}).values())
-    numeric_boundary=number(v.get('paper_approach_mm')) and number(v.get('paper_hover_mm'))
+    numeric_boundary=number(approach) and number(normal_hover)
     if has_paper and (reference_declared or numeric_boundary):
-        if not numeric_boundary or not first_touch < v['paper_approach_mm'] <= v['paper_hover_mm']:
+        if not numeric_boundary or not first_touch < approach <= normal_hover:
             raise ValueError('paper approach must remain above brush first-touch and at/below hover')
     if not integrated:
         b.commands.append(Command('pause','startup_verification',message='CALIBRATION ONLY: verify G54/MPos/start; manual load; explicit contact test limits; abort on mismatch'))
@@ -81,15 +81,15 @@ def render_calibration(request,profile,b,station_contact=None,integrated=False,n
         station_contact(role)
         b.pause('INSPECT station test result; abort before next test if uncertain','wet_loaded')
     def begin(xy):
-        height = v['paper_hover_mm'] if normal_paper_links and b.in_paper else v['station_clearance_mm']
+        height = normal_hover if normal_paper_links and b.in_paper else v['station_clearance_mm']
         b.xy(xy,height,'wet_loaded')
-        b.move((*xy,v['paper_hover_mm']),v['z_travel_mm_min'],'paper_hover')
+        b.move((*xy,normal_hover),v['z_travel_mm_min'],'paper_hover')
     def contact(xy):
-        b.move((*xy,v['paper_approach_mm']),v['paper_approach_mm_min'],'approach')
+        b.move((*xy,approach),v['paper_approach_mm_min'],'approach')
         b.move((*xy,first_touch),v['paper_contact_mm_min'],'initial_contact')
     def release(xy,h):
         b.move((*xy,first_touch),v['paper_release_mm_min'],'release')
-        b.move((*xy,v['paper_approach_mm']),v['paper_release_mm_min'],'paper_release_clearance')
+        b.move((*xy,approach),v['paper_release_mm_min'],'paper_release_clearance')
         b.move((*xy,h),v['z_travel_mm_min'],'retract')
     def constant(item):
         start,end=item['start_xy'],item['end_xy']
@@ -97,7 +97,7 @@ def render_calibration(request,profile,b,station_contact=None,integrated=False,n
         contact(start)
         b.move((*start,item['z_mm']),v['paper_contact_mm_min'],'calibration_compression')
         b.move((*end,item['z_mm']),min(item['feed_mm_min'],v['draw_mm_min']),'draw')
-        release(end,v['paper_hover_mm'])
+        release(end,normal_hover)
         if normal_paper_links: b.in_paper = True; b.at_station = False
     for i,line in enumerate(request.get('brush_lines',[])):
         if not integrated:b.pause('BRUSH TEST '+str(i)+': record loading; manually load if needed; inspect width, continuity and recovery','wet_loaded')
@@ -109,12 +109,12 @@ def render_calibration(request,profile,b,station_contact=None,integrated=False,n
         for n,s in enumerate(samples):
             b.move((*s['xy'],curve.work_z_for(s['pressure'])),v['paper_contact_mm_min'] if n==0 else min(line['feed_mm_min'],v['draw_mm_min']),
                    'pressure_variation' if n==0 else 'draw',source_id=source,fragment_id=source,source_vertex=n,artistic_pressure=s['pressure'])
-        release(samples[-1]['xy'],v['paper_hover_mm'])
+        release(samples[-1]['xy'],normal_hover)
     for i,group in enumerate(request.get('hover_groups',[])):
         if not integrated:b.pause('LOCAL HOVER TEST '+str(i)+': isolated calibration trial, not production clearance evidence; inspect after this group','wet_loaded')
         for n,line in enumerate(group['strokes']):
             # Final stroke retracts to normal hover; only the measured test links use local height.
-            h=group['hover_mm'] if n<len(group['strokes'])-1 else v['paper_hover_mm']
+            h=group['hover_mm'] if n<len(group['strokes'])-1 else normal_hover
             if n==0:begin(line['start_xy'])
             else:b.xy(line['start_xy'],group['hover_mm'],'wet_loaded')
             contact(line['start_xy']);b.move((*line['start_xy'],line['z_mm']),v['paper_contact_mm_min'],'calibration_compression')

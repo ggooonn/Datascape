@@ -1,0 +1,74 @@
+{
+  "tests": 213,
+  "passed": 213,
+  "failed": 0,
+  "skipped": 0,
+  "new_focused_tests": 11,
+  "full_canonical_scene_enabled": true,
+  "full_numeric_review_files": 3,
+  "canonical_original_strokes": 14951,
+  "accepted_pressure_samples": 240974,
+  "continuous_X300_crossing_sources": 50,
+  "paper_first_touch_Z": 10,
+  "relative_paper_hover_mm": 10,
+  "absolute_paper_hover_Z": 20,
+  "relative_paper_approach_mm": 5,
+  "absolute_paper_approach_Z": 15,
+  "global_station_transfer_Z": 35,
+  "ink_reload_mm": 1500,
+  "optional_ink_reload_mm": 2000,
+  "color_reload_mm": 1000,
+  "candidate_compression_knots": [
+    [
+      0,
+      0
+    ],
+    [
+      0.2,
+      1
+    ],
+    [
+      0.4,
+      3.5
+    ],
+    [
+      0.6,
+      5.8
+    ],
+    [
+      0.8,
+      8.2
+    ],
+    [
+      0.93,
+      10.2
+    ],
+    [
+      1,
+      12
+    ]
+  ],
+  "source_pressure_range": [
+    0.22,
+    0.93
+  ],
+  "source_compression_range_mm": [
+    1.25,
+    10.2
+  ],
+  "all_original_XY_pressure_direction_order_lineage_verified": true,
+  "all_numeric_readback_and_SHA256_passed": true,
+  "quantized_axis_feed_caps_enforced_without_geometry_change": true,
+  "M0_count": 0,
+  "final_park": [
+    800,
+    800,
+    35
+  ],
+  "final_M2": true,
+  "operator_physical_benchmark_observations_preserved": true,
+  "numeric_stroke_width_measurements_invented": false,
+  "old_benchmark_and_Z8_baselines_preserved": true,
+  "hardware_operated": false,
+  "machine_authorized": false
+}

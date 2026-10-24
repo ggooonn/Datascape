@@ -144,7 +144,7 @@ def elevated_air(commands,p):
     for c in commands:
         if c.kind=='move':
             # Station operations carry station_handling; transfers already Z35.
-            height=35 if c.time_category=='station_handling' else max(15,c.xyz[2])
+            height=p.data['motion']['station_clearance_mm'] if c.time_category=='station_handling' else max(p.data['motion']['paper_hover_mm'],c.xyz[2])
             c=replace(c,xyz=(*c.xyz[:2],height))
         result.append(c)
     if xy_route(result)!=xy_route(commands):raise ValueError('matched Air XY route changed')
