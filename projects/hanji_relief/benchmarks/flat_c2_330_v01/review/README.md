@@ -1,0 +1,1 @@
+Numeric offline reference review. Five alternative programs: integrated160contacts OR independent40-contact conditions. Actual paper mounting/first touch is unconfirmed; reference touch10, approach15, hover20. Keep fixed stations and current brush. No artwork completion is recorded. Guide labels are never painted. See parent README for reproduction and full policy.

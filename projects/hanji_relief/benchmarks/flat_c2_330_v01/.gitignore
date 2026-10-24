@@ -1,0 +1,4 @@
+# Explicit numeric offline review artifacts are committed for this study.
+!review/*.gcode
+.datascape-stage-*/
+__pycache__/
