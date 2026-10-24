@@ -101,6 +101,9 @@ class Profile:
                 'z_travel_mm_min', 'paper_hover_mm', 'station_clearance_mm', 'park_xyz', 'air_local_hover', 'air_station_roles',
                 'benchmark_plan_sha256', 'air_station_top_mm', 'air_station_simulation_z_mm', 'wet_loaded_mm_min',
                 'wet_departure_mm', 'wet_arrival_mm', 'wet_departure_mm_min', 'wet_arrival_mm_min')}
+            if motion.get('segmented_travel'):
+                context['motion'].update(segmented_travel=motion['segmented_travel'],
+                    partially_depleted_mm_min=motion.get('partially_depleted_mm_min'))
             if check == 'air_run':
                 context['station_geometry'] = {k:geometry[k] for k in motion.get('air_station_roles', []) if k in geometry}
                 if motion.get('benchmark_plan_sha256'):
@@ -187,6 +190,11 @@ class Profile:
                 motion_keys = tuple(k for k in motion_keys if k != 'draw_mm_min')
         for key in motion_keys:
             need(number(v.get(key), True), 'calibrate motion.' + key)
+        for state,policy in v.get('segmented_travel',{}).items():
+            need(state in ('ordinary_travel','wet_loaded','partially_depleted'), 'unknown segmented travel state')
+            need(isinstance(policy,dict) and all(number(policy.get(k),True) for k in
+                ('departure_mm','arrival_mm','station_arrival_mm','departure_mm_min','arrival_mm_min')),
+                'calibrate segmented travel distances and edge feeds')
         if stage != 'air' and vector(m.get('axis_acceleration_mm_s2')):
             if number(v.get('wet_max_xy_acceleration_mm_s2'), True):
                 need(max(m['axis_acceleration_mm_s2'][:2]) <= v['wet_max_xy_acceleration_mm_s2'],

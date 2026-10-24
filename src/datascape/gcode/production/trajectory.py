@@ -89,6 +89,27 @@ class Command:
     travel_phase: str = ''
 
 
+def travel_segments(start, end, state, motion, station_entry=False):
+    """Opt-in feed zones; actual ramps remain the controller planner's task.
+
+    Short moves shrink both edge zones and omit the high-feed main zone.
+    Distances describe straight XY path length, not an obstacle clearance.
+    """
+    length=dist(start,end);feed=motion[state+'_mm_min']
+    policy=motion.get('segmented_travel',{}).get(state)
+    if not policy:return None
+    departure=policy['departure_mm'];arrival=policy['arrival_mm']
+    if station_entry:arrival=policy['station_arrival_mm']
+    if not all(number(x,True) for x in (departure,arrival,policy['departure_mm_min'],policy['arrival_mm_min'])):
+        raise ValueError('positive segmented travel distances and edge feeds required')
+    if not length:return [(tuple(end),feed,'arrival')]
+    scale=min(1.,length/(departure+arrival));d=departure*scale;a=arrival*scale
+    rows=[(d,min(feed,policy['departure_mm_min']),'departure')]
+    if length-d-a>1e-9:rows.append((length-a,feed,'main'))
+    rows.append((length,min(feed,policy['arrival_mm_min']),'arrival'))
+    return [(tuple(end) if offset==length else tuple(x+(y-x)*offset/length for x,y in zip(start,end)),rate,phase) for offset,rate,phase in rows]
+
+
 class Builder:
     def __init__(self, profile):
         self.profile = profile
@@ -150,6 +171,10 @@ class Builder:
         self.lift(height)
         feed = self.v[state+'_mm_min']
         start = self.position; end = (*xy, self.position[2]); length = dist(start, end)
+        segmented=travel_segments(start,end,state,self.v,getattr(self,'station_entry',False))
+        if segmented is not None:
+            for point,rate,phase in segmented:self.move(point,rate,'travel',state,travel_phase=phase)
+            return
         # Travel-only segmentation: low-speed wet departure AND arrival. FluidNC
         # lookahead handles acceleration; no per-move acceleration command exists.
         if state == 'wet_loaded' and length:
@@ -369,7 +394,10 @@ def station_phase_feed(station, motion, phase):
 
 def emit_station_operation(b, station, action, state, geometry=station_points, wipe_geometry=shallow_wipe_points):
     """Shared measured/review grammar; the official default checks contact volume."""
-    st = station; dip, points = geometry(st)
+    st = station
+    if st.get('lip_stripping',{}).get('enabled'):
+        raise ValueError('stone-lip contact is disabled pending measured XYZ and a separately validated implementation')
+    dip, points = geometry(st)
     wipes = wipe_geometry(st)
     explicit = st.get('phase_feeds_mm_min') is not None
     if explicit:
@@ -379,7 +407,9 @@ def emit_station_operation(b, station, action, state, geometry=station_points, w
             raise ValueError('station fast approach must end above contact reference and below global clearance')
     else: approach_z = st['contact_box_xyz'][1][2]
     access_before = b.lengths['non_draw_mm']; b.time_context = 'station_transfer'
-    b.xy(dip[:2], b.v['station_clearance_mm'], state)
+    previous_entry=getattr(b,'station_entry',False);b.station_entry=True
+    try:b.xy(dip[:2], b.v['station_clearance_mm'], state)
+    finally:b.station_entry=previous_entry
     b.lengths['station_access_3d_mm'] += b.lengths['non_draw_mm']-access_before
     b.time_context = 'station_handling'
     approach = (*dip[:2], approach_z)
@@ -417,6 +447,15 @@ class Materials:
         limit = self.p['ink_reload_mm'] if self.loaded == 'ink' else self.p['color_reload_mm']
         return 'partially_depleted' if self.distance >= limit else 'wet_loaded'
 
+    def station_travel_state(self):
+        """Opt-in used-brush return, including color-change wash access."""
+        pending=getattr(self,'pending_station_return_state',None)
+        self.pending_station_return_state=None
+        if pending is not None:return pending
+        if self.b.v.get('segmented_travel') and self.loaded is not None and self.distance>0:
+            return 'partially_depleted'
+        return self.state
+
     def station(self, role, action, material_key=None):
         b = self.b; st = deepcopy(b.profile.data['stations'][role])
         if role == 'sponge': st = material_station(st, material_key or self.loaded)
@@ -425,7 +464,7 @@ class Materials:
             st['dwell_seconds'] = st['rewet_dwell_seconds']
             st['agitation_cycles'] = 0
         if not number(st['feed_mm_min'], True): raise ValueError('station operation feed must be positive')
-        emit_station_operation(b, st, action, self.state)
+        emit_station_operation(b, st, action, self.station_travel_state())
         b.marker(action, role)
 
     def wash(self):
@@ -433,10 +472,14 @@ class Materials:
         if interval is not None and self.washes > 0 and self.washes % interval == 0:
             self.b.pause('CHANGE/INSPECT clean water and brush; restore manual reference levels; resume only without moving axes', self.state)
         previous = self.loaded
+        if self.b.v.get('segmented_travel') and previous is not None and self.distance>0:
+            self.pending_station_return_state='partially_depleted'
         self.loaded = None; self.distance = 0.
         st = self.b.profile.data['stations']['water']; cycles = st['wash_cycles']
         if type(cycles) is not int or cycles < 1: raise ValueError('positive calibrated wash_cycles required')
-        for _ in range(cycles): self.station('water', 'wash')
+        for _ in range(cycles):
+            self.station('water', 'wash')
+            if self.b.v.get('segmented_travel'):self.loaded='water'
         self.station('sponge', 'absorbent_contact', previous)
         self.station('water', 'controlled_rewet')
         self.washes += 1; self.b.marker('full_wash')

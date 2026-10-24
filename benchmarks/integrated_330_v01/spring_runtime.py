@@ -59,7 +59,7 @@ class RuntimeMaterials(Materials):
         if role=='sponge':st=material_station(st,material_key or self.loaded)
         if action=='controlled_rewet':
             st.update(immersion_mm=st['rewet_immersion_mm'],dwell_seconds=st['rewet_dwell_seconds'],agitation_cycles=0)
-        emit_station_operation(self.b,st,action,self.state,lambda s:_station_geometry(s,tuple),lambda s:shallow_wipe_points(s,tuple))
+        emit_station_operation(self.b,st,action,self.station_travel_state(),lambda s:_station_geometry(s,tuple),lambda s:shallow_wipe_points(s,tuple))
         self.b.marker(action,role)
 
 

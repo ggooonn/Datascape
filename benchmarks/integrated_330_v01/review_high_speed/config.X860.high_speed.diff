@@ -1,0 +1,24 @@
+--- PR31/config.X860.candidate.yaml
++++ config.X860.high_speed.candidate.yaml
+@@ -50,8 +50,8 @@
+   shared_stepper_disable_pin: I2SO.0
+   x:
+     steps_per_mm: 80.0
+-    max_rate_mm_per_min: 15000.0
+-    acceleration_mm_per_sec2: 1200.0
++    max_rate_mm_per_min: 20000.0
++    acceleration_mm_per_sec2: 1500.0
+     max_travel_mm: 860.0
+     homing:
+       cycle: 2
+@@ -67,8 +67,8 @@
+         direction_pin: I2SO.2
+   y:
+     steps_per_mm: 80.0
+-    max_rate_mm_per_min: 15000.0
+-    acceleration_mm_per_sec2: 1200.0
++    max_rate_mm_per_min: 20000.0
++    acceleration_mm_per_sec2: 1500.0
+     max_travel_mm: 898.0
+     homing:
+       cycle: 3
