@@ -2,6 +2,12 @@
 
 ## Current large-Baegunmo Spring integration
 
+Current complete review programs with terminal water washing and sponge purge
+are under [review_spring_end_cleanup](review_spring_end_cleanup/README.md).
+Standalone cleanup files start at the previous completed job's park800/800/35,
+not post-home. Running streams are unchanged. The frozen1100/700 painting prefix
+is preserved; terminal cleaning is appended after its park and before M2.
+
 The final physical benchmark is operator-reported completed. The current Spring
 profile and full AIR/INK/COLOR review files are under
 [review_spring_reload_1100_700](review_spring_reload_1100_700/HANDOFF.md).

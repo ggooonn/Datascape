@@ -175,5 +175,22 @@
     "preserved": true
   },
   "reload_revision_report": "review_spring_reload_1100_700/RELOAD_COMPARISON.json",
-  "current_operator_feedback": "AIR run and drawing order appear to work; shorter reload variant requested. Pigment completion or formal authorization not inferred."
+  "current_operator_feedback": "AIR run and drawing order appear to work; shorter reload variant requested. Pigment completion or formal authorization not inferred.",
+  "terminal_cleanup_review": {
+    "path": "review_spring_end_cleanup/README.md",
+    "generator": "benchmarks.integrated_330_v01.spring_end_cleanup",
+    "water_visits": 3,
+    "dwell_seconds_per_visit": 10,
+    "agitation_cycles_per_visit": 3,
+    "sponge_repetitions": 2,
+    "sponge_dwell_seconds": 4,
+    "final_rewet": false,
+    "standalone_start_xyz": [
+      800,
+      800,
+      35
+    ],
+    "base_painting_prefix_preserved": true,
+    "method": "terminal overlay after previous park and before M2; existing running jobs are unchanged"
+  }
 }
