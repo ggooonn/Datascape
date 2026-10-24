@@ -1,0 +1,11 @@
+{
+  "canonical_plan_archive_sha256": "1cd907c9de9b52edf096518754c368f00bd01398efe65c120669b7aab1cd3c20",
+  "canonical_archive_parts": [
+    "canonical.plan.json.gz.part01",
+    "canonical.plan.json.gz.part02"
+  ],
+  "full_gcode_files": "Lossless .gcode.gz files in Git; delivery ZIP also contains ordinary complete .gcode files",
+  "canonical_archive": "Parts join byte-for-byte in lexical order; verifier handles parts automatically. Delivery package contains the single complete archive.",
+  "source_artwork_modified": false,
+  "machine_authorized": false
+}

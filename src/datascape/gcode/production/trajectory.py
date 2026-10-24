@@ -1,7 +1,7 @@
 """Spatial material handling and synchronized XYZ IR, without device I/O."""
 from dataclasses import dataclass, asdict
 from copy import deepcopy
-from math import sqrt, hypot, cos, sin, pi, dist
+from math import sqrt, hypot, cos, sin, pi, dist, floor
 from collections import Counter
 from ..layout import WorkToMachine
 from ..motion import MotionSettings, stroke_events, Action
@@ -89,6 +89,22 @@ class Command:
     travel_phase: str = ''
 
 
+def serialized_feed_cap(start, target, feed, machine, motion, action):
+    """Respect axis caps after the exporter's nine-decimal serialization.
+
+    Preserve the original XY/pressure/Z IR; only reduce a limiting feed when
+    coordinate rounding would otherwise increase a projected axis velocity.
+    """
+    a=tuple(round(v,9) for v in start);b=tuple(round(v,9) for v in target)
+    length=dist(a,b)
+    if not length:return feed
+    unit=tuple(abs(q-p)/length for p,q in zip(a,b))
+    limit=min([feed]+[cap/u for cap,u in zip(machine['axis_max_rate_mm_min'],unit) if u])
+    zcap=motion['pressure_z_mm_min'] if action in ('draw','pressure_variation') else motion['z_travel_mm_min']
+    if unit[2]:limit=min(limit,zcap/unit[2])
+    return max(1e-9,floor(limit*(1-1e-12)*1e9)/1e9) if limit<feed else feed
+
+
 def travel_segments(start, end, state, motion, station_entry=False):
     """Opt-in feed zones; actual ramps remain the controller planner's task.
 
@@ -132,6 +148,7 @@ class Builder:
             speed = min(speed, *(r/u for r, u in zip(self.m['axis_max_rate_mm_min'], unit) if u))
             z_limit = self.v['pressure_z_mm_min'] if action in ('draw', 'pressure_variation') else self.v['z_travel_mm_min']
             if unit[2]: speed = min(speed, z_limit/unit[2])
+            speed=serialized_feed_cap(self.position,target,speed,self.m,self.v,action)
             acceleration = min(r/u for r, u in zip(self.m['axis_acceleration_mm_s2'], unit) if u)
             axis_rates = tuple(speed*u for u in unit)
             self.nominal_seconds += length/speed*60
@@ -567,7 +584,8 @@ def local_transition_geometry(previous, following, distance_since_load, material
 
 
 def local_transition_height(profile, previous, following, distance_since_load, stage):
-    normal=profile.data['motion']['paper_hover_mm'];policy=profile.data['motion'].get('local_hover')
+    s=previous[-1].stroke
+    normal=profile.paper_heights_for(s.medium,s.color_slot)[1];policy=profile.data['motion'].get('local_hover')
     if stage=='air' or not local_transition_geometry(previous,following,distance_since_load,profile.data['material'],policy):return normal
     if stage=='painting' and not profile.evidence_passed('local_hover_clearance'):
         raise ValueError('local hover requires current clearance/recovery evidence')
@@ -579,14 +597,15 @@ def local_transition_height(profile, previous, following, distance_since_load, s
 
 def draw_fragment(b, fragment, material, stage, retract_height=None):
     s = fragment.stroke
+    _,hover,approach=b.profile.paper_heights_for(s.medium,s.color_slot)
     if stage == 'air':
         # An Air Run does not instantiate the contact-event model or require
         # its unmeasured approach boundary, pressure curve or wet-brush limits.
         lineage = {'source_id': s.origin_id, 'fragment_id': s.stroke_id}
-        b.xy(fragment.work_xy[0], b.v['station_clearance_mm'] if not b.in_paper else b.v['paper_hover_mm'])
-        b.move((*fragment.work_xy[0], b.v['paper_hover_mm']), b.v['z_travel_mm_min'], 'paper_hover')
+        b.xy(fragment.work_xy[0], b.v['station_clearance_mm'] if not b.in_paper else hover)
+        b.move((*fragment.work_xy[0], hover), b.v['z_travel_mm_min'], 'paper_hover')
         for i, (xy, p) in enumerate(zip(fragment.work_xy, s.points)):
-            b.move((*xy, b.v['paper_hover_mm']), b.v.get('air_xy_mm_min', b.v['draw_mm_min']), 'draw',
+            b.move((*xy, hover), b.v.get('air_xy_mm_min', b.v['draw_mm_min']), 'draw',
                    **lineage, source_vertex=i, artistic_pressure=p.pressure)
         b.in_paper = True; b.last_panel = fragment.panel
         return
@@ -597,9 +616,9 @@ def draw_fragment(b, fragment, material, stage, retract_height=None):
             z = depth.work_z_for(p.pressure)
             if not low <= z <= high: raise ValueError('pressure mapping outside measured paper contact Z range')
     # Reuse v0.2 event/contact model and each clipped vertex without resampling.
-    settings = MotionSettings(depth, hover_z_mm=b.v['paper_hover_mm'], approach_z_mm=b.v['paper_approach_mm'])
+    settings = MotionSettings(depth, hover_z_mm=hover, approach_z_mm=approach)
     lineage = {'source_id': s.origin_id, 'fragment_id': s.stroke_id}
-    entry = b.paper_transfer_height if b.in_paper and b.last_panel==fragment.panel else b.v['paper_hover_mm']
+    entry = b.paper_transfer_height if b.in_paper and b.last_panel==fragment.panel else hover
     height = entry
     if not b.in_paper or b.last_panel != fragment.panel: height = b.v['station_clearance_mm']
     state = 'ordinary_travel' if material is None else material.state
@@ -621,9 +640,9 @@ def draw_fragment(b, fragment, material, stage, retract_height=None):
         b.move((*xy, z), feed, action, state, **lineage,
                source_vertex=e.source_vertex, artistic_pressure=e.artistic_pressure)
     if stage != 'air':
-        b.move((*fragment.work_xy[-1], b.v['paper_approach_mm']), b.v['paper_release_mm_min'],
+        b.move((*fragment.work_xy[-1], approach), b.v['paper_release_mm_min'],
                'paper_release_clearance', state, **lineage)
-    retract_height=b.v['paper_hover_mm'] if retract_height is None else retract_height
+    retract_height=hover if retract_height is None else retract_height
     b.move((*fragment.work_xy[-1], retract_height), b.v['z_travel_mm_min'], 'retract', state, **lineage)
     b.paper_transfer_height=retract_height
     b.in_paper = True; b.last_panel = fragment.panel

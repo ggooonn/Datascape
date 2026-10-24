@@ -1,0 +1,12 @@
+{
+  "tests": 215,
+  "passed": 215,
+  "failed": 0,
+  "skipped": 0,
+  "full_canonical_inputs_enabled": true,
+  "full_numeric_files": 3,
+  "new_behavior_tests": 2,
+  "independent_numeric_reload_schedule_verified": true,
+  "unchanged_source_order_pressure_and_geometry": true,
+  "machine_authorized": false
+}

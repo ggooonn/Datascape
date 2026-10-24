@@ -1,0 +1,68 @@
+{
+  "schema": "datascape.spring_first_full_ink_operator_feedback.v01",
+  "reported_on": "2026-10-24",
+  "baseline_commit": "f9ac4da7fca907ed2529f123fa792c61a869caed",
+  "pr": 32,
+  "full_ink_run_completed_operator_reported": true,
+  "elapsed_minutes_approx": 120,
+  "elapsed_time_precision": "approximate operator report",
+  "numeric_linewidths_mm": null,
+  "executed_gcode_sha256": null,
+  "full_color_completed_reported": false,
+  "terminal_cleanup_physical_success_reported": false,
+  "observations": {
+    "physical_marks": "substantially wider than intended/rendered; overlapping marks merge into black regions",
+    "accepted_drawing_direction": "X-positive toward X-negative",
+    "accepted_overall_progression": "upward from Y0",
+    "left_edge_gap": "brush bending leaves margin at commanded X0",
+    "negative_x_allowance_mm_operator_estimate": [
+      2,
+      3
+    ],
+    "negative_x_allowance_verified": false,
+    "ink_delivery_mm_operator_considers_feasible": [
+      1500,
+      2000
+    ],
+    "short_path_depletion": "distance-only budgeting can leave insufficient material later in runs with many short paths; exact file/material not specified"
+  },
+  "unchanged_current_profile": {
+    "ink_reload_mm": 1100,
+    "color_reload_mm": 700,
+    "paper_first_touch_z": 10,
+    "paper_hover_z": 20,
+    "paper_approach_z": 15,
+    "machine_bounds": [
+      [
+        0,
+        0,
+        -11
+      ],
+      [
+        860,
+        900,
+        35
+      ]
+    ],
+    "G54_offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "followup_candidates": {
+    "smaller_brush_ink_reload_mm": 1500,
+    "smaller_brush_calibration_selected": false,
+    "endpoint_negative_x_overrun_mm": [
+      2,
+      3
+    ],
+    "overrun_implemented": false,
+    "reload_budget": "cumulative drawing XY plus contact-count budget; first exhausted triggers next-source-boundary reload",
+    "contact_count_threshold": null
+  },
+  "canonical_artwork_pressure_order_modified": false,
+  "gcode_or_yaml_modified": false,
+  "machine_operated": false,
+  "authorization_inferred": false
+}

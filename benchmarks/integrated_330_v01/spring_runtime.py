@@ -16,7 +16,7 @@ from datascape.gcode.binding import load_bound_spring,digest
 from datascape.gcode.layout import Layout
 from datascape.gcode.production.sequence import reference_order,make_plan,verify_plan
 from datascape.gcode.production.profiles import Profile
-from datascape.gcode.production.trajectory import Builder,Materials,build_job,emit_station_operation,_station_geometry,shallow_wipe_points,material_station
+from datascape.gcode.production.trajectory import Builder,Materials,build_job,emit_station_operation,_station_geometry,shallow_wipe_points,material_station,serialized_feed_cap
 from datascape.gcode.production.timing import prepare_timing,estimate_prepared
 from datascape.gcode.production.exporter import _atomic_output,save_json
 from benchmarks.commissioning_330_v01.preview import ReviewBuilder
@@ -35,6 +35,7 @@ class RuntimeBuilder(ReviewBuilder):
             feed=min(feed,*(cap/u for cap,u in zip(self.m['axis_max_rate_mm_min'],unit) if u))
             cap=self.v['pressure_z_mm_min'] if action in ('draw','pressure_variation') else self.v['z_travel_mm_min']
             if unit[2]:feed=min(feed,cap/unit[2])
+            feed=serialized_feed_cap(self.position,target,feed,self.m,self.v,action)
             rates=tuple(feed*u for u in unit)
             accel=min(a/u for a,u in zip(self.m['axis_acceleration_mm_s2'],unit) if u)
         check_move(self.position,target,feed,action,self.profile,'paint',exact_benchmark_draw=False)

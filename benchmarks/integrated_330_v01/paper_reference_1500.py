@@ -79,7 +79,7 @@ def readback(text,commands,p,request,kind):
     rows=[r for r in text.splitlines() if r and not r.startswith(';')]
     expected=[c for c in commands if c.kind!='marker']
     if rows[0]!='G21 G90 G94 G54' or rows[-1]!='M2' or len(rows)!=len(expected)+2:raise ValueError('modal/M2/coverage mismatch')
-    pos=tuple(p.data['machine']['start_work_xyz']);touch=request['paper_first_touch_z_mm']
+    pos=tuple(p.data['machine']['start_work_xyz']);touch,hover,approach=p.paper_heights_for('ink','INK')
     total=0.;draw=[];moves=[];paper=[];rates=[0.,0.,0.];departures={};arrivals={};wet=[]
     for row,c in zip(rows[1:-1],expected):
         if c.kind=='move':
@@ -97,7 +97,7 @@ def readback(text,commands,p,request,kind):
             if c.action in PAPER_ACTIONS:
                 paper.append(dict(action=c.action,start=list(pos),end=list(target),feed_mm_min=f,projected_z_mm_min=projected_z))
                 if kind=='INK':
-                    if c.action in ('paper_hover','approach','retract') and min(pos[2],z)<15:
+                    if c.action in ('paper_hover','approach','retract') and min(pos[2],z)<approach:
                         raise ValueError('fast noncontact paper path enters approach/contact region')
                     if c.action in ('initial_contact','calibration_compression','release','paper_release_clearance'):
                         if f>2000 or projected_z>2000+1e-8:raise ValueError('contact/compression/release exceeds2000')
@@ -109,7 +109,7 @@ def readback(text,commands,p,request,kind):
                 if c.travel_state=='wet_loaded' and c.travel_phase=='main':wet.append(f)
             if c.action=='draw':
                 line=request['strokes'][len(draw)];xy_length=hypot(x-pos[0],y-pos[1]);total+=xy_length
-                intended=touch-line['compression_mm'];actual=15 if kind=='AIR' else intended
+                intended=touch-line['compression_mm'];actual=hover if kind=='AIR' else intended
                 if (line['z_mm']!=intended or c.source_id!=line['id'] or pos[:2]!=tuple(line['start_xy']) or target[:2]!=tuple(line['end_xy']) or
                     xy_length!=50 or pos[2]!=z or z!=actual or f!=6000):raise ValueError('source/XY/depth conversion/length/feed mismatch')
                 draw.append(dict(id=line['id'],stage=line['stage'],compression_mm=line['compression_mm'],
@@ -123,7 +123,7 @@ def readback(text,commands,p,request,kind):
     if [r['action'] for r in paper]!=list(PAPER_ACTIONS)*30:raise ValueError('paper approach/contact/compression/release ordering mismatch')
     for i in range(30):
         group=paper[i*8:(i+1)*8];line=request['strokes'][i]
-        targets=[15,15,touch,line['z_mm'],line['z_mm'],touch,15,15] if kind=='INK' else [15]*8
+        targets=[hover,approach,touch,line['z_mm'],line['z_mm'],touch,approach,hover] if kind=='INK' else [hover]*8
         feeds=[7000,7000,2000,2000,6000,2000,2000,7000]
         if [r['end'][2] for r in group]!=targets or [r['feed_mm_min'] for r in group]!=feeds:
             raise ValueError('paper first-touch/approach/release coordinates or feed mismatch')
@@ -139,8 +139,8 @@ def readback(text,commands,p,request,kind):
         paper_first_touch_z_mm=touch,physical_compression_depths_mm=list(range(1,16)),repetitions_per_depth=2,
         compression_conversion_verified=True,drawing_xy_mm=total,drawing_strokes=draw,source_strokes=30,
         paper_moves=paper,no_fast_Z_crossing_actual_contact_plane_verified=True,
-        paper_approach_boundary_z=15,contact_compression_release_cap_mm_min=2000,
-        minimum_commanded_paper_z=touch-15 if kind=='INK' else 15,
+        paper_approach_boundary_z=approach,contact_compression_release_cap_mm_min=2000,
+        minimum_commanded_paper_z=touch-15 if kind=='INK' else hover,
         maximum_projected_axis_feeds=rates,controller_axis_feed_caps=p.data['machine']['axis_max_rate_mm_min'],
         candidate_machine_bounds=p.data['machine']['machine_bounds_xyz'],full_axis_segment_bounds_checked=True,
         station_visits=visits,initial_ink_loads=1,reloads_during_test=0,lip_sequence=lip,
