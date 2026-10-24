@@ -1,0 +1,40 @@
+{
+  "full": {
+    "dots": 6200,
+    "colors": {
+      "A3": 1135,
+      "B1": 626,
+      "A4": 539,
+      "B2": 346,
+      "C2": 1609,
+      "C4": 998,
+      "C5": 653,
+      "D4": 294
+    },
+    "loads_20": 313,
+    "same_color_reloads_20": 305,
+    "loads_30": 209,
+    "same_color_reloads_30": 201,
+    "color_changes": 7,
+    "dot_z_min": 2.040276,
+    "dot_z_max": 20.0
+  },
+  "panel04": {
+    "dots": 890,
+    "colors": {
+      "C4": 253,
+      "C2": 390,
+      "A3": 3,
+      "B1": 55,
+      "C5": 176,
+      "D4": 13
+    },
+    "loads_20": 47,
+    "same_color_reloads_20": 41,
+    "loads_30": 32,
+    "same_color_reloads_30": 26,
+    "color_changes": 5,
+    "dot_z_min": 3.995497,
+    "dot_z_max": 16.921111
+  }
+}

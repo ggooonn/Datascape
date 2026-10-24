@@ -1,0 +1,48 @@
+{
+  "status": "request_only_not_machine_profile",
+  "date": "2026-10-25",
+  "pattern": "C",
+  "dot_count_full": 6200,
+  "benchmark_physical_panel_id": 4,
+  "dot_count_panel04": 890,
+  "backend_pr": 32,
+  "backend_ref": "eda6069b12c8785d458a0e8a567a9a86980bc394",
+  "brush": "large Baegunmo, subject to unchanged actual mounting",
+  "primary": {
+    "compression_depth_mm": 3.0,
+    "dwell_at_depth_s": 1.0,
+    "refill_every_contacts": 20
+  },
+  "pressure_mode": "constant additional compression from local first touch, no normalized artistic pressure",
+  "hanji_color_order": [
+    "C2",
+    "A4",
+    "A3",
+    "D4",
+    "C4",
+    "B1",
+    "C5",
+    "B2"
+  ],
+  "visit_order": "color then ascending Y rows, serpentine X; first row right to left",
+  "hover_policy": "constant plane, choose after work-to-machine surface registration and clearance review",
+  "hover_candidate_g54_z_mm": [
+    30,
+    35
+  ],
+  "paper_hover_g54_z_mm": null,
+  "hanji_surface_offset_z_mm": null,
+  "minimum_surface_clearance_review_target_mm": 10,
+  "max_machine_z_mm": 35,
+  "preliminary_contact_release_feed_mm_min": 2000,
+  "preliminary_noncontact_z_feed_mm_min": 7000,
+  "preview_diameter_mm": 2.8,
+  "preview_diameter_is_measured": false,
+  "machine_operation_requested": false,
+  "handoff_version": "final_v03",
+  "refill_policy": "contact_count",
+  "refill_count_is_provisional_not_measured": true,
+  "comparison_generation_requested": false,
+  "dot_pressure_axis": "Z; additional compression from first touch, not surface-normal motion",
+  "supersedes": "v02 depth/dwell comparison instructions"
+}

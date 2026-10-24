@@ -1,0 +1,20 @@
+{
+  "inspected_on": "2026-10-25",
+  "repository": "ggooonn/Datascape",
+  "latest_PR_at_inspection": 32,
+  "PR32_open_unmerged": true,
+  "base_branch": "spring/large-baegunmo-z10-hover20-v01",
+  "base_sha": "eda6069b12c8785d458a0e8a567a9a86980bc394",
+  "PR31_base_sha": "e5e11ff4aa91eebc46eab44172b0da13ee03fd9c",
+  "shared_source_sha256": {
+    "src/datascape/gcode/production/sequence.py": "7e5c7acaec53793f4e24f24e616260db9d6ce53a0c60b5778ff1d0392801bfbc",
+    "src/datascape/gcode/production/trajectory.py": "9ad48b57bb668723c28ac40f41531c052ad32e426bf37e818cd30d5718c8a4d8",
+    "src/datascape/gcode/production/profiles.py": "dc6c0a527302c7f1b824a6dd4c4792602c3ddd51597722ad6041d4f7ec607b01",
+    "src/datascape/gcode/production/timing.py": "66814c7b2cee2c4f5490be107e2d5365ea2160250a316669261db08a2d186845",
+    "src/datascape/gcode/production/exporter.py": "b6e850d55aae9fd7aa54433e84f5387002c7914317cca56110e99ba3c287554e",
+    "benchmarks/integrated_330_v01/spring_runtime.py": "6cd7d0e795e3c9d6b2609e1f80ca4defbcd945a3cb91e03b72b18af2b310a504",
+    "benchmarks/integrated_330_v01/spring_end_cleanup.py": "c8865925b42822ea7eeafaf4d7b022901d4c97bb87f5bc89ffeaa23395554b20"
+  },
+  "existing_Hanji_branch_at_start": false,
+  "hardware_operation": false
+}

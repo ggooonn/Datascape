@@ -1,0 +1,55 @@
+{
+  "original_palette_hex": {
+    "A3": "#8E9FA9",
+    "A4": "#C8A896",
+    "B1": "#1E56A0",
+    "B2": "#14293D",
+    "C2": "#98C245",
+    "C4": "#566432",
+    "C5": "#173425",
+    "D4": "#A2432B"
+  },
+  "spring_s3a_order": [
+    "C1",
+    "D1",
+    "A2",
+    "D2",
+    "C2",
+    "A4",
+    "A3",
+    "A5",
+    "C3",
+    "D4",
+    "C4",
+    "D5"
+  ],
+  "hanji_color_order": [
+    "C2",
+    "A4",
+    "A3",
+    "D4",
+    "C4",
+    "B1",
+    "C5",
+    "B2"
+  ],
+  "panel04_used_order": [
+    "C2",
+    "A3",
+    "D4",
+    "C4",
+    "B1",
+    "C5"
+  ],
+  "order_status": "Provisional Hanji extension preserving shared S3a relative order; missing B1/B2/C5 inserted using screen sRGB L*. Not an existing official 8-color S3a order or a measured pigment order.",
+  "screen_Lstar": {
+    "A3": 64.4928,
+    "A4": 71.2051,
+    "B1": 36.8733,
+    "B2": 15.8582,
+    "C2": 73.343,
+    "C4": 40.1194,
+    "C5": 19.1054,
+    "D4": 41.0089
+  }
+}
