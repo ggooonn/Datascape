@@ -42,6 +42,9 @@ class BrushCalibration:
     observations: tuple[CalibrationObservation, ...] = ()
     status: str = 'synthetic_preview'
     notes: str = ''
+    # Knots remain signed compression offsets. Only this brush's paper motions
+    # add the measured/explicit first-touch reference; station Z is absolute.
+    paper_first_touch_z_mm: float = 0
 
     def __post_init__(self):
         if self.status not in ('synthetic_preview','unverified','measured'):
@@ -53,17 +56,29 @@ class BrushCalibration:
                 raise ValueError('knots require increasing pressure, nonincreasing nonpositive Z')
         if self.substrate_surface_height_mm is not None and not finite(self.substrate_surface_height_mm):
             raise ValueError('invalid substrate height')
+        if not finite(self.paper_first_touch_z_mm):
+            raise ValueError('invalid brush paper first-touch Z')
         if self.status == 'measured' and (not self.observations or not self.calibration_date
                                          or self.substrate_surface_height_mm is None):
             raise ValueError('measured profile needs observations, date and surface height')
 
     def z_for(self, pressure):
+        """Historical signed compression offset, not absolute G54 paper Z."""
         if not finite(pressure) or not self.knots[0][0] <= pressure <= self.knots[-1][0]:
             raise ValueError('pressure outside supported calibration domain; no extrapolation')
         for (p,z),(q,w) in zip(self.knots,self.knots[1:]):
             if p <= pressure <= q:
                 return z+(pressure-p)/(q-p)*(w-z)
         raise ValueError('unmapped pressure')
+
+    def work_z_for(self, pressure):
+        """Absolute G54 paper Z without changing the artistic pressure/knots."""
+        return self.paper_first_touch_z_mm + self.z_for(pressure)
+
+    def compression_to_work_z(self, compression_mm):
+        if not finite(compression_mm) or compression_mm < 0:
+            raise ValueError('physical compression must be finite and nonnegative')
+        return self.paper_first_touch_z_mm - compression_mm
 
 
 def synthetic_profile():

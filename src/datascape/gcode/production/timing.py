@@ -36,6 +36,8 @@ def requested_feed(block, motion):
     if action in PAPER_FEEDS: return motion[PAPER_FEEDS[action]]
     if action == 'travel':
         feed = motion[state+'_mm_min']
+        policy=motion.get('segmented_travel',{}).get(state)
+        if policy and phase in ('departure','arrival'):return min(feed,policy[phase+'_mm_min'])
         if state == 'wet_loaded' and phase in ('departure','arrival'):
             feed = min(feed, motion['wet_'+phase+'_mm_min'])
         return feed

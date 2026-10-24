@@ -83,6 +83,13 @@ class Profile:
         profiles = self.data['brush_profiles']
         return brush(profiles[slot] if slot in profiles else profiles[medium])
 
+    def paper_first_touch_for(self, medium, slot):
+        """Paper reference without requiring a pressure curve for Air/depth tests."""
+        profiles = self.data.get('brush_profiles', {})
+        value = profiles.get(slot,profiles.get(medium,{})).get('paper_first_touch_z_mm',0)
+        if not number(value): raise ValueError('finite brush paper first-touch Z required')
+        return value
+
     def evidence_scope_sha256(self, check):
         machine = self.data.get('machine', {})
         motion = self.data.get('motion', {})
@@ -90,6 +97,12 @@ class Profile:
         geometry = {role:{k:st.get(k) for k in ('hardware_id','coordinate_frame','contact_box_xyz',
                         'center_xy','deep_surface_xyz','shallow_surface_xyz')} for role,st in stations.items()}
         context = {'machine':machine, 'check':check}
+        references = {name:b['paper_first_touch_z_mm'] for name,b in self.data.get('brush_profiles',{}).items()
+                      if 'paper_first_touch_z_mm' in b}
+        if references and check in ('air_run','air_local_hover_clearance','paper_hover','paper_flatness',
+                'paper_contact','brush_response','microsegment_response','continuous_seam','local_hover_clearance',
+                'g54_registration','registration_repeatability'):
+            context['paper_first_touch_references'] = references
         if check in ('air_run', 'air_local_hover_clearance'):
             # A successful Air trial concerns this physical setup and dry policy.
             # A subsequent job has its own verified start and swept-path evidence;
@@ -101,12 +114,18 @@ class Profile:
                 'z_travel_mm_min', 'paper_hover_mm', 'station_clearance_mm', 'park_xyz', 'air_local_hover', 'air_station_roles',
                 'benchmark_plan_sha256', 'air_station_top_mm', 'air_station_simulation_z_mm', 'wet_loaded_mm_min',
                 'wet_departure_mm', 'wet_arrival_mm', 'wet_departure_mm_min', 'wet_arrival_mm_min')}
+            if motion.get('segmented_travel'):
+                context['motion'].update(segmented_travel=motion['segmented_travel'],
+                    partially_depleted_mm_min=motion.get('partially_depleted_mm_min'))
             if check == 'air_run':
                 context['station_geometry'] = {k:geometry[k] for k in motion.get('air_station_roles', []) if k in geometry}
                 if motion.get('benchmark_plan_sha256'):
                     context['station_geometry'] = {role: {k: st.get(k) for k in
                         ('hardware_id', 'coordinate_frame', 'center_xy', 'radius_mm', 'pattern',
-                         'revolutions', 'segments_per_revolution', 'wash_cycles', 'agitation_cycles')}
+                         'revolutions', 'segments_per_revolution', 'wash_cycles', 'agitation_cycles',
+                         'agitation_xy_mm', 'agitation_bidirectional')}
+                        | {'shallow_wipe_xy': {k:st.get('shallow_wipe',{}).get(k) for k in
+                            ('enabled','start_xy','end_xy','return_xy','passes','second_pass_x_offset_mm')}}
                         | {k: (st[k][:2] if isinstance(st.get(k), (list, tuple)) else None)
                            for k in ('deep_surface_xyz', 'shallow_surface_xyz')}
                         for role, st in stations.items() if role in motion.get('air_station_roles', [])}
@@ -136,6 +155,10 @@ class Profile:
             if not ok: errors.append(text)
         need(stage in STAGES, 'unknown readiness stage')
         fixture = stage == 'fixture'
+        if not fixture and self.data.get('machine',{}).get('target_config_sha256'):
+            need(self.data['machine'].get('target_config_installed') is True and
+                 self.data['machine'].get('installed_config_sha256') == self.data['machine']['target_config_sha256'],
+                 'controller target configuration installation/readback required; offline bounds alone are insufficient')
         need(self.data.get('status') == ('synthetic_fixture' if fixture else 'measured'),
              'profile status must be ' + ('synthetic_fixture' if fixture else 'measured'))
         m = self.data.get('machine', {}); v = self.data.get('motion', {})
@@ -180,6 +203,11 @@ class Profile:
                 motion_keys = tuple(k for k in motion_keys if k != 'draw_mm_min')
         for key in motion_keys:
             need(number(v.get(key), True), 'calibrate motion.' + key)
+        for state,policy in v.get('segmented_travel',{}).items():
+            need(state in ('ordinary_travel','wet_loaded','partially_depleted'), 'unknown segmented travel state')
+            need(isinstance(policy,dict) and all(number(policy.get(k),True) for k in
+                ('departure_mm','arrival_mm','station_arrival_mm','departure_mm_min','arrival_mm_min')),
+                'calibrate segmented travel distances and edge feeds')
         if stage != 'air' and vector(m.get('axis_acceleration_mm_s2')):
             if number(v.get('wet_max_xy_acceleration_mm_s2'), True):
                 need(max(m['axis_acceleration_mm_s2'][:2]) <= v['wet_max_xy_acceleration_mm_s2'],
@@ -192,6 +220,20 @@ class Profile:
         need(vector(v.get('park_xyz')), 'measure and validate parking target')
         if stage != 'air' and number(v.get('paper_hover_mm')) and number(v.get('paper_approach_mm')):
             need(0 < v['paper_approach_mm'] <= v['paper_hover_mm'], 'paper approach must lie below hover and above contact')
+        first_touches=[]
+        for role,b in self.data.get('brush_profiles',{}).items():
+            touch=b.get('paper_first_touch_z_mm',0)
+            need(number(touch), role+': finite brush paper first-touch Z required')
+            if number(touch):
+                first_touches.append(touch)
+                need(number(v.get('paper_hover_mm')) and v['paper_hover_mm'] > touch,
+                     role+': paper hover must exceed brush first-touch Z')
+                if stage != 'air':
+                    need(number(v.get('paper_approach_mm')) and v['paper_approach_mm'] > touch,
+                         role+': fast paper approach must end above brush first-touch Z')
+        if stage == 'painting':
+            need(self.data.get('material',{}).get('spring_pressure_response_selected') is not False,
+                 'Spring pressure distribution pending operator review of the physical compression benchmark')
         if number(v.get('paper_hover_mm')) and number(v.get('station_clearance_mm')):
             need(v['station_clearance_mm'] >= v['paper_hover_mm'], 'station clearance below paper hover')
         if vector(v.get('park_xyz')) and number(v.get('station_clearance_mm')):
@@ -241,6 +283,11 @@ class Profile:
                     if st.get('phase_feeds_mm_min') is not None:
                         for phase in (('purge_contact',) if role == 'sponge' else ('immersion','agitation','withdrawal')):
                             station_phase_feed(st, v, phase)
+                        for phase in ('palette_loading',) if st['kind']=='palette' and 'palette_loading' in st['phase_feeds_mm_min'] else ():
+                            station_phase_feed(st, v, phase)
+                        if st.get('shallow_wipe',{}).get('enabled'):
+                            for phase in ('shallow_contact','shallow_wipe','reentry'):
+                                station_phase_feed(st,v,phase)
                     if role == 'sponge':
                         overrides = st.get('material_overrides', {})
                         if not isinstance(overrides, dict): raise ValueError('absorbent material overrides must be a mapping')
@@ -283,12 +330,12 @@ class Profile:
                             observations = [o for o in p.observations if o.stroke_width_mm is not None and o.stroke_width_mm >= 0
                                             and o.quality != 'unrecorded' and o.continuity != 'unrecorded'
                                             and o.water_loading and o.pigment_loading]
-                            need(all(any(abs(o.tested_z_mm-z) < 1e-6 for o in observations) for _,z in p.knots),
+                            need(all(any(abs(o.tested_z_mm-(p.paper_first_touch_z_mm+z)) < 1e-6 for o in observations) for _,z in p.knots),
                                  role + ': each chosen knot depth needs recorded width/continuity/loading observations')
                     except (KeyError, TypeError, ValueError) as e:
                         errors.append(role + ': invalid/missing brush profile: ' + str(e))
             need(vector(v.get('paper_contact_z_range'), 2)
-                 and v['paper_contact_z_range'][0] < v['paper_contact_z_range'][1] <= 0,
+                 and v['paper_contact_z_range'][0] < v['paper_contact_z_range'][1] <= max(first_touches or [0]),
                  'measure paper contact Z range; no -12 fallback')
         if not fixture:
             checks = list(BASE_CHECKS)

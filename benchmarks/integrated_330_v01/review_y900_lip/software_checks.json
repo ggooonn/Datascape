@@ -1,0 +1,23 @@
+{
+  "tests": 170,
+  "passed": 170,
+  "failed": 0,
+  "skipped": 0,
+  "full_canonical_scene_enabled": true,
+  "numeric_review_files_regenerated": 5,
+  "all_readback_and_SHA256_passed": true,
+  "existing_two_pass_high_speed_baseline_regenerated_files": 8,
+  "water_pigment_numeric_body_sha256": "5806f72f2df3ddd9ad388528fce44ec138ea28e62a4e2b90b23afe4687696338",
+  "physical_Y0_unchanged_operator_reported": true,
+  "all_existing_station_and_paper_Y_preserved": true,
+  "global_plus2_translation_or_G54_plus2_applied": false,
+  "YAML_setting_changes": [
+    "axes.y.max_travel_mm:898->900",
+    "axes.y.homing.mpos_mm:898->900"
+  ],
+  "new_Y900_config_installed_or_read_back": false,
+  "new_Y900_travel_verified": false,
+  "lip_contact_exported": false,
+  "physical_high_speed_or_lip_pass_created": false,
+  "authorized": false
+}

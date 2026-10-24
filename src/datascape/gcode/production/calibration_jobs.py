@@ -26,13 +26,15 @@ def validate_request(request,profile,physical=True,in_job_checks=(),map_pressure
             if not profile.evidence_passed(check) and check not in in_job_checks:raise ValueError('missing current-profile calibration prerequisite: '+check)
     if not any(request.get(k) for k in ('station_roles','brush_lines','pressure_lines','hover_groups')):raise ValueError('empty calibration plan')
     v=profile.data['motion'];envelope=v.get('paper_contact_z_range')
+    needs_reference=bool(request.get('brush_lines') or request.get('hover_groups') or (map_pressure and request.get('pressure_lines')))
+    first_touch=profile.paper_first_touch_for('ink','INK') if needs_reference else 0
     region=request.get('paper_region_xy')
     if region is not None and (not isinstance(region,list) or len(region)!=2 or not all(vector(p,2) for p in region) or any(a>=b for a,b in zip(*region))):raise ValueError('invalid benchmark paper region')
     def paper_point(xy):
         if not vector(xy,2):raise ValueError('invalid paper point')
         if region is not None and any(not a<=x<=b for x,a,b in zip(xy,*region)):raise ValueError('paper contact outside benchmark region')
     def depth(z):
-        if not number(z) or z>0:raise ValueError('invalid calibration depth')
+        if not number(z) or z>first_touch:raise ValueError('invalid calibration depth above brush first-touch')
         if physical and (not vector(envelope,2) or not envelope[0]<=z<=envelope[1]):raise ValueError('calibration depth outside measured test envelope')
     def line(item):
         if set(item)!={'start_xy','end_xy','z_mm','feed_mm_min'}:raise ValueError('invalid brush calibration line')
@@ -48,7 +50,7 @@ def validate_request(request,profile,physical=True,in_job_checks=(),map_pressure
         for s in item['samples']:
             if set(s)!={'xy','pressure'} or not vector(s['xy'],2):raise ValueError('invalid pressure test sample')
             paper_point(s['xy'])
-            if curve is not None:depth(curve.z_for(s['pressure']))
+            if curve is not None:depth(curve.work_z_for(s['pressure']))
             elif not number(s['pressure']) or not 0<=s['pressure']<=1:raise ValueError('invalid normalized Air pressure metadata')
         if any(dist(a['xy'],b['xy'])<=0 for a,b in zip(item['samples'],item['samples'][1:])):raise ValueError('pressure test samples need distinct consecutive XY')
     for group in request.get('hover_groups',[]):
@@ -61,9 +63,16 @@ def validate_request(request,profile,physical=True,in_job_checks=(),map_pressure
     return request
 
 
-def render_calibration(request,profile,b,station_contact=None,integrated=False):
+def render_calibration(request,profile,b,station_contact=None,integrated=False,normal_paper_links=False):
     """Shared geometry for a checked physical builder or a comment-only review sink."""
     v=profile.data['motion']
+    has_paper=any(request.get(k) for k in ('brush_lines','pressure_lines','hover_groups'))
+    first_touch=profile.paper_first_touch_for('ink','INK') if has_paper else 0
+    reference_declared=any('paper_first_touch_z_mm' in b for b in profile.data.get('brush_profiles',{}).values())
+    numeric_boundary=number(v.get('paper_approach_mm')) and number(v.get('paper_hover_mm'))
+    if has_paper and (reference_declared or numeric_boundary):
+        if not numeric_boundary or not first_touch < v['paper_approach_mm'] <= v['paper_hover_mm']:
+            raise ValueError('paper approach must remain above brush first-touch and at/below hover')
     if not integrated:
         b.commands.append(Command('pause','startup_verification',message='CALIBRATION ONLY: verify G54/MPos/start; manual load; explicit contact test limits; abort on mismatch'))
     station_contact=station_contact or (lambda role:Materials(b).station(role,'calibration_contact'))
@@ -72,13 +81,14 @@ def render_calibration(request,profile,b,station_contact=None,integrated=False):
         station_contact(role)
         b.pause('INSPECT station test result; abort before next test if uncertain','wet_loaded')
     def begin(xy):
-        b.xy(xy,v['station_clearance_mm'],'wet_loaded')
+        height = v['paper_hover_mm'] if normal_paper_links and b.in_paper else v['station_clearance_mm']
+        b.xy(xy,height,'wet_loaded')
         b.move((*xy,v['paper_hover_mm']),v['z_travel_mm_min'],'paper_hover')
     def contact(xy):
         b.move((*xy,v['paper_approach_mm']),v['paper_approach_mm_min'],'approach')
-        b.move((*xy,0),v['paper_contact_mm_min'],'initial_contact')
+        b.move((*xy,first_touch),v['paper_contact_mm_min'],'initial_contact')
     def release(xy,h):
-        b.move((*xy,0),v['paper_release_mm_min'],'release')
+        b.move((*xy,first_touch),v['paper_release_mm_min'],'release')
         b.move((*xy,v['paper_approach_mm']),v['paper_release_mm_min'],'paper_release_clearance')
         b.move((*xy,h),v['z_travel_mm_min'],'retract')
     def constant(item):
@@ -88,6 +98,7 @@ def render_calibration(request,profile,b,station_contact=None,integrated=False):
         b.move((*start,item['z_mm']),v['paper_contact_mm_min'],'calibration_compression')
         b.move((*end,item['z_mm']),min(item['feed_mm_min'],v['draw_mm_min']),'draw')
         release(end,v['paper_hover_mm'])
+        if normal_paper_links: b.in_paper = True; b.at_station = False
     for i,line in enumerate(request.get('brush_lines',[])):
         if not integrated:b.pause('BRUSH TEST '+str(i)+': record loading; manually load if needed; inspect width, continuity and recovery','wet_loaded')
         constant(line)
@@ -96,7 +107,7 @@ def render_calibration(request,profile,b,station_contact=None,integrated=False):
         samples=line['samples'];begin(samples[0]['xy']);contact(samples[0]['xy'])
         curve=profile.brush_for('ink','INK');source='calibration-pressure-'+str(i)
         for n,s in enumerate(samples):
-            b.move((*s['xy'],curve.z_for(s['pressure'])),v['paper_contact_mm_min'] if n==0 else min(line['feed_mm_min'],v['draw_mm_min']),
+            b.move((*s['xy'],curve.work_z_for(s['pressure'])),v['paper_contact_mm_min'] if n==0 else min(line['feed_mm_min'],v['draw_mm_min']),
                    'pressure_variation' if n==0 else 'draw',source_id=source,fragment_id=source,source_vertex=n,artistic_pressure=s['pressure'])
         release(samples[-1]['xy'],v['paper_hover_mm'])
     for i,group in enumerate(request.get('hover_groups',[])):

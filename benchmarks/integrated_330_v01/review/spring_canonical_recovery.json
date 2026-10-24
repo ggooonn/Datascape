@@ -1,0 +1,19 @@
+{
+  "accepted_pressure_samples": 240974,
+  "adapter_git_blob": "ef19c0ce30495342d5444ff311cbbbd4f48750ad",
+  "all_unused_render_terrain_archive_files_verified": false,
+  "artwork_or_pressure_generated": false,
+  "canonical_machine_payload_sha256": "6586df2ea3c48ee45de7df10926a2845172f39203ec805f61724f0c7e504ff2b",
+  "canonical_provenance_payload_sha256": "c8baa3e46ce773a8752f488c889dc422e34d2ab9ba0ee87582efd9126c7e88d4",
+  "essential_frozen_files_verified": [
+    "machine/spring_v13.offline.machine_vectors.json.gz",
+    "visible_ink.json.gz",
+    "visible_color.json.gz",
+    "ordering.json"
+  ],
+  "hardware_mapping_or_authorization_inferred": false,
+  "original_adapter_apply_profiles_reused": true,
+  "original_strokes": 14951,
+  "pressure_sidecar_sha256": "0b8d59b7ca9268c70378b7a78df3f8825763b2b43e5667785459b2838d2b0b4e",
+  "source_commit": "d30ac7be302e1cbfcd2cf66de9087e35ea091b6c"
+}

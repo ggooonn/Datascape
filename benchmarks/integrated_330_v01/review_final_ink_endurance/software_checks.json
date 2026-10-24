@@ -1,0 +1,28 @@
+{
+  "tests": 188,
+  "passed": 188,
+  "failed": 0,
+  "skipped": 0,
+  "new_focused_tests": 10,
+  "full_canonical_scene_enabled": true,
+  "numeric_review_files_regenerated": 4,
+  "all_readback_and_SHA256_passed": true,
+  "prior_published_benchmarks_reproduced_unchanged": true,
+  "drawing_only_XY_mm": {
+    "A1200": 1200,
+    "B1500": 1500
+  },
+  "initial_loads_per_job": 1,
+  "reloads_during_test": 0,
+  "lip_feed_mm_min": 1500,
+  "lip_local_connection_z": 20,
+  "unnecessary_Z35_Z20_round_trip_removed": true,
+  "dry_used_departure_feed_mm_min": 15000,
+  "slow_arrival_feed_mm_min": 3000,
+  "wet_main_feed_mm_min": 12000,
+  "Y900_yaml_bytes_unchanged": true,
+  "Spring_Z8_pressure_candidate_unchanged": true,
+  "hardware_operated": false,
+  "new_sequence_physically_passed": false,
+  "authorized": false
+}

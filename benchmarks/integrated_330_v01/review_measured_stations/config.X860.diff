@@ -1,0 +1,11 @@
+--- config.installed.yaml
++++ config.X860.candidate.yaml
+@@ -52,7 +52,7 @@
+     steps_per_mm: 80.0
+     max_rate_mm_per_min: 15000.0
+     acceleration_mm_per_sec2: 1200.0
+-    max_travel_mm: 850.0
++    max_travel_mm: 860.0
+     homing:
+       cycle: 2
+       mpos_mm: 0.0

@@ -1,0 +1,25 @@
+--- PR31/config.X860.high_speed.candidate.yaml
++++ config.X860.Y900.high_speed.candidate.yaml
+@@ -1,3 +1,9 @@
++# Y900 COMMISSIONING CANDIDATE - NOT INSTALLED / NOT PHYSICALLY VERIFIED
++# Physical Y0 and station registration are unchanged; only upper hardware travel extends to900.
++# Expected post-home MPos/WPos:0/900/35 with existing zero G54/G92/TLO. Verify read-back.
++# Do not translate stations or add a G54+2 correction; investigate any unexpected mismatch.
++# Historical comments/name below remain archival; DO NOT execute their old G10 example.
++# Y max_travel900: upper extension operator-reported; actual home/end-margin checks still pending.
+ # DATASCAPE FLUIDNC — FINAL CANDIDATE FOR HOMING-FRAME COMMISSIONING, 2026-10-22
+ # Source: user-supplied config(2).yaml (direction-fixed Oct 19 development setup).
+ # Only changed X pulloff, X/Y/Z home mpos labels, XYZ *conservative* travel lengths,
+@@ -69,10 +75,10 @@
+     steps_per_mm: 80.0
+     max_rate_mm_per_min: 20000.0
+     acceleration_mm_per_sec2: 1500.0
+-    max_travel_mm: 898.0
++    max_travel_mm: 900.0
+     homing:
+       cycle: 3
+-      mpos_mm: 898.0
++      mpos_mm: 900.0
+       positive_direction: true
+       seek_mm_per_min: 4000.0
+       feed_mm_per_min: 400.0

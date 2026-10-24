@@ -1,0 +1,13 @@
+{
+  "schema": "datascape.spring_z8_software_validation.v01",
+  "tests": 147,
+  "passed": 147,
+  "failed": 0,
+  "skipped": 0,
+  "scope": "Full test_gcode*.py suite, with recovered canonical bound source enabled; no hardware I/O",
+  "command": "PYTHONPATH=src:. DATASCAPE_BOUND_MACHINE=<bound>/spring.machine.json DATASCAPE_BOUND_PROVENANCE=<bound>/spring.provenance.json python -m unittest discover -s tests -p test_gcode*.py -q",
+  "complete_source_validation": "14951 unsplit strokes, 240974 original artistic pressures, 50 continuous X300 crossings; both full ink/color trajectories for both profiles",
+  "visual_QA": "Full combined/depth and mountain/foreground/vegetation paired crops inspected at identical framing/scale; unmeasured proxy labels present",
+  "source_and_existing_benchmark_files_modified": false,
+  "physical_authorization_or_measurement_evidence_created": false
+}

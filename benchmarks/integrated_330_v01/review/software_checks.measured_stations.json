@@ -1,0 +1,21 @@
+{
+  "schema": "datascape.software_checks.v0.3",
+  "base_remote_commit": "f6aca60a24499036c4e17de994abde63c9189839",
+  "tests_run": 144,
+  "passed": 144,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0,
+  "full_scene_conditional_test_enabled_with_recovered_canonical_inputs": true,
+  "focused_measured_station_tests": 15,
+  "compileall_passed": true,
+  "benchmark_package_hashed_files": 18,
+  "regenerated_readback_passed": true,
+  "hover15_Z7000_verified": true,
+  "pressed_passes_20mm_at7_5_verified": true,
+  "purge_target1_5_zero_nominal_compression_verified": true,
+  "palette_dip5_all12_slots_verified": true,
+  "controller_installation_inferred": false,
+  "hardware_operated": false,
+  "production_files_authorized_or_exported": false
+}

@@ -89,6 +89,27 @@ class Command:
     travel_phase: str = ''
 
 
+def travel_segments(start, end, state, motion, station_entry=False):
+    """Opt-in feed zones; actual ramps remain the controller planner's task.
+
+    Short moves shrink both edge zones and omit the high-feed main zone.
+    Distances describe straight XY path length, not an obstacle clearance.
+    """
+    length=dist(start,end);feed=motion[state+'_mm_min']
+    policy=motion.get('segmented_travel',{}).get(state)
+    if not policy:return None
+    departure=policy['departure_mm'];arrival=policy['arrival_mm']
+    if station_entry:arrival=policy['station_arrival_mm']
+    if not all(number(x,True) for x in (departure,arrival,policy['departure_mm_min'],policy['arrival_mm_min'])):
+        raise ValueError('positive segmented travel distances and edge feeds required')
+    if not length:return [(tuple(end),feed,'arrival')]
+    scale=min(1.,length/(departure+arrival));d=departure*scale;a=arrival*scale
+    rows=[(d,min(feed,policy['departure_mm_min']),'departure')]
+    if length-d-a>1e-9:rows.append((length-a,feed,'main'))
+    rows.append((length,min(feed,policy['arrival_mm_min']),'arrival'))
+    return [(tuple(end) if offset==length else tuple(x+(y-x)*offset/length for x,y in zip(start,end)),rate,phase) for offset,rate,phase in rows]
+
+
 class Builder:
     def __init__(self, profile):
         self.profile = profile
@@ -150,6 +171,10 @@ class Builder:
         self.lift(height)
         feed = self.v[state+'_mm_min']
         start = self.position; end = (*xy, self.position[2]); length = dist(start, end)
+        segmented=travel_segments(start,end,state,self.v,getattr(self,'station_entry',False))
+        if segmented is not None:
+            for point,rate,phase in segmented:self.move(point,rate,'travel',state,travel_phase=phase)
+            return
         # Travel-only segmentation: low-speed wet departure AND arrival. FluidNC
         # lookahead handles acceleration; no per-move acceleration command exists.
         if state == 'wet_loaded' and length:
@@ -224,7 +249,97 @@ def station_points(station):
         if not vector(p) or interval_in_box(p, p, bounds) is None:
             raise ValueError('station contact leaves calibrated volume')
         return tuple(p)
-    return _station_geometry(station, check)
+    result = _station_geometry(station, check)
+    shallow_wipe_points(station, check)
+    lip_stripping_points(station, check)
+    return result
+
+
+def lip_stripping_points(station, check=tuple):
+    """Explicit measured-start, relative-X strip; never infer lip from the slope.
+
+    Official station_points supplies its calibrated contact-volume checker.
+    Review callers may use the same grammar with axis-envelope-only validation.
+    This parameter validation does not confer physical execution authorization.
+    """
+    lip = station.get('lip_stripping', {})
+    if not lip.get('enabled'): return ()
+    start = lip.get('measured_contact_xyz'); dx = lip.get('relative_x_mm')
+    feed = lip.get('contact_feed_mm_min'); retract = lip.get('safe_retract_z')
+    approach = lip.get('approach_clearance_z', retract)
+    approach_feed = lip.get('approach_xy_mm_min', 3000)
+    if (station.get('kind') != 'sloped_inkstone' or
+        lip.get('primitive') != 'measured_linear_x_v1' or
+        lip.get('coordinate_source') != 'operator_measured_confirmed' or
+        not vector(start) or not number(dx) or dx >= 0 or
+        not number(feed, True) or not number(lip.get('contact_feed_cap_mm_min'), True) or
+        feed > lip['contact_feed_cap_mm_min'] or not number(retract) or retract <= start[2] or
+        not number(approach) or not start[2] <= approach <= retract or
+        not number(approach_feed, True) or approach_feed > 3000):
+        raise ValueError('stone-lip contact requires measured XYZ, negative relative X, independent feed/cap and safe retract')
+    end = (start[0]+dx, start[1], start[2])
+    return tuple(check(p) for p in ((*start[:2],approach),start,end,(*end[:2],retract)))
+
+
+def shallow_wipe_xy(station):
+    """Separately registered solid section; never extend the liquid slope line."""
+    w = station.get('shallow_wipe', {})
+    if not w.get('enabled'): return ()
+    start, end, middle = w.get('start_xy'), w.get('end_xy'), w.get('return_xy')
+    count, offset = w.get('passes'), w.get('second_pass_x_offset_mm')
+    if (not all(vector(p, 2) for p in (start,end,middle)) or
+        type(count) is not int or count < 1 or not number(offset) or
+        start[1] <= station['shallow_surface_xyz'][1] or end[1] <= start[1]):
+        raise ValueError('register distinct Y+ shallow solid-section XY and pass count')
+    points = [tuple(start), tuple(end)]
+    for _ in range(1,count):
+        x = start[0]+offset
+        points += [(x,end[1]), (x,middle[1]), (x,start[1]), (x,end[1])]
+    return tuple(points)
+
+
+def shallow_wipe_points(station, check=None):
+    """Configured solid contact plus lifted re-entry, with auditable phase feeds.
+
+    The caller preserves measured versus assumed trial-parameter status.
+    Missing values fail before any station command; explicit trial parameters
+    alone do not satisfy measured-volume, evidence or authorization gates.
+    """
+    xy = shallow_wipe_xy(station)
+    if not xy: return ()
+    w = station['shallow_wipe']
+    surface, compression, lift = (w.get(k) for k in ('surface_z','compression_mm','reentry_lift_mm'))
+    if not number(surface) or not number(compression, True) or not number(lift, True):
+        raise ValueError('shallow_wipe requires surface_z, compression_mm and reentry_lift_mm')
+    contact = surface-compression
+    # Lift is measured FROM THE COMPRESSED CONTACT TARGET, not the surface:
+    # surface9 - compression1.5 + lift10 =17.5. Never silently change that value.
+    clear = contact+lift
+    required = max(surface, station['shallow_surface_xyz'][2]+station['stone_gap_mm'],
+                   station['liquid_reference_z']+station['exit_above_liquid_mm'])
+    if clear <= surface or clear < required:
+        raise ValueError('shallow wipe re-entry lift does not clear configured surface/slope exit')
+    if clear >= 35: raise ValueError('shallow wipe re-entry must fit below global Z35')
+    if check is None:
+        def check(p):
+            if interval_in_box(p,p,station['contact_box_xyz']) is None:
+                raise ValueError('shallow wipe leaves calibrated contact/re-entry volume')
+            return tuple(p)
+    out = [(check((*station['shallow_surface_xyz'][:2], clear)), 'reentry')]
+    out += [(check((*xy[0],clear)), 'reentry'), (check((*xy[0],contact)), 'shallow_contact'),
+            (check((*xy[1],contact)), 'shallow_wipe')]
+    for i in range(2,len(xy),4):
+        side, middle, start, end = xy[i:i+4]
+        # Release and lift VERTICALLY at the first pass end BEFORE any X step.
+        # Contact release keeps the independent gentle feed; only the free
+        # portion uses reentry feed. Total rise remains exactly lift mm.
+        previous = xy[i-1]
+        out += [(check((*previous,surface)), 'shallow_contact'),
+                (check((*previous,clear)), 'reentry'), (check((*side,clear)), 'reentry'),
+                (check((*middle,clear)), 'reentry'), (check((*start,clear)), 'reentry'),
+                (check((*start,contact)), 'shallow_contact'), (check((*end,contact)), 'shallow_wipe')]
+    out.append((check((*xy[-1],surface)), 'shallow_contact'))
+    return tuple(out)
 
 
 def _station_geometry(station, check):
@@ -270,7 +385,7 @@ def _station_geometry(station, check):
         return dip, tuple(points)
     if kind == 'absorbent':
         xy = station['center_xy']; surface = station['surface_z']; compression = station['compression_mm']
-        if not vector(xy, 2) or not number(surface) or not number(compression, True):
+        if not vector(xy, 2) or not number(surface) or not number(compression) or compression < 0:
             raise ValueError('measure absorbent surface and gentle compression')
         dip = check((*xy, surface-compression))
         wipe = station.get('wipe_xy_mm', [0, 0])
@@ -304,9 +419,17 @@ def station_phase_feed(station, motion, phase):
     return feed
 
 
-def emit_station_operation(b, station, action, state, geometry=station_points):
+def emit_station_operation(b, station, action, state, geometry=station_points, wipe_geometry=shallow_wipe_points):
     """Shared measured/review grammar; the official default checks contact volume."""
-    st = station; dip, points = geometry(st)
+    st = station
+    lip_points = lip_stripping_points(st)
+    if lip_points and st['lip_stripping']['safe_retract_z'] != b.v['station_clearance_mm']:
+        raise ValueError('stone-lip retract must match global station clearance')
+    dip, points = geometry(st)
+    wipes = wipe_geometry(st)
+    final_contact_point = wipes[-1][0] if wipes else (points[-1] if points else dip)
+    if lip_points and final_contact_point[2] > lip_points[0][2]:
+        raise ValueError('stone-lip local connection must release vertically, not descend diagonally')
     explicit = st.get('phase_feeds_mm_min') is not None
     if explicit:
         approach_z = st.get('approach_z')
@@ -315,7 +438,9 @@ def emit_station_operation(b, station, action, state, geometry=station_points):
             raise ValueError('station fast approach must end above contact reference and below global clearance')
     else: approach_z = st['contact_box_xyz'][1][2]
     access_before = b.lengths['non_draw_mm']; b.time_context = 'station_transfer'
-    b.xy(dip[:2], b.v['station_clearance_mm'], state)
+    previous_entry=getattr(b,'station_entry',False);b.station_entry=True
+    try:b.xy(dip[:2], b.v['station_clearance_mm'], state)
+    finally:b.station_entry=previous_entry
     b.lengths['station_access_3d_mm'] += b.lengths['non_draw_mm']-access_before
     b.time_context = 'station_handling'
     approach = (*dip[:2], approach_z)
@@ -328,13 +453,31 @@ def emit_station_operation(b, station, action, state, geometry=station_points):
         b.move(dip, station_phase_feed(st, b.v, phase), 'station_'+action, 'station_approach', travel_phase=phase)
         b.dwell(st['dwell_seconds'], action+'_dwell')
         for index, point in enumerate(points):
-            phase = 'withdrawal' if index == len(points)-1 else 'agitation'
+            phase = ('withdrawal' if index == len(points)-1 else
+                     'palette_loading' if st['kind'] == 'palette' and 'palette_loading' in st.get('phase_feeds_mm_min',{}) else 'agitation')
             b.move(point, station_phase_feed(st, b.v, phase), 'station_'+action, 'station_approach', travel_phase=phase)
+        for point, phase in wipes:
+            b.move(point, station_phase_feed(st, b.v, phase), 'station_'+action,
+                   'station_approach', travel_phase=phase)
         if explicit and st['kind'] == 'absorbent':
             b.move(approach, station_phase_feed(st, b.v, 'purge_contact'),
                    'station_'+action, 'station_approach', travel_phase='purge_release')
-    retract_before = b.lengths['non_draw_mm']; b.lift(b.v['station_clearance_mm'])
+    # A local stone-to-lip connection may release vertically to the measured lip
+    # height. Global35 remains mandatory AFTER stripping and before transfers.
+    release_height = lip_points[0][2] if lip_points else b.v['station_clearance_mm']
+    retract_before = b.lengths['non_draw_mm']; b.lift(release_height)
     b.lengths['station_retract_3d_mm'] += b.lengths['non_draw_mm']-retract_before
+    if lip_points:
+        approach, contact, end, retract = lip_points
+        b.move(approach, min(st['lip_stripping'].get('approach_xy_mm_min',3000),b.v['ordinary_travel_mm_min']), 'station_lip_approach',
+               'station_approach', travel_phase='lip_approach')
+        if approach != contact:
+            b.move(contact, min(station_phase_feed(st,b.v,'immersion'),b.v['pressure_z_mm_min']), 'station_lip_contact',
+                   'station_approach', travel_phase='lip_contact')
+        b.move(end, st['lip_stripping']['contact_feed_mm_min'], 'station_lip_strip',
+               'station_approach', travel_phase='lip_strip')
+        b.move(retract, b.v['z_travel_mm_min'], 'station_lip_retract',
+               'station_approach', travel_phase='lip_retract')
     b.in_paper = False; b.last_panel = None; b.at_station = True; b.time_context = None
 
 
@@ -349,6 +492,15 @@ class Materials:
         limit = self.p['ink_reload_mm'] if self.loaded == 'ink' else self.p['color_reload_mm']
         return 'partially_depleted' if self.distance >= limit else 'wet_loaded'
 
+    def station_travel_state(self):
+        """Opt-in used-brush return, including color-change wash access."""
+        pending=getattr(self,'pending_station_return_state',None)
+        self.pending_station_return_state=None
+        if pending is not None:return pending
+        if self.b.v.get('segmented_travel') and self.loaded is not None and self.distance>0:
+            return 'partially_depleted'
+        return self.state
+
     def station(self, role, action, material_key=None):
         b = self.b; st = deepcopy(b.profile.data['stations'][role])
         if role == 'sponge': st = material_station(st, material_key or self.loaded)
@@ -357,7 +509,7 @@ class Materials:
             st['dwell_seconds'] = st['rewet_dwell_seconds']
             st['agitation_cycles'] = 0
         if not number(st['feed_mm_min'], True): raise ValueError('station operation feed must be positive')
-        emit_station_operation(b, st, action, self.state)
+        emit_station_operation(b, st, action, self.station_travel_state())
         b.marker(action, role)
 
     def wash(self):
@@ -365,10 +517,14 @@ class Materials:
         if interval is not None and self.washes > 0 and self.washes % interval == 0:
             self.b.pause('CHANGE/INSPECT clean water and brush; restore manual reference levels; resume only without moving axes', self.state)
         previous = self.loaded
+        if self.b.v.get('segmented_travel') and previous is not None and self.distance>0:
+            self.pending_station_return_state='partially_depleted'
         self.loaded = None; self.distance = 0.
         st = self.b.profile.data['stations']['water']; cycles = st['wash_cycles']
         if type(cycles) is not int or cycles < 1: raise ValueError('positive calibrated wash_cycles required')
-        for _ in range(cycles): self.station('water', 'wash')
+        for _ in range(cycles):
+            self.station('water', 'wash')
+            if self.b.v.get('segmented_travel'):self.loaded='water'
         self.station('sponge', 'absorbent_contact', previous)
         self.station('water', 'controlled_rewet')
         self.washes += 1; self.b.marker('full_wash')
@@ -438,7 +594,7 @@ def draw_fragment(b, fragment, material, stage, retract_height=None):
         depth = b.profile.brush_for(s.medium, s.color_slot)
         low, high = b.v['paper_contact_z_range']
         for p in s.points:
-            z = depth.z_for(p.pressure)
+            z = depth.work_z_for(p.pressure)
             if not low <= z <= high: raise ValueError('pressure mapping outside measured paper contact Z range')
     # Reuse v0.2 event/contact model and each clipped vertex without resampling.
     settings = MotionSettings(depth, hover_z_mm=b.v['paper_hover_mm'], approach_z_mm=b.v['paper_approach_mm'])
@@ -473,8 +629,12 @@ def draw_fragment(b, fragment, material, stage, retract_height=None):
     b.in_paper = True; b.last_panel = fragment.panel
 
 
-def build_job(profile, units, stage):
-    b = Builder(profile); material = None if stage == 'air' else Materials(b)
+def build_job(profile, units, stage, *, offline_builder=None, offline_material=None):
+    # Official exporter always uses the default spatially validated Builder.
+    # Explicit offline sinks reuse this exact renderer for trajectory estimates;
+    # they are never accepted as measured profiles/evidence or physical exports.
+    b = Builder(profile) if offline_builder is None else offline_builder
+    material = None if stage == 'air' else (Materials(b) if offline_material is None else offline_material)
     b.marker('pre_run_confirmation_required', 'Verify G54/start, paper, clean brush and supplies BEFORE starting; export authorization records operator confirmation')
     if stage == 'air':
         for role in profile.data['motion'].get('air_station_roles', []):

@@ -1,0 +1,20 @@
+{
+  "tests_run": 158,
+  "tests_passed": 158,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "full_canonical_scene_enabled": true,
+  "regenerated_numeric_Gcode_files": 8,
+  "all_numeric_readback_and_SHA256_verified": true,
+  "water_pigment_numeric_body_sha256": {
+    "12000": "e603691e05148f32a276169236edcf02785732bd89740da33f17d39aa6803b1c",
+    "15000": "6102fb3a888187de832f92bb965bb64e2e081678dfb26e2b081b074c8112726a"
+  },
+  "baseline_40_regeneration_passed": true,
+  "YAML_exactly_four_XY_scalar_edits": true,
+  "source_pressure_XY_S3a_and_colors_unchanged": true,
+  "official_physical_evidence_created": false,
+  "physical_high_speed_pass": false,
+  "authorized": false,
+  "command": "PYTHONPATH=src:. DATASCAPE_BOUND_MACHINE=<bound>/spring.machine.json DATASCAPE_BOUND_PROVENANCE=<bound>/spring.provenance.json python -m unittest discover -s tests -p test_gcode*.py -q"
+}

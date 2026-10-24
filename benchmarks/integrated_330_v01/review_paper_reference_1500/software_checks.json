@@ -1,0 +1,41 @@
+{
+  "tests": 202,
+  "passed": 202,
+  "failed": 0,
+  "skipped": 0,
+  "new_focused_tests": 14,
+  "full_canonical_scene_enabled": true,
+  "numeric_review_files_regenerated": 2,
+  "all_readback_and_SHA256_passed": true,
+  "paper_first_touch_Z": 10,
+  "formula": "commanded_Z=paper_first_touch_Z-compression_mm",
+  "physical_compression_range_mm": [
+    1,
+    15
+  ],
+  "commanded_paper_Z_range": [
+    -5,
+    9
+  ],
+  "repetitions_per_depth": 2,
+  "strokes": 30,
+  "stroke_xy_length_mm": 50,
+  "drawing_only_XY_mm": 1500,
+  "initial_ink_loads": 1,
+  "reloads_during_test": 0,
+  "M0_count": 0,
+  "fast_paper_approach_boundary_Z": 15,
+  "paper_contact_compression_release_feed_mm_min": 2000,
+  "no_fast_contact_plane_crossing": true,
+  "preferred_Spring_ink_reload_mm": 1500,
+  "color_reload_mm": 800,
+  "final_Spring_pressure_response_selected": false,
+  "old_Z8_curve_historical_only": true,
+  "selected_pressure_to_compression_knots": null,
+  "all_station_absolute_coordinates_and_YAML_unchanged": true,
+  "global_G54_shift_applied": false,
+  "old_benchmarks_regenerated_for_audit_not_reapproved_for_new_reference": true,
+  "hardware_operated": false,
+  "physical_new_test_passed": false,
+  "authorized": false
+}

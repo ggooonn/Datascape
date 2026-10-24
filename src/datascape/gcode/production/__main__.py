@@ -33,6 +33,7 @@ def main(argv=None):
             s.add_argument('--stage', required=True, choices=('air', 'painting'))
             s.add_argument('--authorization', required=True, type=Path)
             s.add_argument('--jobs', nargs='+', help='only these job IDs; separate authorization can be used per panel')
+            s.add_argument('--extension',choices=('.nc','.gcode'),default='.nc',help='verified program filename extension')
     s = sub.add_parser('verify'); s.add_argument('--output', required=True, type=Path)
     s = sub.add_parser('readiness'); s.add_argument('--profile', required=True, type=Path)
     s.add_argument('--stage', required=True, choices=('air', 'calibration', 'painting'))
@@ -76,7 +77,7 @@ def main(argv=None):
                 if a.stage!='air':raise ValueError('benchmark-plan only supports the no-contact air stage')
                 require_air_profile(request,prof)
                 _,jobs,manifest=air_plan(request)
-                report=export_jobs(jobs,manifest,prof,'air',load_json(a.authorization),a.output,a.jobs)
+                report=export_jobs(jobs,manifest,prof,'air',load_json(a.authorization),a.output,a.jobs,a.extension)
         else:
             if any(getattr(a,k) is None for k in ('machine','provenance','s3a_order')):
                 raise ValueError('provide all Spring inputs or an independent --benchmark-plan')
@@ -127,7 +128,7 @@ def main(argv=None):
                 report = _atomic_output(a.output, write)
             else:
                 report = export_jobs(jobs, manifest, Profile.load(a.profile), a.stage,
-                                     load_json(a.authorization), a.output, a.jobs)
+                                     load_json(a.authorization), a.output, a.jobs,a.extension)
         print(json.dumps(report, indent=2)); return 0
     except (ValueError, KeyError, TypeError, OSError) as e:
         print(str(e), file=sys.stderr); return 2
