@@ -1,0 +1,63 @@
+{
+  "branch": "feat/hanji-relief-stipple-v01",
+  "previous_hanji_head": "f3c4ebabde3cc93cebd24593205d2338c0f9aceb",
+  "backend_base_sha": "eda6069b12c8785d458a0e8a567a9a86980bc394",
+  "protected_paths_byte_unchanged": {
+    "projects/hanji_relief/input/": 7,
+    "projects/hanji_relief/benchmarks/flat_c2_330_v01/": 49,
+    "projects/hanji_relief/review/": 178,
+    "src/": 59,
+    "benchmarks/": 301
+  },
+  "operator_accepted_nominal_clearance_mm": 5,
+  "operator_bed_first_touch_g54_z_mm": 10,
+  "artwork_xy_lower_left_g54_mm": [
+    0,
+    0
+  ],
+  "operator_settings": [
+    3,
+    1,
+    30
+  ],
+  "official_measured_exporter_modified": false,
+  "hardware_transmission": false,
+  "jobs": {
+    "hanji_P4_local_Z10_Z35_R30": {
+      "points": 890,
+      "loads": 32,
+      "minutes": 44.52676103659765,
+      "gcode_sha256": "13c3a2fa9434692c9abe67a4b91b45475dfe802d28de7b9a2a3578b2b13bc2ff",
+      "axis_bounds": [
+        [
+          0,
+          5.95,
+          1.5
+        ],
+        [
+          852.0,
+          900,
+          35
+        ]
+      ]
+    },
+    "hanji_full_600x600_Z10_Z35_R30": {
+      "points": 6200,
+      "loads": 209,
+      "minutes": 279.5190976646699,
+      "gcode_sha256": "19fe0e90e3b86a27d328782381dfdf01021c1db0a5686e2cf250a7f52684a019",
+      "axis_bounds": [
+        [
+          0,
+          5.95,
+          1.5
+        ],
+        [
+          852.0,
+          900,
+          35
+        ]
+      ]
+    }
+  }
+}

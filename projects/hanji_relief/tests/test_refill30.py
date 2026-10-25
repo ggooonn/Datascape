@@ -72,7 +72,9 @@ class Refill30Tests(unittest.TestCase):
         self.assertFalse(report['machine_authorized'])
         # A changed coordinate number does not create the missing physical gap.
         self.assertEqual(35-(10+20), 5)
-        self.assertLess(35-(10+20), self.cfg['required_surface_clearance_mm'])
+        old = settings(PROJECT/'review/refill30_offset0/settings.json')
+        self.assertLess(35-(10+20), old['required_surface_clearance_mm'])
+        self.assertEqual(35-(10+20), self.cfg['required_surface_clearance_mm'])
 
 
 if __name__ == '__main__':

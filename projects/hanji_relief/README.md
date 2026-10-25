@@ -4,6 +4,17 @@ This is an **independent raised hanji painting inspired by Ilwolobongdo**, shari
 
 The adapter implements constant **3.0mm additional Z compression from local first touch, a full1.00s dwell at depth, and same-color reload before contact31 after30 contacts**. The user preferred3mm/1s after the flat C2 comparison and subsequently requested30-contact refill. Dry-mark size and30-contact endurance on the relief are not measured. No normalized artistic pressure is used.
 
+## Current operator-selected programs
+
+The user confirms the bed/model datum, uses bed first-touch G54 Z10, and accepts5mm nominal relief clearance at fixed hover35. [Full assembly and physical P4 programs](runs/bed10_hover35_refill30_v01/) apply **first touch=designZ+10 / press=designZ+7**,3mm/1s/30contacts, with artwork nominal lower-left at existing G54 X0Y0. Station coordinates and controller/work-offset settings remain unchanged. P4 uses local XY and unchanged full-design Z. Use the spare P4 for the complete-panel trial; the full program includes all P4 points.
+
+```sh
+PYTHONPATH=src:. python -m projects.hanji_relief.run_export --output NEW_DIR
+PYTHONPATH=src:. python -m projects.hanji_relief.run_export --verify NEW_DIR
+```
+
+The selected setup is recorded in `config/mounting.bed10_hover35.json`, separately from measured profiles. Numeric checks do not fabricate a local surface map, passed physical evidence or artwork completion. Two files are generated offline; the user operates the equipment independently.
+
 ## Backend dependency
 
 - Base Draft PR: [#32](https://github.com/ggooonn/Datascape/pull/32), still open/unmerged when inspected on2026-10-25.
@@ -13,7 +24,7 @@ The adapter implements constant **3.0mm additional Z compression from local firs
 
 The latest PR remained32 at inspection; no later PR was selected by number alone. No existing PR, Spring file, shared source, YAML or controller setting is modified. Shared code is imported from the repository rather than copied into this project.
 
-Reuse is through production `Command`, `Profile`, motion/rate checks, serialization, atomic output, Cartesian timing, and PR32's `RuntimeBuilder` / `RuntimeMaterials` review sink plus `spring_end_cleanup.cleanup`. The sink is the existing **envelope-only numeric review route**; it does not fabricate physical evidence, measured free-space boxes or contact volumes. The shared official `Profile.require()` / `authorize()` / complete-path gates remain intact. `require_physical_export()` retains those gates and adds Hanji checks; the delivered CLI only generates/verifies offline reviews.
+Reuse is through production `Command`, `Profile`, motion/rate checks, serialization, atomic output, Cartesian timing, and PR32's `RuntimeBuilder` / `RuntimeMaterials` review sink plus `spring_end_cleanup.cleanup`. The sink is the existing **envelope-only numeric review route**; it does not fabricate physical evidence, measured free-space boxes or contact volumes. The shared official `Profile.require()` / `authorize()` / complete-path gates remain intact. `require_physical_export()` retains those gates and adds Hanji checks; the original CLI generates/verifies offline reviews; the separate `run_export` module generates the two operator-selected offline programs. Neither route operates equipment or fabricates measured evidence.
 
 ## Source and coordinate identity
 
@@ -35,7 +46,7 @@ Mounting XY applies only to artwork points. Stations remain fixed G54 coordinate
 
 ## Settings, ordering and material state
 
-`config/stipple.json` is now the user-requested3mm/1s/30-contact configuration. Completed flat comparison files keep their original20-contact configuration. The previous relief20-contact delivery is retained unchanged under `review/nominal_offset0/`; the current30-contact review is `review/refill30_offset0/`. See [registration and refill handoff](REGISTRATION_AND_REFILL30.md). Depth/dwell are constant across dots/colors and are not inferred from preview diameter or estimated1–2mm paper error.
+`config/stipple.json` is now the user-requested3mm/1s/30-contact configuration. Completed flat comparison files keep their original20-contact configuration. The previous relief20-contact delivery is retained unchanged under `review/nominal_offset0/`; the offset0 30-contact review is `review/refill30_offset0/`; current user-selected+10 programs are `runs/bed10_hover35_refill30_v01/`. See [registration and refill handoff](REGISTRATION_AND_REFILL30.md). Depth/dwell are constant across dots/colors and are not inferred from preview diameter or estimated1–2mm paper error.
 
 Hanji's provisional eight-color extension is **C2 → A4 → A3 → D4 → C4 → B1 → C5 → B2**. It preserves the common Spring relative order but is not an official pre-existing eight-slot S3a order or a measured pigment-lightness order. Physical panel4 uses **C2 → A3 → D4 → C4 → B1 → C5**. Explicit color-to-station mapping uses the actual PR32 station entries, including B1/B2/C5. No color is omitted by filtering the twelve-slot Spring list.
 
@@ -60,9 +71,9 @@ Ten main alternatives are `hanji_full_600x600.gcode` and `hanji_panel_01_local.g
 
 The current axis reference is X0…860/Y0…900/Z−11…35 with separate station positions; the user's approximate800×900 painting workspace is not treated as the whole machine envelope. Artwork footprints fit the nominal scenario, while full brush/holder, fixture, station and transfer clearance still require actual review. Centerline envelope checks are not collision certification.
 
-The unchanged height function has global design upper bound20, including Base2. At hover35, a10mm clearance requires the corrected highest first touch≤25. For surface offsets0/+5/+10, the nominal whole-scene maximum touch is20/25/30 and hover35 leaves15/10/5mm. An offset+10 is5mm short of the10mm target. Do not change limits or shift G54 to pretend this physical gap has increased. Panel4's dot maximum16.921111 is not used as a bound on the whole intervening surface. A separate2mm/90601-point nominal surface sample and its sampled panel maxima are delivered; sampled panel extrema are not certified continuous-surface suprema.
+The unchanged height function has global design upper bound20, including Base2. The operator explicitly accepts5mm nominal clearance at hover35, replacing the earlier10mm criterion. At the selected+10 transform, the nominal highest first touch is30 and the gap is5mm. No limit, G54 or station position changes are used to create this gap. Panel4's dot maximum16.921111 is not used as a bound on the whole intervening surface. A separate2mm/90601-point nominal surface sample and its sampled panel maxima are delivered; sampled panel extrema are not certified continuous-surface suprema.
 
-Only the new registration information is outstanding: actual mounted outer-corner XY, local first-touch Z relative to a known design point/back-plane installation, local dry-surface variation, and fixture/brush/holder travel clearance at30/35. Keep the current hardware/station facts rather than asking those questions again. Changes to brush mounting also affect existing station contacts and must be reconciled independently.
+The operator-selected setup uses nominal outer-corner G54 XY0/0, bed first touch10 and fixed hover35 with accepted5mm nominal clearance. Actual local dry-surface deviations remain unmeasured rather than silently assigned a1-2mm correction. Brush mounting/station geometry and G54 remain unchanged by this update.
 
 ## Dwell semantics and timing
 
@@ -70,7 +81,7 @@ The shared serializer emits `G4 P1.000000000`. Source inspection of FluidNC **v4
 
 F7000 noncontact Z and F2000 controlled contact/compression/release are inherited/requested candidates.3mm at F2000 has0.09s constant-speed path time; finite acceleration and response mean it is not a measured3mm duration. Total physical contact exceeds the1s depth dwell.
 
-The shared timing model uses configuration-reference XYZ acceleration1500/1500/1000mm/s², assumed JD0.01, full lookahead/continuous streaming. It reports noncontact XY/Z, controlled engagement, depth dwell, initial supply, same-color service/round-trip, color-change service/round-trip, terminal cleaning/park and stop-each-segment sensitivity. Finite streaming/buffers, step rounding, brush dynamics and actual point size are not verified. Current modeled totals are3.61min/first40,47.17min/P4,297.84min/full, recorded in `review/refill30_offset0/verification.json`; previous20-contact values were3.61min/first40,50.70min/P4,318.00min/full. Dwell alone is40s/890s/6200s. The30-contact full plan has209loads and seven color changes; physical P4 has32loads and five color changes.
+The shared timing model uses configuration-reference XYZ acceleration1500/1500/1000mm/s², assumed JD0.01, full lookahead/continuous streaming. It reports noncontact XY/Z, controlled engagement, depth dwell, initial supply, same-color service/round-trip, color-change service/round-trip, terminal cleaning/park and stop-each-segment sensitivity. Finite streaming/buffers, step rounding, brush dynamics and actual point size are not verified. Current selected+10 program modeled totals are44.53min/P4 and279.52min/full, recorded in `runs/bed10_hover35_refill30_v01/verification.json`; previous offset0/30-contact review totals were3.61min/first40,47.17min/P4,297.84min/full; previous20-contact values were3.61min/first40,50.70min/P4,318.00min/full. Dwell alone is40s/890s/6200s. The30-contact full plan has209loads and seven color changes; physical P4 has32loads and five color changes.
 
 ## Reproduce and verify
 
@@ -100,6 +111,8 @@ PYTHONPATH=src:. python -m projects.hanji_relief \
 The full global and individual-panel files are alternative workflows, not sequential programs. Do not run the full/full-panel files unchanged after accepted artwork test contacts.
 
 ## Verification and handoff
+
+Latest operator-program verification:33Hanji tests and19flat tests pass. Both generated programs regenerate/read back with the selected+10 transform, fixed35hover and5mm accepted nominal gap. Existing immutable source, flat comparison, shared backend and historical review directories remain byte-identical. See `provenance/bed10_hover35/` for current evidence.
 
 The original22 Hanji regression tests retain an explicit20-contact fixture; six additional tests cover the30-contact default,29/30/31/59/60/61 boundaries, color reset, unchanged coordinates/order, serialized30→31service and bed-touch10 registration. Original coverage: counter0/1/19/20/21/40/41, color-end multiples, bottom-up/left-right ordering, exact C/panel union, immutable source,3mm/1s explicit primitives, readback tampering, fixed stations under artwork movement, used-brush distance0, AIR separation, terminal cleanup once, finite values, registration/limits and confirmed850 continuation.
 

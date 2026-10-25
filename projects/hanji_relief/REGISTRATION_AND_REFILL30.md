@@ -1,5 +1,9 @@
 # Bed registration, physical panel labels, and thirty-contact refill
 
+## Latest operator decision: hover35 / nominal gap5 accepted
+
+The user explicitly confirms that5mm nominal clearance is sufficient and requests offline full/P4 programs. The earlier10mm requirement below is historical, superseded for this setup by `required_surface_clearance_mm=5`. Current programs are in `runs/bed10_hover35_refill30_v01/`, generated with `python -m projects.hanji_relief.run_export`: first touch=designZ+10, press=designZ+7, hover35,3mm/1s/30contacts. Existing G54 artwork lower-left XY0/0 and equipment stations remain fixed. No new measurement/local map or controller operation is claimed. The older offset0 files below remain unchanged alternatives; use the new named+10 program files for this selected setup.
+
 ## Current decision and preserved experiment
 
 The operator completed the flat330mm C2 comparison and reported that3mm compression with1s full dwell at depth looked best. This is a qualitative preference on flat paper, not a measured diameter or proof of relief contact uniformity. The operator now requests refill every30completed paper contacts. No test of30-contact pigment endurance is claimed.

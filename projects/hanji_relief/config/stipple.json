@@ -11,7 +11,7 @@
   "contact_feed_mm_min": 2000.0,
   "release_feed_mm_min": 2000.0,
   "approach_clearance_mm": 5.0,
-  "required_surface_clearance_mm": 10.0,
+  "required_surface_clearance_mm": 5.0,
   "preview_diameter_mm": 2.8,
-  "settings_status": "operator preferred 3mm/1s after flat C2 comparison; operator requested 30-contact refill; relief response and 30-contact endurance not yet verified"
+  "settings_status": "operator selected 3mm/1s, 30-contact refill, bed first-touch G54 Z10, fixed hover35 and accepted 5mm nominal relief clearance; no local measured surface map"
 }

@@ -93,7 +93,7 @@ def load_dots(path=None):
 
 
 def mount_for(scenario,panel=None):
-    if scenario.get('status') not in ('explicit_nominal_scenario_NOT_MEASURED','measured_registration'):
+    if scenario.get('status') not in ('explicit_nominal_scenario_NOT_MEASURED','measured_registration','operator_specified_registration'):
         raise ValueError('numeric review needs an explicit nominal scenario or measured registration; missing values are not zero')
     base=scenario.get('full' if panel is None else 'individual_mount')
     if panel is not None: base=scenario.get('per_panel_overrides',{}).get(str(panel),base)
@@ -108,6 +108,8 @@ def surface_delta(dot,scenario):
     entry=scenario.get('local_surface_corrections',{}).get(str(dot.study_dot_id))
     if entry is None:
         if scenario['status']=='measured_registration': raise ValueError('missing dry surface correction for '+str(dot.study_dot_id))
+        if scenario['status']=='operator_specified_registration':
+            return 0.,'no_local_map_operator_selected_design_baseline'
         return 0.,'nominal_review_zero_NOT_MEASURED'
     number(entry.get('surface_delta_mm'),'surface_delta_mm')
     number(entry.get('uncertainty_mm'),'uncertainty_mm',0)
