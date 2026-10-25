@@ -11,7 +11,8 @@ from projects.hanji_relief.motion import *
 class HanjiTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.dots=load_dots();cls.cfg=settings();cls.scenario=load_json(PROJECT/'config/review.nominal_offset0.json');cls.main=standard_plans(cls.dots,cls.cfg);cls.test=c4_test(cls.dots,cls.cfg)
+  # Keep the original 20-contact regression fixture independently reproducible.
+  cls.dots=load_dots();cls.cfg=settings(PROJECT/'review/nominal_offset0/settings.json');cls.scenario=load_json(PROJECT/'config/review.nominal_offset0.json');cls.main=standard_plans(cls.dots,cls.cfg);cls.test=c4_test(cls.dots,cls.cfg)
   cls.p,cls.cmds,cls.rows,cls.services=build_paint(cls.test,cls.scenario)
  def test_counts_and_exact_panel_union(self):
   self.assertEqual(self.main[0]['dot_count'],6200);self.assertEqual(self.main[4]['dot_count'],890)

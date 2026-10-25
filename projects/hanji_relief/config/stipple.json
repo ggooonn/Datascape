@@ -3,7 +3,7 @@
   "compression_depth_mm": 3.0,
   "dwell_at_depth_s": 1.0,
   "refill_policy": "contact_count",
-  "refill_every_contacts": 20,
+  "refill_every_contacts": 30,
   "first_row_start": "right",
   "color_order": ["C2", "A4", "A3", "D4", "C4", "B1", "C5", "B2"],
   "color_station_map": {"C2":"C2", "A4":"A4", "A3":"A3", "D4":"D4", "C4":"C4", "B1":"B1", "C5":"C5", "B2":"B2"},
@@ -13,5 +13,5 @@
   "approach_clearance_mm": 5.0,
   "required_surface_clearance_mm": 10.0,
   "preview_diameter_mm": 2.8,
-  "settings_status": "operator-selected provisional benchmark; unmeasured mark size and 20-contact endurance"
+  "settings_status": "operator preferred 3mm/1s after flat C2 comparison; operator requested 30-contact refill; relief response and 30-contact endurance not yet verified"
 }

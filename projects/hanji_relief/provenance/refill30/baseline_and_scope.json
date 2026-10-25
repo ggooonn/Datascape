@@ -1,0 +1,21 @@
+{
+  "branch": "feat/hanji-relief-stipple-v01",
+  "previous_hanji_head": "f6aa986bd9580f6bb4af67da663656b9a8e5d021",
+  "backend_base_sha": "eda6069b12c8785d458a0e8a567a9a86980bc394",
+  "protected_paths_byte_unchanged": {
+    "projects/hanji_relief/input/": 7,
+    "projects/hanji_relief/review/nominal_offset0/": 89,
+    "projects/hanji_relief/benchmarks/flat_c2_330_v01/": 49,
+    "src/": 59,
+    "benchmarks/": 301
+  },
+  "default_compression_depth_mm": 3,
+  "default_dwell_s": 1,
+  "default_refill_contacts": 30,
+  "flat_comparison_refill_contacts": 20,
+  "bed_touch10_status": "conditional near-touch interpretation, not measured registration",
+  "default_review_surface_offset_mm": 0,
+  "full_plus10_hover35_clearance_mm": 5,
+  "required_clearance_mm": 10,
+  "physical_execution_performed": false
+}
