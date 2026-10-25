@@ -1,0 +1,10 @@
+{
+  "status": "explicit_nominal_scenario_NOT_MEASURED",
+  "full": {"g54_x_mm":0.0,"g54_y_mm":0.0,"hanji_surface_offset_z_mm":0.0,"fixed_hover_g54_z_mm":35.0},
+  "individual_mount": {"g54_x_mm":0.0,"g54_y_mm":0.0,"hanji_surface_offset_z_mm":0.0,"fixed_hover_g54_z_mm":35.0},
+  "per_panel_overrides": {},
+  "local_surface_corrections": {},
+  "fixture_maximum_g54_z_mm": null,
+  "swept_tool_clearance_record": null,
+  "notes": "Numeric review only: XY=artwork frame, touch=design Z, no measured surface correction. This is not a measured machine placement or an inferred flat-paper+10 offset. Re-register before physical use."
+}

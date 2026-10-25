@@ -1,0 +1,24 @@
+test_all_individual_jobs_independent_with_same_positions (test_flat.FlatComparisonTests.test_all_individual_jobs_independent_with_same_positions) ... ok
+test_contacts_loads_and_initial_preparation (test_flat.FlatComparisonTests.test_contacts_loads_and_initial_preparation) ... ok
+test_depth_dwell_timing_not_consumed_by_descent (test_flat.FlatComparisonTests.test_depth_dwell_timing_not_consumed_by_descent) ... ok
+test_deterministic_source_patch_and_bounds (test_flat.FlatComparisonTests.test_deterministic_source_patch_and_bounds) ... ok
+test_experiment_namespace_cannot_complete_artwork (test_flat.FlatComparisonTests.test_experiment_namespace_cannot_complete_artwork) ... ok
+test_flat_Z_replaces_relief_Z_and_depth_dwell (test_flat.FlatComparisonTests.test_flat_Z_replaces_relief_Z_and_depth_dwell) ... ok
+test_mount_translation_does_not_move_stations (test_flat.FlatComparisonTests.test_mount_translation_does_not_move_stations) ... ok
+test_nonfinite_and_out_of_bounds_rejected (test_flat.FlatComparisonTests.test_nonfinite_and_out_of_bounds_rejected) ... ok
+test_original_stations_and_motion_unchanged (test_flat.FlatComparisonTests.test_original_stations_and_motion_unchanged) ... ok
+test_point_xy_fixed_no_artistic_pressure_or_guide_draw (test_flat.FlatComparisonTests.test_point_xy_fixed_no_artistic_pressure_or_guide_draw) ... ok
+test_preparation_after_first_water_is_identical_fresh_wet_travel (test_flat.FlatComparisonTests.test_preparation_after_first_water_is_identical_fresh_wet_travel) ... ok
+test_refill_after_retract20_before21_no_wash_or_extra40 (test_flat.FlatComparisonTests.test_refill_after_retract20_before21_no_wash_or_extra40) ... ok
+test_requested_quadrant_geometry_and_conditions (test_flat.FlatComparisonTests.test_requested_quadrant_geometry_and_conditions) ... ok
+test_same_bottom_up_right_first_serpentine (test_flat.FlatComparisonTests.test_same_bottom_up_right_first_serpentine) ... ok
+test_same_preparation_geometry_for_all_conditions (test_flat.FlatComparisonTests.test_same_preparation_geometry_for_all_conditions) ... ok
+test_serialized_half_and_full_seconds_tamper_rejected (test_flat.FlatComparisonTests.test_serialized_half_and_full_seconds_tamper_rejected) ... ok
+test_terminal_cleanup_once_without_final_rewet (test_flat.FlatComparisonTests.test_terminal_cleanup_once_without_final_rewet) ... ok
+test_translation_only_all_pairwise_displacements (test_flat.FlatComparisonTests.test_translation_only_all_pairwise_displacements) ... ok
+test_used_brush_state_works_at_zero_distance (test_flat.FlatComparisonTests.test_used_brush_state_works_at_zero_distance) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.828s
+
+OK

@@ -1,0 +1,27 @@
+test_air_has_no_contacts_dwell_or_immersion (test_hanji.HanjiTests.test_air_has_no_contacts_dwell_or_immersion) ... ok
+test_backend_stations_preserved_and_start_not_cleanup_park (test_hanji.HanjiTests.test_backend_stations_preserved_and_start_not_cleanup_park) ... ok
+test_color_end_multiple_20_no_redundant_load (test_hanji.HanjiTests.test_color_end_multiple_20_no_redundant_load) ... ok
+test_color_groups_bottom_up_right_first (test_hanji.HanjiTests.test_color_groups_bottom_up_right_first) ... ok
+test_contact_boundaries (test_hanji.HanjiTests.test_contact_boundaries) ... ok
+test_counted_used_brush_does_not_invent_distance (test_hanji.HanjiTests.test_counted_used_brush_does_not_invent_distance) ... ok
+test_counts_and_exact_panel_union (test_hanji.HanjiTests.test_counts_and_exact_panel_union) ... ok
+test_exact_850_continuation_requires_actual_same_condition_record (test_hanji.HanjiTests.test_exact_850_continuation_requires_actual_same_condition_record) ... ok
+test_explicit_dot_primitive_and_full_one_second (test_hanji.HanjiTests.test_explicit_dot_primitive_and_full_one_second) ... ok
+test_first40_c4_is_canonical_prefix (test_hanji.HanjiTests.test_first40_c4_is_canonical_prefix) ... ok
+test_left_start_is_configurable_without_moving_points (test_hanji.HanjiTests.test_left_start_is_configurable_without_moving_points) ... ok
+test_local_origin_and_design_z_not_renormalized (test_hanji.HanjiTests.test_local_origin_and_design_z_not_renormalized) ... ok
+test_mount_offset_applied_once_stations_unchanged (test_hanji.HanjiTests.test_mount_offset_applied_once_stations_unchanged) ... ok
+test_move_then_dwell_tamper_rejected (test_hanji.HanjiTests.test_move_then_dwell_tamper_rejected) ... ok
+test_nan_and_invalid_configuration_rejected (test_hanji.HanjiTests.test_nan_and_invalid_configuration_rejected) ... ok
+test_official_export_gates_still_block (test_hanji.HanjiTests.test_official_export_gates_still_block) ... ok
+test_paper_xy_dither_rejected (test_hanji.HanjiTests.test_paper_xy_dither_rejected) ... ok
+test_same_color_reload_no_wash_and_terminal_once (test_hanji.HanjiTests.test_same_color_reload_no_wash_and_terminal_once) ... ok
+test_source_hashes_and_original_columns_preserved (test_hanji.HanjiTests.test_source_hashes_and_original_columns_preserved) ... ok
+test_timing_dwell_is_not_travel_time (test_hanji.HanjiTests.test_timing_dwell_is_not_travel_time) ... ok
+test_unused_unmeasured_registration_not_silently_zero (test_hanji.HanjiTests.test_unused_unmeasured_registration_not_silently_zero) ... ok
+test_z_limit_and_approach_bound_rejected (test_hanji.HanjiTests.test_z_limit_and_approach_bound_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.535s
+
+OK

@@ -1,0 +1,19 @@
+{
+  "sample_step_mm": 2,
+  "sample_count": 90601,
+  "panel_sampled_maxima_mm": {
+    "1": 14.931406365888753,
+    "2": 16.656078657470594,
+    "3": 11.6072569518194,
+    "4": 17.26249368080319,
+    "5": 20.0,
+    "6": 16.828626345146045,
+    "7": 7.885218571344058,
+    "8": 8.11695927045714,
+    "9": 8.063049096655071
+  },
+  "analytic_global_upper_bound_mm": 20,
+  "upper_bound_basis": "source height=min(relief_max20,...) followed by convex blend toward discZ6; valid over whole artwork, not only selected dots",
+  "sampled_extrema_not_certified_panel_suprema": true,
+  "full_tool_or_fixture_clearance_verified": false
+}

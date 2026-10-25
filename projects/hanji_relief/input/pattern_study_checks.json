@@ -1,0 +1,180 @@
+{
+  "A": {
+    "title": "Previous selection",
+    "count": 5826,
+    "colors": {
+      "B2": 971,
+      "B1": 904,
+      "A3": 482,
+      "A4": 499,
+      "C5": 908,
+      "C4": 890,
+      "C2": 803,
+      "D4": 369
+    },
+    "ink_levels": {
+      "I3": 1941,
+      "I2": 1817,
+      "I1": 2068
+    },
+    "regions": {
+      "sea": 1735,
+      "shore": 784,
+      "mountain": 2785,
+      "moon": 261,
+      "sun": 261
+    },
+    "physical_panel_counts": {
+      "7": 835,
+      "8": 849,
+      "9": 897,
+      "4": 849,
+      "5": 882,
+      "6": 890,
+      "1": 304,
+      "2": 42,
+      "3": 278
+    },
+    "min_center_distance_mm": 4.95,
+    "max_support_centerline_distance_mm": 1.865269840916325e-14,
+    "nominal_dot_diameter_mm": 2.8,
+    "nominal_footprint_percent": 9.96
+  },
+  "B": {
+    "title": "Open cell rhythm",
+    "count": 3600,
+    "colors": {
+      "A3": 585,
+      "B1": 263,
+      "A4": 505,
+      "B2": 221,
+      "C2": 839,
+      "C4": 515,
+      "C5": 392,
+      "D4": 280
+    },
+    "ink_levels": {
+      "I1": 2033,
+      "I2": 873,
+      "I3": 694
+    },
+    "regions": {
+      "sea": 1116,
+      "shore": 436,
+      "mountain": 1526,
+      "moon": 261,
+      "sun": 261
+    },
+    "physical_panel_counts": {
+      "7": 513,
+      "8": 513,
+      "9": 568,
+      "4": 449,
+      "5": 479,
+      "6": 511,
+      "1": 282,
+      "2": 18,
+      "3": 267
+    },
+    "min_center_distance_mm": 3.500179,
+    "max_support_centerline_distance_mm": 1.865269840916325e-14,
+    "nominal_dot_diameter_mm": 2.8,
+    "nominal_footprint_percent": 6.16
+  },
+  "C": {
+    "title": "Linked cell rhythm",
+    "count": 6200,
+    "colors": {
+      "A3": 1135,
+      "B1": 626,
+      "A4": 539,
+      "B2": 346,
+      "C2": 1609,
+      "C4": 998,
+      "C5": 653,
+      "D4": 294
+    },
+    "ink_levels": {
+      "I1": 3495,
+      "I2": 1611,
+      "I3": 1094
+    },
+    "regions": {
+      "sea": 2021,
+      "shore": 766,
+      "mountain": 2891,
+      "moon": 261,
+      "sun": 261
+    },
+    "physical_panel_counts": {
+      "7": 970,
+      "8": 927,
+      "9": 986,
+      "4": 890,
+      "5": 908,
+      "6": 903,
+      "1": 306,
+      "2": 32,
+      "3": 278
+    },
+    "min_center_distance_mm": 3.500179,
+    "max_support_centerline_distance_mm": 1.865269840916325e-14,
+    "nominal_dot_diameter_mm": 2.8,
+    "nominal_footprint_percent": 10.6
+  },
+  "D": {
+    "title": "Dense cell rhythm",
+    "count": 8800,
+    "colors": {
+      "A3": 1418,
+      "B1": 723,
+      "A4": 840,
+      "B2": 357,
+      "C2": 3279,
+      "C4": 1156,
+      "C5": 727,
+      "D4": 300
+    },
+    "ink_levels": {
+      "I1": 5819,
+      "I2": 1796,
+      "I3": 1185
+    },
+    "regions": {
+      "sea": 2472,
+      "shore": 1252,
+      "mountain": 4554,
+      "moon": 261,
+      "sun": 261
+    },
+    "physical_panel_counts": {
+      "7": 1250,
+      "8": 1247,
+      "9": 1366,
+      "4": 1423,
+      "5": 1400,
+      "6": 1435,
+      "1": 326,
+      "2": 61,
+      "3": 292
+    },
+    "min_center_distance_mm": 3.500179,
+    "max_support_centerline_distance_mm": 1.865269840916325e-14,
+    "nominal_dot_diameter_mm": 2.8,
+    "nominal_footprint_percent": 15.05
+  },
+  "checks": {
+    "nested_B_C_D": true,
+    "all_centers_on_actual_ribs": true,
+    "duplicate_centers": false,
+    "unchanged_height_function": true,
+    "contains_machine_commands": false,
+    "actual_paper_measured": false
+  },
+  "motif_cell_counts": {
+    "horizontal_chain": 1142,
+    "corner_hinge": 735,
+    "vertical_chain": 286,
+    "diagonal_chain": 283
+  }
+}

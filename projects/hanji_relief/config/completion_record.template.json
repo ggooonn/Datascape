@@ -1,0 +1,15 @@
+{
+  "schema": "hanji.physical_completion.v01",
+  "physically_completed": false,
+  "mode": "paint",
+  "input_sha256": null,
+  "registration_sha256": null,
+  "physical_panel_id": 4,
+  "compression_depth_mm": 3.0,
+  "dwell_at_depth_s": 1.0,
+  "completed_dot_ids": [],
+  "operator": null,
+  "date": null,
+  "record": null,
+  "notes": "Template only. Do not mark AIR/planned contact as completed; bind actual same-condition artwork/registration records before exclusion."
+}

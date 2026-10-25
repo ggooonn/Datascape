@@ -1,0 +1,9 @@
+{
+  "files_hashed": 19,
+  "jobs_regenerated": 2,
+  "numeric_readback_verified": true,
+  "bed_first_touch_g54_z_mm": 10,
+  "fixed_hover_g54_z_mm": 35,
+  "operator_accepted_nominal_gap_mm": 5,
+  "hardware_transmission": false
+}

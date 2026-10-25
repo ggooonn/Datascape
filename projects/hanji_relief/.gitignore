@@ -1,0 +1,6 @@
+# Committed numeric reviews are explicit offline artifacts, never device exports.
+!review/**/*.gcode
+!runs/**/*.gcode
+runs/.datascape-stage-*/
+review/.datascape-stage-*/
+__pycache__/
