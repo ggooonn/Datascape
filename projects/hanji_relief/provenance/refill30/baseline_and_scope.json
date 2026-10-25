@@ -13,9 +13,11 @@
   "default_dwell_s": 1,
   "default_refill_contacts": 30,
   "flat_comparison_refill_contacts": 20,
-  "bed_touch10_status": "conditional near-touch interpretation, not measured registration",
+  "bed_touch10_status": "model/bed datum relation confirmed by operator; exact bed first touch still near-touch reference",
   "default_review_surface_offset_mm": 0,
   "full_plus10_hover35_clearance_mm": 5,
   "required_clearance_mm": 10,
-  "physical_execution_performed": false
+  "physical_execution_performed": false,
+  "model_design_zero_is_bed_confirmed_by_operator": true,
+  "bed_first_touch_z_exact_measurement_confirmed": false
 }

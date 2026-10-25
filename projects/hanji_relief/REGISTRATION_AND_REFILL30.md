@@ -22,7 +22,7 @@ Use **P1-P9 for physical panels in front view**, top-left to bottom-right. Retai
 
 ## What bed touch at G54 Z10 means
 
-The operator proposes mounting the brush so it nearly touches the bed at G54 Z10. If that bed is exactly the relief model's lower datum, its physical height is0mm while the controller still reads G54 Z10. These are different frames; no G92 or work-offset write is needed or added.
+The operator confirms that the relief model's lower datum is the same bed plane. The brush is described as nearly touching that bed at G54 Z10; the exact first-touch reading has not yet been supplied as a measured registration. Thus the bed's physical height is0mm while the controller reference is approximately G54 Z10. These are different frames; no G92 or work-offset write is needed or added.
 
 Let `B` be the measured G54 Z for first brush-tip touch at the installed model's design-height0 datum. With unchanged brush mounting:
 
@@ -42,7 +42,7 @@ The source20mm ceiling is measured from the source model datum and **already inc
 
 Flat paper touch at10 and bare-bed touch at10 are not automatically identical: paper thickness, backing, fixtures and installation height change the datum. Likewise, nearly touching is a preliminary setup observation, not a recorded exact first-touch calibration. Record one actual first touch at a known design-height point on the mounted P4: `B = measured_touch - design_height - measured_local_delta`. Several points are needed to assess local variation. A flat comparison cannot establish this relief registration by itself.
 
-`config/review.bed_touch10_candidate.json` records the conditional +10offset interpretation only. It is not measured registration, does not change the default scenario and has no generated run-approved program. Existing offset0 review G-code does **not** include this +10.
+`config/review.bed_touch10_candidate.json` records the+10offset candidate and the operator-confirmed bed/model datum relationship. Exact brush first touch remains a near-touch reference, not an exact measured value. It is not measured registration, does not change the default scenario and has no generated run-approved program. Existing offset0 review G-code does **not** include this +10.
 
 ## The remaining Z35 clearance conflict
 
