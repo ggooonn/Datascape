@@ -1,0 +1,923 @@
+{
+  "config": {
+    "schema_version": 1,
+    "seed": 2026102601,
+    "artistic_base_commit": "d30ac7be302e1cbfcd2cf66de9087e35ea091b6c",
+    "spring_physical_reference_commit": "9665b92a7ab78ce44a135c191eb6c259a3cb03f6",
+    "selected_view": "C_east",
+    "selection_reason": "Closest unfitted P2-P3 skyline height, rising lowland-to-high-ridge counter-rhythm, room for vegetation below a distinct right-hand summit; slope reversal remains visible and provisional.",
+    "input_sha256": {
+      "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+    },
+    "minimum_visible_path_mm": 2.8,
+    "far_surface_micro_B_enabled": false,
+    "summer_progression": {
+      "transition_center_mm": 300,
+      "transition_width_mm": 180,
+      "foliage_vigor": [
+        1.02,
+        1.22
+      ],
+      "foliage_unit_count_scale": [
+        1.0,
+        1.15
+      ],
+      "stem_ratio": [
+        0.94,
+        0.9
+      ],
+      "interpretation": "Smooth cross-pair growth modifier; actual groups remain unequal, with open corridors. No jump at the panel seam."
+    },
+    "near_groups": [
+      {
+        "id": "left-bank",
+        "center_mm": [
+          100,
+          755
+        ],
+        "members": [
+          [
+            -33,
+            7,
+            68,
+            "B"
+          ],
+          [
+            -8,
+            -12,
+            100,
+            "B"
+          ],
+          [
+            19,
+            4,
+            78,
+            "P"
+          ],
+          [
+            1,
+            25,
+            45,
+            "U"
+          ]
+        ]
+      },
+      {
+        "id": "middle-relay",
+        "center_mm": [
+          256,
+          680
+        ],
+        "members": [
+          [
+            -16,
+            4,
+            48,
+            "B"
+          ],
+          [
+            6,
+            -8,
+            64,
+            "P"
+          ],
+          [
+            23,
+            9,
+            38,
+            "U"
+          ]
+        ]
+      },
+      {
+        "id": "right-grove",
+        "center_mm": [
+          445,
+          761
+        ],
+        "members": [
+          [
+            -38,
+            4,
+            66,
+            "B"
+          ],
+          [
+            -13,
+            -10,
+            112,
+            "B"
+          ],
+          [
+            13,
+            -3,
+            91,
+            "P"
+          ],
+          [
+            38,
+            8,
+            76,
+            "B"
+          ],
+          [
+            57,
+            18,
+            44,
+            "U"
+          ]
+        ]
+      },
+      {
+        "id": "right-relay",
+        "center_mm": [
+          538,
+          640
+        ],
+        "members": [
+          [
+            -14,
+            3,
+            47,
+            "P"
+          ],
+          [
+            7,
+            -9,
+            58,
+            "B"
+          ],
+          [
+            24,
+            11,
+            35,
+            "U"
+          ]
+        ]
+      }
+    ],
+    "rocks": [
+      {
+        "id": "left-bank-rock",
+        "target_mm": [
+          106,
+          782
+        ],
+        "width_mm": 105,
+        "height_mm": 34,
+        "major_count": 3,
+        "group": "left-bank"
+      },
+      {
+        "id": "middle-rock",
+        "target_mm": [
+          274,
+          698
+        ],
+        "width_mm": 75,
+        "height_mm": 26,
+        "major_count": 2,
+        "group": "middle-relay"
+      },
+      {
+        "id": "right-bank-rock",
+        "target_mm": [
+          454,
+          801
+        ],
+        "width_mm": 130,
+        "height_mm": 42,
+        "major_count": 3,
+        "group": "right-grove"
+      }
+    ],
+    "mid_far_groups": [
+      {
+        "id": "middle-left",
+        "center_mm": [
+          122,
+          539
+        ],
+        "q_range_m": [
+          1600,
+          3300
+        ],
+        "radius_mm": [
+          90,
+          48
+        ],
+        "count": 28,
+        "height_mm": [
+          15,
+          28
+        ]
+      },
+      {
+        "id": "middle-right",
+        "center_mm": [
+          422,
+          576
+        ],
+        "q_range_m": [
+          1500,
+          3500
+        ],
+        "radius_mm": [
+          105,
+          58
+        ],
+        "count": 39,
+        "height_mm": [
+          16,
+          33
+        ]
+      },
+      {
+        "id": "middle-bridge",
+        "center_mm": [
+          307,
+          444
+        ],
+        "q_range_m": [
+          1700,
+          4100
+        ],
+        "radius_mm": [
+          60,
+          40
+        ],
+        "count": 16,
+        "height_mm": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": "far-left",
+        "center_mm": [
+          142,
+          321
+        ],
+        "q_range_m": [
+          3000,
+          11000
+        ],
+        "radius_mm": [
+          112,
+          50
+        ],
+        "count": 27,
+        "height_mm": [
+          5,
+          11
+        ]
+      },
+      {
+        "id": "far-right",
+        "center_mm": [
+          449,
+          270
+        ],
+        "q_range_m": [
+          3000,
+          11000
+        ],
+        "radius_mm": [
+          118,
+          50
+        ],
+        "count": 33,
+        "height_mm": [
+          5,
+          12
+        ]
+      }
+    ],
+    "virtual_color_groups": {
+      "canopy_core": {
+        "preview_hex": "#477766",
+        "meaning": "Connected cool vegetation bodies; virtual study color, no pigment slot"
+      },
+      "canopy_edge": {
+        "preview_hex": "#a1ab70",
+        "meaning": "Open light growth edges; virtual study color, no pigment slot"
+      },
+      "distance": {
+        "preview_hex": "#6a9299",
+        "meaning": "Atmospheric distant vegetation and selected terrain passages"
+      },
+      "earth": {
+        "preview_hex": "#a48b68",
+        "meaning": "Restrained exposed ground / rock intervals"
+      }
+    }
+  },
+  "config_sha256": "fbbeec0f8594614f167499b013002ec3979212b0bb1b07e552bd5d8ca714a1a0",
+  "source": {
+    "master": {
+      "filename": "SeoulNorth_v02_MASTER_30m.tif",
+      "sha256": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        30.0,
+        30.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4151990.0,
+        334290.0,
+        4175900.0
+      ],
+      "shape": [
+        797,
+        900
+      ],
+      "transform": [
+        30.0,
+        0.0,
+        307290.0,
+        0.0,
+        -30.0,
+        4175900.0
+      ],
+      "bands": [
+        "DEM",
+        "SLOPE",
+        "ASPECT",
+        "HILLSHADE",
+        "DEM_NASA",
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0
+    },
+    "vegetation": {
+      "filename": "SeoulNorth_v02_VEG_10m.tif",
+      "sha256": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5",
+      "crs": "EPSG:32652",
+      "resolution_m": [
+        10.0,
+        10.0
+      ],
+      "bounds_m": [
+        307290.0,
+        4152000.0,
+        334290.0,
+        4175880.0
+      ],
+      "shape": [
+        2388,
+        2700
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        307290.0,
+        0.0,
+        -10.0,
+        4175880.0
+      ],
+      "bands": [
+        "NDVI_SPRING",
+        "NDVI_SUMMER",
+        "NDVI_AUTUMN",
+        "NDVI_WINTER",
+        "N_SPRING",
+        "N_SUMMER",
+        "N_AUTUMN",
+        "N_WINTER"
+      ],
+      "nodata": -9999.0
+    },
+    "site": {
+      "eye_xy_utm_m": [
+        327105,
+        4170785
+      ],
+      "eye_lon_lat_wgs84": [
+        127.03965236328693,
+        37.66797463769285
+      ],
+      "source_dem_at_eye_m": 30.968303680419922,
+      "eye_clearance_above_dem_m": 2.0,
+      "exported_slope_at_eye_deg": 1.0,
+      "camera": {
+        "eye_xyz_m": [
+          327105,
+          4170785,
+          32.96830368041992
+        ],
+        "azimuth_deg": 233.67816888524078,
+        "pitch_deg": 0.0,
+        "vertical_fov_deg": 36.0,
+        "near_m": 1.0,
+        "pitch_convention": "Positive upward, unlike the earlier downward camera elevation",
+        "vertical_exaggeration": 1.0,
+        "projection": "Physical pinhole in raw DEM meters"
+      }
+    }
+  },
+  "terrain": {
+    "A": {
+      "raw_paths": 1738,
+      "raw_length_mm": 197430.91153777187,
+      "spline_fallbacks": 967
+    },
+    "C": {
+      "integrated_parent_paths": 960,
+      "depth_window_candidates": 2116
+    },
+    "D": {
+      "raw_candidates": 249,
+      "ranked_pieces": 112,
+      "selected_events": 70,
+      "length_budget_mm": 4751.181266892765,
+      "selected_length_mm": 1228.7127424273904,
+      "type_length_mm": {
+        "skyline": 32.94771625041507,
+        "crest": 584.770101759472,
+        "occlusion": 321.2158379101196,
+        "slope_break_proxy": 151.70535949110925,
+        "foothold_rim_proxy": 138.26269720980076
+      },
+      "minimum_spacing_mm": 6,
+      "target_all_length_fraction": 0.04
+    },
+    "masses": [
+      {
+        "label": 1,
+        "seed_pixel_xy": [
+          342,
+          120
+        ],
+        "seed_source_xyz_m": [
+          321079.71765513724,
+          4166945.332687047,
+          710.5090041983686
+        ],
+        "crest_pixel_xy": [
+          342,
+          120
+        ],
+        "crest_source_xyz_m": [
+          321079.71765513724,
+          4166945.332687047,
+          710.5090041983686
+        ],
+        "pixels": 6206,
+        "bounds_mm": [
+          241,
+          120,
+          412,
+          228
+        ],
+        "relative_foot_elevation_m": 513.9072847976811,
+        "relative_crest_elevation_m": 693.5794080063706,
+        "relief_m": 179.67212320868953
+      },
+      {
+        "label": 2,
+        "seed_pixel_xy": [
+          572,
+          138
+        ],
+        "seed_source_xyz_m": [
+          321795.32400610414,
+          4169626.461610703,
+          774.3002997919062
+        ],
+        "crest_pixel_xy": [
+          571,
+          138
+        ],
+        "crest_source_xyz_m": [
+          321803.26443161897,
+          4169620.77921746,
+          774.5202918325933
+        ],
+        "pixels": 22899,
+        "bounds_mm": [
+          465,
+          138,
+          600,
+          398
+        ],
+        "relative_foot_elevation_m": 241.1114259181779,
+        "relative_crest_elevation_m": 730.1458010667724,
+        "relief_m": 489.03437514859445
+      },
+      {
+        "label": 3,
+        "seed_pixel_xy": [
+          399,
+          186
+        ],
+        "seed_source_xyz_m": [
+          322096.19504682685,
+          4168209.4328885665,
+          594.7168696778402
+        ],
+        "crest_pixel_xy": [
+          467,
+          192
+        ],
+        "crest_source_xyz_m": [
+          322155.59645753313,
+          4168878.6060979757,
+          605.6959140300969
+        ],
+        "pixels": 31395,
+        "bounds_mm": [
+          282,
+          186,
+          513,
+          407
+        ],
+        "relative_foot_elevation_m": 167.62725597222558,
+        "relative_crest_elevation_m": 565.7830297924211,
+        "relief_m": 398.15577382019546
+      },
+      {
+        "label": 4,
+        "seed_pixel_xy": [
+          323,
+          182
+        ],
+        "seed_source_xyz_m": [
+          322184.8651939749,
+          4167445.038433762,
+          584.6444161950812
+        ],
+        "crest_pixel_xy": [
+          322,
+          182
+        ],
+        "crest_source_xyz_m": [
+          322191.59114588145,
+          4167438.141186548,
+          584.7181899480877
+        ],
+        "pixels": 6976,
+        "bounds_mm": [
+          274,
+          182,
+          352,
+          356
+        ],
+        "relative_foot_elevation_m": 246.47360079249015,
+        "relative_crest_elevation_m": 561.3095851647342,
+        "relief_m": 314.83598437224407
+      },
+      {
+        "label": 5,
+        "seed_pixel_xy": [
+          233,
+          221
+        ],
+        "seed_source_xyz_m": [
+          322863.16652970435,
+          4166909.1126550455,
+          483.41166056774335
+        ],
+        "crest_pixel_xy": [
+          278,
+          211
+        ],
+        "crest_source_xyz_m": [
+          322486.693147163,
+          4167138.5655447775,
+          503.2166541424796
+        ],
+        "pixels": 25510,
+        "bounds_mm": [
+          77,
+          211,
+          304,
+          417
+        ],
+        "relative_foot_elevation_m": 81.04785649004052,
+        "relative_crest_elevation_m": 446.2290854960685,
+        "relief_m": 365.18122900602793
+      },
+      {
+        "label": 6,
+        "seed_pixel_xy": [
+          67,
+          319
+        ],
+        "seed_source_xyz_m": [
+          323968.14250824956,
+          4165966.2881393367,
+          216.91744127894697
+        ],
+        "crest_pixel_xy": [
+          154,
+          270
+        ],
+        "crest_source_xyz_m": [
+          323293.58149793994,
+          4166326.032250637,
+          340.21706348657716
+        ],
+        "pixels": 12600,
+        "bounds_mm": [
+          0,
+          269,
+          157,
+          433
+        ],
+        "relative_foot_elevation_m": 51.172902147393955,
+        "relative_crest_elevation_m": 306.3242366150936,
+        "relief_m": 255.15133446769963
+      },
+      {
+        "label": 7,
+        "seed_pixel_xy": [
+          591,
+          512
+        ],
+        "seed_source_xyz_m": [
+          324963.9978212495,
+          4170556.422428753,
+          149.84599149344402
+        ],
+        "crest_pixel_xy": [
+          598,
+          511
+        ],
+        "crest_source_xyz_m": [
+          324945.4610069519,
+          4170576.7042152085,
+          153.05974075365648
+        ],
+        "pixels": 5914,
+        "bounds_mm": [
+          512,
+          441,
+          600,
+          558
+        ],
+        "relative_foot_elevation_m": 72.30019394686795,
+        "relative_crest_elevation_m": 147.31376558820983,
+        "relief_m": 75.01357164134188
+      },
+      {
+        "label": 9,
+        "seed_pixel_xy": [
+          456,
+          512
+        ],
+        "seed_source_xyz_m": [
+          325151.0259272383,
+          4170103.239776421,
+          102.59002245727675
+        ],
+        "crest_pixel_xy": [
+          599,
+          324
+        ],
+        "crest_source_xyz_m": [
+          323141.4751830288,
+          4170152.760630114,
+          358.31153177697877
+        ],
+        "pixels": 24051,
+        "bounds_mm": [
+          382,
+          324,
+          600,
+          562
+        ],
+        "relative_foot_elevation_m": 60.67610066930736,
+        "relative_crest_elevation_m": 290.47653876544285,
+        "relief_m": 229.8004380961355
+      },
+      {
+        "label": 10,
+        "seed_pixel_xy": [
+          278,
+          494
+        ],
+        "seed_source_xyz_m": [
+          325388.3845926832,
+          4169411.0535668363,
+          99.67188269340292
+        ],
+        "crest_pixel_xy": [
+          347,
+          392
+        ],
+        "crest_source_xyz_m": [
+          323849.2147908137,
+          4168773.9405362974,
+          132.02690536620406
+        ],
+        "pixels": 19453,
+        "bounds_mm": [
+          150,
+          392,
+          379,
+          542
+        ],
+        "relative_foot_elevation_m": 42.74809484723173,
+        "relative_crest_elevation_m": 111.04173391340447,
+        "relief_m": 68.29363906617274
+      },
+      {
+        "label": 11,
+        "seed_pixel_xy": [
+          380,
+          501
+        ],
+        "seed_source_xyz_m": [
+          325198.0211291086,
+          4169792.0421151454,
+          95.56780023828594
+        ],
+        "crest_pixel_xy": [
+          437,
+          360
+        ],
+        "crest_source_xyz_m": [
+          323652.5177064521,
+          4169314.8094036966,
+          243.32826820367077
+        ],
+        "pixels": 15608,
+        "bounds_mm": [
+          303,
+          360,
+          453,
+          563
+        ],
+        "relative_foot_elevation_m": 46.26767416337272,
+        "relative_crest_elevation_m": 203.2601872099614,
+        "relief_m": 156.99251304658867
+      },
+      {
+        "label": 15,
+        "seed_pixel_xy": [
+          196,
+          206
+        ],
+        "seed_source_xyz_m": [
+          321953.76498288126,
+          4165537.9727727715,
+          453.9114488599724
+        ],
+        "crest_pixel_xy": [
+          196,
+          206
+        ],
+        "crest_source_xyz_m": [
+          321953.76498288126,
+          4165537.9727727715,
+          453.9114488599724
+        ],
+        "pixels": 1984,
+        "bounds_mm": [
+          117,
+          206,
+          237,
+          282
+        ],
+        "relative_foot_elevation_m": 271.4280406658087,
+        "relative_crest_elevation_m": 437.13386618059025,
+        "relief_m": 165.70582551478157
+      },
+      {
+        "label": 16,
+        "seed_pixel_xy": [
+          85,
+          235
+        ],
+        "seed_source_xyz_m": [
+          322050.4980706993,
+          4163651.1093351934,
+          332.76900906225524
+        ],
+        "crest_pixel_xy": [
+          87,
+          235
+        ],
+        "crest_source_xyz_m": [
+          322037.2623555423,
+          4163674.413491563,
+          332.8664034733856
+        ],
+        "pixels": 4856,
+        "bounds_mm": [
+          0,
+          235,
+          130,
+          337
+        ],
+        "relative_foot_elevation_m": 127.03144971994413,
+        "relative_crest_elevation_m": 312.8508607237074,
+        "relief_m": 185.81941100376326
+      }
+    ],
+    "mountain_solver": {
+      "solver_status": "solved",
+      "iterations": 400,
+      "variables": 173596,
+      "normal_constraints": 175764,
+      "min_phase_ratio_checked": 0.0499998999998691,
+      "nonpositive_phase_derivative_pixels": 0,
+      "maximum_phase_change": 5.59996362893787,
+      "target_rms_error": 0.4971062458440911,
+      "primal_residual": 2.9003768347219165e-15,
+      "dual_residual": 6.275708852019521e-14,
+      "solve_time_seconds": 23.064280683,
+      "correction": {
+        "shape": [
+          900,
+          600
+        ],
+        "min": -5.59996362893787,
+        "max": 5.599837584423278
+      },
+      "phase_ratio": {
+        "shape": [
+          900,
+          600
+        ],
+        "min": 0.0499998999998691,
+        "max": 5.812576902337999
+      },
+      "safe": {
+        "shape": [
+          900,
+          600
+        ],
+        "min": 0.0,
+        "max": 1.0
+      },
+      "variable": {
+        "shape": [
+          900,
+          600
+        ],
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "foreground_solver": {
+      "solver_status": "solved",
+      "iterations": 25,
+      "variables": 196060,
+      "normal_constraints": 197252,
+      "min_phase_ratio_checked": 0.41173088226261445,
+      "nonpositive_phase_derivative_pixels": 0,
+      "maximum_phase_change": 2.4999994460830424,
+      "target_rms_error": 0.027317507828388453,
+      "primal_residual": 8.297308660924208e-15,
+      "dual_residual": 5.29425590034549e-07,
+      "solve_time_seconds": 1.769081367,
+      "correction": {
+        "shape": [
+          900,
+          600
+        ],
+        "min": -2.4999994460830424,
+        "max": 0.5757838988105597
+      },
+      "phase_ratio": {
+        "shape": [
+          900,
+          600
+        ],
+        "min": 0.0499998999998691,
+        "max": 5.812576902337999
+      },
+      "safe": {
+        "shape": [
+          900,
+          600
+        ],
+        "min": 0.0,
+        "max": 1.0
+      },
+      "variable": {
+        "shape": [
+          900,
+          600
+        ],
+        "min": 0.0,
+        "max": 1.0
+      }
+    }
+  },
+  "selected_view": "C_east",
+  "far_micro_B_enabled": false,
+  "production_Gcode_generated": false,
+  "Spring_modified": false,
+  "visibility": "Accepted reciprocal 2.5D catalog gates and exact original-arc interval clipping; nominal widths, no wet-brush certificate"
+}

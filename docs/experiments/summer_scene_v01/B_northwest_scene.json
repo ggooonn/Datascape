@@ -1,0 +1,100 @@
+{
+  "study": "Spring Pair Composition Refinement v0.1",
+  "base_pr_head": "a2ca981c94fa0ddd81ff8e48597ffbc3ca067443",
+  "primary_eye_xy_m": [
+    319605,
+    4171385
+  ],
+  "eye_clearance_m": 2.0,
+  "look_target_xy_m": [
+    321720,
+    4171370
+  ],
+  "pitch_deg": 0.0,
+  "vertical_fov_deg": 36.0,
+  "near_m": 1.0,
+  "primary_bounds_m": [
+    315000,
+    4162500,
+    330000,
+    4175700
+  ],
+  "raster_pixels": [
+    600,
+    900
+  ],
+  "mesh_stride": 1,
+  "depth_edges_m": [
+    600,
+    2200
+  ],
+  "composite": {
+    "near_width_m": 650.0,
+    "width_growth": 0.85,
+    "bottom_fraction": 1.02,
+    "depth_rise": 0.76,
+    "depth_scale_m": 1500.0,
+    "near_middle_transition_m": [
+      400,
+      1000
+    ],
+    "middle_far_transition_m": [
+      1800,
+      3200
+    ],
+    "height_coefficients_per_km": [
+      0.14,
+      0.25,
+      0.38
+    ]
+  },
+  "search": {
+    "bounds_m": [
+      315000,
+      4162500,
+      330000,
+      4175700
+    ],
+    "raster_pixels": [
+      300,
+      450
+    ],
+    "mesh_stride": 2,
+    "pitch_deg": 1.0,
+    "vertical_fov_deg": 48.0,
+    "eye_sites_m": [
+      [
+        325605,
+        4166585
+      ],
+      [
+        327105,
+        4170785
+      ],
+      [
+        325305,
+        4168385
+      ],
+      [
+        317205,
+        4168985
+      ],
+      [
+        319605,
+        4171385
+      ],
+      [
+        321105,
+        4175285
+      ]
+    ]
+  },
+  "physical_gap_mm": 40,
+  "painted_panel_mm": [
+    300,
+    900
+  ],
+  "random_seed": null,
+  "randomness": "None; deterministic view/composition study",
+  "reference_note": "User-supplied painting image reviewed for low foreground / middle passage / distant mountain arrangement only; no depicted object is asserted in the DEM"
+}
