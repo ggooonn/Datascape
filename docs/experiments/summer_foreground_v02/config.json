@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "seed": 2026102601,
+  "artistic_base_commit": "d30ac7be302e1cbfcd2cf66de9087e35ea091b6c",
+  "spring_physical_reference_commit": "9665b92a7ab78ce44a135c191eb6c259a3cb03f6",
+  "selected_view": "C_east",
+  "selection_reason": "Closest unfitted P2-P3 skyline height, rising lowland-to-high-ridge counter-rhythm, room for vegetation below a distinct right-hand summit; slope reversal remains visible and provisional.",
+  "input_sha256": {
+    "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+    "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+  },
+  "minimum_visible_path_mm": 2.8,
+  "far_surface_micro_B_enabled": false,
+  "summer_progression": {
+    "transition_center_mm": 300,
+    "transition_width_mm": 180,
+    "foliage_vigor": [
+      1.03,
+      1.28
+    ],
+    "foliage_unit_count_scale": [
+      1.03,
+      1.22
+    ],
+    "stem_ratio": [
+      0.92,
+      0.88
+    ],
+    "interpretation": "Smooth cross-pair growth modifier; actual groups remain unequal, with open corridors. No jump at the panel seam."
+  },
+  "near_groups": [
+    {
+      "id": "v02-left-bank",
+      "center_mm": [
+        94.5,
+        773.5
+      ],
+      "members": [
+        [
+          -45.0,
+          -3.0,
+          80,
+          "U"
+        ],
+        [
+          -25.0,
+          3.0,
+          118,
+          "B"
+        ],
+        [
+          -4.0,
+          2.0,
+          158,
+          "P"
+        ],
+        [
+          3.0,
+          8.0,
+          133,
+          "B"
+        ],
+        [
+          6.0,
+          17.0,
+          98,
+          "B"
+        ],
+        [
+          87.0,
+          9.0,
+          58,
+          "U"
+        ]
+      ]
+    },
+    {
+      "id": "v02-central-relay",
+      "center_mm": [
+        254.5,
+        692.5
+      ],
+      "members": [
+        [
+          -21.0,
+          -1.0,
+          78,
+          "B"
+        ],
+        [
+          0.0,
+          0.0,
+          120,
+          "P"
+        ],
+        [
+          23.0,
+          -3.0,
+          58,
+          "U"
+        ]
+      ]
+    },
+    {
+      "id": "v02-right-grove",
+      "center_mm": [
+        444.5,
+        808.5
+      ],
+      "members": [
+        [
+          -54.0,
+          -6.0,
+          103,
+          "B"
+        ],
+        [
+          -32.0,
+          1.0,
+          142,
+          "B"
+        ],
+        [
+          -9.0,
+          5.0,
+          188,
+          "B"
+        ],
+        [
+          15.0,
+          1.0,
+          161,
+          "P"
+        ],
+        [
+          39.0,
+          -5.0,
+          132,
+          "B"
+        ],
+        [
+          57.0,
+          -11.0,
+          92,
+          "B"
+        ],
+        [
+          64.0,
+          -15.0,
+          53,
+          "U"
+        ]
+      ]
+    },
+    {
+      "id": "v02-right-back",
+      "center_mm": [
+        539.5,
+        684.5
+      ],
+      "members": [
+        [
+          -18.0,
+          1.0,
+          81,
+          "P"
+        ],
+        [
+          3.0,
+          1.0,
+          118,
+          "B"
+        ],
+        [
+          22.0,
+          -5.0,
+          54,
+          "U"
+        ]
+      ]
+    }
+  ],
+  "rocks": [
+    {
+      "id": "v02-left-bank-formation",
+      "group": "v02-left-bank",
+      "target_mm": [
+        94.5,
+        791.5
+      ],
+      "width_mm": 164,
+      "height_mm": 53,
+      "major_count": 3,
+      "support_dx_mm": 0,
+      "support_dy_mm": 18
+    },
+    {
+      "id": "v02-central-relay-formation",
+      "group": "v02-central-relay",
+      "target_mm": [
+        262.5,
+        704.5
+      ],
+      "width_mm": 100,
+      "height_mm": 34,
+      "major_count": 2,
+      "support_dx_mm": 8,
+      "support_dy_mm": 12
+    },
+    {
+      "id": "v02-right-grove-formation",
+      "group": "v02-right-grove",
+      "target_mm": [
+        444.5,
+        828.5
+      ],
+      "width_mm": 196,
+      "height_mm": 64,
+      "major_count": 4,
+      "support_dx_mm": 0,
+      "support_dy_mm": 20
+    },
+    {
+      "id": "v02-right-back-formation",
+      "group": "v02-right-back",
+      "target_mm": [
+        539.5,
+        697.5
+      ],
+      "width_mm": 88,
+      "height_mm": 29,
+      "major_count": 2,
+      "support_dx_mm": 0,
+      "support_dy_mm": 13
+    }
+  ],
+  "mid_far_groups": [
+    {
+      "id": "middle-left",
+      "center_mm": [
+        122,
+        539
+      ],
+      "q_range_m": [
+        1600,
+        3300
+      ],
+      "radius_mm": [
+        90,
+        48
+      ],
+      "count": 28,
+      "height_mm": [
+        15,
+        28
+      ]
+    },
+    {
+      "id": "middle-right",
+      "center_mm": [
+        422,
+        576
+      ],
+      "q_range_m": [
+        1500,
+        3500
+      ],
+      "radius_mm": [
+        105,
+        58
+      ],
+      "count": 39,
+      "height_mm": [
+        16,
+        33
+      ]
+    },
+    {
+      "id": "middle-bridge",
+      "center_mm": [
+        307,
+        444
+      ],
+      "q_range_m": [
+        1700,
+        4100
+      ],
+      "radius_mm": [
+        60,
+        40
+      ],
+      "count": 16,
+      "height_mm": [
+        12,
+        24
+      ]
+    },
+    {
+      "id": "far-left",
+      "center_mm": [
+        142,
+        321
+      ],
+      "q_range_m": [
+        3000,
+        11000
+      ],
+      "radius_mm": [
+        112,
+        50
+      ],
+      "count": 27,
+      "height_mm": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": "far-right",
+      "center_mm": [
+        449,
+        270
+      ],
+      "q_range_m": [
+        3000,
+        11000
+      ],
+      "radius_mm": [
+        118,
+        50
+      ],
+      "count": 33,
+      "height_mm": [
+        5,
+        12
+      ]
+    }
+  ],
+  "virtual_color_groups": {
+    "canopy_core": {
+      "preview_hex": "#477766",
+      "meaning": "Connected cool vegetation bodies; virtual study color, no pigment slot"
+    },
+    "canopy_edge": {
+      "preview_hex": "#a1ab70",
+      "meaning": "Open light growth edges; virtual study color, no pigment slot"
+    },
+    "distance": {
+      "preview_hex": "#6a9299",
+      "meaning": "Atmospheric distant vegetation and selected terrain passages"
+    },
+    "earth": {
+      "preview_hex": "#a48b68",
+      "meaning": "Restrained exposed ground / rock intervals"
+    }
+  },
+  "case": "summer-v02",
+  "season": "summer",
+  "panels": [
+    3,
+    4
+  ],
+  "ground": {
+    "support_radius_m": [
+      165,
+      130
+    ]
+  }
+}

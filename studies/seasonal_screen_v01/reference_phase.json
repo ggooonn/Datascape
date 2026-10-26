@@ -1,0 +1,7 @@
+{
+  "parent_commit": "f2d03a592aec0e43368557391696f3b4c940db69",
+  "original_archive_sha256": "90f0793978a9e2f2ac6a6c4eb3993c14b96b1be945e450831d956b52c4fbd3a3",
+  "phase_array_sha256": "562d94d26eb85409aaf6272817d9a56b1ba0a3a23fff51fb91e6745775e9e546",
+  "retained_phase_sha256": "40118cf797d39462b3872bd326ce744784f369c28cdeacf9d6759aa4c82f02f7",
+  "precision": "Original Summer v01 diagnostic float32 A phase; no resampling or new geometry"
+}
