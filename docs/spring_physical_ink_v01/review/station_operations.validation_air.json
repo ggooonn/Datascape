@@ -1,0 +1,1 @@
+[{"action":"wash","after_command":15,"station":"NEW_WATER_CONTAINER"},{"action":"absorbent_contact","after_command":24,"station":"sponge"},{"action":"controlled_rewet","after_command":38,"station":"NEW_WATER_CONTAINER"},{"action":"pigment_load","after_command":58,"station":"light_ink"},{"action":"pigment_load","after_command":78,"station":"dark_ink"}]
