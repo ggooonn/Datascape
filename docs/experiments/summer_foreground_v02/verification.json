@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "checks": {
+    "ink": {
+      "paths": 5270,
+      "length_mm": 125812.17690075414,
+      "max_source_hausdorff_error_mm": 0.0
+    },
+    "color": {
+      "paths": 2472,
+      "length_mm": 16984.430511468774,
+      "max_source_hausdorff_error_mm": 0.0
+    },
+    "panels": {
+      "max_source_length_error_mm": 7.105427357601002e-15,
+      "max_geometry_error_mm": 5.684341886080802e-14,
+      "short_seam_fragments": [
+        {
+          "id": "summer/middle-bridge/body-0/M2/ink/axis/P3-0",
+          "length_mm": 1.9872513500142097
+        },
+        {
+          "id": "summer/middle-bridge/body-7/M2/color/branch-0/ray-1/P3-0",
+          "length_mm": 0.20990321567596593
+        },
+        {
+          "id": "summer/middle-bridge/body-0/M2/ink/branch-1/P4-0",
+          "length_mm": 1.1073354736210717
+        },
+        {
+          "id": "summer/middle-bridge/body-5/M2/color/branch-0/ray-0/P4-0",
+          "length_mm": 1.8022443941504969
+        },
+        {
+          "id": "summer/middle-bridge/body-5/M2/color/branch-2/ray-0/P4-0",
+          "length_mm": 0.3828002892765385
+        },
+        {
+          "id": "summer/middle-bridge/body-5/M2/color/branch-2/ray-4/P4-0",
+          "length_mm": 0.09146710366114634
+        },
+        {
+          "id": "summer/middle-bridge/body-5/M2/color/branch-2/ray-5/P4-0",
+          "length_mm": 1.9696420258979241
+        }
+      ]
+    },
+    "unchanged_full_middle_far_records": 4583
+  },
+  "baseline_inherited_files_verified": 1041,
+  "inherited_changes": [],
+  "ledger_entries": 3586,
+  "no_production_Gcode": true
+}
