@@ -1,0 +1,24 @@
+{
+  "independent_process_without_private_cache": true,
+  "canonical_files_byte_identical": {
+    "summer_ink.json.gz": true,
+    "summer_color_intent.json.gz": true,
+    "authoring_sources.json.gz": true,
+    "visibility_ledger.json.gz": true,
+    "P3.vectors.json.gz": true,
+    "P4.vectors.json.gz": true,
+    "placement.json": true,
+    "summer_ink.svg": true,
+    "summer_scene.svg": true,
+    "P3.svg": true,
+    "P4.svg": true,
+    "stroke_statistics.json": true
+  },
+  "optional_NPZ_diagnostics_in_byte_identity_claim": false,
+  "delivered_NPZ_decodes": true,
+  "test_results": {
+    "summer_regression_tests_passed": 7,
+    "accepted_component_tests_passed": 25,
+    "accepted_tree_subtests_passed": 16
+  }
+}

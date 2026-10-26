@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "seed": 2026102601,
+  "artistic_base_commit": "d30ac7be302e1cbfcd2cf66de9087e35ea091b6c",
+  "spring_physical_reference_commit": "9665b92a7ab78ce44a135c191eb6c259a3cb03f6",
+  "selected_view": "C_east",
+  "selection_reason": "Closest unfitted P2-P3 skyline height, rising lowland-to-high-ridge counter-rhythm, room for vegetation below a distinct right-hand summit; slope reversal remains visible and provisional.",
+  "input_sha256": {
+    "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+    "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+  },
+  "minimum_visible_path_mm": 2.8,
+  "far_surface_micro_B_enabled": false,
+  "summer_progression": {
+    "transition_center_mm": 300,
+    "transition_width_mm": 180,
+    "foliage_vigor": [
+      1.02,
+      1.22
+    ],
+    "foliage_unit_count_scale": [
+      1.0,
+      1.15
+    ],
+    "stem_ratio": [
+      0.94,
+      0.9
+    ],
+    "interpretation": "Smooth cross-pair growth modifier; actual groups remain unequal, with open corridors. No jump at the panel seam."
+  },
+  "near_groups": [
+    {
+      "id": "left-bank",
+      "center_mm": [
+        100,
+        755
+      ],
+      "members": [
+        [
+          -33,
+          7,
+          68,
+          "B"
+        ],
+        [
+          -8,
+          -12,
+          100,
+          "B"
+        ],
+        [
+          19,
+          4,
+          78,
+          "P"
+        ],
+        [
+          1,
+          25,
+          45,
+          "U"
+        ]
+      ]
+    },
+    {
+      "id": "middle-relay",
+      "center_mm": [
+        256,
+        680
+      ],
+      "members": [
+        [
+          -16,
+          4,
+          48,
+          "B"
+        ],
+        [
+          6,
+          -8,
+          64,
+          "P"
+        ],
+        [
+          23,
+          9,
+          38,
+          "U"
+        ]
+      ]
+    },
+    {
+      "id": "right-grove",
+      "center_mm": [
+        445,
+        761
+      ],
+      "members": [
+        [
+          -38,
+          4,
+          66,
+          "B"
+        ],
+        [
+          -13,
+          -10,
+          112,
+          "B"
+        ],
+        [
+          13,
+          -3,
+          91,
+          "P"
+        ],
+        [
+          38,
+          8,
+          76,
+          "B"
+        ],
+        [
+          57,
+          18,
+          44,
+          "U"
+        ]
+      ]
+    },
+    {
+      "id": "right-relay",
+      "center_mm": [
+        538,
+        640
+      ],
+      "members": [
+        [
+          -14,
+          3,
+          47,
+          "P"
+        ],
+        [
+          7,
+          -9,
+          58,
+          "B"
+        ],
+        [
+          24,
+          11,
+          35,
+          "U"
+        ]
+      ]
+    }
+  ],
+  "rocks": [
+    {
+      "id": "left-bank-rock",
+      "target_mm": [
+        106,
+        782
+      ],
+      "width_mm": 105,
+      "height_mm": 34,
+      "major_count": 3,
+      "group": "left-bank"
+    },
+    {
+      "id": "middle-rock",
+      "target_mm": [
+        274,
+        698
+      ],
+      "width_mm": 75,
+      "height_mm": 26,
+      "major_count": 2,
+      "group": "middle-relay"
+    },
+    {
+      "id": "right-bank-rock",
+      "target_mm": [
+        454,
+        801
+      ],
+      "width_mm": 130,
+      "height_mm": 42,
+      "major_count": 3,
+      "group": "right-grove"
+    }
+  ],
+  "mid_far_groups": [
+    {
+      "id": "middle-left",
+      "center_mm": [
+        122,
+        539
+      ],
+      "q_range_m": [
+        1600,
+        3300
+      ],
+      "radius_mm": [
+        90,
+        48
+      ],
+      "count": 28,
+      "height_mm": [
+        15,
+        28
+      ]
+    },
+    {
+      "id": "middle-right",
+      "center_mm": [
+        422,
+        576
+      ],
+      "q_range_m": [
+        1500,
+        3500
+      ],
+      "radius_mm": [
+        105,
+        58
+      ],
+      "count": 39,
+      "height_mm": [
+        16,
+        33
+      ]
+    },
+    {
+      "id": "middle-bridge",
+      "center_mm": [
+        307,
+        444
+      ],
+      "q_range_m": [
+        1700,
+        4100
+      ],
+      "radius_mm": [
+        60,
+        40
+      ],
+      "count": 16,
+      "height_mm": [
+        12,
+        24
+      ]
+    },
+    {
+      "id": "far-left",
+      "center_mm": [
+        142,
+        321
+      ],
+      "q_range_m": [
+        3000,
+        11000
+      ],
+      "radius_mm": [
+        112,
+        50
+      ],
+      "count": 27,
+      "height_mm": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": "far-right",
+      "center_mm": [
+        449,
+        270
+      ],
+      "q_range_m": [
+        3000,
+        11000
+      ],
+      "radius_mm": [
+        118,
+        50
+      ],
+      "count": 33,
+      "height_mm": [
+        5,
+        12
+      ]
+    }
+  ],
+  "virtual_color_groups": {
+    "canopy_core": {
+      "preview_hex": "#477766",
+      "meaning": "Connected cool vegetation bodies; virtual study color, no pigment slot"
+    },
+    "canopy_edge": {
+      "preview_hex": "#a1ab70",
+      "meaning": "Open light growth edges; virtual study color, no pigment slot"
+    },
+    "distance": {
+      "preview_hex": "#6a9299",
+      "meaning": "Atmospheric distant vegetation and selected terrain passages"
+    },
+    "earth": {
+      "preview_hex": "#a48b68",
+      "meaning": "Restrained exposed ground / rock intervals"
+    }
+  }
+}
