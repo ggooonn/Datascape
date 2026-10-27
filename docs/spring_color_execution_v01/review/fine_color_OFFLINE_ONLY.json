@@ -1,0 +1,37 @@
+{
+  "candidate_source_ids": [
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-8/S-crown/lobe-11/mist-release/visible-6717e94122526f",
+    "v10/field/6-18/unit-2/S-crown/lobe-5",
+    "v10/field/6-18/unit-2/S-crown/lobe-8",
+    "v10/field/6-18/unit-2/S-crown/lobe-9",
+    "v10/field/6-18/unit-2/S-crown/lobe-0",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-2/patch-3/body-3/R/ray-1/mist-release",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-8/S-crown/lobe-10/mist-release/visible-d884d7efc52b92",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-1/S-crown/lobe-9/mist-release",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-1/S-crown/lobe-8/mist-release",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-1/S-crown/lobe-11/mist-release",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-4/S-crown/lobe-7/mist-release/visible-6e66c6cc0c47cb",
+    "v10/field/9-17/unit-0/U/leader-1",
+    "v10/field/9-17/unit-0/U/lateral-2",
+    "v10/shared-native/v08/v04/foliage/v03/tree/right-rise/v07-grove-2/mass-1/fan/6-2/gesture-0/feathered",
+    "v10/shared-native/v08/v04/foliage/v03/tree/right-rise/v07-grove-2/mass-1/fan/2-3/gesture-0/feathered",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-1/S-crown/lobe-7/mist-release",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-4/S-crown/lobe-3/mist-release/visible-c338d89af4c1fc",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-8/S-crown/lobe-6/mist-release/visible-cb9f7575eedbdd",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-3/patch-2/body-8/S-crown/lobe-7/mist-release",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-2/patch-3/body-3/R/ray-3/mist-release",
+    "v10/shared-RSU/v08/right-rock-to-shoulder/stratum-2/patch-3/body-0/R/ray-6/mist-release",
+    "v10/field/7-16/unit-1/R/ray-6",
+    "v10/shared-native/v08/v04/foliage/v03/tree/right-rise/v07-grove-2/mass-1/fan/3-5/gesture-0/feathered",
+    "v10/shared-native/v08/v04/foliage/v03/tree/right-rise/v07-grove-2/mass-1/fan/5-1/gesture-0/feathered/visible-0d94850f1164df",
+    "v10/shared-native/v08/v04/foliage/v03/tree/right-rise/v07-grove-2/mass-1/fan/5-3/gesture-0/feathered"
+  ],
+  "contact_program_generated": false,
+  "primary_brush": "small Baegunmo; no manual brush exchange",
+  "reason": "No measured fine-brush pigment response or tip registration",
+  "trial_reload_policy_after_calibration": {
+    "contacts": 10,
+    "distance_mm": 450,
+    "trigger": "OR; before next source; atomic overrun logged"
+  }
+}

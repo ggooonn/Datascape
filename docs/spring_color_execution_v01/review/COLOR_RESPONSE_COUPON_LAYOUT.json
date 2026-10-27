@@ -1,0 +1,66 @@
+{
+  "canonical_artwork": false,
+  "color_curve": [
+    [
+      0,
+      0
+    ],
+    [
+      0.2,
+      0.3
+    ],
+    [
+      0.4,
+      0.7
+    ],
+    [
+      0.6,
+      1.2
+    ],
+    [
+      0.8,
+      1.8
+    ],
+    [
+      1,
+      2.4
+    ]
+  ],
+  "observations_required": [
+    "actual touch",
+    "stroke width/taper",
+    "wet/dry hue",
+    "long-flow continuity",
+    "C1/A5 overlap state",
+    "wash contamination"
+  ],
+  "original_top_down_y_overlap": [
+    275,
+    275.8
+  ],
+  "original_top_down_y_rows": [
+    55,
+    87,
+    119,
+    151,
+    183,
+    215
+  ],
+  "paper_touch_z": 10,
+  "pressure_columns": [
+    0.2,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "registration": "A separate300x330mm backed coupon at global X300..600,Y570..900; do not use the PR35 artwork",
+  "slot_rows": [
+    "A2",
+    "A4",
+    "C1",
+    "A5",
+    "C3",
+    "C2"
+  ],
+  "spare_hanji_only": true
+}

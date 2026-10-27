@@ -1,0 +1,542 @@
+{
+  "PR35_ink_deferred_duplicates": 0,
+  "all_checks_passed": true,
+  "complete_and_stage_source_orders_identical": true,
+  "exact_pinned_reference_hashes": {
+    "artworks/spring_v13/palette.json": "36ef7d125d447f5b38b2e914f96427536251964b41cb63f2fc2fde0b484b4adb",
+    "artworks/spring_v13/visible_color.json.gz": "493b2e3bd5aa27135256926caf7e314fa0357ea9dbcf1dac2ce16f782d60604d",
+    "artworks/spring_v13/visible_ink.json.gz": "4501ccbb589e20d304e74957cb36f32bf605b9a22eff20011ce32c938f4406b5",
+    "docs/experiments/seasonal_color_tone_v01/FRAMEWORK.md": "d8c7e16f1225cc3e5b5d90d6c3b464ee39a9ffb079662e250c3f9da923533a2d",
+    "docs/experiments/seasonal_color_tone_v01/SPRING_P2_HANDOFF.md": "4f3b91cbb2c57f6b544f8366dddf7457e9d68569a7975ab599ead411d1c8c623",
+    "docs/experiments/seasonal_color_tone_v01/spring/P2_style_handoff.json.gz": "36b3d7653402a76f580abf37752de260d85ea450c8f00e132202a46131eaae00",
+    "docs/experiments/seasonal_color_tone_v01/spring/style_intent.json.gz": "e7fbda519c2832588c4daf10d1bf02ba0031978ab51a43ead6db8af12ba15e70"
+  },
+  "images_decoded": 39,
+  "independent_files_compared": 117,
+  "machine_authorized": false,
+  "measured_physical_clearance": false,
+  "original_source_arc_pressure_and_widths_verified": true,
+  "program_pairs_verified": 7,
+  "programs": {
+    "SPRING_P2_COLOR_PR35_01_MINERAL_BASE_REVIEW": {
+      "air": {
+        "AIR_all_Z35": true,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            35
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          0.0
+        ],
+        "numeric_commands": 54142,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 33431,
+        "source_count": 2147,
+        "source_order_sha256": "15e2f601f82278ced3d09536f654cbbcbd4e1175edb00e7609d8e8afdaf503f5",
+        "station_moves": 1418,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      },
+      "color": {
+        "AIR_all_Z35": false,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            1.5
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          7000.0
+        ],
+        "numeric_commands": 54142,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 33431,
+        "source_count": 2147,
+        "source_order_sha256": "15e2f601f82278ced3d09536f654cbbcbd4e1175edb00e7609d8e8afdaf503f5",
+        "station_moves": 1418,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      }
+    },
+    "SPRING_P2_COLOR_PR35_02_PALE_GROWTH_AND_LOCAL_OVERLAP_REVIEW": {
+      "air": {
+        "AIR_all_Z35": true,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            35
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          14972.73383433867,
+          0.0
+        ],
+        "numeric_commands": 10152,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 6362,
+        "source_count": 407,
+        "source_order_sha256": "12a372fda9e5f56c165d9403d4e78289c02bc8be6261278108d216761471daba",
+        "station_moves": 194,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      },
+      "color": {
+        "AIR_all_Z35": false,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            1.5
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          14972.73383433867,
+          7000.0
+        ],
+        "numeric_commands": 10152,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 6362,
+        "source_count": 407,
+        "source_order_sha256": "12a372fda9e5f56c165d9403d4e78289c02bc8be6261278108d216761471daba",
+        "station_moves": 194,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      }
+    },
+    "SPRING_P2_COLOR_PR35_03_GROUPED_CORES_REVIEW": {
+      "air": {
+        "AIR_all_Z35": true,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            35
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          0.0
+        ],
+        "numeric_commands": 23819,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 15507,
+        "source_count": 889,
+        "source_order_sha256": "7d2ae9404b9d793d8cb4738a83da2ccff429e1728e779e71c4781e08979e21da",
+        "station_moves": 457,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      },
+      "color": {
+        "AIR_all_Z35": false,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            1.5
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          7000.0
+        ],
+        "numeric_commands": 23819,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 15507,
+        "source_count": 889,
+        "source_order_sha256": "7d2ae9404b9d793d8cb4738a83da2ccff429e1728e779e71c4781e08979e21da",
+        "station_moves": 457,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      }
+    },
+    "SPRING_P2_COLOR_PR35_04_FRESH_TIPS_AND_ACCENTS_REVIEW": {
+      "air": {
+        "AIR_all_Z35": true,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            35
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          14972.73383433867,
+          0.0
+        ],
+        "numeric_commands": 13254,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 8546,
+        "source_count": 504,
+        "source_order_sha256": "4fb747e3065c3b9a7096c06615fdf49c2fd7772dad2e4bc066c9c554cd9fe1eb",
+        "station_moves": 256,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      },
+      "color": {
+        "AIR_all_Z35": false,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            1.5
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          14972.73383433867,
+          7000.0
+        ],
+        "numeric_commands": 13254,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 8546,
+        "source_count": 504,
+        "source_order_sha256": "4fb747e3065c3b9a7096c06615fdf49c2fd7772dad2e4bc066c9c554cd9fe1eb",
+        "station_moves": 256,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      }
+    },
+    "SPRING_P2_COLOR_PR35_COMPLETE_REVIEW": {
+      "air": {
+        "AIR_all_Z35": true,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            35
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          0.0
+        ],
+        "numeric_commands": 101262,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 63846,
+        "source_count": 3947,
+        "source_order_sha256": "7c68ca9354134024a25be9aeab3a09e9007fa7251a3525de3556aaf479bc31ed",
+        "station_moves": 2253,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      },
+      "color": {
+        "AIR_all_Z35": false,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            1.5
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          7000.0
+        ],
+        "numeric_commands": 101262,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 63846,
+        "source_count": 3947,
+        "source_order_sha256": "7c68ca9354134024a25be9aeab3a09e9007fa7251a3525de3556aaf479bc31ed",
+        "station_moves": 2253,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      }
+    },
+    "SPRING_P2_COLOR_RESPONSE_COUPON_SPARE_ONLY_REVIEW": {
+      "air": {
+        "AIR_all_Z35": true,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            35
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          0.0
+        ],
+        "numeric_commands": 955,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 78,
+        "source_count": 26,
+        "source_order_sha256": "e288b9c659cd1c6b5addbfd66a2e01083de04fe584e2959e2790bd82300216d4",
+        "station_moves": 392,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      },
+      "color": {
+        "AIR_all_Z35": false,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            1.5
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          7000.0
+        ],
+        "numeric_commands": 955,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 78,
+        "source_count": 26,
+        "source_order_sha256": "e288b9c659cd1c6b5addbfd66a2e01083de04fe584e2959e2790bd82300216d4",
+        "station_moves": 392,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      }
+    },
+    "SPRING_P2_COLOR_STATIONS_ONLY_REVIEW": {
+      "air": {
+        "AIR_all_Z35": true,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            35
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          0.0
+        ],
+        "numeric_commands": 485,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 0,
+        "source_count": 0,
+        "source_order_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "station_moves": 300,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      },
+      "color": {
+        "AIR_all_Z35": false,
+        "M0_count": 0,
+        "bounds_G54": [
+          [
+            0,
+            45.0,
+            1.5
+          ],
+          [
+            840.0,
+            900,
+            35
+          ]
+        ],
+        "color_response_measured": false,
+        "machine_authorized": false,
+        "maximum_projected_axis_feeds": [
+          15000.0,
+          15000.0,
+          7000.0
+        ],
+        "numeric_commands": 485,
+        "original_arc_XY_pressure_verified": true,
+        "physical_clearance_verified": false,
+        "pressure_samples": 0,
+        "source_count": 0,
+        "source_order_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "station_moves": 300,
+        "terminal_cleanup_verified": true,
+        "terminal_park": [
+          800.0,
+          800.0,
+          35.0
+        ]
+      }
+    }
+  },
+  "protected_edges_verified": 11619,
+  "selected_source_count": 3947
+}
