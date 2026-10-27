@@ -1,0 +1,37 @@
+{
+  "panels": {
+    "P1": {
+      "skyline_range_mm": 98.0,
+      "mean_abs_adjacent_height_change_mm": 0.7993311036789298
+    },
+    "P2": {
+      "skyline_range_mm": 98.0,
+      "mean_abs_adjacent_height_change_mm": 0.6688963210702341
+    },
+    "P3": {
+      "skyline_range_mm": 169.0,
+      "mean_abs_adjacent_height_change_mm": 1.1270903010033444
+    },
+    "P4": {
+      "skyline_range_mm": 69.0,
+      "mean_abs_adjacent_height_change_mm": 1.0133779264214047
+    },
+    "P5": {
+      "skyline_range_mm": 94.0,
+      "mean_abs_adjacent_height_change_mm": 0.7759197324414716
+    },
+    "P6": {
+      "skyline_range_mm": 108.0,
+      "mean_abs_adjacent_height_change_mm": 1.0066889632107023
+    },
+    "P7": {
+      "skyline_range_mm": 81.0,
+      "mean_abs_adjacent_height_change_mm": 1.0367892976588629
+    },
+    "P8": {
+      "skyline_range_mm": 58.0,
+      "mean_abs_adjacent_height_change_mm": 0.5919732441471572
+    }
+  },
+  "interpretation": "Different silhouettes and cameras share one DEM window, depth-unfolding map and A/B/C/D language. Similar visual character is not proof of copied terrain geometry."
+}

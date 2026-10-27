@@ -1,0 +1,62 @@
+{
+  "proposals": {
+    "summer": {
+      "status": "proposed, not applied",
+      "baseline_groups": [
+        "v03-left-promontory",
+        "v03-right-bank"
+      ],
+      "vegetation": "Make B the continuous overhanging bank body and U a low connected underlayer; retain P as a counter-accent rather than repeating three upright groups.",
+      "existing_controls": [
+        "tree_final_scale.make_tree(form=\"B\", architecture=\"terminal-droop\") for one supported bank member",
+        "P/B/U posture, stem_ratio and vigor; keep U small/light"
+      ],
+      "rocks": "Replace one upright jointed plinth with lower compact/rounded base_mass and partly buried layered bedrock; keep B-type supporting masses unequal.",
+      "library_entrypoints": [
+        "datascape.vegetation.tree_final_scale.make_tree",
+        "datascape.ground.structural_detail_v05.base_mass(form=\"compact\", regime=\"rounded\")"
+      ],
+      "ground": "Use a low shared bank and connected color support, retaining the diagonal passage rather than a separate pedestal below every tree."
+    },
+    "autumn": {
+      "status": "proposed, not applied",
+      "baseline_groups": [
+        "autumn-saddle",
+        "autumn-right-mass"
+      ],
+      "vegetation": "Break one B crown episode with dead-limb or damaged-crown; retain unequal P/B remnants and reduce the repeated center-relay silhouette.",
+      "existing_controls": [
+        "accent=\"dead-limb\" or \"damaged-crown\" on selected P/B/U members",
+        "Unequal vigor and stem_ratio; no new botanical family"
+      ],
+      "rocks": "Expose angular/layered ledges and fewer unequal blocks, rather than only enlarging the same jointed-parent/layered-front B recipe.",
+      "library_entrypoints": [
+        "datascape.vegetation.tree_final_scale.make_tree",
+        "datascape.ground.structural_detail_v05.base_mass(form=\"angular\", regime=\"layered\")"
+      ],
+      "ground": "Use broken bedding/contact cues and an asymmetric terrace; separate dry exposed ground from retreating canopy color."
+    },
+    "winter": {
+      "status": "proposed, not applied",
+      "baseline_groups": [
+        "winter-left-shelter",
+        "winter-middle-remnant",
+        "winter-right-remnant"
+      ],
+      "vegetation": "Keep one P shelter and an incomplete B skeleton, using broken-top or suppressed accents selectively; make the small P8 remnant subordinate to its long rest.",
+      "existing_controls": [
+        "accent=\"broken-top\" or \"suppressed\" only on selected members",
+        "Retain pine foliage; do not make every tree uniformly bare"
+      ],
+      "rocks": "Use one coherent A-style bedrock mass plus a few subordinate stones instead of three similar B plinth formations.",
+      "library_entrypoints": [
+        "datascape.vegetation.tree_final_scale.make_tree",
+        "datascape.ground.structural_detail_v05.base_mass(form=\"bedrock\", regime=\"jointed\")"
+      ],
+      "ground": "Expose a broad structural plane and isolated contacts. Preserve P8 terrain, skyline and gentle ending."
+    }
+  },
+  "W_status": "Experimental only; no promotion to default and no W generation in this Work",
+  "geometry_changes_applied": false,
+  "library_policy": "Use accepted anatomy and bounded scene arrangements; do not introduce a new botanical or rock engine"
+}

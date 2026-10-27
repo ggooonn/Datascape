@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "6e331beb7e405cff55feb0ea9f3982808976f907",
+  "status": "provisional artistic display intent; no physical pigment or motion schedule",
+  "seed": "Datascape-seasonal-tone-v01",
+  "interpolation": "OKLab smoothstep between panel-center anchors; installation gaps excluded from painted coordinates",
+  "roles": {
+    "base": "Underlying depth and ground climate; low-chroma connected support, not a uniform wash",
+    "structural": "Related vegetation/mineral bodies and spatial hierarchy",
+    "accent": "Restrained protruding growth, exposed edges and transition cues"
+  },
+  "panels": [
+    {
+      "id": "P1",
+      "season": "spring",
+      "stage": "fresh opening",
+      "base": "#CCD3BA",
+      "structural": "#87A46D",
+      "mineral": "#ADB49F",
+      "accent": "#D0C46B",
+      "ink_mix_target": [
+        0.76,
+        0.2,
+        0.04
+      ],
+      "ink_gray": [
+        0.61,
+        0.36,
+        0.13
+      ]
+    },
+    {
+      "id": "P2",
+      "season": "spring",
+      "stage": "celadon receiving groups",
+      "base": "#BDCDB6",
+      "structural": "#6D997A",
+      "mineral": "#9FAE9F",
+      "accent": "#BEC873",
+      "ink_mix_target": [
+        0.69,
+        0.24,
+        0.07
+      ],
+      "ink_gray": [
+        0.58,
+        0.33,
+        0.11
+      ]
+    },
+    {
+      "id": "P3",
+      "season": "summer",
+      "stage": "humid mineral and expanding green",
+      "base": "#BBC9C3",
+      "structural": "#427F70",
+      "mineral": "#8FA6A5",
+      "accent": "#B6B36A",
+      "ink_mix_target": [
+        0.61,
+        0.29,
+        0.1
+      ],
+      "ink_gray": [
+        0.52,
+        0.29,
+        0.09
+      ]
+    },
+    {
+      "id": "P4",
+      "season": "summer",
+      "stage": "full cool masses with warm openings",
+      "base": "#A9BDBD",
+      "structural": "#356A6B",
+      "mineral": "#829B9F",
+      "accent": "#C3A261",
+      "ink_mix_target": [
+        0.53,
+        0.33,
+        0.14
+      ],
+      "ink_gray": [
+        0.48,
+        0.27,
+        0.08
+      ]
+    },
+    {
+      "id": "P5",
+      "season": "autumn",
+      "stage": "assertive straw and copper transition",
+      "base": "#D3C1A1",
+      "structural": "#A87A48",
+      "mineral": "#A38B70",
+      "accent": "#CC7C3E",
+      "ink_mix_target": [
+        0.56,
+        0.3,
+        0.14
+      ],
+      "ink_gray": [
+        0.52,
+        0.3,
+        0.09
+      ]
+    },
+    {
+      "id": "P6",
+      "season": "autumn",
+      "stage": "dry mineral and unequal retreat",
+      "base": "#C4B6A7",
+      "structural": "#8E6560",
+      "mineral": "#93847B",
+      "accent": "#B27B4D",
+      "ink_mix_target": [
+        0.63,
+        0.24,
+        0.13
+      ],
+      "ink_gray": [
+        0.57,
+        0.34,
+        0.1
+      ]
+    },
+    {
+      "id": "P7",
+      "season": "winter",
+      "stage": "cold planes and retained skeleton",
+      "base": "#C3CBD0",
+      "structural": "#748696",
+      "mineral": "#89939E",
+      "accent": "#AA9D82",
+      "ink_mix_target": [
+        0.74,
+        0.18,
+        0.08
+      ],
+      "ink_gray": [
+        0.63,
+        0.38,
+        0.11
+      ]
+    },
+    {
+      "id": "P8",
+      "season": "winter",
+      "stage": "paper-rich gentle ending",
+      "base": "#D9DCD9",
+      "structural": "#949CA8",
+      "mineral": "#A7ADB4",
+      "accent": "#B3AA98",
+      "ink_mix_target": [
+        0.84,
+        0.12,
+        0.04
+      ],
+      "ink_gray": [
+        0.7,
+        0.44,
+        0.14
+      ]
+    }
+  ],
+  "display": {
+    "color_gain": {
+      "spring": 1.2,
+      "summer": 1.25,
+      "autumn": 1.65,
+      "winter": 0.95
+    },
+    "accent_gain": {
+      "spring": 1.1,
+      "summer": 1.15,
+      "autumn": 1.35,
+      "winter": 0.8
+    },
+    "alpha_caps": {
+      "base": 0.4,
+      "structural": 0.68,
+      "accent": 0.65
+    },
+    "quiet_color_gain": 0.65,
+    "far_chroma_neutralization": 0.48,
+    "common_far_neutral": "#B4BEC3"
+  },
+  "guide_policy": {
+    "spring_guides_allowed": false,
+    "terrain_minimum_parent_length_mm": 14,
+    "terrain_selection_probability": {
+      "summer": 0.2,
+      "autumn": 0.18,
+      "winter": 0.13
+    },
+    "terrain_length_mm": [
+      16,
+      44
+    ],
+    "terrain_display_width_mm": {
+      "summer": 4.2,
+      "autumn": 4.5,
+      "winter": 3.8
+    },
+    "terrain_display_alpha": {
+      "summer": 0.26,
+      "autumn": 0.3,
+      "winter": 0.18
+    },
+    "rock_selection_probability": 0.48,
+    "rock_length_mm": [
+      8,
+      24
+    ],
+    "rock_display_width_mm": {
+      "summer": 6.2,
+      "autumn": 6.8,
+      "winter": 5.8
+    },
+    "rock_display_alpha": {
+      "summer": 0.28,
+      "autumn": 0.3,
+      "winter": 0.18
+    },
+    "status": "Supplemental color-territory guides on exact existing ink-source arcs; not canonical or executable color paths"
+  },
+  "D4_policy": {
+    "recorded_name": "Red earth / ochre",
+    "recorded_hex": "#A2432B",
+    "D5_recorded_name": "Burnt umber",
+    "strong_use_excluded_seasons": [
+      "spring",
+      "summer"
+    ],
+    "primary_physical_assignment": null,
+    "spring_source_D4_geometry": "preserved; virtual color remapped by role",
+    "comparison_display_multiplier": 0.18,
+    "candidate_replacements": [
+      "A4 warm gray / apricot gray",
+      "A2 light gray",
+      "A5 green-gray",
+      "limited D1 pale-yellow adjustment after a physical coupon"
+    ],
+    "note": "Digital alpha is not a water ratio, concentration recipe, pressure or Z value. Summer baseline has virtual groups, not an assigned D4 station."
+  },
+  "transitions": [
+    {
+      "from": "P1",
+      "to": "P2",
+      "logic": "Fresh yellow-green edges consolidate into celadon groups; keep warm mineral support pale and let structural ink increase locally."
+    },
+    {
+      "from": "P2",
+      "to": "P3",
+      "logic": "Carry celadon into humid blue-gray ground; deepen grouped vegetation while retaining a light receiving passage."
+    },
+    {
+      "from": "P3",
+      "to": "P4",
+      "logic": "Increase cool grouped cores and mineral depth, with warm olive/amber openings rather than green over every terrain surface."
+    },
+    {
+      "from": "P4",
+      "to": "P5",
+      "logic": "Use the existing amber opening as the hinge into straw/copper; make Autumn's structural color shift assertive, retaining cool mineral counterweights."
+    },
+    {
+      "from": "P5",
+      "to": "P6",
+      "logic": "Copper peaks retreat into dry mauve/umber-neutral structure; break accent territories and expose more paper and rock."
+    },
+    {
+      "from": "P6",
+      "to": "P7",
+      "logic": "Desaturate warm mineral remnants toward cold gray; shift emphasis from canopy color to selected trunks, joints and ground contacts."
+    },
+    {
+      "from": "P7",
+      "to": "P8",
+      "logic": "Reduce colored path weight and dark-ink incidence while retaining a few warm remnants; preserve P8's gentle ending and long rest."
+    }
+  ]
+}

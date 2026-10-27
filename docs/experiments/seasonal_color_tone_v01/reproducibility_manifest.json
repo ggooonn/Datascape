@@ -1,0 +1,100 @@
+{
+  "baseline_commit": "6e331beb7e405cff55feb0ea9f3982808976f907",
+  "source_inputs": {
+    "artworks/spring_v13/palette.json": {
+      "sha256": "36ef7d125d447f5b38b2e914f96427536251964b41cb63f2fc2fde0b484b4adb",
+      "bytes": 1871
+    },
+    "artworks/spring_v13/visible_color.json.gz": {
+      "sha256": "493b2e3bd5aa27135256926caf7e314fa0357ea9dbcf1dac2ce16f782d60604d",
+      "bytes": 8616671
+    },
+    "artworks/spring_v13/visible_ink.json.gz": {
+      "sha256": "4501ccbb589e20d304e74957cb36f32bf605b9a22eff20011ce32c938f4406b5",
+      "bytes": 1328641
+    },
+    "docs/experiments/autumn_composition_v01/color_intent.json.gz": {
+      "sha256": "abb89a1a763af3371f784c55b0d20c574ec315929531d8bdfba82764548513cc",
+      "bytes": 314598
+    },
+    "docs/experiments/autumn_composition_v01/config.json": {
+      "sha256": "c8c4013282b1e2c659033b94b48de106786294d9faf679e0974713719bf40a78",
+      "bytes": 6157
+    },
+    "docs/experiments/autumn_composition_v01/fields.npz": {
+      "sha256": "711c61d1c806def94b03c72c70210405c4facfffe92cfeefaaf5142ca7650044",
+      "bytes": 2694626
+    },
+    "docs/experiments/autumn_composition_v01/ink.json.gz": {
+      "sha256": "c874066e8b689039b88543478c8152093abef398884a58e5fac234aa2b442347",
+      "bytes": 1113079
+    },
+    "docs/experiments/autumn_composition_v01/placement.json": {
+      "sha256": "e9987a3286bde5c09ca25f257d213427dd27a80ca63d0d15e75e6bbc7b764c52",
+      "bytes": 188985
+    },
+    "docs/experiments/autumn_composition_v01/scene.json": {
+      "sha256": "608c2a1fbb6f270c263ec0a7140a2bf238731717566c32ffb4fbfadb965252b5",
+      "bytes": 1739
+    },
+    "docs/experiments/seasonal_composition_v03/P1_P8_full.png": {
+      "sha256": "9020a1f6ea4d79e48e1ddf4ac71e090d7586a49e9255ce41feb9149acaf0f083",
+      "bytes": 5251734
+    },
+    "docs/experiments/seasonal_composition_v03/skyline.json": {
+      "sha256": "5d23f5313121fde5902aa630ec05fbdf81f27bb5df962ee13816c1373bdcf4c5",
+      "bytes": 31910
+    },
+    "docs/experiments/summer_composition_v03/color_intent.json.gz": {
+      "sha256": "9a87f6fee948b2e5217e6275e7f4f97f32b62805c65e5630ecafb307e39aabd2",
+      "bytes": 669809
+    },
+    "docs/experiments/summer_composition_v03/config.json": {
+      "sha256": "1c47d8ac49e5f7b97bc3d7e26d69209b5f62416e7d9e00e187145e0c8ec72a26",
+      "bytes": 7324
+    },
+    "docs/experiments/summer_composition_v03/fields.npz": {
+      "sha256": "53826973867ee4f9af67e5ad0c77df6f743dfffd3d5e0ae131a08390c67d1b65",
+      "bytes": 2689177
+    },
+    "docs/experiments/summer_composition_v03/ink.json.gz": {
+      "sha256": "2ffe1c70e83e8684890ab9b9002f8b944c76898d6113806c6430e3dd515a708c",
+      "bytes": 1700969
+    },
+    "docs/experiments/summer_composition_v03/placement.json": {
+      "sha256": "51e86bbbd7290d1867c0dbf9a85ca64b36f0f4949d078c40a10cc8c51e35cf89",
+      "bytes": 195839
+    },
+    "docs/experiments/summer_composition_v03/scene.json": {
+      "sha256": "d7d959eb2ec368678cb823e5b1f0a1a65ceb28b1c6d5e15891371bad9434325b",
+      "bytes": 1739
+    },
+    "docs/experiments/winter_composition_v01/color_intent.json.gz": {
+      "sha256": "6ef965e91f6014b5bb917b77531a66e49bb3cfe4267618ead8a5a48eeae8445a",
+      "bytes": 103412
+    },
+    "docs/experiments/winter_composition_v01/config.json": {
+      "sha256": "c196f40340393369eb41d3f44a30ca8ed650a3d67594dc15df239e4f90b43fc0",
+      "bytes": 5953
+    },
+    "docs/experiments/winter_composition_v01/fields.npz": {
+      "sha256": "ffdda6512480928feed9fc5e1dfabf6ff66f76d90d0d7d7b8e662908f388eb0c",
+      "bytes": 2498609
+    },
+    "docs/experiments/winter_composition_v01/ink.json.gz": {
+      "sha256": "262a1fc1071aec5570d333e54d3a45763ba71e4b5b78b7b15897561673cdadfd",
+      "bytes": 819107
+    },
+    "docs/experiments/winter_composition_v01/placement.json": {
+      "sha256": "923c74cd6e6ff3054edf3ddc5dc341dc082a61f2e439f52cf4db11c088a65fe4",
+      "bytes": 156588
+    },
+    "docs/experiments/winter_composition_v01/scene.json": {
+      "sha256": "57dc4c87fe84d04389ee884493cac72ae4fccfa72e79357500071cdaddae8bd8",
+      "bytes": 1739
+    }
+  },
+  "config_sha256": "01fafa355e4ec2f155b7bbf3ea40967ca5773b97a97dfd94074bf7ed29029d76",
+  "python": "3.12.14",
+  "renderer_scope": "Matched line/profile display approximation; not a wet pigment simulation or canonical path export"
+}

@@ -1,0 +1,64 @@
+{
+  "panels": {
+    "P3": {
+      "ink_length_mm": 54265.82007414789,
+      "ink_cohort_length_shares": {
+        "dark": 0.06831629871468477,
+        "middle": 0.2717659150581661,
+        "light": 0.6599177862271491
+      },
+      "ink_cohort_target": [
+        0.61,
+        0.29,
+        0.1
+      ],
+      "source_color_length_by_role_mm": {
+        "structural": 5326.524975633701,
+        "accent": 329.6026642540599,
+        "base": 1164.8248331974098
+      },
+      "supplemental_guide_length_by_role_mm": {
+        "structural": 330.4441367702653,
+        "base": 1235.3609964641598
+      },
+      "physical_D4_assigned": false
+    },
+    "P4": {
+      "ink_length_mm": 71876.32399799534,
+      "ink_cohort_length_shares": {
+        "dark": 0.10309982805638994,
+        "middle": 0.33114757026885855,
+        "light": 0.5657526016747516
+      },
+      "ink_cohort_target": [
+        0.53,
+        0.33,
+        0.14
+      ],
+      "source_color_length_by_role_mm": {
+        "structural": 5766.365335322581,
+        "accent": 1325.052859684955,
+        "base": 1450.8294128616474
+      },
+      "supplemental_guide_length_by_role_mm": {
+        "structural": 229.77863979122742,
+        "base": 1503.194238760152
+      },
+      "physical_D4_assigned": false
+    }
+  },
+  "geometry_signatures": {
+    "ink": "c9b11f58449929cb0928c5bdb159f9c6cf034f82743640281c8da30429d08fad",
+    "color": "b7a7b98e6e2467c0f888f37284a3c2ce07d519e43a24bb139f2d9d63bbeff737"
+  },
+  "source_files": {
+    "docs/experiments/summer_composition_v03/ink.json.gz": "2ffe1c70e83e8684890ab9b9002f8b944c76898d6113806c6430e3dd515a708c",
+    "docs/experiments/summer_composition_v03/color_intent.json.gz": "9a87f6fee948b2e5217e6275e7f4f97f32b62805c65e5630ecafb307e39aabd2"
+  },
+  "depth_role_bases": {
+    "source-depth-metadata": 4927,
+    "source-site": 8,
+    "saved-depth-raster-at-path-centroid": 2463
+  },
+  "metric_scope": "Path-length cohort shares and color-source lengths, not pigment quantities, coverage or calibrated light/dark dilution ratios"
+}

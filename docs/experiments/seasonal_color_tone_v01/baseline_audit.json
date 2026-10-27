@@ -1,0 +1,577 @@
+{
+  "spring": {
+    "ink_paths": 3345,
+    "color_paths": 11606,
+    "color_groups": {
+      "A2": 1636,
+      "A4": 1281,
+      "D4": 352,
+      "D1": 870,
+      "D5": 267,
+      "D2": 93,
+      "A3": 976,
+      "A5": 1350,
+      "C2": 1474,
+      "C4": 1535,
+      "C1": 1185,
+      "C3": 587
+    },
+    "native_tree_owners": 0,
+    "tree_forms": {},
+    "tree_accents": {},
+    "rock_regimes": {
+      "layered": {
+        "paths": 38,
+        "length_mm": 676.0706894113391
+      },
+      "jointed": {
+        "paths": 60,
+        "length_mm": 1061.1484013115323
+      },
+      "rounded": {
+        "paths": 13,
+        "length_mm": 140.04104724671734
+      },
+      "unclassified": {
+        "paths": 17,
+        "length_mm": 145.3728805850351
+      }
+    },
+    "canonical_geometry_signatures": {
+      "ink": "53e4bde9d8947cf54e1f4230e7d9aa70d8fadd76d04079544dbd2a5d81e120c5",
+      "color": "ca6c7bb35f110e06ef1fa418c29f6cb1e843bbc98801c366d0efd649953c60e5"
+    },
+    "source_files": {
+      "artworks/spring_v13/visible_ink.json.gz": "4501ccbb589e20d304e74957cb36f32bf605b9a22eff20011ce32c938f4406b5",
+      "artworks/spring_v13/visible_color.json.gz": "493b2e3bd5aa27135256926caf7e314fa0357ea9dbcf1dac2ce16f782d60604d"
+    }
+  },
+  "summer": {
+    "ink_paths": 5181,
+    "color_paths": 2217,
+    "color_groups": {
+      "canopy_core": 1453,
+      "canopy_edge": 65,
+      "distance": 699
+    },
+    "native_tree_owners": 15,
+    "tree_forms": {
+      "U": 5,
+      "B": 6,
+      "P": 4
+    },
+    "tree_accents": {
+      "none": 15
+    },
+    "rock_regimes": {
+      "jointed": {
+        "paths": 86,
+        "length_mm": 2215.578195348842
+      },
+      "unclassified": {
+        "paths": 19,
+        "length_mm": 170.08024873413777
+      },
+      "layered": {
+        "paths": 42,
+        "length_mm": 679.9990785898998
+      }
+    },
+    "canonical_geometry_signatures": {
+      "ink": "c9b11f58449929cb0928c5bdb159f9c6cf034f82743640281c8da30429d08fad",
+      "color": "b7a7b98e6e2467c0f888f37284a3c2ce07d519e43a24bb139f2d9d63bbeff737"
+    },
+    "source_files": {
+      "docs/experiments/summer_composition_v03/ink.json.gz": "2ffe1c70e83e8684890ab9b9002f8b944c76898d6113806c6430e3dd515a708c",
+      "docs/experiments/summer_composition_v03/color_intent.json.gz": "9a87f6fee948b2e5217e6275e7f4f97f32b62805c65e5630ecafb307e39aabd2"
+    },
+    "near_group_centers_mm": [
+      {
+        "id": "v03-left-promontory",
+        "xy_mm": [
+          98.5,
+          804.5
+        ]
+      },
+      {
+        "id": "v03-inner-relay",
+        "xy_mm": [
+          252.5,
+          668.5
+        ]
+      },
+      {
+        "id": "v03-right-bank",
+        "xy_mm": [
+          455.5,
+          820.5
+        ]
+      },
+      {
+        "id": "v03-upper-relay",
+        "xy_mm": [
+          539.5,
+          673.5
+        ]
+      }
+    ],
+    "source_camera": {
+      "study": "Spring Pair Composition Refinement v0.1",
+      "base_pr_head": "a2ca981c94fa0ddd81ff8e48597ffbc3ca067443",
+      "primary_eye_xy_m": [
+        327105,
+        4170785
+      ],
+      "eye_clearance_m": 2.0,
+      "look_target_xy_m": [
+        323820,
+        4168370
+      ],
+      "pitch_deg": 0.0,
+      "vertical_fov_deg": 36.0,
+      "near_m": 1.0,
+      "primary_bounds_m": [
+        315000,
+        4162500,
+        330000,
+        4175700
+      ],
+      "raster_pixels": [
+        600,
+        900
+      ],
+      "mesh_stride": 1,
+      "depth_edges_m": [
+        600,
+        2200
+      ],
+      "composite": {
+        "near_width_m": 650.0,
+        "width_growth": 0.85,
+        "bottom_fraction": 1.02,
+        "depth_rise": 0.76,
+        "depth_scale_m": 1500.0,
+        "near_middle_transition_m": [
+          400,
+          1000
+        ],
+        "middle_far_transition_m": [
+          1800,
+          3200
+        ],
+        "height_coefficients_per_km": [
+          0.14,
+          0.25,
+          0.38
+        ]
+      },
+      "search": {
+        "bounds_m": [
+          315000,
+          4162500,
+          330000,
+          4175700
+        ],
+        "raster_pixels": [
+          300,
+          450
+        ],
+        "mesh_stride": 2,
+        "pitch_deg": 1.0,
+        "vertical_fov_deg": 48.0,
+        "eye_sites_m": [
+          [
+            325605,
+            4166585
+          ],
+          [
+            327105,
+            4170785
+          ],
+          [
+            325305,
+            4168385
+          ],
+          [
+            317205,
+            4168985
+          ],
+          [
+            319605,
+            4171385
+          ],
+          [
+            321105,
+            4175285
+          ]
+        ]
+      },
+      "physical_gap_mm": 40,
+      "painted_panel_mm": [
+        300,
+        900
+      ],
+      "random_seed": null,
+      "randomness": "None; deterministic view/composition study",
+      "reference_note": "User-supplied painting image reviewed for low foreground / middle passage / distant mountain arrangement only; no depicted object is asserted in the DEM"
+    }
+  },
+  "autumn": {
+    "ink_paths": 3522,
+    "color_paths": 1029,
+    "color_groups": {
+      "canopy_edge": 1029
+    },
+    "native_tree_owners": 12,
+    "tree_forms": {
+      "U": 3,
+      "B": 6,
+      "P": 3
+    },
+    "tree_accents": {
+      "none": 12
+    },
+    "rock_regimes": {
+      "jointed": {
+        "paths": 86,
+        "length_mm": 1989.8963448935988
+      },
+      "unclassified": {
+        "paths": 13,
+        "length_mm": 98.63483900850994
+      },
+      "layered": {
+        "paths": 40,
+        "length_mm": 757.0690793527347
+      }
+    },
+    "canonical_geometry_signatures": {
+      "ink": "5c7263a10c913b26f2ca70719d5672a703bcd9d76d76c82d169b5441c88ec472",
+      "color": "1b68e27cf201c359539c08b8e9d1f5fb2b1f109cd8e154620db1af99a2b18701"
+    },
+    "source_files": {
+      "docs/experiments/autumn_composition_v01/ink.json.gz": "c874066e8b689039b88543478c8152093abef398884a58e5fac234aa2b442347",
+      "docs/experiments/autumn_composition_v01/color_intent.json.gz": "abb89a1a763af3371f784c55b0d20c574ec315929531d8bdfba82764548513cc"
+    },
+    "near_group_centers_mm": [
+      {
+        "id": "autumn-left-bank",
+        "xy_mm": [
+          73.5,
+          746.5
+        ]
+      },
+      {
+        "id": "autumn-saddle",
+        "xy_mm": [
+          301.5,
+          688.5
+        ]
+      },
+      {
+        "id": "autumn-right-mass",
+        "xy_mm": [
+          496.5,
+          826.5
+        ]
+      }
+    ],
+    "source_camera": {
+      "study": "Spring Pair Composition Refinement v0.1",
+      "base_pr_head": "a2ca981c94fa0ddd81ff8e48597ffbc3ca067443",
+      "primary_eye_xy_m": [
+        325605,
+        4166585
+      ],
+      "eye_clearance_m": 2.0,
+      "look_target_xy_m": [
+        320520,
+        4168070
+      ],
+      "pitch_deg": 0.0,
+      "vertical_fov_deg": 36.0,
+      "near_m": 1.0,
+      "primary_bounds_m": [
+        315000,
+        4162500,
+        330000,
+        4175700
+      ],
+      "raster_pixels": [
+        600,
+        900
+      ],
+      "mesh_stride": 1,
+      "depth_edges_m": [
+        600,
+        2200
+      ],
+      "composite": {
+        "near_width_m": 650.0,
+        "width_growth": 0.85,
+        "bottom_fraction": 1.02,
+        "depth_rise": 0.76,
+        "depth_scale_m": 1500.0,
+        "near_middle_transition_m": [
+          400,
+          1000
+        ],
+        "middle_far_transition_m": [
+          1800,
+          3200
+        ],
+        "height_coefficients_per_km": [
+          0.14,
+          0.25,
+          0.38
+        ]
+      },
+      "search": {
+        "bounds_m": [
+          315000,
+          4162500,
+          330000,
+          4175700
+        ],
+        "raster_pixels": [
+          300,
+          450
+        ],
+        "mesh_stride": 2,
+        "pitch_deg": 1.0,
+        "vertical_fov_deg": 48.0,
+        "eye_sites_m": [
+          [
+            325605,
+            4166585
+          ],
+          [
+            327105,
+            4170785
+          ],
+          [
+            325305,
+            4168385
+          ],
+          [
+            317205,
+            4168985
+          ],
+          [
+            319605,
+            4171385
+          ],
+          [
+            321105,
+            4175285
+          ]
+        ]
+      },
+      "physical_gap_mm": 40,
+      "painted_panel_mm": [
+        300,
+        900
+      ],
+      "random_seed": null,
+      "randomness": "None; deterministic view/composition study",
+      "reference_note": "User-supplied painting image reviewed for low foreground / middle passage / distant mountain arrangement only; no depicted object is asserted in the DEM"
+    }
+  },
+  "winter": {
+    "ink_paths": 2366,
+    "color_paths": 325,
+    "color_groups": {
+      "distance": 325
+    },
+    "native_tree_owners": 9,
+    "tree_forms": {
+      "U": 3,
+      "P": 2,
+      "B": 4
+    },
+    "tree_accents": {
+      "none": 9
+    },
+    "rock_regimes": {
+      "jointed": {
+        "paths": 79,
+        "length_mm": 2230.5371530498905
+      },
+      "unclassified": {
+        "paths": 22,
+        "length_mm": 176.57913583503048
+      },
+      "layered": {
+        "paths": 40,
+        "length_mm": 887.0419942042043
+      }
+    },
+    "canonical_geometry_signatures": {
+      "ink": "2b453b89fb5cbf3e212107098c624406c4bde809718114f1d011133cf02fd223",
+      "color": "d31c5677f1faa30feef238dd8be24e9a89b978b0303a94a6983ed6f056927c1a"
+    },
+    "source_files": {
+      "docs/experiments/winter_composition_v01/ink.json.gz": "262a1fc1071aec5570d333e54d3a45763ba71e4b5b78b7b15897561673cdadfd",
+      "docs/experiments/winter_composition_v01/color_intent.json.gz": "6ef965e91f6014b5bb917b77531a66e49bb3cfe4267618ead8a5a48eeae8445a"
+    },
+    "near_group_centers_mm": [
+      {
+        "id": "winter-left-shelter",
+        "xy_mm": [
+          135.5,
+          798.5
+        ]
+      },
+      {
+        "id": "winter-middle-remnant",
+        "xy_mm": [
+          294.5,
+          714.5
+        ]
+      },
+      {
+        "id": "winter-right-remnant",
+        "xy_mm": [
+          483.5,
+          818.5
+        ]
+      }
+    ],
+    "source_camera": {
+      "study": "Spring Pair Composition Refinement v0.1",
+      "base_pr_head": "a2ca981c94fa0ddd81ff8e48597ffbc3ca067443",
+      "primary_eye_xy_m": [
+        319605,
+        4171385
+      ],
+      "eye_clearance_m": 2.0,
+      "look_target_xy_m": [
+        321720,
+        4171370
+      ],
+      "pitch_deg": 0.0,
+      "vertical_fov_deg": 36.0,
+      "near_m": 1.0,
+      "primary_bounds_m": [
+        315000,
+        4162500,
+        330000,
+        4175700
+      ],
+      "raster_pixels": [
+        600,
+        900
+      ],
+      "mesh_stride": 1,
+      "depth_edges_m": [
+        600,
+        2200
+      ],
+      "composite": {
+        "near_width_m": 650.0,
+        "width_growth": 0.85,
+        "bottom_fraction": 1.02,
+        "depth_rise": 0.76,
+        "depth_scale_m": 1500.0,
+        "near_middle_transition_m": [
+          400,
+          1000
+        ],
+        "middle_far_transition_m": [
+          1800,
+          3200
+        ],
+        "height_coefficients_per_km": [
+          0.14,
+          0.25,
+          0.38
+        ]
+      },
+      "search": {
+        "bounds_m": [
+          315000,
+          4162500,
+          330000,
+          4175700
+        ],
+        "raster_pixels": [
+          300,
+          450
+        ],
+        "mesh_stride": 2,
+        "pitch_deg": 1.0,
+        "vertical_fov_deg": 48.0,
+        "eye_sites_m": [
+          [
+            325605,
+            4166585
+          ],
+          [
+            327105,
+            4170785
+          ],
+          [
+            325305,
+            4168385
+          ],
+          [
+            317205,
+            4168985
+          ],
+          [
+            319605,
+            4171385
+          ],
+          [
+            321105,
+            4175285
+          ]
+        ]
+      },
+      "physical_gap_mm": 40,
+      "painted_panel_mm": [
+        300,
+        900
+      ],
+      "random_seed": null,
+      "randomness": "None; deterministic view/composition study",
+      "reference_note": "User-supplied painting image reviewed for low foreground / middle passage / distant mountain arrangement only; no depicted object is asserted in the DEM"
+    }
+  },
+  "legacy_earth_audit": {
+    "panels": {
+      "P1": {
+        "D4": {
+          "paths_by_centroid": 178,
+          "centerline_length_mm": 1894.3631523516433,
+          "width_length_alpha_proxy_mm2": 191.6209531839222,
+          "recorded_name": "Red earth / ochre"
+        },
+        "D5": {
+          "paths_by_centroid": 147,
+          "centerline_length_mm": 1403.5458302108243,
+          "width_length_alpha_proxy_mm2": 180.48930789078366,
+          "recorded_name": "Burnt umber"
+        }
+      },
+      "P2": {
+        "D4": {
+          "paths_by_centroid": 174,
+          "centerline_length_mm": 1996.9845099948843,
+          "width_length_alpha_proxy_mm2": 229.994509553091,
+          "recorded_name": "Red earth / ochre"
+        },
+        "D5": {
+          "paths_by_centroid": 120,
+          "centerline_length_mm": 1231.1141838530898,
+          "width_length_alpha_proxy_mm2": 159.77042799893397,
+          "recorded_name": "Burnt umber"
+        }
+      }
+    },
+    "D4_total_source_paths": 352,
+    "metric": "Centroid attribution and length x mean width x mean display alpha; overlapping area, physical pigment strength and wet coverage are not measured",
+    "physical_observation": "The artist reports D4 as too dominant. This digital audit does not recalibrate that physical observation.",
+    "summer_physical_slots_assigned": false
+  }
+}
