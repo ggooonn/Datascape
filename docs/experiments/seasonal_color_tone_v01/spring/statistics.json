@@ -1,0 +1,57 @@
+{
+  "panels": {
+    "P1": {
+      "ink_length_mm": 42321.18582380787,
+      "ink_cohort_length_shares": {
+        "middle": 0.17122663365730073,
+        "light": 0.7988024202227562,
+        "dark": 0.02997094611994316
+      },
+      "ink_cohort_target": [
+        0.76,
+        0.2,
+        0.04
+      ],
+      "source_color_length_by_role_mm": {
+        "base": 26399.50232999114,
+        "structural": 17294.335315696553,
+        "accent": 2681.9197516595427
+      },
+      "supplemental_guide_length_by_role_mm": {},
+      "physical_D4_assigned": false
+    },
+    "P2": {
+      "ink_length_mm": 45961.678199095724,
+      "ink_cohort_length_shares": {
+        "middle": 0.23417533342539557,
+        "light": 0.694260918156975,
+        "dark": 0.07156374841762952
+      },
+      "ink_cohort_target": [
+        0.69,
+        0.24,
+        0.07
+      ],
+      "source_color_length_by_role_mm": {
+        "base": 28319.91131082498,
+        "structural": 19084.415635125915,
+        "accent": 2555.4540668805985
+      },
+      "supplemental_guide_length_by_role_mm": {},
+      "physical_D4_assigned": false
+    }
+  },
+  "geometry_signatures": {
+    "ink": "53e4bde9d8947cf54e1f4230e7d9aa70d8fadd76d04079544dbd2a5d81e120c5",
+    "color": "ca6c7bb35f110e06ef1fa418c29f6cb1e843bbc98801c366d0efd649953c60e5"
+  },
+  "source_files": {
+    "artworks/spring_v13/visible_ink.json.gz": "4501ccbb589e20d304e74957cb36f32bf605b9a22eff20011ce32c938f4406b5",
+    "artworks/spring_v13/visible_color.json.gz": "493b2e3bd5aa27135256926caf7e314fa0357ea9dbcf1dac2ce16f782d60604d"
+  },
+  "depth_role_bases": {
+    "screen-zone-fallback": 7200,
+    "source-depth-metadata": 7751
+  },
+  "metric_scope": "Path-length cohort shares and color-source lengths, not pigment quantities, coverage or calibrated light/dark dilution ratios"
+}

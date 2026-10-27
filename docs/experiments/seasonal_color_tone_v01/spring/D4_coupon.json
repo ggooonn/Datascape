@@ -1,0 +1,11 @@
+{
+  "bounds_continuous_mm": [
+    353.1287152631906,
+    571.7936034601832,
+    553.1287152631905,
+    741.7936034601832
+  ],
+  "source_D4_paths": 60,
+  "low_display_multiplier": 0.18,
+  "not_a_physical_dilution": true
+}

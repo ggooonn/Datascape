@@ -1,0 +1,215 @@
+{
+  "transitions": [
+    {
+      "from": "P1",
+      "to": "P2",
+      "logic": "Fresh yellow-green edges consolidate into celadon groups; keep warm mineral support pale and let structural ink increase locally.",
+      "painted_boundary_x_mm": 300,
+      "role_display_RGB": {
+        "base": [
+          0.7706422775859141,
+          0.815700641952318,
+          0.7215770181911828
+        ],
+        "structural": [
+          0.478942426102312,
+          0.6217708694313561,
+          0.4544458599864371
+        ],
+        "mineral": [
+          0.6510240642570829,
+          0.6941413096519709,
+          0.6236178215448498
+        ],
+        "accent": [
+          0.7810296847808275,
+          0.7766530928044625,
+          0.43555896285852796
+        ]
+      },
+      "max_numeric_boundary_color_error": 1.0181921972218788e-10,
+      "logic_scope": "Continuous display-role function; actual painted territories may meet through paper or unequal source coverage. No geometric seam fitting."
+    },
+    {
+      "from": "P2",
+      "to": "P3",
+      "logic": "Carry celadon into humid blue-gray ground; deepen grouped vegetation while retaining a light receiving passage.",
+      "painted_boundary_x_mm": 600,
+      "role_display_RGB": {
+        "base": [
+          0.7371847123030639,
+          0.7961736180488826,
+          0.739509606180301
+        ],
+        "structural": [
+          0.34511122179362785,
+          0.5488413293100411,
+          0.45930889833385374
+        ],
+        "mineral": [
+          0.5921709409157841,
+          0.6667557232470713,
+          0.6356399365833151
+        ],
+        "accent": [
+          0.7296550855999911,
+          0.7429888276968368,
+          0.4332859591626356
+        ]
+      },
+      "max_numeric_boundary_color_error": 1.6740059338715696e-10,
+      "logic_scope": "Continuous display-role function; actual painted territories may meet through paper or unequal source coverage. No geometric seam fitting."
+    },
+    {
+      "from": "P3",
+      "to": "P4",
+      "logic": "Increase cool grouped cores and mineral depth, with warm olive/amber openings rather than green over every terrain surface.",
+      "painted_boundary_x_mm": 900,
+      "role_display_RGB": {
+        "base": [
+          0.6979750342511735,
+          0.7646720862670685,
+          0.7529914808958876
+        ],
+        "structural": [
+          0.2329318007786808,
+          0.45667825318639693,
+          0.4298429036081467
+        ],
+        "mineral": [
+          0.5352154685962631,
+          0.6293631198454852,
+          0.6353207013768035
+        ],
+        "accent": [
+          0.7405800635020073,
+          0.6689539008569706,
+          0.3980230468800073
+        ]
+      },
+      "max_numeric_boundary_color_error": 8.234557480335525e-11,
+      "logic_scope": "Continuous display-role function; actual painted territories may meet through paper or unequal source coverage. No geometric seam fitting."
+    },
+    {
+      "from": "P4",
+      "to": "P5",
+      "logic": "Use the existing amber opening as the hinge into straw/copper; make Autumn's structural color shift assertive, retaining cool mineral counterweights.",
+      "painted_boundary_x_mm": 1200,
+      "role_display_RGB": {
+        "base": [
+          0.7467573774790901,
+          0.7500441264881278,
+          0.6883836085441479
+        ],
+        "structural": [
+          0.4541500477508215,
+          0.4537404323922187,
+          0.3647512226768324
+        ],
+        "mineral": [
+          0.5791617521914542,
+          0.5781536424964215,
+          0.5336105453448576
+        ],
+        "accent": [
+          0.7855499582129626,
+          0.5623549731708285,
+          0.3136147511993197
+        ]
+      },
+      "max_numeric_boundary_color_error": 4.277894705140284e-10,
+      "logic_scope": "Continuous display-role function; actual painted territories may meet through paper or unequal source coverage. No geometric seam fitting."
+    },
+    {
+      "from": "P5",
+      "to": "P6",
+      "logic": "Copper peaks retreat into dry mauve/umber-neutral structure; break accent territories and expose more paper and rock.",
+      "painted_boundary_x_mm": 1500,
+      "role_display_RGB": {
+        "base": [
+          0.7979100624287341,
+          0.7353331433100831,
+          0.643613107619405
+        ],
+        "structural": [
+          0.6071433859267034,
+          0.4376527351355607,
+          0.33565032443225035
+        ],
+        "mineral": [
+          0.6077569694694466,
+          0.5315374829538211,
+          0.461618018072851
+        ],
+        "accent": [
+          0.7491375636247527,
+          0.48484193403327297,
+          0.27496670937151685
+        ]
+      },
+      "max_numeric_boundary_color_error": 1.0201650635366377e-10,
+      "logic_scope": "Continuous display-role function; actual painted territories may meet through paper or unequal source coverage. No geometric seam fitting."
+    },
+    {
+      "from": "P6",
+      "to": "P7",
+      "logic": "Desaturate warm mineral remnants toward cold gray; shift emphasis from canopy color to selected trunks, joints and ground contacts.",
+      "painted_boundary_x_mm": 1800,
+      "role_display_RGB": {
+        "base": [
+          0.7674705575567357,
+          0.7551012777499834,
+          0.7353802751637412
+        ],
+        "structural": [
+          0.5137847826244522,
+          0.46306656210931824,
+          0.4827703565819564
+        ],
+        "mineral": [
+          0.5582079309182373,
+          0.5475438881211145,
+          0.5513486589700163
+        ],
+        "accent": [
+          0.6854867530807355,
+          0.5501977377835975,
+          0.4086636715064023
+        ]
+      },
+      "max_numeric_boundary_color_error": 2.1111301595766463e-10,
+      "logic_scope": "Continuous display-role function; actual painted territories may meet through paper or unequal source coverage. No geometric seam fitting."
+    },
+    {
+      "from": "P7",
+      "to": "P8",
+      "logic": "Reduce colored path weight and dark-ink incidence while retaining a few warm remnants; preserve P8's gentle ending and long rest.",
+      "painted_boundary_x_mm": 2100,
+      "role_display_RGB": {
+        "base": [
+          0.8076692931599357,
+          0.8293250004013409,
+          0.8333964028431737
+        ],
+        "structural": [
+          0.5173572398236121,
+          0.5684212690168752,
+          0.623441201328895
+        ],
+        "mineral": [
+          0.5956067848092365,
+          0.6270997765348055,
+          0.6625409541260046
+        ],
+        "accent": [
+          0.6842934629658706,
+          0.6411447811224722,
+          0.5529282473949951
+        ]
+      },
+      "max_numeric_boundary_color_error": 1.2545620098336485e-10,
+      "logic_scope": "Continuous display-role function; actual painted territories may meet through paper or unequal source coverage. No geometric seam fitting."
+    }
+  ],
+  "physical_pigment_interpolation": false
+}

@@ -1,0 +1,65 @@
+{
+  "panels": {
+    "P5": {
+      "ink_length_mm": 46054.647947405705,
+      "ink_cohort_length_shares": {
+        "middle": 0.2683089672794373,
+        "dark": 0.11196510849672162,
+        "light": 0.6197259242238411
+      },
+      "ink_cohort_target": [
+        0.56,
+        0.3,
+        0.14
+      ],
+      "source_color_length_by_role_mm": {
+        "structural": 3458.5611034061176,
+        "accent": 527.9522823486009,
+        "base": 378.8252792575804
+      },
+      "supplemental_guide_length_by_role_mm": {
+        "structural": 332.57398872138987,
+        "base": 1672.0355050291707
+      },
+      "physical_D4_assigned": false
+    },
+    "P6": {
+      "ink_length_mm": 42793.778043557584,
+      "ink_cohort_length_shares": {
+        "middle": 0.24928625164568372,
+        "dark": 0.10406147445461507,
+        "light": 0.6466522738997013
+      },
+      "ink_cohort_target": [
+        0.63,
+        0.24,
+        0.13
+      ],
+      "source_color_length_by_role_mm": {
+        "structural": 1667.2388595172622,
+        "accent": 678.4733665148076,
+        "base": 218.99200498853475
+      },
+      "supplemental_guide_length_by_role_mm": {
+        "structural": 304.0305838590942,
+        "base": 1208.8629416609758
+      },
+      "physical_D4_assigned": false
+    }
+  },
+  "geometry_signatures": {
+    "ink": "5c7263a10c913b26f2ca70719d5672a703bcd9d76d76c82d169b5441c88ec472",
+    "color": "1b68e27cf201c359539c08b8e9d1f5fb2b1f109cd8e154620db1af99a2b18701"
+  },
+  "source_files": {
+    "docs/experiments/autumn_composition_v01/ink.json.gz": "c874066e8b689039b88543478c8152093abef398884a58e5fac234aa2b442347",
+    "docs/experiments/autumn_composition_v01/color_intent.json.gz": "abb89a1a763af3371f784c55b0d20c574ec315929531d8bdfba82764548513cc"
+  },
+  "depth_role_bases": {
+    "source-depth-metadata": 2850,
+    "source-site": 7,
+    "saved-depth-raster-at-path-centroid": 1693,
+    "screen-zone-fallback": 1
+  },
+  "metric_scope": "Path-length cohort shares and color-source lengths, not pigment quantities, coverage or calibrated light/dark dilution ratios"
+}

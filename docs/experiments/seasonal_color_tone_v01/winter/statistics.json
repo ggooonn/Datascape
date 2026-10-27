@@ -1,0 +1,64 @@
+{
+  "panels": {
+    "P7": {
+      "ink_length_mm": 37574.695238558896,
+      "ink_cohort_length_shares": {
+        "light": 0.7628217189816583,
+        "dark": 0.05953148199263195,
+        "middle": 0.1776467990257097
+      },
+      "ink_cohort_target": [
+        0.74,
+        0.18,
+        0.08
+      ],
+      "source_color_length_by_role_mm": {
+        "structural": 1302.6914997483013,
+        "accent": 28.895790385943798,
+        "base": 133.79618311009068
+      },
+      "supplemental_guide_length_by_role_mm": {
+        "structural": 493.3237675248158,
+        "base": 1143.8063615498927
+      },
+      "physical_D4_assigned": false
+    },
+    "P8": {
+      "ink_length_mm": 24721.402788477622,
+      "ink_cohort_length_shares": {
+        "light": 0.822248945142232,
+        "dark": 0.05040840275972879,
+        "middle": 0.12734265209803916
+      },
+      "ink_cohort_target": [
+        0.84,
+        0.12,
+        0.04
+      ],
+      "source_color_length_by_role_mm": {
+        "structural": 476.2583333498192,
+        "accent": 18.80426531310613,
+        "base": 51.80171446787497
+      },
+      "supplemental_guide_length_by_role_mm": {
+        "structural": 179.51906376737907,
+        "base": 930.1719743214309
+      },
+      "physical_D4_assigned": false
+    }
+  },
+  "geometry_signatures": {
+    "ink": "2b453b89fb5cbf3e212107098c624406c4bde809718114f1d011133cf02fd223",
+    "color": "d31c5677f1faa30feef238dd8be24e9a89b978b0303a94a6983ed6f056927c1a"
+  },
+  "source_files": {
+    "docs/experiments/winter_composition_v01/ink.json.gz": "262a1fc1071aec5570d333e54d3a45763ba71e4b5b78b7b15897561673cdadfd",
+    "docs/experiments/winter_composition_v01/color_intent.json.gz": "6ef965e91f6014b5bb917b77531a66e49bb3cfe4267618ead8a5a48eeae8445a"
+  },
+  "depth_role_bases": {
+    "source-depth-metadata": 1214,
+    "source-site": 8,
+    "saved-depth-raster-at-path-centroid": 1469
+  },
+  "metric_scope": "Path-length cohort shares and color-source lengths, not pigment quantities, coverage or calibrated light/dark dilution ratios"
+}
