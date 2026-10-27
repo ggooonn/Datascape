@@ -1,0 +1,392 @@
+{
+  "comparisons": {
+    "contact_15": {
+      "AIR_modeled_seconds": 4396.898125243141,
+      "commanded_seconds": 5952.82524537007,
+      "contact_count": 3947,
+      "contact_limit": 15,
+      "drawing_length_mm": 40017.06838151743,
+      "initial_loads": 1,
+      "loads_by_slot": {
+        "A2": 104,
+        "A4": 40,
+        "A5": 53,
+        "C1": 28,
+        "C2": 34,
+        "C3": 7
+      },
+      "material_proof": {
+        "actual_paper_contacts": 3947,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "d27d27ed625004661085d5d07d7990bd796d95e1eaa721e726046963e65741a5",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 395.3951417493214,
+        "pigment_changes": 5,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 266
+      },
+      "maximum_atomic_contact_overrun": 0,
+      "maximum_atomic_distance_overrun_mm": 0,
+      "maximum_contacts_since_load": 15,
+      "maximum_distance_since_load_mm": 395.3951417493219,
+      "modeled_seconds": 7218.969539606775,
+      "modeled_seconds_by_category": {
+        "drawing": 644.8890235932306,
+        "non_drawing_travel": 1203.182792189769,
+        "paper_engagement": 2253.973981739271,
+        "station_handling": 1659.2578102612479,
+        "station_transfer": 1457.6659318232562
+      },
+      "pigment_changes": 5,
+      "same_pigment_reloads": 260,
+      "same_pigment_trigger_counts": {
+        "contact_limit": 260
+      },
+      "source_count": 3947,
+      "station_operation_visits": 285,
+      "total_loads": 266
+    },
+    "contact_20": {
+      "commanded_seconds": 5286.814196038467,
+      "contact_count": 3947,
+      "contact_limit": 20,
+      "drawing_length_mm": 40017.06838151743,
+      "initial_loads": 1,
+      "loads_by_slot": {
+        "A2": 78,
+        "A4": 30,
+        "A5": 40,
+        "C1": 21,
+        "C2": 26,
+        "C3": 6
+      },
+      "material_proof": {
+        "actual_paper_contacts": 3947,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "7dc7f7966d3814226074290d1338e1c442ff7a55a20f11019ef81ad70c455405",
+        "maximum_contacts_since_load": 20,
+        "maximum_distance_since_load_mm": 515.2171684477927,
+        "pigment_changes": 5,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 201
+      },
+      "maximum_atomic_contact_overrun": 0,
+      "maximum_atomic_distance_overrun_mm": 0,
+      "maximum_contacts_since_load": 20,
+      "maximum_distance_since_load_mm": 515.2171684477936,
+      "modeled_seconds": 6513.200221118202,
+      "modeled_seconds_by_category": {
+        "drawing": 644.8890235932306,
+        "non_drawing_travel": 1212.7511190893636,
+        "paper_engagement": 2258.9201791882324,
+        "station_handling": 1287.7997394821155,
+        "station_transfer": 1108.8401597652594
+      },
+      "pigment_changes": 5,
+      "same_pigment_reloads": 195,
+      "same_pigment_trigger_counts": {
+        "contact_limit": 195
+      },
+      "source_count": 3947,
+      "station_operation_visits": 220,
+      "total_loads": 201
+    },
+    "contact_30": {
+      "commanded_seconds": 4609.154238432546,
+      "contact_count": 3947,
+      "contact_limit": 30,
+      "drawing_length_mm": 40017.06838151743,
+      "initial_loads": 1,
+      "loads_by_slot": {
+        "A2": 52,
+        "A4": 20,
+        "A5": 27,
+        "C1": 14,
+        "C2": 17,
+        "C3": 4
+      },
+      "material_proof": {
+        "actual_paper_contacts": 3947,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "9578d5e3b7b10d267ca6d59b33d5dbfcc3e97c460c92f365d492010c676be84f",
+        "maximum_contacts_since_load": 30,
+        "maximum_distance_since_load_mm": 609.7441866650203,
+        "pigment_changes": 5,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 134
+      },
+      "maximum_atomic_contact_overrun": 0,
+      "maximum_atomic_distance_overrun_mm": 9.744186665021289,
+      "maximum_contacts_since_load": 30,
+      "maximum_distance_since_load_mm": 609.7441866650213,
+      "modeled_seconds": 5794.216776896827,
+      "modeled_seconds_by_category": {
+        "drawing": 644.8890235932306,
+        "non_drawing_travel": 1222.9697566925236,
+        "paper_engagement": 2264.018567327929,
+        "station_handling": 904.9121896021737,
+        "station_transfer": 757.4272396809698
+      },
+      "pigment_changes": 5,
+      "same_pigment_reloads": 128,
+      "same_pigment_trigger_counts": {
+        "contact_limit": 127,
+        "distance_limit": 1
+      },
+      "source_count": 3947,
+      "station_operation_visits": 153,
+      "total_loads": 134
+    },
+    "distance_only_PR43": {
+      "commanded_seconds": 3937.853252561156,
+      "contact_count": 3947,
+      "contact_limit": null,
+      "drawing_length_mm": 40017.06838151743,
+      "exact_PR43_Gcode_control_sha256": "53e0ce8211dfcc675faa80eb119d5f2cb69856b8fa3112fc0ca3ae00d1d19b8f",
+      "initial_loads": 1,
+      "loads_by_slot": {
+        "A2": 31,
+        "A4": 13,
+        "A5": 11,
+        "C1": 5,
+        "C2": 7,
+        "C3": 2
+      },
+      "material_proof": {
+        "actual_paper_contacts": 3947,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "2f9817fd160c95a596a8e8dba980155ad034ad1888017434ce556b06b61b5f00",
+        "maximum_contacts_since_load": 110,
+        "maximum_distance_since_load_mm": 626.828125399719,
+        "pigment_changes": 5,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 69
+      },
+      "maximum_atomic_contact_overrun": 0,
+      "maximum_atomic_distance_overrun_mm": 26.828125399718374,
+      "maximum_contacts_since_load": 110,
+      "maximum_distance_since_load_mm": 626.8281253997184,
+      "modeled_seconds": 5082.762442400329,
+      "modeled_seconds_by_category": {
+        "drawing": 644.8890235932306,
+        "non_drawing_travel": 1231.8732857188827,
+        "paper_engagement": 2268.9647647768884,
+        "station_handling": 533.4541188232063,
+        "station_transfer": 403.5812494881205
+      },
+      "pigment_changes": 5,
+      "same_pigment_reloads": 63,
+      "same_pigment_trigger_counts": {
+        "distance_limit": 63
+      },
+      "source_count": 3947,
+      "station_operation_visits": 88,
+      "total_loads": 69
+    }
+  },
+  "distance_limit_mm": 600,
+  "machine_authorized": false,
+  "physical_color_response_measured": false,
+  "pigment_order": [
+    "A2",
+    "A4",
+    "C1",
+    "A5",
+    "C3",
+    "C2"
+  ],
+  "preferred_contact_limit": 15,
+  "preservation": {
+    "base_commit": "8f7b1bb0ec2cd0b9fee639f370afe3b0518fa92b",
+    "coupon_and_station_COLOR_AIR_byte_identical": true,
+    "distance_only_control_byte_identical": true,
+    "existing_PRs_modified": false,
+    "numerical_paper_blocks_equal_PR43": true,
+    "original_source_selection_sha256": "4fb0f43d18445298589615f38e7332ea285595f348a18c5b7507243cf2d40a00",
+    "unchanged_layering_and_source_order": true,
+    "unchanged_original_geometry_pressure_widths_and_dose": true,
+    "unchanged_profile_sha256": "cc22bb3ab850ea371ebd92eecdce66d22af08f9f3a820430b81dcf0344500f98",
+    "unchanged_six_slots_and_pigment_order": true
+  },
+  "primary": {
+    "AIR_modeled_seconds": 4396.898125243141,
+    "contact_count": 3947,
+    "drawing_length_mm": 40017.06838151743,
+    "initial_loads": 1,
+    "loads_by_slot": {
+      "A2": 104,
+      "A4": 40,
+      "A5": 53,
+      "C1": 28,
+      "C2": 34,
+      "C3": 7
+    },
+    "maximum_atomic_contact_overrun": 0,
+    "maximum_atomic_distance_overrun_mm": 0,
+    "maximum_contacts_since_load": 15,
+    "maximum_distance_since_load_mm": 395.3951417493219,
+    "modeled_seconds": 7218.969539606775,
+    "modeled_seconds_by_category": {
+      "drawing": 644.8890235932306,
+      "non_drawing_travel": 1203.182792189769,
+      "paper_engagement": 2253.973981739271,
+      "station_handling": 1659.2578102612479,
+      "station_transfer": 1457.6659318232562
+    },
+    "pigment_changes": 5,
+    "same_pigment_reloads": 260,
+    "same_pigment_trigger_counts": {
+      "contact_limit": 260
+    },
+    "source_count": 3947,
+    "station_operation_visits": 285,
+    "total_loads": 266
+  },
+  "primary_program": "SPRING_P2_COLOR_PR35_HYBRID15_COMPLETE_REVIEW",
+  "role": "Complete COLOR/AIR pair primary; four-stage files are mutually exclusive reference alternatives",
+  "selected_sources": 3947,
+  "stages": {
+    "01_MINERAL_BASE": {
+      "contact_count": 2147,
+      "drawing_length_mm": 26400.784905993904,
+      "initial_loads": 1,
+      "loads_by_slot": {
+        "A2": 104,
+        "A4": 40
+      },
+      "material_proof": {
+        "actual_paper_contacts": 2147,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "699ad5ac1ee57090c34525ee8be9952a8170a72c0aefdc303d82e78752f32e65",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 306.25507434371184,
+        "pigment_changes": 1,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 144
+      },
+      "maximum_atomic_contact_overrun": 0,
+      "maximum_atomic_distance_overrun_mm": 0,
+      "maximum_contacts_since_load": 15,
+      "maximum_distance_since_load_mm": 306.2550743437118,
+      "modeled_seconds": 3933.3150254625452,
+      "pigment_changes": 1,
+      "same_pigment_reloads": 142,
+      "same_pigment_trigger_counts": {
+        "contact_limit": 142
+      },
+      "source_count": 2147,
+      "station_operation_visits": 151,
+      "total_loads": 144
+    },
+    "02_PALE_GROWTH_AND_LOCAL_OVERLAP": {
+      "contact_count": 407,
+      "drawing_length_mm": 2603.67178161809,
+      "initial_loads": 1,
+      "loads_by_slot": {
+        "C1": 28
+      },
+      "material_proof": {
+        "actual_paper_contacts": 407,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "62f4859ac5c2d820ec0411802edaec23afbf1f42340adb6cd98ed4af9f098df3",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 167.59531474940405,
+        "pigment_changes": 0,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 28
+      },
+      "maximum_atomic_contact_overrun": 0,
+      "maximum_atomic_distance_overrun_mm": 0,
+      "maximum_contacts_since_load": 15,
+      "maximum_distance_since_load_mm": 167.59531474940405,
+      "modeled_seconds": 782.7798989176586,
+      "pigment_changes": 0,
+      "same_pigment_reloads": 27,
+      "same_pigment_trigger_counts": {
+        "contact_limit": 27
+      },
+      "source_count": 407,
+      "station_operation_visits": 32,
+      "total_loads": 28
+    },
+    "03_GROUPED_CORES": {
+      "contact_count": 889,
+      "drawing_length_mm": 7280.762808104609,
+      "initial_loads": 1,
+      "loads_by_slot": {
+        "A5": 53,
+        "C3": 7
+      },
+      "material_proof": {
+        "actual_paper_contacts": 889,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "55e969f8bae4c43831c811266b49c71d971df0a84eca4ee8534df660a0599137",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 395.3951417493214,
+        "pigment_changes": 1,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 60
+      },
+      "maximum_atomic_contact_overrun": 0,
+      "maximum_atomic_distance_overrun_mm": 0,
+      "maximum_contacts_since_load": 15,
+      "maximum_distance_since_load_mm": 395.3951417493219,
+      "modeled_seconds": 1645.6374841438417,
+      "pigment_changes": 1,
+      "same_pigment_reloads": 58,
+      "same_pigment_trigger_counts": {
+        "contact_limit": 58
+      },
+      "source_count": 889,
+      "station_operation_visits": 67,
+      "total_loads": 60
+    },
+    "04_FRESH_TIPS_AND_ACCENTS": {
+      "contact_count": 504,
+      "drawing_length_mm": 3731.848885800826,
+      "initial_loads": 1,
+      "loads_by_slot": {
+        "C2": 34
+      },
+      "material_proof": {
+        "actual_paper_contacts": 504,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "dda9a2df34260f0a2427f788c51271e47f7776d57db44b8bb9c328042a8a7382",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 172.21218846544758,
+        "pigment_changes": 0,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 34
+      },
+      "maximum_atomic_contact_overrun": 0,
+      "maximum_atomic_distance_overrun_mm": 0,
+      "maximum_contacts_since_load": 15,
+      "maximum_distance_since_load_mm": 172.2121884654475,
+      "modeled_seconds": 972.7623968678224,
+      "pigment_changes": 0,
+      "same_pigment_reloads": 33,
+      "same_pigment_trigger_counts": {
+        "contact_limit": 33
+      },
+      "source_count": 504,
+      "station_operation_visits": 38,
+      "total_loads": 34
+    }
+  }
+}

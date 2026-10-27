@@ -263,7 +263,9 @@ def schedule(units, edges, policy):
 def make_profile(policy):
     require((policy['paper_first_touch_z'],policy['paper_approach_z'],policy['paper_hover_z'])==(10,15,20),
         'This experiment retains the confirmed10/15/20 mounting. A changed touch datum requires a separately reviewed mechanical profile, not a silent G54/brush offset.')
-    require(policy['distance_limit_mm']>0 and policy['contact_limit'] is None,'Retain the explicit distance-only color reload policy')
+    require(policy['distance_limit_mm']>0 and (policy['contact_limit'] is None or
+        type(policy['contact_limit']) is int and policy['contact_limit']>0),
+        'Color reload requires positive distance and an optional positive actual-contact limit')
     data=read(ROOT/'docs/spring_fine_terrain_v01/review/profile.small.json')
     data['profile_id']='SPRING-P2-COLOR-V01-UNMEASURED';data['evidence']=[]
     b=data['brush_profiles']['color'];b['knots']=[[p,-c] for p,c in policy['color_compression_knots_mm']]
@@ -279,7 +281,11 @@ class ColorMaterials:
     def __init__(self,b,policy):
         self.b=b;self.policy=policy;self.loaded=None;self.distance=0.;self.loads=[];self.operations=[];self.contacts=0
     @property
-    def state(self):return 'ordinary_travel' if self.loaded is None else 'partially_depleted' if self.distance>=self.policy['distance_limit_mm'] else 'wet_loaded'
+    def state(self):return 'ordinary_travel' if self.loaded is None else 'partially_depleted' if self.threshold_reasons() else 'wet_loaded'
+    def threshold_reasons(self):
+        limit=self.policy['contact_limit']
+        return (['distance_limit'] if self.distance>=self.policy['distance_limit_mm'] else [])+(
+            ['contact_limit'] if limit is not None and self.contacts>=limit else [])
     def water(self,action,cycles=1,dwell=None):
         water=self.b.profile.data['stations']['water']
         start=len(self.b.commands);container_operation(self.b,water,action,cycles,dwell)
@@ -290,8 +296,10 @@ class ColorMaterials:
         emit_station_operation(self.b,st,'absorbent_contact','partially_depleted',lambda s:_station_geometry(s,tuple),lambda s:shallow_wipe_points(s,tuple))
         self.operations.append(dict(action='absorbent_contact',station='PURGE',repetitions=repetitions,first_command=start,last_command=len(self.b.commands)-1))
     def before(self,u,slot=None):
-        slot=slot or u['physical_slot'];reason='initial_load' if self.loaded is None else 'pigment_change' if self.loaded!=slot else 'distance_limit' if self.distance>=self.policy['distance_limit_mm'] else None
-        if reason is None:return
+        slot=slot or u['physical_slot'];thresholds=self.threshold_reasons()
+        reasons=['initial_load'] if self.loaded is None else ['pigment_change'] if self.loaded!=slot else thresholds
+        if not reasons:return
+        reason=reasons[0]
         previous=self.loaded
         if reason=='pigment_change':self.water('wash');self.cloth();self.water('controlled_rewet',0,1)
         st=deepcopy(self.b.profile.data['stations'][slot]);start=len(self.b.commands)
@@ -306,11 +314,19 @@ class ColorMaterials:
         self.b.lift(35);self.b.time_context=None;self.b.at_station=True;self.b.in_paper=False
         self.operations.append(dict(action='pigment_load',station=slot,first_command=start,last_command=len(self.b.commands)-1))
         self.loads.append(dict(before_source=u['id'],slot=slot,previous_slot=previous,reason=reason,
+            reasons=reasons,threshold_reasons_before_service=thresholds,
             previous_distance_mm=self.distance,previous_contacts=self.contacts,
+            distance_limit_mm=self.policy['distance_limit_mm'],contact_limit=self.policy['contact_limit'],
+            after_load_budget=dict(distance_mm=0.,actual_paper_contacts=0),
             wash_performed=reason=='pigment_change',first_command=start,last_command=len(self.b.commands)-1))
         self.loaded=slot;self.distance=0.;self.contacts=0
         self.b.marker('material_loaded_'+slot,slot)
-    def after(self,u):self.distance+=u['length_mm'];self.contacts+=len(u['fragments'])
+    def after(self,u,actual_contacts=None):
+        # Count physical paper engagements, never source vertices, station dips
+        # or source records. A fragmented source can contain multiple contacts.
+        count=len(u['fragments']) if actual_contacts is None else actual_contacts
+        require(type(count) is int and count==len(u['fragments']),'Actual paper-contact count differs from source fragments')
+        self.distance+=u['length_mm'];self.contacts+=count
     def terminal(self):
         self.b.marker('terminal_cleanup_begin')
         for _ in range(3):self.water('terminal_wash',3,10)
@@ -339,17 +355,29 @@ def build(units,order,profile,policy,legacy_slots=False):
     b.marker('pre_run_confirmation_required','Clean conditioned small brush; calibrated color and inspected station paths; preserved PR35 P2 registration')
     for rank,i in enumerate(order):
         u=units[i];m.before(u,u['legacy_slot'] if legacy_slots else None)
+        before=dict(distance_mm=m.distance,actual_paper_contacts=m.contacts)
         first=len(b.commands);b.marker('source_begin',str(rank),source_id=u['id'])
-        draw_unit(b,u,m);m.after(u);b.marker('source_complete',str(rank),source_id=u['id'])
+        draw_unit(b,u,m)
+        actual_contacts=sum(x.kind=='move' and x.action=='initial_contact' for x in b.commands[first:])
+        m.after(u,actual_contacts);b.marker('source_complete',str(rank),source_id=u['id'])
         events.append(dict(source_id=u['id'],slot=m.loaded,first_command=first,last_command=len(b.commands)-1,
+            before=before,actual_paper_contacts=actual_contacts,
             distance_since_load_mm=m.distance,contacts_since_load=m.contacts,
+            threshold_reasons_after_source=m.threshold_reasons(),
+            atomic_contact_overrun=max(0,m.contacts-policy['contact_limit']) if policy['contact_limit'] is not None else 0,
             atomic_distance_overrun_mm=max(0,m.distance-policy['distance_limit_mm'])))
     m.terminal()
     return b.commands,dict(loads=m.loads,station_operations=m.operations,events=events,
         pigment_changes=sum(r['reason']=='pigment_change' for r in m.loads),
-        same_pigment_reloads=sum(r['reason']=='distance_limit' for r in m.loads),
+        same_pigment_reloads=sum(r['reason'] in ('distance_limit','contact_limit') for r in m.loads),
+        same_pigment_trigger_counts=dict(Counter('both' if set(r['reasons'])=={'distance_limit','contact_limit'} else r['reason']
+            for r in m.loads if r['reason'] in ('distance_limit','contact_limit'))),
         initial_loads=sum(r['reason']=='initial_load' for r in m.loads),total_loads=len(m.loads),
+        distance_limit_mm=policy['distance_limit_mm'],contact_limit=policy['contact_limit'],
         wash_count=sum(r['action']=='wash' for r in m.operations),terminal_water_visits=3,
+        maximum_contacts_since_load=max((r['contacts_since_load'] for r in events),default=0),
+        maximum_distance_since_load_mm=max((r['distance_since_load_mm'] for r in events),default=0),
+        maximum_atomic_contact_overrun=max((r['atomic_contact_overrun'] for r in events),default=0),
         maximum_atomic_distance_overrun_mm=max((r['atomic_distance_overrun_mm'] for r in events),default=0),
         drawing_length_mm=sum(units[i]['length_mm'] for i in order),source_count=len(order),
         contact_count=sum(len(units[i]['fragments']) for i in order),M0_count=0)

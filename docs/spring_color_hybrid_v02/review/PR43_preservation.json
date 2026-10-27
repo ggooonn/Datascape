@@ -1,0 +1,12 @@
+{
+  "base_commit": "8f7b1bb0ec2cd0b9fee639f370afe3b0518fa92b",
+  "coupon_and_station_COLOR_AIR_byte_identical": true,
+  "distance_only_control_byte_identical": true,
+  "existing_PRs_modified": false,
+  "numerical_paper_blocks_equal_PR43": true,
+  "original_source_selection_sha256": "4fb0f43d18445298589615f38e7332ea285595f348a18c5b7507243cf2d40a00",
+  "unchanged_layering_and_source_order": true,
+  "unchanged_original_geometry_pressure_widths_and_dose": true,
+  "unchanged_profile_sha256": "cc22bb3ab850ea371ebd92eecdce66d22af08f9f3a820430b81dcf0344500f98",
+  "unchanged_six_slots_and_pigment_order": true
+}
