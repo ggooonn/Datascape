@@ -1,0 +1,36 @@
+{
+  "AIR_all_Z35": true,
+  "M0_count": 0,
+  "bounds_G54": [
+    [
+      0,
+      45.0,
+      35
+    ],
+    [
+      840.0,
+      900,
+      35
+    ]
+  ],
+  "color_response_measured": false,
+  "machine_authorized": false,
+  "maximum_projected_axis_feeds": [
+    15000.0,
+    14972.73383433867,
+    0.0
+  ],
+  "numeric_commands": 10152,
+  "original_arc_XY_pressure_verified": true,
+  "physical_clearance_verified": false,
+  "pressure_samples": 6362,
+  "source_count": 407,
+  "source_order_sha256": "12a372fda9e5f56c165d9403d4e78289c02bc8be6261278108d216761471daba",
+  "station_moves": 194,
+  "terminal_cleanup_verified": true,
+  "terminal_park": [
+    800.0,
+    800.0,
+    35.0
+  ]
+}

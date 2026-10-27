@@ -1,0 +1,151 @@
+{
+  "canonical_plan_sha256": "8b4804f561f0eaab28753ae1790ce3b0f5b9ab8ba9a4a2ffe1e4daecbe2596bd",
+  "ink_compatibility_commit": "cf010e6f41de36baee83ed7a04cacbc3f0931e23",
+  "machine_authorized": false,
+  "omitted_sources": 2025,
+  "original_P2_drawing_mm": 49959.78101283151,
+  "physical_tests_performed": false,
+  "pigment_order": [
+    "A2",
+    "A4",
+    "C1",
+    "A5",
+    "C3",
+    "C2"
+  ],
+  "pinned_reference_hashes": {
+    "artworks/spring_v13/palette.json": "36ef7d125d447f5b38b2e914f96427536251964b41cb63f2fc2fde0b484b4adb",
+    "artworks/spring_v13/visible_color.json.gz": "493b2e3bd5aa27135256926caf7e314fa0357ea9dbcf1dac2ce16f782d60604d",
+    "artworks/spring_v13/visible_ink.json.gz": "4501ccbb589e20d304e74957cb36f32bf605b9a22eff20011ce32c938f4406b5",
+    "docs/experiments/seasonal_color_tone_v01/FRAMEWORK.md": "d8c7e16f1225cc3e5b5d90d6c3b464ee39a9ffb079662e250c3f9da923533a2d",
+    "docs/experiments/seasonal_color_tone_v01/SPRING_P2_HANDOFF.md": "4f3b91cbb2c57f6b544f8366dddf7457e9d68569a7975ab599ead411d1c8c623",
+    "docs/experiments/seasonal_color_tone_v01/spring/P2_style_handoff.json.gz": "36b3d7653402a76f580abf37752de260d85ea450c8f00e132202a46131eaae00",
+    "docs/experiments/seasonal_color_tone_v01/spring/style_intent.json.gz": "e7fbda519c2832588c4daf10d1bf02ba0031978ab51a43ead6db8af12ba15e70"
+  },
+  "primary": {
+    "M0_count": 0,
+    "contact_count": 3947,
+    "drawing_length_mm": 40017.06838151743,
+    "initial_loads": 1,
+    "maximum_atomic_distance_overrun_mm": 26.828125399718374,
+    "modeled_seconds": 5082.762442400329,
+    "modeled_seconds_by_category": {
+      "drawing": 644.8890235932306,
+      "non_drawing_travel": 1231.8732857188827,
+      "paper_engagement": 2268.9647647768884,
+      "station_handling": 533.4541188232063,
+      "station_transfer": 403.5812494881205
+    },
+    "pigment_changes": 5,
+    "same_pigment_reloads": 63,
+    "source_count": 3947,
+    "terminal_water_visits": 3,
+    "total_loads": 69,
+    "wash_count": 5
+  },
+  "protected_edges": 11619,
+  "repository_projection": "Full IR, source-selection geometry, HTML/SVG, original vectors and all117 generated files are in the Work package and reproduced by generator",
+  "seasonal_commit": "cd3c61ae3a19bbb50d73a8c11bf82e5547e29a74",
+  "selected_sources": 3947,
+  "source_commit": "c2464d65e2b2203f2e4b5912377eb33097987dbc",
+  "stages": {
+    "01_MINERAL_BASE": {
+      "M0_count": 0,
+      "contact_count": 2147,
+      "drawing_length_mm": 26400.784905993904,
+      "initial_loads": 1,
+      "maximum_atomic_distance_overrun_mm": 26.828125399718374,
+      "modeled_seconds": 2874.825032222435,
+      "modeled_seconds_by_category": {
+        "drawing": 411.2885686899764,
+        "non_drawing_travel": 664.7562302237335,
+        "paper_engagement": 1244.9855997434136,
+        "station_handling": 320.26102738624843,
+        "station_transfer": 233.53360617906307
+      },
+      "pigment_changes": 1,
+      "same_pigment_reloads": 42,
+      "source_count": 2147,
+      "terminal_water_visits": 3,
+      "total_loads": 44,
+      "wash_count": 1
+    },
+    "02_PALE_GROWTH_AND_LOCAL_OVERLAP": {
+      "M0_count": 0,
+      "contact_count": 407,
+      "drawing_length_mm": 2603.67178161809,
+      "initial_loads": 1,
+      "maximum_atomic_distance_overrun_mm": 3.7720391889970415,
+      "modeled_seconds": 528.9966365266855,
+      "modeled_seconds_by_category": {
+        "drawing": 47.66926958175686,
+        "non_drawing_travel": 130.9784095409598,
+        "paper_engagement": 230.75975844360468,
+        "station_handling": 79.80503424990258,
+        "station_transfer": 39.78416471046154
+      },
+      "pigment_changes": 0,
+      "same_pigment_reloads": 4,
+      "source_count": 407,
+      "terminal_water_visits": 3,
+      "total_loads": 5,
+      "wash_count": 0
+    },
+    "03_GROUPED_CORES": {
+      "M0_count": 0,
+      "contact_count": 889,
+      "drawing_length_mm": 7280.762808104609,
+      "initial_loads": 1,
+      "maximum_atomic_distance_overrun_mm": 9.744186665021289,
+      "modeled_seconds": 1138.3710657251565,
+      "modeled_seconds_by_category": {
+        "drawing": 121.46919384253758,
+        "non_drawing_travel": 274.09197474806126,
+        "paper_engagement": 506.9645306064984,
+        "station_handling": 143.1041013224195,
+        "station_transfer": 92.74126520563976
+      },
+      "pigment_changes": 1,
+      "same_pigment_reloads": 11,
+      "source_count": 889,
+      "terminal_water_visits": 3,
+      "total_loads": 13,
+      "wash_count": 1
+    },
+    "04_FRESH_TIPS_AND_ACCENTS": {
+      "M0_count": 0,
+      "contact_count": 504,
+      "drawing_length_mm": 3731.848885800826,
+      "initial_loads": 1,
+      "maximum_atomic_distance_overrun_mm": 10.014890514866352,
+      "modeled_seconds": 656.0949737113025,
+      "modeled_seconds_by_category": {
+        "drawing": 64.46199147895702,
+        "non_drawing_travel": 162.04667120612802,
+        "paper_engagement": 286.25487598368886,
+        "station_handling": 91.23451335079501,
+        "station_transfer": 52.09692169173358
+      },
+      "pigment_changes": 0,
+      "same_pigment_reloads": 6,
+      "source_count": 504,
+      "terminal_water_visits": 3,
+      "total_loads": 7,
+      "wash_count": 0
+    }
+  },
+  "status": "Complete numerical offline review; physical calibration and station inspection pending",
+  "total_P2_color_sources": 5972,
+  "wet_opportunity": {
+    "blocked_C2_candidates": 9,
+    "early_C2_units": [],
+    "group": "near-right-exposure",
+    "physical_wet_window_seconds": null,
+    "primary_pair": [
+      "C1",
+      "A5"
+    ],
+    "requested_C2_candidates": 9,
+    "status": "unmeasured wetness opportunity; protected order retained"
+  }
+}

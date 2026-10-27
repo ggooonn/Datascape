@@ -1,0 +1,68 @@
+{
+  "D4_candidate_max_sources": 12,
+  "D4_candidate_status": "Offline source-count-restricted structural comparison; not physical dilution",
+  "D4_primary": "Replace by pale A2/A4/A5 according to source group; do not substitute D5",
+  "color_compression_knots_mm": [
+    [
+      0,
+      0
+    ],
+    [
+      0.2,
+      0.3
+    ],
+    [
+      0.4,
+      0.7
+    ],
+    [
+      0.6,
+      1.2
+    ],
+    [
+      0.8,
+      1.8
+    ],
+    [
+      1,
+      2.4
+    ]
+  ],
+  "color_response_status": "UNMEASURED separate color trial curve; not the ink response and not derived from display alpha",
+  "contact_limit": null,
+  "crowded_color_dose_factor": 0.65,
+  "crowded_ink_proxy_distance_mm": 1.5,
+  "crowded_ink_proxy_fraction": 0.7,
+  "crowded_ink_proxy_neighbors": 6,
+  "distance_limit_mm": 600,
+  "fine_brush_color": "Offline manifest only; no contact curve or G-code until pigment delivery and tool registration are measured",
+  "ink_compatibility_PR": 42,
+  "ink_compatibility_branch": "spring/p2-a-brush-hierarchy-v01",
+  "ink_compatibility_commit": "cf010e6f41de36baee83ed7a04cacbc3f0931e23",
+  "ink_compatibility_variant": "B",
+  "machine_authorized": false,
+  "paper_approach_z": 15,
+  "paper_first_touch_z": 10,
+  "paper_hover_z": 20,
+  "physical_ink_commit": "c2464d65e2b2203f2e4b5912377eb33097987dbc",
+  "physical_slot_order": [
+    "A2",
+    "A4",
+    "C1",
+    "A5",
+    "C3",
+    "C2",
+    "D1"
+  ],
+  "reload_status": "Retain established color distance-only 600mm policy at complete-source boundaries; physical delivery remains uncalibrated",
+  "schema": "datascape.spring_p2_color_execution.v01",
+  "seasonal_commit": "cd3c61ae3a19bbb50d73a8c11bf82e5547e29a74",
+  "successor_search_result": "Published PR42 verified during this Work; use its exact recommended B allocation only for future compatibility",
+  "terrain_minimum_length_mm": 6,
+  "vegetation_rays_per_body": {
+    "far": 2,
+    "middle": 3,
+    "near": 4
+  },
+  "wet_opportunity": "One dependency-ready C2 group may follow the tail of C1; wetness is an unmeasured hypothesis, never a guaranteed time threshold"
+}

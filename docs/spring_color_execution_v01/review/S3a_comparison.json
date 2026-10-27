@@ -1,0 +1,73 @@
+{
+  "S3a_full_legacy": {
+    "drawing_mm": 49959.78101283151,
+    "historical_execution_byte_replay": false,
+    "loads": 89,
+    "modeled_seconds": 7021.360752692131,
+    "modeled_seconds_by_category": {
+      "drawing": 850.1879277303407,
+      "non_drawing_travel": 1428.527067185971,
+      "paper_engagement": 3420.094716350029,
+      "station_handling": 753.2358138458022,
+      "station_transfer": 569.3152275799889
+    },
+    "pigment_changes": 11,
+    "same_pigment_reloads": 77,
+    "shared_color_trial_curve_and_station_policy": true,
+    "source_count": 5972
+  },
+  "S3a_selected_legacy": {
+    "drawing_mm": 40017.06838151743,
+    "historical_execution_byte_replay": false,
+    "loads": 72,
+    "modeled_seconds": 5174.9082110762165,
+    "modeled_seconds_by_category": {
+      "drawing": 644.8890235932273,
+      "non_drawing_travel": 1130.646703325167,
+      "paper_engagement": 2268.7364787408765,
+      "station_handling": 656.0852414882227,
+      "station_transfer": 474.55076392872326
+    },
+    "pigment_changes": 11,
+    "same_pigment_reloads": 60,
+    "shared_color_trial_curve_and_station_policy": true,
+    "source_count": 3947
+  },
+  "S3a_selected_mapped": {
+    "drawing_mm": 40017.06838151743,
+    "historical_execution_byte_replay": false,
+    "loads": 69,
+    "modeled_seconds": 5071.357376288609,
+    "modeled_seconds_by_category": {
+      "drawing": 644.8890235932249,
+      "non_drawing_travel": 1221.7507917826076,
+      "paper_engagement": 2268.9647647769475,
+      "station_handling": 533.4541188232078,
+      "station_transfer": 402.2986773126211
+    },
+    "pigment_changes": 5,
+    "same_pigment_reloads": 63,
+    "shared_color_trial_curve_and_station_policy": true,
+    "source_count": 3947
+  },
+  "attribution_seconds": {
+    "content_reduction": 1846.452541615915,
+    "protected_layering_and_overlap_cost": 11.405066111719862,
+    "slot_mapping": 103.55083478760753
+  },
+  "proposed": {
+    "drawing_mm": 40017.06838151743,
+    "loads": 69,
+    "modeled_seconds": 5082.762442400329,
+    "modeled_seconds_by_category": {
+      "drawing": 644.8890235932306,
+      "non_drawing_travel": 1231.8732857188827,
+      "paper_engagement": 2268.9647647768884,
+      "station_handling": 533.4541188232063,
+      "station_transfer": 403.5812494881205
+    },
+    "pigment_changes": 5,
+    "same_pigment_reloads": 63,
+    "source_count": 3947
+  }
+}

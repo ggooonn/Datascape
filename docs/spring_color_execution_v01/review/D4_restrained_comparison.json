@@ -1,0 +1,81 @@
+{
+  "comparison_only": true,
+  "concentration_recipe": null,
+  "drawing_length_mm": 164.72276548368515,
+  "note": "Whole original structural paths only; zero D5 blanket substitution; candidate not added to main job",
+  "primary_D4_sources": 0,
+  "trial_sources": [
+    {
+      "candidate_slot": "D4",
+      "length_mm": 16.000000000000036,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/rear/plane-9/pass-0/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 15.999999999999986,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/Soil/near-right-exposure/broad-flow-4/0/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 15.999999999999968,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-24/pass-1/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 15.999999999999941,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/rear/plane-14/pass-1/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 15.999999999999904,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-13/pass-1/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 15.997068312022227,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/Soil/near-right-exposure/broad-flow-3/0/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 14.582664463572398,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-12/pass-1/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 12.789065976191658,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-25/pass-1/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 11.939768533825635,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-9/pass-0/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 10.376275935638004,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-10/pass-0/feathered"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 9.60223154971211,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/parent/plane-26/pass-1/feathered/visible-d89aca7ae132c5"
+    },
+    {
+      "candidate_slot": "D4",
+      "length_mm": 9.435690712723272,
+      "primary_slot": "A4",
+      "source_id": "v08/v03/material/v03/rock/near-right-exposure/connected/rear/plane-13/pass-1/feathered"
+    }
+  ]
+}
