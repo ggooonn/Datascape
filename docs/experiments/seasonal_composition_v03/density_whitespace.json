@@ -1,0 +1,38 @@
+{
+  "panels": {
+    "P1": {
+      "ink_centerline_cell_occupancy": 0.1673851851851852,
+      "cells_without_ink_centerline": 0.8326148148148148
+    },
+    "P2": {
+      "ink_centerline_cell_occupancy": 0.18286296296296295,
+      "cells_without_ink_centerline": 0.817137037037037
+    },
+    "P3": {
+      "ink_centerline_cell_occupancy": 0.20672222222222222,
+      "cells_without_ink_centerline": 0.7932777777777777
+    },
+    "P4": {
+      "ink_centerline_cell_occupancy": 0.27666296296296294,
+      "cells_without_ink_centerline": 0.7233370370370371
+    },
+    "P5": {
+      "ink_centerline_cell_occupancy": 0.19355925925925926,
+      "cells_without_ink_centerline": 0.8064407407407408
+    },
+    "P6": {
+      "ink_centerline_cell_occupancy": 0.17514074074074074,
+      "cells_without_ink_centerline": 0.8248592592592593
+    },
+    "P7": {
+      "ink_centerline_cell_occupancy": 0.1531,
+      "cells_without_ink_centerline": 0.8469
+    },
+    "P8": {
+      "ink_centerline_cell_occupancy": 0.10681481481481482,
+      "cells_without_ink_centerline": 0.8931851851851852
+    }
+  },
+  "metric": "1 mm all-touched ink-centerline cells and column means; no physical width, pigment coverage or drying inference",
+  "display_smoothing_mm": 12
+}

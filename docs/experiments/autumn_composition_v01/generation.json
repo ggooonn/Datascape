@@ -1,0 +1,872 @@
+{
+  "case": "autumn-provisional-v01",
+  "baseline": "a6ce842cfb894ce35e15332f3b6c6154254708ec",
+  "selected_view": "A_south",
+  "camera": {
+    "study": "Spring Pair Composition Refinement v0.1",
+    "base_pr_head": "a2ca981c94fa0ddd81ff8e48597ffbc3ca067443",
+    "primary_eye_xy_m": [
+      325605,
+      4166585
+    ],
+    "eye_clearance_m": 2.0,
+    "look_target_xy_m": [
+      320520,
+      4168070
+    ],
+    "pitch_deg": 0.0,
+    "vertical_fov_deg": 36.0,
+    "near_m": 1.0,
+    "primary_bounds_m": [
+      315000,
+      4162500,
+      330000,
+      4175700
+    ],
+    "raster_pixels": [
+      600,
+      900
+    ],
+    "mesh_stride": 1,
+    "depth_edges_m": [
+      600,
+      2200
+    ],
+    "composite": {
+      "near_width_m": 650.0,
+      "width_growth": 0.85,
+      "bottom_fraction": 1.02,
+      "depth_rise": 0.76,
+      "depth_scale_m": 1500.0,
+      "near_middle_transition_m": [
+        400,
+        1000
+      ],
+      "middle_far_transition_m": [
+        1800,
+        3200
+      ],
+      "height_coefficients_per_km": [
+        0.14,
+        0.25,
+        0.38
+      ]
+    },
+    "search": {
+      "bounds_m": [
+        315000,
+        4162500,
+        330000,
+        4175700
+      ],
+      "raster_pixels": [
+        300,
+        450
+      ],
+      "mesh_stride": 2,
+      "pitch_deg": 1.0,
+      "vertical_fov_deg": 48.0,
+      "eye_sites_m": [
+        [
+          325605,
+          4166585
+        ],
+        [
+          327105,
+          4170785
+        ],
+        [
+          325305,
+          4168385
+        ],
+        [
+          317205,
+          4168985
+        ],
+        [
+          319605,
+          4171385
+        ],
+        [
+          321105,
+          4175285
+        ]
+      ]
+    },
+    "physical_gap_mm": 40,
+    "painted_panel_mm": [
+      300,
+      900
+    ],
+    "random_seed": null,
+    "randomness": "None; deterministic view/composition study",
+    "reference_note": "User-supplied painting image reviewed for low foreground / middle passage / distant mountain arrangement only; no depicted object is asserted in the DEM"
+  },
+  "flow": {
+    "recipe": {
+      "id": "opening-right-saddle",
+      "anchors_mm": [
+        [
+          320,
+          280
+        ],
+        [
+          333,
+          415
+        ],
+        [
+          395,
+          540
+        ],
+        [
+          425,
+          685
+        ],
+        [
+          325,
+          795
+        ]
+      ],
+      "width_mm": 47,
+      "retained_floor": 0.84,
+      "release_strength": 0.97
+    },
+    "route_source_evidence": [
+      {
+        "xy_mm": [
+          315.50636423773904,
+          280.5
+        ],
+        "source_xyz_utm_m": [
+          322322.8178236605,
+          4167639.8223225526,
+          510.2392477803304
+        ],
+        "source_forward_m": 3446.2767511929746,
+        "valley_score": 0.00014839519661368966,
+        "ridge_score": 0.4897802163489591
+      },
+      {
+        "xy_mm": [
+          317.47873381848297,
+          300.5
+        ],
+        "source_xyz_utm_m": [
+          322399.00780302356,
+          4167628.044239087,
+          461.2776126637492
+        ],
+        "source_forward_m": 3369.8399188540384,
+        "valley_score": 0.2855439403817084,
+        "ridge_score": 4.412561401149298e-05
+      },
+      {
+        "xy_mm": [
+          318.50604304312935,
+          320.5
+        ],
+        "source_xyz_utm_m": [
+          322484.11126392154,
+          4167606.904873865,
+          414.08305237511775
+        ],
+        "source_forward_m": 3282.222780403772,
+        "valley_score": 0.7143939334701472,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          321.8985207162349,
+          340.5
+        ],
+        "source_xyz_utm_m": [
+          322614.60113844945,
+          4167582.484823059,
+          373.87242480597786
+        ],
+        "source_forward_m": 3150.119343430303,
+        "valley_score": 0.7699185082904993,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          336.5,
+          360.5
+        ],
+        "source_xyz_utm_m": [
+          322753.2672649873,
+          4167622.1250642547,
+          336.5459509739046
+        ],
+        "source_forward_m": 3028.1252599248282,
+        "valley_score": 0.7110591220877502,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          351.1014792837651,
+          380.5
+        ],
+        "source_xyz_utm_m": [
+          322887.5566428679,
+          4167657.8000830505,
+          301.71349640145854
+        ],
+        "source_forward_m": 2909.22088282491,
+        "valley_score": 0.6864120515683829,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          354.493635762261,
+          400.5
+        ],
+        "source_xyz_utm_m": [
+          323011.4235859386,
+          4167627.640801878,
+          270.37352432652335
+        ],
+        "source_forward_m": 2781.8659730373206,
+        "valley_score": 0.7159787890336686,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          354.48727152452204,
+          420.5
+        ],
+        "source_xyz_utm_m": [
+          323147.40803031524,
+          4167576.296821491,
+          244.4031962815022
+        ],
+        "source_forward_m": 2636.9407897000465,
+        "valley_score": 0.717498611873603,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          347.39604930184214,
+          440.5
+        ],
+        "source_xyz_utm_m": [
+          323340.7290547823,
+          4167469.5446369676,
+          241.1109712710272
+        ],
+        "source_forward_m": 2421.4455774201742,
+        "valley_score": 0.020210080040130786,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          325.3504674565826,
+          460.5
+        ],
+        "source_xyz_utm_m": [
+          323426.10636926093,
+          4167336.7096182965,
+          206.76928559542534
+        ],
+        "source_forward_m": 2302.2543495724567,
+        "valley_score": 0.4527915827083767,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          324.5725187373298,
+          480.5
+        ],
+        "source_xyz_utm_m": [
+          323558.01839324203,
+          4167288.5967278173,
+          177.40247807720618
+        ],
+        "source_forward_m": 2162.144061231333,
+        "valley_score": 0.6401142744590566,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          333.5601114564614,
+          500.5
+        ],
+        "source_xyz_utm_m": [
+          323708.77862191206,
+          4167276.1253582295,
+          149.32999206836848
+        ],
+        "source_forward_m": 2013.9325421275512,
+        "valley_score": 0.5882211279319657,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          346.90705842227396,
+          520.5
+        ],
+        "source_xyz_utm_m": [
+          323884.8777126093,
+          4167266.169748501,
+          130.64090090606555
+        ],
+        "source_forward_m": 1842.1033610018517,
+        "valley_score": 0.3340275219475556,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          366.1081647161138,
+          540.5
+        ],
+        "source_xyz_utm_m": [
+          324056.3666604083,
+          4167277.2056352263,
+          111.18497917155315
+        ],
+        "source_forward_m": 1680.5839442358015,
+        "valley_score": 0.15317157834227876,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          378.5,
+          560.5
+        ],
+        "source_xyz_utm_m": [
+          324196.5610265435,
+          4167263.587426353,
+          87.49826898915796
+        ],
+        "source_forward_m": 1542.1931582552795,
+        "valley_score": 0.34978026013537006,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          390.1014792837651,
+          580.5
+        ],
+        "source_xyz_utm_m": [
+          324342.42638816667,
+          4167242.3059803117,
+          74.16026525033755
+        ],
+        "source_forward_m": 1396.2105504511037,
+        "valley_score": 0.2967426103025427,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          390.16763378335594,
+          600.5
+        ],
+        "source_xyz_utm_m": [
+          324484.80342514656,
+          4167180.1114168335,
+          73.78026988294246
+        ],
+        "source_forward_m": 1242.1073842409717,
+        "valley_score": 0.044481477322533235,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          384.56647569420045,
+          620.5
+        ],
+        "source_xyz_utm_m": [
+          324594.25724181207,
+          4167115.009055565,
+          63.202225936369075
+        ],
+        "source_forward_m": 1118.792243508425,
+        "valley_score": 0.14623466835143434,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          385.5212661815171,
+          640.5
+        ],
+        "source_xyz_utm_m": [
+          324697.6598602497,
+          4167073.617279834,
+          51.28565623588311
+        ],
+        "source_forward_m": 1007.9323749287606,
+        "valley_score": 0.3117825816558664,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          387.49395695687065,
+          660.5
+        ],
+        "source_xyz_utm_m": [
+          324806.0969067258,
+          4167032.225835881,
+          50.76370840511526
+        ],
+        "source_forward_m": 892.2400276978708,
+        "valley_score": 0.17263592252611637,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          387.5,
+          680.5
+        ],
+        "source_xyz_utm_m": [
+          324900.1772051479,
+          4166991.5446541114,
+          46.982566185067526
+        ],
+        "source_forward_m": 790.5278969733415,
+        "valley_score": 0.16388346593202116,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          387.43384550040923,
+          700.5
+        ],
+        "source_xyz_utm_m": [
+          324991.70958900277,
+          4166952.0819778293,
+          49.30537340049358
+        ],
+        "source_forward_m": 691.6031006716627,
+        "valley_score": 0.0433965233567552,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          381.43384550040923,
+          720.5
+        ],
+        "source_xyz_utm_m": [
+          325069.07277812366,
+          4166906.1808162984,
+          46.51387779415313
+        ],
+        "source_forward_m": 604.4745064729183,
+        "valley_score": 0.05169455075297935,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          369.50604304312935,
+          740.5
+        ],
+        "source_xyz_utm_m": [
+          325139.23195769393,
+          4166852.948351547,
+          46.198105844709566
+        ],
+        "source_forward_m": 522.205919409112,
+        "valley_score": 0.03661847318469093,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          359.8708902969788,
+          760.5
+        ],
+        "source_xyz_utm_m": [
+          325205.90482127847,
+          4166807.7387375897,
+          46.57291499295317
+        ],
+        "source_forward_m": 445.5328789351523,
+        "valley_score": 0.016502528059953232,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          357.5060430431294,
+          780.5
+        ],
+        "source_xyz_utm_m": [
+          325272.15176083153,
+          4166778.822728517,
+          48.01885258820242
+        ],
+        "source_forward_m": 373.83620902639046,
+        "valley_score": 0.00039878157929641473,
+        "ridge_score": 0.0
+      }
+    ],
+    "scope": "Source-depth envelope 1050\u20133600 m; no camera/DEM warp",
+    "left_right": {
+      "left": {
+        "pixels": 89208,
+        "mean_retention": 0.7670361015007825
+      },
+      "right": {
+        "pixels": 92987,
+        "mean_retention": 0.5866880835913215
+      }
+    },
+    "global_reserve_override_pixels": 0,
+    "route_x_span_mm": 77.20964399987884,
+    "mean_abs_change": 0.2085783218019014
+  },
+  "terrain": {
+    "A": {
+      "raw_paths": 887,
+      "raw_length_mm": 131880.918770731,
+      "spline_fallbacks": 421
+    },
+    "C": {
+      "integrated_parent_paths": 817,
+      "depth_window_candidates": 1897
+    },
+    "D": {
+      "raw_candidates": 235,
+      "ranked_pieces": 130,
+      "selected_events": 69,
+      "length_budget_mm": 3292.495695176231,
+      "selected_length_mm": 1303.3738542857202,
+      "type_length_mm": {
+        "skyline": 25.97624352059508,
+        "crest": 606.4334429225408,
+        "occlusion": 220.15251380322434,
+        "slope_break_proxy": 277.462945976477,
+        "foothold_rim_proxy": 173.53231842542567
+      },
+      "minimum_spacing_mm": 6,
+      "target_all_length_fraction": 0.04
+    },
+    "masses": [
+      {
+        "label": 1,
+        "seed_pixel_xy": [
+          564,
+          138
+        ],
+        "seed_source_xyz_m": [
+          321646.68951399246,
+          4169883.650090277,
+          800.9052494899468
+        ],
+        "crest_pixel_xy": [
+          564,
+          138
+        ],
+        "crest_source_xyz_m": [
+          321646.68951399246,
+          4169883.650090277,
+          800.9052494899468
+        ],
+        "pixels": 13644,
+        "bounds_mm": [
+          474,
+          138,
+          600,
+          320
+        ],
+        "relative_foot_elevation_m": 452.38282499541316,
+        "relative_crest_elevation_m": 760.2973150432063,
+        "relief_m": 307.9144900477931
+      },
+      {
+        "label": 2,
+        "seed_pixel_xy": [
+          118,
+          186
+        ],
+        "seed_source_xyz_m": [
+          321226.7300015071,
+          4166536.6460903957,
+          705.8904827070897
+        ],
+        "crest_pixel_xy": [
+          117,
+          186
+        ],
+        "crest_source_xyz_m": [
+          321226.1993158132,
+          4166529.859981514,
+          706.0193018223044
+        ],
+        "pixels": 29729,
+        "bounds_mm": [
+          0,
+          186,
+          207,
+          445
+        ],
+        "relative_foot_elevation_m": 272.35123211390317,
+        "relative_crest_elevation_m": 664.0623597639079,
+        "relief_m": 391.71112765000476
+      },
+      {
+        "label": 3,
+        "seed_pixel_xy": [
+          382,
+          234
+        ],
+        "seed_source_xyz_m": [
+          322065.0685379759,
+          4168180.0723454487,
+          599.4789192171542
+        ],
+        "crest_pixel_xy": [
+          482,
+          228
+        ],
+        "crest_source_xyz_m": [
+          322156.54811322934,
+          4168861.486731221,
+          606.3916385401883
+        ],
+        "pixels": 41219,
+        "bounds_mm": [
+          325,
+          228,
+          600,
+          473
+        ],
+        "relative_foot_elevation_m": 199.04791041606978,
+        "relative_crest_elevation_m": 571.9109182617689,
+        "relief_m": 372.8630078456991
+      },
+      {
+        "label": 4,
+        "seed_pixel_xy": [
+          272,
+          251
+        ],
+        "seed_source_xyz_m": [
+          322174.6566357843,
+          4167412.6534378566,
+          585.5526462856936
+        ],
+        "crest_pixel_xy": [
+          210,
+          220
+        ],
+        "crest_source_xyz_m": [
+          321636.8605245975,
+          4167119.8760817214,
+          628.7123420279524
+        ],
+        "pixels": 21859,
+        "bounds_mm": [
+          149,
+          220,
+          440,
+          450
+        ],
+        "relative_foot_elevation_m": 271.56270591528835,
+        "relative_crest_elevation_m": 588.1969255580104,
+        "relief_m": 316.6342196427221
+      },
+      {
+        "label": 5,
+        "seed_pixel_xy": [
+          204,
+          337
+        ],
+        "seed_source_xyz_m": [
+          322853.39423837716,
+          4166896.1886131116,
+          486.88608853531747
+        ],
+        "crest_pixel_xy": [
+          230,
+          294
+        ],
+        "crest_source_xyz_m": [
+          322465.35343011573,
+          4167099.5107965255,
+          507.29463068351777
+        ],
+        "pixels": 60105,
+        "bounds_mm": [
+          0,
+          294,
+          402,
+          550
+        ],
+        "relative_foot_elevation_m": 176.41844981152093,
+        "relative_crest_elevation_m": 454.68021687724683,
+        "relief_m": 278.2617670657259
+      },
+      {
+        "label": 6,
+        "seed_pixel_xy": [
+          570,
+          550
+        ],
+        "seed_source_xyz_m": [
+          324297.6673841858,
+          4167922.668974792,
+          89.9526725825102
+        ],
+        "crest_pixel_xy": [
+          386,
+          462
+        ],
+        "crest_source_xyz_m": [
+          323522.38827246684,
+          4167581.6553195217,
+          207.35660636099163
+        ],
+        "pixels": 24647,
+        "bounds_mm": [
+          310,
+          445,
+          600,
+          560
+        ],
+        "relative_foot_elevation_m": 78.80854379609643,
+        "relative_crest_elevation_m": 183.85809700533252,
+        "relief_m": 105.0495532092361
+      },
+      {
+        "label": 7,
+        "seed_pixel_xy": [
+          174,
+          176
+        ],
+        "seed_source_xyz_m": [
+          321051.93924516643,
+          4166944.8348898757,
+          710.2104410024186
+        ],
+        "crest_pixel_xy": [
+          174,
+          176
+        ],
+        "crest_source_xyz_m": [
+          321051.93924516643,
+          4166944.8348898757,
+          710.2104410024186
+        ],
+        "pixels": 5600,
+        "bounds_mm": [
+          151,
+          173,
+          330,
+          260
+        ],
+        "relative_foot_elevation_m": 529.9302088082288,
+        "relative_crest_elevation_m": 695.2250485331467,
+        "relief_m": 165.2948397249179
+      }
+    ],
+    "mountain_solver": {
+      "solver_status": "solved",
+      "iterations": 675,
+      "variables": 188999,
+      "normal_constraints": 189587,
+      "min_phase_ratio_checked": 0.04936176551503191,
+      "nonpositive_phase_derivative_pixels": 0,
+      "maximum_phase_change": 5.599998639823142,
+      "target_rms_error": 0.12162447288475754,
+      "primal_residual": 0.000638134484981592,
+      "dual_residual": 1.8437655039188198e-05,
+      "solve_time_seconds": 41.51670324,
+      "correction": {
+        "shape": [
+          900,
+          600
+        ],
+        "minimum": -5.599946342931965,
+        "maximum": 5.599998639823142
+      },
+      "phase_ratio": {
+        "shape": [
+          900,
+          600
+        ],
+        "minimum": 0.04936176551503191,
+        "maximum": 3.9943576997627743
+      },
+      "safe": {
+        "shape": [
+          900,
+          600
+        ],
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "variable": {
+        "shape": [
+          900,
+          600
+        ],
+        "minimum": 0.0,
+        "maximum": 1.0
+      }
+    },
+    "foreground_solver": {
+      "solver_status": "solved",
+      "iterations": 25,
+      "variables": 203781,
+      "normal_constraints": 204973,
+      "min_phase_ratio_checked": 0.29525654248976607,
+      "nonpositive_phase_derivative_pixels": 0,
+      "maximum_phase_change": 2.4999992966875455,
+      "target_rms_error": 0.01976067111616775,
+      "primal_residual": 8.625028474889362e-15,
+      "dual_residual": 5.290520310730074e-07,
+      "solve_time_seconds": 1.830843785,
+      "correction": {
+        "shape": [
+          900,
+          600
+        ],
+        "minimum": -2.4999992966875455,
+        "maximum": 2.4999652771653906
+      },
+      "phase_ratio": {
+        "shape": [
+          900,
+          600
+        ],
+        "minimum": 0.04936176551503191,
+        "maximum": 3.9943576997627743
+      },
+      "safe": {
+        "shape": [
+          900,
+          600
+        ],
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "variable": {
+        "shape": [
+          900,
+          600
+        ],
+        "minimum": 0.0,
+        "maximum": 1.0
+      }
+    }
+  },
+  "near_solver": {
+    "solver_status": "solved",
+    "iterations": 150,
+    "variables": 203781,
+    "normal_constraints": 204973,
+    "min_phase_ratio_checked": 0.048884348710962235,
+    "nonpositive_phase_derivative_pixels": 0,
+    "maximum_phase_change": 16.000000000000014,
+    "target_rms_error": 0.11331373733032696,
+    "primal_residual": 0.0011155512890319214,
+    "dual_residual": 0.0003852324096762927,
+    "solve_time_seconds": 10.477121219
+  },
+  "near_phase_sha256": "4741e1fa39928648ea9f5de61f1766997ef2064f3f413e9bc92597c952f7cf83",
+  "Summer_camera_unchanged": false,
+  "Spring_modified": false,
+  "earlier_checkpoint_files_modified": false,
+  "far_micro_B_enabled": false,
+  "production_Gcode_generated": false,
+  "artistic_acceptance": false,
+  "visibility": "Native catalogs and depth-aware reciprocal structural/partial-canopy clipping; nominal 1 mm / upright 2.5D evidence, not a physical simulation"
+}

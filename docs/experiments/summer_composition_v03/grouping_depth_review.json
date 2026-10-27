@@ -1,0 +1,379 @@
+{
+  "v03-left-promontory": {
+    "objects": [
+      {
+        "id": "summer-v03/v03-left-promontory/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          40.5,
+          800.5
+        ],
+        "depth_m": 312.27520283076456,
+        "height_mm": 106,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-left-promontory/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          62.5,
+          807.5
+        ],
+        "depth_m": 289.2910678281422,
+        "height_mm": 175,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-left-promontory/tree-2",
+        "kind": "tree",
+        "xy_mm": [
+          87.5,
+          811.5
+        ],
+        "depth_m": 276.3996523362777,
+        "height_mm": 236,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-left-promontory/tree-3",
+        "kind": "tree",
+        "xy_mm": [
+          105.5,
+          807.5
+        ],
+        "depth_m": 289.0038844869653,
+        "height_mm": 204,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-left-promontory/tree-4",
+        "kind": "tree",
+        "xy_mm": [
+          174.5,
+          802.5
+        ],
+        "depth_m": 304.20651564972775,
+        "height_mm": 151,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-left-promontory/tree-5",
+        "kind": "tree",
+        "xy_mm": [
+          177.5,
+          794.5
+        ],
+        "depth_m": 329.82460949379146,
+        "height_mm": 76,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-left-foundation/parent",
+        "kind": "rock",
+        "xy_mm": [
+          73.07115371002389,
+          824.4000000000146
+        ],
+        "depth_m": 238.32323781254897,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-left-foundation"
+      },
+      {
+        "id": "summer-v03/v03-left-foundation/rear",
+        "kind": "rock",
+        "xy_mm": [
+          156.5911537100239,
+          807.1100000000147
+        ],
+        "depth_m": 290.1395362409653,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-left-foundation"
+      },
+      {
+        "id": "summer-v03/v03-left-foundation/back-shoulder",
+        "kind": "rock",
+        "xy_mm": [
+          28.991153710023895,
+          815.3000000000146
+        ],
+        "depth_m": 265.1112142565959,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-left-foundation"
+      },
+      {
+        "id": "summer-v03/v03-left-foundation/front",
+        "kind": "rock",
+        "xy_mm": [
+          138.0311537100239,
+          833.5000000000147
+        ],
+        "depth_m": 211.8214679256205,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-left-foundation"
+      },
+      {
+        "id": "summer-v03/v03-left-foundation/ground",
+        "kind": "soil",
+        "xy_mm": [
+          138.0311537100239,
+          833.5000000000147
+        ],
+        "depth_m": 211.8214679256205,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      211.8214679256205,
+      329.82460949379146
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  },
+  "v03-inner-relay": {
+    "objects": [
+      {
+        "id": "summer-v03/v03-inner-relay/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          229.5,
+          668.5
+        ],
+        "depth_m": 853.6206726713851,
+        "height_mm": 73,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-inner-relay/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          252.5,
+          670.5
+        ],
+        "depth_m": 842.3147681426822,
+        "height_mm": 121,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-inner-relay/tree-2",
+        "kind": "tree",
+        "xy_mm": [
+          278.5,
+          666.5
+        ],
+        "depth_m": 868.367081456232,
+        "height_mm": 89,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-inner-ledge/parent",
+        "kind": "rock",
+        "xy_mm": [
+          238.78283025320857,
+          687.7999999999523
+        ],
+        "depth_m": 758.4962624325123,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-inner-ledge"
+      },
+      {
+        "id": "summer-v03/v03-inner-ledge/rear",
+        "kind": "rock",
+        "xy_mm": [
+          280.5428302532086,
+          678.8699999999524
+        ],
+        "depth_m": 802.2084638078134,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-inner-ledge"
+      },
+      {
+        "id": "summer-v03/v03-inner-ledge/front",
+        "kind": "rock",
+        "xy_mm": [
+          271.26283025320856,
+          692.4999999999524
+        ],
+        "depth_m": 733.558465363761,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-inner-ledge"
+      },
+      {
+        "id": "summer-v03/v03-inner-ledge/ground",
+        "kind": "soil",
+        "xy_mm": [
+          271.26283025320856,
+          692.4999999999524
+        ],
+        "depth_m": 733.558465363761,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      733.558465363761,
+      868.367081456232
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  },
+  "v03-right-bank": {
+    "objects": [
+      {
+        "id": "summer-v03/v03-right-bank/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          412.5,
+          815.5
+        ],
+        "depth_m": 262.7870771810162,
+        "height_mm": 115,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-right-bank/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          437.5,
+          824.5
+        ],
+        "depth_m": 235.02976916417086,
+        "height_mm": 181,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-right-bank/tree-2",
+        "kind": "tree",
+        "xy_mm": [
+          466.5,
+          820.5
+        ],
+        "depth_m": 246.32085781409182,
+        "height_mm": 163,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-right-bank/tree-3",
+        "kind": "tree",
+        "xy_mm": [
+          493.5,
+          812.5
+        ],
+        "depth_m": 270.00629244946003,
+        "height_mm": 93,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-right-foundation/parent",
+        "kind": "rock",
+        "xy_mm": [
+          434.294347732134,
+          840.6000000001042
+        ],
+        "depth_m": 189.83170585540256,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-right-foundation"
+      },
+      {
+        "id": "summer-v03/v03-right-foundation/rear",
+        "kind": "rock",
+        "xy_mm": [
+          496.93434773213403,
+          827.4900000001041
+        ],
+        "depth_m": 225.4637197795942,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-right-foundation"
+      },
+      {
+        "id": "summer-v03/v03-right-foundation/front",
+        "kind": "rock",
+        "xy_mm": [
+          483.014347732134,
+          847.5000000001041
+        ],
+        "depth_m": 170.05349285580468,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-right-foundation"
+      },
+      {
+        "id": "summer-v03/v03-right-foundation/ground",
+        "kind": "soil",
+        "xy_mm": [
+          483.014347732134,
+          847.5000000001041
+        ],
+        "depth_m": 170.05349285580468,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      170.05349285580468,
+      270.00629244946003
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  },
+  "v03-upper-relay": {
+    "objects": [
+      {
+        "id": "summer-v03/v03-upper-relay/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          524.5,
+          673.5
+        ],
+        "depth_m": 803.3896221358495,
+        "height_mm": 72,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-upper-relay/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          546.5,
+          674.5
+        ],
+        "depth_m": 791.8509303143693,
+        "height_mm": 108,
+        "parent_mass_id": null
+      },
+      {
+        "id": "summer-v03/v03-upper-ledge/parent",
+        "kind": "rock",
+        "xy_mm": [
+          530.7558939958254,
+          686.1000556327624
+        ],
+        "depth_m": 747.6401369371337,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-upper-ledge"
+      },
+      {
+        "id": "summer-v03/v03-upper-ledge/front",
+        "kind": "rock",
+        "xy_mm": [
+          554.8358939958255,
+          689.5000556327624
+        ],
+        "depth_m": 725.7440397292087,
+        "height_mm": null,
+        "parent_mass_id": "summer-v03/v03-upper-ledge"
+      },
+      {
+        "id": "summer-v03/v03-upper-ledge/ground",
+        "kind": "soil",
+        "xy_mm": [
+          554.8358939958255,
+          689.5000556327624
+        ],
+        "depth_m": 725.7440397292087,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      725.7440397292087,
+      803.3896221358495
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  }
+}

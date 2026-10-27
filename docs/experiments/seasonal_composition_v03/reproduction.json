@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "independent_process": true,
+  "private_field_or_stage_cache_used": false,
+  "TIFF_hashes_verified": true,
+  "diagnostic_fields_equal": {
+    "occupied": true,
+    "depth": true,
+    "retention": true
+  },
+  "raw_near_A_sources": 2148,
+  "selected_near_A_proposals": 215,
+  "source_or_proposal_records_checked": 2363,
+  "maximum_geometry_error_mm": 0.0,
+  "near_phase_topology": {
+    "solver_status": "solved",
+    "iterations": 50,
+    "variables": 196060,
+    "normal_constraints": 197252,
+    "min_phase_ratio_checked": 0.04913952915133805,
+    "nonpositive_phase_derivative_pixels": 0,
+    "maximum_phase_change": 16.000000065896607,
+    "target_rms_error": 0.08966127375818264,
+    "primal_residual": 0.0009730900642724034,
+    "dual_residual": 0.0004449880562733613,
+    "solve_time_seconds": 3.547674825
+  },
+  "full_scene_byte_identity_asserted": false,
+  "scope": "Independent original-TIFF reconstruction of Summer fields and near-A sources/proposals. Does not independently rebuild every catalog, final visibility result, preview or Autumn/Winter scene."
+}

@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "seed": 2026102705,
+  "artistic_base_commit": "d30ac7be302e1cbfcd2cf66de9087e35ea091b6c",
+  "spring_physical_reference_commit": "9665b92a7ab78ce44a135c191eb6c259a3cb03f6",
+  "selected_view": "A_south",
+  "selection_reason": "Closest unfitted P2-P3 skyline height, rising lowland-to-high-ridge counter-rhythm, room for vegetation below a distinct right-hand summit; slope reversal remains visible and provisional.",
+  "input_sha256": {
+    "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+    "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+  },
+  "minimum_visible_path_mm": 2.8,
+  "far_surface_micro_B_enabled": false,
+  "summer_progression": {
+    "transition_center_mm": 300,
+    "transition_width_mm": 180,
+    "foliage_vigor": [
+      1.02,
+      0.58
+    ],
+    "foliage_unit_count_scale": [
+      1.0,
+      1.0
+    ],
+    "stem_ratio": [
+      0.98,
+      1.07
+    ],
+    "interpretation": "Smooth cross-pair growth modifier; actual groups remain unequal, with open corridors. No jump at the panel seam."
+  },
+  "near_groups": [
+    {
+      "id": "autumn-left-bank",
+      "center_mm": [
+        111,
+        774
+      ],
+      "members": [
+        [
+          -38,
+          9,
+          77,
+          "U"
+        ],
+        [
+          -13,
+          -4,
+          153,
+          "B"
+        ],
+        [
+          17,
+          -6,
+          178,
+          "P"
+        ],
+        [
+          39,
+          12,
+          109,
+          "B"
+        ]
+      ]
+    },
+    {
+      "id": "autumn-saddle",
+      "center_mm": [
+        300,
+        727
+      ],
+      "members": [
+        [
+          -22,
+          7,
+          74,
+          "U"
+        ],
+        [
+          0,
+          -3,
+          128,
+          "P"
+        ],
+        [
+          25,
+          9,
+          97,
+          "B"
+        ]
+      ]
+    },
+    {
+      "id": "autumn-right-mass",
+      "center_mm": [
+        469,
+        802
+      ],
+      "members": [
+        [
+          -48,
+          12,
+          124,
+          "B"
+        ],
+        [
+          -22,
+          -3,
+          188,
+          "P"
+        ],
+        [
+          6,
+          -9,
+          210,
+          "B"
+        ],
+        [
+          34,
+          6,
+          146,
+          "B"
+        ],
+        [
+          54,
+          18,
+          83,
+          "U"
+        ]
+      ]
+    }
+  ],
+  "rocks": [
+    {
+      "id": "autumn-left-ledge",
+      "group": "autumn-left-bank",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 147,
+      "height_mm": 62,
+      "major_count": 3,
+      "support_dx_mm": 0,
+      "support_dy_mm": 24
+    },
+    {
+      "id": "autumn-saddle-ledge",
+      "group": "autumn-saddle",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 110,
+      "height_mm": 48,
+      "major_count": 2,
+      "support_dx_mm": 0,
+      "support_dy_mm": 24
+    },
+    {
+      "id": "autumn-right-foundation",
+      "group": "autumn-right-mass",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 222,
+      "height_mm": 93,
+      "major_count": 4,
+      "support_dx_mm": 0,
+      "support_dy_mm": 28
+    }
+  ],
+  "mid_far_groups": [
+    {
+      "id": "middle-left",
+      "center_mm": [
+        125,
+        523
+      ],
+      "q_range_m": [
+        1500,
+        3400
+      ],
+      "radius_mm": [
+        96,
+        72
+      ],
+      "count": 25,
+      "height_mm": [
+        18,
+        37
+      ]
+    },
+    {
+      "id": "middle-right",
+      "center_mm": [
+        445,
+        551
+      ],
+      "q_range_m": [
+        1500,
+        3500
+      ],
+      "radius_mm": [
+        106,
+        75
+      ],
+      "count": 22,
+      "height_mm": [
+        17,
+        34
+      ]
+    },
+    {
+      "id": "far-left",
+      "center_mm": [
+        154,
+        320
+      ],
+      "q_range_m": [
+        3000,
+        11000
+      ],
+      "radius_mm": [
+        130,
+        85
+      ],
+      "count": 21,
+      "height_mm": [
+        6,
+        13
+      ]
+    },
+    {
+      "id": "far-right",
+      "center_mm": [
+        438,
+        314
+      ],
+      "q_range_m": [
+        3000,
+        11000
+      ],
+      "radius_mm": [
+        125,
+        92
+      ],
+      "count": 17,
+      "height_mm": [
+        5,
+        12
+      ]
+    }
+  ],
+  "virtual_color_groups": {
+    "canopy_core": {
+      "preview_hex": "#85794e",
+      "meaning": "Connected cool vegetation bodies; virtual study color, no pigment slot"
+    },
+    "canopy_edge": {
+      "preview_hex": "#b39565",
+      "meaning": "Open light growth edges; virtual study color, no pigment slot"
+    },
+    "distance": {
+      "preview_hex": "#6a9299",
+      "meaning": "Atmospheric distant vegetation and selected terrain passages"
+    },
+    "earth": {
+      "preview_hex": "#a48b68",
+      "meaning": "Restrained exposed ground / rock intervals"
+    }
+  },
+  "case": "autumn-provisional-v01",
+  "season": "autumn",
+  "panels": [
+    5,
+    6
+  ],
+  "ground": {
+    "support_radius_m": [
+      185,
+      145
+    ]
+  },
+  "baseline": "a6ce842cfb894ce35e15332f3b6c6154254708ec",
+  "artistic_status": "provisional-review",
+  "flow_candidates": [
+    {
+      "id": "opening-right-saddle",
+      "anchors_mm": [
+        [
+          320,
+          280
+        ],
+        [
+          333,
+          415
+        ],
+        [
+          395,
+          540
+        ],
+        [
+          425,
+          685
+        ],
+        [
+          325,
+          795
+        ]
+      ],
+      "width_mm": 47,
+      "retained_floor": 0.84,
+      "release_strength": 0.97
+    }
+  ],
+  "selected_flow": "opening-right-saddle",
+  "composition_rationale": "Unequal side masses and a saddle; the larger right foreground carries exposed rock structure while crowns retreat unevenly across P5\u2013P6.",
+  "physical_note": "Middle/far contour drawing appears relatively stable; foreground is less physically verified. Separate brush strategies may be required. No canonical geometry change or G-code follows from that consideration."
+}

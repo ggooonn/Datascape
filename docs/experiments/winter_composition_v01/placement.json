@@ -1,0 +1,5820 @@
+{
+  "contacts": [
+    {
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          135.5,
+          798.5
+        ],
+        "mapped_face_id": 25138,
+        "original_mesh_face_id": 65058,
+        "barycentric": [
+          0.1493481009864882,
+          0.04881247229979692,
+          0.8018394267137149
+        ],
+        "source_xyz_utm_m": [
+          319906.464374169,
+          4171630.9448171984,
+          108.52427708370138
+        ],
+        "source_forward_m": 299.7125471173428,
+        "lateral_q_per_mm": -0.08353438972564024,
+        "crs": "EPSG:32652",
+        "slope_deg": 6.615200578510021,
+        "ndvi": 0.48987231938600045,
+        "effective_observations": 31.0,
+        "retained_ground": 0.5947760718599887,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "original_target_mm": [
+        125,
+        796
+      ],
+      "support_score": 0.7433932930301899
+    },
+    {
+      "group": "winter-middle-remnant",
+      "site": {
+        "xy_mm": [
+          294.5,
+          714.5
+        ],
+        "mapped_face_id": 86204,
+        "original_mesh_face_id": 285650,
+        "barycentric": [
+          0.21560014990694099,
+          0.037971960073034945,
+          0.7464278900200241
+        ],
+        "source_xyz_utm_m": [
+          320182.6071632994,
+          4171391.4680044972,
+          155.01852886227454
+        ],
+        "source_forward_m": 577.5467660162675,
+        "lateral_q_per_mm": 0.09014682967991652,
+        "crs": "EPSG:32652",
+        "slope_deg": 16.84570237473662,
+        "ndvi": 0.6153820314967999,
+        "effective_observations": 32.0,
+        "retained_ground": 0.673616951751463,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "original_target_mm": [
+        320,
+        748
+      ],
+      "support_score": 0.6189963700335605
+    },
+    {
+      "group": "winter-right-remnant",
+      "site": {
+        "xy_mm": [
+          483.5,
+          818.5
+        ],
+        "mapped_face_id": 31001,
+        "original_mesh_face_id": 73539,
+        "barycentric": [
+          0.21975558191138667,
+          0.0008586334168941416,
+          0.7793857846717192
+        ],
+        "source_xyz_utm_m": [
+          319845.0257590025,
+          4171121.61842646,
+          99.93797760431907
+        ],
+        "source_forward_m": 241.88763011434608,
+        "lateral_q_per_mm": -0.005238291797343097,
+        "crs": "EPSG:32652",
+        "slope_deg": 10.893671390236376,
+        "ndvi": 0.48655565273376533,
+        "effective_observations": 34.00000000000001,
+        "retained_ground": 0.3437863240165418,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "original_target_mm": [
+        514,
+        810
+      ],
+      "support_score": 0.7099765198194343
+    }
+  ],
+  "catalog": [
+    {
+      "id": "winter-provisional-v01/winter-left-shelter/tree-0",
+      "kind": "tree",
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          110.5,
+          789.5
+        ],
+        "mapped_face_id": 24794,
+        "original_mesh_face_id": 64560,
+        "barycentric": [
+          0.6644530324317679,
+          0.04781993539324492,
+          0.28772703217498713
+        ],
+        "source_xyz_utm_m": [
+          319936.4345980618,
+          4171676.3681890345,
+          106.6231588344049
+        ],
+        "source_forward_m": 329.3598738265799,
+        "lateral_q_per_mm": -0.04902343754125491,
+        "crs": "EPSG:32652",
+        "slope_deg": 12.925005497182703,
+        "ndvi": 0.36638322096684345,
+        "effective_observations": 31.98037198662184,
+        "retained_ground": 0.3422803184126513,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 89,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-left-shelter/tree-1",
+      "kind": "tree",
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          116.5,
+          803.5
+        ],
+        "mapped_face_id": 83089,
+        "original_mesh_face_id": 281149,
+        "barycentric": [
+          0.04007987540354141,
+          0.5755756673177493,
+          0.3843444572787093
+        ],
+        "source_xyz_utm_m": [
+          319893.46966628166,
+          4171656.2023962624,
+          102.45274151852372
+        ],
+        "source_forward_m": 286.5390387684107,
+        "lateral_q_per_mm": -0.08778186027775739,
+        "crs": "EPSG:32652",
+        "slope_deg": 15.9432987339299,
+        "ndvi": 0.37962713540579934,
+        "effective_observations": 29.879760373756312,
+        "retained_ground": 0.35714228734352893,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 209,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-left-shelter/tree-2",
+      "kind": "tree",
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          144.5,
+          800.5
+        ],
+        "mapped_face_id": 83779,
+        "original_mesh_face_id": 282147,
+        "barycentric": [
+          0.7039061306291141,
+          0.1373412539062788,
+          0.15875261546460706
+        ],
+        "source_xyz_utm_m": [
+          319900.23742153606,
+          4171616.1171839186,
+          108.20648832358923
+        ],
+        "source_forward_m": 293.59090895917285,
+        "lateral_q_per_mm": 0.034406334845461,
+        "crs": "EPSG:32652",
+        "slope_deg": 6.249116740553351,
+        "ndvi": 0.5587271318060595,
+        "effective_observations": 31.846102171323807,
+        "retained_ground": 0.6444497575810525,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 191,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-left-shelter/tree-3",
+      "kind": "tree",
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          172.5,
+          790.5
+        ],
+        "mapped_face_id": 84125,
+        "original_mesh_face_id": 282647,
+        "barycentric": [
+          0.4834296258661728,
+          0.38645130396190036,
+          0.13011907017192684
+        ],
+        "source_xyz_utm_m": [
+          319931.09642789484,
+          4171579.502888776,
+          110.11612646916129
+        ],
+        "source_forward_m": 324.70880857588173,
+        "lateral_q_per_mm": 0.13325180463107666,
+        "crs": "EPSG:32652",
+        "slope_deg": 9.478183222300151,
+        "ndvi": 0.6027668689091932,
+        "effective_observations": 32.0,
+        "retained_ground": 0.7045360892525838,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 129,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-middle-remnant/tree-0",
+      "kind": "tree",
+      "group": "winter-middle-remnant",
+      "site": {
+        "xy_mm": [
+          273.5,
+          711.5
+        ],
+        "mapped_face_id": 85859,
+        "original_mesh_face_id": 285151,
+        "barycentric": [
+          0.5592656874512187,
+          0.10196746702101551,
+          0.3387668455277657
+        ],
+        "source_xyz_utm_m": [
+          320194.8369946342,
+          4171431.7779706237,
+          154.64957729195547
+        ],
+        "source_forward_m": 589.4904106918772,
+        "lateral_q_per_mm": -0.117556920456562,
+        "crs": "EPSG:32652",
+        "slope_deg": 19.369805014706262,
+        "ndvi": 0.4799529740150828,
+        "effective_observations": 32.0,
+        "retained_ground": 0.682768417767565,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 94,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-middle-remnant/tree-1",
+      "kind": "tree",
+      "group": "winter-middle-remnant",
+      "site": {
+        "xy_mm": [
+          294.5,
+          717.5
+        ],
+        "mapped_face_id": 86203,
+        "original_mesh_face_id": 285649,
+        "barycentric": [
+          0.2120878906618625,
+          0.7349248853409821,
+          0.052987223997155435
+        ],
+        "source_xyz_utm_m": [
+          320173.4103832801,
+          4171391.36263672,
+          150.6275894696385
+        ],
+        "source_forward_m": 568.350964554337,
+        "lateral_q_per_mm": -0.18317510354373742,
+        "crs": "EPSG:32652",
+        "slope_deg": 16.51905127541848,
+        "ndvi": 0.6310259551217985,
+        "effective_observations": 32.0,
+        "retained_ground": 0.671161694971223,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 152,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-middle-remnant/tree-2",
+      "kind": "tree",
+      "group": "winter-middle-remnant",
+      "site": {
+        "xy_mm": [
+          321.5,
+          709.5
+        ],
+        "mapped_face_id": 86894,
+        "original_mesh_face_id": 286648,
+        "barycentric": [
+          0.4794113740252195,
+          0.37369341299859776,
+          0.1468952129761827
+        ],
+        "source_xyz_utm_m": [
+          320200.5931436107,
+          4171339.38234122,
+          157.1490497690082
+        ],
+        "source_forward_m": 595.9016865809274,
+        "lateral_q_per_mm": 0.05863770235377954,
+        "crs": "EPSG:32652",
+        "slope_deg": 18.33251616103999,
+        "ndvi": 0.5435136620169835,
+        "effective_observations": 33.0,
+        "retained_ground": 0.6413819867055893,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 67,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-right-remnant/tree-0",
+      "kind": "tree",
+      "group": "winter-right-remnant",
+      "site": {
+        "xy_mm": [
+          469.5,
+          815.5
+        ],
+        "mapped_face_id": 31001,
+        "original_mesh_face_id": 73539,
+        "barycentric": [
+          0.4960441559126877,
+          0.31633996888150484,
+          0.1876158752058075
+        ],
+        "source_xyz_utm_m": [
+          319854.49019906647,
+          4171139.371523744,
+          99.1107780381642
+        ],
+        "source_forward_m": 251.2259268350993,
+        "lateral_q_per_mm": -0.005238291797343097,
+        "crs": "EPSG:32652",
+        "slope_deg": 8.609935250305428,
+        "ndvi": 0.4528634199614082,
+        "effective_observations": 34.0,
+        "retained_ground": 0.35978580464760707,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 91,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-right-remnant/tree-1",
+      "kind": "tree",
+      "group": "winter-right-remnant",
+      "site": {
+        "xy_mm": [
+          483.5,
+          817.5
+        ],
+        "mapped_face_id": 31001,
+        "original_mesh_face_id": 73539,
+        "barycentric": [
+          0.09259806582941654,
+          0.10363229430760817,
+          0.8037696398629753
+        ],
+        "source_xyz_utm_m": [
+          319848.10896882927,
+          4171120.8869108045,
+          99.72462427225436
+        ],
+        "source_forward_m": 244.97595032625858,
+        "lateral_q_per_mm": -0.005238291797343097,
+        "crs": "EPSG:32652",
+        "slope_deg": 10.600412457813299,
+        "ndvi": 0.4876243355398092,
+        "effective_observations": 34.0,
+        "retained_ground": 0.34203746307873717,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 62,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-left-bedrock/parent",
+      "kind": "rock",
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          108.9003863297533,
+          817.9000000000107
+        ],
+        "mapped_face_id": 83088,
+        "original_mesh_face_id": 281148,
+        "barycentric": [
+          0.06121182354750809,
+          0.1994845152076542,
+          0.7393036612448377
+        ],
+        "source_xyz_utm_m": [
+          319852.82089016266,
+          4171656.8363547064,
+          94.25307636207133
+        ],
+        "source_forward_m": 245.88678886684946,
+        "lateral_q_per_mm": -0.14881561221741726,
+        "crs": "EPSG:32652",
+        "slope_deg": 20.179251600147516,
+        "ndvi": 0.3492469723679779,
+        "effective_observations": 30.72591879121029,
+        "retained_ground": 0.19850825439378453,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.0,
+      "parent_mass_id": "winter-provisional-v01/winter-left-bedrock"
+    },
+    {
+      "id": "winter-provisional-v01/winter-left-bedrock/rear",
+      "kind": "rock",
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          196.7403863297533,
+          797.7600000000107
+        ],
+        "mapped_face_id": 84470,
+        "original_mesh_face_id": 283146,
+        "barycentric": [
+          0.14878762015274705,
+          0.07230690594474877,
+          0.7789054739025042
+        ],
+        "source_xyz_utm_m": [
+          319911.63283578295,
+          4171539.4636286045,
+          99.97360670681307
+        ],
+        "source_forward_m": 305.5296651906792,
+        "lateral_q_per_mm": 0.05659301938748569,
+        "crs": "EPSG:32652",
+        "slope_deg": 9.274350115773213,
+        "ndvi": 0.5408599987034585,
+        "effective_observations": 33.0,
+        "retained_ground": 0.6301672486011771,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.7,
+      "parent_mass_id": "winter-provisional-v01/winter-left-bedrock"
+    },
+    {
+      "id": "winter-provisional-v01/winter-left-bedrock/back-shoulder",
+      "kind": "rock",
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          62.54038632975332,
+          807.3000000000106
+        ],
+        "mapped_face_id": 24102,
+        "original_mesh_face_id": 63560,
+        "barycentric": [
+          0.2111539694633362,
+          0.4502136385384644,
+          0.33863239199819933
+        ],
+        "source_xyz_utm_m": [
+          319888.50640915614,
+          4171734.84102824,
+          86.43542092920697
+        ],
+        "source_forward_m": 281.018199694094,
+        "lateral_q_per_mm": 0.00955966411894572,
+        "crs": "EPSG:32652",
+        "slope_deg": 12.553653023386115,
+        "ndvi": 0.28542210118684286,
+        "effective_observations": 32.0,
+        "retained_ground": 0.2922288333022398,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.4,
+      "parent_mass_id": "winter-provisional-v01/winter-left-bedrock"
+    },
+    {
+      "id": "winter-provisional-v01/winter-left-bedrock/front",
+      "kind": "rock",
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          177.2203863297533,
+          828.5000000000107
+        ],
+        "mapped_face_id": 26170,
+        "original_mesh_face_id": 66552,
+        "barycentric": [
+          0.42785869222300754,
+          0.20203879710798878,
+          0.3701025106690037
+        ],
+        "source_xyz_utm_m": [
+          319821.0611639132,
+          4171553.8969246796,
+          94.4855738119726
+        ],
+        "source_forward_m": 214.8579098523692,
+        "lateral_q_per_mm": -0.1607963634566909,
+        "crs": "EPSG:32652",
+        "slope_deg": 12.635862469313551,
+        "ndvi": 0.3179151856805545,
+        "effective_observations": 33.0,
+        "retained_ground": 0.6020136796161639,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 2.8,
+      "parent_mass_id": "winter-provisional-v01/winter-left-bedrock"
+    },
+    {
+      "id": "winter-provisional-v01/winter-left-bedrock/ground",
+      "kind": "soil",
+      "group": "winter-left-shelter",
+      "site": {
+        "xy_mm": [
+          177.2203863297533,
+          828.5000000000107
+        ],
+        "mapped_face_id": 26170,
+        "original_mesh_face_id": 66552,
+        "barycentric": [
+          0.42785869222300754,
+          0.20203879710798878,
+          0.3701025106690037
+        ],
+        "source_xyz_utm_m": [
+          319821.0611639132,
+          4171553.8969246796,
+          94.4855738119726
+        ],
+        "source_forward_m": 214.8579098523692,
+        "lateral_q_per_mm": -0.1607963634566909,
+        "crs": "EPSG:32652",
+        "slope_deg": 12.635862469313551,
+        "ndvi": 0.3179151856805545,
+        "effective_observations": 33.0,
+        "retained_ground": 0.6020136796161639,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-middle-bedrock/parent",
+      "kind": "rock",
+      "group": "winter-middle-remnant",
+      "site": {
+        "xy_mm": [
+          275.91757083218573,
+          734.1
+        ],
+        "mapped_face_id": 27560,
+        "original_mesh_face_id": 68558,
+        "barycentric": [
+          0.17941779924310186,
+          0.1558262389199701,
+          0.664755961836928
+        ],
+        "source_xyz_utm_m": [
+          320119.6747871676,
+          4171425.0573211447,
+          132.37985401189616
+        ],
+        "source_forward_m": 514.3777564384577,
+        "lateral_q_per_mm": -0.08799859759191506,
+        "crs": "EPSG:32652",
+        "slope_deg": 13.755506047212238,
+        "ndvi": 0.6229317685743354,
+        "effective_observations": 32.0,
+        "retained_ground": 0.655856975536323,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.0,
+      "parent_mass_id": "winter-provisional-v01/winter-middle-bedrock"
+    },
+    {
+      "id": "winter-provisional-v01/winter-middle-bedrock/rear",
+      "kind": "rock",
+      "group": "winter-middle-remnant",
+      "site": {
+        "xy_mm": [
+          335.31757083218577,
+          720.04
+        ],
+        "mapped_face_id": 28941,
+        "original_mesh_face_id": 70555,
+        "barycentric": [
+          0.0005943805265293811,
+          0.6624305462239004,
+          0.33697507324957016
+        ],
+        "source_xyz_utm_m": [
+          320164.8729163867,
+          4171314.8907478023,
+          147.32311456306047
+        ],
+        "source_forward_m": 560.3560525497003,
+        "lateral_q_per_mm": -0.2050730956353735,
+        "crs": "EPSG:32652",
+        "slope_deg": 18.40282814925843,
+        "ndvi": 0.48128183406088815,
+        "effective_observations": 32.0,
+        "retained_ground": 0.5879784049076864,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.7,
+      "parent_mass_id": "winter-provisional-v01/winter-middle-bedrock"
+    },
+    {
+      "id": "winter-provisional-v01/winter-middle-bedrock/front",
+      "kind": "rock",
+      "group": "winter-middle-remnant",
+      "site": {
+        "xy_mm": [
+          322.1175708321857,
+          741.5
+        ],
+        "mapped_face_id": 28594,
+        "original_mesh_face_id": 70054,
+        "barycentric": [
+          0.24295556798807771,
+          0.3338914544227737,
+          0.42315297758914855
+        ],
+        "source_xyz_utm_m": [
+          320095.0167436327,
+          4171342.305410672,
+          124.74366421208674
+        ],
+        "source_forward_m": 490.3072112435743,
+        "lateral_q_per_mm": 0.10847862199011118,
+        "crs": "EPSG:32652",
+        "slope_deg": 14.737588817623706,
+        "ndvi": 0.6460442584571354,
+        "effective_observations": 32.0,
+        "retained_ground": 0.4510243472243028,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 2.8,
+      "parent_mass_id": "winter-provisional-v01/winter-middle-bedrock"
+    },
+    {
+      "id": "winter-provisional-v01/winter-middle-bedrock/ground",
+      "kind": "soil",
+      "group": "winter-middle-remnant",
+      "site": {
+        "xy_mm": [
+          322.1175708321857,
+          741.5
+        ],
+        "mapped_face_id": 28594,
+        "original_mesh_face_id": 70054,
+        "barycentric": [
+          0.24295556798807771,
+          0.3338914544227737,
+          0.42315297758914855
+        ],
+        "source_xyz_utm_m": [
+          320095.0167436327,
+          4171342.305410672,
+          124.74366421208674
+        ],
+        "source_forward_m": 490.3072112435743,
+        "lateral_q_per_mm": 0.10847862199011118,
+        "crs": "EPSG:32652",
+        "slope_deg": 14.737588817623706,
+        "ndvi": 0.6460442584571354,
+        "effective_observations": 32.0,
+        "retained_ground": 0.4510243472243028,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "winter-provisional-v01/winter-right-stone/parent",
+      "kind": "rock",
+      "group": "winter-right-remnant",
+      "site": {
+        "xy_mm": [
+          468.42007379027564,
+          824.6
+        ],
+        "mapped_face_id": 88952,
+        "original_mesh_face_id": 289630,
+        "barycentric": [
+          0.07797425894692145,
+          0.3694956771046764,
+          0.5525300639484021
+        ],
+        "source_xyz_utm_m": [
+          319828.42409808154,
+          4171147.339227768,
+          97.35633131325986
+        ],
+        "source_forward_m": 225.10397426044446,
+        "lateral_q_per_mm": -0.11474011488223614,
+        "crs": "EPSG:32652",
+        "slope_deg": 10.492370643326671,
+        "ndvi": 0.44326727097591484,
+        "effective_observations": 33.0,
+        "retained_ground": 0.37306134039777794,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.0,
+      "parent_mass_id": "winter-provisional-v01/winter-right-stone"
+    },
+    {
+      "id": "winter-provisional-v01/winter-right-stone/front",
+      "kind": "rock",
+      "group": "winter-right-remnant",
+      "site": {
+        "xy_mm": [
+          493.90007379027566,
+          828.5
+        ],
+        "mapped_face_id": 31345,
+        "original_mesh_face_id": 74037,
+        "barycentric": [
+          0.881797324880679,
+          0.09894347951336147,
+          0.019259195605959574
+        ],
+        "source_xyz_utm_m": [
+          319817.96830438543,
+          4171114.4222241323,
+          94.31652180174845
+        ],
+        "source_forward_m": 214.88189156930372,
+        "lateral_q_per_mm": 0.08437905437078369,
+        "crs": "EPSG:32652",
+        "slope_deg": 19.21425002464712,
+        "ndvi": 0.5741858597384069,
+        "effective_observations": 34.0,
+        "retained_ground": 0.2278743378377326,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 2.8,
+      "parent_mass_id": "winter-provisional-v01/winter-right-stone"
+    },
+    {
+      "id": "winter-provisional-v01/winter-right-stone/ground",
+      "kind": "soil",
+      "group": "winter-right-remnant",
+      "site": {
+        "xy_mm": [
+          493.90007379027566,
+          828.5
+        ],
+        "mapped_face_id": 31345,
+        "original_mesh_face_id": 74037,
+        "barycentric": [
+          0.881797324880679,
+          0.09894347951336147,
+          0.019259195605959574
+        ],
+        "source_xyz_utm_m": [
+          319817.96830438543,
+          4171114.4222241323,
+          94.31652180174845
+        ],
+        "source_forward_m": 214.88189156930372,
+        "lateral_q_per_mm": 0.08437905437078369,
+        "crs": "EPSG:32652",
+        "slope_deg": 19.21425002464712,
+        "ndvi": 0.5741858597384069,
+        "effective_observations": 34.0,
+        "retained_ground": 0.2278743378377326,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    }
+  ],
+  "mid_far": [
+    {
+      "id": "winter-provisional-v01/middle-left/body-0",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 0,
+      "member_count": 22,
+      "root_xy_mm": [
+        102.5,
+        478.5
+      ],
+      "guide_u": 0.35454545454545455,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9444461245904031,
+        0.3286662710808166
+      ],
+      "height_mm": 31.249211176739664,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          102.5,
+          478.5
+        ],
+        "source_forward_m": 2041.8380375312477,
+        "source_xyz_utm_m": [
+          321652.35573380947,
+          4172155.754705859,
+          256.94887443651186
+        ],
+        "ndvi": 0.5718050262180252,
+        "effective_observations": 36.92452941411176,
+        "retained_ground": 0.7308994108229399,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-1",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 1,
+      "member_count": 22,
+      "root_xy_mm": [
+        91.5,
+        517.5
+      ],
+      "guide_u": 0.30454545454545456,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9794771258192686,
+        0.20155535219096696
+      ],
+      "height_mm": 26.131383938932572,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          91.5,
+          517.5
+        ],
+        "source_forward_m": 1780.6569023351303,
+        "source_xyz_utm_m": [
+          321390.94445750874,
+          4172124.2309727008,
+          194.08827301384167
+        ],
+        "ndvi": 0.37244518065351684,
+        "effective_observations": 30.769291810225695,
+        "retained_ground": 0.6394769989793797,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-2",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 2,
+      "member_count": 22,
+      "root_xy_mm": [
+        143.5,
+        528.5
+      ],
+      "guide_u": 0.5409090909090909,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9899384450191367,
+        0.14149867516374062
+      ],
+      "height_mm": 21.557497691157664,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          143.5,
+          528.5
+        ],
+        "source_forward_m": 1705.4063374326047,
+        "source_xyz_utm_m": [
+          321314.2473942593,
+          4171920.541548408,
+          177.80480041481732
+        ],
+        "ndvi": 0.4557357293394527,
+        "effective_observations": 33.78338063675915,
+        "retained_ground": 0.6307147269541101,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-3",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 3,
+      "member_count": 22,
+      "root_xy_mm": [
+        143.5,
+        479.5
+      ],
+      "guide_u": 0.5409090909090909,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9820930092144035,
+        0.18839671242406975
+      ],
+      "height_mm": 31.959613268238797,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          143.5,
+          479.5
+        ],
+        "source_forward_m": 2131.2727955744917,
+        "source_xyz_utm_m": [
+          321740.7726866553,
+          4172011.927032477,
+          217.4629548209836
+        ],
+        "ndvi": 0.6206038913157166,
+        "effective_observations": 33.422731334471564,
+        "retained_ground": 0.6204412410497702,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-4",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 4,
+      "member_count": 22,
+      "root_xy_mm": [
+        39.5,
+        529.5
+      ],
+      "guide_u": 0.06818181818181818,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9645175696057711,
+        0.2640186696462516
+      ],
+      "height_mm": 27.053226242611288,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          39.5,
+          529.5
+        ],
+        "source_forward_m": 1604.5135716584712,
+        "source_xyz_utm_m": [
+          321215.6742880938,
+          4172247.9713244904,
+          219.61908310898187
+        ],
+        "ndvi": 0.5835429584360521,
+        "effective_observations": 34.00000000000001,
+        "retained_ground": 0.6923922094231202,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-5",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 5,
+      "member_count": 22,
+      "root_xy_mm": [
+        208.5,
+        549.5
+      ],
+      "guide_u": 0.8363636363636363,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9997753847685682,
+        -0.021193867293662662
+      ],
+      "height_mm": 28.102843357065467,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          208.5,
+          549.5
+        ],
+        "source_forward_m": 1553.5848458562368,
+        "source_xyz_utm_m": [
+          321160.67720157956,
+          4171674.513060143,
+          155.21635950557453
+        ],
+        "ndvi": 0.5496066693423186,
+        "effective_observations": 27.567720157955822,
+        "retained_ground": 0.560938626292618,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-6",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 6,
+      "member_count": 22,
+      "root_xy_mm": [
+        163.5,
+        473.5
+      ],
+      "guide_u": 0.6318181818181818,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9999820632377224,
+        -0.0059894242484100245
+      ],
+      "height_mm": 18.43758546295021,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          163.5,
+          473.5
+        ],
+        "source_forward_m": 2200.0057418135652,
+        "source_xyz_utm_m": [
+          321809.0165864455,
+          4171942.727752402,
+          216.3619414657405
+        ],
+        "ndvi": 0.54778971280637,
+        "effective_observations": 30.227224759804074,
+        "retained_ground": 0.5959778403638784,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-7",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 7,
+      "member_count": 22,
+      "root_xy_mm": [
+        149.5,
+        555.5
+      ],
+      "guide_u": 0.5681818181818182,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9747577643473456,
+        0.22326509096713856
+      ],
+      "height_mm": 22.811120860135134,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          149.5,
+          555.5
+        ],
+        "source_forward_m": 1528.3102562439233,
+        "source_xyz_utm_m": [
+          321136.7390183565,
+          4171863.0359861036,
+          141.00343481182964
+        ],
+        "ndvi": 0.4207831510688615,
+        "effective_observations": 31.271048557609006,
+        "retained_ground": 0.6310600294731291,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-8",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 8,
+      "member_count": 22,
+      "root_xy_mm": [
+        172.5,
+        546.5
+      ],
+      "guide_u": 0.6727272727272727,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9744546346327672,
+        0.22458442742701565
+      ],
+      "height_mm": 26.966832667023482,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          172.5,
+          546.5
+        ],
+        "source_forward_m": 1628.4122615730716,
+        "source_xyz_utm_m": [
+          321236.43681279116,
+          4171805.687282796,
+          132.8451345904625
+        ],
+        "ndvi": 0.22232533716317054,
+        "effective_observations": 21.0,
+        "retained_ground": 0.6048217272132896,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-9",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 9,
+      "member_count": 22,
+      "root_xy_mm": [
+        84.5,
+        545.5
+      ],
+      "guide_u": 0.2727272727272727,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9856407103718615,
+        0.1688561223576223
+      ],
+      "height_mm": 32.90761277616565,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          84.5,
+          545.5
+        ],
+        "source_forward_m": 1541.814114338796,
+        "source_xyz_utm_m": [
+          321151.7691914354,
+          4172078.198513437,
+          178.7909595501983
+        ],
+        "ndvi": 0.3872121762302153,
+        "effective_observations": 34.0,
+        "retained_ground": 0.6537182206967804,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-10",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 10,
+      "member_count": 22,
+      "root_xy_mm": [
+        122.5,
+        506.5
+      ],
+      "guide_u": 0.44545454545454544,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9859510530299058,
+        0.16703449053779273
+      ],
+      "height_mm": 24.997373367463354,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          122.5,
+          506.5
+        ],
+        "source_forward_m": 1840.0157286071978,
+        "source_xyz_utm_m": [
+          321449.61492758745,
+          4172026.9622597923,
+          218.04715746989157
+        ],
+        "ndvi": 0.5202855735734279,
+        "effective_observations": 33.0,
+        "retained_ground": 0.7282734186011827,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-11",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 11,
+      "member_count": 22,
+      "root_xy_mm": [
+        84.5,
+        504.5
+      ],
+      "guide_u": 0.2727272727272727,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9823580668379642,
+        -0.18700970166913175
+      ],
+      "height_mm": 18.44041544086639,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          84.5,
+          504.5
+        ],
+        "source_forward_m": 1846.5633901111764,
+        "source_xyz_utm_m": [
+          321457.17064521945,
+          4172169.0749554774,
+          224.19077345916145
+        ],
+        "ndvi": 0.31396895119962603,
+        "effective_observations": 32.0,
+        "retained_ground": 0.6694523013288105,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-12",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 12,
+      "member_count": 22,
+      "root_xy_mm": [
+        205.5,
+        534.5
+      ],
+      "guide_u": 0.8227272727272728,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9716111884969051,
+        -0.23658338569652707
+      ],
+      "height_mm": 18.24330843035642,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          205.5,
+          534.5
+        ],
+        "source_forward_m": 1665.3154027418393,
+        "source_xyz_utm_m": [
+          321272.58109963953,
+          4171698.557963063,
+          169.18437869497694
+        ],
+        "ndvi": 0.3211437479064757,
+        "effective_observations": 26.0,
+        "retained_ground": 0.5542493062796754,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-13",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 13,
+      "member_count": 22,
+      "root_xy_mm": [
+        183.5,
+        497.5
+      ],
+      "guide_u": 0.7227272727272728,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9393658033563148,
+        0.342916735498204
+      ],
+      "height_mm": 23.75632011892236,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          183.5,
+          497.5
+        ],
+        "source_forward_m": 2022.3158493285594,
+        "source_xyz_utm_m": [
+          321630.5272213244,
+          4171830.632208789,
+          183.39193892023457
+        ],
+        "ndvi": 0.4329422734207937,
+        "effective_observations": 31.0,
+        "retained_ground": 0.5668758719477403,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-14",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 14,
+      "member_count": 22,
+      "root_xy_mm": [
+        143.5,
+        507.5
+      ],
+      "guide_u": 0.5409090909090909,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9676787583396963,
+        0.25218608339506754
+      ],
+      "height_mm": 24.370932888436982,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          143.5,
+          507.5
+        ],
+        "source_forward_m": 1852.8531547046705,
+        "source_xyz_utm_m": [
+          321461.92245947313,
+          4171952.201653715,
+          208.26088571146843
+        ],
+        "ndvi": 0.5158048116534893,
+        "effective_observations": 34.692245947313495,
+        "retained_ground": 0.6911953955521595,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-15",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 15,
+      "member_count": 22,
+      "root_xy_mm": [
+        160.5,
+        519.5
+      ],
+      "guide_u": 0.6181818181818182,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9719749408516724,
+        0.23508448344454402
+      ],
+      "height_mm": 19.692195736050166,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          160.5,
+          519.5
+        ],
+        "source_forward_m": 1798.1281851234212,
+        "source_xyz_utm_m": [
+          321406.67497727193,
+          4171878.7214320377,
+          177.80985739203442
+        ],
+        "ndvi": 0.554375652513063,
+        "effective_observations": 37.627856796234816,
+        "retained_ground": 0.6138569091089144,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-16",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 16,
+      "member_count": 22,
+      "root_xy_mm": [
+        157.5,
+        543.5
+      ],
+      "guide_u": 0.6045454545454545,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9264394283954274,
+        0.3764438676806329
+      ],
+      "height_mm": 27.588127798940718,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          157.5,
+          543.5
+        ],
+        "source_forward_m": 1610.5510313294062,
+        "source_xyz_utm_m": [
+          321218.91142981855,
+          4171853.105084914,
+          154.53869219227704
+        ],
+        "ndvi": 0.33807554956406227,
+        "effective_observations": 31.391142981854504,
+        "retained_ground": 0.6242701496784464,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-17",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 17,
+      "member_count": 22,
+      "root_xy_mm": [
+        118.5,
+        474.5
+      ],
+      "guide_u": 0.42727272727272725,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.988880646238111,
+        0.14871135631045776
+      ],
+      "height_mm": 30.032210067200992,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          118.5,
+          474.5
+        ],
+        "source_forward_m": 2124.1301075704455,
+        "source_xyz_utm_m": [
+          321734.3445816878,
+          4172112.708568998,
+          240.93238783502252
+        ],
+        "ndvi": 0.47979445985099434,
+        "effective_observations": 35.0,
+        "retained_ground": 0.6361099611318446,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-18",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 18,
+      "member_count": 22,
+      "root_xy_mm": [
+        179.5,
+        475.5
+      ],
+      "guide_u": 0.7045454545454546,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9978328736743285,
+        0.06579936333150564
+      ],
+      "height_mm": 32.1929351667643,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          179.5,
+          475.5
+        ],
+        "source_forward_m": 2198.8038192481845,
+        "source_xyz_utm_m": [
+          321807.3366940973,
+          4171875.33827511,
+          208.74521153813458
+        ],
+        "ndvi": 0.5299255222872896,
+        "effective_observations": 31.0,
+        "retained_ground": 0.5660341207138011,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-19",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 19,
+      "member_count": 22,
+      "root_xy_mm": [
+        124.5,
+        541.5
+      ],
+      "guide_u": 0.45454545454545453,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9761780852972268,
+        -0.2169708408644811
+      ],
+      "height_mm": 24.627061105279324,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          124.5,
+          541.5
+        ],
+        "source_forward_m": 1605.9604528654547,
+        "source_xyz_utm_m": [
+          321215.1002419475,
+          4171963.0154369576,
+          165.60254614108428
+        ],
+        "ndvi": 0.3394628827737933,
+        "effective_observations": 26.001989364643308,
+        "retained_ground": 0.6362135245833399,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-20",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 20,
+      "member_count": 22,
+      "root_xy_mm": [
+        129.5,
+        519.5
+      ],
+      "guide_u": 0.4772727272727273,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9972195181893679,
+        0.07452001437308457
+      ],
+      "height_mm": 18.556730598124318,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          129.5,
+          519.5
+        ],
+        "source_forward_m": 1756.395178601647,
+        "source_xyz_utm_m": [
+          321365.6697760808,
+          4171981.489971184,
+          195.55207585303327
+        ],
+        "ndvi": 0.4656014603014082,
+        "effective_observations": 32.0,
+        "retained_ground": 0.6664988497094353,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-left/body-21",
+      "stand_id": "winter-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 21,
+      "member_count": 22,
+      "root_xy_mm": [
+        163.5,
+        492.5
+      ],
+      "guide_u": 0.6318181818181818,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9842583904925936,
+        0.17673545412545003
+      ],
+      "height_mm": 23.404240932099526,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          163.5,
+          492.5
+        ],
+        "source_forward_m": 1997.439578640059,
+        "source_xyz_utm_m": [
+          321606.1775396044,
+          4171904.969465969,
+          214.7807205624726
+        ],
+        "ndvi": 0.5363920612475709,
+        "effective_observations": 36.00305340308694,
+        "retained_ground": 0.6391424074156841,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-0",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 0,
+      "member_count": 12,
+      "root_xy_mm": [
+        495.5,
+        501.5
+      ],
+      "guide_u": 0.8545454545454545,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9709739045948595,
+        -0.23918544394635058
+      ],
+      "height_mm": 27.084200655310795,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          495.5,
+          501.5
+        ],
+        "source_forward_m": 1525.5424965794402,
+        "source_xyz_utm_m": [
+          321126.006218508,
+          4170739.9751347867,
+          382.40385116832215
+        ],
+        "ndvi": 0.6264192659861225,
+        "effective_observations": 32.0,
+        "retained_ground": 0.7678349941306287,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-1",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 1,
+      "member_count": 12,
+      "root_xy_mm": [
+        403.5,
+        484.5
+      ],
+      "guide_u": 0.43636363636363634,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9534715490109821,
+        -0.3014830098473183
+      ],
+      "height_mm": 19.55496098149703,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          403.5,
+          484.5
+        ],
+        "source_forward_m": 1825.6886646107064,
+        "source_xyz_utm_m": [
+          321427.94932262547,
+          4170992.2787882113,
+          321.759888851242
+        ],
+        "ndvi": 0.15901272116450862,
+        "effective_observations": 36.0,
+        "retained_ground": 0.40776164556194683,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-2",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 2,
+      "member_count": 12,
+      "root_xy_mm": [
+        433.5,
+        509.5
+      ],
+      "guide_u": 0.5727272727272728,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9999963376668953,
+        -0.0027064095766610196
+      ],
+      "height_mm": 19.190450439127893,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          433.5,
+          509.5
+        ],
+        "source_forward_m": 1596.3364364677611,
+        "source_xyz_utm_m": [
+          321198.12959381007,
+          4170927.174488941,
+          312.37060454013454
+        ],
+        "ndvi": 0.3313162198562512,
+        "effective_observations": 36.0,
+        "retained_ground": 0.5152346583210231,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-3",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 3,
+      "member_count": 12,
+      "root_xy_mm": [
+        424.5,
+        522.5
+      ],
+      "guide_u": 0.5318181818181819,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9763217533887594,
+        -0.21632344731882047
+      ],
+      "height_mm": 31.40205154233089,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          424.5,
+          522.5
+        ],
+        "source_forward_m": 1501.9730345176265,
+        "source_xyz_utm_m": [
+          321104.10001318116,
+          4170974.5779130193,
+          300.8773017634881
+        ],
+        "ndvi": 0.5412213999676583,
+        "effective_observations": 29.0,
+        "retained_ground": 0.5118211092337754,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-4",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 4,
+      "member_count": 12,
+      "root_xy_mm": [
+        397.5,
+        500.5
+      ],
+      "guide_u": 0.4090909090909091,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9981258676333693,
+        -0.06119438177752534
+      ],
+      "height_mm": 26.852278831908123,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          397.5,
+          500.5
+        ],
+        "source_forward_m": 1718.2784923225258,
+        "source_xyz_utm_m": [
+          321320.80337678053,
+          4171029.9155990547,
+          296.5751174239944
+        ],
+        "ndvi": 0.2322242909321115,
+        "effective_observations": 35.41966232194682,
+        "retained_ground": 0.31404446889819904,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-5",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 5,
+      "member_count": 12,
+      "root_xy_mm": [
+        415.5,
+        493.5
+      ],
+      "guide_u": 0.4909090909090909,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9579550911015499,
+        -0.28691818247127754
+      ],
+      "height_mm": 21.84765069338369,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          415.5,
+          493.5
+        ],
+        "source_forward_m": 1739.5160532147527,
+        "source_xyz_utm_m": [
+          321341.5665266294,
+          4170962.9483323856,
+          318.3906434029537
+        ],
+        "ndvi": 0.3542173082084489,
+        "effective_observations": 36.13472330024426,
+        "retained_ground": 0.44401331406689165,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-6",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 6,
+      "member_count": 12,
+      "root_xy_mm": [
+        404.5,
+        519.5
+      ],
+      "guide_u": 0.4409090909090909,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.977052668951484,
+        -0.2129978452820165
+      ],
+      "height_mm": 32.83053890415924,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          404.5,
+          519.5
+        ],
+        "source_forward_m": 1577.1486751168022,
+        "source_xyz_utm_m": [
+          321179.6504693562,
+          4171027.160332285,
+          277.13167240282496
+        ],
+        "ndvi": 0.4069361339764684,
+        "effective_observations": 33.46504693562167,
+        "retained_ground": 0.32916912531695675,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-7",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 7,
+      "member_count": 12,
+      "root_xy_mm": [
+        475.5,
+        507.5
+      ],
+      "guide_u": 0.7636363636363637,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9471401717896651,
+        -0.32082003519456775
+      ],
+      "height_mm": 31.737076601164407,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          475.5,
+          507.5
+        ],
+        "source_forward_m": 1527.5177526590444,
+        "source_xyz_utm_m": [
+          321128.4380785251,
+          4170804.349285611,
+          354.74805931834464
+        ],
+        "ndvi": 0.5375424107005887,
+        "effective_observations": 32.0,
+        "retained_ground": 0.7115995640197527,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-8",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 8,
+      "member_count": 12,
+      "root_xy_mm": [
+        433.5,
+        493.5
+      ],
+      "guide_u": 0.5727272727272728,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.942110681144373,
+        -0.3353020496115191
+      ],
+      "height_mm": 29.053063589249454,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          433.5,
+          493.5
+        ],
+        "source_forward_m": 1717.443091404845,
+        "source_xyz_utm_m": [
+          321319.07072340563,
+          4170903.405964964,
+          328.0495931275093
+        ],
+        "ndvi": 0.15390966835802766,
+        "effective_observations": 37.15940350359307,
+        "retained_ground": 0.4914682005331338,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-9",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 9,
+      "member_count": 12,
+      "root_xy_mm": [
+        453.5,
+        508.5
+      ],
+      "guide_u": 0.6636363636363637,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9412002122474971,
+        -0.33784931621251835
+      ],
+      "height_mm": 30.19604473494253,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          453.5,
+          508.5
+        ],
+        "source_forward_m": 1575.349383786689,
+        "source_xyz_utm_m": [
+          321176.7013802739,
+          4170865.045229611,
+          326.8856975902362
+        ],
+        "ndvi": 0.34496956759144376,
+        "effective_observations": 36.170138027390976,
+        "retained_ground": 0.5824711853437218,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-10",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 10,
+      "member_count": 12,
+      "root_xy_mm": [
+        381.5,
+        499.5
+      ],
+      "guide_u": 0.33636363636363636,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9717097724618123,
+        -0.23617814907864132
+      ],
+      "height_mm": 28.31150917892151,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          381.5,
+          499.5
+        ],
+        "source_forward_m": 1739.1832475347405,
+        "source_xyz_utm_m": [
+          321342.0893780263,
+          4171083.597160382,
+          291.8669680446645
+        ],
+        "ndvi": 0.4005819632833265,
+        "effective_observations": 31.28056792356074,
+        "retained_ground": 0.25128109656325526,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/middle-right/body-11",
+      "stand_id": "winter-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 11,
+      "member_count": 12,
+      "root_xy_mm": [
+        416.5,
+        510.5
+      ],
+      "guide_u": 0.4954545454545455,
+      "guide_source_id": "winter-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9661092689357823,
+        -0.2581334547794377
+      ],
+      "height_mm": 23.478828147327196,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          416.5,
+          510.5
+        ],
+        "source_forward_m": 1617.4918900689497,
+        "source_xyz_utm_m": [
+          321219.6632098405,
+          4170980.4203730663,
+          297.9392793563858
+        ],
+        "ndvi": 0.20331667735044873,
+        "effective_observations": 34.71072606358693,
+        "retained_ground": 0.4119418597953833,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-0",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 0,
+      "member_count": 17,
+      "root_xy_mm": [
+        267.5,
+        337.5
+      ],
+      "guide_u": 0.9692307692307692,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.8891137918858977,
+        -0.4576862080927071
+      ],
+      "height_mm": 10.915237579212816,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          267.5,
+          337.5
+        ],
+        "source_forward_m": 3219.8155982246717,
+        "source_xyz_utm_m": [
+          322826.03602594015,
+          4171545.662665646,
+          397.0864547532702
+        ],
+        "ndvi": 0.2416206478172227,
+        "effective_observations": 34.0,
+        "retained_ground": 0.43696656557116276,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-1",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 1,
+      "member_count": 17,
+      "root_xy_mm": [
+        160.5,
+        274.5
+      ],
+      "guide_u": 0.5576923076923077,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.5028967590589061,
+        0.8643464870802963
+      ],
+      "height_mm": 8.869141792135071,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          160.5,
+          274.5
+        ],
+        "source_forward_m": 4651.122367941646,
+        "source_xyz_utm_m": [
+          324263.5961043547,
+          4172422.303699908,
+          433.3912656593087
+        ],
+        "ndvi": 0.37384021035958837,
+        "effective_observations": 31.447872813321556,
+        "retained_ground": 0.9998100920666713,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-2",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 2,
+      "member_count": 17,
+      "root_xy_mm": [
+        67.5,
+        262.5
+      ],
+      "guide_u": 0.2,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.7349524798299982,
+        0.6781186123324858
+      ],
+      "height_mm": 9.953251182553423,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          67.5,
+          262.5
+        ],
+        "source_forward_m": 4588.989814940571,
+        "source_xyz_utm_m": [
+          324206.38033565215,
+          4173115.79061143,
+          473.4561237554133
+        ],
+        "ndvi": 0.5045588280988018,
+        "effective_observations": 34.07906114300715,
+        "retained_ground": 0.9514084458763252,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-3",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 3,
+      "member_count": 17,
+      "root_xy_mm": [
+        146.5,
+        254.5
+      ],
+      "guide_u": 0.5038461538461538,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.7917202594110692,
+        0.610883811242424
+      ],
+      "height_mm": 7.094272283691065,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          146.5,
+          254.5
+        ],
+        "source_forward_m": 4664.182829873219,
+        "source_xyz_utm_m": [
+          324277.4380922738,
+          4172532.4525510315,
+          490.83726332041067
+        ],
+        "ndvi": 0.42931344830269136,
+        "effective_observations": 33.92406342250454,
+        "retained_ground": 0.9997837546385226,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-4",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 4,
+      "member_count": 17,
+      "root_xy_mm": [
+        163.5,
+        238.5
+      ],
+      "guide_u": 0.5692307692307692,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.44005172737281356,
+        0.8979724256547095
+      ],
+      "height_mm": 6.217491334432356,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          163.5,
+          238.5
+        ],
+        "source_forward_m": 10298.696057577747,
+        "source_xyz_utm_m": [
+          329918.6096607831,
+          4173451.29831239,
+          305.2018652897685
+        ],
+        "ndvi": 0.4469489925573226,
+        "effective_observations": 36.639033921691635,
+        "retained_ground": 0.9894738260276381,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-5",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 5,
+      "member_count": 17,
+      "root_xy_mm": [
+        134.5,
+        309.5
+      ],
+      "guide_u": 0.4576923076923077,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.8742620447200371,
+        0.48545429976666155
+      ],
+      "height_mm": 7.613576147091152,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          134.5,
+          309.5
+        ],
+        "source_forward_m": 3071.3040141711626,
+        "source_xyz_utm_m": [
+          322682.6053085516,
+          4172262.5914956024,
+          503.1888621463988
+        ],
+        "ndvi": 0.3804410443071861,
+        "effective_observations": 33.1817928959981,
+        "retained_ground": 0.7581536901180244,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-6",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 6,
+      "member_count": 17,
+      "root_xy_mm": [
+        60.5,
+        289.5
+      ],
+      "guide_u": 0.17307692307692307,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9999973183270134,
+        0.0023158883353123264
+      ],
+      "height_mm": 9.031890217117812,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          60.5,
+          289.5
+        ],
+        "source_forward_m": 4400.029255561608,
+        "source_xyz_utm_m": [
+          324017.3463428765,
+          4173106.106566976,
+          410.2863888792727
+        ],
+        "ndvi": 0.4635330528592766,
+        "effective_observations": 33.765365712350444,
+        "retained_ground": 0.5821898459227447,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-7",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 7,
+      "member_count": 17,
+      "root_xy_mm": [
+        186.5,
+        330.5
+      ],
+      "guide_u": 0.6576923076923077,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.7572695349462993,
+        0.6531024815771377
+      ],
+      "height_mm": 10.861576232394533,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          186.5,
+          330.5
+        ],
+        "source_forward_m": 3005.2609583390854,
+        "source_xyz_utm_m": [
+          322614.4846259396,
+          4171969.8803119296,
+          454.8824102894248
+        ],
+        "ndvi": 0.47289506133508263,
+        "effective_observations": 28.0,
+        "retained_ground": 0.5452995504099318,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-8",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 8,
+      "member_count": 17,
+      "root_xy_mm": [
+        164.5,
+        290.5
+      ],
+      "guide_u": 0.573076923076923,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.6237986304927065,
+        0.7815851000341701
+      ],
+      "height_mm": 10.625007306821605,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          164.5,
+          290.5
+        ],
+        "source_forward_m": 3246.0979981396813,
+        "source_xyz_utm_m": [
+          322856.47655388864,
+          4172131.8655195395,
+          530.9935644551025
+        ],
+        "ndvi": 0.6550968762800168,
+        "effective_observations": 31.0,
+        "retained_ground": 0.8056863300623933,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-9",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 9,
+      "member_count": 17,
+      "root_xy_mm": [
+        236.5,
+        319.5
+      ],
+      "guide_u": 0.85,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9285158101532995,
+        0.3712928632432382
+      ],
+      "height_mm": 6.709075355516194,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          236.5,
+          319.5
+        ],
+        "source_forward_m": 3314.0766102760913,
+        "source_xyz_utm_m": [
+          322921.5957522186,
+          4171728.4471169556,
+          437.27248532959385
+        ],
+        "ndvi": 0.6022948652421077,
+        "effective_observations": 35.0,
+        "retained_ground": 0.7147073362541161,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-10",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 10,
+      "member_count": 17,
+      "root_xy_mm": [
+        175.5,
+        307.5
+      ],
+      "guide_u": 0.6153846153846154,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.6431864612120988,
+        0.7657095899317558
+      ],
+      "height_mm": 7.6873011431201554,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          175.5,
+          307.5
+        ],
+        "source_forward_m": 3225.647742242676,
+        "source_xyz_utm_m": [
+          322835.55824715545,
+          4172065.9428693634,
+          484.0208825448253
+        ],
+        "ndvi": 0.3412473794528559,
+        "effective_observations": 27.16747414663564,
+        "retained_ground": 0.7202454191990626,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-11",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 11,
+      "member_count": 17,
+      "root_xy_mm": [
+        195.5,
+        309.5
+      ],
+      "guide_u": 0.6923076923076923,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.870604990962875,
+        0.4919826721649173
+      ],
+      "height_mm": 10.432278010891835,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          195.5,
+          309.5
+        ],
+        "source_forward_m": 3337.34936156503,
+        "source_xyz_utm_m": [
+          322946.5725118732,
+          4171968.629770063,
+          463.51379073274484
+        ],
+        "ndvi": 0.33330258327363377,
+        "effective_observations": 36.0,
+        "retained_ground": 0.7981863009137148,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-12",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 12,
+      "member_count": 17,
+      "root_xy_mm": [
+        160.5,
+        321.5
+      ],
+      "guide_u": 0.5576923076923077,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9274927471345467,
+        0.3738411481001145
+      ],
+      "height_mm": 11.871001281261425,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          160.5,
+          321.5
+        ],
+        "source_forward_m": 3010.3089557216495,
+        "source_xyz_utm_m": [
+          322620.52420757036,
+          4172109.675790446,
+          480.5501005455237
+        ],
+        "ndvi": 0.6408705955268497,
+        "effective_observations": 31.447579242964252,
+        "retained_ground": 0.6467091359004242,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-13",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 13,
+      "member_count": 17,
+      "root_xy_mm": [
+        38.5,
+        316.5
+      ],
+      "guide_u": 0.08846153846153847,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.7128278559949675,
+        0.7013390390657132
+      ],
+      "height_mm": 6.938677894848912,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          38.5,
+          316.5
+        ],
+        "source_forward_m": 4025.481293076754,
+        "source_xyz_utm_m": [
+          323642.9652957262,
+          4173130.9697967116,
+          365.8089904767964
+        ],
+        "ndvi": 0.39206863625542065,
+        "effective_observations": 35.7965295726201,
+        "retained_ground": 0.6140924504152154,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-14",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 14,
+      "member_count": 17,
+      "root_xy_mm": [
+        99.5,
+        274.5
+      ],
+      "guide_u": 0.3230769230769231,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.8036254136699443,
+        -0.5951354421506175
+      ],
+      "height_mm": 11.45153497972409,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          99.5,
+          274.5
+        ],
+        "source_forward_m": 4482.141579370164,
+        "source_xyz_utm_m": [
+          324097.5983840082,
+          4172843.5155347507,
+          447.16801540681286
+        ],
+        "ndvi": 0.35505463464148246,
+        "effective_observations": 34.0,
+        "retained_ground": 0.9756822987891458,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-15",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 15,
+      "member_count": 17,
+      "root_xy_mm": [
+        145.5,
+        278.5
+      ],
+      "guide_u": 0.5,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.8558376861707456,
+        -0.5172444827447698
+      ],
+      "height_mm": 7.933852794052047,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          145.5,
+          278.5
+        ],
+        "source_forward_m": 4556.412904656792,
+        "source_xyz_utm_m": [
+          324169.55812061153,
+          4172517.318160221,
+          429.3214090676288
+        ],
+        "ndvi": 0.23516638556281455,
+        "effective_observations": 33.0,
+        "retained_ground": 0.9993285563261256,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-left/body-16",
+      "stand_id": "winter-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 16,
+      "member_count": 17,
+      "root_xy_mm": [
+        248.5,
+        326.5
+      ],
+      "guide_u": 0.8961538461538462,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9864753988889609,
+        0.16390938773256955
+      ],
+      "height_mm": 9.91084011813417,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          248.5,
+          326.5
+        ],
+        "source_forward_m": 3303.557565545863,
+        "source_xyz_utm_m": [
+          322910.5796216363,
+          4171658.3953129197,
+          418.16702497514154
+        ],
+        "ndvi": 0.3863363711710262,
+        "effective_observations": 36.0,
+        "retained_ground": 0.6418839135274731,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-0",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 0,
+      "member_count": 11,
+      "root_xy_mm": [
+        369.5,
+        335.5
+      ],
+      "guide_u": 0.1984126984126984,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9922192853771243,
+        0.1245025691530445
+      ],
+      "height_mm": 10.692710540117425,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          369.5,
+          335.5
+        ],
+        "source_forward_m": 3316.559425573,
+        "source_xyz_utm_m": [
+          322918.6263644929,
+          4170959.6776865697,
+          390.16767203625875
+        ],
+        "ndvi": 0.3125234448267588,
+        "effective_observations": 31.935502242826228,
+        "retained_ground": 0.7107727886749081,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-1",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 1,
+      "member_count": 11,
+      "root_xy_mm": [
+        403.5,
+        313.5
+      ],
+      "guide_u": 0.3333333333333333,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9890228164910309,
+        0.14776287916844627
+      ],
+      "height_mm": 8.774197487168136,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          403.5,
+          313.5
+        ],
+        "source_forward_m": 3363.455266501736,
+        "source_xyz_utm_m": [
+          322964.07794773934,
+          4170755.8710581446,
+          448.4840616772498
+        ],
+        "ndvi": 0.4615689849839149,
+        "effective_observations": 31.83675218210111,
+        "retained_ground": 0.9445069698268382,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-2",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 2,
+      "member_count": 11,
+      "root_xy_mm": [
+        346.5,
+        336.5
+      ],
+      "guide_u": 0.10714285714285714,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9906947756372088,
+        -0.13610239353200504
+      ],
+      "height_mm": 8.967378866340347,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          346.5,
+          336.5
+        ],
+        "source_forward_m": 3336.2455047775898,
+        "source_xyz_utm_m": [
+          322939.2458775064,
+          4171091.2220457066,
+          384.7052517263548
+        ],
+        "ndvi": 0.5011208543000133,
+        "effective_observations": 33.42458775063858,
+        "retained_ground": 0.7073530492389732,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-3",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 3,
+      "member_count": 11,
+      "root_xy_mm": [
+        404.5,
+        299.5
+      ],
+      "guide_u": 0.3373015873015873,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9825206996884259,
+        0.18615336334260973
+      ],
+      "height_mm": 6.15766734755886,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          404.5,
+          299.5
+        ],
+        "source_forward_m": 3441.9061616412882,
+        "source_xyz_utm_m": [
+          323042.4033476437,
+          4170737.898038814,
+          479.6322404313803
+        ],
+        "ndvi": 0.6588955884168165,
+        "effective_observations": 33.0,
+        "retained_ground": 0.9806673739123769,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-4",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 4,
+      "member_count": 11,
+      "root_xy_mm": [
+        364.5,
+        325.5
+      ],
+      "guide_u": 0.17857142857142858,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9893812656998621,
+        0.14534342462643052
+      ],
+      "height_mm": 9.315425511844596,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          364.5,
+          325.5
+        ],
+        "source_forward_m": 3348.6150225083647,
+        "source_xyz_utm_m": [
+          322950.86553682765,
+          4170985.4481469793,
+          415.2894768714915
+        ],
+        "ndvi": 0.4125374531254107,
+        "effective_observations": 32.0,
+        "retained_ground": 0.8413165813392788,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-5",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 5,
+      "member_count": 11,
+      "root_xy_mm": [
+        389.5,
+        329.5
+      ],
+      "guide_u": 0.2777777777777778,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9149969353143632,
+        -0.4034607891299019
+      ],
+      "height_mm": 6.665488024817598,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          389.5,
+          329.5
+        ],
+        "source_forward_m": 3311.877068652098,
+        "source_xyz_utm_m": [
+          322913.128124932,
+          4170844.65483822,
+          408.3164307447508
+        ],
+        "ndvi": 0.30696825017962154,
+        "effective_observations": 31.93096764404322,
+        "retained_ground": 0.7880437211521427,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-6",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 6,
+      "member_count": 11,
+      "root_xy_mm": [
+        338.5,
+        327.5
+      ],
+      "guide_u": 0.07539682539682539,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9521797421382576,
+        -0.3055384405627567
+      ],
+      "height_mm": 10.416412321198619,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          338.5,
+          327.5
+        ],
+        "source_forward_m": 3451.825521113342,
+        "source_xyz_utm_m": [
+          323055.1077134129,
+          4171130.548752124,
+          396.539544966971
+        ],
+        "ndvi": 0.5853141568119463,
+        "effective_observations": 31.04308536516055,
+        "retained_ground": 0.9111472909238408,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-7",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 7,
+      "member_count": 11,
+      "root_xy_mm": [
+        375.5,
+        305.5
+      ],
+      "guide_u": 0.2222222222222222,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.8446492530635935,
+        -0.5353201278666004
+      ],
+      "height_mm": 7.438678071467015,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          375.5,
+          305.5
+        ],
+        "source_forward_m": 3438.266760018492,
+        "source_xyz_utm_m": [
+          323039.9923205065,
+          4170911.1117468015,
+          462.5359420647749
+        ],
+        "ndvi": 0.5217004533953603,
+        "effective_observations": 31.0,
+        "retained_ground": 0.9669511141655164,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-8",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 8,
+      "member_count": 11,
+      "root_xy_mm": [
+        431.5,
+        305.5
+      ],
+      "guide_u": 0.4444444444444444,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9572601542302794,
+        -0.289228278567331
+      ],
+      "height_mm": 9.799845314973565,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          431.5,
+          305.5
+        ],
+        "source_forward_m": 3325.632850540984,
+        "source_xyz_utm_m": [
+          322925.14538207126,
+          4170599.474069768,
+          476.7151604500127
+        ],
+        "ndvi": 0.3156314749618121,
+        "effective_observations": 32.0,
+        "retained_ground": 0.9557144444175176,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-9",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 9,
+      "member_count": 11,
+      "root_xy_mm": [
+        327.5,
+        314.5
+      ],
+      "guide_u": 0.031746031746031744,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.4395271570573358,
+        0.898229301575659
+      ],
+      "height_mm": 10.394430018730672,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          327.5,
+          314.5
+        ],
+        "source_forward_m": 9734.252724479462,
+        "source_xyz_utm_m": [
+          329336.1071601713,
+          4170906.957239924,
+          95.7548852053545
+        ],
+        "ndvi": 0.6792533717519923,
+        "effective_observations": 37.11071601713184,
+        "retained_ground": 0.9175026072842298,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "winter-provisional-v01/far-right/body-10",
+      "stand_id": "winter-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 10,
+      "member_count": 11,
+      "root_xy_mm": [
+        325.5,
+        343.5
+      ],
+      "guide_u": 0.023809523809523808,
+      "guide_source_id": "winter-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9939838015507252,
+        -0.10952717587324465
+      ],
+      "height_mm": 5.9408155118522314,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          325.5,
+          343.5
+        ],
+        "source_forward_m": 3325.373651692631,
+        "source_xyz_utm_m": [
+          322929.2422428946,
+          4171213.67940261,
+          365.63589675305707
+        ],
+        "ndvi": 0.32506895754881326,
+        "effective_observations": 34.0,
+        "retained_ground": 0.5936147978893422,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    }
+  ],
+  "rock_notes": [
+    {
+      "formation": "winter-provisional-v01/winter-left-bedrock",
+      "host": {
+        "id": "nonplotting/F2-source-q-section/winter-left-bedrock",
+        "xy_mm": [
+          [
+            0.6,
+            831.4400671896171
+          ],
+          [
+            2.541125,
+            831.4139443467333
+          ],
+          [
+            4.48225,
+            831.3878215038485
+          ],
+          [
+            6.423375,
+            831.3616986609626
+          ],
+          [
+            8.3645,
+            831.3355758180933
+          ],
+          [
+            10.305625,
+            831.309452975207
+          ],
+          [
+            12.24675,
+            831.2833301323287
+          ],
+          [
+            14.187875,
+            831.2509348740015
+          ],
+          [
+            16.129,
+            831.2105352188278
+          ],
+          [
+            18.070125,
+            831.15369331858
+          ],
+          [
+            20.01125,
+            831.0795131283511
+          ],
+          [
+            21.952375,
+            831.0049165789545
+          ],
+          [
+            23.893500000000003,
+            830.9303200295475
+          ],
+          [
+            25.834625000000003,
+            830.8557234801311
+          ],
+          [
+            27.775750000000002,
+            830.7811269307433
+          ],
+          [
+            29.716875,
+            830.7065303813494
+          ],
+          [
+            31.658,
+            830.6319338319272
+          ],
+          [
+            33.599125,
+            830.557337282538
+          ],
+          [
+            35.54025,
+            830.5038592226518
+          ],
+          [
+            37.481375,
+            830.5519670357454
+          ],
+          [
+            39.4225,
+            830.5900128861138
+          ],
+          [
+            41.363625,
+            830.606033526408
+          ],
+          [
+            43.30475,
+            830.6215799436268
+          ],
+          [
+            45.245875,
+            830.6371263608245
+          ],
+          [
+            47.187000000000005,
+            830.6526727780379
+          ],
+          [
+            49.128125000000004,
+            830.6682191952549
+          ],
+          [
+            51.069250000000004,
+            830.6837656124724
+          ],
+          [
+            53.010375,
+            830.6993120296695
+          ],
+          [
+            54.9515,
+            830.7148584468863
+          ],
+          [
+            56.892625,
+            830.7286565222784
+          ],
+          [
+            58.83375,
+            830.7325863906897
+          ],
+          [
+            60.774875,
+            830.7346703545296
+          ],
+          [
+            62.716,
+            830.7408056872704
+          ],
+          [
+            64.657125,
+            830.7471993011145
+          ],
+          [
+            66.59825,
+            830.7535929149662
+          ],
+          [
+            68.53937499999999,
+            830.7599865288139
+          ],
+          [
+            70.48049999999999,
+            830.7663801426623
+          ],
+          [
+            72.42162499999999,
+            830.7727737565111
+          ],
+          [
+            74.36274999999999,
+            830.7791673703772
+          ],
+          [
+            76.30387499999999,
+            830.7855609842193
+          ],
+          [
+            78.24499999999999,
+            830.7919575601101
+          ],
+          [
+            80.18612499999999,
+            830.7984969981768
+          ],
+          [
+            82.12724999999999,
+            830.7948017228957
+          ],
+          [
+            84.06837499999999,
+            830.7134703727294
+          ],
+          [
+            86.00949999999999,
+            830.6186236100438
+          ],
+          [
+            87.95062499999999,
+            830.5237768473403
+          ],
+          [
+            89.89174999999999,
+            830.4289300846743
+          ],
+          [
+            91.83287499999999,
+            830.3340833219781
+          ],
+          [
+            93.774,
+            830.2392365593021
+          ],
+          [
+            95.715125,
+            830.1443897965986
+          ],
+          [
+            97.65625,
+            830.0495430339215
+          ],
+          [
+            99.597375,
+            829.9545217824704
+          ],
+          [
+            101.5385,
+            829.8529683975748
+          ],
+          [
+            103.479625,
+            829.7435988162297
+          ],
+          [
+            105.42075,
+            829.6164392083235
+          ],
+          [
+            107.361875,
+            829.4847778883369
+          ],
+          [
+            109.303,
+            829.3531165683196
+          ],
+          [
+            111.244125,
+            829.2214552482998
+          ],
+          [
+            113.18525,
+            829.089793928295
+          ],
+          [
+            115.126375,
+            828.9581326082605
+          ],
+          [
+            117.0675,
+            828.8264712882608
+          ],
+          [
+            119.008625,
+            828.6948099682518
+          ],
+          [
+            120.94975,
+            828.5631486482224
+          ],
+          [
+            122.890875,
+            828.4287710339083
+          ],
+          [
+            124.832,
+            828.2873284805346
+          ],
+          [
+            126.773125,
+            828.2659731819622
+          ],
+          [
+            128.71425,
+            828.3180279331964
+          ],
+          [
+            130.655375,
+            828.370082684438
+          ],
+          [
+            132.5965,
+            828.4221374356512
+          ],
+          [
+            134.537625,
+            828.4741921868957
+          ],
+          [
+            136.47875,
+            828.5262469381422
+          ],
+          [
+            138.419875,
+            828.5783016893707
+          ],
+          [
+            140.361,
+            828.6303564406002
+          ],
+          [
+            142.302125,
+            828.6824111918413
+          ],
+          [
+            144.24325,
+            828.7344257326661
+          ],
+          [
+            146.184375,
+            828.7862776478505
+          ],
+          [
+            148.1255,
+            828.8610479835265
+          ],
+          [
+            150.066625,
+            828.9614310386492
+          ],
+          [
+            152.00775,
+            829.0618140937554
+          ],
+          [
+            153.948875,
+            829.1621971488776
+          ],
+          [
+            155.89,
+            829.2625802039939
+          ],
+          [
+            157.831125,
+            829.3629632591102
+          ],
+          [
+            159.77224999999999,
+            829.46334631423
+          ],
+          [
+            161.71337499999998,
+            829.5637293693517
+          ],
+          [
+            163.65449999999998,
+            829.6641124244494
+          ],
+          [
+            165.59562499999998,
+            829.7629286028231
+          ],
+          [
+            167.53674999999998,
+            829.826560523282
+          ],
+          [
+            169.47787499999998,
+            829.8221097943241
+          ],
+          [
+            171.41899999999998,
+            829.7062850310195
+          ],
+          [
+            173.36012499999998,
+            829.5897369161413
+          ],
+          [
+            175.30124999999998,
+            829.4731888012625
+          ],
+          [
+            177.24237499999998,
+            829.356640686387
+          ],
+          [
+            179.18349999999998,
+            829.240092571493
+          ],
+          [
+            181.12462499999998,
+            829.123544456615
+          ],
+          [
+            183.06574999999998,
+            829.0069963417345
+          ],
+          [
+            185.00687499999998,
+            828.8904482268471
+          ],
+          [
+            186.948,
+            828.7739001119577
+          ],
+          [
+            188.889125,
+            828.6980432059205
+          ],
+          [
+            190.83025,
+            828.6642178885746
+          ],
+          [
+            192.771375,
+            828.6719597063046
+          ],
+          [
+            194.7125,
+            828.6810782733503
+          ],
+          [
+            196.653625,
+            828.6901968404171
+          ],
+          [
+            198.59475,
+            828.6993154074797
+          ],
+          [
+            200.535875,
+            828.7084339745326
+          ],
+          [
+            202.477,
+            828.717552541593
+          ],
+          [
+            204.418125,
+            828.7266711086498
+          ],
+          [
+            206.35925,
+            828.7357896756939
+          ],
+          [
+            208.300375,
+            828.7449082427629
+          ],
+          [
+            210.2415,
+            828.7688601744732
+          ],
+          [
+            212.182625,
+            828.8179080996582
+          ],
+          [
+            214.12375,
+            828.8936192050313
+          ],
+          [
+            216.064875,
+            828.9725342248423
+          ],
+          [
+            218.006,
+            829.0514492446471
+          ],
+          [
+            219.947125,
+            829.1303642644565
+          ],
+          [
+            221.88825,
+            829.2092792842672
+          ],
+          [
+            223.829375,
+            829.2881943040805
+          ],
+          [
+            225.7705,
+            829.3671093238834
+          ],
+          [
+            227.711625,
+            829.4460243436839
+          ],
+          [
+            229.65275,
+            829.5249393634937
+          ],
+          [
+            231.593875,
+            829.6075902199896
+          ],
+          [
+            233.535,
+            829.7289268587203
+          ],
+          [
+            235.476125,
+            829.8420702623423
+          ],
+          [
+            237.41725,
+            829.9520407729547
+          ],
+          [
+            239.358375,
+            830.0620112835708
+          ],
+          [
+            241.2995,
+            830.1719817942044
+          ],
+          [
+            243.240625,
+            830.2819523048269
+          ],
+          [
+            245.18175,
+            830.3919228154435
+          ],
+          [
+            247.122875,
+            830.5018948726467
+          ],
+          [
+            249.064,
+            830.6118638366794
+          ],
+          [
+            251.005125,
+            830.7218343473123
+          ],
+          [
+            252.94625,
+            830.8221391667655
+          ],
+          [
+            254.887375,
+            830.8778358620003
+          ],
+          [
+            256.8285,
+            830.8837520647825
+          ],
+          [
+            258.769625,
+            830.8766255613747
+          ],
+          [
+            260.71075,
+            830.8694990579613
+          ],
+          [
+            262.651875,
+            830.8623725545491
+          ],
+          [
+            264.593,
+            830.8552460511348
+          ],
+          [
+            266.534125,
+            830.848119547732
+          ],
+          [
+            268.47525,
+            830.8409930443163
+          ],
+          [
+            270.416375,
+            830.8338665409276
+          ],
+          [
+            272.3575,
+            830.8267400374996
+          ],
+          [
+            274.298625,
+            830.819613534094
+          ],
+          [
+            276.23975,
+            830.7787307985781
+          ],
+          [
+            278.180875,
+            830.739552483462
+          ],
+          [
+            280.122,
+            830.7242144513268
+          ],
+          [
+            282.063125,
+            830.7088764192263
+          ],
+          [
+            284.00425,
+            830.6935383870954
+          ],
+          [
+            285.945375,
+            830.6782003549828
+          ],
+          [
+            287.8865,
+            830.6628623228617
+          ],
+          [
+            289.827625,
+            830.6475242907327
+          ],
+          [
+            291.76875,
+            830.6321862586157
+          ],
+          [
+            293.709875,
+            830.6168482265042
+          ],
+          [
+            295.651,
+            830.601510194371
+          ],
+          [
+            297.592125,
+            830.610964859284
+          ],
+          [
+            299.53325,
+            830.6481637479095
+          ],
+          [
+            301.474375,
+            830.65283650932
+          ],
+          [
+            303.4155,
+            830.6575092707587
+          ],
+          [
+            305.356625,
+            830.662182032169
+          ],
+          [
+            307.29775,
+            830.6668547935948
+          ],
+          [
+            309.238875,
+            830.6715275550043
+          ],
+          [
+            311.18,
+            830.6762003164295
+          ]
+        ]
+      },
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_offset_mm": 0.0
+    },
+    {
+      "formation": "winter-provisional-v01/winter-middle-bedrock",
+      "host": {
+        "id": "nonplotting/F2-source-q-section/winter-middle-bedrock",
+        "xy_mm": [
+          [
+            175.7,
+            740.9500259657112
+          ],
+          [
+            177.185,
+            740.9293054386163
+          ],
+          [
+            178.67,
+            740.9085849115214
+          ],
+          [
+            180.155,
+            740.9116214173383
+          ],
+          [
+            181.64,
+            740.9590202967019
+          ],
+          [
+            183.125,
+            741.0105749710029
+          ],
+          [
+            184.60999999999999,
+            741.0621296453046
+          ],
+          [
+            186.095,
+            741.1136843195957
+          ],
+          [
+            187.57999999999998,
+            741.165238993901
+          ],
+          [
+            189.065,
+            741.2167936682066
+          ],
+          [
+            190.54999999999998,
+            741.26429592515
+          ],
+          [
+            192.035,
+            741.2972805780446
+          ],
+          [
+            193.51999999999998,
+            741.310933735744
+          ],
+          [
+            195.005,
+            741.3245868934281
+          ],
+          [
+            196.48999999999998,
+            741.3382400511148
+          ],
+          [
+            197.975,
+            741.2901235626144
+          ],
+          [
+            199.45999999999998,
+            741.2344484772514
+          ],
+          [
+            200.945,
+            741.1787733919126
+          ],
+          [
+            202.42999999999998,
+            741.1230983065626
+          ],
+          [
+            203.915,
+            741.0674232212119
+          ],
+          [
+            205.39999999999998,
+            741.0117481358612
+          ],
+          [
+            206.885,
+            740.9560450113177
+          ],
+          [
+            208.37,
+            740.8992627037742
+          ],
+          [
+            209.855,
+            740.8410748976922
+          ],
+          [
+            211.33999999999997,
+            740.7821887877492
+          ],
+          [
+            212.825,
+            740.7233692673684
+          ],
+          [
+            214.31,
+            740.6701198088939
+          ],
+          [
+            215.795,
+            740.6220743303369
+          ],
+          [
+            217.28,
+            740.5741388183154
+          ],
+          [
+            218.765,
+            740.5262033062916
+          ],
+          [
+            220.25,
+            740.4782677942674
+          ],
+          [
+            221.73499999999999,
+            740.4303322822433
+          ],
+          [
+            223.22,
+            740.3823967702291
+          ],
+          [
+            224.70499999999998,
+            740.3378232212216
+          ],
+          [
+            226.19,
+            740.307594878722
+          ],
+          [
+            227.67499999999998,
+            740.2906435922544
+          ],
+          [
+            229.16,
+            740.2737783405856
+          ],
+          [
+            230.64499999999998,
+            740.2695353144052
+          ],
+          [
+            232.13,
+            740.3403977296932
+          ],
+          [
+            233.615,
+            740.4122902726704
+          ],
+          [
+            235.1,
+            740.4841828156208
+          ],
+          [
+            236.58499999999998,
+            740.5560753585867
+          ],
+          [
+            238.07,
+            740.6279679015503
+          ],
+          [
+            239.555,
+            740.699860444514
+          ],
+          [
+            241.04,
+            740.7717529874736
+          ],
+          [
+            242.52499999999998,
+            740.8625997034511
+          ],
+          [
+            244.01,
+            740.9692417086643
+          ],
+          [
+            245.495,
+            741.0853469517745
+          ],
+          [
+            246.98,
+            741.1985422453017
+          ],
+          [
+            248.46499999999997,
+            741.2707167974835
+          ],
+          [
+            249.95,
+            741.3244066791569
+          ],
+          [
+            251.435,
+            741.3780965608446
+          ],
+          [
+            252.92,
+            741.4317864425501
+          ],
+          [
+            254.40499999999997,
+            741.4854763242463
+          ],
+          [
+            255.89,
+            741.5391662059318
+          ],
+          [
+            257.375,
+            741.5928560876183
+          ],
+          [
+            258.86,
+            741.6417559161931
+          ],
+          [
+            260.345,
+            741.6682120179037
+          ],
+          [
+            261.83,
+            741.6842691837517
+          ],
+          [
+            263.315,
+            741.6982471812303
+          ],
+          [
+            264.8,
+            741.7034781924365
+          ],
+          [
+            266.28499999999997,
+            741.6938389099254
+          ],
+          [
+            267.77,
+            741.684199627417
+          ],
+          [
+            269.255,
+            741.6745603449098
+          ],
+          [
+            270.74,
+            741.6649210624071
+          ],
+          [
+            272.225,
+            741.6552817798887
+          ],
+          [
+            273.71,
+            741.6456424973879
+          ],
+          [
+            275.195,
+            741.6360032148697
+          ],
+          [
+            276.68,
+            741.6156940961474
+          ],
+          [
+            278.16499999999996,
+            741.5811863369939
+          ],
+          [
+            279.65,
+            741.5444614519935
+          ],
+          [
+            281.135,
+            741.5132366602252
+          ],
+          [
+            282.62,
+            741.5083308799282
+          ],
+          [
+            284.105,
+            741.5095145648501
+          ],
+          [
+            285.59,
+            741.5106982497651
+          ],
+          [
+            287.075,
+            741.5118819346625
+          ],
+          [
+            288.56,
+            741.5130656195752
+          ],
+          [
+            290.045,
+            741.5142493045013
+          ],
+          [
+            291.53,
+            741.5154329894143
+          ],
+          [
+            293.015,
+            741.5147020189435
+          ],
+          [
+            294.5,
+            741.5
+          ],
+          [
+            295.985,
+            741.479814779414
+          ],
+          [
+            297.47,
+            741.4596295588435
+          ],
+          [
+            298.955,
+            741.4667949632741
+          ],
+          [
+            300.44,
+            741.4914270374522
+          ],
+          [
+            301.925,
+            741.5160591115999
+          ],
+          [
+            303.40999999999997,
+            741.5406911857664
+          ],
+          [
+            304.895,
+            741.5653232599367
+          ],
+          [
+            306.38,
+            741.589955334082
+          ],
+          [
+            307.865,
+            741.6145874082428
+          ],
+          [
+            309.35,
+            741.6392194823906
+          ],
+          [
+            310.83500000000004,
+            741.672059864218
+          ],
+          [
+            312.32,
+            741.7115121223868
+          ],
+          [
+            313.805,
+            741.7526643348044
+          ],
+          [
+            315.28999999999996,
+            741.7958185331457
+          ],
+          [
+            316.775,
+            741.8430257942521
+          ],
+          [
+            318.26,
+            741.8906337783666
+          ],
+          [
+            319.745,
+            741.9382417624863
+          ],
+          [
+            321.23,
+            741.9858497466107
+          ],
+          [
+            322.71500000000003,
+            742.0334577307282
+          ],
+          [
+            324.2,
+            742.0810657148476
+          ],
+          [
+            325.685,
+            742.1292835053692
+          ],
+          [
+            327.16999999999996,
+            742.1831176828151
+          ],
+          [
+            328.655,
+            742.2471723575719
+          ],
+          [
+            330.14,
+            742.3203033559282
+          ],
+          [
+            331.625,
+            742.3869130664989
+          ],
+          [
+            333.11,
+            742.365601069639
+          ],
+          [
+            334.595,
+            742.3199974663687
+          ],
+          [
+            336.08000000000004,
+            742.2743938631053
+          ],
+          [
+            337.565,
+            742.2287902598441
+          ],
+          [
+            339.05,
+            742.1831866565842
+          ],
+          [
+            340.53499999999997,
+            742.1375830533191
+          ],
+          [
+            342.02,
+            742.0919794500502
+          ],
+          [
+            343.505,
+            742.0414567309587
+          ],
+          [
+            344.99,
+            741.9699712519526
+          ],
+          [
+            346.475,
+            741.8788051518211
+          ],
+          [
+            347.96000000000004,
+            741.7806073681468
+          ],
+          [
+            349.445,
+            741.706420683929
+          ],
+          [
+            350.93,
+            741.6578650065784
+          ],
+          [
+            352.41499999999996,
+            741.6097566547762
+          ],
+          [
+            353.9,
+            741.5616483029482
+          ],
+          [
+            355.385,
+            741.5135399511367
+          ],
+          [
+            356.87,
+            741.465431599325
+          ],
+          [
+            358.355,
+            741.417323247499
+          ],
+          [
+            359.84000000000003,
+            741.3697929267411
+          ],
+          [
+            361.325,
+            741.3254477823665
+          ],
+          [
+            362.81,
+            741.294875591213
+          ],
+          [
+            364.29499999999996,
+            741.2688271919378
+          ],
+          [
+            365.78,
+            741.2527222959387
+          ],
+          [
+            367.265,
+            741.2838457872184
+          ],
+          [
+            368.75,
+            741.3193384996522
+          ],
+          [
+            370.235,
+            741.3548312120578
+          ],
+          [
+            371.72,
+            741.3903239244746
+          ],
+          [
+            373.20500000000004,
+            741.4258166368884
+          ],
+          [
+            374.69,
+            741.4613093493076
+          ],
+          [
+            376.175,
+            741.4968071835036
+          ],
+          [
+            377.65999999999997,
+            741.5326435680879
+          ],
+          [
+            379.145,
+            741.5754040679194
+          ],
+          [
+            380.63,
+            741.6229981043213
+          ],
+          [
+            382.115,
+            741.6713649969133
+          ],
+          [
+            383.6,
+            741.6769402072102
+          ],
+          [
+            385.08500000000004,
+            741.6651024279292
+          ],
+          [
+            386.57,
+            741.6532646486648
+          ],
+          [
+            388.055,
+            741.6414268693835
+          ],
+          [
+            389.53999999999996,
+            741.6295890901164
+          ],
+          [
+            391.025,
+            741.6177513108371
+          ],
+          [
+            392.51,
+            741.6059135315712
+          ],
+          [
+            393.995,
+            741.5940757523074
+          ],
+          [
+            395.48,
+            741.5893292438944
+          ],
+          [
+            396.96500000000003,
+            741.6109238940984
+          ],
+          [
+            398.45000000000005,
+            741.6343845436153
+          ],
+          [
+            399.935,
+            741.6367163204474
+          ],
+          [
+            401.42,
+            741.5963903751676
+          ],
+          [
+            402.905,
+            741.5553980752545
+          ],
+          [
+            404.39,
+            741.5144057753413
+          ],
+          [
+            405.875,
+            741.4734134754402
+          ],
+          [
+            407.36,
+            741.4324211755289
+          ],
+          [
+            408.845,
+            741.3914288756362
+          ],
+          [
+            410.33000000000004,
+            741.3506924932681
+          ],
+          [
+            411.815,
+            741.3164848529124
+          ],
+          [
+            413.3,
+            741.2951789639561
+          ]
+        ]
+      },
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_offset_mm": 0.0
+    },
+    {
+      "formation": "winter-provisional-v01/winter-right-stone",
+      "host": {
+        "id": "nonplotting/F2-source-q-section/winter-right-stone",
+        "xy_mm": [
+          [
+            411.98,
+            830.1354366473154
+          ],
+          [
+            412.79900000000004,
+            830.1330992472276
+          ],
+          [
+            413.618,
+            830.1307618471498
+          ],
+          [
+            414.437,
+            830.1284244470686
+          ],
+          [
+            415.25600000000003,
+            830.1260870469929
+          ],
+          [
+            416.07500000000005,
+            830.1237496469058
+          ],
+          [
+            416.894,
+            830.1214122468267
+          ],
+          [
+            417.713,
+            830.1190748467545
+          ],
+          [
+            418.53200000000004,
+            830.116737446664
+          ],
+          [
+            419.351,
+            830.114400046587
+          ],
+          [
+            420.17,
+            830.1120626465025
+          ],
+          [
+            420.98900000000003,
+            830.1097252464252
+          ],
+          [
+            421.808,
+            830.107387846348
+          ],
+          [
+            422.627,
+            830.1050504462621
+          ],
+          [
+            423.446,
+            830.1027130461814
+          ],
+          [
+            424.265,
+            830.100375646105
+          ],
+          [
+            425.084,
+            830.0992181139285
+          ],
+          [
+            425.903,
+            830.1006329646417
+          ],
+          [
+            426.72200000000004,
+            830.104132385733
+          ],
+          [
+            427.541,
+            830.1079166711082
+          ],
+          [
+            428.36,
+            830.1189659812012
+          ],
+          [
+            429.17900000000003,
+            830.0929785275212
+          ],
+          [
+            429.998,
+            830.0510497092288
+          ],
+          [
+            430.817,
+            830.0043166546875
+          ],
+          [
+            431.636,
+            829.957583600154
+          ],
+          [
+            432.45500000000004,
+            829.9108505456254
+          ],
+          [
+            433.274,
+            829.8641174910828
+          ],
+          [
+            434.093,
+            829.8173844365455
+          ],
+          [
+            434.91200000000003,
+            829.7706513820106
+          ],
+          [
+            435.731,
+            829.7239183274753
+          ],
+          [
+            436.55,
+            829.6771852729387
+          ],
+          [
+            437.369,
+            829.6304522184031
+          ],
+          [
+            438.188,
+            829.5837191638674
+          ],
+          [
+            439.007,
+            829.5369861093216
+          ],
+          [
+            439.826,
+            829.490253054782
+          ],
+          [
+            440.645,
+            829.4435200002564
+          ],
+          [
+            441.464,
+            829.3967869457045
+          ],
+          [
+            442.283,
+            829.3500538911683
+          ],
+          [
+            443.10200000000003,
+            829.3033208366326
+          ],
+          [
+            443.921,
+            829.256587782097
+          ],
+          [
+            444.74,
+            829.20985472756
+          ],
+          [
+            445.559,
+            829.1631216730198
+          ],
+          [
+            446.378,
+            829.1163886184902
+          ],
+          [
+            447.197,
+            829.071031434036
+          ],
+          [
+            448.016,
+            829.0272958399354
+          ],
+          [
+            448.83500000000004,
+            828.9847590870663
+          ],
+          [
+            449.654,
+            828.9440309489237
+          ],
+          [
+            450.473,
+            828.9090881245205
+          ],
+          [
+            451.29200000000003,
+            828.890338064539
+          ],
+          [
+            452.111,
+            828.8728184375401
+          ],
+          [
+            452.93,
+            828.8555168754866
+          ],
+          [
+            453.749,
+            828.8382153134257
+          ],
+          [
+            454.568,
+            828.8209137513596
+          ],
+          [
+            455.387,
+            828.8036121893122
+          ],
+          [
+            456.206,
+            828.7863106272455
+          ],
+          [
+            457.025,
+            828.7690090651762
+          ],
+          [
+            457.844,
+            828.7517075031158
+          ],
+          [
+            458.663,
+            828.7344059410633
+          ],
+          [
+            459.48199999999997,
+            828.7171043789925
+          ],
+          [
+            460.301,
+            828.699802816944
+          ],
+          [
+            461.12,
+            828.6825012548809
+          ],
+          [
+            461.939,
+            828.6651996928236
+          ],
+          [
+            462.758,
+            828.6478981307689
+          ],
+          [
+            463.577,
+            828.6305965686981
+          ],
+          [
+            464.396,
+            828.6132950066551
+          ],
+          [
+            465.21500000000003,
+            828.5959934445857
+          ],
+          [
+            466.034,
+            828.5788036825176
+          ],
+          [
+            466.853,
+            828.5616169445043
+          ],
+          [
+            467.672,
+            828.5443569941301
+          ],
+          [
+            468.491,
+            828.5270145632013
+          ],
+          [
+            469.31,
+            828.5095890590745
+          ],
+          [
+            470.129,
+            828.4879689035334
+          ],
+          [
+            470.948,
+            828.458591294492
+          ],
+          [
+            471.767,
+            828.4322201821035
+          ],
+          [
+            472.586,
+            828.4249301967986
+          ],
+          [
+            473.405,
+            828.4374418306439
+          ],
+          [
+            474.224,
+            828.4499534645295
+          ],
+          [
+            475.043,
+            828.4624650984005
+          ],
+          [
+            475.86199999999997,
+            828.4749767322606
+          ],
+          [
+            476.681,
+            828.4874883661241
+          ],
+          [
+            477.5,
+            828.5
+          ],
+          [
+            478.319,
+            828.5126400093502
+          ],
+          [
+            479.138,
+            828.5252546188714
+          ],
+          [
+            479.957,
+            828.5378439050562
+          ],
+          [
+            480.776,
+            828.5504079440901
+          ],
+          [
+            481.595,
+            828.5629468118484
+          ],
+          [
+            482.414,
+            828.5754605838886
+          ],
+          [
+            483.233,
+            828.5879493354803
+          ],
+          [
+            484.052,
+            828.6004131415832
+          ],
+          [
+            484.871,
+            828.6128520768591
+          ],
+          [
+            485.69,
+            828.6252662156767
+          ],
+          [
+            486.509,
+            828.6376568758292
+          ],
+          [
+            487.328,
+            828.6501450780398
+          ],
+          [
+            488.147,
+            828.6626512403074
+          ],
+          [
+            488.966,
+            828.6751628741661
+          ],
+          [
+            489.78499999999997,
+            828.6876745080222
+          ],
+          [
+            490.604,
+            828.7000599308252
+          ],
+          [
+            491.423,
+            828.7115938029118
+          ],
+          [
+            492.24199999999996,
+            828.71442767631
+          ],
+          [
+            493.061,
+            828.7165569278598
+          ],
+          [
+            493.88,
+            828.7286167881432
+          ],
+          [
+            494.69899999999996,
+            828.752254076931
+          ],
+          [
+            495.518,
+            828.7774086576588
+          ],
+          [
+            496.337,
+            828.8025632383687
+          ],
+          [
+            497.156,
+            828.8277178190838
+          ],
+          [
+            497.975,
+            828.8528723997968
+          ],
+          [
+            498.794,
+            828.8780269805092
+          ],
+          [
+            499.613,
+            828.9031815612249
+          ],
+          [
+            500.432,
+            828.9283361419538
+          ],
+          [
+            501.251,
+            828.9534907226611
+          ],
+          [
+            502.07,
+            828.9786453033659
+          ],
+          [
+            502.889,
+            829.0037998840745
+          ],
+          [
+            503.70799999999997,
+            829.0289544647915
+          ],
+          [
+            504.527,
+            829.0541090455212
+          ],
+          [
+            505.346,
+            829.0792636262255
+          ],
+          [
+            506.16499999999996,
+            829.1044182069304
+          ],
+          [
+            506.984,
+            829.129572787645
+          ],
+          [
+            507.803,
+            829.154727368367
+          ],
+          [
+            508.62199999999996,
+            829.1798819490892
+          ],
+          [
+            509.441,
+            829.2050365298055
+          ],
+          [
+            510.26,
+            829.2301911105152
+          ],
+          [
+            511.07899999999995,
+            829.2553456912311
+          ],
+          [
+            511.89799999999997,
+            829.2825127826941
+          ],
+          [
+            512.717,
+            829.3113238619161
+          ],
+          [
+            513.536,
+            829.3400800163552
+          ],
+          [
+            514.355,
+            829.375117012308
+          ],
+          [
+            515.174,
+            829.4165415245262
+          ],
+          [
+            515.9929999999999,
+            829.4526453276052
+          ],
+          [
+            516.812,
+            829.4838752740064
+          ],
+          [
+            517.631,
+            829.5151744083319
+          ],
+          [
+            518.45,
+            829.5465239699787
+          ],
+          [
+            519.269,
+            829.5778419869149
+          ],
+          [
+            520.088,
+            829.6091285066935
+          ],
+          [
+            520.9069999999999,
+            829.6403835768272
+          ],
+          [
+            521.726,
+            829.671607244721
+          ],
+          [
+            522.545,
+            829.7027995576697
+          ],
+          [
+            523.364,
+            829.7339605628757
+          ],
+          [
+            524.183,
+            829.7650903074575
+          ],
+          [
+            525.002,
+            829.7962270915368
+          ],
+          [
+            525.821,
+            829.8274046843774
+          ],
+          [
+            526.64,
+            829.8586346307652
+          ],
+          [
+            527.459,
+            829.8898645771534
+          ],
+          [
+            528.278,
+            829.9210945235518
+          ],
+          [
+            529.097,
+            829.9523244699566
+          ],
+          [
+            529.9159999999999,
+            829.9835544163542
+          ],
+          [
+            530.735,
+            830.0147843627467
+          ],
+          [
+            531.554,
+            830.0460143091454
+          ],
+          [
+            532.3729999999999,
+            830.0772442555444
+          ],
+          [
+            533.192,
+            830.1084742019478
+          ],
+          [
+            534.011,
+            830.1371168461072
+          ],
+          [
+            534.8299999999999,
+            830.1641165553958
+          ],
+          [
+            535.649,
+            830.1904553000767
+          ],
+          [
+            536.468,
+            830.2149945732426
+          ],
+          [
+            537.287,
+            830.2217733833404
+          ],
+          [
+            538.106,
+            830.2227924562217
+          ],
+          [
+            538.925,
+            830.222021480376
+          ],
+          [
+            539.7439999999999,
+            830.2212505045164
+          ],
+          [
+            540.563,
+            830.2204795286573
+          ],
+          [
+            541.382,
+            830.2197085528147
+          ],
+          [
+            542.201,
+            830.2189375769717
+          ],
+          [
+            543.02,
+            830.2181666011314
+          ]
+        ]
+      },
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_offset_mm": 0.0
+    },
+    {
+      "catalog_objects": [
+        {
+          "id": "winter-provisional-v01/winter-left-shelter/tree-0",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              110.5,
+              789.5
+            ],
+            "mapped_face_id": 24794,
+            "original_mesh_face_id": 64560,
+            "barycentric": [
+              0.6644530324317679,
+              0.04781993539324492,
+              0.28772703217498713
+            ],
+            "source_xyz_utm_m": [
+              319936.4345980618,
+              4171676.3681890345,
+              106.6231588344049
+            ],
+            "source_forward_m": 329.3598738265799,
+            "lateral_q_per_mm": -0.04902343754125491,
+            "crs": "EPSG:32652",
+            "slope_deg": 12.925005497182703,
+            "ndvi": 0.36638322096684345,
+            "effective_observations": 31.98037198662184,
+            "retained_ground": 0.3422803184126513,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-left-shelter",
+          "height_mm": 89
+        },
+        {
+          "id": "winter-provisional-v01/winter-left-shelter/tree-1",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              116.5,
+              803.5
+            ],
+            "mapped_face_id": 83089,
+            "original_mesh_face_id": 281149,
+            "barycentric": [
+              0.04007987540354141,
+              0.5755756673177493,
+              0.3843444572787093
+            ],
+            "source_xyz_utm_m": [
+              319893.46966628166,
+              4171656.2023962624,
+              102.45274151852372
+            ],
+            "source_forward_m": 286.5390387684107,
+            "lateral_q_per_mm": -0.08778186027775739,
+            "crs": "EPSG:32652",
+            "slope_deg": 15.9432987339299,
+            "ndvi": 0.37962713540579934,
+            "effective_observations": 29.879760373756312,
+            "retained_ground": 0.35714228734352893,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-left-shelter",
+          "height_mm": 209
+        },
+        {
+          "id": "winter-provisional-v01/winter-left-shelter/tree-2",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              144.5,
+              800.5
+            ],
+            "mapped_face_id": 83779,
+            "original_mesh_face_id": 282147,
+            "barycentric": [
+              0.7039061306291141,
+              0.1373412539062788,
+              0.15875261546460706
+            ],
+            "source_xyz_utm_m": [
+              319900.23742153606,
+              4171616.1171839186,
+              108.20648832358923
+            ],
+            "source_forward_m": 293.59090895917285,
+            "lateral_q_per_mm": 0.034406334845461,
+            "crs": "EPSG:32652",
+            "slope_deg": 6.249116740553351,
+            "ndvi": 0.5587271318060595,
+            "effective_observations": 31.846102171323807,
+            "retained_ground": 0.6444497575810525,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-left-shelter",
+          "height_mm": 191
+        },
+        {
+          "id": "winter-provisional-v01/winter-left-shelter/tree-3",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              172.5,
+              790.5
+            ],
+            "mapped_face_id": 84125,
+            "original_mesh_face_id": 282647,
+            "barycentric": [
+              0.4834296258661728,
+              0.38645130396190036,
+              0.13011907017192684
+            ],
+            "source_xyz_utm_m": [
+              319931.09642789484,
+              4171579.502888776,
+              110.11612646916129
+            ],
+            "source_forward_m": 324.70880857588173,
+            "lateral_q_per_mm": 0.13325180463107666,
+            "crs": "EPSG:32652",
+            "slope_deg": 9.478183222300151,
+            "ndvi": 0.6027668689091932,
+            "effective_observations": 32.0,
+            "retained_ground": 0.7045360892525838,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-left-shelter",
+          "height_mm": 129
+        },
+        {
+          "id": "winter-provisional-v01/winter-middle-remnant/tree-0",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              273.5,
+              711.5
+            ],
+            "mapped_face_id": 85859,
+            "original_mesh_face_id": 285151,
+            "barycentric": [
+              0.5592656874512187,
+              0.10196746702101551,
+              0.3387668455277657
+            ],
+            "source_xyz_utm_m": [
+              320194.8369946342,
+              4171431.7779706237,
+              154.64957729195547
+            ],
+            "source_forward_m": 589.4904106918772,
+            "lateral_q_per_mm": -0.117556920456562,
+            "crs": "EPSG:32652",
+            "slope_deg": 19.369805014706262,
+            "ndvi": 0.4799529740150828,
+            "effective_observations": 32.0,
+            "retained_ground": 0.682768417767565,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-middle-remnant",
+          "height_mm": 94
+        },
+        {
+          "id": "winter-provisional-v01/winter-middle-remnant/tree-1",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              294.5,
+              717.5
+            ],
+            "mapped_face_id": 86203,
+            "original_mesh_face_id": 285649,
+            "barycentric": [
+              0.2120878906618625,
+              0.7349248853409821,
+              0.052987223997155435
+            ],
+            "source_xyz_utm_m": [
+              320173.4103832801,
+              4171391.36263672,
+              150.6275894696385
+            ],
+            "source_forward_m": 568.350964554337,
+            "lateral_q_per_mm": -0.18317510354373742,
+            "crs": "EPSG:32652",
+            "slope_deg": 16.51905127541848,
+            "ndvi": 0.6310259551217985,
+            "effective_observations": 32.0,
+            "retained_ground": 0.671161694971223,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-middle-remnant",
+          "height_mm": 152
+        },
+        {
+          "id": "winter-provisional-v01/winter-middle-remnant/tree-2",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              321.5,
+              709.5
+            ],
+            "mapped_face_id": 86894,
+            "original_mesh_face_id": 286648,
+            "barycentric": [
+              0.4794113740252195,
+              0.37369341299859776,
+              0.1468952129761827
+            ],
+            "source_xyz_utm_m": [
+              320200.5931436107,
+              4171339.38234122,
+              157.1490497690082
+            ],
+            "source_forward_m": 595.9016865809274,
+            "lateral_q_per_mm": 0.05863770235377954,
+            "crs": "EPSG:32652",
+            "slope_deg": 18.33251616103999,
+            "ndvi": 0.5435136620169835,
+            "effective_observations": 33.0,
+            "retained_ground": 0.6413819867055893,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-middle-remnant",
+          "height_mm": 67
+        },
+        {
+          "id": "winter-provisional-v01/winter-right-remnant/tree-0",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              469.5,
+              815.5
+            ],
+            "mapped_face_id": 31001,
+            "original_mesh_face_id": 73539,
+            "barycentric": [
+              0.4960441559126877,
+              0.31633996888150484,
+              0.1876158752058075
+            ],
+            "source_xyz_utm_m": [
+              319854.49019906647,
+              4171139.371523744,
+              99.1107780381642
+            ],
+            "source_forward_m": 251.2259268350993,
+            "lateral_q_per_mm": -0.005238291797343097,
+            "crs": "EPSG:32652",
+            "slope_deg": 8.609935250305428,
+            "ndvi": 0.4528634199614082,
+            "effective_observations": 34.0,
+            "retained_ground": 0.35978580464760707,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-right-remnant",
+          "height_mm": 91
+        },
+        {
+          "id": "winter-provisional-v01/winter-right-remnant/tree-1",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              483.5,
+              817.5
+            ],
+            "mapped_face_id": 31001,
+            "original_mesh_face_id": 73539,
+            "barycentric": [
+              0.09259806582941654,
+              0.10363229430760817,
+              0.8037696398629753
+            ],
+            "source_xyz_utm_m": [
+              319848.10896882927,
+              4171120.8869108045,
+              99.72462427225436
+            ],
+            "source_forward_m": 244.97595032625858,
+            "lateral_q_per_mm": -0.005238291797343097,
+            "crs": "EPSG:32652",
+            "slope_deg": 10.600412457813299,
+            "ndvi": 0.4876243355398092,
+            "effective_observations": 34.0,
+            "retained_ground": 0.34203746307873717,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-right-remnant",
+          "height_mm": 62
+        },
+        {
+          "id": "winter-provisional-v01/winter-left-bedrock/parent",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              108.9003863297533,
+              817.9000000000107
+            ],
+            "mapped_face_id": 83088,
+            "original_mesh_face_id": 281148,
+            "barycentric": [
+              0.06121182354750809,
+              0.1994845152076542,
+              0.7393036612448377
+            ],
+            "source_xyz_utm_m": [
+              319852.82089016266,
+              4171656.8363547064,
+              94.25307636207133
+            ],
+            "source_forward_m": 245.88678886684946,
+            "lateral_q_per_mm": -0.14881561221741726,
+            "crs": "EPSG:32652",
+            "slope_deg": 20.179251600147516,
+            "ndvi": 0.3492469723679779,
+            "effective_observations": 30.72591879121029,
+            "retained_ground": 0.19850825439378453,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-left-shelter",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-left-bedrock/rear",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              196.7403863297533,
+              797.7600000000107
+            ],
+            "mapped_face_id": 84470,
+            "original_mesh_face_id": 283146,
+            "barycentric": [
+              0.14878762015274705,
+              0.07230690594474877,
+              0.7789054739025042
+            ],
+            "source_xyz_utm_m": [
+              319911.63283578295,
+              4171539.4636286045,
+              99.97360670681307
+            ],
+            "source_forward_m": 305.5296651906792,
+            "lateral_q_per_mm": 0.05659301938748569,
+            "crs": "EPSG:32652",
+            "slope_deg": 9.274350115773213,
+            "ndvi": 0.5408599987034585,
+            "effective_observations": 33.0,
+            "retained_ground": 0.6301672486011771,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-left-shelter",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-left-bedrock/back-shoulder",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              62.54038632975332,
+              807.3000000000106
+            ],
+            "mapped_face_id": 24102,
+            "original_mesh_face_id": 63560,
+            "barycentric": [
+              0.2111539694633362,
+              0.4502136385384644,
+              0.33863239199819933
+            ],
+            "source_xyz_utm_m": [
+              319888.50640915614,
+              4171734.84102824,
+              86.43542092920697
+            ],
+            "source_forward_m": 281.018199694094,
+            "lateral_q_per_mm": 0.00955966411894572,
+            "crs": "EPSG:32652",
+            "slope_deg": 12.553653023386115,
+            "ndvi": 0.28542210118684286,
+            "effective_observations": 32.0,
+            "retained_ground": 0.2922288333022398,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-left-shelter",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-left-bedrock/front",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              177.2203863297533,
+              828.5000000000107
+            ],
+            "mapped_face_id": 26170,
+            "original_mesh_face_id": 66552,
+            "barycentric": [
+              0.42785869222300754,
+              0.20203879710798878,
+              0.3701025106690037
+            ],
+            "source_xyz_utm_m": [
+              319821.0611639132,
+              4171553.8969246796,
+              94.4855738119726
+            ],
+            "source_forward_m": 214.8579098523692,
+            "lateral_q_per_mm": -0.1607963634566909,
+            "crs": "EPSG:32652",
+            "slope_deg": 12.635862469313551,
+            "ndvi": 0.3179151856805545,
+            "effective_observations": 33.0,
+            "retained_ground": 0.6020136796161639,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-left-shelter",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-left-bedrock/ground",
+          "kind": "soil",
+          "site": {
+            "xy_mm": [
+              177.2203863297533,
+              828.5000000000107
+            ],
+            "mapped_face_id": 26170,
+            "original_mesh_face_id": 66552,
+            "barycentric": [
+              0.42785869222300754,
+              0.20203879710798878,
+              0.3701025106690037
+            ],
+            "source_xyz_utm_m": [
+              319821.0611639132,
+              4171553.8969246796,
+              94.4855738119726
+            ],
+            "source_forward_m": 214.8579098523692,
+            "lateral_q_per_mm": -0.1607963634566909,
+            "crs": "EPSG:32652",
+            "slope_deg": 12.635862469313551,
+            "ndvi": 0.3179151856805545,
+            "effective_observations": 33.0,
+            "retained_ground": 0.6020136796161639,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-left-shelter",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-middle-bedrock/parent",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              275.91757083218573,
+              734.1
+            ],
+            "mapped_face_id": 27560,
+            "original_mesh_face_id": 68558,
+            "barycentric": [
+              0.17941779924310186,
+              0.1558262389199701,
+              0.664755961836928
+            ],
+            "source_xyz_utm_m": [
+              320119.6747871676,
+              4171425.0573211447,
+              132.37985401189616
+            ],
+            "source_forward_m": 514.3777564384577,
+            "lateral_q_per_mm": -0.08799859759191506,
+            "crs": "EPSG:32652",
+            "slope_deg": 13.755506047212238,
+            "ndvi": 0.6229317685743354,
+            "effective_observations": 32.0,
+            "retained_ground": 0.655856975536323,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-middle-remnant",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-middle-bedrock/rear",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              335.31757083218577,
+              720.04
+            ],
+            "mapped_face_id": 28941,
+            "original_mesh_face_id": 70555,
+            "barycentric": [
+              0.0005943805265293811,
+              0.6624305462239004,
+              0.33697507324957016
+            ],
+            "source_xyz_utm_m": [
+              320164.8729163867,
+              4171314.8907478023,
+              147.32311456306047
+            ],
+            "source_forward_m": 560.3560525497003,
+            "lateral_q_per_mm": -0.2050730956353735,
+            "crs": "EPSG:32652",
+            "slope_deg": 18.40282814925843,
+            "ndvi": 0.48128183406088815,
+            "effective_observations": 32.0,
+            "retained_ground": 0.5879784049076864,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-middle-remnant",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-middle-bedrock/front",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              322.1175708321857,
+              741.5
+            ],
+            "mapped_face_id": 28594,
+            "original_mesh_face_id": 70054,
+            "barycentric": [
+              0.24295556798807771,
+              0.3338914544227737,
+              0.42315297758914855
+            ],
+            "source_xyz_utm_m": [
+              320095.0167436327,
+              4171342.305410672,
+              124.74366421208674
+            ],
+            "source_forward_m": 490.3072112435743,
+            "lateral_q_per_mm": 0.10847862199011118,
+            "crs": "EPSG:32652",
+            "slope_deg": 14.737588817623706,
+            "ndvi": 0.6460442584571354,
+            "effective_observations": 32.0,
+            "retained_ground": 0.4510243472243028,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-middle-remnant",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-middle-bedrock/ground",
+          "kind": "soil",
+          "site": {
+            "xy_mm": [
+              322.1175708321857,
+              741.5
+            ],
+            "mapped_face_id": 28594,
+            "original_mesh_face_id": 70054,
+            "barycentric": [
+              0.24295556798807771,
+              0.3338914544227737,
+              0.42315297758914855
+            ],
+            "source_xyz_utm_m": [
+              320095.0167436327,
+              4171342.305410672,
+              124.74366421208674
+            ],
+            "source_forward_m": 490.3072112435743,
+            "lateral_q_per_mm": 0.10847862199011118,
+            "crs": "EPSG:32652",
+            "slope_deg": 14.737588817623706,
+            "ndvi": 0.6460442584571354,
+            "effective_observations": 32.0,
+            "retained_ground": 0.4510243472243028,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-middle-remnant",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-right-stone/parent",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              468.42007379027564,
+              824.6
+            ],
+            "mapped_face_id": 88952,
+            "original_mesh_face_id": 289630,
+            "barycentric": [
+              0.07797425894692145,
+              0.3694956771046764,
+              0.5525300639484021
+            ],
+            "source_xyz_utm_m": [
+              319828.42409808154,
+              4171147.339227768,
+              97.35633131325986
+            ],
+            "source_forward_m": 225.10397426044446,
+            "lateral_q_per_mm": -0.11474011488223614,
+            "crs": "EPSG:32652",
+            "slope_deg": 10.492370643326671,
+            "ndvi": 0.44326727097591484,
+            "effective_observations": 33.0,
+            "retained_ground": 0.37306134039777794,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-right-remnant",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-right-stone/front",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              493.90007379027566,
+              828.5
+            ],
+            "mapped_face_id": 31345,
+            "original_mesh_face_id": 74037,
+            "barycentric": [
+              0.881797324880679,
+              0.09894347951336147,
+              0.019259195605959574
+            ],
+            "source_xyz_utm_m": [
+              319817.96830438543,
+              4171114.4222241323,
+              94.31652180174845
+            ],
+            "source_forward_m": 214.88189156930372,
+            "lateral_q_per_mm": 0.08437905437078369,
+            "crs": "EPSG:32652",
+            "slope_deg": 19.21425002464712,
+            "ndvi": 0.5741858597384069,
+            "effective_observations": 34.0,
+            "retained_ground": 0.2278743378377326,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-right-remnant",
+          "height_mm": null
+        },
+        {
+          "id": "winter-provisional-v01/winter-right-stone/ground",
+          "kind": "soil",
+          "site": {
+            "xy_mm": [
+              493.90007379027566,
+              828.5
+            ],
+            "mapped_face_id": 31345,
+            "original_mesh_face_id": 74037,
+            "barycentric": [
+              0.881797324880679,
+              0.09894347951336147,
+              0.019259195605959574
+            ],
+            "source_xyz_utm_m": [
+              319817.96830438543,
+              4171114.4222241323,
+              94.31652180174845
+            ],
+            "source_forward_m": 214.88189156930372,
+            "lateral_q_per_mm": 0.08437905437078369,
+            "crs": "EPSG:32652",
+            "slope_deg": 19.21425002464712,
+            "ndvi": 0.5741858597384069,
+            "effective_observations": 34.0,
+            "retained_ground": 0.2278743378377326,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "winter-right-remnant",
+          "height_mm": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "autumn-left-bank": {
+    "objects": [
+      {
+        "id": "autumn-provisional-v01/autumn-left-bank/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          37.5,
+          741.5
+        ],
+        "depth_m": 503.3658340744678,
+        "height_mm": 77,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-left-bank/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          60.5,
+          748.5
+        ],
+        "depth_m": 478.3800706967725,
+        "height_mm": 153,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-left-bank/tree-2",
+        "kind": "tree",
+        "xy_mm": [
+          90.5,
+          750.5
+        ],
+        "depth_m": 474.90942316225426,
+        "height_mm": 178,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-left-bank/tree-3",
+        "kind": "tree",
+        "xy_mm": [
+          112.5,
+          741.5
+        ],
+        "depth_m": 509.43967783846693,
+        "height_mm": 109,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-left-ledge/parent",
+        "kind": "rock",
+        "xy_mm": [
+          55.310868996380904,
+          764.3000000000026
+        ],
+        "depth_m": 423.43307052831653,
+        "height_mm": null,
+        "parent_mass_id": "autumn-provisional-v01/autumn-left-ledge"
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-left-ledge/rear",
+        "kind": "rock",
+        "xy_mm": [
+          108.23086899638092,
+          752.5200000000026
+        ],
+        "depth_m": 468.8261605934666,
+        "height_mm": null,
+        "parent_mass_id": "autumn-provisional-v01/autumn-left-ledge"
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-left-ledge/front",
+        "kind": "rock",
+        "xy_mm": [
+          96.4708689963809,
+          770.5000000000026
+        ],
+        "depth_m": 405.12320481808524,
+        "height_mm": null,
+        "parent_mass_id": "autumn-provisional-v01/autumn-left-ledge"
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-left-ledge/ground",
+        "kind": "soil",
+        "xy_mm": [
+          96.4708689963809,
+          770.5000000000026
+        ],
+        "depth_m": 405.12320481808524,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      405.12320481808524,
+      509.43967783846693
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  },
+  "autumn-saddle": {
+    "objects": [
+      {
+        "id": "autumn-provisional-v01/autumn-saddle/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          279.5,
+          685.5
+        ],
+        "depth_m": 751.9446969557773,
+        "height_mm": 74,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-saddle/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          301.5,
+          689.5
+        ],
+        "depth_m": 734.1349229817307,
+        "height_mm": 128,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-saddle/tree-2",
+        "kind": "tree",
+        "xy_mm": [
+          326.5,
+          685.5
+        ],
+        "depth_m": 758.6045187774795,
+        "height_mm": 97,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-saddle-ledge/parent",
+        "kind": "rock",
+        "xy_mm": [
+          290.68558588100495,
+          707.6999999999829
+        ],
+        "depth_m": 656.453053208769,
+        "height_mm": null,
+        "parent_mass_id": "autumn-provisional-v01/autumn-saddle-ledge"
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-saddle-ledge/front",
+        "kind": "rock",
+        "xy_mm": [
+          321.48558588100497,
+          712.4999999999828
+        ],
+        "depth_m": 635.6026048898723,
+        "height_mm": null,
+        "parent_mass_id": "autumn-provisional-v01/autumn-saddle-ledge"
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-saddle-ledge/ground",
+        "kind": "soil",
+        "xy_mm": [
+          321.48558588100497,
+          712.4999999999828
+        ],
+        "depth_m": 635.6026048898723,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      635.6026048898723,
+      758.6045187774795
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  },
+  "autumn-right-mass": {
+    "objects": [
+      {
+        "id": "autumn-provisional-v01/autumn-right-mass/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          448.5,
+          818.5
+        ],
+        "depth_m": 254.12209944643237,
+        "height_mm": 124,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-right-mass/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          474.5,
+          828.5
+        ],
+        "depth_m": 224.44173701853026,
+        "height_mm": 188,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-right-mass/tree-2",
+        "kind": "tree",
+        "xy_mm": [
+          502.5,
+          832.5
+        ],
+        "depth_m": 212.0002611171963,
+        "height_mm": 210,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-right-mass/tree-3",
+        "kind": "tree",
+        "xy_mm": [
+          530.5,
+          822.5
+        ],
+        "depth_m": 241.94070306753943,
+        "height_mm": 146,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-right-mass/tree-4",
+        "kind": "tree",
+        "xy_mm": [
+          550.5,
+          814.5
+        ],
+        "depth_m": 265.51694809329734,
+        "height_mm": 83,
+        "parent_mass_id": null
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-right-foundation/parent",
+        "kind": "rock",
+        "xy_mm": [
+          474.04697931952876,
+          840.2027287992188
+        ],
+        "depth_m": 192.0031290151013,
+        "height_mm": null,
+        "parent_mass_id": "autumn-provisional-v01/autumn-right-foundation"
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-right-foundation/rear",
+        "kind": "rock",
+        "xy_mm": [
+          553.9669793195287,
+          822.5327287992188
+        ],
+        "depth_m": 242.22519370292838,
+        "height_mm": null,
+        "parent_mass_id": "autumn-provisional-v01/autumn-right-foundation"
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-right-foundation/back-shoulder",
+        "kind": "rock",
+        "xy_mm": [
+          431.86697931952875,
+          830.9027287992188
+        ],
+        "depth_m": 217.7215601742961,
+        "height_mm": null,
+        "parent_mass_id": "autumn-provisional-v01/autumn-right-foundation"
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-right-foundation/front",
+        "kind": "rock",
+        "xy_mm": [
+          536.2069793195287,
+          849.5027287992187
+        ],
+        "depth_m": 164.66695774367685,
+        "height_mm": null,
+        "parent_mass_id": "autumn-provisional-v01/autumn-right-foundation"
+      },
+      {
+        "id": "autumn-provisional-v01/autumn-right-foundation/ground",
+        "kind": "soil",
+        "xy_mm": [
+          536.2069793195287,
+          849.5027287992187
+        ],
+        "depth_m": 164.66695774367685,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      164.66695774367685,
+      265.51694809329734
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  }
+}
