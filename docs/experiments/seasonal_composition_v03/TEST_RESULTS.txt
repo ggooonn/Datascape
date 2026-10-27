@@ -1,0 +1,7 @@
+Seasonal composition checks
+..............                                                           [100%]
+14 passed in 9.56s
+
+Accepted component and archived reference checks
+.........................                                [100%]
+25 passed, 16 subtests passed in 66.08s (0:01:06)

@@ -1,0 +1,77 @@
+{
+  "ink": {
+    "canonical_strokes": 3522,
+    "drawing_length_mm": 88848.4259909633,
+    "length_quantiles_mm": [
+      2.8000451782069526,
+      4.531122326425268,
+      8.83133086681672,
+      67.74758294305919,
+      378.45323179233174
+    ],
+    "short_length_bins": {
+      "under2.8": 0,
+      "2.8to5": 450,
+      "5to15": 1753,
+      "15to50": 846,
+      "50to150": 394,
+      "over150": 79
+    },
+    "depth_roles": {
+      "near": {
+        "paths_touching": 2023,
+        "length_mm": 26679.65143519958
+      },
+      "middle": {
+        "paths_touching": 875,
+        "length_mm": 33031.407164011674
+      },
+      "far": {
+        "paths_touching": 653,
+        "length_mm": 29031.61388869629
+      }
+    },
+    "unknown_depth_paths": 0,
+    "minimum_atomic_engagements": 3522,
+    "runtime_estimate": null,
+    "metric_scope": "Visible canonical centerlines before panel clipping; paths touching roles can overlap. No loading, brush, drying or execution-time inference."
+  },
+  "color": {
+    "canonical_strokes": 1029,
+    "drawing_length_mm": 6930.042896032901,
+    "length_quantiles_mm": [
+      3.3298347372254637,
+      3.5600057773863427,
+      5.040396586572859,
+      6.60191465669153,
+      67.65770174795482
+    ],
+    "short_length_bins": {
+      "under2.8": 0,
+      "2.8to5": 504,
+      "5to15": 475,
+      "15to50": 37,
+      "50to150": 13,
+      "over150": 0
+    },
+    "depth_roles": {
+      "near": {
+        "paths_touching": 216,
+        "length_mm": 2933.779708214675
+      },
+      "middle": {
+        "paths_touching": 652,
+        "length_mm": 3397.376773719335
+      },
+      "far": {
+        "paths_touching": 161,
+        "length_mm": 597.642103199419
+      }
+    },
+    "unknown_depth_paths": 0,
+    "minimum_atomic_engagements": 1029,
+    "runtime_estimate": null,
+    "metric_scope": "Visible canonical centerlines before panel clipping; paths touching roles can overlap. No loading, brush, drying or execution-time inference."
+  },
+  "physical_note": "Middle/far contour drawing appears relatively stable; foreground is less physically verified. Separate brush strategies may be required. No canonical geometry change or G-code follows from that consideration."
+}

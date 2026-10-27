@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "case": "summer-v03",
+  "checks": {
+    "ink": {
+      "paths": 5181,
+      "length_mm": 126142.1440721431,
+      "max_source_hausdorff_error_mm": 0.0
+    },
+    "color": {
+      "paths": 2217,
+      "length_mm": 15363.200080954364,
+      "max_source_hausdorff_error_mm": 0.0
+    },
+    "panels": {
+      "max_source_length_error_mm": 1.7763568394002505e-14,
+      "max_geometry_error_mm": 8.881784197001252e-16,
+      "short_seam_fragments": [
+        {
+          "id": "summer-v03/v03-inner-ledge/rear/visible-contour-0/fragment-0/P3-0",
+          "length_mm": 2.421171164447956
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-3/M2/ink/branch-2/P3-0",
+          "length_mm": 1.468726868808691
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-3/M2/color/branch-0/ray-4/P3-0",
+          "length_mm": 0.48842943312663
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-3/M2/color/branch-3/ray-1/P3-0",
+          "length_mm": 0.3455224257556374
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-5/M2/color/branch-0/ray-0/P3-0",
+          "length_mm": 2.7922334436876852
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-5/M2/color/branch-0/ray-4/P3-0",
+          "length_mm": 2.033828157506225
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-12/M2/color/branch-0/ray-3/P3-0",
+          "length_mm": 2.626382720129282
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-12/M2/color/branch-0/ray-4/P3-0",
+          "length_mm": 2.3807731308583175
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-2/M2/ink/branch-0/P4-0",
+          "length_mm": 2.5087396411164575
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-10/M2/ink/branch-2/P4-0",
+          "length_mm": 0.011406235803485402
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-3/M2/color/branch-0/ray-0/P4-0",
+          "length_mm": 0.017975642355622854
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-3/M2/color/branch-0/ray-2/P4-0",
+          "length_mm": 0.26604764802839426
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-3/M2/color/branch-0/ray-3/P4-0",
+          "length_mm": 1.8740321517054492
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-3/M2/color/branch-3/ray-0/P4-0",
+          "length_mm": 2.0261392659106963
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-5/M2/color/branch-0/ray-0/P4-0",
+          "length_mm": 1.9079134105019506
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-5/M2/color/branch-0/ray-1/P4-0",
+          "length_mm": 0.7880471417888792
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-5/M2/color/branch-0/ray-2/P4-0",
+          "length_mm": 0.5639068451103277
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-5/M2/color/branch-0/ray-3/P4-0",
+          "length_mm": 1.1715150301824648
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-12/M2/color/branch-0/ray-1/P4-0",
+          "length_mm": 0.19128316485719524
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-12/M2/color/branch-2/ray-2/P4-0",
+          "length_mm": 2.2691141564122157
+        },
+        {
+          "id": "summer-v03/middle-bridge/body-12/M2/color/branch-2/ray-5/P4-0",
+          "length_mm": 1.707220667472678
+        }
+      ]
+    }
+  },
+  "authoring_sources": 11721,
+  "visibility_entries": 7980,
+  "pngs_decoded": 25,
+  "parent_invariants": null,
+  "scope": "Canonical geometry, artistic profiles, source evidence and publication isolation; no physical calibration"
+}

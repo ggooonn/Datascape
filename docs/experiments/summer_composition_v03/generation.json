@@ -1,0 +1,541 @@
+{
+  "case": "summer-v03",
+  "baseline": "a6ce842cfb894ce35e15332f3b6c6154254708ec",
+  "selected_view": "C_east",
+  "camera": {
+    "study": "Spring Pair Composition Refinement v0.1",
+    "base_pr_head": "a2ca981c94fa0ddd81ff8e48597ffbc3ca067443",
+    "primary_eye_xy_m": [
+      327105,
+      4170785
+    ],
+    "eye_clearance_m": 2.0,
+    "look_target_xy_m": [
+      323820,
+      4168370
+    ],
+    "pitch_deg": 0.0,
+    "vertical_fov_deg": 36.0,
+    "near_m": 1.0,
+    "primary_bounds_m": [
+      315000,
+      4162500,
+      330000,
+      4175700
+    ],
+    "raster_pixels": [
+      600,
+      900
+    ],
+    "mesh_stride": 1,
+    "depth_edges_m": [
+      600,
+      2200
+    ],
+    "composite": {
+      "near_width_m": 650.0,
+      "width_growth": 0.85,
+      "bottom_fraction": 1.02,
+      "depth_rise": 0.76,
+      "depth_scale_m": 1500.0,
+      "near_middle_transition_m": [
+        400,
+        1000
+      ],
+      "middle_far_transition_m": [
+        1800,
+        3200
+      ],
+      "height_coefficients_per_km": [
+        0.14,
+        0.25,
+        0.38
+      ]
+    },
+    "search": {
+      "bounds_m": [
+        315000,
+        4162500,
+        330000,
+        4175700
+      ],
+      "raster_pixels": [
+        300,
+        450
+      ],
+      "mesh_stride": 2,
+      "pitch_deg": 1.0,
+      "vertical_fov_deg": 48.0,
+      "eye_sites_m": [
+        [
+          325605,
+          4166585
+        ],
+        [
+          327105,
+          4170785
+        ],
+        [
+          325305,
+          4168385
+        ],
+        [
+          317205,
+          4168985
+        ],
+        [
+          319605,
+          4171385
+        ],
+        [
+          321105,
+          4175285
+        ]
+      ]
+    },
+    "physical_gap_mm": 40,
+    "painted_panel_mm": [
+      300,
+      900
+    ],
+    "random_seed": null,
+    "randomness": "None; deterministic view/composition study",
+    "reference_note": "User-supplied painting image reviewed for low foreground / middle passage / distant mountain arrangement only; no depicted object is asserted in the DEM"
+  },
+  "flow": {
+    "recipe": {
+      "id": "oblique-receiver",
+      "anchors_mm": [
+        [
+          210,
+          280
+        ],
+        [
+          180,
+          415
+        ],
+        [
+          205,
+          540
+        ],
+        [
+          350,
+          685
+        ],
+        [
+          345,
+          795
+        ]
+      ],
+      "width_mm": 43,
+      "retained_floor": 0.89,
+      "release_strength": 0.97
+    },
+    "route_source_evidence": [
+      {
+        "xy_mm": [
+          201.50000000000003,
+          280.5
+        ],
+        "source_xyz_utm_m": [
+          323169.01246009464,
+          4166801.0521425786,
+          321.68625801082084
+        ],
+        "source_forward_m": 5531.008448745685,
+        "valley_score": 0.7331718889987264,
+        "ridge_score": 0.0010662796047041523
+      },
+      {
+        "xy_mm": [
+          201.49395695687065,
+          300.5
+        ],
+        "source_xyz_utm_m": [
+          323289.29198360106,
+          4166918.2930437587,
+          273.54639455389673
+        ],
+        "source_forward_m": 5364.654761935854,
+        "valley_score": 0.3000858898379659,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          199.1294308976308,
+          320.5
+        ],
+        "source_xyz_utm_m": [
+          323414.57320847054,
+          4167016.981209037,
+          225.4551311810514
+        ],
+        "source_forward_m": 5205.260351582222,
+        "valley_score": 0.6496366679448591,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          190.51522313838774,
+          340.5
+        ],
+        "source_xyz_utm_m": [
+          323571.73505774734,
+          4167068.307192923,
+          177.70584978705912
+        ],
+        "source_forward_m": 5048.233215036843,
+        "valley_score": 0.7181913156321451,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          180.9519467403477,
+          360.5
+        ],
+        "source_xyz_utm_m": [
+          323812.3108201116,
+          4167200.0753877233,
+          139.073482162802
+        ],
+        "source_forward_m": 4776.351719876759,
+        "valley_score": 0.5268376449812203,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          181.7608965556916,
+          380.5
+        ],
+        "source_xyz_utm_m": [
+          323974.36760195123,
+          4167378.14168227,
+          99.27368096677354
+        ],
+        "source_forward_m": 4540.309875186992,
+        "valley_score": 0.5935707064731419,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          172.58709948649823,
+          400.5
+        ],
+        "source_xyz_utm_m": [
+          324215.6123941999,
+          4167536.0957004805,
+          65.6553223569208
+        ],
+        "source_forward_m": 4252.378948335376,
+        "valley_score": 0.5738014891698645,
+        "ridge_score": 9.895275699393067e-05
+      },
+      {
+        "xy_mm": [
+          168.9586321726963,
+          420.5
+        ],
+        "source_xyz_utm_m": [
+          324553.08970906725,
+          4167855.5043870425,
+          52.61973587637523
+        ],
+        "source_forward_m": 3791.2803590074404,
+        "valley_score": 0.1155204752685445,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          180.5,
+          440.5
+        ],
+        "source_xyz_utm_m": [
+          324817.96447275643,
+          4168238.952060836,
+          45.633073810133126
+        ],
+        "source_forward_m": 3350.746251054232,
+        "valley_score": 0.007141440226711905,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          192.5,
+          460.5
+        ],
+        "source_xyz_utm_m": [
+          325057.24973079126,
+          4168575.8433697186,
+          41.87608703289665
+        ],
+        "source_forward_m": 2958.40595172137,
+        "valley_score": 0.01324429783286624,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          204.50032119460963,
+          480.5
+        ],
+        "source_xyz_utm_m": [
+          325284.7033327373,
+          4168882.930369663,
+          45.06681453124447
+        ],
+        "source_forward_m": 2593.2521437406767,
+        "valley_score": 0.030239417832890535,
+        "ridge_score": 0.0062511274341561325
+      },
+      {
+        "xy_mm": [
+          217.5212661815171,
+          500.5
+        ],
+        "source_xyz_utm_m": [
+          325560.8802089327,
+          4169224.3857518653,
+          84.75721724004286
+        ],
+        "source_forward_m": 2168.484776930553,
+        "valley_score": 0.0014010611196677589,
+        "ridge_score": 0.15570136794869138
+      },
+      {
+        "xy_mm": [
+          231.49395695687065,
+          520.5
+        ],
+        "source_xyz_utm_m": [
+          325703.6311276087,
+          4169430.0262903487,
+          85.74600322225024
+        ],
+        "source_forward_m": 1931.6649353080124,
+        "valley_score": 4.910291851924086e-10,
+        "ridge_score": 0.15519573346432772
+      },
+      {
+        "xy_mm": [
+          243.5,
+          540.5
+        ],
+        "source_xyz_utm_m": [
+          325795.3091967369,
+          4169569.8521412415,
+          61.16866421279342
+        ],
+        "source_forward_m": 1774.9779938841707,
+        "valley_score": 0.006537783374682046,
+        "ridge_score": 0.00015896294325190775
+      },
+      {
+        "xy_mm": [
+          255.43416669501883,
+          560.5
+        ],
+        "source_xyz_utm_m": [
+          325894.2152228777,
+          4169708.8682576157,
+          44.73873123368722
+        ],
+        "source_forward_m": 1612.9470904502957,
+        "valley_score": 0.10063903799611712,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          262.8472681604222,
+          580.5
+        ],
+        "source_xyz_utm_m": [
+          326011.48895785934,
+          4169835.4877012735,
+          40.228390211103445
+        ],
+        "source_forward_m": 1443.4600751341356,
+        "valley_score": 0.13765019176324997,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          273.5003211946096,
+          600.5
+        ],
+        "source_xyz_utm_m": [
+          326106.01649948664,
+          4169954.5204498116,
+          32.57473741755724
+        ],
+        "source_forward_m": 1296.793481007884,
+        "valley_score": 0.24099984614499903,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          285.5,
+          620.5
+        ],
+        "source_xyz_utm_m": [
+          326201.3730713564,
+          4170071.8386713946,
+          33.67172868035154
+        ],
+        "source_forward_m": 1150.474483990456,
+        "valley_score": 0.14250719076456886,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          297.5,
+          640.5
+        ],
+        "source_xyz_utm_m": [
+          326296.9556988806,
+          4170183.1689171004,
+          42.84834138141634
+        ],
+        "source_forward_m": 1007.520152488785,
+        "valley_score": 0.008453889026653186,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          309.5,
+          660.5
+        ],
+        "source_xyz_utm_m": [
+          326369.34763380827,
+          4170271.9676888185,
+          38.45096836878179
+        ],
+        "source_forward_m": 896.5964710201052,
+        "valley_score": 0.02535694008681234,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          321.5,
+          680.5
+        ],
+        "source_xyz_utm_m": [
+          326437.444378161,
+          4170353.0945849163,
+          35.22191466074576
+        ],
+        "source_forward_m": 793.6776430016914,
+        "valley_score": 0.04823992725685787,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          333.49967880539043,
+          700.5
+        ],
+        "source_xyz_utm_m": [
+          326504.4549260162,
+          4170429.411499495,
+          36.94540131774177
+        ],
+        "source_forward_m": 694.4830156669694,
+        "valley_score": 0.020589409683164424,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          344.08657733998706,
+          720.5
+        ],
+        "source_xyz_utm_m": [
+          326566.10051207605,
+          4170495.937802394,
+          36.380666021898534
+        ],
+        "source_forward_m": 605.4101294893524,
+        "valley_score": 0.021985138994470563,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          345.4996788053904,
+          740.5
+        ],
+        "source_xyz_utm_m": [
+          326634.4096368641,
+          4170542.098482809,
+          35.936038696876594
+        ],
+        "source_forward_m": 523.0313823645882,
+        "valley_score": 0.01685725901070117,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          345.5,
+          760.5
+        ],
+        "source_xyz_utm_m": [
+          326698.58386534615,
+          4170583.1190999253,
+          34.90414898352812
+        ],
+        "source_forward_m": 447.02869555517157,
+        "valley_score": 0.016382431986957394,
+        "ridge_score": 0.0
+      },
+      {
+        "xy_mm": [
+          345.5,
+          780.5
+        ],
+        "source_xyz_utm_m": [
+          326758.7941966972,
+          4170621.632737374,
+          35.38495408463517
+        ],
+        "source_forward_m": 375.70466591106594,
+        "valley_score": 0.00823159411603833,
+        "ridge_score": 0.0
+      }
+    ],
+    "scope": "Source-depth envelope 1050\u20133600 m; no camera/DEM warp",
+    "left_right": {
+      "left": {
+        "pixels": 55557,
+        "mean_retention": 0.6428447904935984
+      },
+      "right": {
+        "pixels": 64880,
+        "mean_retention": 0.7979349812329829
+      }
+    },
+    "global_reserve_override_pixels": 0,
+    "route_x_span_mm": 178.1883778183618,
+    "mean_abs_change": 0.22408906072888843
+  },
+  "terrain": {
+    "reference_phase_unchanged": true,
+    "far_geometry_source": "a6ce842cfb894ce35e15332f3b6c6154254708ec",
+    "far_domain_min_m": 3600
+  },
+  "near_solver": {
+    "solver_status": "solved",
+    "iterations": 50,
+    "variables": 196060,
+    "normal_constraints": 197252,
+    "min_phase_ratio_checked": 0.04913952915133805,
+    "nonpositive_phase_derivative_pixels": 0,
+    "maximum_phase_change": 16.000000065896607,
+    "target_rms_error": 0.08966127375818264,
+    "primal_residual": 0.0009730900642724034,
+    "dual_residual": 0.0004449880562733613,
+    "solve_time_seconds": 3.401790939
+  },
+  "near_phase_sha256": "f62287d09e8d31c8680193df1208f0d7967cd13c1eddfbc4083d02c8b71cc430",
+  "Summer_camera_unchanged": true,
+  "Spring_modified": false,
+  "earlier_checkpoint_files_modified": false,
+  "far_micro_B_enabled": false,
+  "production_Gcode_generated": false,
+  "artistic_acceptance": false,
+  "visibility": "Native catalogs and depth-aware reciprocal structural/partial-canopy clipping; nominal 1 mm / upright 2.5D evidence, not a physical simulation"
+}

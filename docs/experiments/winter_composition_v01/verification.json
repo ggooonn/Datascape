@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "case": "winter-provisional-v01",
+  "checks": {
+    "ink": {
+      "paths": 2366,
+      "length_mm": 62296.09802703655,
+      "max_source_hausdorff_error_mm": 0.0
+    },
+    "color": {
+      "paths": 325,
+      "length_mm": 2012.2477863751355,
+      "max_source_hausdorff_error_mm": 0.0
+    },
+    "panels": {
+      "max_source_length_error_mm": 1.4210854715202004e-14,
+      "max_geometry_error_mm": 1.1102230246251565e-15,
+      "short_seam_fragments": [
+        {
+          "id": "winter-provisional-v01/winter-middle-bedrock/parent/visible-contour-1/fragment-0/P8-0",
+          "length_mm": 0.2443378957402135
+        }
+      ]
+    }
+  },
+  "authoring_sources": 4618,
+  "visibility_entries": 2936,
+  "pngs_decoded": 18,
+  "parent_invariants": null,
+  "scope": "Canonical geometry, artistic profiles, source evidence and publication isolation; no physical calibration"
+}

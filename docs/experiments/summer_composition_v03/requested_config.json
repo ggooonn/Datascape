@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "seed": 2026102601,
+  "artistic_base_commit": "d30ac7be302e1cbfcd2cf66de9087e35ea091b6c",
+  "spring_physical_reference_commit": "9665b92a7ab78ce44a135c191eb6c259a3cb03f6",
+  "selected_view": "C_east",
+  "selection_reason": "Closest unfitted P2-P3 skyline height, rising lowland-to-high-ridge counter-rhythm, room for vegetation below a distinct right-hand summit; slope reversal remains visible and provisional.",
+  "input_sha256": {
+    "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+    "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+  },
+  "minimum_visible_path_mm": 2.8,
+  "far_surface_micro_B_enabled": false,
+  "summer_progression": {
+    "transition_center_mm": 300,
+    "transition_width_mm": 180,
+    "foliage_vigor": [
+      1.12,
+      1.3
+    ],
+    "foliage_unit_count_scale": [
+      1.08,
+      1.18
+    ],
+    "stem_ratio": [
+      0.89,
+      0.91
+    ],
+    "interpretation": "Smooth cross-pair growth modifier; actual groups remain unequal, with open corridors. No jump at the panel seam."
+  },
+  "near_groups": [
+    {
+      "id": "v03-left-promontory",
+      "center_mm": [
+        126,
+        790
+      ],
+      "members": [
+        [
+          -58,
+          7,
+          106,
+          "U"
+        ],
+        [
+          -36,
+          -4,
+          175,
+          "B"
+        ],
+        [
+          -11,
+          -10,
+          236,
+          "P"
+        ],
+        [
+          17,
+          -3,
+          204,
+          "B"
+        ],
+        [
+          45,
+          8,
+          151,
+          "B"
+        ],
+        [
+          66,
+          15,
+          76,
+          "U"
+        ]
+      ]
+    },
+    {
+      "id": "v03-inner-relay",
+      "center_mm": [
+        258,
+        716
+      ],
+      "members": [
+        [
+          -23,
+          2,
+          73,
+          "U"
+        ],
+        [
+          0,
+          -5,
+          121,
+          "P"
+        ],
+        [
+          26,
+          8,
+          89,
+          "B"
+        ]
+      ]
+    },
+    {
+      "id": "v03-right-bank",
+      "center_mm": [
+        468,
+        814
+      ],
+      "members": [
+        [
+          -43,
+          9,
+          115,
+          "B"
+        ],
+        [
+          -18,
+          -6,
+          181,
+          "B"
+        ],
+        [
+          11,
+          0,
+          163,
+          "P"
+        ],
+        [
+          38,
+          12,
+          93,
+          "U"
+        ]
+      ]
+    },
+    {
+      "id": "v03-upper-relay",
+      "center_mm": [
+        524,
+        685
+      ],
+      "members": [
+        [
+          -15,
+          3,
+          72,
+          "U"
+        ],
+        [
+          7,
+          -3,
+          108,
+          "P"
+        ]
+      ]
+    }
+  ],
+  "rocks": [
+    {
+      "id": "v03-left-foundation",
+      "group": "v03-left-promontory",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 232,
+      "height_mm": 91,
+      "major_count": 4,
+      "support_dx_mm": 0,
+      "support_dy_mm": 29
+    },
+    {
+      "id": "v03-inner-ledge",
+      "group": "v03-inner-relay",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 116,
+      "height_mm": 47,
+      "major_count": 3,
+      "support_dx_mm": 0,
+      "support_dy_mm": 24
+    },
+    {
+      "id": "v03-right-foundation",
+      "group": "v03-right-bank",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 174,
+      "height_mm": 69,
+      "major_count": 3,
+      "support_dx_mm": 0,
+      "support_dy_mm": 27
+    },
+    {
+      "id": "v03-upper-ledge",
+      "group": "v03-upper-relay",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 86,
+      "height_mm": 34,
+      "major_count": 2,
+      "support_dx_mm": 0,
+      "support_dy_mm": 16
+    }
+  ],
+  "mid_far_groups": [
+    {
+      "id": "middle-left",
+      "center_mm": [
+        118,
+        515
+      ],
+      "q_range_m": [
+        1600,
+        3300
+      ],
+      "radius_mm": [
+        93,
+        61
+      ],
+      "count": 20,
+      "height_mm": [
+        19,
+        38
+      ]
+    },
+    {
+      "id": "middle-right",
+      "center_mm": [
+        442,
+        558
+      ],
+      "q_range_m": [
+        1600,
+        3400
+      ],
+      "radius_mm": [
+        106,
+        72
+      ],
+      "count": 33,
+      "height_mm": [
+        23,
+        44
+      ]
+    },
+    {
+      "id": "middle-bridge",
+      "center_mm": [
+        322,
+        447
+      ],
+      "q_range_m": [
+        1800,
+        3600
+      ],
+      "radius_mm": [
+        65,
+        45
+      ],
+      "count": 14,
+      "height_mm": [
+        13,
+        27
+      ]
+    }
+  ],
+  "virtual_color_groups": {
+    "canopy_core": {
+      "preview_hex": "#477766",
+      "meaning": "Connected cool vegetation bodies; virtual study color, no pigment slot"
+    },
+    "canopy_edge": {
+      "preview_hex": "#a1ab70",
+      "meaning": "Open light growth edges; virtual study color, no pigment slot"
+    },
+    "distance": {
+      "preview_hex": "#6a9299",
+      "meaning": "Atmospheric distant vegetation and selected terrain passages"
+    },
+    "earth": {
+      "preview_hex": "#a48b68",
+      "meaning": "Restrained exposed ground / rock intervals"
+    }
+  },
+  "case": "summer-v03",
+  "season": "summer",
+  "panels": [
+    3,
+    4
+  ],
+  "ground": {
+    "support_radius_m": [
+      185,
+      145
+    ]
+  },
+  "baseline": "a6ce842cfb894ce35e15332f3b6c6154254708ec",
+  "artistic_status": "provisional-review",
+  "flow_candidates": [
+    {
+      "id": "oblique-receiver",
+      "anchors_mm": [
+        [
+          210,
+          280
+        ],
+        [
+          180,
+          415
+        ],
+        [
+          205,
+          540
+        ],
+        [
+          350,
+          685
+        ],
+        [
+          345,
+          795
+        ]
+      ],
+      "width_mm": 43,
+      "retained_floor": 0.89,
+      "release_strength": 0.97
+    },
+    {
+      "id": "right-valley",
+      "anchors_mm": [
+        [
+          360,
+          280
+        ],
+        [
+          425,
+          415
+        ],
+        [
+          410,
+          540
+        ],
+        [
+          355,
+          685
+        ],
+        [
+          280,
+          795
+        ]
+      ],
+      "width_mm": 42,
+      "retained_floor": 0.87,
+      "release_strength": 0.97
+    },
+    {
+      "id": "central-weave",
+      "anchors_mm": [
+        [
+          255,
+          280
+        ],
+        [
+          295,
+          415
+        ],
+        [
+          330,
+          540
+        ],
+        [
+          265,
+          685
+        ],
+        [
+          310,
+          795
+        ]
+      ],
+      "width_mm": 39,
+      "retained_floor": 0.86,
+      "release_strength": 0.96
+    }
+  ],
+  "selected_flow": "oblique-receiver",
+  "composition_rationale": "Left foreground promontory, right middle relay and retained high right ridge; an oblique left-middle opening avoids repeating a fixed left-right-left alternation.",
+  "physical_note": "Middle/far contour drawing appears relatively stable; foreground is less physically verified. Separate brush strategies may be required. No canonical geometry change or G-code follows from that consideration."
+}

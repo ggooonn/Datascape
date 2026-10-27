@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "case": "autumn-provisional-v01",
+  "checks": {
+    "ink": {
+      "paths": 3522,
+      "length_mm": 88848.42599096303,
+      "max_source_hausdorff_error_mm": 0.0
+    },
+    "color": {
+      "paths": 1029,
+      "length_mm": 6930.042896032885,
+      "max_source_hausdorff_error_mm": 0.0
+    },
+    "panels": {
+      "max_source_length_error_mm": 1.0658141036401503e-14,
+      "max_geometry_error_mm": 1.3322676295501878e-14,
+      "short_seam_fragments": [
+        {
+          "id": "autumn-provisional-v01/autumn-saddle/tree-1/color/lobe-5-0.27/P5-0",
+          "length_mm": 1.894770187812241
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-saddle-ledge/parent/cross-fracture-3/0/fragment-0/P6-0",
+          "length_mm": 2.2784081757606383
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-saddle-ledge/parent/cross-fracture-4/0/fragment-0/visible-f51b6572002a76/P6-0",
+          "length_mm": 2.4949598495213654
+        }
+      ]
+    }
+  },
+  "authoring_sources": 6779,
+  "visibility_entries": 4860,
+  "pngs_decoded": 18,
+  "parent_invariants": null,
+  "scope": "Canonical geometry, artistic profiles, source evidence and publication isolation; no physical calibration"
+}

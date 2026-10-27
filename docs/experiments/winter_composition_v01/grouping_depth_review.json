@@ -1,0 +1,260 @@
+{
+  "winter-left-shelter": {
+    "objects": [
+      {
+        "id": "winter-provisional-v01/winter-left-shelter/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          110.5,
+          789.5
+        ],
+        "depth_m": 329.3598738265799,
+        "height_mm": 89,
+        "parent_mass_id": null
+      },
+      {
+        "id": "winter-provisional-v01/winter-left-shelter/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          116.5,
+          803.5
+        ],
+        "depth_m": 286.5390387684107,
+        "height_mm": 209,
+        "parent_mass_id": null
+      },
+      {
+        "id": "winter-provisional-v01/winter-left-shelter/tree-2",
+        "kind": "tree",
+        "xy_mm": [
+          144.5,
+          800.5
+        ],
+        "depth_m": 293.59090895917285,
+        "height_mm": 191,
+        "parent_mass_id": null
+      },
+      {
+        "id": "winter-provisional-v01/winter-left-shelter/tree-3",
+        "kind": "tree",
+        "xy_mm": [
+          172.5,
+          790.5
+        ],
+        "depth_m": 324.70880857588173,
+        "height_mm": 129,
+        "parent_mass_id": null
+      },
+      {
+        "id": "winter-provisional-v01/winter-left-bedrock/parent",
+        "kind": "rock",
+        "xy_mm": [
+          108.9003863297533,
+          817.9000000000107
+        ],
+        "depth_m": 245.88678886684946,
+        "height_mm": null,
+        "parent_mass_id": "winter-provisional-v01/winter-left-bedrock"
+      },
+      {
+        "id": "winter-provisional-v01/winter-left-bedrock/rear",
+        "kind": "rock",
+        "xy_mm": [
+          196.7403863297533,
+          797.7600000000107
+        ],
+        "depth_m": 305.5296651906792,
+        "height_mm": null,
+        "parent_mass_id": "winter-provisional-v01/winter-left-bedrock"
+      },
+      {
+        "id": "winter-provisional-v01/winter-left-bedrock/back-shoulder",
+        "kind": "rock",
+        "xy_mm": [
+          62.54038632975332,
+          807.3000000000106
+        ],
+        "depth_m": 281.018199694094,
+        "height_mm": null,
+        "parent_mass_id": "winter-provisional-v01/winter-left-bedrock"
+      },
+      {
+        "id": "winter-provisional-v01/winter-left-bedrock/front",
+        "kind": "rock",
+        "xy_mm": [
+          177.2203863297533,
+          828.5000000000107
+        ],
+        "depth_m": 214.8579098523692,
+        "height_mm": null,
+        "parent_mass_id": "winter-provisional-v01/winter-left-bedrock"
+      },
+      {
+        "id": "winter-provisional-v01/winter-left-bedrock/ground",
+        "kind": "soil",
+        "xy_mm": [
+          177.2203863297533,
+          828.5000000000107
+        ],
+        "depth_m": 214.8579098523692,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      214.8579098523692,
+      329.3598738265799
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  },
+  "winter-middle-remnant": {
+    "objects": [
+      {
+        "id": "winter-provisional-v01/winter-middle-remnant/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          273.5,
+          711.5
+        ],
+        "depth_m": 589.4904106918772,
+        "height_mm": 94,
+        "parent_mass_id": null
+      },
+      {
+        "id": "winter-provisional-v01/winter-middle-remnant/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          294.5,
+          717.5
+        ],
+        "depth_m": 568.350964554337,
+        "height_mm": 152,
+        "parent_mass_id": null
+      },
+      {
+        "id": "winter-provisional-v01/winter-middle-remnant/tree-2",
+        "kind": "tree",
+        "xy_mm": [
+          321.5,
+          709.5
+        ],
+        "depth_m": 595.9016865809274,
+        "height_mm": 67,
+        "parent_mass_id": null
+      },
+      {
+        "id": "winter-provisional-v01/winter-middle-bedrock/parent",
+        "kind": "rock",
+        "xy_mm": [
+          275.91757083218573,
+          734.1
+        ],
+        "depth_m": 514.3777564384577,
+        "height_mm": null,
+        "parent_mass_id": "winter-provisional-v01/winter-middle-bedrock"
+      },
+      {
+        "id": "winter-provisional-v01/winter-middle-bedrock/rear",
+        "kind": "rock",
+        "xy_mm": [
+          335.31757083218577,
+          720.04
+        ],
+        "depth_m": 560.3560525497003,
+        "height_mm": null,
+        "parent_mass_id": "winter-provisional-v01/winter-middle-bedrock"
+      },
+      {
+        "id": "winter-provisional-v01/winter-middle-bedrock/front",
+        "kind": "rock",
+        "xy_mm": [
+          322.1175708321857,
+          741.5
+        ],
+        "depth_m": 490.3072112435743,
+        "height_mm": null,
+        "parent_mass_id": "winter-provisional-v01/winter-middle-bedrock"
+      },
+      {
+        "id": "winter-provisional-v01/winter-middle-bedrock/ground",
+        "kind": "soil",
+        "xy_mm": [
+          322.1175708321857,
+          741.5
+        ],
+        "depth_m": 490.3072112435743,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      490.3072112435743,
+      595.9016865809274
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  },
+  "winter-right-remnant": {
+    "objects": [
+      {
+        "id": "winter-provisional-v01/winter-right-remnant/tree-0",
+        "kind": "tree",
+        "xy_mm": [
+          469.5,
+          815.5
+        ],
+        "depth_m": 251.2259268350993,
+        "height_mm": 91,
+        "parent_mass_id": null
+      },
+      {
+        "id": "winter-provisional-v01/winter-right-remnant/tree-1",
+        "kind": "tree",
+        "xy_mm": [
+          483.5,
+          817.5
+        ],
+        "depth_m": 244.97595032625858,
+        "height_mm": 62,
+        "parent_mass_id": null
+      },
+      {
+        "id": "winter-provisional-v01/winter-right-stone/parent",
+        "kind": "rock",
+        "xy_mm": [
+          468.42007379027564,
+          824.6
+        ],
+        "depth_m": 225.10397426044446,
+        "height_mm": null,
+        "parent_mass_id": "winter-provisional-v01/winter-right-stone"
+      },
+      {
+        "id": "winter-provisional-v01/winter-right-stone/front",
+        "kind": "rock",
+        "xy_mm": [
+          493.90007379027566,
+          828.5
+        ],
+        "depth_m": 214.88189156930372,
+        "height_mm": null,
+        "parent_mass_id": "winter-provisional-v01/winter-right-stone"
+      },
+      {
+        "id": "winter-provisional-v01/winter-right-stone/ground",
+        "kind": "soil",
+        "xy_mm": [
+          493.90007379027566,
+          828.5
+        ],
+        "depth_m": 214.88189156930372,
+        "height_mm": null,
+        "parent_mass_id": null
+      }
+    ],
+    "depth_range_m": [
+      214.88189156930372,
+      251.2259268350993
+    ],
+    "metric_limit": "Contact depths and upright 2.5D silhouettes; not full 3D botanical geometry or wet brush simulation"
+  }
+}

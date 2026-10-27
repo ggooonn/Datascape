@@ -1,0 +1,512 @@
+{
+  "ink": {
+    "strokes": 2366,
+    "length_mm": 62296.0980270365,
+    "length_quantiles_mm": [
+      2.800244453614788,
+      5.14728231257153,
+      15.270969611172632,
+      68.31465472817648,
+      206.444528174176
+    ],
+    "under_2_8mm": 0,
+    "under_3mm": 13,
+    "under_5mm": 212,
+    "layers": {
+      "A": {
+        "strokes": 1110,
+        "length_mm": 44944.5769425924,
+        "under_3mm": 1,
+        "under_5mm": 46
+      },
+      "B": {
+        "strokes": 41,
+        "length_mm": 838.0248110739502,
+        "under_3mm": 0,
+        "under_5mm": 2
+      },
+      "C": {
+        "strokes": 248,
+        "length_mm": 4370.174125397162,
+        "under_3mm": 1,
+        "under_5mm": 20
+      },
+      "D": {
+        "strokes": 70,
+        "length_mm": 1351.2142080553197,
+        "under_3mm": 0,
+        "under_5mm": 0
+      },
+      "Soil": {
+        "strokes": 8,
+        "length_mm": 110.76419268486744,
+        "under_3mm": 0,
+        "under_5mm": 0
+      },
+      "V": {
+        "strokes": 193,
+        "length_mm": 1428.4683017772393,
+        "under_3mm": 3,
+        "under_5mm": 66
+      },
+      "rock": {
+        "strokes": 141,
+        "length_mm": 3294.158283089127,
+        "under_3mm": 1,
+        "under_5mm": 9
+      },
+      "tree": {
+        "strokes": 555,
+        "length_mm": 5958.717162366436,
+        "under_3mm": 7,
+        "under_5mm": 69
+      }
+    },
+    "densest_100mm_cells": [
+      [
+        "100,200",
+        4070.3819698574757
+      ],
+      [
+        "0,200",
+        3312.9714934129815
+      ],
+      [
+        "0,300",
+        3269.1087251242593
+      ],
+      [
+        "200,200",
+        3106.4521861443286
+      ],
+      [
+        "500,400",
+        2903.616697965019
+      ],
+      [
+        "500,300",
+        2870.64088474126
+      ],
+      [
+        "300,300",
+        2643.7716901539484
+      ],
+      [
+        "400,300",
+        2545.0559111328407
+      ]
+    ],
+    "paper_engagement_distance_m": 62.29609802703651,
+    "atomic_stroke_engagement_lower_bound": 2366,
+    "contact_only_minutes_at_hypothetical_600_1200mm_min": [
+      103.82683004506085,
+      51.91341502253042
+    ],
+    "timing_scope": "Distance/feed only; excludes pressure, acceleration, transfers, reloads, dwell, drying. Not a machine runtime estimate."
+  },
+  "color": {
+    "strokes": 325,
+    "length_mm": 2012.2477863751365,
+    "length_quantiles_mm": [
+      2.988018858862622,
+      3.541068567274322,
+      5.043357935070868,
+      6.585893111429296,
+      67.28137809172325
+    ],
+    "under_2_8mm": 0,
+    "under_3mm": 1,
+    "under_5mm": 157,
+    "layers": {
+      "color": {
+        "strokes": 325,
+        "length_mm": 2012.2477863751362,
+        "under_3mm": 1,
+        "under_5mm": 157
+      }
+    },
+    "densest_100mm_cells": [
+      [
+        "100,400",
+        347.684868068286
+      ],
+      [
+        "100,500",
+        344.9484208989667
+      ],
+      [
+        "400,400",
+        188.89929018879985
+      ],
+      [
+        "100,600",
+        142.36008444608993
+      ],
+      [
+        "0,400",
+        121.44373405693595
+      ],
+      [
+        "100,200",
+        92.8244700937998
+      ],
+      [
+        "300,300",
+        71.30080500247955
+      ],
+      [
+        "200,500",
+        69.24185674429452
+      ]
+    ],
+    "paper_engagement_distance_m": 2.0122477863751365,
+    "atomic_stroke_engagement_lower_bound": 325,
+    "contact_only_minutes_at_hypothetical_600_1200mm_min": [
+      3.3537463106252274,
+      1.6768731553126137
+    ],
+    "timing_scope": "Distance/feed only; excludes pressure, acceleration, transfers, reloads, dwell, drying. Not a machine runtime estimate."
+  },
+  "panels": {
+    "P7": {
+      "ink": {
+        "strokes": 1445,
+        "length_mm": 37574.695238558896,
+        "length_quantiles_mm": [
+          2.800244453614788,
+          5.103882802787889,
+          13.341634913525109,
+          68.55075231943408,
+          206.444528174176
+        ],
+        "under_2_8mm": 0,
+        "under_3mm": 9,
+        "under_5mm": 133,
+        "layers": {
+          "A": {
+            "strokes": 653,
+            "length_mm": 26936.412937308425,
+            "under_3mm": 1,
+            "under_5mm": 24
+          },
+          "B": {
+            "strokes": 27,
+            "length_mm": 550.6963809824367,
+            "under_3mm": 0,
+            "under_5mm": 1
+          },
+          "C": {
+            "strokes": 110,
+            "length_mm": 1667.6738263720413,
+            "under_3mm": 1,
+            "under_5mm": 14
+          },
+          "D": {
+            "strokes": 27,
+            "length_mm": 469.70506502124255,
+            "under_3mm": 0,
+            "under_5mm": 0
+          },
+          "Soil": {
+            "strokes": 7,
+            "length_mm": 88.35088218044744,
+            "under_3mm": 0,
+            "under_5mm": 0
+          },
+          "V": {
+            "strokes": 125,
+            "length_mm": 927.8303003590805,
+            "under_3mm": 2,
+            "under_5mm": 40
+          },
+          "rock": {
+            "strokes": 93,
+            "length_mm": 2549.726922207057,
+            "under_3mm": 0,
+            "under_5mm": 5
+          },
+          "tree": {
+            "strokes": 403,
+            "length_mm": 4384.298924128164,
+            "under_3mm": 5,
+            "under_5mm": 49
+          }
+        },
+        "densest_100mm_cells": [
+          [
+            "100,200",
+            4070.3819698574757
+          ],
+          [
+            "0,200",
+            3312.9714934129815
+          ],
+          [
+            "0,300",
+            3269.1087251242593
+          ],
+          [
+            "200,200",
+            3106.4521861443286
+          ],
+          [
+            "0,400",
+            2435.687300749068
+          ],
+          [
+            "100,400",
+            2399.299934049694
+          ],
+          [
+            "100,600",
+            2347.2852148319907
+          ],
+          [
+            "100,300",
+            2226.5536856023073
+          ]
+        ],
+        "paper_engagement_distance_m": 37.574695238558895,
+        "atomic_stroke_engagement_lower_bound": 1445,
+        "contact_only_minutes_at_hypothetical_600_1200mm_min": [
+          62.62449206426483,
+          31.312246032132414
+        ],
+        "timing_scope": "Distance/feed only; excludes pressure, acceleration, transfers, reloads, dwell, drying. Not a machine runtime estimate."
+      },
+      "color": {
+        "strokes": 234,
+        "length_mm": 1465.383473244336,
+        "length_quantiles_mm": [
+          2.988018858862622,
+          3.5452400516117426,
+          5.070147705477107,
+          6.57144794566424,
+          67.28137809172325
+        ],
+        "under_2_8mm": 0,
+        "under_3mm": 1,
+        "under_5mm": 111,
+        "layers": {
+          "color": {
+            "strokes": 234,
+            "length_mm": 1465.3834732443358,
+            "under_3mm": 1,
+            "under_5mm": 111
+          }
+        },
+        "densest_100mm_cells": [
+          [
+            "100,400",
+            347.684868068286
+          ],
+          [
+            "100,500",
+            344.9484208989667
+          ],
+          [
+            "100,600",
+            142.36008444608993
+          ],
+          [
+            "0,400",
+            121.44373405693595
+          ],
+          [
+            "100,200",
+            92.8244700937998
+          ],
+          [
+            "200,500",
+            70.40322101900503
+          ],
+          [
+            "100,300",
+            66.24795097812203
+          ],
+          [
+            "0,700",
+            64.82114915762953
+          ]
+        ],
+        "paper_engagement_distance_m": 1.465383473244336,
+        "atomic_stroke_engagement_lower_bound": 234,
+        "contact_only_minutes_at_hypothetical_600_1200mm_min": [
+          2.44230578874056,
+          1.22115289437028
+        ],
+        "timing_scope": "Distance/feed only; excludes pressure, acceleration, transfers, reloads, dwell, drying. Not a machine runtime estimate."
+      }
+    },
+    "P8": {
+      "ink": {
+        "strokes": 928,
+        "length_mm": 24721.402788477608,
+        "length_quantiles_mm": [
+          0.2443378957402135,
+          5.167772500506588,
+          16.171529408878968,
+          65.72662150599808,
+          192.68509921167265
+        ],
+        "under_2_8mm": 1,
+        "under_3mm": 5,
+        "under_5mm": 81,
+        "layers": {
+          "A": {
+            "strokes": 457,
+            "length_mm": 18008.164005283976,
+            "under_3mm": 0,
+            "under_5mm": 22
+          },
+          "B": {
+            "strokes": 14,
+            "length_mm": 287.32843009151344,
+            "under_3mm": 0,
+            "under_5mm": 1
+          },
+          "C": {
+            "strokes": 138,
+            "length_mm": 2702.5002990251205,
+            "under_3mm": 0,
+            "under_5mm": 6
+          },
+          "D": {
+            "strokes": 43,
+            "length_mm": 881.5091430340772,
+            "under_3mm": 0,
+            "under_5mm": 0
+          },
+          "Soil": {
+            "strokes": 2,
+            "length_mm": 22.413310504419993,
+            "under_3mm": 0,
+            "under_5mm": 0
+          },
+          "V": {
+            "strokes": 68,
+            "length_mm": 500.6380014181587,
+            "under_3mm": 1,
+            "under_5mm": 26
+          },
+          "rock": {
+            "strokes": 54,
+            "length_mm": 744.4313608820695,
+            "under_3mm": 2,
+            "under_5mm": 6
+          },
+          "tree": {
+            "strokes": 152,
+            "length_mm": 1574.4182382382724,
+            "under_3mm": 2,
+            "under_5mm": 20
+          }
+        },
+        "densest_100mm_cells": [
+          [
+            "200,400",
+            2903.616697965017
+          ],
+          [
+            "200,300",
+            2870.6408847412595
+          ],
+          [
+            "0,300",
+            2643.7716901539507
+          ],
+          [
+            "100,300",
+            2545.055911132843
+          ],
+          [
+            "100,400",
+            2418.767478711454
+          ],
+          [
+            "0,600",
+            1515.6972961766708
+          ],
+          [
+            "100,600",
+            1116.055111989732
+          ],
+          [
+            "200,800",
+            1046.0387417754694
+          ]
+        ],
+        "paper_engagement_distance_m": 24.721402788477608,
+        "atomic_stroke_engagement_lower_bound": 928,
+        "contact_only_minutes_at_hypothetical_600_1200mm_min": [
+          41.20233798079601,
+          20.601168990398005
+        ],
+        "timing_scope": "Distance/feed only; excludes pressure, acceleration, transfers, reloads, dwell, drying. Not a machine runtime estimate."
+      },
+      "color": {
+        "strokes": 93,
+        "length_mm": 546.8643131308004,
+        "length_quantiles_mm": [
+          3.3441149854561574,
+          3.529328705543832,
+          5.006390979438441,
+          6.619513996667362,
+          32.055525687679655
+        ],
+        "under_2_8mm": 0,
+        "under_3mm": 0,
+        "under_5mm": 46,
+        "layers": {
+          "color": {
+            "strokes": 93,
+            "length_mm": 546.8643131308004,
+            "under_3mm": 0,
+            "under_5mm": 46
+          }
+        },
+        "densest_100mm_cells": [
+          [
+            "100,400",
+            188.89929018879997
+          ],
+          [
+            "0,300",
+            71.30080500247955
+          ],
+          [
+            "100,500",
+            68.07755975862058
+          ],
+          [
+            "0,600",
+            64.12375456269905
+          ],
+          [
+            "0,400",
+            62.48090740043839
+          ],
+          [
+            "100,700",
+            44.050836970297844
+          ],
+          [
+            "100,200",
+            25.98540032349363
+          ],
+          [
+            "0,200",
+            14.202837075011868
+          ]
+        ],
+        "paper_engagement_distance_m": 0.5468643131308004,
+        "atomic_stroke_engagement_lower_bound": 93,
+        "contact_only_minutes_at_hypothetical_600_1200mm_min": [
+          0.9114405218846673,
+          0.45572026094233364
+        ],
+        "timing_scope": "Distance/feed only; excludes pressure, acceleration, transfers, reloads, dwell, drying. Not a machine runtime estimate."
+      }
+    }
+  }
+}

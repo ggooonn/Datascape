@@ -1,0 +1,395 @@
+{
+  "spring": {
+    "ink": {
+      "strokes": 3345,
+      "length_mm": 88282.86402290354,
+      "length_quantiles_mm": [
+        0.15439235732380233,
+        3.156877392420902,
+        9.890411670415023,
+        71.70386292601495,
+        387.4731577037721
+      ],
+      "under_2_8mm": 8,
+      "under_3mm": 227,
+      "under_5mm": 927,
+      "layers": {
+        "A": {
+          "strokes": 1353,
+          "length_mm": 68816.852956488,
+          "under_3mm": 16,
+          "under_5mm": 115
+        },
+        "B": {
+          "strokes": 83,
+          "length_mm": 1539.574666700013,
+          "under_3mm": 2,
+          "under_5mm": 4
+        },
+        "D": {
+          "strokes": 14,
+          "length_mm": 1268.2297726053534,
+          "under_3mm": 0,
+          "under_5mm": 0
+        },
+        "V": {
+          "strokes": 1244,
+          "length_mm": 9523.488924283838,
+          "under_3mm": 199,
+          "under_5mm": 643
+        },
+        "derived-vegetation": {
+          "strokes": 377,
+          "length_mm": 3168.499804103502,
+          "under_3mm": 5,
+          "under_5mm": 112
+        },
+        "rock-ink": {
+          "strokes": 128,
+          "length_mm": 2022.6330185546235,
+          "under_3mm": 0,
+          "under_5mm": 24
+        },
+        "soil-ink": {
+          "strokes": 146,
+          "length_mm": 1943.5848801682034,
+          "under_3mm": 5,
+          "under_5mm": 29
+        }
+      },
+      "densest_100mm_cells": [
+        [
+          "0,300",
+          5384.868884840418
+        ],
+        [
+          "400,300",
+          5051.935956665753
+        ],
+        [
+          "100,300",
+          5047.494842322495
+        ],
+        [
+          "500,300",
+          4654.627623529274
+        ],
+        [
+          "100,400",
+          4318.478212717875
+        ],
+        [
+          "300,300",
+          4181.338133637073
+        ],
+        [
+          "0,400",
+          3975.0824553289776
+        ],
+        [
+          "400,200",
+          3869.9872514809717
+        ]
+      ],
+      "paper_engagement_distance_m": 88.28286402290354,
+      "atomic_stroke_engagement_lower_bound": 3345,
+      "contact_only_minutes_at_hypothetical_600_1200mm_min": [
+        147.13810670483923,
+        73.56905335241962
+      ],
+      "timing_scope": "Distance/feed only; excludes pressure, acceleration, transfers, reloads, dwell, drying. Not a machine runtime estimate."
+    },
+    "panels": {
+      "P1": {
+        "paths": 1494,
+        "length_mm": 42321.185823807835,
+        "short_panel_fragments": 5,
+        "inherited_short_sources": 5,
+        "new_short_seam_fragments": 0
+      },
+      "P2": {
+        "paths": 1851,
+        "length_mm": 45961.678199095695,
+        "short_panel_fragments": 3,
+        "inherited_short_sources": 3,
+        "new_short_seam_fragments": 0
+      }
+    }
+  },
+  "summer": {
+    "ink": {
+      "canonical_strokes": 5181,
+      "drawing_length_mm": 126142.14407214333,
+      "length_quantiles_mm": [
+        2.800004464282151,
+        4.488855471219444,
+        7.863398581129309,
+        61.17809869222668,
+        326.0495948304204
+      ],
+      "short_length_bins": {
+        "under2.8": 0,
+        "2.8to5": 692,
+        "5to15": 2599,
+        "15to50": 1191,
+        "50to150": 585,
+        "over150": 114
+      },
+      "depth_roles": {
+        "near": {
+          "paths_touching": 2668,
+          "length_mm": 29392.851528070485
+        },
+        "middle": {
+          "paths_touching": 792,
+          "length_mm": 36411.5357967904
+        },
+        "far": {
+          "paths_touching": 1737,
+          "length_mm": 60113.73237489279
+        }
+      },
+      "unknown_depth_paths": 0,
+      "minimum_atomic_engagements": 5181,
+      "runtime_estimate": null,
+      "metric_scope": "Visible canonical centerlines before panel clipping; paths touching roles can overlap. No loading, brush, drying or execution-time inference."
+    },
+    "color": {
+      "canonical_strokes": 2217,
+      "drawing_length_mm": 15363.20008095435,
+      "length_quantiles_mm": [
+        2.930852070003761,
+        3.5493662294147286,
+        5.052695410321723,
+        6.605005205338766,
+        74.85488499695452
+      ],
+      "short_length_bins": {
+        "under2.8": 0,
+        "2.8to5": 1069,
+        "5to15": 1038,
+        "15to50": 69,
+        "50to150": 41,
+        "over150": 0
+      },
+      "depth_roles": {
+        "near": {
+          "paths_touching": 131,
+          "length_mm": 4848.889362378605
+        },
+        "middle": {
+          "paths_touching": 1382,
+          "length_mm": 7896.7584201453765
+        },
+        "far": {
+          "paths_touching": 704,
+          "length_mm": 2614.8883628296967
+        }
+      },
+      "unknown_depth_paths": 0,
+      "minimum_atomic_engagements": 2217,
+      "runtime_estimate": null,
+      "metric_scope": "Visible canonical centerlines before panel clipping; paths touching roles can overlap. No loading, brush, drying or execution-time inference."
+    },
+    "panels": {
+      "P3": {
+        "paths": 2717,
+        "length_mm": 54265.82007414789,
+        "short_panel_fragments": 2,
+        "inherited_short_sources": 0,
+        "new_short_seam_fragments": 2
+      },
+      "P4": {
+        "paths": 2469,
+        "length_mm": 71876.32399799545,
+        "short_panel_fragments": 2,
+        "inherited_short_sources": 0,
+        "new_short_seam_fragments": 2
+      }
+    }
+  },
+  "autumn": {
+    "ink": {
+      "canonical_strokes": 3522,
+      "drawing_length_mm": 88848.4259909633,
+      "length_quantiles_mm": [
+        2.8000451782069526,
+        4.531122326425268,
+        8.83133086681672,
+        67.74758294305919,
+        378.45323179233174
+      ],
+      "short_length_bins": {
+        "under2.8": 0,
+        "2.8to5": 450,
+        "5to15": 1753,
+        "15to50": 846,
+        "50to150": 394,
+        "over150": 79
+      },
+      "depth_roles": {
+        "near": {
+          "paths_touching": 2023,
+          "length_mm": 26679.65143519958
+        },
+        "middle": {
+          "paths_touching": 875,
+          "length_mm": 33031.407164011674
+        },
+        "far": {
+          "paths_touching": 653,
+          "length_mm": 29031.61388869629
+        }
+      },
+      "unknown_depth_paths": 0,
+      "minimum_atomic_engagements": 3522,
+      "runtime_estimate": null,
+      "metric_scope": "Visible canonical centerlines before panel clipping; paths touching roles can overlap. No loading, brush, drying or execution-time inference."
+    },
+    "color": {
+      "canonical_strokes": 1029,
+      "drawing_length_mm": 6930.042896032901,
+      "length_quantiles_mm": [
+        3.3298347372254637,
+        3.5600057773863427,
+        5.040396586572859,
+        6.60191465669153,
+        67.65770174795482
+      ],
+      "short_length_bins": {
+        "under2.8": 0,
+        "2.8to5": 504,
+        "5to15": 475,
+        "15to50": 37,
+        "50to150": 13,
+        "over150": 0
+      },
+      "depth_roles": {
+        "near": {
+          "paths_touching": 216,
+          "length_mm": 2933.779708214675
+        },
+        "middle": {
+          "paths_touching": 652,
+          "length_mm": 3397.376773719335
+        },
+        "far": {
+          "paths_touching": 161,
+          "length_mm": 597.642103199419
+        }
+      },
+      "unknown_depth_paths": 0,
+      "minimum_atomic_engagements": 1029,
+      "runtime_estimate": null,
+      "metric_scope": "Visible canonical centerlines before panel clipping; paths touching roles can overlap. No loading, brush, drying or execution-time inference."
+    },
+    "panels": {
+      "P5": {
+        "paths": 1693,
+        "length_mm": 46054.64794740572,
+        "short_panel_fragments": 0,
+        "inherited_short_sources": 0,
+        "new_short_seam_fragments": 0
+      },
+      "P6": {
+        "paths": 1834,
+        "length_mm": 42793.77804355758,
+        "short_panel_fragments": 2,
+        "inherited_short_sources": 0,
+        "new_short_seam_fragments": 2
+      }
+    }
+  },
+  "winter": {
+    "ink": {
+      "canonical_strokes": 2366,
+      "drawing_length_mm": 62296.0980270365,
+      "length_quantiles_mm": [
+        2.800244453614788,
+        5.14728231257153,
+        15.270969611172632,
+        68.31465472817648,
+        206.444528174176
+      ],
+      "short_length_bins": {
+        "under2.8": 0,
+        "2.8to5": 212,
+        "5to15": 962,
+        "15to50": 795,
+        "50to150": 386,
+        "over150": 11
+      },
+      "depth_roles": {
+        "near": {
+          "paths_touching": 1202,
+          "length_mm": 21848.23564787517
+        },
+        "middle": {
+          "paths_touching": 758,
+          "length_mm": 27484.691169245467
+        },
+        "far": {
+          "paths_touching": 411,
+          "length_mm": 12891.69061809841
+        }
+      },
+      "unknown_depth_paths": 0,
+      "minimum_atomic_engagements": 2366,
+      "runtime_estimate": null,
+      "metric_scope": "Visible canonical centerlines before panel clipping; paths touching roles can overlap. No loading, brush, drying or execution-time inference."
+    },
+    "color": {
+      "canonical_strokes": 325,
+      "drawing_length_mm": 2012.2477863751365,
+      "length_quantiles_mm": [
+        2.988018858862622,
+        3.541068567274322,
+        5.043357935070868,
+        6.585893111429296,
+        67.28137809172325
+      ],
+      "short_length_bins": {
+        "under2.8": 0,
+        "2.8to5": 157,
+        "5to15": 159,
+        "15to50": 5,
+        "50to150": 4,
+        "over150": 0
+      },
+      "depth_roles": {
+        "near": {
+          "paths_touching": 60,
+          "length_mm": 708.1834420721298
+        },
+        "middle": {
+          "paths_touching": 215,
+          "length_mm": 1118.1267140386458
+        },
+        "far": {
+          "paths_touching": 50,
+          "length_mm": 185.54219595754645
+        }
+      },
+      "unknown_depth_paths": 0,
+      "minimum_atomic_engagements": 325,
+      "runtime_estimate": null,
+      "metric_scope": "Visible canonical centerlines before panel clipping; paths touching roles can overlap. No loading, brush, drying or execution-time inference."
+    },
+    "panels": {
+      "P7": {
+        "paths": 1445,
+        "length_mm": 37574.695238558896,
+        "short_panel_fragments": 0,
+        "inherited_short_sources": 0,
+        "new_short_seam_fragments": 0
+      },
+      "P8": {
+        "paths": 928,
+        "length_mm": 24721.402788477608,
+        "short_panel_fragments": 1,
+        "inherited_short_sources": 0,
+        "new_short_seam_fragments": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "seed": 2026102707,
+  "artistic_base_commit": "d30ac7be302e1cbfcd2cf66de9087e35ea091b6c",
+  "spring_physical_reference_commit": "9665b92a7ab78ce44a135c191eb6c259a3cb03f6",
+  "selected_view": "B_northwest",
+  "selection_reason": "Closest unfitted P2-P3 skyline height, rising lowland-to-high-ridge counter-rhythm, room for vegetation below a distinct right-hand summit; slope reversal remains visible and provisional.",
+  "input_sha256": {
+    "master": "837f4b6b2e01e3b97b05db3e62fbd0869ce052ba4c18cc47a99d97873317f0fb",
+    "vegetation": "ac7f2d96af327f7b1ab07da14e379d0466500799420066484b29b45fbd5b47d5"
+  },
+  "minimum_visible_path_mm": 2.8,
+  "far_surface_micro_B_enabled": false,
+  "summer_progression": {
+    "transition_center_mm": 300,
+    "transition_width_mm": 180,
+    "foliage_vigor": [
+      0.38,
+      0.18
+    ],
+    "foliage_unit_count_scale": [
+      1.0,
+      1.0
+    ],
+    "stem_ratio": [
+      1.08,
+      1.18
+    ],
+    "interpretation": "Smooth cross-pair growth modifier; actual groups remain unequal, with open corridors. No jump at the panel seam."
+  },
+  "near_groups": [
+    {
+      "id": "winter-left-shelter",
+      "center_mm": [
+        125,
+        796
+      ],
+      "members": [
+        [
+          -45,
+          7,
+          89,
+          "U"
+        ],
+        [
+          -19,
+          -7,
+          209,
+          "P"
+        ],
+        [
+          9,
+          -3,
+          191,
+          "B"
+        ],
+        [
+          37,
+          12,
+          129,
+          "B"
+        ]
+      ]
+    },
+    {
+      "id": "winter-middle-remnant",
+      "center_mm": [
+        320,
+        748
+      ],
+      "members": [
+        [
+          -21,
+          6,
+          94,
+          "B"
+        ],
+        [
+          0,
+          -5,
+          152,
+          "P"
+        ],
+        [
+          27,
+          9,
+          67,
+          "U"
+        ]
+      ]
+    },
+    {
+      "id": "winter-right-remnant",
+      "center_mm": [
+        514,
+        810
+      ],
+      "members": [
+        [
+          -14,
+          4,
+          91,
+          "B"
+        ],
+        [
+          15,
+          11,
+          62,
+          "U"
+        ]
+      ]
+    }
+  ],
+  "rocks": [
+    {
+      "id": "winter-left-bedrock",
+      "group": "winter-left-shelter",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 244,
+      "height_mm": 106,
+      "major_count": 4,
+      "support_dx_mm": 0,
+      "support_dy_mm": 30
+    },
+    {
+      "id": "winter-middle-bedrock",
+      "group": "winter-middle-remnant",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 165,
+      "height_mm": 74,
+      "major_count": 3,
+      "support_dx_mm": 0,
+      "support_dy_mm": 27
+    },
+    {
+      "id": "winter-right-stone",
+      "group": "winter-right-remnant",
+      "target_mm": [
+        300,
+        780
+      ],
+      "width_mm": 91,
+      "height_mm": 39,
+      "major_count": 2,
+      "support_dx_mm": 0,
+      "support_dy_mm": 24
+    }
+  ],
+  "mid_far_groups": [
+    {
+      "id": "middle-left",
+      "center_mm": [
+        134,
+        548
+      ],
+      "q_range_m": [
+        1500,
+        3400
+      ],
+      "radius_mm": [
+        110,
+        80
+      ],
+      "count": 22,
+      "height_mm": [
+        18,
+        34
+      ]
+    },
+    {
+      "id": "middle-right",
+      "center_mm": [
+        417,
+        551
+      ],
+      "q_range_m": [
+        1500,
+        3500
+      ],
+      "radius_mm": [
+        110,
+        76
+      ],
+      "count": 12,
+      "height_mm": [
+        14,
+        29
+      ]
+    },
+    {
+      "id": "far-left",
+      "center_mm": [
+        145,
+        319
+      ],
+      "q_range_m": [
+        3000,
+        11000
+      ],
+      "radius_mm": [
+        130,
+        92
+      ],
+      "count": 17,
+      "height_mm": [
+        5,
+        12
+      ]
+    },
+    {
+      "id": "far-right",
+      "center_mm": [
+        445,
+        321
+      ],
+      "q_range_m": [
+        3000,
+        11000
+      ],
+      "radius_mm": [
+        126,
+        94
+      ],
+      "count": 11,
+      "height_mm": [
+        5,
+        10
+      ]
+    }
+  ],
+  "virtual_color_groups": {
+    "canopy_core": {
+      "preview_hex": "#627774",
+      "meaning": "Connected cool vegetation bodies; virtual study color, no pigment slot"
+    },
+    "canopy_edge": {
+      "preview_hex": "#9a9b89",
+      "meaning": "Open light growth edges; virtual study color, no pigment slot"
+    },
+    "distance": {
+      "preview_hex": "#89999e",
+      "meaning": "Atmospheric distant vegetation and selected terrain passages"
+    },
+    "earth": {
+      "preview_hex": "#a48b68",
+      "meaning": "Restrained exposed ground / rock intervals"
+    }
+  },
+  "case": "winter-provisional-v01",
+  "season": "winter",
+  "panels": [
+    7,
+    8
+  ],
+  "ground": {
+    "support_radius_m": [
+      185,
+      145
+    ]
+  },
+  "baseline": "a6ce842cfb894ce35e15332f3b6c6154254708ec",
+  "artistic_status": "provisional-review",
+  "flow_candidates": [
+    {
+      "id": "long-right-rest",
+      "anchors_mm": [
+        [
+          244,
+          280
+        ],
+        [
+          315,
+          415
+        ],
+        [
+          353,
+          540
+        ],
+        [
+          439,
+          685
+        ],
+        [
+          471,
+          795
+        ]
+      ],
+      "width_mm": 64,
+      "retained_floor": 0.77,
+      "release_strength": 0.995
+    }
+  ],
+  "selected_flow": "long-right-rest",
+  "composition_rationale": "A left shelter with residual pine foliage, exposed middle bedrock and a long right/P8 rest. Incomplete broadleaf and understory crowns preserve branch priority.",
+  "physical_note": "Middle/far contour drawing appears relatively stable; foreground is less physically verified. Separate brush strategies may be required. No canonical geometry change or G-code follows from that consideration."
+}

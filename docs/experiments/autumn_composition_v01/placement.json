@@ -1,0 +1,6892 @@
+{
+  "contacts": [
+    {
+      "group": "autumn-left-bank",
+      "site": {
+        "xy_mm": [
+          73.5,
+          746.5
+        ],
+        "mapped_face_id": 59031,
+        "original_mesh_face_id": 153551,
+        "barycentric": [
+          0.03448630905926642,
+          0.6617366582155616,
+          0.303777032725172
+        ],
+        "source_xyz_utm_m": [
+          325024.85209974647,
+          4166335.886689018,
+          68.9303284497371
+        ],
+        "source_forward_m": 487.05377298954903,
+        "lateral_q_per_mm": 0.17416947858438256,
+        "crs": "EPSG:32652",
+        "slope_deg": 8.794486731510837,
+        "ndvi": 0.20945432699084818,
+        "effective_observations": 37.10214751189295,
+        "retained_ground": 0.6248287462653485,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "original_target_mm": [
+        111,
+        774
+      ],
+      "support_score": 0.7174182281268424
+    },
+    {
+      "group": "autumn-saddle",
+      "site": {
+        "xy_mm": [
+          301.5,
+          688.5
+        ],
+        "mapped_face_id": 53745,
+        "original_mesh_face_id": 146062,
+        "barycentric": [
+          0.5867808289892976,
+          0.4114391401741979,
+          0.001780030836504486
+        ],
+        "source_xyz_utm_m": [
+          324897.3431742053,
+          4166794.946599075,
+          60.917641428289734
+        ],
+        "source_forward_m": 738.1367148153464,
+        "lateral_q_per_mm": -0.07308480220617787,
+        "crs": "EPSG:32652",
+        "slope_deg": 7.824973593317635,
+        "ndvi": 0.17170922250089013,
+        "effective_observations": 35.0,
+        "retained_ground": 0.4704013572826762,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "original_target_mm": [
+        300,
+        727
+      ],
+      "support_score": 0.7284888923307913
+    },
+    {
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          496.5,
+          826.5
+        ],
+        "mapped_face_id": 52345,
+        "original_mesh_face_id": 144085,
+        "barycentric": [
+          0.7544345271979325,
+          0.24246333196769398,
+          0.0031021408343735765
+        ],
+        "source_xyz_utm_m": [
+          325462.27389995905,
+          4166914.906935775,
+          45.79896956636202
+        ],
+        "source_forward_m": 229.48502060548088,
+        "lateral_q_per_mm": -0.02442913632053577,
+        "crs": "EPSG:32652",
+        "slope_deg": 4.755938838006863,
+        "ndvi": 0.18919603800672583,
+        "effective_observations": 36.0,
+        "retained_ground": 0.47366593096719856,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "original_target_mm": [
+        469,
+        802
+      ],
+      "support_score": 0.5621124775000007
+    }
+  ],
+  "catalog": [
+    {
+      "id": "autumn-provisional-v01/autumn-left-bank/tree-0",
+      "kind": "tree",
+      "group": "autumn-left-bank",
+      "site": {
+        "xy_mm": [
+          37.5,
+          741.5
+        ],
+        "mapped_face_id": 59730,
+        "original_mesh_face_id": 154548,
+        "barycentric": [
+          0.12576101101206882,
+          0.486780830368985,
+          0.3874581586189461
+        ],
+        "source_xyz_utm_m": [
+          324989.60342491104,
+          4166273.376255241,
+          74.43155043707175
+        ],
+        "source_forward_m": 503.3658340744678,
+        "lateral_q_per_mm": 0.010203802607918571,
+        "crs": "EPSG:32652",
+        "slope_deg": 9.3772144083639,
+        "ndvi": 0.19542994320680152,
+        "effective_observations": 38.0,
+        "retained_ground": 0.7336606567940158,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 77,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-left-bank/tree-1",
+      "kind": "tree",
+      "group": "autumn-left-bank",
+      "site": {
+        "xy_mm": [
+          60.5,
+          748.5
+        ],
+        "mapped_face_id": 59381,
+        "original_mesh_face_id": 154050,
+        "barycentric": [
+          0.22249149778837374,
+          0.752233920592595,
+          0.025274581619031296
+        ],
+        "source_xyz_utm_m": [
+          325027.56701761775,
+          4166314.2417625515,
+          71.22801464987626
+        ],
+        "source_forward_m": 478.3800706967725,
+        "lateral_q_per_mm": -0.00449691351823454,
+        "crs": "EPSG:32652",
+        "slope_deg": 8.497979811558123,
+        "ndvi": 0.22533403523989334,
+        "effective_observations": 36.0,
+        "retained_ground": 0.6740201102032414,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 153,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-left-bank/tree-2",
+      "kind": "tree",
+      "group": "autumn-left-bank",
+      "site": {
+        "xy_mm": [
+          90.5,
+          750.5
+        ],
+        "mapped_face_id": 58682,
+        "original_mesh_face_id": 153053,
+        "barycentric": [
+          0.2982207328957509,
+          0.36620750147233255,
+          0.3355717656319166
+        ],
+        "source_xyz_utm_m": [
+          325045.9862250442,
+          4166364.9328470314,
+          62.97016973332846
+        ],
+        "source_forward_m": 474.90942316225426,
+        "lateral_q_per_mm": 0.13723143589429074,
+        "crs": "EPSG:32652",
+        "slope_deg": 7.846475366295028,
+        "ndvi": 0.2356312751583337,
+        "effective_observations": 37.0,
+        "retained_ground": 0.47377427328248517,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 178,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-left-bank/tree-3",
+      "kind": "tree",
+      "group": "autumn-left-bank",
+      "site": {
+        "xy_mm": [
+          112.5,
+          741.5
+        ],
+        "mapped_face_id": 58331,
+        "original_mesh_face_id": 152553,
+        "barycentric": [
+          0.39370942992875957,
+          0.5368874993539596,
+          0.06940307071728082
+        ],
+        "source_xyz_utm_m": [
+          325021.10662498063,
+          4166402.9179078788,
+          62.765043502406265
+        ],
+        "source_forward_m": 509.43967783846693,
+        "lateral_q_per_mm": 0.058931248327609105,
+        "crs": "EPSG:32652",
+        "slope_deg": 8.261520066875484,
+        "ndvi": 0.10830444636121768,
+        "effective_observations": 38.0,
+        "retained_ground": 0.4545033138132335,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 109,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-saddle/tree-0",
+      "kind": "tree",
+      "group": "autumn-saddle",
+      "site": {
+        "xy_mm": [
+          279.5,
+          685.5
+        ],
+        "mapped_face_id": 54098,
+        "original_mesh_face_id": 146560,
+        "barycentric": [
+          0.08611083588090573,
+          0.5276312049301728,
+          0.38625795918892153
+        ],
+        "source_xyz_utm_m": [
+          324870.8289361479,
+          4166753.4122612244,
+          61.538249361283526
+        ],
+        "source_forward_m": 751.9446969557773,
+        "lateral_q_per_mm": 0.013774271799457354,
+        "crs": "EPSG:32652",
+        "slope_deg": 6.799266685766945,
+        "ndvi": 0.10262735212404385,
+        "effective_observations": 37.0,
+        "retained_ground": 0.4761344483607722,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 74,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-saddle/tree-1",
+      "kind": "tree",
+      "group": "autumn-saddle",
+      "site": {
+        "xy_mm": [
+          301.5,
+          689.5
+        ],
+        "mapped_face_id": 53745,
+        "original_mesh_face_id": 146062,
+        "barycentric": [
+          0.4210237264692176,
+          0.5393522361551266,
+          0.039624037375655806
+        ],
+        "source_xyz_utm_m": [
+          324901.18056708464,
+          4166793.8112788787,
+          60.05772930086288
+        ],
+        "source_forward_m": 734.1349229817307,
+        "lateral_q_per_mm": -0.07308480220617787,
+        "crs": "EPSG:32652",
+        "slope_deg": 8.115209920732996,
+        "ndvi": 0.15757419883285875,
+        "effective_observations": 35.0,
+        "retained_ground": 0.4645538992674701,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 128,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-saddle/tree-2",
+      "kind": "tree",
+      "group": "autumn-saddle",
+      "site": {
+        "xy_mm": [
+          326.5,
+          685.5
+        ],
+        "mapped_face_id": 53036,
+        "original_mesh_face_id": 145064,
+        "barycentric": [
+          0.6561817408807623,
+          0.2611211740267357,
+          0.08269708509250202
+        ],
+        "source_xyz_utm_m": [
+          324892.83363522077,
+          4166852.519087447,
+          54.32504208599189
+        ],
+        "source_forward_m": 758.6045187774795,
+        "lateral_q_per_mm": 0.4300344537113419,
+        "crs": "EPSG:32652",
+        "slope_deg": 7.338842728201516,
+        "ndvi": 0.22662476156317088,
+        "effective_observations": 34.0,
+        "retained_ground": 0.4555250875029867,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 97,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-mass/tree-0",
+      "kind": "tree",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          448.5,
+          818.5
+        ],
+        "mapped_face_id": 119671,
+        "original_mesh_face_id": 361173,
+        "barycentric": [
+          0.2318711494142982,
+          0.6396029403018036,
+          0.1285259102838982
+        ],
+        "source_xyz_utm_m": [
+          325421.1442226915,
+          4166861.9561344828,
+          43.0569181478709
+        ],
+        "source_forward_m": 254.12209944643237,
+        "lateral_q_per_mm": -0.007095220120997769,
+        "crs": "EPSG:32652",
+        "slope_deg": 3.064302229803016,
+        "ndvi": 0.20621652773016821,
+        "effective_observations": 35.812978124162505,
+        "retained_ground": 0.4198070628456803,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 124,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-mass/tree-1",
+      "kind": "tree",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          474.5,
+          828.5
+        ],
+        "mapped_face_id": 52700,
+        "original_mesh_face_id": 144584,
+        "barycentric": [
+          0.8170831398337658,
+          0.10317895889521188,
+          0.07973790127102232
+        ],
+        "source_xyz_utm_m": [
+          325458.0953687668,
+          4166882.6078629615,
+          43.57933001649724
+        ],
+        "source_forward_m": 224.44173701853026,
+        "lateral_q_per_mm": 0.004546679682059259,
+        "crs": "EPSG:32652",
+        "slope_deg": 4.023441057609546,
+        "ndvi": 0.1293567782143311,
+        "effective_observations": 36.0,
+        "retained_ground": 0.38093460035257315,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 188,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-mass/tree-2",
+      "kind": "tree",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          502.5,
+          832.5
+        ],
+        "mapped_face_id": 52345,
+        "original_mesh_face_id": 144085,
+        "barycentric": [
+          0.1094930270256691,
+          0.8340524655542406,
+          0.05645450742009033
+        ],
+        "source_xyz_utm_m": [
+          325480.02157396666,
+          4166913.3063647775,
+          46.17771128441944
+        ],
+        "source_forward_m": 212.0002611171963,
+        "lateral_q_per_mm": -0.02442913632053577,
+        "crs": "EPSG:32652",
+        "slope_deg": 4.203665069243591,
+        "ndvi": 0.09917234926300726,
+        "effective_observations": 37.502157396666,
+        "retained_ground": 0.4838718642546497,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 210,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-mass/tree-3",
+      "kind": "tree",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          530.5,
+          822.5
+        ],
+        "mapped_face_id": 51634,
+        "original_mesh_face_id": 143087,
+        "barycentric": [
+          0.44553905056744736,
+          0.32909268782096396,
+          0.22536826161158866
+        ],
+        "source_xyz_utm_m": [
+          325464.8727806346,
+          4166968.2389521515,
+          43.88391286863404
+        ],
+        "source_forward_m": 241.94070306753943,
+        "lateral_q_per_mm": 0.03052484226980122,
+        "crs": "EPSG:32652",
+        "slope_deg": 1.9577206842268096,
+        "ndvi": 0.15647228269658067,
+        "effective_observations": 36.98727806346733,
+        "retained_ground": 0.6997638886468955,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 146,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-mass/tree-4",
+      "kind": "tree",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          550.5,
+          814.5
+        ],
+        "mapped_face_id": 117902,
+        "original_mesh_face_id": 358679,
+        "barycentric": [
+          0.17863534632287303,
+          0.741775290525081,
+          0.07958936315204598
+        ],
+        "source_xyz_utm_m": [
+          325452.6123191054,
+          4167010.3590603895,
+          44.8000723647005
+        ],
+        "source_forward_m": 265.51694809329734,
+        "lateral_q_per_mm": 0.005176418214528045,
+        "crs": "EPSG:32652",
+        "slope_deg": 2.7462391815038796,
+        "ndvi": 0.09788121497354543,
+        "effective_observations": 36.46409396105446,
+        "retained_ground": 0.8745382219378296,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": 83,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-left-ledge/parent",
+      "kind": "rock",
+      "group": "autumn-left-bank",
+      "site": {
+        "xy_mm": [
+          55.310868996380904,
+          764.3000000000026
+        ],
+        "mapped_face_id": 59383,
+        "original_mesh_face_id": 154052,
+        "barycentric": [
+          0.1741604716050753,
+          0.602447886136143,
+          0.22339164225878166
+        ],
+        "source_xyz_utm_m": [
+          325083.0734365841,
+          4166308.298250732,
+          64.50642707940958
+        ],
+        "source_forward_m": 423.43307052831653,
+        "lateral_q_per_mm": 0.016099899389357016,
+        "crs": "EPSG:32652",
+        "slope_deg": 4.307729577961561,
+        "ndvi": 0.1332823889711125,
+        "effective_observations": 36.11140248414017,
+        "retained_ground": 0.5837179019813226,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.0,
+      "parent_mass_id": "autumn-provisional-v01/autumn-left-ledge"
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-left-ledge/rear",
+      "kind": "rock",
+      "group": "autumn-left-bank",
+      "site": {
+        "xy_mm": [
+          108.23086899638092,
+          752.5200000000026
+        ],
+        "mapped_face_id": 125300,
+        "original_mesh_face_id": 369145,
+        "barycentric": [
+          0.6576128996885798,
+          0.2098850234936256,
+          0.13250207681779458
+        ],
+        "source_xyz_utm_m": [
+          325061.0249376955,
+          4166394.7283869907,
+          59.82247440283975
+        ],
+        "source_forward_m": 468.8261605934666,
+        "lateral_q_per_mm": 0.032891721059291945,
+        "crs": "EPSG:32652",
+        "slope_deg": 6.370196100274077,
+        "ndvi": 0.17827410567681012,
+        "effective_observations": 37.40367941848382,
+        "retained_ground": 0.4151093309422614,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.7,
+      "parent_mass_id": "autumn-provisional-v01/autumn-left-ledge"
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-left-ledge/front",
+      "kind": "rock",
+      "group": "autumn-left-bank",
+      "site": {
+        "xy_mm": [
+          96.4708689963809,
+          770.5000000000026
+        ],
+        "mapped_face_id": 58684,
+        "original_mesh_face_id": 153055,
+        "barycentric": [
+          0.10739837555069831,
+          0.8855074864531802,
+          0.007094137996121477
+        ],
+        "source_xyz_utm_m": [
+          325121.56522459356,
+          4166374.7871758603,
+          56.018600450498155
+        ],
+        "source_forward_m": 405.12320481808524,
+        "lateral_q_per_mm": 0.10507154058251054,
+        "crs": "EPSG:32652",
+        "slope_deg": 7.766822435727864,
+        "ndvi": 0.13945441564168495,
+        "effective_observations": 38.0,
+        "retained_ground": 0.3786544588316908,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 2.8,
+      "parent_mass_id": "autumn-provisional-v01/autumn-left-ledge"
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-left-ledge/ground",
+      "kind": "soil",
+      "group": "autumn-left-bank",
+      "site": {
+        "xy_mm": [
+          96.4708689963809,
+          770.5000000000026
+        ],
+        "mapped_face_id": 58684,
+        "original_mesh_face_id": 153055,
+        "barycentric": [
+          0.10739837555069831,
+          0.8855074864531802,
+          0.007094137996121477
+        ],
+        "source_xyz_utm_m": [
+          325121.56522459356,
+          4166374.7871758603,
+          56.018600450498155
+        ],
+        "source_forward_m": 405.12320481808524,
+        "lateral_q_per_mm": 0.10507154058251054,
+        "crs": "EPSG:32652",
+        "slope_deg": 7.766822435727864,
+        "ndvi": 0.13945441564168495,
+        "effective_observations": 38.0,
+        "retained_ground": 0.3786544588316908,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-saddle-ledge/parent",
+      "kind": "rock",
+      "group": "autumn-saddle",
+      "site": {
+        "xy_mm": [
+          290.68558588100495,
+          707.6999999999829
+        ],
+        "mapped_face_id": 121073,
+        "original_mesh_face_id": 363154,
+        "barycentric": [
+          0.532973775534094,
+          0.2870811368334001,
+          0.17994508763250597
+        ],
+        "source_xyz_utm_m": [
+          324969.601647371,
+          4166750.989213266,
+          52.36377770794306
+        ],
+        "source_forward_m": 656.453053208769,
+        "lateral_q_per_mm": 0.01495827079243291,
+        "crs": "EPSG:32652",
+        "slope_deg": 1.8033863646926664,
+        "ndvi": 0.1575611538587782,
+        "effective_observations": 37.0,
+        "retained_ground": 0.3630373372543288,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.0,
+      "parent_mass_id": "autumn-provisional-v01/autumn-saddle-ledge"
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-saddle-ledge/front",
+      "kind": "rock",
+      "group": "autumn-saddle",
+      "site": {
+        "xy_mm": [
+          321.48558588100497,
+          712.4999999999828
+        ],
+        "mapped_face_id": 53395,
+        "original_mesh_face_id": 145567,
+        "barycentric": [
+          0.24202695857553225,
+          0.06102655080604776,
+          0.69694649061842
+        ],
+        "source_xyz_utm_m": [
+          325006.8307965242,
+          4166804.0916052815,
+          51.754084038425894
+        ],
+        "source_forward_m": 635.6026048898723,
+        "lateral_q_per_mm": -0.06223665147419711,
+        "crs": "EPSG:32652",
+        "slope_deg": 3.1599212668087264,
+        "ndvi": 0.14890856281451764,
+        "effective_observations": 37.0,
+        "retained_ground": 0.3508064489241904,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 2.8,
+      "parent_mass_id": "autumn-provisional-v01/autumn-saddle-ledge"
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-saddle-ledge/ground",
+      "kind": "soil",
+      "group": "autumn-saddle",
+      "site": {
+        "xy_mm": [
+          321.48558588100497,
+          712.4999999999828
+        ],
+        "mapped_face_id": 53395,
+        "original_mesh_face_id": 145567,
+        "barycentric": [
+          0.24202695857553225,
+          0.06102655080604776,
+          0.69694649061842
+        ],
+        "source_xyz_utm_m": [
+          325006.8307965242,
+          4166804.0916052815,
+          51.754084038425894
+        ],
+        "source_forward_m": 635.6026048898723,
+        "lateral_q_per_mm": -0.06223665147419711,
+        "crs": "EPSG:32652",
+        "slope_deg": 3.1599212668087264,
+        "ndvi": 0.14890856281451764,
+        "effective_observations": 37.0,
+        "retained_ground": 0.3508064489241904,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-foundation/parent",
+      "kind": "rock",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          474.04697931952876,
+          840.2027287992188
+        ],
+        "mapped_face_id": 52701,
+        "original_mesh_face_id": 144585,
+        "barycentric": [
+          0.2811503252950234,
+          0.06072048732380783,
+          0.6581291873811688
+        ],
+        "source_xyz_utm_m": [
+          325486.8216146197,
+          4166865.2561243786,
+          41.17881693899228
+        ],
+        "source_forward_m": 192.0031290151013,
+        "lateral_q_per_mm": 0.0020305486445589375,
+        "crs": "EPSG:32652",
+        "slope_deg": 4.288864821845807,
+        "ndvi": 0.17143118833436488,
+        "effective_observations": 37.0,
+        "retained_ground": 0.31566500006407655,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.0,
+      "parent_mass_id": "autumn-provisional-v01/autumn-right-foundation"
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-foundation/rear",
+      "kind": "rock",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          553.9669793195287,
+          822.5327287992188
+        ],
+        "mapped_face_id": 51281,
+        "original_mesh_face_id": 142588,
+        "barycentric": [
+          0.2170034744395809,
+          0.6333674961991848,
+          0.14962902936123437
+        ],
+        "source_xyz_utm_m": [
+          325474.00102488603,
+          4167000.5111291194,
+          42.85267685469934
+        ],
+        "source_forward_m": 242.22519370292838,
+        "lateral_q_per_mm": 0.015004655005172498,
+        "crs": "EPSG:32652",
+        "slope_deg": 4.117621834804581,
+        "ndvi": 0.09770662633332841,
+        "effective_observations": 37.0,
+        "retained_ground": 0.8141162013635701,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.7,
+      "parent_mass_id": "autumn-provisional-v01/autumn-right-foundation"
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-foundation/back-shoulder",
+      "kind": "rock",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          431.86697931952875,
+          830.9027287992188
+        ],
+        "mapped_face_id": 53409,
+        "original_mesh_face_id": 145581,
+        "barycentric": [
+          0.15588784265874744,
+          0.7475605920539974,
+          0.09655156528725521
+        ],
+        "source_xyz_utm_m": [
+          325447.4268177616,
+          4166822.1034530415,
+          43.062101422660454
+        ],
+        "source_forward_m": 217.7215601742961,
+        "lateral_q_per_mm": -0.01254848559306701,
+        "crs": "EPSG:32652",
+        "slope_deg": 6.866409333383062,
+        "ndvi": 0.16169021889975396,
+        "effective_observations": 35.28816666719502,
+        "retained_ground": 0.46969434713856567,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 4.4,
+      "parent_mass_id": "autumn-provisional-v01/autumn-right-foundation"
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-foundation/front",
+      "kind": "rock",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          536.2069793195287,
+          849.5027287992187
+        ],
+        "mapped_face_id": 118965,
+        "original_mesh_face_id": 360179,
+        "barycentric": [
+          0.48363848940751986,
+          0.151820719996686,
+          0.36454079059579414
+        ],
+        "source_xyz_utm_m": [
+          325534.0637762821,
+          4166929.509154682,
+          46.543035647598145
+        ],
+        "source_forward_m": 164.66695774367685,
+        "lateral_q_per_mm": -0.06456393360076637,
+        "crs": "EPSG:32652",
+        "slope_deg": 7.417014984935895,
+        "ndvi": 0.15435782390364872,
+        "effective_observations": 38.0,
+        "retained_ground": 0.6590179015161636,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": 2.8,
+      "parent_mass_id": "autumn-provisional-v01/autumn-right-foundation"
+    },
+    {
+      "id": "autumn-provisional-v01/autumn-right-foundation/ground",
+      "kind": "soil",
+      "group": "autumn-right-mass",
+      "site": {
+        "xy_mm": [
+          536.2069793195287,
+          849.5027287992187
+        ],
+        "mapped_face_id": 118965,
+        "original_mesh_face_id": 360179,
+        "barycentric": [
+          0.48363848940751986,
+          0.151820719996686,
+          0.36454079059579414
+        ],
+        "source_xyz_utm_m": [
+          325534.0637762821,
+          4166929.509154682,
+          46.543035647598145
+        ],
+        "source_forward_m": 164.66695774367685,
+        "lateral_q_per_mm": -0.06456393360076637,
+        "crs": "EPSG:32652",
+        "slope_deg": 7.417014984935895,
+        "ndvi": 0.15435782390364872,
+        "effective_observations": 38.0,
+        "retained_ground": 0.6590179015161636,
+        "evidence": "mapped source triangle; objects are authored, not observed"
+      },
+      "height_mm": null,
+      "catalog_local_rank": null,
+      "parent_mass_id": null
+    }
+  ],
+  "mid_far": [
+    {
+      "id": "autumn-provisional-v01/middle-left/body-0",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 0,
+      "member_count": 25,
+      "root_xy_mm": [
+        119.5,
+        535.5
+      ],
+      "guide_u": 0.46875,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9974939075270008,
+        0.07075241654187549
+      ],
+      "height_mm": 35.83685118396937,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          119.5,
+          535.5
+        ],
+        "source_forward_m": 1615.7257498533572,
+        "source_xyz_utm_m": [
+          323883.4057548519,
+          4166453.5786833675,
+          163.24146603675007
+        ],
+        "ndvi": 0.7583666879943478,
+        "effective_observations": 34.0,
+        "retained_ground": 0.7419778352870803,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-1",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 1,
+      "member_count": 25,
+      "root_xy_mm": [
+        101.5,
+        501.5
+      ],
+      "guide_u": 0.375,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9995020605145253,
+        -0.031553621459641565
+      ],
+      "height_mm": 24.728836821605334,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          101.5,
+          501.5
+        ],
+        "source_forward_m": 1829.1539013531267,
+        "source_xyz_utm_m": [
+          323644.701582924,
+          4166397.5541990376,
+          220.38869686108194
+        ],
+        "ndvi": 0.7655572611702578,
+        "effective_observations": 32.0,
+        "retained_ground": 0.8221955084354666,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-2",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 2,
+      "member_count": 25,
+      "root_xy_mm": [
+        61.5,
+        513.5
+      ],
+      "guide_u": 0.16666666666666666,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9845973266213092,
+        0.1748373656006377
+      ],
+      "height_mm": 26.84119779455721,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          61.5,
+          513.5
+        ],
+        "source_forward_m": 1739.5306980851742,
+        "source_xyz_utm_m": [
+          323698.0217504959,
+          4166260.4249517,
+          205.0941290187708
+        ],
+        "ndvi": 0.7646709231586754,
+        "effective_observations": 32.68074171469418,
+        "retained_ground": 0.807271160958127,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-3",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 3,
+      "member_count": 25,
+      "root_xy_mm": [
+        121.5,
+        453.5
+      ],
+      "guide_u": 0.4791666666666667,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.952298528381349,
+        -0.3051680075674986
+      ],
+      "height_mm": 32.63766673516667,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          121.5,
+          453.5
+        ],
+        "source_forward_m": 2076.855437863115,
+        "source_xyz_utm_m": [
+          323409.98515858536,
+          4166477.4472478563,
+          323.91369145558923
+        ],
+        "ndvi": 0.7694887546854672,
+        "effective_observations": 33.0,
+        "retained_ground": 0.9621710246469677,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-4",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 4,
+      "member_count": 25,
+      "root_xy_mm": [
+        130.5,
+        513.5
+      ],
+      "guide_u": 0.5260416666666666,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9907658592678336,
+        0.1355839670066904
+      ],
+      "height_mm": 35.34621605381781,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          130.5,
+          513.5
+        ],
+        "source_forward_m": 1757.022292529225,
+        "source_xyz_utm_m": [
+          323748.6769634332,
+          4166496.277972268,
+          197.52236698390638
+        ],
+        "ndvi": 0.7779283763408282,
+        "effective_observations": 32.0,
+        "retained_ground": 0.8066649549136701,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-5",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 5,
+      "member_count": 25,
+      "root_xy_mm": [
+        160.5,
+        477.5
+      ],
+      "guide_u": 0.6822916666666666,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9648542280478903,
+        -0.2627856895230592
+      ],
+      "height_mm": 30.21492185017623,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          160.5,
+          477.5
+        ],
+        "source_forward_m": 2000.236928042034,
+        "source_xyz_utm_m": [
+          323531.7882271173,
+          4166621.211346259,
+          254.03284270683469
+        ],
+        "ndvi": 0.7551178443931569,
+        "effective_observations": 30.199494334794963,
+        "retained_ground": 0.8151818963910034,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-6",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 6,
+      "member_count": 25,
+      "root_xy_mm": [
+        150.5,
+        502.5
+      ],
+      "guide_u": 0.6302083333333334,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9989426983573918,
+        0.045972659249303945
+      ],
+      "height_mm": 24.034814354648866,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          150.5,
+          502.5
+        ],
+        "source_forward_m": 1852.437567090987,
+        "source_xyz_utm_m": [
+          323671.4378752179,
+          4166572.1649359497,
+          206.19648050042758
+        ],
+        "ndvi": 0.7904086489290458,
+        "effective_observations": 32.0,
+        "retained_ground": 0.7804244402018543,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-7",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 7,
+      "member_count": 25,
+      "root_xy_mm": [
+        104.5,
+        527.5
+      ],
+      "guide_u": 0.390625,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9992099242853872,
+        0.039743266216939736
+      ],
+      "height_mm": 30.30797800868899,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          104.5,
+          527.5
+        ],
+        "source_forward_m": 1662.3012286299863,
+        "source_xyz_utm_m": [
+          323820.9186273136,
+          4166405.7550550727,
+          177.25555776138043
+        ],
+        "ndvi": 0.7889856207766313,
+        "effective_observations": 34.0,
+        "retained_ground": 0.7560284878150684,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-8",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 8,
+      "member_count": 25,
+      "root_xy_mm": [
+        72.5,
+        492.5
+      ],
+      "guide_u": 0.22395833333333334,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9939291971490731,
+        -0.11002159358325497
+      ],
+      "height_mm": 29.85924027766316,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          72.5,
+          492.5
+        ],
+        "source_forward_m": 1867.928479056965,
+        "source_xyz_utm_m": [
+          323574.10234124307,
+          4166294.124782094,
+          244.0122097242342
+        ],
+        "ndvi": 0.7508765992916829,
+        "effective_observations": 33.0,
+        "retained_ground": 0.8313436717799223,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-9",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 9,
+      "member_count": 25,
+      "root_xy_mm": [
+        136.5,
+        543.5
+      ],
+      "guide_u": 0.5572916666666666,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9902812000493122,
+        -0.13907963484599103
+      ],
+      "height_mm": 35.651919615147406,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          136.5,
+          543.5
+        ],
+        "source_forward_m": 1547.7012535032052,
+        "source_xyz_utm_m": [
+          323969.1956763071,
+          4166504.682227362,
+          160.35957578837102
+        ],
+        "ndvi": 0.7641168251244248,
+        "effective_observations": 35.968222736194775,
+        "retained_ground": 0.8022473414155019,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-10",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 10,
+      "member_count": 25,
+      "root_xy_mm": [
+        116.5,
+        499.5
+      ],
+      "guide_u": 0.453125,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9742712696883158,
+        0.22537855501337556
+      ],
+      "height_mm": 23.59063301309396,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          116.5,
+          499.5
+        ],
+        "source_forward_m": 1847.4361980441245,
+        "source_xyz_utm_m": [
+          323641.2652379545,
+          4166451.0052629514,
+          221.59547849373664
+        ],
+        "ndvi": 0.7625309504386554,
+        "effective_observations": 32.0,
+        "retained_ground": 0.8244731445037611,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-11",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 11,
+      "member_count": 25,
+      "root_xy_mm": [
+        73.5,
+        537.5
+      ],
+      "guide_u": 0.22916666666666666,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9999338179970894,
+        0.0115047653502169
+      ],
+      "height_mm": 31.857320864529086,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          73.5,
+          537.5
+        ],
+        "source_forward_m": 1597.3526947449159,
+        "source_xyz_utm_m": [
+          323859.2204410558,
+          4166305.2206036346,
+          163.03151475484577
+        ],
+        "ndvi": 0.7714833077705776,
+        "effective_observations": 33.0,
+        "retained_ground": 0.7164908163475551,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-12",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 12,
+      "member_count": 25,
+      "root_xy_mm": [
+        155.5,
+        529.5
+      ],
+      "guide_u": 0.65625,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9892449739288788,
+        0.14626818367796968
+      ],
+      "height_mm": 21.65691798828406,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          155.5,
+          529.5
+        ],
+        "source_forward_m": 1655.238447250612,
+        "source_xyz_utm_m": [
+          323877.2492397609,
+          4166573.4498591507,
+          171.58573754162848
+        ],
+        "ndvi": 0.7603041550584775,
+        "effective_observations": 33.0,
+        "retained_ground": 0.7993880166177182,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-13",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 13,
+      "member_count": 25,
+      "root_xy_mm": [
+        183.5,
+        506.5
+      ],
+      "guide_u": 0.8020833333333334,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9873257802870568,
+        -0.15870665890426403
+      ],
+      "height_mm": 36.38856307854344,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          183.5,
+          506.5
+        ],
+        "source_forward_m": 1817.0615853601912,
+        "source_xyz_utm_m": [
+          323741.3483171826,
+          4166685.359455109,
+          203.2438173027773
+        ],
+        "ndvi": 0.7682465520173147,
+        "effective_observations": 31.0,
+        "retained_ground": 0.8298315507879214,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-14",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 14,
+      "member_count": 25,
+      "root_xy_mm": [
+        91.5,
+        539.5
+      ],
+      "guide_u": 0.3229166666666667,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9994939022670267,
+        -0.031810993870538345
+      ],
+      "height_mm": 33.469512057491684,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          91.5,
+          539.5
+        ],
+        "source_forward_m": 1586.7915762412583,
+        "source_xyz_utm_m": [
+          323887.11463564046,
+          4166363.062695939,
+          159.18281177875843
+        ],
+        "ndvi": 0.7859299857836228,
+        "effective_observations": 34.0,
+        "retained_ground": 0.7193703656063519,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-15",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 15,
+      "member_count": 25,
+      "root_xy_mm": [
+        164.5,
+        541.5
+      ],
+      "guide_u": 0.703125,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9933014444956247,
+        0.11555189467466603
+      ],
+      "height_mm": 32.00559499792607,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          164.5,
+          541.5
+        ],
+        "source_forward_m": 1530.1415408046278,
+        "source_xyz_utm_m": [
+          324012.7246371345,
+          4166591.095653886,
+          177.90659075258878
+        ],
+        "ndvi": 0.7534274634376734,
+        "effective_observations": 34.0,
+        "retained_ground": 0.8424290542336207,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-16",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 16,
+      "member_count": 25,
+      "root_xy_mm": [
+        81.5,
+        503.5
+      ],
+      "guide_u": 0.2708333333333333,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9994713800207822,
+        -0.03251092922930824
+      ],
+      "height_mm": 26.514574716537027,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          81.5,
+          503.5
+        ],
+        "source_forward_m": 1815.6057213297163,
+        "source_xyz_utm_m": [
+          323638.27580989816,
+          4166327.2207385423,
+          217.18343972733317
+        ],
+        "ndvi": 0.7856047224443924,
+        "effective_observations": 32.0,
+        "retained_ground": 0.7991174154134565,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-17",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 17,
+      "member_count": 25,
+      "root_xy_mm": [
+        207.5,
+        545.5
+      ],
+      "guide_u": 0.9270833333333334,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9890162417208183,
+        0.14780687944892143
+      ],
+      "height_mm": 32.80420358023197,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          207.5,
+          545.5
+        ],
+        "source_forward_m": 1535.6643619010706,
+        "source_xyz_utm_m": [
+          324046.4098971769,
+          4166726.143560607,
+          157.38824416742105
+        ],
+        "ndvi": 0.7453747394853043,
+        "effective_observations": 33.87513331102424,
+        "retained_ground": 0.8213686508178508,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-18",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 18,
+      "member_count": 25,
+      "root_xy_mm": [
+        133.5,
+        478.5
+      ],
+      "guide_u": 0.5416666666666666,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9941624794078632,
+        0.10789330163457812
+      ],
+      "height_mm": 21.028791633788472,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          133.5,
+          478.5
+        ],
+        "source_forward_m": 1982.0172827355527,
+        "source_xyz_utm_m": [
+          323520.82672009064,
+          4166518.6820413102,
+          257.3386312709722
+        ],
+        "ndvi": 0.7725943006760689,
+        "effective_observations": 32.0,
+        "retained_ground": 0.7996664329078774,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-19",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 19,
+      "member_count": 25,
+      "root_xy_mm": [
+        172.5,
+        492.5
+      ],
+      "guide_u": 0.7447916666666666,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9945573661267528,
+        -0.10419042894150975
+      ],
+      "height_mm": 22.50736433417679,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          172.5,
+          492.5
+        ],
+        "source_forward_m": 1904.1649015344724,
+        "source_xyz_utm_m": [
+          323642.03736782796,
+          4166656.015991318,
+          228.76784590999057
+        ],
+        "ndvi": 0.791167140618267,
+        "effective_observations": 32.0,
+        "retained_ground": 0.8354567053627419,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-20",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 20,
+      "member_count": 25,
+      "root_xy_mm": [
+        50.5,
+        545.5
+      ],
+      "guide_u": 0.109375,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9999860737315637,
+        -0.0052775318977561015
+      ],
+      "height_mm": 21.78689889544643,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          50.5,
+          545.5
+        ],
+        "source_forward_m": 1537.7383772218661,
+        "source_xyz_utm_m": [
+          323900.776448527,
+          4166234.857906068,
+          156.3686314420171
+        ],
+        "ndvi": 0.7882858369163636,
+        "effective_observations": 33.0,
+        "retained_ground": 0.7175905754933698,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-21",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 21,
+      "member_count": 25,
+      "root_xy_mm": [
+        141.5,
+        529.5
+      ],
+      "guide_u": 0.5833333333333334,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9982367716150883,
+        -0.05935779473233722
+      ],
+      "height_mm": 29.77972035465864,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          141.5,
+          529.5
+        ],
+        "source_forward_m": 1646.9117050001298,
+        "source_xyz_utm_m": [
+          323872.3183006844,
+          4166526.8613661216,
+          175.40906013104643
+        ],
+        "ndvi": 0.7789640323205576,
+        "effective_observations": 33.0,
+        "retained_ground": 0.8019606791632351,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-22",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 22,
+      "member_count": 25,
+      "root_xy_mm": [
+        75.5,
+        521.5
+      ],
+      "guide_u": 0.23958333333333334,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9942824548888796,
+        0.10678202049101475
+      ],
+      "height_mm": 27.245408268788182,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          75.5,
+          521.5
+        ],
+        "source_forward_m": 1709.8966183169384,
+        "source_xyz_utm_m": [
+          323743.03752683435,
+          4166308.8570321407,
+          182.51674830443764
+        ],
+        "ndvi": 0.7873846142673264,
+        "effective_observations": 33.0,
+        "retained_ground": 0.7323183633957812,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-23",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 23,
+      "member_count": 25,
+      "root_xy_mm": [
+        183.5,
+        526.5
+      ],
+      "guide_u": 0.8020833333333334,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9981717354609323,
+        0.06044159599903457
+      ],
+      "height_mm": 19.701545633242542,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          183.5,
+          526.5
+        ],
+        "source_forward_m": 1683.0020278751492,
+        "source_xyz_utm_m": [
+          323876.2284239454,
+          4166668.9946080185,
+          172.31674075333308
+        ],
+        "ndvi": 0.7611598980115987,
+        "effective_observations": 33.0,
+        "retained_ground": 0.8119446434565084,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-left/body-24",
+      "stand_id": "autumn-provisional-v01/middle-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 24,
+      "member_count": 25,
+      "root_xy_mm": [
+        98.5,
+        477.5
+      ],
+      "guide_u": 0.359375,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-left",
+      "tangent_xy": [
+        0.9532495326722511,
+        0.3021842624296222
+      ],
+      "height_mm": 30.10312798857708,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          98.5,
+          477.5
+        ],
+        "source_forward_m": 1951.7134674581794,
+        "source_xyz_utm_m": [
+          323514.1592605035,
+          4166387.749063318,
+          274.5314975343967
+        ],
+        "ndvi": 0.7742760411241182,
+        "effective_observations": 33.0,
+        "retained_ground": 0.8680871695892433,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-0",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 0,
+      "member_count": 22,
+      "root_xy_mm": [
+        467.5,
+        538.5
+      ],
+      "guide_u": 0.6037735849056604,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9991336579213617,
+        -0.04161650644491293
+      ],
+      "height_mm": 27.195269413301794,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          467.5,
+          538.5
+        ],
+        "source_forward_m": 1754.9434302896873,
+        "source_xyz_utm_m": [
+          324088.00562157156,
+          4167650.8056902275,
+          87.31174443194485
+        ],
+        "ndvi": 0.7964514971138928,
+        "effective_observations": 37.0,
+        "retained_ground": 0.6771180355037252,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-1",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 1,
+      "member_count": 22,
+      "root_xy_mm": [
+        422.5,
+        491.5
+      ],
+      "guide_u": 0.3915094339622642,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9999254945574692,
+        0.012206774102962076
+      ],
+      "height_mm": 21.890405667857745,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          422.5,
+          491.5
+        ],
+        "source_forward_m": 2090.246555932251,
+        "source_xyz_utm_m": [
+          323737.44265580183,
+          4167646.5108749946,
+          158.47544909710675
+        ],
+        "ndvi": 0.7708324133257884,
+        "effective_observations": 34.0,
+        "retained_ground": 0.6525322979200971,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-2",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 2,
+      "member_count": 22,
+      "root_xy_mm": [
+        485.5,
+        566.5
+      ],
+      "guide_u": 0.6886792452830188,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9977211572784755,
+        0.06747215958378161
+      ],
+      "height_mm": 26.735788643070237,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          485.5,
+          566.5
+        ],
+        "source_forward_m": 1549.5076680097718,
+        "source_xyz_utm_m": [
+          324288.0980839258,
+          4167603.1253542984,
+          57.24110582816421
+        ],
+        "ndvi": 0.5586933948875277,
+        "effective_observations": 37.62507085967809,
+        "retained_ground": 0.6479959416195885,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-3",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 3,
+      "member_count": 22,
+      "root_xy_mm": [
+        441.5,
+        558.5
+      ],
+      "guide_u": 0.4811320754716981,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9978252969536113,
+        0.06591416205518648
+      ],
+      "height_mm": 26.536867369697607,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          441.5,
+          558.5
+        ],
+        "source_forward_m": 1597.8760149977518,
+        "source_xyz_utm_m": [
+          324203.94070113543,
+          4167487.4931688686,
+          69.46018684724343
+        ],
+        "ndvi": 0.3103351195740661,
+        "effective_observations": 36.0,
+        "retained_ground": 0.4151558626139676,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-4",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 4,
+      "member_count": 22,
+      "root_xy_mm": [
+        393.5,
+        486.5
+      ],
+      "guide_u": 0.25471698113207547,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9797155945000013,
+        -0.20039299861399576
+      ],
+      "height_mm": 31.26880085098033,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          393.5,
+          486.5
+        ],
+        "source_forward_m": 2116.9851163877024,
+        "source_xyz_utm_m": [
+          323679.8924417127,
+          4167544.828733372,
+          169.38211460716306
+        ],
+        "ndvi": 0.7621464920021833,
+        "effective_observations": 35.0,
+        "retained_ground": 0.5236190927560543,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-5",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 5,
+      "member_count": 22,
+      "root_xy_mm": [
+        481.5,
+        524.5
+      ],
+      "guide_u": 0.6698113207547169,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.988518709558829,
+        -0.1510985137324234
+      ],
+      "height_mm": 26.090254335045678,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          481.5,
+          524.5
+        ],
+        "source_forward_m": 1869.5421873805415,
+        "source_xyz_utm_m": [
+          324000.2772356644,
+          4167759.2074737432,
+          101.65377135644204
+        ],
+        "ndvi": 0.7804938941479239,
+        "effective_observations": 36.42074737432415,
+        "retained_ground": 0.7747651549063986,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-6",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 6,
+      "member_count": 22,
+      "root_xy_mm": [
+        423.5,
+        561.5
+      ],
+      "guide_u": 0.39622641509433965,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9966458279478361,
+        0.08183577233809468
+      ],
+      "height_mm": 31.573719067655254,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          423.5,
+          561.5
+        ],
+        "source_forward_m": 1540.7468075608535,
+        "source_xyz_utm_m": [
+          324239.0826705382,
+          4167404.032315984,
+          83.78237675440795
+        ],
+        "ndvi": 0.612613268926003,
+        "effective_observations": 36.0,
+        "retained_ground": 0.3324689772295562,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-7",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 7,
+      "member_count": 22,
+      "root_xy_mm": [
+        431.5,
+        533.5
+      ],
+      "guide_u": 0.4339622641509434,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9999052834516587,
+        -0.013763143734555998
+      ],
+      "height_mm": 33.41154122384684,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          431.5,
+          533.5
+        ],
+        "source_forward_m": 1811.601250088926,
+        "source_xyz_utm_m": [
+          324000.5606903833,
+          4167553.486954092,
+          85.55726791942456
+        ],
+        "ndvi": 0.6369103298733322,
+        "effective_observations": 37.0,
+        "retained_ground": 0.4223027555963597,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-8",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 8,
+      "member_count": 22,
+      "root_xy_mm": [
+        502.5,
+        563.5
+      ],
+      "guide_u": 0.7688679245283019,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9899740664986993,
+        -0.14124923950248008
+      ],
+      "height_mm": 30.29319521063173,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          502.5,
+          563.5
+        ],
+        "source_forward_m": 1561.4723964958457,
+        "source_xyz_utm_m": [
+          324293.1918063376,
+          4167663.24894676,
+          64.74352686655313
+        ],
+        "ndvi": 0.39559314597641515,
+        "effective_observations": 37.0,
+        "retained_ground": 0.7346967854647568,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-9",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 9,
+      "member_count": 22,
+      "root_xy_mm": [
+        408.5,
+        551.5
+      ],
+      "guide_u": 0.32547169811320753,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9975626844129856,
+        -0.06977600351666802
+      ],
+      "height_mm": 22.85949612433515,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          408.5,
+          551.5
+        ],
+        "source_forward_m": 1610.2603485468107,
+        "source_xyz_utm_m": [
+          324161.6315860179,
+          4167386.7947998163,
+          94.69567454745503
+        ],
+        "ndvi": 0.7898174151458877,
+        "effective_observations": 34.0,
+        "retained_ground": 0.28146397422272623,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-10",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 10,
+      "member_count": 22,
+      "root_xy_mm": [
+        468.5,
+        494.5
+      ],
+      "guide_u": 0.6084905660377359,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9947075404011188,
+        0.10274682023866648
+      ],
+      "height_mm": 23.76148799637393,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          468.5,
+          494.5
+        ],
+        "source_forward_m": 2106.5272046977007,
+        "source_xyz_utm_m": [
+          323775.07146444864,
+          4167833.4385556127,
+          139.8810943420254
+        ],
+        "ndvi": 0.7507658412240196,
+        "effective_observations": 34.0,
+        "retained_ground": 0.7975689576739078,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-11",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 11,
+      "member_count": 22,
+      "root_xy_mm": [
+        476.5,
+        550.5
+      ],
+      "guide_u": 0.6462264150943396,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9735018494360718,
+        -0.2286791401605048
+      ],
+      "height_mm": 36.336228419553606,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          476.5,
+          550.5
+        ],
+        "source_forward_m": 1665.4944925373939,
+        "source_xyz_utm_m": [
+          324176.612003656,
+          4167635.126648272,
+          73.57770813237082
+        ],
+        "ndvi": 0.763266183208688,
+        "effective_observations": 38.0,
+        "retained_ground": 0.6623571990334555,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-12",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 12,
+      "member_count": 22,
+      "root_xy_mm": [
+        397.5,
+        513.5
+      ],
+      "guide_u": 0.27358490566037735,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9826373748171315,
+        0.1855364913231256
+      ],
+      "height_mm": 26.74448027975801,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          397.5,
+          513.5
+        ],
+        "source_forward_m": 1911.537460733512,
+        "source_xyz_utm_m": [
+          323873.72118193336,
+          4167475.6574674672,
+          133.2129225126166
+        ],
+        "ndvi": 0.7977584894713546,
+        "effective_observations": 36.0,
+        "retained_ground": 0.3816089017209755,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-13",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 13,
+      "member_count": 22,
+      "root_xy_mm": [
+        457.5,
+        551.5
+      ],
+      "guide_u": 0.5566037735849056,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9999968164193622,
+        0.002523321450067685
+      ],
+      "height_mm": 32.56844320518944,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          457.5,
+          551.5
+        ],
+        "source_forward_m": 1673.7971589727595,
+        "source_xyz_utm_m": [
+          324150.8242856312,
+          4167576.4411274353,
+          65.36498404369169
+        ],
+        "ndvi": 0.6453199282121407,
+        "effective_observations": 39.0,
+        "retained_ground": 0.5215035183665081,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-14",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 14,
+      "member_count": 22,
+      "root_xy_mm": [
+        512.5,
+        510.5
+      ],
+      "guide_u": 0.8160377358490566,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9943415472621565,
+        -0.10623035059859567
+      ],
+      "height_mm": 37.365682838394534,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          512.5,
+          510.5
+        ],
+        "source_forward_m": 2034.4245297439518,
+        "source_xyz_utm_m": [
+          323888.35514772974,
+          4167964.139429104,
+          98.67403485406814
+        ],
+        "ndvi": 0.5850405183828649,
+        "effective_observations": 35.0,
+        "retained_ground": 0.7559805895320485,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-15",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 15,
+      "member_count": 22,
+      "root_xy_mm": [
+        426.5,
+        515.5
+      ],
+      "guide_u": 0.41037735849056606,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9908188702992409,
+        0.13519602900579591
+      ],
+      "height_mm": 37.81791405276967,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          426.5,
+          515.5
+        ],
+        "source_forward_m": 1936.929189716304,
+        "source_xyz_utm_m": [
+          323881.43384322984,
+          4167592.64671701,
+          114.28942878071243
+        ],
+        "ndvi": 0.7947383130282885,
+        "effective_observations": 35.356615677016066,
+        "retained_ground": 0.5229969670387414,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-16",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 16,
+      "member_count": 22,
+      "root_xy_mm": [
+        445.5,
+        536.5
+      ],
+      "guide_u": 0.5,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9999828988420371,
+        -0.0058482496078853296
+      ],
+      "height_mm": 22.54302002670039,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          445.5,
+          536.5
+        ],
+        "source_forward_m": 1785.5713866302256,
+        "source_xyz_utm_m": [
+          324038.3726405182,
+          4167590.108610516,
+          83.13849388819581
+        ],
+        "ndvi": 0.717001039256572,
+        "effective_observations": 38.33726405181801,
+        "retained_ground": 0.5069544840277043,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-17",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 17,
+      "member_count": 22,
+      "root_xy_mm": [
+        523.5,
+        552.5
+      ],
+      "guide_u": 0.8679245283018868,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9874046947909787,
+        0.15821494463145477
+      ],
+      "height_mm": 26.86932893869734,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          523.5,
+          552.5
+        ],
+        "source_forward_m": 1655.3636499879353,
+        "source_xyz_utm_m": [
+          324230.8006713998,
+          4167784.542302856,
+          69.30452041795851
+        ],
+        "ndvi": 0.4655308973658827,
+        "effective_observations": 36.0,
+        "retained_ground": 0.774107328680733,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-18",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 18,
+      "member_count": 22,
+      "root_xy_mm": [
+        453.5,
+        524.5
+      ],
+      "guide_u": 0.5377358490566038,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9943940040607918,
+        -0.10573818935439601
+      ],
+      "height_mm": 25.505935613648184,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          453.5,
+          524.5
+        ],
+        "source_forward_m": 1873.8585187066549,
+        "source_xyz_utm_m": [
+          323967.10736272385,
+          4167661.023319524,
+          99.89900947278079
+        ],
+        "ndvi": 0.7796715152033414,
+        "effective_observations": 36.0,
+        "retained_ground": 0.6379991256815768,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-19",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 19,
+      "member_count": 22,
+      "root_xy_mm": [
+        448.5,
+        492.5
+      ],
+      "guide_u": 0.5141509433962265,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9977203597710944,
+        0.06748395141245235
+      ],
+      "height_mm": 34.11658415010223,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          448.5,
+          492.5
+        ],
+        "source_forward_m": 2117.967625231744,
+        "source_xyz_utm_m": [
+          323741.95293849456,
+          4167760.843796528,
+          144.04485731446783
+        ],
+        "ndvi": 0.8078330163235216,
+        "effective_observations": 35.0,
+        "retained_ground": 0.7516126192980522,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-20",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 20,
+      "member_count": 22,
+      "root_xy_mm": [
+        542.5,
+        549.5
+      ],
+      "guide_u": 0.9575471698113207,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9656731244115205,
+        -0.25976030641591863
+      ],
+      "height_mm": 21.57936385506297,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          542.5,
+          549.5
+        ],
+        "source_forward_m": 1676.5459917369244,
+        "source_xyz_utm_m": [
+          324230.76730772585,
+          4167859.9912519315,
+          72.99645361818395
+        ],
+        "ndvi": 0.7531868884411352,
+        "effective_observations": 38.0,
+        "retained_ground": 0.8134916791474649,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/middle-right/body-21",
+      "stand_id": "autumn-provisional-v01/middle-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 21,
+      "member_count": 22,
+      "root_xy_mm": [
+        512.5,
+        530.5
+      ],
+      "guide_u": 0.8160377358490566,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/middle-right",
+      "tangent_xy": [
+        0.9647847078629892,
+        0.26304080952150066
+      ],
+      "height_mm": 20.68926326243572,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          512.5,
+          530.5
+        ],
+        "source_forward_m": 1816.846086009794,
+        "source_xyz_utm_m": [
+          324078.8533223058,
+          4167840.289667046,
+          96.70014500425306
+        ],
+        "ndvi": 0.7674700902535997,
+        "effective_observations": 37.0,
+        "retained_ground": 0.8267458846967358,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-0",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 0,
+      "member_count": 21,
+      "root_xy_mm": [
+        143.5,
+        275.5
+      ],
+      "guide_u": 0.4576923076923077,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9995906820771321,
+        -0.028608885063455252
+      ],
+      "height_mm": 10.92346851699665,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          143.5,
+          275.5
+        ],
+        "source_forward_m": 3822.541261400349,
+        "source_xyz_utm_m": [
+          321650.61803887825,
+          4166680.285504923,
+          481.9797853472856
+        ],
+        "ndvi": 0.6262685870472415,
+        "effective_observations": 32.0,
+        "retained_ground": 0.7472696768238918,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-1",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 1,
+      "member_count": 21,
+      "root_xy_mm": [
+        148.5,
+        315.5
+      ],
+      "guide_u": 0.47692307692307695,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9201464524620011,
+        -0.3915743939810089
+      ],
+      "height_mm": 7.8727129744764355,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          148.5,
+          315.5
+        ],
+        "source_forward_m": 3484.0818212414792,
+        "source_xyz_utm_m": [
+          322004.9887664454,
+          4166686.3595843017,
+          403.29553892106344
+        ],
+        "ndvi": 0.6256631019775084,
+        "effective_observations": 32.00112335545714,
+        "retained_ground": 0.5082457691304245,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-2",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 2,
+      "member_count": 21,
+      "root_xy_mm": [
+        65.5,
+        332.5
+      ],
+      "guide_u": 0.1576923076923077,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9960639050366239,
+        0.08863801150291936
+      ],
+      "height_mm": 7.14476897395604,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          65.5,
+          332.5
+        ],
+        "source_forward_m": 3389.9009543420043,
+        "source_xyz_utm_m": [
+          321964.10644687625,
+          4166210.399753915,
+          365.1836596387609
+        ],
+        "ndvi": 0.7039891497739443,
+        "effective_observations": 34.08935531237512,
+        "retained_ground": 0.6284076475557556,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-3",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 3,
+      "member_count": 21,
+      "root_xy_mm": [
+        102.5,
+        332.5
+      ],
+      "guide_u": 0.3,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9581087046363638,
+        -0.286404801112043
+      ],
+      "height_mm": 9.207677549453948,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          102.5,
+          332.5
+        ],
+        "source_forward_m": 3293.687696124058,
+        "source_xyz_utm_m": [
+          322125.06605149433,
+          4166418.3455087813,
+          377.4947516187816
+        ],
+        "ndvi": 0.7596166314192396,
+        "effective_observations": 33.0,
+        "retained_ground": 0.7963094009385093,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-4",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 4,
+      "member_count": 21,
+      "root_xy_mm": [
+        237.5,
+        279.5
+      ],
+      "guide_u": 0.8192307692307692,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.6516383288601465,
+        -0.7585298203501004
+      ],
+      "height_mm": 11.175128586513512,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          237.5,
+          279.5
+        ],
+        "source_forward_m": 3225.968384981832,
+        "source_xyz_utm_m": [
+          322409.32177404646,
+          4167150.132747585,
+          541.4376277749216
+        ],
+        "ndvi": 0.6119854133216704,
+        "effective_observations": 34.276373589855424,
+        "retained_ground": 0.930012751035225,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-5",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 5,
+      "member_count": 21,
+      "root_xy_mm": [
+        129.5,
+        321.5
+      ],
+      "guide_u": 0.40384615384615385,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.6530796596694908,
+        0.7572892169613814
+      ],
+      "height_mm": 9.633693252970811,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          129.5,
+          321.5
+        ],
+        "source_forward_m": 3425.99160508065,
+        "source_xyz_utm_m": [
+          322032.62114820455,
+          4166573.7559024096,
+          392.8507539863765
+        ],
+        "ndvi": 0.5913766630424044,
+        "effective_observations": 32.0,
+        "retained_ground": 0.6172586758117127,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-6",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 6,
+      "member_count": 21,
+      "root_xy_mm": [
+        165.5,
+        348.5
+      ],
+      "guide_u": 0.5423076923076923,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9999681345621086,
+        -0.007983098419579065
+      ],
+      "height_mm": 11.81077486133012,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          165.5,
+          348.5
+        ],
+        "source_forward_m": 3087.761753573671,
+        "source_xyz_utm_m": [
+          322435.25710192346,
+          4166745.920822176,
+          360.81824805761676
+        ],
+        "ndvi": 0.7143591731990652,
+        "effective_observations": 33.0,
+        "retained_ground": 0.7174902297110612,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-7",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 7,
+      "member_count": 21,
+      "root_xy_mm": [
+        135.5,
+        359.5
+      ],
+      "guide_u": 0.4269230769230769,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9670635353262073,
+        0.2545351029669143
+      ],
+      "height_mm": 6.2467675426780715,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          135.5,
+          359.5
+        ],
+        "source_forward_m": 3170.2983555298183,
+        "source_xyz_utm_m": [
+          322304.75424164126,
+          4166593.47797767,
+          315.20999135400194
+        ],
+        "ndvi": 0.7287125682175292,
+        "effective_observations": 32.97542416412614,
+        "retained_ground": 0.6580050851946576,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-8",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 8,
+      "member_count": 21,
+      "root_xy_mm": [
+        228.5,
+        300.5
+      ],
+      "guide_u": 0.7846153846153846,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9645846567662251,
+        0.2637734632808683
+      ],
+      "height_mm": 9.407306186722982,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          228.5,
+          300.5
+        ],
+        "source_forward_m": 3137.260625799747,
+        "source_xyz_utm_m": [
+          322482.7335249284,
+          4167085.067591097,
+          493.09088709009154
+        ],
+        "ndvi": 0.6156335532999544,
+        "effective_observations": 35.0,
+        "retained_ground": 0.9162159941284365,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-9",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 9,
+      "member_count": 21,
+      "root_xy_mm": [
+        205.5,
+        287.5
+      ],
+      "guide_u": 0.6961538461538461,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.6656435126753021,
+        -0.7462698667595289
+      ],
+      "height_mm": 7.676263952057255,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          205.5,
+          287.5
+        ],
+        "source_forward_m": 3585.4708571577166,
+        "source_xyz_utm_m": [
+          322000.0278417651,
+          4167031.0545390956,
+          473.16765233945057
+        ],
+        "ndvi": 0.7766778447312235,
+        "effective_observations": 33.0,
+        "retained_ground": 0.857557518207222,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-10",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 10,
+      "member_count": 21,
+      "root_xy_mm": [
+        213.5,
+        319.5
+      ],
+      "guide_u": 0.7269230769230769,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.7349332215086504,
+        -0.6781394841202781
+      ],
+      "height_mm": 11.915125042923064,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          213.5,
+          319.5
+        ],
+        "source_forward_m": 3055.5765245459406,
+        "source_xyz_utm_m": [
+          322540.7028061027,
+          4166992.178979521,
+          452.4306186534828
+        ],
+        "ndvi": 0.7277927492302283,
+        "effective_observations": 34.0,
+        "retained_ground": 0.8892046378093758,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-11",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 11,
+      "member_count": 21,
+      "root_xy_mm": [
+        91.5,
+        364.5
+      ],
+      "guide_u": 0.25769230769230766,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.8251975779356518,
+        -0.564844188576933
+      ],
+      "height_mm": 11.543503725323085,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          91.5,
+          364.5
+        ],
+        "source_forward_m": 3037.3904964253866,
+        "source_xyz_utm_m": [
+          322374.56866922136,
+          4166358.4208940202,
+          322.9154111445
+        ],
+        "ndvi": 0.7665392189482676,
+        "effective_observations": 34.0,
+        "retained_ground": 0.8086257745901569,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-12",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 12,
+      "member_count": 21,
+      "root_xy_mm": [
+        118.5,
+        280.5
+      ],
+      "guide_u": 0.36153846153846153,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.7084686347659546,
+        0.7057422996766345
+      ],
+      "height_mm": 10.494266792976799,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          118.5,
+          280.5
+        ],
+        "source_forward_m": 3679.6238633752328,
+        "source_xyz_utm_m": [
+          321752.5651852442,
+          4166519.5518828807,
+          482.9141212832704
+        ],
+        "ndvi": 0.6572919395882519,
+        "effective_observations": 31.0,
+        "retained_ground": 0.9061658336779063,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-13",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 13,
+      "member_count": 21,
+      "root_xy_mm": [
+        176.5,
+        294.5
+      ],
+      "guide_u": 0.5846153846153846,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.8376905041496538,
+        -0.5461452364138123
+      ],
+      "height_mm": 9.94719641189582,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          176.5,
+          294.5
+        ],
+        "source_forward_m": 3600.629247997517,
+        "source_xyz_utm_m": [
+          321934.63649134326,
+          4166861.2128201565,
+          450.94879596630744
+        ],
+        "ndvi": 0.685322397792943,
+        "effective_observations": 34.0,
+        "retained_ground": 0.6244876876987008,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-14",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 14,
+      "member_count": 21,
+      "root_xy_mm": [
+        224.5,
+        280.5
+      ],
+      "guide_u": 0.7692307692307693,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9233373472341299,
+        -0.383989769658828
+      ],
+      "height_mm": 6.9008003729019505,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          224.5,
+          280.5
+        ],
+        "source_forward_m": 3562.9903954474353,
+        "source_xyz_utm_m": [
+          322055.1036522365,
+          4167139.4535232764,
+          496.2560872738229
+        ],
+        "ndvi": 0.699846397066324,
+        "effective_observations": 33.0,
+        "retained_ground": 0.9706869908669845,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-15",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 15,
+      "member_count": 21,
+      "root_xy_mm": [
+        90.5,
+        340.5
+      ],
+      "guide_u": 0.25384615384615383,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.7071080039609285,
+        -0.707105558410052
+      ],
+      "height_mm": 10.330549021227394,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          90.5,
+          340.5
+        ],
+        "source_forward_m": 3298.8420040854007,
+        "source_xyz_utm_m": [
+          322100.3395417386,
+          4166352.062768352,
+          353.4321042345608
+        ],
+        "ndvi": 0.8127611900596969,
+        "effective_observations": 33.0,
+        "retained_ground": 0.6849509229878097,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-16",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 16,
+      "member_count": 21,
+      "root_xy_mm": [
+        189.5,
+        309.5
+      ],
+      "guide_u": 0.6346153846153846,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9875819140241885,
+        0.1571049429277144
+      ],
+      "height_mm": 6.1269770280368725,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          189.5,
+          309.5
+        ],
+        "source_forward_m": 3498.3436580007146,
+        "source_xyz_utm_m": [
+          322059.8483936733,
+          4166925.0881114826,
+          419.12406881037674
+        ],
+        "ndvi": 0.7109132317586315,
+        "effective_observations": 35.0,
+        "retained_ground": 0.592051030127107,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-17",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 17,
+      "member_count": 21,
+      "root_xy_mm": [
+        86.5,
+        308.5
+      ],
+      "guide_u": 0.23846153846153847,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9387503493164747,
+        -0.34459800007863756
+      ],
+      "height_mm": 11.734014741846536,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          86.5,
+          308.5
+        ],
+        "source_forward_m": 3532.3553914369045,
+        "source_xyz_utm_m": [
+          321849.94029697747,
+          4166327.641037683,
+          417.99132773335145
+        ],
+        "ndvi": 0.7338575314020994,
+        "effective_observations": 32.0,
+        "retained_ground": 0.8018961226582862,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-18",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 18,
+      "member_count": 21,
+      "root_xy_mm": [
+        282.5,
+        309.5
+      ],
+      "guide_u": 0.9923076923076923,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9839772004814178,
+        0.17829433230686764
+      ],
+      "height_mm": 11.27278110583359,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          282.5,
+          309.5
+        ],
+        "source_forward_m": 3197.7123893752487,
+        "source_xyz_utm_m": [
+          322507.95383021317,
+          4167387.075970373,
+          457.54257412388915
+        ],
+        "ndvi": 0.7015197979587825,
+        "effective_observations": 32.0,
+        "retained_ground": 0.5484835163904512,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-19",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 19,
+      "member_count": 21,
+      "root_xy_mm": [
+        77.5,
+        351.5
+      ],
+      "guide_u": 0.20384615384615384,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.998660049429319,
+        -0.05175041713677609
+      ],
+      "height_mm": 6.25349826762584,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          77.5,
+          351.5
+        ],
+        "source_forward_m": 3259.777768537311,
+        "source_xyz_utm_m": [
+          322120.3109736845,
+          4166281.097002767,
+          326.39899689111604
+        ],
+        "ndvi": 0.7867468696708243,
+        "effective_observations": 33.183012567348236,
+        "retained_ground": 0.6325395399187079,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-left/body-20",
+      "stand_id": "autumn-provisional-v01/far-left",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 20,
+      "member_count": 21,
+      "root_xy_mm": [
+        122.5,
+        331.5
+      ],
+      "guide_u": 0.3769230769230769,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-left",
+      "tangent_xy": [
+        0.9941867399770599,
+        0.10766952239973059
+      ],
+      "height_mm": 6.24989287674352,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          122.5,
+          331.5
+        ],
+        "source_forward_m": 3290.2447771840643,
+        "source_xyz_utm_m": [
+          322160.8390130729,
+          4166528.5589699135,
+          380.8705151813343
+        ],
+        "ndvi": 0.7109037741371178,
+        "effective_observations": 32.0,
+        "retained_ground": 0.7717270413574853,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-0",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 0,
+      "member_count": 17,
+      "root_xy_mm": [
+        429.5,
+        271.5
+      ],
+      "guide_u": 0.464,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.8320622641048099,
+        -0.5546822411550398
+      ],
+      "height_mm": 6.166467846410496,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          429.5,
+          271.5
+        ],
+        "source_forward_m": 3632.5360579902676,
+        "source_xyz_utm_m": [
+          322344.24740485474,
+          4168377.6401873073,
+          514.5435911108884
+        ],
+        "ndvi": 0.7175382654893152,
+        "effective_observations": 34.94461040697455,
+        "retained_ground": 0.9999521997660418,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-1",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 1,
+      "member_count": 17,
+      "root_xy_mm": [
+        489.5,
+        304.5
+      ],
+      "guide_u": 0.704,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.8432811546078662,
+        -0.5374726916627711
+      ],
+      "height_mm": 9.432741791700668,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          489.5,
+          304.5
+        ],
+        "source_forward_m": 3551.93189476905,
+        "source_xyz_utm_m": [
+          322520.3290730894,
+          4168693.049456045,
+          427.3765046520613
+        ],
+        "ndvi": 0.7045743203960224,
+        "effective_observations": 34.0,
+        "retained_ground": 0.8926853419482808,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-2",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 2,
+      "member_count": 17,
+      "root_xy_mm": [
+        366.5,
+        332.5
+      ],
+      "guide_u": 0.212,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9763398423798489,
+        -0.21624179101573238
+      ],
+      "height_mm": 10.607353991458444,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          366.5,
+          332.5
+        ],
+        "source_forward_m": 3122.475390612609,
+        "source_xyz_utm_m": [
+          322710.37072184065,
+          4167811.8095688056,
+          401.7979123362172
+        ],
+        "ndvi": 0.6359403430604554,
+        "effective_observations": 34.0,
+        "retained_ground": 0.4580846517363755,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-3",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 3,
+      "member_count": 17,
+      "root_xy_mm": [
+        491.5,
+        324.5
+      ],
+      "guide_u": 0.712,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9994032513978823,
+        0.03454187451979556
+      ],
+      "height_mm": 9.14899094957589,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          491.5,
+          324.5
+        ],
+        "source_forward_m": 3436.5864314022856,
+        "source_xyz_utm_m": [
+          322625.7025789546,
+          4168642.4051357834,
+          382.7731142977232
+        ],
+        "ndvi": 0.6437085400245397,
+        "effective_observations": 32.0,
+        "retained_ground": 0.7182121305381555,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-4",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 4,
+      "member_count": 17,
+      "root_xy_mm": [
+        385.5,
+        346.5
+      ],
+      "guide_u": 0.288,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.8859528775514683,
+        0.46377526751463677
+      ],
+      "height_mm": 8.179618103231626,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          385.5,
+          346.5
+        ],
+        "source_forward_m": 3078.7730537124335,
+        "source_xyz_utm_m": [
+          322780.1693991106,
+          4167894.9189971276,
+          368.32504844856106
+        ],
+        "ndvi": 0.7391856157677329,
+        "effective_observations": 35.0,
+        "retained_ground": 0.45771508261746235,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-5",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 5,
+      "member_count": 17,
+      "root_xy_mm": [
+        487.5,
+        282.5
+      ],
+      "guide_u": 0.696,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.7524683707396124,
+        -0.6586283861453842
+      ],
+      "height_mm": 13.19884598465861,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          487.5,
+          282.5
+        ],
+        "source_forward_m": 3670.730132051122,
+        "source_xyz_utm_m": [
+          322411.71112871915,
+          4168744.9010192673,
+          478.0633552000641
+        ],
+        "ndvi": 0.6734226840616379,
+        "effective_observations": 32.00989807327278,
+        "retained_ground": 0.9372006768017679,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-6",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 6,
+      "member_count": 17,
+      "root_xy_mm": [
+        461.5,
+        255.5
+      ],
+      "guide_u": 0.592,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.6767794552153873,
+        0.7361858250457988
+      ],
+      "height_mm": 7.667924166569839,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          461.5,
+          255.5
+        ],
+        "source_forward_m": 3802.9026165824466,
+        "source_xyz_utm_m": [
+          322247.52321920154,
+          4168654.1771405325,
+          542.5466580050321
+        ],
+        "ndvi": 0.7068559422422218,
+        "effective_observations": 32.0,
+        "retained_ground": 0.9995072861096951,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-7",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 7,
+      "member_count": 17,
+      "root_xy_mm": [
+        409.5,
+        358.5
+      ],
+      "guide_u": 0.384,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9389245177676862,
+        -0.34412316099721896
+      ],
+      "height_mm": 6.129163077366238,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          409.5,
+          358.5
+        ],
+        "source_forward_m": 3041.9443550409183,
+        "source_xyz_utm_m": [
+          322850.5506558352,
+          4168004.5434623393,
+          339.7979604872198
+        ],
+        "ndvi": 0.7208676466035967,
+        "effective_observations": 33.0,
+        "retained_ground": 0.5477587593122271,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-8",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 8,
+      "member_count": 17,
+      "root_xy_mm": [
+        457.5,
+        307.5
+      ],
+      "guide_u": 0.576,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.8033823873473216,
+        0.595463466301769
+      ],
+      "height_mm": 7.725960443118369,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          457.5,
+          307.5
+        ],
+        "source_forward_m": 3440.8884276867893,
+        "source_xyz_utm_m": [
+          322565.1186604028,
+          4168450.297506556,
+          431.9530179414307
+        ],
+        "ndvi": 0.6491785267589857,
+        "effective_observations": 30.0,
+        "retained_ground": 0.929395692478074,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-9",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 9,
+      "member_count": 17,
+      "root_xy_mm": [
+        394.5,
+        298.5
+      ],
+      "guide_u": 0.324,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9030609683825572,
+        0.4295123832719586
+      ],
+      "height_mm": 9.68857438252194,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          394.5,
+          298.5
+        ],
+        "source_forward_m": 3418.1203975864873,
+        "source_xyz_utm_m": [
+          322480.8994145255,
+          4168080.690614366,
+          461.07683751443403
+        ],
+        "ndvi": 0.7496152337834945,
+        "effective_observations": 33.74577147794709,
+        "retained_ground": 0.9352679056471882,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-10",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 10,
+      "member_count": 17,
+      "root_xy_mm": [
+        400.5,
+        279.5
+      ],
+      "guide_u": 0.348,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.948526483095202,
+        -0.3166978226433632
+      ],
+      "height_mm": 12.829390653746238,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          400.5,
+          279.5
+        ],
+        "source_forward_m": 3607.4191889255744,
+        "source_xyz_utm_m": [
+          322316.71029727795,
+          4168193.7477281205,
+          494.0260337563443
+        ],
+        "ndvi": 0.6293871281813614,
+        "effective_observations": 32.17102972779537,
+        "retained_ground": 0.9999913671231727,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-11",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 11,
+      "member_count": 17,
+      "root_xy_mm": [
+        381.5,
+        266.5
+      ],
+      "guide_u": 0.272,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.7132461713622865,
+        0.700913617385937
+      ],
+      "height_mm": 9.688034299903931,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          381.5,
+          266.5
+        ],
+        "source_forward_m": 3527.020677142716,
+        "source_xyz_utm_m": [
+          322358.29370741936,
+          4168049.3359703184,
+          541.4306220428633
+        ],
+        "ndvi": 0.5852233723202307,
+        "effective_observations": 34.0,
+        "retained_ground": 0.9961320055100681,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-12",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 12,
+      "member_count": 17,
+      "root_xy_mm": [
+        434.5,
+        330.5
+      ],
+      "guide_u": 0.484,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.9796089225180067,
+        0.20091380968741296
+      ],
+      "height_mm": 6.004609880905792,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          434.5,
+          330.5
+        ],
+        "source_forward_m": 3194.7481232090213,
+        "source_xyz_utm_m": [
+          322749.8312714951,
+          4168204.7486198163,
+          396.55012351424955
+        ],
+        "ndvi": 0.7245401832441098,
+        "effective_observations": 35.0,
+        "retained_ground": 0.8188763603243124,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-13",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 13,
+      "member_count": 17,
+      "root_xy_mm": [
+        426.5,
+        314.5
+      ],
+      "guide_u": 0.452,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.920208850400827,
+        0.39142773489366905
+      ],
+      "height_mm": 10.234033922114094,
+      "form": "U",
+      "site": {
+        "xy_mm": [
+          426.5,
+          314.5
+        ],
+        "source_forward_m": 3354.5895408614565,
+        "source_xyz_utm_m": [
+          322591.8466476318,
+          4168233.9689312023,
+          422.2799067181367
+        ],
+        "ndvi": 0.7577634638920565,
+        "effective_observations": 32.0,
+        "retained_ground": 0.8742196414305599,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-14",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 14,
+      "member_count": 17,
+      "root_xy_mm": [
+        346.5,
+        332.5
+      ],
+      "guide_u": 0.132,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.8157818650160807,
+        -0.5783597052966994
+      ],
+      "height_mm": 6.752672820043004,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          346.5,
+          332.5
+        ],
+        "source_forward_m": 3204.8998432925596,
+        "source_xyz_utm_m": [
+          322601.9059510419,
+          4167734.4304181803,
+          389.3066151550309
+        ],
+        "ndvi": 0.727873982051924,
+        "effective_observations": 33.0,
+        "retained_ground": 0.3208056470749373,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-15",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "subordinate",
+      "member_index": 15,
+      "member_count": 17,
+      "root_xy_mm": [
+        363.5,
+        305.5
+      ],
+      "guide_u": 0.2,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.8063766565479796,
+        -0.5914023061964687
+      ],
+      "height_mm": 6.695669540579986,
+      "form": "P",
+      "site": {
+        "xy_mm": [
+          363.5,
+          305.5
+        ],
+        "source_forward_m": 3277.7591015202343,
+        "source_xyz_utm_m": [
+          322560.59630775434,
+          4167852.8850449137,
+          458.53243565118646
+        ],
+        "ndvi": 0.7669164708264957,
+        "effective_observations": 35.0,
+        "retained_ground": 0.748713452499671,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    },
+    {
+      "id": "autumn-provisional-v01/far-right/body-16",
+      "stand_id": "autumn-provisional-v01/far-right",
+      "stand_index": 0,
+      "stand_role": "dominant",
+      "member_index": 16,
+      "member_count": 17,
+      "root_xy_mm": [
+        334.5,
+        292.5
+      ],
+      "guide_u": 0.084,
+      "guide_source_id": "autumn-provisional-v01/native-q-field/far-right",
+      "tangent_xy": [
+        0.8390821105787127,
+        -0.5440047901505766
+      ],
+      "height_mm": 10.377796654449515,
+      "form": "B",
+      "site": {
+        "xy_mm": [
+          334.5,
+          292.5
+        ],
+        "source_forward_m": 3398.698425349174,
+        "source_xyz_utm_m": [
+          322399.61070774007,
+          4167733.054900108,
+          481.03960171665983
+        ],
+        "ndvi": 0.6262523253201319,
+        "effective_observations": 34.37138790272983,
+        "retained_ground": 0.8464913172166735,
+        "depth_provider": "saved-F2-1mm-raster-float32",
+        "crs": "EPSG:32652",
+        "contact_precision": "Raster interpolation only; no exact triangle or observed trunk claim"
+      }
+    }
+  ],
+  "rock_notes": [
+    {
+      "formation": "autumn-provisional-v01/autumn-left-ledge",
+      "host": {
+        "id": "nonplotting/F2-source-q-section/autumn-left-ledge",
+        "xy_mm": [
+          [
+            0.6,
+            770.6805388002975
+          ],
+          [
+            1.7171249999999998,
+            770.6468489254235
+          ],
+          [
+            2.83425,
+            770.6333246463932
+          ],
+          [
+            3.951375,
+            770.636811515122
+          ],
+          [
+            5.068499999999999,
+            770.6402983838469
+          ],
+          [
+            6.185624999999999,
+            770.6437852525786
+          ],
+          [
+            7.30275,
+            770.6472721212986
+          ],
+          [
+            8.419875,
+            770.6507589900622
+          ],
+          [
+            9.536999999999999,
+            770.654245858754
+          ],
+          [
+            10.654124999999999,
+            770.6577327274894
+          ],
+          [
+            11.771249999999998,
+            770.6612195962192
+          ],
+          [
+            12.888374999999998,
+            770.6647064649295
+          ],
+          [
+            14.0055,
+            770.6681933336575
+          ],
+          [
+            15.122625,
+            770.6714271716829
+          ],
+          [
+            16.23975,
+            770.6711497961677
+          ],
+          [
+            17.356875,
+            770.6691612184636
+          ],
+          [
+            18.474,
+            770.6668709644035
+          ],
+          [
+            19.591125,
+            770.6637459621417
+          ],
+          [
+            20.70825,
+            770.6614891087773
+          ],
+          [
+            21.825375,
+            770.6645285036152
+          ],
+          [
+            22.9425,
+            770.6710309660066
+          ],
+          [
+            24.059625,
+            770.6775334283248
+          ],
+          [
+            25.17675,
+            770.6840358906522
+          ],
+          [
+            26.293875,
+            770.6905383530016
+          ],
+          [
+            27.411,
+            770.6970408153171
+          ],
+          [
+            28.528125,
+            770.701579820479
+          ],
+          [
+            29.64525,
+            770.7058553134974
+          ],
+          [
+            30.762375,
+            770.7100427577298
+          ],
+          [
+            31.8795,
+            770.7141448454098
+          ],
+          [
+            32.996625,
+            770.7181641600218
+          ],
+          [
+            34.113749999999996,
+            770.7221031818829
+          ],
+          [
+            35.230875,
+            770.7251401330192
+          ],
+          [
+            36.348,
+            770.7228529073874
+          ],
+          [
+            37.465125,
+            770.7190244931285
+          ],
+          [
+            38.58225,
+            770.7151960788369
+          ],
+          [
+            39.699374999999996,
+            770.7096173424067
+          ],
+          [
+            40.8165,
+            770.6940936718507
+          ],
+          [
+            41.933625,
+            770.6734369593449
+          ],
+          [
+            43.05075,
+            770.6519089393296
+          ],
+          [
+            44.167874999999995,
+            770.6298832774909
+          ],
+          [
+            45.285,
+            770.607756223351
+          ],
+          [
+            46.402125,
+            770.585438262835
+          ],
+          [
+            47.51925,
+            770.5630872268621
+          ],
+          [
+            48.636375,
+            770.540736190879
+          ],
+          [
+            49.753499999999995,
+            770.5183851548414
+          ],
+          [
+            50.870625,
+            770.496034118848
+          ],
+          [
+            51.98775,
+            770.4736830828315
+          ],
+          [
+            53.104875,
+            770.4513320468589
+          ],
+          [
+            54.222,
+            770.428981010866
+          ],
+          [
+            55.339124999999996,
+            770.4066299749084
+          ],
+          [
+            56.45625,
+            770.3842789389064
+          ],
+          [
+            57.573375,
+            770.3619279029022
+          ],
+          [
+            58.6905,
+            770.3434071357299
+          ],
+          [
+            59.807624999999994,
+            770.3462428744249
+          ],
+          [
+            60.924749999999996,
+            770.3562495236038
+          ],
+          [
+            62.041875,
+            770.3662561727201
+          ],
+          [
+            63.159,
+            770.3762628218664
+          ],
+          [
+            64.276125,
+            770.3862694710194
+          ],
+          [
+            65.39325,
+            770.3962761201666
+          ],
+          [
+            66.510375,
+            770.4063133346841
+          ],
+          [
+            67.62749999999998,
+            770.4170412350613
+          ],
+          [
+            68.74462499999998,
+            770.4275849694448
+          ],
+          [
+            69.86174999999999,
+            770.4404835419285
+          ],
+          [
+            70.97887499999999,
+            770.4586875282221
+          ],
+          [
+            72.09599999999999,
+            770.4769933222917
+          ],
+          [
+            73.21312499999999,
+            770.4952991163367
+          ],
+          [
+            74.33024999999999,
+            770.51360491038
+          ],
+          [
+            75.447375,
+            770.5319107044628
+          ],
+          [
+            76.5645,
+            770.5502164985212
+          ],
+          [
+            77.68162499999998,
+            770.5711352265344
+          ],
+          [
+            78.79874999999998,
+            770.606669062705
+          ],
+          [
+            79.91587499999999,
+            770.6452877841889
+          ],
+          [
+            81.03299999999999,
+            770.6839065057111
+          ],
+          [
+            82.15012499999999,
+            770.7225252272384
+          ],
+          [
+            83.26724999999999,
+            770.7611439487492
+          ],
+          [
+            84.38437499999999,
+            770.799762670243
+          ],
+          [
+            85.5015,
+            770.8383813917516
+          ],
+          [
+            86.618625,
+            770.8770001132507
+          ],
+          [
+            87.73574999999998,
+            770.9156188347856
+          ],
+          [
+            88.85287499999998,
+            770.9542375563067
+          ],
+          [
+            89.96999999999998,
+            770.9928562777926
+          ],
+          [
+            91.08712499999999,
+            771.0314749992774
+          ],
+          [
+            92.20424999999999,
+            771.0700937207979
+          ],
+          [
+            93.32137499999999,
+            771.1087124423007
+          ],
+          [
+            94.43849999999999,
+            771.1463361583826
+          ],
+          [
+            95.55562499999999,
+            771.1834732079528
+          ],
+          [
+            96.67275,
+            771.2199206184708
+          ],
+          [
+            97.78987499999998,
+            771.2349005177391
+          ],
+          [
+            98.90699999999998,
+            771.2482974332453
+          ],
+          [
+            100.02412499999998,
+            771.2618043462323
+          ],
+          [
+            101.14124999999999,
+            771.2754226169999
+          ],
+          [
+            102.25837499999999,
+            771.2891536284295
+          ],
+          [
+            103.37549999999999,
+            771.3029987863152
+          ],
+          [
+            104.49262499999999,
+            771.3170118372361
+          ],
+          [
+            105.60974999999999,
+            771.331786326333
+          ],
+          [
+            106.72687499999999,
+            771.3465654677692
+          ],
+          [
+            107.844,
+            771.3613446092211
+          ],
+          [
+            108.96112499999998,
+            771.3761237506585
+          ],
+          [
+            110.07824999999998,
+            771.39090289209
+          ],
+          [
+            111.19537499999998,
+            771.4056820335156
+          ],
+          [
+            112.31249999999999,
+            771.4204611749166
+          ],
+          [
+            113.42962499999999,
+            771.4352403163632
+          ],
+          [
+            114.54674999999999,
+            771.4500193933915
+          ],
+          [
+            115.66387499999999,
+            771.4647108537256
+          ],
+          [
+            116.78099999999999,
+            771.4788971846039
+          ],
+          [
+            117.898125,
+            771.4930782541466
+          ],
+          [
+            119.01524999999998,
+            771.5072593236811
+          ],
+          [
+            120.13237499999998,
+            771.5214403932301
+          ],
+          [
+            121.24949999999998,
+            771.535621462781
+          ],
+          [
+            122.36662499999998,
+            771.5498025323732
+          ],
+          [
+            123.48374999999999,
+            771.5627690325774
+          ],
+          [
+            124.60087499999999,
+            771.5755597224919
+          ],
+          [
+            125.71799999999999,
+            771.5883663632414
+          ],
+          [
+            126.83512499999999,
+            771.6010926879737
+          ],
+          [
+            127.95224999999999,
+            771.6138050245047
+          ],
+          [
+            129.06937499999998,
+            771.626517361016
+          ],
+          [
+            130.1865,
+            771.639229697545
+          ],
+          [
+            131.30362499999998,
+            771.651942034025
+          ],
+          [
+            132.42075,
+            771.6646543705448
+          ],
+          [
+            133.53787499999999,
+            771.6774669514413
+          ],
+          [
+            134.65499999999997,
+            771.697195515485
+          ],
+          [
+            135.772125,
+            771.7424362118492
+          ],
+          [
+            136.88924999999998,
+            771.7877109202242
+          ],
+          [
+            138.006375,
+            771.8329856286019
+          ],
+          [
+            139.12349999999998,
+            771.8782603369663
+          ],
+          [
+            140.240625,
+            771.9235350453256
+          ],
+          [
+            141.35774999999998,
+            771.9688097536878
+          ],
+          [
+            142.474875,
+            772.0140844620533
+          ],
+          [
+            143.59199999999998,
+            772.0593591704509
+          ],
+          [
+            144.70912499999997,
+            772.1046338787979
+          ],
+          [
+            145.82625,
+            772.149908587209
+          ],
+          [
+            146.94337499999997,
+            772.1944889000312
+          ],
+          [
+            148.0605,
+            772.2373059800781
+          ],
+          [
+            149.17762499999998,
+            772.280081623742
+          ],
+          [
+            150.29475,
+            772.3196657891514
+          ],
+          [
+            151.41187499999998,
+            772.3534060406437
+          ],
+          [
+            152.529,
+            772.3856404567948
+          ],
+          [
+            153.64612499999998,
+            772.3886194753458
+          ],
+          [
+            154.76324999999997,
+            772.3210193697993
+          ],
+          [
+            155.880375,
+            772.2534192642521
+          ],
+          [
+            156.99749999999997,
+            772.1858191587221
+          ],
+          [
+            158.114625,
+            772.1182190531529
+          ],
+          [
+            159.23174999999998,
+            772.0506189475965
+          ],
+          [
+            160.348875,
+            771.9668669285574
+          ],
+          [
+            161.46599999999998,
+            771.882880699679
+          ],
+          [
+            162.583125,
+            771.8061439400099
+          ],
+          [
+            163.70024999999998,
+            771.7360185416464
+          ],
+          [
+            164.81737499999997,
+            771.6623715922009
+          ],
+          [
+            165.93449999999999,
+            771.5666546470832
+          ],
+          [
+            167.05162499999997,
+            771.4667917203806
+          ],
+          [
+            168.16875,
+            771.3663712941469
+          ],
+          [
+            169.28587499999998,
+            771.2743587891042
+          ],
+          [
+            170.403,
+            771.179319514515
+          ],
+          [
+            171.52012499999998,
+            771.0827613379023
+          ],
+          [
+            172.63725,
+            771.0072495570672
+          ],
+          [
+            173.75437499999998,
+            770.9665841961424
+          ],
+          [
+            174.87149999999997,
+            770.923969741926
+          ],
+          [
+            175.98862499999998,
+            770.8786390851172
+          ],
+          [
+            177.10574999999997,
+            770.8326092307356
+          ],
+          [
+            178.222875,
+            770.7858638759476
+          ],
+          [
+            179.33999999999997,
+            770.7376671679726
+          ]
+        ]
+      },
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_offset_mm": 0.0
+    },
+    {
+      "formation": "autumn-provisional-v01/autumn-saddle-ledge",
+      "host": {
+        "id": "nonplotting/F2-source-q-section/autumn-saddle-ledge",
+        "xy_mm": [
+          [
+            222.3,
+            712.0350526911112
+          ],
+          [
+            223.29000000000002,
+            712.0412771450445
+          ],
+          [
+            224.28,
+            712.0457400238066
+          ],
+          [
+            225.27,
+            712.0517227523604
+          ],
+          [
+            226.26000000000002,
+            712.0595202851035
+          ],
+          [
+            227.25,
+            712.067621228746
+          ],
+          [
+            228.24,
+            712.0755863419979
+          ],
+          [
+            229.23000000000002,
+            712.0864498946378
+          ],
+          [
+            230.22,
+            712.0989192237355
+          ],
+          [
+            231.21,
+            712.1115982860517
+          ],
+          [
+            232.20000000000002,
+            712.1242773483575
+          ],
+          [
+            233.19,
+            712.1369564106737
+          ],
+          [
+            234.18,
+            712.1496354730149
+          ],
+          [
+            235.17000000000002,
+            712.1623145353251
+          ],
+          [
+            236.16,
+            712.1749935976158
+          ],
+          [
+            237.15,
+            712.1876726599321
+          ],
+          [
+            238.14000000000001,
+            712.2034820756301
+          ],
+          [
+            239.13,
+            712.2234011937421
+          ],
+          [
+            240.12,
+            712.2447300957662
+          ],
+          [
+            241.11,
+            712.2660589977734
+          ],
+          [
+            242.10000000000002,
+            712.2873878997922
+          ],
+          [
+            243.09,
+            712.3087168018245
+          ],
+          [
+            244.08,
+            712.3300457038471
+          ],
+          [
+            245.07,
+            712.351374605853
+          ],
+          [
+            246.06,
+            712.3724676652754
+          ],
+          [
+            247.05,
+            712.393350602345
+          ],
+          [
+            248.04000000000002,
+            712.414337105603
+          ],
+          [
+            249.03,
+            712.4355461221752
+          ],
+          [
+            250.02,
+            712.4541438529217
+          ],
+          [
+            251.01000000000002,
+            712.47023338573
+          ],
+          [
+            252.0,
+            712.4863229185173
+          ],
+          [
+            252.99,
+            712.5024083871749
+          ],
+          [
+            253.98000000000002,
+            712.5112032243669
+          ],
+          [
+            254.97,
+            712.5105535106334
+          ],
+          [
+            255.96,
+            712.5080284045287
+          ],
+          [
+            256.95,
+            712.5055045355754
+          ],
+          [
+            257.94,
+            712.5029808658342
+          ],
+          [
+            258.93,
+            712.5004538991994
+          ],
+          [
+            259.92,
+            712.497927980087
+          ],
+          [
+            260.91,
+            712.4954028739778
+          ],
+          [
+            261.9,
+            712.4928777678555
+          ],
+          [
+            262.89,
+            712.490352661737
+          ],
+          [
+            263.88,
+            712.4878820755823
+          ],
+          [
+            264.87,
+            712.4857750826997
+          ],
+          [
+            265.86,
+            712.4841292587832
+          ],
+          [
+            266.85,
+            712.4824804845566
+          ],
+          [
+            267.84000000000003,
+            712.4808441657298
+          ],
+          [
+            268.83,
+            712.4788766022498
+          ],
+          [
+            269.82,
+            712.4693770606453
+          ],
+          [
+            270.81,
+            712.4462925044008
+          ],
+          [
+            271.8,
+            712.4270659085278
+          ],
+          [
+            272.79,
+            712.4162735188662
+          ],
+          [
+            273.78000000000003,
+            712.4088485760174
+          ],
+          [
+            274.77,
+            712.4014236331775
+          ],
+          [
+            275.76,
+            712.3939986903189
+          ],
+          [
+            276.75,
+            712.3865737474491
+          ],
+          [
+            277.74,
+            712.3791488045862
+          ],
+          [
+            278.73,
+            712.3717238617431
+          ],
+          [
+            279.72,
+            712.364298918891
+          ],
+          [
+            280.71,
+            712.3568739760336
+          ],
+          [
+            281.7,
+            712.3494490331941
+          ],
+          [
+            282.69,
+            712.3420240903288
+          ],
+          [
+            283.68,
+            712.3345991474694
+          ],
+          [
+            284.67,
+            712.3283888650333
+          ],
+          [
+            285.66,
+            712.3307922796542
+          ],
+          [
+            286.65,
+            712.3474584503833
+          ],
+          [
+            287.64,
+            712.3641246210973
+          ],
+          [
+            288.63,
+            712.3807907918015
+          ],
+          [
+            289.62,
+            712.3973799263033
+          ],
+          [
+            290.61,
+            712.4134590205936
+          ],
+          [
+            291.6,
+            712.4293452862372
+          ],
+          [
+            292.59000000000003,
+            712.4456510137154
+          ],
+          [
+            293.58,
+            712.4618006695745
+          ],
+          [
+            294.57,
+            712.4710806128985
+          ],
+          [
+            295.56,
+            712.4751905566809
+          ],
+          [
+            296.55,
+            712.479300500513
+          ],
+          [
+            297.54,
+            712.4834104442931
+          ],
+          [
+            298.53,
+            712.4875203881278
+          ],
+          [
+            299.52,
+            712.4916303401149
+          ],
+          [
+            300.51,
+            712.4957419880769
+          ],
+          [
+            301.5,
+            712.4999999999828
+          ],
+          [
+            302.49,
+            712.5043840513889
+          ],
+          [
+            303.48,
+            712.5087681004345
+          ],
+          [
+            304.47,
+            712.5131521506606
+          ],
+          [
+            305.46000000000004,
+            712.5175362008306
+          ],
+          [
+            306.45,
+            712.5219202510818
+          ],
+          [
+            307.44,
+            712.5263043013086
+          ],
+          [
+            308.43,
+            712.5306883515076
+          ],
+          [
+            309.42,
+            712.5350724017572
+          ],
+          [
+            310.40999999999997,
+            712.5394564519719
+          ],
+          [
+            311.4,
+            712.5438648815384
+          ],
+          [
+            312.39,
+            712.5483501824986
+          ],
+          [
+            313.38,
+            712.5528624321347
+          ],
+          [
+            314.37,
+            712.5573947063233
+          ],
+          [
+            315.36,
+            712.5619471385852
+          ],
+          [
+            316.35,
+            712.5547201008284
+          ],
+          [
+            317.34000000000003,
+            712.5384880695962
+          ],
+          [
+            318.33,
+            712.5196292020338
+          ],
+          [
+            319.32,
+            712.5036006019632
+          ],
+          [
+            320.31,
+            712.4880640531879
+          ],
+          [
+            321.3,
+            712.4724395402935
+          ],
+          [
+            322.29,
+            712.4566616821821
+          ],
+          [
+            323.28,
+            712.4407282102552
+          ],
+          [
+            324.27,
+            712.424636810934
+          ],
+          [
+            325.26,
+            712.4087313778822
+          ],
+          [
+            326.25,
+            712.3929140443548
+          ],
+          [
+            327.24,
+            712.377097562079
+          ],
+          [
+            328.23,
+            712.3612810798011
+          ],
+          [
+            329.22,
+            712.3454645975244
+          ],
+          [
+            330.21,
+            712.329648115257
+          ],
+          [
+            331.2,
+            712.3138316329729
+          ],
+          [
+            332.19,
+            712.3012424338988
+          ],
+          [
+            333.18,
+            712.3121930619217
+          ],
+          [
+            334.17,
+            712.335328349029
+          ],
+          [
+            335.15999999999997,
+            712.3592775937072
+          ],
+          [
+            336.15,
+            712.3829274972182
+          ],
+          [
+            337.14,
+            712.406718803303
+          ],
+          [
+            338.13,
+            712.430832008396
+          ],
+          [
+            339.12,
+            712.4513222012049
+          ],
+          [
+            340.11,
+            712.4694151820444
+          ],
+          [
+            341.1,
+            712.4874431959719
+          ],
+          [
+            342.09000000000003,
+            712.5054633950517
+          ],
+          [
+            343.08,
+            712.523499223876
+          ],
+          [
+            344.07,
+            712.541527237823
+          ],
+          [
+            345.06,
+            712.5595552517465
+          ],
+          [
+            346.05,
+            712.5775832656883
+          ],
+          [
+            347.03999999999996,
+            712.5956112796562
+          ],
+          [
+            348.03,
+            712.6086984808745
+          ],
+          [
+            349.02,
+            712.6076364693206
+          ],
+          [
+            350.01,
+            712.596909214653
+          ],
+          [
+            351.0,
+            712.5856503052104
+          ],
+          [
+            351.99,
+            712.5743913957665
+          ],
+          [
+            352.98,
+            712.563132486323
+          ],
+          [
+            353.97,
+            712.5518735768807
+          ],
+          [
+            354.96000000000004,
+            712.5406146674231
+          ],
+          [
+            355.95,
+            712.5293557579633
+          ],
+          [
+            356.94,
+            712.5180968485139
+          ],
+          [
+            357.93,
+            712.5068379390776
+          ],
+          [
+            358.91999999999996,
+            712.4957972019093
+          ],
+          [
+            359.90999999999997,
+            712.4854309838072
+          ],
+          [
+            360.9,
+            712.4831955794834
+          ],
+          [
+            361.89,
+            712.493473319375
+          ],
+          [
+            362.88,
+            712.5056272328973
+          ],
+          [
+            363.87,
+            712.5185033836082
+          ],
+          [
+            364.86,
+            712.5332217069722
+          ],
+          [
+            365.85,
+            712.5494978209126
+          ],
+          [
+            366.84000000000003,
+            712.5660100301732
+          ],
+          [
+            367.83,
+            712.5826748654572
+          ],
+          [
+            368.82,
+            712.5994806760629
+          ],
+          [
+            369.81,
+            712.6164292584456
+          ],
+          [
+            370.79999999999995,
+            712.6335224397745
+          ],
+          [
+            371.78999999999996,
+            712.6507620784224
+          ],
+          [
+            372.78,
+            712.6681500647765
+          ],
+          [
+            373.77,
+            712.6865886204732
+          ],
+          [
+            374.76,
+            712.7075446485245
+          ],
+          [
+            375.75,
+            712.7286581432805
+          ],
+          [
+            376.74,
+            712.749771638037
+          ],
+          [
+            377.73,
+            712.7708851327943
+          ],
+          [
+            378.72,
+            712.7918949903949
+          ],
+          [
+            379.71,
+            712.8099816746495
+          ],
+          [
+            380.7,
+            712.8177882482562
+          ]
+        ]
+      },
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_offset_mm": 0.0
+    },
+    {
+      "formation": "autumn-provisional-v01/autumn-right-foundation",
+      "host": {
+        "id": "nonplotting/F2-source-q-section/autumn-right-foundation",
+        "xy_mm": [
+          [
+            340.65999999999997,
+            850.1370960809942
+          ],
+          [
+            342.27712499999996,
+            850.1382655668604
+          ],
+          [
+            343.89424999999994,
+            850.139435052759
+          ],
+          [
+            345.511375,
+            850.1406045386389
+          ],
+          [
+            347.1285,
+            850.1417740245041
+          ],
+          [
+            348.74562499999996,
+            850.1429435103778
+          ],
+          [
+            350.36274999999995,
+            850.1441129962725
+          ],
+          [
+            351.979875,
+            850.1452824821517
+          ],
+          [
+            353.597,
+            850.1464519680287
+          ],
+          [
+            355.21412499999997,
+            850.1476214538645
+          ],
+          [
+            356.83124999999995,
+            850.1487909397795
+          ],
+          [
+            358.44837499999994,
+            850.1488217590572
+          ],
+          [
+            360.0655,
+            850.1426653675798
+          ],
+          [
+            361.682625,
+            850.1361958681563
+          ],
+          [
+            363.29974999999996,
+            850.1297263688398
+          ],
+          [
+            364.91687499999995,
+            850.1232568694534
+          ],
+          [
+            366.534,
+            850.1167873700805
+          ],
+          [
+            368.151125,
+            850.1103178706913
+          ],
+          [
+            369.76824999999997,
+            850.1039622131854
+          ],
+          [
+            371.38537499999995,
+            850.0991353171617
+          ],
+          [
+            373.00249999999994,
+            850.0951311094176
+          ],
+          [
+            374.619625,
+            850.0921222319902
+          ],
+          [
+            376.23675,
+            850.0917047072619
+          ],
+          [
+            377.85387499999996,
+            850.0912871825705
+          ],
+          [
+            379.471,
+            850.0908696578429
+          ],
+          [
+            381.088125,
+            850.0904357392919
+          ],
+          [
+            382.70525,
+            850.0821482671187
+          ],
+          [
+            384.32237499999997,
+            850.0640199832936
+          ],
+          [
+            385.93949999999995,
+            850.0458916994672
+          ],
+          [
+            387.556625,
+            850.0277634156423
+          ],
+          [
+            389.17375,
+            850.009635131777
+          ],
+          [
+            390.79087499999997,
+            849.9915068479504
+          ],
+          [
+            392.40799999999996,
+            849.9733785641338
+          ],
+          [
+            394.025125,
+            849.9552502803226
+          ],
+          [
+            395.64225,
+            849.9371219964494
+          ],
+          [
+            397.259375,
+            849.9189937126398
+          ],
+          [
+            398.87649999999996,
+            849.9008654288164
+          ],
+          [
+            400.49362499999995,
+            849.8827371449639
+          ],
+          [
+            402.11075,
+            849.866462917675
+          ],
+          [
+            403.727875,
+            849.8504442001629
+          ],
+          [
+            405.34499999999997,
+            849.8356596031906
+          ],
+          [
+            406.96212499999996,
+            849.8255119886506
+          ],
+          [
+            408.57925,
+            849.8156202052882
+          ],
+          [
+            410.196375,
+            849.8094352544052
+          ],
+          [
+            411.8135,
+            849.8038867925937
+          ],
+          [
+            413.43062499999996,
+            849.7983383307355
+          ],
+          [
+            415.04774999999995,
+            849.7927898688966
+          ],
+          [
+            416.664875,
+            849.7872414070955
+          ],
+          [
+            418.282,
+            849.7816929452463
+          ],
+          [
+            419.89912499999997,
+            849.7761444834009
+          ],
+          [
+            421.51624999999996,
+            849.7705960215723
+          ],
+          [
+            423.133375,
+            849.7650475597505
+          ],
+          [
+            424.7505,
+            849.7594990978945
+          ],
+          [
+            426.367625,
+            849.75395063601
+          ],
+          [
+            427.98474999999996,
+            849.7484021741997
+          ],
+          [
+            429.60187499999995,
+            849.7433290475869
+          ],
+          [
+            431.219,
+            849.7399814660928
+          ],
+          [
+            432.836125,
+            849.7368585311132
+          ],
+          [
+            434.45324999999997,
+            849.7337355961042
+          ],
+          [
+            436.07037499999996,
+            849.7306126611076
+          ],
+          [
+            437.6875,
+            849.7274897261301
+          ],
+          [
+            439.304625,
+            849.7296674924751
+          ],
+          [
+            440.92175,
+            849.7384935867118
+          ],
+          [
+            442.53887499999996,
+            849.7473037698836
+          ],
+          [
+            444.15599999999995,
+            849.7588856403655
+          ],
+          [
+            445.773125,
+            849.7712815284026
+          ],
+          [
+            447.39025,
+            849.7836774164002
+          ],
+          [
+            449.00737499999997,
+            849.796073304434
+          ],
+          [
+            450.6245,
+            849.8084691923967
+          ],
+          [
+            452.241625,
+            849.820865080471
+          ],
+          [
+            453.85875,
+            849.838568122898
+          ],
+          [
+            455.475875,
+            849.8614181177678
+          ],
+          [
+            457.09299999999996,
+            849.8848549283564
+          ],
+          [
+            458.71012499999995,
+            849.9082917389068
+          ],
+          [
+            460.32725,
+            849.9317285494328
+          ],
+          [
+            461.944375,
+            849.9551653600478
+          ],
+          [
+            463.56149999999997,
+            849.9786021706274
+          ],
+          [
+            465.178625,
+            850.002038981184
+          ],
+          [
+            466.79575,
+            850.0254757917668
+          ],
+          [
+            468.412875,
+            850.0489126023223
+          ],
+          [
+            470.03,
+            850.0721902151485
+          ],
+          [
+            471.64712499999996,
+            850.0880768329952
+          ],
+          [
+            473.26424999999995,
+            850.1016520777458
+          ],
+          [
+            474.881375,
+            850.1124523547084
+          ],
+          [
+            476.4985,
+            850.1078891020796
+          ],
+          [
+            478.115625,
+            850.0754690433084
+          ],
+          [
+            479.73275,
+            850.0309365364691
+          ],
+          [
+            481.349875,
+            849.9864040296228
+          ],
+          [
+            482.967,
+            849.942381250205
+          ],
+          [
+            484.584125,
+            849.8997514870665
+          ],
+          [
+            486.20124999999996,
+            849.8568591892807
+          ],
+          [
+            487.81837499999995,
+            849.8138279309741
+          ],
+          [
+            489.4355,
+            849.7730508619994
+          ],
+          [
+            491.052625,
+            849.7331432859713
+          ],
+          [
+            492.66975,
+            849.6932357099577
+          ],
+          [
+            494.286875,
+            849.6533281338633
+          ],
+          [
+            495.904,
+            849.6134205577977
+          ],
+          [
+            497.521125,
+            849.573512981687
+          ],
+          [
+            499.13824999999997,
+            849.5336526849969
+          ],
+          [
+            500.75537499999996,
+            849.5013139507506
+          ],
+          [
+            502.37249999999995,
+            849.5047580527771
+          ],
+          [
+            503.989625,
+            849.5105341449906
+          ],
+          [
+            505.60675,
+            849.5163383926302
+          ],
+          [
+            507.223875,
+            849.5191136494506
+          ],
+          [
+            508.841,
+            849.5183632458708
+          ],
+          [
+            510.458125,
+            849.5176046415768
+          ],
+          [
+            512.07525,
+            849.5165229540871
+          ],
+          [
+            513.692375,
+            849.5153899403213
+          ],
+          [
+            515.3095,
+            849.5142569266004
+          ],
+          [
+            516.926625,
+            849.5131239129155
+          ],
+          [
+            518.54375,
+            849.5119908991279
+          ],
+          [
+            520.160875,
+            849.5108578853756
+          ],
+          [
+            521.778,
+            849.5097248716667
+          ],
+          [
+            523.395125,
+            849.5083095168342
+          ],
+          [
+            525.01225,
+            849.4903097484107
+          ],
+          [
+            526.629375,
+            849.4491117039895
+          ],
+          [
+            528.2465,
+            849.4075201809007
+          ],
+          [
+            529.863625,
+            849.3659286578372
+          ],
+          [
+            531.48075,
+            849.3243371346692
+          ],
+          [
+            533.0978749999999,
+            849.2827456116456
+          ],
+          [
+            534.7149999999999,
+            849.2411540885156
+          ],
+          [
+            536.332125,
+            849.1995625654728
+          ],
+          [
+            537.94925,
+            849.1613316039876
+          ],
+          [
+            539.566375,
+            849.1295545791143
+          ],
+          [
+            541.1835,
+            849.0993132477337
+          ],
+          [
+            542.800625,
+            849.0780813948938
+          ],
+          [
+            544.41775,
+            849.0632119066104
+          ],
+          [
+            546.034875,
+            849.0483424183948
+          ],
+          [
+            547.652,
+            849.0367508904873
+          ],
+          [
+            549.269125,
+            849.0466912556913
+          ],
+          [
+            550.88625,
+            849.0676766400506
+          ],
+          [
+            552.503375,
+            849.0890860886224
+          ],
+          [
+            554.1205,
+            849.1104955371825
+          ],
+          [
+            555.737625,
+            849.1319049857505
+          ],
+          [
+            557.35475,
+            849.1533144343776
+          ],
+          [
+            558.971875,
+            849.1747238829115
+          ],
+          [
+            560.5889999999999,
+            849.1961333315331
+          ],
+          [
+            562.2061249999999,
+            849.217542780083
+          ],
+          [
+            563.82325,
+            849.2389522286603
+          ],
+          [
+            565.440375,
+            849.2603616772425
+          ],
+          [
+            567.0575,
+            849.2904628675183
+          ],
+          [
+            568.674625,
+            849.3250445725519
+          ],
+          [
+            570.29175,
+            849.3610220132566
+          ],
+          [
+            571.908875,
+            849.393320582598
+          ],
+          [
+            573.526,
+            849.4219118524067
+          ],
+          [
+            575.143125,
+            849.4404320918453
+          ],
+          [
+            576.76025,
+            849.4566644108016
+          ],
+          [
+            578.377375,
+            849.4729853071505
+          ],
+          [
+            579.9945,
+            849.4892715574974
+          ],
+          [
+            581.611625,
+            849.5055513794142
+          ],
+          [
+            583.22875,
+            849.521831201253
+          ],
+          [
+            584.845875,
+            849.5381110232322
+          ],
+          [
+            586.463,
+            849.5543908450575
+          ],
+          [
+            588.080125,
+            849.5706706669957
+          ],
+          [
+            589.6972499999999,
+            849.5869504888434
+          ],
+          [
+            591.3143749999999,
+            849.6032303107896
+          ],
+          [
+            592.9315,
+            849.619510132643
+          ],
+          [
+            594.548625,
+            849.6356813532453
+          ],
+          [
+            596.16575,
+            849.6440310665906
+          ],
+          [
+            597.782875,
+            849.643314006476
+          ],
+          [
+            599.4,
+            849.6418273444932
+          ]
+        ]
+      },
+      "host_basis": "visible source-q terrain section; nonplotting",
+      "host_offset_mm": 0.0
+    },
+    {
+      "catalog_objects": [
+        {
+          "id": "autumn-provisional-v01/autumn-left-bank/tree-0",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              37.5,
+              741.5
+            ],
+            "mapped_face_id": 59730,
+            "original_mesh_face_id": 154548,
+            "barycentric": [
+              0.12576101101206882,
+              0.486780830368985,
+              0.3874581586189461
+            ],
+            "source_xyz_utm_m": [
+              324989.60342491104,
+              4166273.376255241,
+              74.43155043707175
+            ],
+            "source_forward_m": 503.3658340744678,
+            "lateral_q_per_mm": 0.010203802607918571,
+            "crs": "EPSG:32652",
+            "slope_deg": 9.3772144083639,
+            "ndvi": 0.19542994320680152,
+            "effective_observations": 38.0,
+            "retained_ground": 0.7336606567940158,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-left-bank",
+          "height_mm": 77
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-left-bank/tree-1",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              60.5,
+              748.5
+            ],
+            "mapped_face_id": 59381,
+            "original_mesh_face_id": 154050,
+            "barycentric": [
+              0.22249149778837374,
+              0.752233920592595,
+              0.025274581619031296
+            ],
+            "source_xyz_utm_m": [
+              325027.56701761775,
+              4166314.2417625515,
+              71.22801464987626
+            ],
+            "source_forward_m": 478.3800706967725,
+            "lateral_q_per_mm": -0.00449691351823454,
+            "crs": "EPSG:32652",
+            "slope_deg": 8.497979811558123,
+            "ndvi": 0.22533403523989334,
+            "effective_observations": 36.0,
+            "retained_ground": 0.6740201102032414,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-left-bank",
+          "height_mm": 153
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-left-bank/tree-2",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              90.5,
+              750.5
+            ],
+            "mapped_face_id": 58682,
+            "original_mesh_face_id": 153053,
+            "barycentric": [
+              0.2982207328957509,
+              0.36620750147233255,
+              0.3355717656319166
+            ],
+            "source_xyz_utm_m": [
+              325045.9862250442,
+              4166364.9328470314,
+              62.97016973332846
+            ],
+            "source_forward_m": 474.90942316225426,
+            "lateral_q_per_mm": 0.13723143589429074,
+            "crs": "EPSG:32652",
+            "slope_deg": 7.846475366295028,
+            "ndvi": 0.2356312751583337,
+            "effective_observations": 37.0,
+            "retained_ground": 0.47377427328248517,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-left-bank",
+          "height_mm": 178
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-left-bank/tree-3",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              112.5,
+              741.5
+            ],
+            "mapped_face_id": 58331,
+            "original_mesh_face_id": 152553,
+            "barycentric": [
+              0.39370942992875957,
+              0.5368874993539596,
+              0.06940307071728082
+            ],
+            "source_xyz_utm_m": [
+              325021.10662498063,
+              4166402.9179078788,
+              62.765043502406265
+            ],
+            "source_forward_m": 509.43967783846693,
+            "lateral_q_per_mm": 0.058931248327609105,
+            "crs": "EPSG:32652",
+            "slope_deg": 8.261520066875484,
+            "ndvi": 0.10830444636121768,
+            "effective_observations": 38.0,
+            "retained_ground": 0.4545033138132335,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-left-bank",
+          "height_mm": 109
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-saddle/tree-0",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              279.5,
+              685.5
+            ],
+            "mapped_face_id": 54098,
+            "original_mesh_face_id": 146560,
+            "barycentric": [
+              0.08611083588090573,
+              0.5276312049301728,
+              0.38625795918892153
+            ],
+            "source_xyz_utm_m": [
+              324870.8289361479,
+              4166753.4122612244,
+              61.538249361283526
+            ],
+            "source_forward_m": 751.9446969557773,
+            "lateral_q_per_mm": 0.013774271799457354,
+            "crs": "EPSG:32652",
+            "slope_deg": 6.799266685766945,
+            "ndvi": 0.10262735212404385,
+            "effective_observations": 37.0,
+            "retained_ground": 0.4761344483607722,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-saddle",
+          "height_mm": 74
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-saddle/tree-1",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              301.5,
+              689.5
+            ],
+            "mapped_face_id": 53745,
+            "original_mesh_face_id": 146062,
+            "barycentric": [
+              0.4210237264692176,
+              0.5393522361551266,
+              0.039624037375655806
+            ],
+            "source_xyz_utm_m": [
+              324901.18056708464,
+              4166793.8112788787,
+              60.05772930086288
+            ],
+            "source_forward_m": 734.1349229817307,
+            "lateral_q_per_mm": -0.07308480220617787,
+            "crs": "EPSG:32652",
+            "slope_deg": 8.115209920732996,
+            "ndvi": 0.15757419883285875,
+            "effective_observations": 35.0,
+            "retained_ground": 0.4645538992674701,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-saddle",
+          "height_mm": 128
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-saddle/tree-2",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              326.5,
+              685.5
+            ],
+            "mapped_face_id": 53036,
+            "original_mesh_face_id": 145064,
+            "barycentric": [
+              0.6561817408807623,
+              0.2611211740267357,
+              0.08269708509250202
+            ],
+            "source_xyz_utm_m": [
+              324892.83363522077,
+              4166852.519087447,
+              54.32504208599189
+            ],
+            "source_forward_m": 758.6045187774795,
+            "lateral_q_per_mm": 0.4300344537113419,
+            "crs": "EPSG:32652",
+            "slope_deg": 7.338842728201516,
+            "ndvi": 0.22662476156317088,
+            "effective_observations": 34.0,
+            "retained_ground": 0.4555250875029867,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-saddle",
+          "height_mm": 97
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-mass/tree-0",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              448.5,
+              818.5
+            ],
+            "mapped_face_id": 119671,
+            "original_mesh_face_id": 361173,
+            "barycentric": [
+              0.2318711494142982,
+              0.6396029403018036,
+              0.1285259102838982
+            ],
+            "source_xyz_utm_m": [
+              325421.1442226915,
+              4166861.9561344828,
+              43.0569181478709
+            ],
+            "source_forward_m": 254.12209944643237,
+            "lateral_q_per_mm": -0.007095220120997769,
+            "crs": "EPSG:32652",
+            "slope_deg": 3.064302229803016,
+            "ndvi": 0.20621652773016821,
+            "effective_observations": 35.812978124162505,
+            "retained_ground": 0.4198070628456803,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": 124
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-mass/tree-1",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              474.5,
+              828.5
+            ],
+            "mapped_face_id": 52700,
+            "original_mesh_face_id": 144584,
+            "barycentric": [
+              0.8170831398337658,
+              0.10317895889521188,
+              0.07973790127102232
+            ],
+            "source_xyz_utm_m": [
+              325458.0953687668,
+              4166882.6078629615,
+              43.57933001649724
+            ],
+            "source_forward_m": 224.44173701853026,
+            "lateral_q_per_mm": 0.004546679682059259,
+            "crs": "EPSG:32652",
+            "slope_deg": 4.023441057609546,
+            "ndvi": 0.1293567782143311,
+            "effective_observations": 36.0,
+            "retained_ground": 0.38093460035257315,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": 188
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-mass/tree-2",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              502.5,
+              832.5
+            ],
+            "mapped_face_id": 52345,
+            "original_mesh_face_id": 144085,
+            "barycentric": [
+              0.1094930270256691,
+              0.8340524655542406,
+              0.05645450742009033
+            ],
+            "source_xyz_utm_m": [
+              325480.02157396666,
+              4166913.3063647775,
+              46.17771128441944
+            ],
+            "source_forward_m": 212.0002611171963,
+            "lateral_q_per_mm": -0.02442913632053577,
+            "crs": "EPSG:32652",
+            "slope_deg": 4.203665069243591,
+            "ndvi": 0.09917234926300726,
+            "effective_observations": 37.502157396666,
+            "retained_ground": 0.4838718642546497,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": 210
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-mass/tree-3",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              530.5,
+              822.5
+            ],
+            "mapped_face_id": 51634,
+            "original_mesh_face_id": 143087,
+            "barycentric": [
+              0.44553905056744736,
+              0.32909268782096396,
+              0.22536826161158866
+            ],
+            "source_xyz_utm_m": [
+              325464.8727806346,
+              4166968.2389521515,
+              43.88391286863404
+            ],
+            "source_forward_m": 241.94070306753943,
+            "lateral_q_per_mm": 0.03052484226980122,
+            "crs": "EPSG:32652",
+            "slope_deg": 1.9577206842268096,
+            "ndvi": 0.15647228269658067,
+            "effective_observations": 36.98727806346733,
+            "retained_ground": 0.6997638886468955,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": 146
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-mass/tree-4",
+          "kind": "tree",
+          "site": {
+            "xy_mm": [
+              550.5,
+              814.5
+            ],
+            "mapped_face_id": 117902,
+            "original_mesh_face_id": 358679,
+            "barycentric": [
+              0.17863534632287303,
+              0.741775290525081,
+              0.07958936315204598
+            ],
+            "source_xyz_utm_m": [
+              325452.6123191054,
+              4167010.3590603895,
+              44.8000723647005
+            ],
+            "source_forward_m": 265.51694809329734,
+            "lateral_q_per_mm": 0.005176418214528045,
+            "crs": "EPSG:32652",
+            "slope_deg": 2.7462391815038796,
+            "ndvi": 0.09788121497354543,
+            "effective_observations": 36.46409396105446,
+            "retained_ground": 0.8745382219378296,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": 83
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-left-ledge/parent",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              55.310868996380904,
+              764.3000000000026
+            ],
+            "mapped_face_id": 59383,
+            "original_mesh_face_id": 154052,
+            "barycentric": [
+              0.1741604716050753,
+              0.602447886136143,
+              0.22339164225878166
+            ],
+            "source_xyz_utm_m": [
+              325083.0734365841,
+              4166308.298250732,
+              64.50642707940958
+            ],
+            "source_forward_m": 423.43307052831653,
+            "lateral_q_per_mm": 0.016099899389357016,
+            "crs": "EPSG:32652",
+            "slope_deg": 4.307729577961561,
+            "ndvi": 0.1332823889711125,
+            "effective_observations": 36.11140248414017,
+            "retained_ground": 0.5837179019813226,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-left-bank",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-left-ledge/rear",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              108.23086899638092,
+              752.5200000000026
+            ],
+            "mapped_face_id": 125300,
+            "original_mesh_face_id": 369145,
+            "barycentric": [
+              0.6576128996885798,
+              0.2098850234936256,
+              0.13250207681779458
+            ],
+            "source_xyz_utm_m": [
+              325061.0249376955,
+              4166394.7283869907,
+              59.82247440283975
+            ],
+            "source_forward_m": 468.8261605934666,
+            "lateral_q_per_mm": 0.032891721059291945,
+            "crs": "EPSG:32652",
+            "slope_deg": 6.370196100274077,
+            "ndvi": 0.17827410567681012,
+            "effective_observations": 37.40367941848382,
+            "retained_ground": 0.4151093309422614,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-left-bank",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-left-ledge/front",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              96.4708689963809,
+              770.5000000000026
+            ],
+            "mapped_face_id": 58684,
+            "original_mesh_face_id": 153055,
+            "barycentric": [
+              0.10739837555069831,
+              0.8855074864531802,
+              0.007094137996121477
+            ],
+            "source_xyz_utm_m": [
+              325121.56522459356,
+              4166374.7871758603,
+              56.018600450498155
+            ],
+            "source_forward_m": 405.12320481808524,
+            "lateral_q_per_mm": 0.10507154058251054,
+            "crs": "EPSG:32652",
+            "slope_deg": 7.766822435727864,
+            "ndvi": 0.13945441564168495,
+            "effective_observations": 38.0,
+            "retained_ground": 0.3786544588316908,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-left-bank",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-left-ledge/ground",
+          "kind": "soil",
+          "site": {
+            "xy_mm": [
+              96.4708689963809,
+              770.5000000000026
+            ],
+            "mapped_face_id": 58684,
+            "original_mesh_face_id": 153055,
+            "barycentric": [
+              0.10739837555069831,
+              0.8855074864531802,
+              0.007094137996121477
+            ],
+            "source_xyz_utm_m": [
+              325121.56522459356,
+              4166374.7871758603,
+              56.018600450498155
+            ],
+            "source_forward_m": 405.12320481808524,
+            "lateral_q_per_mm": 0.10507154058251054,
+            "crs": "EPSG:32652",
+            "slope_deg": 7.766822435727864,
+            "ndvi": 0.13945441564168495,
+            "effective_observations": 38.0,
+            "retained_ground": 0.3786544588316908,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-left-bank",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-saddle-ledge/parent",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              290.68558588100495,
+              707.6999999999829
+            ],
+            "mapped_face_id": 121073,
+            "original_mesh_face_id": 363154,
+            "barycentric": [
+              0.532973775534094,
+              0.2870811368334001,
+              0.17994508763250597
+            ],
+            "source_xyz_utm_m": [
+              324969.601647371,
+              4166750.989213266,
+              52.36377770794306
+            ],
+            "source_forward_m": 656.453053208769,
+            "lateral_q_per_mm": 0.01495827079243291,
+            "crs": "EPSG:32652",
+            "slope_deg": 1.8033863646926664,
+            "ndvi": 0.1575611538587782,
+            "effective_observations": 37.0,
+            "retained_ground": 0.3630373372543288,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-saddle",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-saddle-ledge/front",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              321.48558588100497,
+              712.4999999999828
+            ],
+            "mapped_face_id": 53395,
+            "original_mesh_face_id": 145567,
+            "barycentric": [
+              0.24202695857553225,
+              0.06102655080604776,
+              0.69694649061842
+            ],
+            "source_xyz_utm_m": [
+              325006.8307965242,
+              4166804.0916052815,
+              51.754084038425894
+            ],
+            "source_forward_m": 635.6026048898723,
+            "lateral_q_per_mm": -0.06223665147419711,
+            "crs": "EPSG:32652",
+            "slope_deg": 3.1599212668087264,
+            "ndvi": 0.14890856281451764,
+            "effective_observations": 37.0,
+            "retained_ground": 0.3508064489241904,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-saddle",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-saddle-ledge/ground",
+          "kind": "soil",
+          "site": {
+            "xy_mm": [
+              321.48558588100497,
+              712.4999999999828
+            ],
+            "mapped_face_id": 53395,
+            "original_mesh_face_id": 145567,
+            "barycentric": [
+              0.24202695857553225,
+              0.06102655080604776,
+              0.69694649061842
+            ],
+            "source_xyz_utm_m": [
+              325006.8307965242,
+              4166804.0916052815,
+              51.754084038425894
+            ],
+            "source_forward_m": 635.6026048898723,
+            "lateral_q_per_mm": -0.06223665147419711,
+            "crs": "EPSG:32652",
+            "slope_deg": 3.1599212668087264,
+            "ndvi": 0.14890856281451764,
+            "effective_observations": 37.0,
+            "retained_ground": 0.3508064489241904,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-saddle",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-foundation/parent",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              474.04697931952876,
+              840.2027287992188
+            ],
+            "mapped_face_id": 52701,
+            "original_mesh_face_id": 144585,
+            "barycentric": [
+              0.2811503252950234,
+              0.06072048732380783,
+              0.6581291873811688
+            ],
+            "source_xyz_utm_m": [
+              325486.8216146197,
+              4166865.2561243786,
+              41.17881693899228
+            ],
+            "source_forward_m": 192.0031290151013,
+            "lateral_q_per_mm": 0.0020305486445589375,
+            "crs": "EPSG:32652",
+            "slope_deg": 4.288864821845807,
+            "ndvi": 0.17143118833436488,
+            "effective_observations": 37.0,
+            "retained_ground": 0.31566500006407655,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-foundation/rear",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              553.9669793195287,
+              822.5327287992188
+            ],
+            "mapped_face_id": 51281,
+            "original_mesh_face_id": 142588,
+            "barycentric": [
+              0.2170034744395809,
+              0.6333674961991848,
+              0.14962902936123437
+            ],
+            "source_xyz_utm_m": [
+              325474.00102488603,
+              4167000.5111291194,
+              42.85267685469934
+            ],
+            "source_forward_m": 242.22519370292838,
+            "lateral_q_per_mm": 0.015004655005172498,
+            "crs": "EPSG:32652",
+            "slope_deg": 4.117621834804581,
+            "ndvi": 0.09770662633332841,
+            "effective_observations": 37.0,
+            "retained_ground": 0.8141162013635701,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-foundation/back-shoulder",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              431.86697931952875,
+              830.9027287992188
+            ],
+            "mapped_face_id": 53409,
+            "original_mesh_face_id": 145581,
+            "barycentric": [
+              0.15588784265874744,
+              0.7475605920539974,
+              0.09655156528725521
+            ],
+            "source_xyz_utm_m": [
+              325447.4268177616,
+              4166822.1034530415,
+              43.062101422660454
+            ],
+            "source_forward_m": 217.7215601742961,
+            "lateral_q_per_mm": -0.01254848559306701,
+            "crs": "EPSG:32652",
+            "slope_deg": 6.866409333383062,
+            "ndvi": 0.16169021889975396,
+            "effective_observations": 35.28816666719502,
+            "retained_ground": 0.46969434713856567,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-foundation/front",
+          "kind": "rock",
+          "site": {
+            "xy_mm": [
+              536.2069793195287,
+              849.5027287992187
+            ],
+            "mapped_face_id": 118965,
+            "original_mesh_face_id": 360179,
+            "barycentric": [
+              0.48363848940751986,
+              0.151820719996686,
+              0.36454079059579414
+            ],
+            "source_xyz_utm_m": [
+              325534.0637762821,
+              4166929.509154682,
+              46.543035647598145
+            ],
+            "source_forward_m": 164.66695774367685,
+            "lateral_q_per_mm": -0.06456393360076637,
+            "crs": "EPSG:32652",
+            "slope_deg": 7.417014984935895,
+            "ndvi": 0.15435782390364872,
+            "effective_observations": 38.0,
+            "retained_ground": 0.6590179015161636,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": null
+        },
+        {
+          "id": "autumn-provisional-v01/autumn-right-foundation/ground",
+          "kind": "soil",
+          "site": {
+            "xy_mm": [
+              536.2069793195287,
+              849.5027287992187
+            ],
+            "mapped_face_id": 118965,
+            "original_mesh_face_id": 360179,
+            "barycentric": [
+              0.48363848940751986,
+              0.151820719996686,
+              0.36454079059579414
+            ],
+            "source_xyz_utm_m": [
+              325534.0637762821,
+              4166929.509154682,
+              46.543035647598145
+            ],
+            "source_forward_m": 164.66695774367685,
+            "lateral_q_per_mm": -0.06456393360076637,
+            "crs": "EPSG:32652",
+            "slope_deg": 7.417014984935895,
+            "ndvi": 0.15435782390364872,
+            "effective_observations": 38.0,
+            "retained_ground": 0.6590179015161636,
+            "evidence": "mapped source triangle; objects are authored, not observed"
+          },
+          "group": "autumn-right-mass",
+          "height_mm": null
+        }
+      ]
+    }
+  ]
+}
