@@ -1,0 +1,639 @@
+{
+  "actual_paper_contacts": 3947,
+  "all_checks_passed": true,
+  "comparison_workloads_verified": [
+    "distance_only_PR43",
+    "contact_15",
+    "contact_20",
+    "contact_30"
+  ],
+  "compression_profile_unchanged": true,
+  "contact_limit": 15,
+  "distance_limit_mm": 600,
+  "independent_files_compared": 85,
+  "machine_authorized": false,
+  "no_same_pigment_washing": true,
+  "original_numerical_paper_blocks_equal": true,
+  "physical_response_measured": false,
+  "program_pairs_verified": 7,
+  "programs": {
+    "SPRING_P2_COLOR_PR35_HYBRID15_01_MINERAL_BASE_REVIEW": {
+      "material_proof": {
+        "actual_paper_contacts": 2147,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "699ad5ac1ee57090c34525ee8be9952a8170a72c0aefdc303d82e78752f32e65",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 306.25507434371184,
+        "pigment_changes": 1,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 144
+      },
+      "readbacks": {
+        "air": {
+          "AIR_all_Z35": true,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              35
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            0.0
+          ],
+          "numeric_commands": 58168,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 33431,
+          "source_count": 2147,
+          "source_order_sha256": "15e2f601f82278ced3d09536f654cbbcbd4e1175edb00e7609d8e8afdaf503f5",
+          "station_moves": 4518,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        },
+        "color": {
+          "AIR_all_Z35": false,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              1.5
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            7000.0
+          ],
+          "numeric_commands": 58168,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 33431,
+          "source_count": 2147,
+          "source_order_sha256": "15e2f601f82278ced3d09536f654cbbcbd4e1175edb00e7609d8e8afdaf503f5",
+          "station_moves": 4518,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        }
+      }
+    },
+    "SPRING_P2_COLOR_PR35_HYBRID15_02_PALE_GROWTH_AND_LOCAL_OVERLAP_REVIEW": {
+      "material_proof": {
+        "actual_paper_contacts": 407,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "62f4859ac5c2d820ec0411802edaec23afbf1f42340adb6cd98ed4af9f098df3",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 167.59531474940405,
+        "pigment_changes": 0,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 28
+      },
+      "readbacks": {
+        "air": {
+          "AIR_all_Z35": true,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              35
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            14972.73383433867,
+            0.0
+          ],
+          "numeric_commands": 11081,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 6362,
+          "source_count": 407,
+          "source_order_sha256": "12a372fda9e5f56c165d9403d4e78289c02bc8be6261278108d216761471daba",
+          "station_moves": 907,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        },
+        "color": {
+          "AIR_all_Z35": false,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              1.5
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            14972.73383433867,
+            7000.0
+          ],
+          "numeric_commands": 11081,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 6362,
+          "source_count": 407,
+          "source_order_sha256": "12a372fda9e5f56c165d9403d4e78289c02bc8be6261278108d216761471daba",
+          "station_moves": 907,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        }
+      }
+    },
+    "SPRING_P2_COLOR_PR35_HYBRID15_03_GROUPED_CORES_REVIEW": {
+      "material_proof": {
+        "actual_paper_contacts": 889,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "55e969f8bae4c43831c811266b49c71d971df0a84eca4ee8534df660a0599137",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 395.3951417493214,
+        "pigment_changes": 1,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 60
+      },
+      "readbacks": {
+        "air": {
+          "AIR_all_Z35": true,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              35
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            0.0
+          ],
+          "numeric_commands": 25715,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 15507,
+          "source_count": 889,
+          "source_order_sha256": "7d2ae9404b9d793d8cb4738a83da2ccff429e1728e779e71c4781e08979e21da",
+          "station_moves": 1914,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        },
+        "color": {
+          "AIR_all_Z35": false,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              1.5
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            7000.0
+          ],
+          "numeric_commands": 25715,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 15507,
+          "source_count": 889,
+          "source_order_sha256": "7d2ae9404b9d793d8cb4738a83da2ccff429e1728e779e71c4781e08979e21da",
+          "station_moves": 1914,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        }
+      }
+    },
+    "SPRING_P2_COLOR_PR35_HYBRID15_04_FRESH_TIPS_AND_ACCENTS_REVIEW": {
+      "material_proof": {
+        "actual_paper_contacts": 504,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "dda9a2df34260f0a2427f788c51271e47f7776d57db44b8bb9c328042a8a7382",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 172.21218846544758,
+        "pigment_changes": 0,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 34
+      },
+      "readbacks": {
+        "air": {
+          "AIR_all_Z35": true,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              35
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            14972.73383433867,
+            0.0
+          ],
+          "numeric_commands": 14344,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 8546,
+          "source_count": 504,
+          "source_order_sha256": "4fb747e3065c3b9a7096c06615fdf49c2fd7772dad2e4bc066c9c554cd9fe1eb",
+          "station_moves": 1093,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        },
+        "color": {
+          "AIR_all_Z35": false,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              1.5
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            14972.73383433867,
+            7000.0
+          ],
+          "numeric_commands": 14344,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 8546,
+          "source_count": 504,
+          "source_order_sha256": "4fb747e3065c3b9a7096c06615fdf49c2fd7772dad2e4bc066c9c554cd9fe1eb",
+          "station_moves": 1093,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        }
+      }
+    },
+    "SPRING_P2_COLOR_PR35_HYBRID15_COMPLETE_REVIEW": {
+      "material_proof": {
+        "actual_paper_contacts": 3947,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "d27d27ed625004661085d5d07d7990bd796d95e1eaa721e726046963e65741a5",
+        "maximum_contacts_since_load": 15,
+        "maximum_distance_since_load_mm": 395.3951417493214,
+        "pigment_changes": 5,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 266
+      },
+      "readbacks": {
+        "air": {
+          "AIR_all_Z35": true,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              35
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            0.0
+          ],
+          "numeric_commands": 109203,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 63846,
+          "source_count": 3947,
+          "source_order_sha256": "7c68ca9354134024a25be9aeab3a09e9007fa7251a3525de3556aaf479bc31ed",
+          "station_moves": 8360,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        },
+        "color": {
+          "AIR_all_Z35": false,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              1.5
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            7000.0
+          ],
+          "numeric_commands": 109203,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 63846,
+          "source_count": 3947,
+          "source_order_sha256": "7c68ca9354134024a25be9aeab3a09e9007fa7251a3525de3556aaf479bc31ed",
+          "station_moves": 8360,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        }
+      }
+    },
+    "SPRING_P2_COLOR_RESPONSE_COUPON_SPARE_ONLY_REVIEW": {
+      "material_proof": {
+        "actual_paper_contacts": 26,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "86224dd2fc315b25ea19b7a46bf1792dd8583e6f4a47d8178af4d846b403c537",
+        "maximum_contacts_since_load": 4,
+        "maximum_distance_since_load_mm": 160.0,
+        "pigment_changes": 7,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 8
+      },
+      "readbacks": {
+        "air": {
+          "AIR_all_Z35": true,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              35
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            0.0
+          ],
+          "numeric_commands": 955,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 78,
+          "source_count": 26,
+          "source_order_sha256": "e288b9c659cd1c6b5addbfd66a2e01083de04fe584e2959e2790bd82300216d4",
+          "station_moves": 392,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        },
+        "color": {
+          "AIR_all_Z35": false,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              1.5
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            7000.0
+          ],
+          "numeric_commands": 955,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 78,
+          "source_count": 26,
+          "source_order_sha256": "e288b9c659cd1c6b5addbfd66a2e01083de04fe584e2959e2790bd82300216d4",
+          "station_moves": 392,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        }
+      }
+    },
+    "SPRING_P2_COLOR_STATIONS_ONLY_REVIEW": {
+      "material_proof": {
+        "actual_paper_contacts": 0,
+        "both_counters_reset": true,
+        "contacts_from_initial_contact_IR_not_vertices": true,
+        "load_budget_sha256": "53b2aa2e5c6d6ef93c2d0f2e9beeea83d8ddf1c7d0a21c87311af269f2582640",
+        "maximum_contacts_since_load": 0,
+        "maximum_distance_since_load_mm": 0.0,
+        "pigment_changes": 5,
+        "same_pigment_washes": 0,
+        "source_atomic_service_verified": true,
+        "total_loads": 6
+      },
+      "readbacks": {
+        "air": {
+          "AIR_all_Z35": true,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              35
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            0.0
+          ],
+          "numeric_commands": 485,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 0,
+          "source_count": 0,
+          "source_order_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "station_moves": 300,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        },
+        "color": {
+          "AIR_all_Z35": false,
+          "M0_count": 0,
+          "bounds_G54": [
+            [
+              0,
+              45.0,
+              1.5
+            ],
+            [
+              840.0,
+              900,
+              35
+            ]
+          ],
+          "color_response_measured": false,
+          "machine_authorized": false,
+          "maximum_projected_axis_feeds": [
+            15000.0,
+            15000.0,
+            7000.0
+          ],
+          "numeric_commands": 485,
+          "original_arc_XY_pressure_verified": true,
+          "physical_clearance_verified": false,
+          "pressure_samples": 0,
+          "source_count": 0,
+          "source_order_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "station_moves": 300,
+          "terminal_cleanup_verified": true,
+          "terminal_park": [
+            800.0,
+            800.0,
+            35.0
+          ]
+        }
+      }
+    }
+  },
+  "selected_sources": 3947,
+  "source_and_stage_order_equal_PR43": true
+}
