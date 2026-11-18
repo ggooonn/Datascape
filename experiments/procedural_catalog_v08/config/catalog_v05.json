@@ -1,0 +1,12 @@
+{
+  "rock_mask": {"epsilon_mm": 0.000001},
+  "ground": {
+    "a_weight": 0.17,
+    "a_radius_mm": 22,
+    "base_slope_limit_deg": 4,
+    "max_tangent_deg": 6,
+    "row_offsets_mm": [1.7, 3.8, 6.1, 8.4],
+    "colors": {"rock":["#a29376","#918879"],"root":["#8e947b","#a49778"]},
+    "min_path_mm": 6.2
+  }
+}

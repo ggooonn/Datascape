@@ -1,0 +1,26 @@
+{
+  "contact": {
+    "inset_fraction": 0.28,
+    "local_uv_rows": [0.26, 0.50, 0.74],
+    "color_rows": [0.36, 0.65, 0.85],
+    "ink_min_mm": 5.2
+  },
+  "ground": {
+    "spacing_mm": [1.55, 2.35],
+    "minimum_mm": 6.2,
+    "colors": {"rock":["#a89775","#938174","#7d8879"],"vegetation":["#959b75","#7d8b73","#ab9875"]},
+    "rock_reach_mm": 19,
+    "vegetation_reach_mm": 18
+  },
+  "canopy_area": {
+    "second_owner_level": 0.52,
+    "min_region_mm2": 15,
+    "slot_mm": {"near":[4.0,3.2],"mid":[4.5,3.6],"far":[5.3,4.25]},
+    "ink_length_mm": {"near":[6.2,12.5],"mid":[5.5,10.2],"far":[5.1,8.2]},
+    "regional_grid_cap_mm": 17,
+    "spacing_mm": 1.0,
+    "target_ink_mm_per_mm2": [0.30, 0.43],
+    "shared_color_max_mm": 25.0
+  },
+  "occlusion": {"root_behind_margin_mm": 1.8, "beside_margin_mm": 5, "ink_min_mm": 4.8, "color_min_mm": 6.0}
+}

@@ -1,0 +1,44 @@
+{
+  "canopy": {
+    "grid_mm": 1.1,
+    "owner_level": 0.56,
+    "bridge_level": 0.82,
+    "bridge_span_mm": [6, 25],
+    "stroke_sample_mm": 0.85,
+    "crowd_cell_mm": 4.5,
+    "crowd_length_cap_mm": 17.0,
+    "near_parallel_mm": 0.95,
+    "near_parallel_max_fraction": 0.42,
+    "wet_neighbor_mm": 3.2,
+    "wet_recent": 3,
+    "queue_lookahead": 22,
+    "mask_pad_mix": 0.90
+  },
+  "vegetation_color": {
+    "spacing_mm": {"near": 1.85, "mid": 2.4, "far": 3.2},
+    "inside_level": 0.72,
+    "shadow_level": 1.08,
+    "min_segment_mm": 5.6,
+    "winter_inside_level": 0.36,
+    "winter_min_mm": 5.1,
+    "relative_pressure": [0.54, 0.89]
+  },
+  "rock": {
+    "ink_min_mm": {"near": 4.8, "mid": 5.3, "far": 5.8},
+    "color_min_mm": {"near": 5.8, "mid": 6.6, "far": 7.4},
+    "color_spacing_mm": {"near": 2.05, "mid": 2.55, "far": 3.3},
+    "ground_feather_mm": 8.0,
+    "ground_min_segment_mm": 5.2
+  },
+  "color": {
+    "vegetation_spring": ["#82936c","#456f5e","#a2a675"],
+    "vegetation_summer": ["#718859","#416954","#8c9b72"],
+    "vegetation_autumn": ["#a28258","#686f50","#ae7959"],
+    "vegetation_winter": ["#888b74","#627c76","#a19677"],
+    "rock_gray": "#778287",
+    "rock_ochre": "#a79054",
+    "rock_brown": "#94715b",
+    "rock_green": "#71816a",
+    "ground_ochre": "#a5926f"
+  }
+}
