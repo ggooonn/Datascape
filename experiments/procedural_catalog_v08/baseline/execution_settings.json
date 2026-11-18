@@ -1,0 +1,15 @@
+{
+  "ink_distance_limit_mm": 1200,
+  "ink_contact_limit": 20,
+  "color_distance_limit_mm": 600,
+  "color_contact_limit": 15,
+  "LIGHT_to_MEDIUM_wait_seconds": 300,
+  "MEDIUM_to_COLOR_wait_seconds": 180,
+  "local_drying_grid_mm": 5,
+  "local_drying_sample_step_mm": 1,
+  "normal_ink_compression_cap_mm": 6,
+  "normal_color_compression_cap_mm": 4,
+  "physical_long_dwell_verified": false,
+  "installed_config_readback_verified": false,
+  "physical_P1_user_report_success": true
+}

@@ -1,0 +1,12 @@
+{
+  "ground_presets": {
+    "light": {"stretch": 1.22, "density": 1.50},
+    "checkpoint": {"stretch": 1.30, "density": 2.00}
+  },
+  "layouts": [
+    {"key":"spring","title":"봄 · 열린 둔덕과 층상암","note":"여백을 사이에 둔 두 식생 무리 · 층상의 짧은 윤곽","family":"strata","arrangement":"anchor","scale":0.80,"origin":[43,20],"seed":812,"plants":[["P",26,118,48],["B",45,115,34],["U",53,124,25],["W",189,113,43],["P",211,122,38]]},
+    {"key":"summer","title":"여름 · 밀집 수관과 풍화암","note":"서로 포개진 수관 · 낮고 둥근 암괴를 사이로","family":"weathered","arrangement":"medium","scale":0.80,"origin":[50,29],"seed":824,"plants":[["B",29,110,53],["W",38,113,51],["U",49,117,46],["B",55,120,45],["P",73,102,45],["U",173,100,44],["W",215,124,49],["B",226,129,55]]},
+    {"key":"autumn","title":"가을 · 절리암의 비대칭 연속","note":"한쪽으로 치우친 바위와 드문 식생 · 중앙을 열어 둠","family":"jointed","arrangement":"sequence","scale":0.65,"origin":[99,36],"seed":839,"plants":[["P",31,118,53],["W",42,124,51],["U",68,123,29],["B",124,105,42],["U",230,106,31]]},
+    {"key":"winter","title":"겨울 · 드러난 다층 암반","note":"암반이 주를 이루는 배치 · 가는 가지와 나무 세 그루","family":"strata","arrangement":"formation","scale":0.89,"origin":[15,21],"seed":857,"plants":[["W",27,124,40],["P",96,87,35],["B",218,122,48]]}
+  ]
+}

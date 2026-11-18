@@ -1,0 +1,9 @@
+{
+  "families": {
+    "strata": {"profiles":["layered","blocky","bedrock"],"style":"laminated","height_ratio":0.69,"front_deg":-9,"side_deg":16,"edge_lean":0.08,"joint_lean":0.0},
+    "jointed": {"profiles":["angular","fragmented","pointed"],"style":"fractured","height_ratio":0.92,"front_deg":-19,"side_deg":20,"edge_lean":0.14,"joint_lean":0.29},
+    "weathered": {"profiles":["rounded","rounded","bedrock"],"style":"weathered","height_ratio":0.73,"front_deg":5,"side_deg":-15,"edge_lean":-0.08,"joint_lean":0.0}
+  },
+  "ground": {"reach_factor":1.16},
+  "root_canopy": {"max_individual_mm":10.5,"shared_proximity_mm":7.5,"far_fragment_mm":6.25}
+}

@@ -1,0 +1,259 @@
+{
+  "revision": "catalog-expansion-v01",
+  "seed_root": 20261118,
+  "families": {
+    "P": {
+      "label": "층상·편향형",
+      "crown": 0.85,
+      "lean": 0.14,
+      "openness": 0.31,
+      "spread": 0.87,
+      "fork": 0.76,
+      "layers": 4,
+      "status": "promising",
+      "band_relief": 0.39
+    },
+    "B": {
+      "label": "둥근 분지형",
+      "crown": 0.79,
+      "lean": 0.025,
+      "openness": 0.22,
+      "spread": 0.69,
+      "fork": 0.48,
+      "layers": 5,
+      "status": "promising",
+      "band_relief": 1.23
+    },
+    "U": {
+      "label": "낮은 다간형",
+      "crown": 1.12,
+      "lean": 0.09,
+      "openness": 0.34,
+      "spread": 0.63,
+      "fork": 0.17,
+      "layers": 3,
+      "status": "promising",
+      "band_relief": 0.82
+    },
+    "W": {
+      "label": "하향 측지형",
+      "crown": 1.04,
+      "lean": 0.13,
+      "openness": 0.38,
+      "spread": 0.7,
+      "fork": 0.78,
+      "layers": 4,
+      "status": "experimental",
+      "band_relief": 1.15
+    }
+  },
+  "lod": {
+    "near": {
+      "branch_slots": 7,
+      "canopy_bands": 8,
+      "rock_beds": 10,
+      "micro": true,
+      "min_ink_mm": 3.8
+    },
+    "mid": {
+      "branch_slots": 5,
+      "canopy_bands": 5,
+      "rock_beds": 6,
+      "micro": false,
+      "min_ink_mm": 3.8
+    },
+    "far": {
+      "branch_slots": 3,
+      "canopy_bands": 3,
+      "rock_beds": 3,
+      "micro": false,
+      "min_ink_mm": 4.0
+    }
+  },
+  "community": {
+    "shared_trait_weight": 0.75,
+    "spatial_residual_correlation": 0.62,
+    "latent_amplitude": 0.12,
+    "same_community_attenuation": 0.06,
+    "distinct_front_attenuation": 0.29,
+    "terrain_core_attenuation": 0.66,
+    "terrain_core_keep_stride": 3
+  },
+  "formations": {
+    "angular": {
+      "crown": 0.84,
+      "burial": 0.06,
+      "facet_skew": 0.24,
+      "texture": "jointed"
+    },
+    "compact": {
+      "crown": 0.7,
+      "burial": 0.16,
+      "facet_skew": 0.16,
+      "texture": "layered"
+    },
+    "bedrock": {
+      "crown": 0.58,
+      "burial": 0.14,
+      "facet_skew": 0.22,
+      "texture": "layered"
+    },
+    "rounded": {
+      "crown": 0.72,
+      "burial": 0.17,
+      "facet_skew": 0.24,
+      "texture": "weathered"
+    },
+    "buried": {
+      "crown": 0.6,
+      "burial": 0.53,
+      "facet_skew": 0.15,
+      "texture": "weathered"
+    }
+  },
+  "seasons": {
+    "spring": {
+      "foliage": 1.0,
+      "openness": 0.0,
+      "colors": [
+        "#82935b",
+        "#557c5d",
+        "#a4a87a"
+      ]
+    },
+    "summer": {
+      "foliage": 1.21,
+      "openness": -0.08,
+      "colors": [
+        "#617d51",
+        "#38674e",
+        "#799265"
+      ]
+    },
+    "autumn": {
+      "foliage": 0.84,
+      "openness": 0.07,
+      "colors": [
+        "#a36944",
+        "#944f41",
+        "#ad8751"
+      ]
+    },
+    "winter": {
+      "foliage": 0.43,
+      "openness": 0.2,
+      "colors": [
+        "#8a8e83",
+        "#686f67",
+        "#aa9b7f"
+      ]
+    }
+  },
+  "palette": {
+    "rock": [
+      "#a2917b",
+      "#8a8280",
+      "#837c63"
+    ],
+    "soil": [
+      "#a38c6d",
+      "#9a9277"
+    ]
+  },
+  "plot_intent": {
+    "light_mm": [
+      0.2,
+      0.74
+    ],
+    "medium_mm": [
+      0.52,
+      1.24
+    ],
+    "color_mm": [
+      0.25,
+      0.9
+    ],
+    "candidate_only": true,
+    "base_compression_mm": {
+      "LIGHT_INK": 0.55,
+      "MEDIUM_INK": 1.04,
+      "COLOR": 0.68
+    }
+  },
+  "environment_fixture": {
+    "provenance": "synthetic study grid",
+    "origin_mm": [
+      0,
+      0
+    ],
+    "spacing_mm": 25,
+    "z": [
+      [
+        14,
+        13,
+        11,
+        8,
+        5,
+        3
+      ],
+      [
+        16,
+        15,
+        13,
+        9,
+        6,
+        4
+      ],
+      [
+        18,
+        17,
+        14,
+        10,
+        9,
+        7
+      ],
+      [
+        20,
+        18,
+        15,
+        12,
+        11,
+        9
+      ]
+    ],
+    "cover_proxy": [
+      [
+        0.83,
+        0.8,
+        0.76,
+        0.5,
+        0.35,
+        0.29
+      ],
+      [
+        0.76,
+        0.81,
+        0.7,
+        0.56,
+        0.4,
+        0.34
+      ],
+      [
+        0.52,
+        0.67,
+        0.77,
+        0.71,
+        0.58,
+        0.46
+      ],
+      [
+        0.38,
+        0.45,
+        0.56,
+        0.74,
+        0.69,
+        0.55
+      ]
+    ]
+  }
+}

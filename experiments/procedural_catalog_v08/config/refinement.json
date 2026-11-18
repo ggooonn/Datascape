@@ -1,0 +1,25 @@
+{
+  "revision": "procedural-catalog-refinement-v02",
+  "B": {"passes": {"near": 3, "mid": 2, "far": 1}, "reach": 0.96, "arch": 0.43, "spacing_mm": 1.3},
+  "W": {"passes": {"near": 2, "mid": 2, "far": 1}, "reach": 0.88, "spacing_mm": 1.6},
+  "placement": {
+    "dense": {"sites": [[-0.29,-0.18],[-0.12,0.40],[0.27,0.19]], "spread": [0.098,0.17], "gap_x": 0.05, "gap_halfwidth": 0.093, "min_spacing_mm": 5.8},
+    "sparse": {"sites": [[-0.35,0.08],[-0.16,-0.34],[0.35,0.27]], "spread": [0.066,0.22], "gap_x": 0.08, "gap_halfwidth": 0.13, "min_spacing_mm": 10},
+    "depth": {"sites": [[-0.23,-0.37],[0.26,-0.25],[-0.20,0.44],[0.30,0.39]], "spread": [0.093,0.13], "gap_x": 0.055, "gap_halfwidth": 0.082, "min_spacing_mm": 6.5}
+  },
+  "weak_mutual_ink_loss": 0.05,
+  "foreground_ink_loss": 0.32,
+  "core": {"threshold": 0.82, "grid_step_mm": 1.5, "min_area_mm2": 22, "min_segment_mm": 5.2, "min_kept_pass_mm": 7, "feather_mm": 9.5},
+  "same_site_seasons": {
+    "spring":{"width": 0.84, "volume": 0.78, "pad_pattern": "terminal_buds", "undergrowth": 0.64, "exposure": 0.28},
+    "summer":{"width": 1.28, "volume": 1.28, "pad_pattern": "linked_canopy", "undergrowth": 1.0, "exposure": 0.10},
+    "autumn":{"width": 1.05, "volume": 0.96, "pad_pattern": "broken_lobes", "undergrowth": 0.55, "exposure": 0.52},
+    "winter":{"width": 0, "volume": 0, "pad_pattern": "exposed_twigs", "undergrowth": 0.21, "exposure": 0.88}
+  },
+  "season_compositions": {
+    "spring":{"families":"BBBUBWUBPU","layout":"depth","count":10,"footprint":[148,48],"height":38},
+    "summer":{"families":"BBBUBBWUBBUPBWU","layout":"dense","count":15,"footprint":[153,50],"height":45},
+    "autumn":{"families":"BBWBUPBWU","layout":"depth","count":9,"footprint":[163,47],"height":43},
+    "winter":{"families":"PPPWUWB","layout":"sparse","count":7,"footprint":[164,47],"height":43}
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "checkpoint": "Standalone consolidated checkpoint v02; no prior checkpoint assumed",
+  "status": "OPERATOR_APPROVED_FROZEN",
+  "water_center_xy": [
+    840,
+    45
+  ],
+  "endpoints_xy": [
+    [
+      825,
+      45
+    ],
+    [
+      855,
+      45
+    ]
+  ],
+  "water_z_previous": 20,
+  "washing_feed_mm_min": 1200,
+  "active_seconds": 10,
+  "purge_xy": [
+    840,
+    137.5
+  ],
+  "purge_z": 4.5,
+  "purge_dwell_seconds": 3,
+  "purge_contacts": 1,
+  "drying_wait_seconds": [
+    300,
+    180
+  ],
+  "production_regeneration_enabled": false,
+  "water_z": 18,
+  "color_transition_policy": "EVERY_ACTUAL_CHANGE_FULL_10_SECONDS",
+  "approval_basis": "Operator physical measurements and installed plotter clearance assessment; explicit Phase 1 approval attachment"
+}
