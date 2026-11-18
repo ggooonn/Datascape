@@ -1,0 +1,37 @@
+{
+  "python": "3.12",
+  "automated_tests": 65,
+  "repeat_builds": 2,
+  "byte_identical_outputs": {
+    "building_parts.json": "2e8e218402e25e5ea269ded2023b8507c4fc1f4d4b7dc5e511d27aa29d39fd65",
+    "building_parts.svg": "fd82732bde49c383b97c984c79b29d846c31b298dfdcf36e08030237f99ea9e3",
+    "data_audit.json": "139b6b23d35647985cafe9b2ec0837a194a77fa29b916060b7de8658611f2906",
+    "ground_samples.parquet": "b19dfe1a12be682f5033922889ea0f3628027ed6ba5a4b8131ee1f5fccabdf8c",
+    "height_geometry.parquet": "25e43abdbabb9331ad223a6c9c29dab2293941e981397f7ef96f80183d19b60b",
+    "height_ground_audit.json": "acf3525a28338cd3485bb222bebcccc4cc937837d10ae8b8974417ec544b55c6",
+    "projection_summary.json": "7f4d78fb3ed50756c223df67388daad4f1ca30152ac9aadd30795b9b2838f61c",
+    "selected_geometry_visibility.png": "c34eba87ab9a5692cef98e415dcc41dfc4059023aa76f8baea72c1e6b601e5af",
+    "selected_source_plan.svg": "2f4fa09184a4ace5ffdfd2d09e5df049dea76be4454d8aa8e97d31aad575d639",
+    "view_A.json": "30f81a9ecf209282277b5b7d52eb75cd562ae29f69ed6d97f8dd9ef3b33a33e7",
+    "view_A_visibility.parquet": "fa65de9d54e47c3f5ad7b4abab6a653360fcb2310561a3b03f1e6973ad1e2631",
+    "view_B.json": "49e5148b3cd2cea9f1486f6aeb12d4d4f7b92be7ae315ebe5053717d61a92dd5",
+    "view_B_visibility.parquet": "cce264aa7e01c90576f9c31cda1e726c4e97c92c4f3fa30f1bdbde823f2cf9cd",
+    "view_C.json": "eb9430589b66fecc5a14429505ce71d4e4661dd6c1ec2f74321935349337ad35",
+    "view_C_visibility.parquet": "96132eb3ccbb34173e52966d3f1ef3e156d97831335177f7ec1519c50e8a9f0a",
+    "viewpoint_comparison.png": "e573ee024fdb25c5d7d8a458e706bac822133b9f459a616dc425da3502906eae"
+  },
+  "input_extracts_verified": 2,
+  "source_fields_and_local_outline_readbacks": 9972,
+  "matched_ground_sample_ids": 9972,
+  "per_object_occlusion_partitions_verified": [
+    "A",
+    "B",
+    "C"
+  ],
+  "selected_view": "A",
+  "linked_parts_readback": 6,
+  "mass_height_sources": {
+    "floor_count_x_3m_diagnostic_estimate": 3022,
+    "overture_height_field": 6950
+  }
+}
