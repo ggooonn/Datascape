@@ -1,0 +1,84 @@
+{
+  "season_reference": "spring",
+  "overture_release": "2026-11-18.0",
+  "datascape_roi_wsen": [
+    126.82,
+    37.5,
+    127.12,
+    37.71
+  ],
+  "overture_bbox_wsen": [
+    126.93,
+    37.555,
+    127.085,
+    37.684
+  ],
+  "metric_crs": "EPSG:32652",
+  "terrain_crs_vertical_datum": "EGM2008 orthometric elevation (Copernicus / FABDEM)",
+  "terrain_grid_m": 30,
+  "screen_px": [
+    1320,
+    900
+  ],
+  "diagnostic_sheet_mm": [
+    440,
+    300
+  ],
+  "views": [
+    {
+      "id": "A",
+      "name": "Hongje to Inwangsan",
+      "target_lon_lat": [
+        126.955,
+        37.582
+      ],
+      "bearing_deg": 123,
+      "depth_anchors_m": [
+        -1750,
+        4800
+      ],
+      "mapping": {
+        "p3_width_scale_m": 3300,
+        "p3_relief_fraction_per_km": 0.8,
+        "p3_bottom_fraction": 1.12
+      }
+    },
+    {
+      "id": "B",
+      "name": "Jeongneung to Bukhansan",
+      "target_lon_lat": [
+        127.005,
+        37.61
+      ],
+      "bearing_deg": 324,
+      "depth_anchors_m": [
+        -2300,
+        6750
+      ],
+      "mapping": {
+        "p3_width_scale_m": 4400,
+        "p3_relief_fraction_per_km": 0.75,
+        "p3_bottom_fraction": 1.12
+      }
+    },
+    {
+      "id": "C",
+      "name": "Suyu to Bukhansan",
+      "target_lon_lat": [
+        127.017,
+        37.644
+      ],
+      "bearing_deg": 290,
+      "depth_anchors_m": [
+        -2100,
+        7600
+      ],
+      "mapping": {
+        "p3_width_scale_m": 4900,
+        "p3_relief_fraction_per_km": 0.73,
+        "p3_bottom_fraction": 1.12
+      }
+    }
+  ],
+  "selected_view_id": "A"
+}
