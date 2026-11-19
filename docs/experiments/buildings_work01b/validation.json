@@ -1,0 +1,30 @@
+{
+  "test_suite_passed": 70,
+  "independent_runs": 2,
+  "identical_output_files": {
+    "01_fixed_view.png": "fb5d8451aaa4afb4daafc50f80248116f6f49b9dd31d14377da0cb4e7f464ffe",
+    "02_scale_review.png": "84d55d623e5f872811ea30181e19e87007600ebeb6d706bdd0396ab3d8cc3377",
+    "03_readability_crops.png": "74662ee386c9ee86bedda893928d5f306e119f2a0a3fd5b0738dcd35698a65ad",
+    "04_match_examples.png": "b4be096b41fe650750d5ec911b818796b9ea307c60f79873bcd4465088627f60",
+    "A0_H0.png": "9938bc35e7cfc1fd1d9fea9082bdf604d2dcc63b0ede261cc250df265d0361a5",
+    "A0_H0_readability.parquet": "9af45bda4c04c748e71d2315f2594a4f79faeacbcafb244186387e7a2dfcd14c",
+    "A0_H2.png": "034444de53265ceb3190f802080cf3d038bb97b5c1180b51d6a1b9976e8a19c6",
+    "A0_H2_readability.parquet": "a4f54a9fb18a050552805141a3364a664c7232668a2528cf347b43889d73856b",
+    "A1-1650.png": "9cabfd5ca7c4c7f4bce370502fb1193984e5118b61e72cc777df2228b8211909",
+    "A1-1650_readability.parquet": "285737b9aad85c1e22dc1c823fa2e59f6a713f02a309a51655837a027b4b0021",
+    "A1-2200.png": "0adff6f0f0fdd4fd97994db4b1995e46f7f8f8c99152e08f0d1d49b390032ebf",
+    "A1-2200_readability.parquet": "dbc1522c66e6819b268cfef377576d839d9b2cec5f831a7f2a4e39570a31e3ee",
+    "A2.png": "df5a0c54d703a1814f385ab52d2e69581b2a1ece4d9665de3b3749bb4e3a9fdc",
+    "A2_readability.parquet": "c77eaad02d7a32acfffee251b24fb48a7bc7d7776cb60fb107168d3dd962ab12",
+    "acquisition_matching_audit.json": "71c436df3d13fa5527b79a5848f11b4422b18cbccc75174c040a63af166ca453",
+    "building_height_evidence.parquet": "3efad8afb28f0b8d8711731edfb0f26c6e70a05fb76bc74086bf4e4418a8fef2",
+    "composition_audit.json": "6273344ee061a8834b9e34addcf0218ae7ff0c41da6d12fed4c361bea7271811",
+    "footprint_examples.json": "1aef3d45df4cff56e3574a623df18ddb5e410ac85dbdc3b936d6caa037017594"
+  },
+  "overture_unique_ids": 125428,
+  "research_shape_links": 15262,
+  "new_floor_estimates": 3022,
+  "official_h1_status": "official_records_unavailable",
+  "original_h0_exact_per_object_readback": true,
+  "readability_partition_and_area_readback": true
+}
