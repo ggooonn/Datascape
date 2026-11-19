@@ -1,0 +1,28 @@
+{
+  "baseline_commit": "acd7d992493cea7b685cdd9678d16c37b0a69769",
+  "overlap": {
+    "minimum_overlap_m2": 4.0,
+    "min_smaller_share": 0.20,
+    "split_share": 0.20,
+    "min_iou": 0.65,
+    "min_reciprocal_share": 0.70,
+    "min_iou_gap": 0.15
+  },
+  "floor_rate_m": {
+    "apartment": [2.7, 3.0, 3.3],
+    "small_residential": [2.6, 3.0, 3.4],
+    "other_residential": [2.6, 3.0, 3.4],
+    "neighborhood_facility": [3.0, 3.4, 3.8],
+    "commercial": [3.0, 3.5, 4.0],
+    "retail_facility": [3.2, 3.7, 4.2],
+    "other": [2.7, 3.1, 3.6]
+  },
+  "view_a1_width_m": [2200, 1650],
+  "view_a1_center_y_fraction": 0.61,
+  "view_a2_search_wsen": [126.938, 37.567, 126.975, 37.606],
+  "readability_mm": {
+    "silhouette": [1.2, 1.0],
+    "major_roof_or_structure": [3.0, 2.0],
+    "surface_stroke_candidate": [6.0, 4.0]
+  }
+}

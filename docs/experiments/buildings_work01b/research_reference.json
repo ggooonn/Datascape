@@ -1,0 +1,12 @@
+{
+  "source": "https://doi.org/10.5281/zenodo.21881381",
+  "license": "CC BY 4.0, polygon and archetype fields only in this study",
+  "version": "v3, 2026-08-11",
+  "authoritative": false,
+  "layer": "Seoul_residential_stock_EC_v4_5_8",
+  "sha256": "470ff5d43bbcc139bebcc1d9a84053dd87827375ef7a262f87a0896cbca1c9c8",
+  "fields": {
+    "id": "fid",
+    "archetype": "ArcheType"
+  }
+}
